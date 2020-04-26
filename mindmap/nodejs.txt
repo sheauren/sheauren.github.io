@@ -1,8 +1,116 @@
 nodejs
-	feature
-		non-blocking I/O
-		event drivning
-	work model
-		client
-		event loop
-		non-blocking worker
+    feature
+        non-blocking I/O
+        event drivning
+    work model
+        client
+        event loop
+        non-blocking worker		
+    environment
+        commonjs
+            exports
+                export function
+                export varibles
+            require
+            module
+                module.exports
+                    export all
+            __filename
+            __dirname - js file folder
+        global
+            global varibles
+        Buffer - binary data object            			
+        process
+            argv
+            argv0
+            execArgv
+            execPath
+			env
+				PATH
+			cwd - run node folder
+        timer
+            fastest - process.nextTick
+            faster - setTimeout
+            next - setImmediate          
+            
+        require        
+            load as file
+                file
+                file.js
+                file.json
+                file.node
+            caching
+                after first load
+            sys modules
+                fs
+            3-party modules
+                npm install
+                yarm add
+    api
+        path
+            win32
+            posix
+            basename
+            extname
+            dirname
+            normalize
+            join
+            resolve
+				./ runtime folder
+            parse
+            format
+                dir > root
+                base >    name,ext
+            sep - split path(ex: / \ )
+            delimter - split PATH(ex: ;,:)
+				win32.delimter ;
+				posfix.delmter :
+        Buffer
+			alloc - clear 0
+			unsafeAlloc
+			from
+				array
+				string
+				string encoding
+			byteLength
+			isBuffer
+			concat
+			buf object
+				length
+				indexOf
+				copy
+				fill
+				equals
+			StringDecoder
+				write(buf)
+        event
+			EventEmitter - class extends
+			on(event,fn)
+			emit(eventname,argv)
+			removeListener(eventname,fn)
+			removeAllListeners
+        fs
+			unlink
+			readFile(path,('utf-8'),(err,data)=>{});
+			readFileSync
+			writeFile
+			stat(path,(err,stats)=>{});
+				stats.isFile
+				stats.isDirectory
+				stats.size
+				stats.ctime
+			rename
+			readdir
+			mkdir
+			rmdir
+			watch
+			createReadSteam
+			
+    debug
+        inspect
+            node --inspect
+            node --inspect-brk
+        chrome
+            plugin - Nodejs Inspector Manager
+            chrome://inspect
+        vscode

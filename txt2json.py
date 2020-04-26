@@ -6,6 +6,8 @@ import json
 # input: [folder] => folder/*.txt , output: *.json
 if len(sys.argv)==2:
     input_file = sys.argv[1]
+#else:
+#    input_file='./mindmap/nodejs.txt'
 
 def txt2json(file):    
     print('txt2json:%s'%file)
@@ -14,6 +16,8 @@ def txt2json(file):
         json_list =[]
         last_tab_parent = dict()    
         for index,line in enumerate(lines):
+            line = line.rstrip()
+            line = line.replace('    ',"\t")
             offset = line.count('\t')
             #print('[%d]offset:%d'%(index,offset))
             if offset == 0:
