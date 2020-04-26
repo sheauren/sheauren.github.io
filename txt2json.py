@@ -24,8 +24,9 @@ def txt2json(file):
                 last_tab_parent[offset]=id
                 json_list.append({"id":id,"parentid":last_tab_parent[offset-1],"topic":line.strip()})
         #print('json_list',json_list)
-    
-    with codecs.open(os.path.splitext(file)[0]+'.json','w','utf-8') as f:
+    to_file=os.path.splitext(file)[0]+'.json'
+    print('write to:%s'%to_file)
+    with codecs.open(to_file,'w','utf-8') as f:
         json.dump(json_list,f,indent=4)
 
 if os.path.isdir(input_file):
@@ -34,3 +35,5 @@ if os.path.isdir(input_file):
             txt2json(os.path.join(root,file))
 elif os.path.isfile(input_file):
     txt2json(input_file)
+else:
+    print('file not found..')
