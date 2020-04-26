@@ -6,9 +6,11 @@
     <script type='text/javascript' src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
   <body>
-	  <h1>Index</h1>
-    <a href='show_mindmap?json=josn/Probability_Statistics.json'>Probability&Statistics</a>
-    <a href='show_mindmap?json=josn/nodejs.json'>Node.js</a>
+    <h1>Index</h1>
+    <ol>
+    <li><a href='show_mindmap?json=json/Probability_Statistics.json'>Probability&Statistics</a></li>
+    <li><a href='show_mindmap?json=json/nodejs.json'>Node.js</a></li>
+    </ol>
     <div id='app'>
 		<button v-on:click='click'>Click</button>
         {{ count }}
