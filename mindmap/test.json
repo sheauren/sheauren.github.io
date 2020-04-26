@@ -1,0 +1,97 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Probability & Statistics"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Basic"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "Basic Term"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "Sample Space"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_1",
+        "topic": "Random Varibles"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_1",
+        "topic": "Probability Distribution"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_1",
+        "topic": "Independent"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": "Conjucate"
+    },
+    {
+        "id": "line_8",
+        "parentid": "root",
+        "topic": "Baysian"
+    },
+    {
+        "id": "line_9",
+        "parentid": "root",
+        "topic": "Model"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "Discriminative"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "Linear Regression"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_9",
+        "topic": "Generative"
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "Unsupervised"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "VAE"
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_13",
+        "topic": "GAN"
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_12",
+        "topic": "Supervised"
+    },
+    {
+        "id": "line_17",
+        "parentid": "root",
+        "topic": "Sampling"
+    },
+    {
+        "id": "line_18",
+        "parentid": "root",
+        "topic": "Information Theroy"
+    }
+]

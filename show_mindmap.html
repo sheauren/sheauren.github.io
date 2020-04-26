@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>jsMind</title>
+    <link type="text/css" rel="stylesheet" href="jsmind.css" />
+    <style type="text/css">
+        #jsmind_container {
+            width: 90%;
+            height: 500px;
+            border: solid 1px #ccc;
+            background: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="jsmind_container"></div>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-3.5.0.slim.min.js'></script>
+    <script type="text/javascript" src="jsmind.js"></script>
+    <script type="text/javascript" src="jsmind.draggable.js"></script>
+    <script type="text/javascript">
+        function getQuerys() {
+            var url = window.location.search.substring(1),
+            querystring = url.split('&')                
+            querys={}
+            for (i = 0; i < querystring.length; i++) {
+                params = querystring[i].split('=');
+                querys[params[0]] = params[1]
+
+            }
+            return querys
+        };
+        function loadJSON(file,callback) {
+            var xobj = new XMLHttpRequest();
+            xobj.overrideMimeType("application/json");
+            xobj.open('GET', file, true);
+            xobj.onreadystatechange = function() {
+                if (xobj.readyState === 4 && xobj.status === 200) {
+                    callback(xobj.responseText);
+                }
+            };
+            xobj.send(null);
+        }
+        function load_jsmind() {
+            querys = getQuerys()
+            if (querys['json']!=undefined){
+                file = querys['json']                
+            }
+            else{
+                file = 'test.json'
+            }
+            $("#jsmind_container").height(window.innerHeight - 10);
+            $("#jsmind_container").width(window.innerWidth - 10);
+            loadJSON('./Probability_Statistics.json',(json)=>{
+                json=eval(json)
+                var mind = {
+                    "meta": {},
+                    "format": "node_array",
+                    "data": json
+                };
+                var options = {
+                    container: 'jsmind_container',
+                    editable: false,
+                    theme: 'primary'
+                }
+                var jm = jsMind.show(options, mind);
+
+            });
+        }
+        load_jsmind();
+    </script>
+</body>
+
+</html>
