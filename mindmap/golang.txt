@@ -1,0 +1,27 @@
+Go lang
+    Feature
+        goroute
+            go - go func
+            channel - pine communcation
+                var pipe chan int
+                pipe := cmake(chan int 3)
+        auto garbage collection
+        defer - execute when end
+        := define
+        make - create object
+        <- write
+        -> read
+    environment
+        go run xxx.go
+        gofmt -w xxx.go
+            format go file & write back
+    basic
+        func add(a int,b int)int{}
+        func add(a int,b int)(int,int){}
+        var str :="hello world"
+        package main
+            import "main"\n import "fmt"
+            import("main"\n"fmt")
+    api
+        fmt
+            Println
