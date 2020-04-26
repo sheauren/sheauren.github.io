@@ -52,7 +52,7 @@
             else{
                 file = './mindmap/test.json'
             }
-            window.document.title = 'mindmap - '+file.replace('mindmap/','')
+            window.document.title = 'mindmap - '+file.replace('mindmap/','').replace('.json','')
             $("#jsmind_container").height(window.innerHeight - 10);
             $("#jsmind_container").width(window.innerWidth - 10);
             loadJSON(file,(json)=>{
