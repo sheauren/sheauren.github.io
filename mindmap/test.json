@@ -7,95 +7,113 @@
     {
         "id": "line_1",
         "parentid": "root",
-        "topic": "Basic"
+        "topic": "Basic",
+        "background-color": "#0000ff"
     },
     {
         "id": "line_2",
         "parentid": "line_1",
-        "topic": "Basic Term"
+        "topic": "Basic Term",
+        "background-color": "#33ff33"
     },
     {
         "id": "line_3",
         "parentid": "line_1",
-        "topic": "Sample Space"
+        "topic": "Sample Space",
+        "background-color": "#33ff33"
     },
     {
         "id": "line_4",
         "parentid": "line_1",
-        "topic": "Random Varibles"
+        "topic": "Random Varibles",
+        "background-color": "#33ff33"
     },
     {
         "id": "line_5",
         "parentid": "line_1",
-        "topic": "Probability Distribution"
+        "topic": "Probability Distribution",
+        "background-color": "#33ff33"
     },
     {
         "id": "line_6",
         "parentid": "line_1",
-        "topic": "Independent"
+        "topic": "Independent",
+        "background-color": "#33ff33"
     },
     {
         "id": "line_7",
         "parentid": "line_1",
-        "topic": "Conjucate"
+        "topic": "Conjucate",
+        "background-color": "#33ff33"
     },
     {
         "id": "line_8",
         "parentid": "root",
-        "topic": "Baysian"
+        "topic": "Baysian",
+        "background-color": "#0000ff"
     },
     {
         "id": "line_9",
         "parentid": "root",
-        "topic": "Model"
+        "topic": "Model",
+        "background-color": "#0000ff"
     },
     {
         "id": "line_10",
         "parentid": "line_9",
-        "topic": "Discriminative"
+        "topic": "Discriminative",
+        "background-color": "#33ff33"
     },
     {
         "id": "line_11",
         "parentid": "line_10",
         "topic": "Linear Regression",
+        "background-color": "#fff",
         "expanded": false
     },
     {
         "id": "line_12",
         "parentid": "line_9",
-        "topic": "Generative"
+        "topic": "Generative",
+        "background-color": "#33ff33"
     },
     {
         "id": "line_13",
         "parentid": "line_12",
         "topic": "Unsupervised",
+        "background-color": "#fff",
         "expanded": false
     },
     {
         "id": "line_14",
         "parentid": "line_13",
         "topic": "VAE",
+        "background-color": "#0000ff",
         "expanded": false
     },
     {
         "id": "line_15",
         "parentid": "line_13",
         "topic": "GAN",
+        "background-color": "#0000ff",
         "expanded": false
     },
     {
         "id": "line_16",
         "parentid": "line_9",
-        "topic": "Supervised"
+        "topic": "Supervised",
+        "background-color": "#33ff33"
     },
     {
         "id": "line_17",
         "parentid": "root",
-        "topic": "Sampling"
+        "topic": "Sampling",
+        "background-color": "#0000ff"
     },
     {
         "id": "line_18",
         "parentid": "root",
-        "topic": "Information Theroy"
+        "topic": "Information Theroy",
+        "background-color": "#0000ff"
     }
 ]

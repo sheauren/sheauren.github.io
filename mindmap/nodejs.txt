@@ -104,8 +104,20 @@ nodejs
 			mkdir
 			rmdir
 			watch
-			createReadSteam
-			
+			createReadStream
+			createWriteStream
+	promise/async
+		promisify
+			util.promisify(fs.readFile).read
+			then
+			catch
+		promise
+			return new promise
+			resolve
+			reject
+		aync/await
+			aync function: read = util.promisify(fs.readFile)
+			await call: await read
     debug
         inspect
             node --inspect

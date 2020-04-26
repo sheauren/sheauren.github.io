@@ -9,6 +9,8 @@ if len(sys.argv)==2:
 #else:
 #    input_file='./mindmap/nodejs.txt'
 
+colors = ['#fff','#0000ff','#33ff33','#fff','#0000ff','#33ff33','#fff','#0000ff','#33ff33','#fff','#0000ff','#33ff33']
+
 def txt2json(file):    
     print('txt2json:%s'%file)
     with codecs.open(file,'r','utf-8') as f:
@@ -19,7 +21,7 @@ def txt2json(file):
             line = line.rstrip()
             line = line.replace('    ',"\t")
             offset = line.count('\t')
-            #print('[%d]offset:%d'%(index,offset))
+            color = colors[offset]
             if offset == 0:
                 last_tab_parent[0] = "root"
                 json_list.append({"id":"root","isroot":True,"topic":line.strip()})
@@ -27,10 +29,9 @@ def txt2json(file):
                 id = "line_%d"%index
                 last_tab_parent[offset]=id
                 if offset >2:                    
-                    json_list.append({"id":id,"parentid":last_tab_parent[offset-1],"topic":line.strip(),"expanded":False})
+                    json_list.append({"id":id,"parentid":last_tab_parent[offset-1],"topic":line.strip(),"background-color":color,"expanded":False})
                 else:
-                    json_list.append({"id":id,"parentid":last_tab_parent[offset-1],"topic":line.strip()})
-        #print('json_list',json_list)
+                    json_list.append({"id":id,"parentid":last_tab_parent[offset-1],"topic":line.strip(),"background-color":color})
     to_file=os.path.splitext(file)[0]+'.json'
     print('write to:%s'%to_file)
     with codecs.open(to_file,'w','utf-8') as f:
