@@ -8,7 +8,7 @@
         "id": "line_1",
         "parentid": "root",
         "topic": "Basic",
-        "background-color": "#0000ff"
+        "background-color": "#3333ff"
     },
     {
         "id": "line_2",
@@ -50,13 +50,13 @@
         "id": "line_8",
         "parentid": "root",
         "topic": "Baysian",
-        "background-color": "#0000ff"
+        "background-color": "#3333ff"
     },
     {
         "id": "line_9",
         "parentid": "root",
         "topic": "Model",
-        "background-color": "#0000ff"
+        "background-color": "#3333ff"
     },
     {
         "id": "line_10",
@@ -68,7 +68,7 @@
         "id": "line_11",
         "parentid": "line_10",
         "topic": "Linear Regression",
-        "background-color": "#fff",
+        "background-color": "#ff3333",
         "expanded": false
     },
     {
@@ -81,21 +81,21 @@
         "id": "line_13",
         "parentid": "line_12",
         "topic": "Unsupervised",
-        "background-color": "#fff",
+        "background-color": "#ff3333",
         "expanded": false
     },
     {
         "id": "line_14",
         "parentid": "line_13",
         "topic": "VAE",
-        "background-color": "#0000ff",
+        "background-color": "#6633ff",
         "expanded": false
     },
     {
         "id": "line_15",
         "parentid": "line_13",
         "topic": "GAN",
-        "background-color": "#0000ff",
+        "background-color": "#6633ff",
         "expanded": false
     },
     {
@@ -108,12 +108,12 @@
         "id": "line_17",
         "parentid": "root",
         "topic": "Sampling",
-        "background-color": "#0000ff"
+        "background-color": "#3333ff"
     },
     {
         "id": "line_18",
         "parentid": "root",
         "topic": "Information Theroy",
-        "background-color": "#0000ff"
+        "background-color": "#3333ff"
     }
 ]

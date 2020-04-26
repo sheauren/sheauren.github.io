@@ -9,7 +9,7 @@ if len(sys.argv)==2:
 #else:
 #    input_file='./mindmap/nodejs.txt'
 
-colors = ['#fff','#0000ff','#33ff33','#fff','#0000ff','#33ff33','#fff','#0000ff','#33ff33','#fff','#0000ff','#33ff33']
+colors = ['#fff','#3333ff','#33ff33','#ff3333','#6633ff','#33ff66','#ff6633','#9933ff','#33ff99','#ff6699']
 
 def txt2json(file):    
     print('txt2json:%s'%file)
