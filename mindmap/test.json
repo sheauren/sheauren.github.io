@@ -36,7 +36,7 @@
     },
     {
         "id": "line_7",
-        "parentid": "line_6",
+        "parentid": "line_1",
         "topic": "Conjucate"
     },
     {
@@ -57,7 +57,8 @@
     {
         "id": "line_11",
         "parentid": "line_10",
-        "topic": "Linear Regression"
+        "topic": "Linear Regression",
+        "expanded": false
     },
     {
         "id": "line_12",
@@ -67,21 +68,24 @@
     {
         "id": "line_13",
         "parentid": "line_12",
-        "topic": "Unsupervised"
+        "topic": "Unsupervised",
+        "expanded": false
     },
     {
         "id": "line_14",
         "parentid": "line_13",
-        "topic": "VAE"
+        "topic": "VAE",
+        "expanded": false
     },
     {
         "id": "line_15",
         "parentid": "line_13",
-        "topic": "GAN"
+        "topic": "GAN",
+        "expanded": false
     },
     {
         "id": "line_16",
-        "parentid": "line_12",
+        "parentid": "line_9",
         "topic": "Supervised"
     },
     {

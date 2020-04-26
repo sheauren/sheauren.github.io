@@ -52,47 +52,56 @@
     {
         "id": "line_10",
         "parentid": "line_9",
-        "topic": "exports"
+        "topic": "exports",
+        "expanded": false
     },
     {
         "id": "line_11",
         "parentid": "line_10",
-        "topic": "export function"
+        "topic": "export function",
+        "expanded": false
     },
     {
         "id": "line_12",
         "parentid": "line_10",
-        "topic": "export varibles"
+        "topic": "export varibles",
+        "expanded": false
     },
     {
         "id": "line_13",
         "parentid": "line_9",
-        "topic": "require"
+        "topic": "require",
+        "expanded": false
     },
     {
         "id": "line_14",
         "parentid": "line_9",
-        "topic": "module"
+        "topic": "module",
+        "expanded": false
     },
     {
         "id": "line_15",
         "parentid": "line_14",
-        "topic": "module.exports"
+        "topic": "module.exports",
+        "expanded": false
     },
     {
         "id": "line_16",
         "parentid": "line_15",
-        "topic": "export all"
+        "topic": "export all",
+        "expanded": false
     },
     {
         "id": "line_17",
         "parentid": "line_9",
-        "topic": "__filename"
+        "topic": "__filename",
+        "expanded": false
     },
     {
         "id": "line_18",
         "parentid": "line_9",
-        "topic": "__dirname - js file folder"
+        "topic": "__dirname - js file folder",
+        "expanded": false
     },
     {
         "id": "line_19",
@@ -102,7 +111,8 @@
     {
         "id": "line_20",
         "parentid": "line_19",
-        "topic": "global varibles"
+        "topic": "global varibles",
+        "expanded": false
     },
     {
         "id": "line_21",
@@ -117,37 +127,44 @@
     {
         "id": "line_23",
         "parentid": "line_22",
-        "topic": "argv"
+        "topic": "argv",
+        "expanded": false
     },
     {
         "id": "line_24",
         "parentid": "line_22",
-        "topic": "argv0"
+        "topic": "argv0",
+        "expanded": false
     },
     {
         "id": "line_25",
         "parentid": "line_22",
-        "topic": "execArgv"
+        "topic": "execArgv",
+        "expanded": false
     },
     {
         "id": "line_26",
         "parentid": "line_22",
-        "topic": "execPath"
+        "topic": "execPath",
+        "expanded": false
     },
     {
         "id": "line_27",
         "parentid": "line_22",
-        "topic": "env"
+        "topic": "env",
+        "expanded": false
     },
     {
         "id": "line_28",
         "parentid": "line_27",
-        "topic": "PATH"
+        "topic": "PATH",
+        "expanded": false
     },
     {
         "id": "line_29",
         "parentid": "line_22",
-        "topic": "cwd - run node folder"
+        "topic": "cwd - run node folder",
+        "expanded": false
     },
     {
         "id": "line_30",
@@ -157,17 +174,20 @@
     {
         "id": "line_31",
         "parentid": "line_30",
-        "topic": "fastest - process.nextTick"
+        "topic": "fastest - process.nextTick",
+        "expanded": false
     },
     {
         "id": "line_32",
         "parentid": "line_30",
-        "topic": "faster - setTimeout"
+        "topic": "faster - setTimeout",
+        "expanded": false
     },
     {
         "id": "line_33",
         "parentid": "line_30",
-        "topic": "next - setImmediate"
+        "topic": "next - setImmediate",
+        "expanded": false
     },
     {
         "id": "root",
@@ -182,62 +202,74 @@
     {
         "id": "line_36",
         "parentid": "line_35",
-        "topic": "load as file"
+        "topic": "load as file",
+        "expanded": false
     },
     {
         "id": "line_37",
         "parentid": "line_36",
-        "topic": "file"
+        "topic": "file",
+        "expanded": false
     },
     {
         "id": "line_38",
         "parentid": "line_36",
-        "topic": "file.js"
+        "topic": "file.js",
+        "expanded": false
     },
     {
         "id": "line_39",
         "parentid": "line_36",
-        "topic": "file.json"
+        "topic": "file.json",
+        "expanded": false
     },
     {
         "id": "line_40",
         "parentid": "line_36",
-        "topic": "file.node"
+        "topic": "file.node",
+        "expanded": false
     },
     {
         "id": "line_41",
         "parentid": "line_35",
-        "topic": "caching"
+        "topic": "caching",
+        "expanded": false
     },
     {
         "id": "line_42",
         "parentid": "line_41",
-        "topic": "after first load"
+        "topic": "after first load",
+        "expanded": false
     },
     {
         "id": "line_43",
         "parentid": "line_35",
-        "topic": "sys modules"
+        "topic": "sys modules",
+        "expanded": false
     },
     {
         "id": "line_44",
         "parentid": "line_43",
-        "topic": "fs"
+        "topic": "fs",
+        "expanded": false
     },
     {
         "id": "line_45",
         "parentid": "line_35",
-        "topic": "3-party modules"
+        "topic": "3-party modules",
+        "expanded": false
     },
     {
         "id": "line_46",
         "parentid": "line_45",
-        "topic": "npm install"
+        "topic": "npm install",
+        "expanded": false
     },
     {
         "id": "line_47",
         "parentid": "line_45",
-        "topic": "yarm add"
+        "topic": "yarm add",
+        "expanded": false
     },
     {
         "id": "line_48",
@@ -252,87 +284,104 @@
     {
         "id": "line_50",
         "parentid": "line_49",
-        "topic": "win32"
+        "topic": "win32",
+        "expanded": false
     },
     {
         "id": "line_51",
         "parentid": "line_49",
-        "topic": "posix"
+        "topic": "posix",
+        "expanded": false
     },
     {
         "id": "line_52",
         "parentid": "line_49",
-        "topic": "basename"
+        "topic": "basename",
+        "expanded": false
     },
     {
         "id": "line_53",
         "parentid": "line_49",
-        "topic": "extname"
+        "topic": "extname",
+        "expanded": false
     },
     {
         "id": "line_54",
         "parentid": "line_49",
-        "topic": "dirname"
+        "topic": "dirname",
+        "expanded": false
     },
     {
         "id": "line_55",
         "parentid": "line_49",
-        "topic": "normalize"
+        "topic": "normalize",
+        "expanded": false
     },
     {
         "id": "line_56",
         "parentid": "line_49",
-        "topic": "join"
+        "topic": "join",
+        "expanded": false
     },
     {
         "id": "line_57",
         "parentid": "line_49",
-        "topic": "resolve"
+        "topic": "resolve",
+        "expanded": false
     },
     {
         "id": "line_58",
         "parentid": "line_57",
-        "topic": "./ runtime folder"
+        "topic": "./ runtime folder",
+        "expanded": false
     },
     {
         "id": "line_59",
         "parentid": "line_49",
-        "topic": "parse"
+        "topic": "parse",
+        "expanded": false
     },
     {
         "id": "line_60",
         "parentid": "line_49",
-        "topic": "format"
+        "topic": "format",
+        "expanded": false
     },
     {
         "id": "line_61",
         "parentid": "line_60",
-        "topic": "dir > root"
+        "topic": "dir > root",
+        "expanded": false
     },
     {
         "id": "line_62",
         "parentid": "line_61",
-        "topic": "base >\tname,ext"
+        "topic": "base >\tname,ext",
+        "expanded": false
     },
     {
         "id": "line_63",
         "parentid": "line_49",
-        "topic": "sep - split path(ex: / \\ )"
+        "topic": "sep - split path(ex: / \\ )",
+        "expanded": false
     },
     {
         "id": "line_64",
         "parentid": "line_49",
-        "topic": "delimter - split PATH(ex: ;,:)"
+        "topic": "delimter - split PATH(ex: ;,:)",
+        "expanded": false
     },
     {
         "id": "line_65",
         "parentid": "line_64",
-        "topic": "win32.delimter ;"
+        "topic": "win32.delimter ;",
+        "expanded": false
     },
     {
         "id": "line_66",
         "parentid": "line_64",
-        "topic": "posfix.delmter :"
+        "topic": "posfix.delmter :",
+        "expanded": false
     },
     {
         "id": "line_67",
@@ -342,87 +391,104 @@
     {
         "id": "line_68",
         "parentid": "line_67",
-        "topic": "alloc - clear 0"
+        "topic": "alloc - clear 0",
+        "expanded": false
     },
     {
         "id": "line_69",
         "parentid": "line_67",
-        "topic": "unsafeAlloc"
+        "topic": "unsafeAlloc",
+        "expanded": false
     },
     {
         "id": "line_70",
         "parentid": "line_67",
-        "topic": "from"
+        "topic": "from",
+        "expanded": false
     },
     {
         "id": "line_71",
         "parentid": "line_70",
-        "topic": "array"
+        "topic": "array",
+        "expanded": false
     },
     {
         "id": "line_72",
         "parentid": "line_70",
-        "topic": "string"
+        "topic": "string",
+        "expanded": false
     },
     {
         "id": "line_73",
         "parentid": "line_70",
-        "topic": "string encoding"
+        "topic": "string encoding",
+        "expanded": false
     },
     {
         "id": "line_74",
         "parentid": "line_67",
-        "topic": "byteLength"
+        "topic": "byteLength",
+        "expanded": false
     },
     {
         "id": "line_75",
         "parentid": "line_67",
-        "topic": "isBuffer"
+        "topic": "isBuffer",
+        "expanded": false
     },
     {
         "id": "line_76",
         "parentid": "line_67",
-        "topic": "concat"
+        "topic": "concat",
+        "expanded": false
     },
     {
         "id": "line_77",
         "parentid": "line_67",
-        "topic": "buf object"
+        "topic": "buf object",
+        "expanded": false
     },
     {
         "id": "line_78",
         "parentid": "line_77",
-        "topic": "length"
+        "topic": "length",
+        "expanded": false
     },
     {
         "id": "line_79",
         "parentid": "line_77",
-        "topic": "indexOf"
+        "topic": "indexOf",
+        "expanded": false
     },
     {
         "id": "line_80",
         "parentid": "line_77",
-        "topic": "copy"
+        "topic": "copy",
+        "expanded": false
     },
     {
         "id": "line_81",
         "parentid": "line_77",
-        "topic": "fill"
+        "topic": "fill",
+        "expanded": false
     },
     {
         "id": "line_82",
         "parentid": "line_77",
-        "topic": "equals"
+        "topic": "equals",
+        "expanded": false
     },
     {
         "id": "line_83",
         "parentid": "line_67",
-        "topic": "StringDecoder"
+        "topic": "StringDecoder",
+        "expanded": false
     },
     {
         "id": "line_84",
         "parentid": "line_83",
-        "topic": "write(buf)"
+        "topic": "write(buf)",
+        "expanded": false
     },
     {
         "id": "line_85",
@@ -432,27 +498,32 @@
     {
         "id": "line_86",
         "parentid": "line_85",
-        "topic": "EventEmitter - class extends"
+        "topic": "EventEmitter - class extends",
+        "expanded": false
     },
     {
         "id": "line_87",
         "parentid": "line_85",
-        "topic": "on(event,fn)"
+        "topic": "on(event,fn)",
+        "expanded": false
     },
     {
         "id": "line_88",
         "parentid": "line_85",
-        "topic": "emit(eventname,argv)"
+        "topic": "emit(eventname,argv)",
+        "expanded": false
     },
     {
         "id": "line_89",
         "parentid": "line_85",
-        "topic": "removeListener(eventname,fn)"
+        "topic": "removeListener(eventname,fn)",
+        "expanded": false
     },
     {
         "id": "line_90",
         "parentid": "line_85",
-        "topic": "removeAllListeners"
+        "topic": "removeAllListeners",
+        "expanded": false
     },
     {
         "id": "line_91",
@@ -462,77 +533,92 @@
     {
         "id": "line_92",
         "parentid": "line_91",
-        "topic": "unlink"
+        "topic": "unlink",
+        "expanded": false
     },
     {
         "id": "line_93",
         "parentid": "line_91",
-        "topic": "readFile(path,('utf-8'),(err,data)=>{});"
+        "topic": "readFile(path,('utf-8'),(err,data)=>{});",
+        "expanded": false
     },
     {
         "id": "line_94",
         "parentid": "line_91",
-        "topic": "readFileSync"
+        "topic": "readFileSync",
+        "expanded": false
     },
     {
         "id": "line_95",
         "parentid": "line_91",
-        "topic": "writeFile"
+        "topic": "writeFile",
+        "expanded": false
     },
     {
         "id": "line_96",
         "parentid": "line_91",
-        "topic": "stat(path,(err,stats)=>{});"
+        "topic": "stat(path,(err,stats)=>{});",
+        "expanded": false
     },
     {
         "id": "line_97",
         "parentid": "line_96",
-        "topic": "stats.isFile"
+        "topic": "stats.isFile",
+        "expanded": false
     },
     {
         "id": "line_98",
         "parentid": "line_96",
-        "topic": "stats.isDirectory"
+        "topic": "stats.isDirectory",
+        "expanded": false
     },
     {
         "id": "line_99",
         "parentid": "line_96",
-        "topic": "stats.size"
+        "topic": "stats.size",
+        "expanded": false
     },
     {
         "id": "line_100",
         "parentid": "line_96",
-        "topic": "stats.ctime"
+        "topic": "stats.ctime",
+        "expanded": false
     },
     {
         "id": "line_101",
         "parentid": "line_91",
-        "topic": "rename"
+        "topic": "rename",
+        "expanded": false
     },
     {
         "id": "line_102",
         "parentid": "line_91",
-        "topic": "readdir"
+        "topic": "readdir",
+        "expanded": false
     },
     {
         "id": "line_103",
         "parentid": "line_91",
-        "topic": "mkdir"
+        "topic": "mkdir",
+        "expanded": false
     },
     {
         "id": "line_104",
         "parentid": "line_91",
-        "topic": "rmdir"
+        "topic": "rmdir",
+        "expanded": false
     },
     {
         "id": "line_105",
         "parentid": "line_91",
-        "topic": "watch"
+        "topic": "watch",
+        "expanded": false
     },
     {
         "id": "line_106",
         "parentid": "line_91",
-        "topic": "createReadSteam"
+        "topic": "createReadSteam",
+        "expanded": false
     },
     {
         "id": "root",
@@ -552,12 +638,14 @@
     {
         "id": "line_110",
         "parentid": "line_109",
-        "topic": "node --inspect"
+        "topic": "node --inspect",
+        "expanded": false
     },
     {
         "id": "line_111",
         "parentid": "line_109",
-        "topic": "node --inspect-brk"
+        "topic": "node --inspect-brk",
+        "expanded": false
     },
     {
         "id": "line_112",
@@ -567,12 +655,14 @@
     {
         "id": "line_113",
         "parentid": "line_112",
-        "topic": "plugin - Nodejs Inspector Manager"
+        "topic": "plugin - Nodejs Inspector Manager",
+        "expanded": false
     },
     {
         "id": "line_114",
         "parentid": "line_112",
-        "topic": "chrome://inspect"
+        "topic": "chrome://inspect",
+        "expanded": false
     },
     {
         "id": "line_115",
