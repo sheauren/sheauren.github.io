@@ -5,38 +5,38 @@
         "topic": "nodejs"
     },
     {
-        "id": "root",
-        "isroot": true,
+        "id": "line_1",
+        "parentid": "root",
         "topic": "feature"
     },
     {
-        "id": "root",
-        "isroot": true,
+        "id": "line_2",
+        "parentid": "line_1",
         "topic": "non-blocking I/O"
     },
     {
-        "id": "root",
-        "isroot": true,
+        "id": "line_3",
+        "parentid": "line_1",
         "topic": "event drivning"
     },
     {
-        "id": "root",
-        "isroot": true,
+        "id": "line_4",
+        "parentid": "root",
         "topic": "work model"
     },
     {
-        "id": "root",
-        "isroot": true,
+        "id": "line_5",
+        "parentid": "line_4",
         "topic": "client"
     },
     {
-        "id": "root",
-        "isroot": true,
+        "id": "line_6",
+        "parentid": "line_4",
         "topic": "event loop"
     },
     {
-        "id": "root",
-        "isroot": true,
+        "id": "line_7",
+        "parentid": "line_4",
         "topic": "non-blocking worker"
     }
 ]
