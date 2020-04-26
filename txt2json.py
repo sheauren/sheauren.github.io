@@ -1,5 +1,6 @@
 import sys,os
 import codecs
+import math
 import json
 
 # input: [name].txt ,output: [name].json
@@ -15,6 +16,10 @@ def txt2json(file):
     print('txt2json:%s'%file)
     with codecs.open(file,'r','utf-8') as f:
         lines = f.readlines()
+        sqrt_lines = math.sqrt(len(lines))        
+        expand_limit = 2
+        if sqrt_lines>10:
+            expand_limit=1
         json_list =[]
         last_tab_parent = dict()    
         for index,line in enumerate(lines):
@@ -28,7 +33,7 @@ def txt2json(file):
             else:
                 id = "line_%d"%index
                 last_tab_parent[offset]=id
-                if offset >2:                    
+                if offset >expand_limit:                    
                     json_list.append({"id":id,"parentid":last_tab_parent[offset-1],"topic":line.strip(),"background-color":color,"expanded":False})
                 else:
                     json_list.append({"id":id,"parentid":last_tab_parent[offset-1],"topic":line.strip(),"background-color":color})

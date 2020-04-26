@@ -14,13 +14,15 @@
         "id": "line_2",
         "parentid": "line_1",
         "topic": "non-blocking I/O",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_3",
         "parentid": "line_1",
         "topic": "event drivning",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_4",
@@ -32,19 +34,22 @@
         "id": "line_5",
         "parentid": "line_4",
         "topic": "client",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_6",
         "parentid": "line_4",
         "topic": "event loop",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_7",
         "parentid": "line_4",
         "topic": "non-blocking worker",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_8",
@@ -56,7 +61,8 @@
         "id": "line_9",
         "parentid": "line_8",
         "topic": "commonjs",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_10",
@@ -125,7 +131,8 @@
         "id": "line_19",
         "parentid": "line_8",
         "topic": "global",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_20",
@@ -138,13 +145,15 @@
         "id": "line_21",
         "parentid": "line_8",
         "topic": "Buffer - binary data object",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_22",
         "parentid": "line_8",
         "topic": "process",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_23",
@@ -199,7 +208,8 @@
         "id": "line_30",
         "parentid": "line_8",
         "topic": "timer",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_31",
@@ -231,7 +241,8 @@
         "id": "line_35",
         "parentid": "line_8",
         "topic": "require",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_36",
@@ -327,7 +338,8 @@
         "id": "line_49",
         "parentid": "line_48",
         "topic": "path",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_50",
@@ -452,7 +464,8 @@
         "id": "line_67",
         "parentid": "line_48",
         "topic": "Buffer",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_68",
@@ -577,7 +590,8 @@
         "id": "line_85",
         "parentid": "line_48",
         "topic": "event",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_86",
@@ -618,7 +632,8 @@
         "id": "line_91",
         "parentid": "line_48",
         "topic": "fs",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_92",
@@ -742,7 +757,8 @@
         "id": "line_109",
         "parentid": "line_108",
         "topic": "promisify",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_110",
@@ -769,7 +785,8 @@
         "id": "line_113",
         "parentid": "line_108",
         "topic": "promise",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_114",
@@ -796,7 +813,8 @@
         "id": "line_117",
         "parentid": "line_108",
         "topic": "aync/await",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_118",
@@ -822,7 +840,8 @@
         "id": "line_121",
         "parentid": "line_120",
         "topic": "inspect",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_122",
@@ -842,7 +861,8 @@
         "id": "line_124",
         "parentid": "line_120",
         "topic": "chrome",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     },
     {
         "id": "line_125",
@@ -862,6 +882,7 @@
         "id": "line_127",
         "parentid": "line_120",
         "topic": "vscode",
-        "background-color": "#33ff33"
+        "background-color": "#33ff33",
+        "expanded": false
     }
 ]
