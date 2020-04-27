@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <title>random color generate </title>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-3.5.0.min.js'></script>
+    <script type='text/javascript'>
+        function generate_random_color(start, end, num) {
+            random_color=[]
+            for (var i = 0; i < 3; i++) {                                
+                if(start[i]==end[i]){
+                    range_start=start[i]+50
+                    range_end=start[i]-50
+                    if(range_start>255)
+                        range_start=255
+                    if(range_end<0)
+                        range_end=0
+                    for(var j=0;j<num;j++){
+                        random_color.push(range_end+Math.floor(Math.random() *(range_start-range_end)))
+                    }                                        
+                }
+                else {
+                    range_start=start[i]
+                    range_end=end[i]
+                    if(start[i]<end[i]){
+                        range_start=end[i]
+                        range_end=start[i]
+                    }
+                    step_size = Math.floor((range_start-range_end)/(num+2))
+                    minimum_random = Math.floor(step_size/4)
+                    color_center=0
+                    for(var j=0;j<num;j++){
+                        color_center+=step_size
+                        random_color.push(color_center+Math.floor(Math.random() *minimum_random))
+                    }    
+                }                
+            }
+            colors=[]
+            for (var i = 0; i < num; i++) {                    
+                r = random_color[i]
+                g = random_color[i+num]
+                b = random_color[i+num+num]
+                reverse_r=255-r
+                reverse_g=255-g
+                reverse_b=255-b
+                r=r.toString(16)
+                g=g.toString(16)
+                b=b.toString(16)
+                reverse_r=reverse_r.toString(16)
+                reverse_g=reverse_g.toString(16)
+                reverse_b=reverse_b.toString(16)
+                rgb=[r,g,b]
+                reverse_rgb=[reverse_r,reverse_g,reverse_b]
+                for(index in rgb){
+                    if (rgb[index].length==1){
+                        rgb[index]="0"+rgb[index]
+                    }
+                }
+                for(index in reverse_rgb){
+                    if (reverse_rgb[index].length==1){
+                        reverse_rgb[index]="0"+reverse_rgb[index]
+                    }
+                }
+                
+                background_color = '#'+rgb.join('')
+                color = '#'+reverse_rgb.join('')
+                colors.push({
+                    background_color:background_color,
+                    color:color
+                })
+            }
+            
+            return colors
+        }
+
+        $(() => {
+            $('#generate').click(() => {
+                color_num = parseInt($('#color_num').val())
+                html_string = `<li>create num:${color_num}</li>`
+                regions_num = 4
+                var regions = [
+                    { 'start': [0xff, 0x70, 0x00], 'end': [0xff, 0xff, 0x00] },
+                    { 'start': [0xff, 0xff, 0x00], 'end': [0x00, 0xff, 0x00] },
+                    { 'start': [0x00, 0xff, 0x00], 'end': [0x00, 0x00, 0xff] },
+                    { 'start': [0x00, 0x00, 0xff], 'end': [0xa0, 0x00, 0xa0] }
+                ]
+                num_per_regions = Math.floor(color_num / regions_num)
+                generate_num_per_regions = []
+                for (var i = 0; i < regions_num; i++) {
+                    generate_num_per_regions[i] = num_per_regions
+                }
+                unregion_generate_num = color_num - num_per_regions * regions_num
+                for (var i = 0; i < unregion_generate_num; i++) {
+                    generate_num_per_regions[Math.floor(Math.random() * regions_num)]++
+                }
+                html_string += `region colors:[${generate_num_per_regions}]`
+                for (var i = 0; i < regions_num; i++) {
+                    colors = generate_random_color(regions[i].start, regions[i].end, generate_num_per_regions[i])
+                    for (index in colors) {
+                        color = colors[index].color
+                        background_color = colors[index].background_color
+                        html_string += `<li><span style="display:inline-block;width:200px;text-align:center;margin:2px;background-color:${background_color};color:${color}">${color},${background_color}</span></li>`
+                    }
+                }
+                $('#result').html(html_string)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div>
+        <span>start:</span>
+        <span style='background-color:#FF7000;color:#FFFFFF'>#FF7000</span>
+        <span>end:</span>
+        <span style='background-color:#800080;color:#FFFFFF'>#800080</span>
+        <span>skip:</span>
+        <span style='background-color:#ff0000;color:#FFFFFF'>#FF0000</span>
+    </div>
+    <div>
+        <span>create color number:</span><input type='number' id='color_num' style='width:100px' value="10"><button
+            id='generate'>Generate</button></div>
+    </div>
+    <div> <span>color road: </span>
+        1. <span style='background-color:#FF7000;color:#00FFFF'>#FF7000</span> =>
+        2. <span style='background-color:#FFFF00;color:#0000FF'>#FFFF00</span> =>
+        3. <span style='background-color:#00FF00;color:#A000A0'>#00FF00</span> =>
+        4. <span style='background-color:#0000FF;color:#FFFF00'>#0000FF</span> =>
+        5. <span style='background-color:#A000A0;color:#00FF00'>#A000A0</span>
+    </div>
+    <div>
+        <div>
+            FF~FF: random A0~FF
+            70~FF: random 70~FF
+            00~FF: random 00~FF
+            A0~FF: random A0~FF
+        </div>
+        <ol id='result'></ol>
+    </div>
+</body>
+
+</html>
