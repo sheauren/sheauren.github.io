@@ -4,11 +4,12 @@ Go lang
             go - go func
             channel - pine communcation
                 var pipe chan int
-                pipe := cmake(chan int 3)
+                pipe := cmake(chan int,3)
         auto garbage collection
         defer - execute when end
         := define
         make - create object
+            b:=make(chan int,1)
         <- write
         -> read
     environment
@@ -17,11 +18,48 @@ Go lang
             format go file & write back
     basic
         func add(a int,b int)int{}
-        func add(a int,b int)(int,int){}
+            _ = add(8,9)
+            func add(a int,b int)(int,int){}        
         var str :="hello world"
+            "string"
+            `string`
+            len("string")
+        const b string = "word"
+            const ( a=0\n b=0\n c=0)
+        var c string = "word"
+            Var ( d=0\n e=0\n f=0)
+        tmp:=[]byte(str) 
+            string to byte array
+        call by value
+            int
+            float
+            bool
+            string
+            struct
+            []
+        call by reference
+            chan
+            map
+            slice
+            &/* - like C/C++       
         package main
             import "main"\n import "fmt"
-            import("main"\n"fmt")
+            import("main"\n"fmt")            
     api
         fmt
-            Println
+            Println            
+            Printf
+                %+v
+                %#v
+                %T
+                %t
+                %b
+                %q
+                %x
+                %p
+        time
+            Sleep
+            Now
+        math
+            rand
+    
