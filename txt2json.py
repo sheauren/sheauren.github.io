@@ -10,16 +10,18 @@ if len(sys.argv)==2:
 #else:
 #    input_file='./mindmap/nodejs.txt'
 
-colors = ['#fff','#3333ff','#33ff33','#ff3333','#6633ff','#33ff66','#ff6633','#9933ff','#33ff99','#ff6699']
+colors = ['#fff','#e3aba7','#e82ad2','#0fbdff','#e3aba7','#d41dea','#01a6d5','#97d9c7','#eb6a68','#412ffc']
 
 def txt2json(file):    
     print('txt2json:%s'%file)
     with codecs.open(file,'r','utf-8') as f:
         lines = f.readlines()
-        sqrt_lines = math.sqrt(len(lines))        
+        #sqrt_lines = math.sqrt(len(lines))        
         expand_limit = 2
-        if sqrt_lines>10:
+        if len(lines)>64:
             expand_limit=1
+        if len(lines)<32:
+            expand_limit = 4
         json_list =[]
         last_tab_parent = dict()    
         for index,line in enumerate(lines):

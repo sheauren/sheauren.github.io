@@ -8,164 +8,156 @@
         "id": "line_1",
         "parentid": "root",
         "topic": "Feature",
-        "background-color": "#3333ff"
+        "background-color": "#e3aba7"
     },
     {
         "id": "line_2",
         "parentid": "line_1",
         "topic": "goroute",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_3",
         "parentid": "line_2",
         "topic": "go - go func",
-        "background-color": "#ff3333",
-        "expanded": false
+        "background-color": "#0fbdff"
     },
     {
         "id": "line_4",
         "parentid": "line_2",
         "topic": "channel - pine communcation",
-        "background-color": "#ff3333",
-        "expanded": false
+        "background-color": "#0fbdff"
     },
     {
         "id": "line_5",
         "parentid": "line_4",
         "topic": "var pipe chan int",
-        "background-color": "#6633ff",
-        "expanded": false
+        "background-color": "#e3aba7"
     },
     {
         "id": "line_6",
         "parentid": "line_4",
         "topic": "pipe := cmake(chan int 3)",
-        "background-color": "#6633ff",
-        "expanded": false
+        "background-color": "#e3aba7"
     },
     {
         "id": "line_7",
         "parentid": "line_1",
         "topic": "auto garbage collection",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_8",
         "parentid": "line_1",
         "topic": "defer - execute when end",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_9",
         "parentid": "line_1",
         "topic": ":= define",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_10",
         "parentid": "line_1",
         "topic": "make - create object",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_11",
         "parentid": "line_1",
         "topic": "<- write",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_12",
         "parentid": "line_1",
         "topic": "-> read",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_13",
         "parentid": "root",
         "topic": "environment",
-        "background-color": "#3333ff"
+        "background-color": "#e3aba7"
     },
     {
         "id": "line_14",
         "parentid": "line_13",
         "topic": "go run xxx.go",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_15",
         "parentid": "line_13",
         "topic": "gofmt -w xxx.go",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_16",
         "parentid": "line_15",
         "topic": "format go file & write back",
-        "background-color": "#ff3333",
-        "expanded": false
+        "background-color": "#0fbdff"
     },
     {
         "id": "line_17",
         "parentid": "root",
         "topic": "basic",
-        "background-color": "#3333ff"
+        "background-color": "#e3aba7"
     },
     {
         "id": "line_18",
         "parentid": "line_17",
         "topic": "func add(a int,b int)int{}",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_19",
         "parentid": "line_17",
         "topic": "func add(a int,b int)(int,int){}",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_20",
         "parentid": "line_17",
         "topic": "var str :=\"hello world\"",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_21",
         "parentid": "line_17",
         "topic": "package main",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_22",
         "parentid": "line_21",
         "topic": "import \"main\"\\n import \"fmt\"",
-        "background-color": "#ff3333",
-        "expanded": false
+        "background-color": "#0fbdff"
     },
     {
         "id": "line_23",
         "parentid": "line_21",
         "topic": "import(\"main\"\\n\"fmt\")",
-        "background-color": "#ff3333",
-        "expanded": false
+        "background-color": "#0fbdff"
     },
     {
         "id": "line_24",
         "parentid": "root",
         "topic": "api",
-        "background-color": "#3333ff"
+        "background-color": "#e3aba7"
     },
     {
         "id": "line_25",
         "parentid": "line_24",
         "topic": "fmt",
-        "background-color": "#33ff33"
+        "background-color": "#e82ad2"
     },
     {
         "id": "line_26",
         "parentid": "line_25",
         "topic": "Println",
-        "background-color": "#ff3333",
-        "expanded": false
+        "background-color": "#0fbdff"
     }
 ]
