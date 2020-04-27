@@ -19,7 +19,18 @@ Go lang
     basic
         func add(a int,b int)int{}
             _ = add(8,9)
+            return 0
             func add(a int,b int)(int,int){}        
+                return 3,4
+            func add(a int,b int)(c int,d int){}        
+                c = 3
+                d = 4
+                e,_ = add(18,339)
+            func add(a int,arg... int)int{}
+            defer
+                execute when func ending
+                release resource
+                release connection
         var str :="hello world"
             "string"
             `string`
@@ -30,6 +41,8 @@ Go lang
             Var ( d=0\n e=0\n f=0)
         tmp:=[]byte(str) 
             string to byte array
+        var b map[string]int
+            b["test"]=3
         call by value
             int
             float
@@ -45,6 +58,19 @@ Go lang
         package main
             import "main"\n import "fmt"
             import("main"\n"fmt")            
+        * pointer
+            var a int=5
+            var p *int = &a
+        if/else
+        switch/case/default
+            case i>0&&i<10:{}break
+        for i:=0;i<10;i++{}
+            for i>0{}
+                for true{}
+                for {}
+            for i,v range "hello world"{ }
+            break/continue
+        goto/label
     api
         fmt
             Println            
@@ -57,9 +83,36 @@ Go lang
                 %q
                 %x
                 %p
+            Scanf
         time
+            Time
             Sleep
             Now
+                Format
+                Day
+                Minute
+                Month
+                Year
+
         math
             rand
-    
+        strings
+            HasPrefix
+            HasSuffix
+            Index
+            LastIndex
+            Replace
+            Count
+            Repeat
+            ToLower
+            ToUpper
+            Trim
+            TrimSpace
+            TrimLeft
+            TrimRight
+            Field - Split by space
+            Split
+            Join            
+        stringconv
+            Itoa
+            Atoi           
