@@ -104,7 +104,29 @@ Go lang
             var b:make(map[string]map[string]string)
             b["key1"]=make(map[string]string)
             b["key1"]["key"]="abc"
-            # no default sort
+            # no default sort        
+        go no class
+        struct
+            type Student struct{ Name string }
+                var stu Student
+                    stu.Name = "name"
+                var stu *Student = new (Student)
+                var stu *Student = &Student{}
+            type Student2 struct{ Student }
+                var stu2 Student2
+                stu2.Name="xxx"
+            struct method
+                func (p Student) init(name string)int{p.Name=name}
+                var stu Student
+                stu.init("xxx")
+        interface
+            type Carer interface{GetName() string}
+            type BMW struct{Name string{return "BMW"}}
+            func (p *BWM) GetName()string{return p.Name}
+                var car Carer
+                var bmw BMW
+                car = &bmw
+                car.GetName()
 
     api
         fmt
@@ -165,3 +187,14 @@ Go lang
                 rwLock.RUnlock()
                 rwLock.Lock()
                 rwLock.Unlock()
+        reflect
+            TypeOf
+                ex: Student
+            ValueOf
+                set
+                    reflect.ValueOf(b).Elem().SetInt(10)
+                get
+                    c:=reflect.ValueOf(b).Elem().Int()
+            Value.Kind 
+                ex: struct
+            Value.Inteface
