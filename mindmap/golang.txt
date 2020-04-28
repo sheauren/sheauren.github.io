@@ -5,6 +5,7 @@ Go lang
             channel - pine communcation
                 var pipe chan int
                 pipe := cmake(chan int,3)
+                close
         auto garbage collection
         defer - execute when end
         := define
@@ -12,6 +13,17 @@ Go lang
             b:=make(chan int,1)
         <- write
         -> read
+        panic/recover
+            err:=errors.New("error")
+            panic(err)
+            defer func(){ if err:=recover();err!=nil{...}}()
+        closure
+            func Adder() func(int) int{
+                var x int 
+                return func(delta int)int{
+                    x+=delta
+                }
+            }
     environment
         go run xxx.go
         gofmt -w xxx.go
@@ -50,6 +62,7 @@ Go lang
             string
             struct
             []
+                len(array)
         call by reference
             chan
             map
@@ -71,6 +84,28 @@ Go lang
             for i,v range "hello world"{ }
             break/continue
         goto/label
+        new - create int/struct return pointer
+        array
+            var a [len]int
+            var a [5]int{1,2,3}
+            var a [...]int{1,2,3,4,5,6}
+            for index, v:=range a{}
+            for i:=0;i<len(a);i++){}
+            var b [5][3]int
+            slice
+                0<=cap(a)<=len(a)
+                a[0] # 0
+                a[2:4] # 2,3
+                a[:] # all
+                a[:2] # 0,1
+        map
+            var a map[string]string = map[string]string{"key":"value"}
+            a["acb"]="def"
+            var b:make(map[string]map[string]string)
+            b["key1"]=make(map[string]string)
+            b["key1"]["key"]="abc"
+            # no default sort
+
     api
         fmt
             Println            
@@ -115,4 +150,18 @@ Go lang
             Join            
         stringconv
             Itoa
-            Atoi           
+            Atoi
+        sort
+            Ints(int_array)
+            Strings(str_array)
+        sync
+            Mutex
+                var lock sync.Mutex
+                lock.Lock()
+                lock.Unlock()
+            RWMutex
+                var rwLock sync.RWMutex
+                rwLock.RLock()
+                rwLock.RUnlock()
+                rwLock.Lock()
+                rwLock.Unlock()

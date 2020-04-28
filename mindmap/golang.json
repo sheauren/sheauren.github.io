@@ -47,613 +47,856 @@
     },
     {
         "id": "line_7",
+        "parentid": "line_4",
+        "topic": "close",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
         "parentid": "line_1",
         "topic": "auto garbage collection",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_8",
+        "id": "line_9",
         "parentid": "line_1",
         "topic": "defer - execute when end",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_9",
+        "id": "line_10",
         "parentid": "line_1",
         "topic": ":= define",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_10",
+        "id": "line_11",
         "parentid": "line_1",
         "topic": "make - create object",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_11",
-        "parentid": "line_10",
+        "id": "line_12",
+        "parentid": "line_11",
         "topic": "b:=make(chan int,1)",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_12",
+        "id": "line_13",
         "parentid": "line_1",
         "topic": "<- write",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_13",
+        "id": "line_14",
         "parentid": "line_1",
         "topic": "-> read",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_14",
-        "parentid": "root",
-        "topic": "environment",
-        "background-color": "#e3aba7"
-    },
-    {
         "id": "line_15",
-        "parentid": "line_14",
-        "topic": "go run xxx.go",
+        "parentid": "line_1",
+        "topic": "panic/recover",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_16",
-        "parentid": "line_14",
-        "topic": "gofmt -w xxx.go",
-        "background-color": "#e82ad2",
+        "parentid": "line_15",
+        "topic": "err:=errors.New(\"error\")",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_17",
-        "parentid": "line_16",
-        "topic": "format go file & write back",
+        "parentid": "line_15",
+        "topic": "panic(err)",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_18",
-        "parentid": "root",
-        "topic": "basic",
-        "background-color": "#e3aba7"
+        "parentid": "line_15",
+        "topic": "defer func(){ if err:=recover();err!=nil{...}}()",
+        "background-color": "#0fbdff",
+        "expanded": false
     },
     {
         "id": "line_19",
-        "parentid": "line_18",
-        "topic": "func add(a int,b int)int{}",
+        "parentid": "line_1",
+        "topic": "closure",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_20",
         "parentid": "line_19",
-        "topic": "_ = add(8,9)",
+        "topic": "func Adder() func(int) int{",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_21",
-        "parentid": "line_19",
-        "topic": "return 0",
-        "background-color": "#0fbdff",
+        "parentid": "line_20",
+        "topic": "var x int",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_22",
-        "parentid": "line_19",
-        "topic": "func add(a int,b int)(int,int){}",
-        "background-color": "#0fbdff",
+        "parentid": "line_20",
+        "topic": "return func(delta int)int{",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_23",
         "parentid": "line_22",
-        "topic": "return 3,4",
-        "background-color": "#e3aba7",
+        "topic": "x+=delta",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_24",
-        "parentid": "line_19",
-        "topic": "func add(a int,b int)(c int,d int){}",
-        "background-color": "#0fbdff",
+        "parentid": "line_20",
+        "topic": "}",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_25",
-        "parentid": "line_24",
-        "topic": "c = 3",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_26",
-        "parentid": "line_24",
-        "topic": "d = 4",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_27",
-        "parentid": "line_24",
-        "topic": "e,_ = add(18,339)",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_28",
         "parentid": "line_19",
-        "topic": "func add(a int,arg... int)int{}",
+        "topic": "}",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
+        "id": "line_26",
+        "parentid": "root",
+        "topic": "environment",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "go run xxx.go",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_26",
+        "topic": "gofmt -w xxx.go",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
         "id": "line_29",
-        "parentid": "line_19",
-        "topic": "defer",
+        "parentid": "line_28",
+        "topic": "format go file & write back",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_30",
-        "parentid": "line_29",
-        "topic": "execute when func ending",
-        "background-color": "#e3aba7",
-        "expanded": false
+        "parentid": "root",
+        "topic": "basic",
+        "background-color": "#e3aba7"
     },
     {
         "id": "line_31",
-        "parentid": "line_29",
-        "topic": "release resource",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_32",
-        "parentid": "line_29",
-        "topic": "release connection",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_33",
-        "parentid": "line_18",
-        "topic": "var str :=\"hello world\"",
+        "parentid": "line_30",
+        "topic": "func add(a int,b int)int{}",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "_ = add(8,9)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_31",
+        "topic": "return 0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
         "id": "line_34",
-        "parentid": "line_33",
-        "topic": "\"string\"",
+        "parentid": "line_31",
+        "topic": "func add(a int,b int)(int,int){}",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_35",
-        "parentid": "line_33",
-        "topic": "`string`",
-        "background-color": "#0fbdff",
+        "parentid": "line_34",
+        "topic": "return 3,4",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_36",
-        "parentid": "line_33",
-        "topic": "len(\"string\")",
+        "parentid": "line_31",
+        "topic": "func add(a int,b int)(c int,d int){}",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_37",
-        "parentid": "line_18",
-        "topic": "const b string = \"word\"",
-        "background-color": "#e82ad2",
+        "parentid": "line_36",
+        "topic": "c = 3",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_38",
-        "parentid": "line_37",
-        "topic": "const ( a=0\\n b=0\\n c=0)",
-        "background-color": "#0fbdff",
+        "parentid": "line_36",
+        "topic": "d = 4",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_39",
-        "parentid": "line_18",
-        "topic": "var c string = \"word\"",
-        "background-color": "#e82ad2",
+        "parentid": "line_36",
+        "topic": "e,_ = add(18,339)",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_40",
-        "parentid": "line_39",
-        "topic": "Var ( d=0\\n e=0\\n f=0)",
+        "parentid": "line_31",
+        "topic": "func add(a int,arg... int)int{}",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_41",
-        "parentid": "line_18",
-        "topic": "tmp:=[]byte(str)",
-        "background-color": "#e82ad2",
+        "parentid": "line_31",
+        "topic": "defer",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_42",
         "parentid": "line_41",
-        "topic": "string to byte array",
-        "background-color": "#0fbdff",
+        "topic": "execute when func ending",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_43",
-        "parentid": "line_18",
-        "topic": "var b map[string]int",
-        "background-color": "#e82ad2",
+        "parentid": "line_41",
+        "topic": "release resource",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_44",
-        "parentid": "line_43",
-        "topic": "b[\"test\"]=3",
-        "background-color": "#0fbdff",
+        "parentid": "line_41",
+        "topic": "release connection",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_45",
-        "parentid": "line_18",
-        "topic": "call by value",
+        "parentid": "line_30",
+        "topic": "var str :=\"hello world\"",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_46",
         "parentid": "line_45",
-        "topic": "int",
+        "topic": "\"string\"",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_47",
         "parentid": "line_45",
-        "topic": "float",
+        "topic": "`string`",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_48",
         "parentid": "line_45",
-        "topic": "bool",
+        "topic": "len(\"string\")",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_49",
-        "parentid": "line_45",
-        "topic": "string",
-        "background-color": "#0fbdff",
+        "parentid": "line_30",
+        "topic": "const b string = \"word\"",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_50",
-        "parentid": "line_45",
-        "topic": "struct",
+        "parentid": "line_49",
+        "topic": "const ( a=0\\n b=0\\n c=0)",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_51",
-        "parentid": "line_45",
-        "topic": "[]",
-        "background-color": "#0fbdff",
-        "expanded": false
-    },
-    {
-        "id": "line_52",
-        "parentid": "line_18",
-        "topic": "call by reference",
+        "parentid": "line_30",
+        "topic": "var c string = \"word\"",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_53",
-        "parentid": "line_52",
-        "topic": "chan",
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "Var ( d=0\\n e=0\\n f=0)",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
+        "id": "line_53",
+        "parentid": "line_30",
+        "topic": "tmp:=[]byte(str)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
         "id": "line_54",
-        "parentid": "line_52",
-        "topic": "map",
+        "parentid": "line_53",
+        "topic": "string to byte array",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_55",
-        "parentid": "line_52",
-        "topic": "slice",
-        "background-color": "#0fbdff",
+        "parentid": "line_30",
+        "topic": "var b map[string]int",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_56",
-        "parentid": "line_52",
-        "topic": "&/* - like C/C++",
+        "parentid": "line_55",
+        "topic": "b[\"test\"]=3",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_57",
-        "parentid": "line_18",
-        "topic": "package main",
+        "parentid": "line_30",
+        "topic": "call by value",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_58",
         "parentid": "line_57",
-        "topic": "import \"main\"\\n import \"fmt\"",
+        "topic": "int",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_59",
         "parentid": "line_57",
-        "topic": "import(\"main\"\\n\"fmt\")",
+        "topic": "float",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_60",
-        "parentid": "line_18",
-        "topic": "* pointer",
-        "background-color": "#e82ad2",
+        "parentid": "line_57",
+        "topic": "bool",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_61",
-        "parentid": "line_60",
-        "topic": "var a int=5",
+        "parentid": "line_57",
+        "topic": "string",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_62",
-        "parentid": "line_60",
-        "topic": "var p *int = &a",
+        "parentid": "line_57",
+        "topic": "struct",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_63",
-        "parentid": "line_18",
-        "topic": "if/else",
-        "background-color": "#e82ad2",
-        "expanded": false
-    },
-    {
-        "id": "line_64",
-        "parentid": "line_18",
-        "topic": "switch/case/default",
-        "background-color": "#e82ad2",
-        "expanded": false
-    },
-    {
-        "id": "line_65",
-        "parentid": "line_64",
-        "topic": "case i>0&&i<10:{}break",
+        "parentid": "line_57",
+        "topic": "[]",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_66",
-        "parentid": "line_18",
-        "topic": "for i:=0;i<10;i++{}",
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "len(array)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_30",
+        "topic": "call by reference",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
+        "id": "line_66",
+        "parentid": "line_65",
+        "topic": "chan",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
         "id": "line_67",
-        "parentid": "line_66",
-        "topic": "for i>0{}",
+        "parentid": "line_65",
+        "topic": "map",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_68",
-        "parentid": "line_67",
-        "topic": "for true{}",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_69",
-        "parentid": "line_67",
-        "topic": "for {}",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_70",
-        "parentid": "line_66",
-        "topic": "for i,v range \"hello world\"{ }",
+        "parentid": "line_65",
+        "topic": "slice",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
+        "id": "line_69",
+        "parentid": "line_65",
+        "topic": "&/* - like C/C++",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_30",
+        "topic": "package main",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
         "id": "line_71",
-        "parentid": "line_66",
-        "topic": "break/continue",
+        "parentid": "line_70",
+        "topic": "import \"main\"\\n import \"fmt\"",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_72",
-        "parentid": "line_18",
-        "topic": "goto/label",
-        "background-color": "#e82ad2",
+        "parentid": "line_70",
+        "topic": "import(\"main\"\\n\"fmt\")",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_73",
-        "parentid": "root",
-        "topic": "api",
-        "background-color": "#e3aba7"
-    },
-    {
-        "id": "line_74",
-        "parentid": "line_73",
-        "topic": "fmt",
+        "parentid": "line_30",
+        "topic": "* pointer",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
+        "id": "line_74",
+        "parentid": "line_73",
+        "topic": "var a int=5",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
         "id": "line_75",
-        "parentid": "line_74",
-        "topic": "Println",
+        "parentid": "line_73",
+        "topic": "var p *int = &a",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_76",
-        "parentid": "line_74",
-        "topic": "Printf",
-        "background-color": "#0fbdff",
+        "parentid": "line_30",
+        "topic": "if/else",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_77",
-        "parentid": "line_76",
-        "topic": "%+v",
-        "background-color": "#e3aba7",
+        "parentid": "line_30",
+        "topic": "switch/case/default",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_78",
-        "parentid": "line_76",
-        "topic": "%#v",
-        "background-color": "#e3aba7",
+        "parentid": "line_77",
+        "topic": "case i>0&&i<10:{}break",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_79",
-        "parentid": "line_76",
-        "topic": "%T",
-        "background-color": "#e3aba7",
+        "parentid": "line_30",
+        "topic": "for i:=0;i<10;i++{}",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_80",
-        "parentid": "line_76",
-        "topic": "%t",
-        "background-color": "#e3aba7",
+        "parentid": "line_79",
+        "topic": "for i>0{}",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_81",
-        "parentid": "line_76",
-        "topic": "%b",
+        "parentid": "line_80",
+        "topic": "for true{}",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_82",
-        "parentid": "line_76",
-        "topic": "%q",
+        "parentid": "line_80",
+        "topic": "for {}",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_83",
-        "parentid": "line_76",
-        "topic": "%x",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_84",
-        "parentid": "line_76",
-        "topic": "%p",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_85",
-        "parentid": "line_74",
-        "topic": "Scanf",
+        "parentid": "line_79",
+        "topic": "for i,v range \"hello world\"{ }",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
+        "id": "line_84",
+        "parentid": "line_79",
+        "topic": "break/continue",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_30",
+        "topic": "goto/label",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
         "id": "line_86",
-        "parentid": "line_73",
-        "topic": "time",
+        "parentid": "line_30",
+        "topic": "new - create int/struct return pointer",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_87",
-        "parentid": "line_86",
-        "topic": "Time",
-        "background-color": "#0fbdff",
+        "parentid": "line_30",
+        "topic": "array",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_88",
-        "parentid": "line_86",
-        "topic": "Sleep",
+        "parentid": "line_87",
+        "topic": "var a [len]int",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_89",
-        "parentid": "line_86",
-        "topic": "Now",
+        "parentid": "line_87",
+        "topic": "var a [5]int{1,2,3}",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_90",
-        "parentid": "line_89",
+        "parentid": "line_87",
+        "topic": "var a [...]int{1,2,3,4,5,6}",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_87",
+        "topic": "for index, v:=range a{}",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_87",
+        "topic": "for i:=0;i<len(a);i++){}",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_87",
+        "topic": "var b [5][3]int",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_87",
+        "topic": "slice",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_94",
+        "topic": "0<=cap(a)<=len(a)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_94",
+        "topic": "a[0] # 0",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_94",
+        "topic": "a[2:4] # 2,3",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_94",
+        "topic": "a[:] # all",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_94",
+        "topic": "a[:2] # 0,1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_30",
+        "topic": "map",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_100",
+        "topic": "var a map[string]string = map[string]string{\"key\":\"value\"}",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_100",
+        "topic": "a[\"acb\"]=\"def\"",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_100",
+        "topic": "var b:make(map[string]map[string]string)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_100",
+        "topic": "b[\"key1\"]=make(map[string]string)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_100",
+        "topic": "b[\"key1\"][\"key\"]=\"abc\"",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_100",
+        "topic": "# no default sort",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": ""
+    },
+    {
+        "id": "line_108",
+        "parentid": "root",
+        "topic": "api",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_108",
+        "topic": "fmt",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_109",
+        "topic": "Println",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_109",
+        "topic": "Printf",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_111",
+        "topic": "%+v",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_111",
+        "topic": "%#v",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_111",
+        "topic": "%T",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_111",
+        "topic": "%t",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_111",
+        "topic": "%b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_111",
+        "topic": "%q",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_111",
+        "topic": "%x",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_111",
+        "topic": "%p",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_109",
+        "topic": "Scanf",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_108",
+        "topic": "time",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_121",
+        "topic": "Time",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_121",
+        "topic": "Sleep",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_121",
+        "topic": "Now",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_124",
         "topic": "Format",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_91",
-        "parentid": "line_89",
+        "id": "line_126",
+        "parentid": "line_124",
         "topic": "Day",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_92",
-        "parentid": "line_89",
+        "id": "line_127",
+        "parentid": "line_124",
         "topic": "Minute",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_93",
-        "parentid": "line_89",
+        "id": "line_128",
+        "parentid": "line_124",
         "topic": "Month",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_94",
-        "parentid": "line_89",
+        "id": "line_129",
+        "parentid": "line_124",
         "topic": "Year",
         "background-color": "#e3aba7",
         "expanded": false
@@ -664,157 +907,255 @@
         "topic": ""
     },
     {
-        "id": "line_96",
-        "parentid": "line_73",
+        "id": "line_131",
+        "parentid": "line_108",
         "topic": "math",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_97",
-        "parentid": "line_96",
+        "id": "line_132",
+        "parentid": "line_131",
         "topic": "rand",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_98",
-        "parentid": "line_73",
+        "id": "line_133",
+        "parentid": "line_108",
         "topic": "strings",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_99",
-        "parentid": "line_98",
+        "id": "line_134",
+        "parentid": "line_133",
         "topic": "HasPrefix",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_100",
-        "parentid": "line_98",
+        "id": "line_135",
+        "parentid": "line_133",
         "topic": "HasSuffix",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_101",
-        "parentid": "line_98",
+        "id": "line_136",
+        "parentid": "line_133",
         "topic": "Index",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_102",
-        "parentid": "line_98",
+        "id": "line_137",
+        "parentid": "line_133",
         "topic": "LastIndex",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_103",
-        "parentid": "line_98",
+        "id": "line_138",
+        "parentid": "line_133",
         "topic": "Replace",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_104",
-        "parentid": "line_98",
+        "id": "line_139",
+        "parentid": "line_133",
         "topic": "Count",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_105",
-        "parentid": "line_98",
+        "id": "line_140",
+        "parentid": "line_133",
         "topic": "Repeat",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_106",
-        "parentid": "line_98",
+        "id": "line_141",
+        "parentid": "line_133",
         "topic": "ToLower",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_107",
-        "parentid": "line_98",
+        "id": "line_142",
+        "parentid": "line_133",
         "topic": "ToUpper",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_108",
-        "parentid": "line_98",
+        "id": "line_143",
+        "parentid": "line_133",
         "topic": "Trim",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_109",
-        "parentid": "line_98",
+        "id": "line_144",
+        "parentid": "line_133",
         "topic": "TrimSpace",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_110",
-        "parentid": "line_98",
+        "id": "line_145",
+        "parentid": "line_133",
         "topic": "TrimLeft",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_111",
-        "parentid": "line_98",
+        "id": "line_146",
+        "parentid": "line_133",
         "topic": "TrimRight",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_112",
-        "parentid": "line_98",
+        "id": "line_147",
+        "parentid": "line_133",
         "topic": "Field - Split by space",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_113",
-        "parentid": "line_98",
+        "id": "line_148",
+        "parentid": "line_133",
         "topic": "Split",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_114",
-        "parentid": "line_98",
+        "id": "line_149",
+        "parentid": "line_133",
         "topic": "Join",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_115",
-        "parentid": "line_73",
+        "id": "line_150",
+        "parentid": "line_108",
         "topic": "stringconv",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_116",
-        "parentid": "line_115",
+        "id": "line_151",
+        "parentid": "line_150",
         "topic": "Itoa",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_117",
-        "parentid": "line_115",
+        "id": "line_152",
+        "parentid": "line_150",
         "topic": "Atoi",
         "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_108",
+        "topic": "sort",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_153",
+        "topic": "Ints(int_array)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_153",
+        "topic": "Strings(str_array)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_108",
+        "topic": "sync",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_156",
+        "topic": "Mutex",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_157",
+        "topic": "var lock sync.Mutex",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_157",
+        "topic": "lock.Lock()",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_157",
+        "topic": "lock.Unlock()",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_156",
+        "topic": "RWMutex",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_161",
+        "topic": "var rwLock sync.RWMutex",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_161",
+        "topic": "rwLock.RLock()",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_161",
+        "topic": "rwLock.RUnlock()",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_161",
+        "topic": "rwLock.Lock()",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_161",
+        "topic": "rwLock.Unlock()",
+        "background-color": "#e3aba7",
         "expanded": false
     }
 ]
