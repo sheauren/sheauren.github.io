@@ -1,11 +1,14 @@
 Go lang
     Feature
         goroute
-            go - go func
+            go - go func        
             channel - pine communcation
                 var pipe chan int
                 pipe := cmake(chan int,3)
-                close
+                pipe <- i
+                b: = <-pipe
+
+                close                
         auto garbage collection
         defer - execute when end
         := define
@@ -143,14 +146,16 @@ Go lang
             Scanf
         time
             Time
-            Sleep
+            Sleep            
             Now
                 Format
                 Day
                 Minute
                 Month
                 Year
-
+            t: = NewTicker(time.Second)
+            for v:=range t.C{}
+            <- time.Afer(time.Second){}
         math
             rand
         strings
@@ -198,3 +203,35 @@ Go lang
             Value.Kind 
                 ex: struct
             Value.Inteface
+        os
+            Stdin
+            Stdout
+            Stderr
+            Args
+            flag.BoolVar(&test,"b",false,"print on newline")
+            flag.StringVar(&str,"s","","print on newline")
+        io
+            file,err : = os.Open("./log/log.txt")
+            defer file.Close()
+            buf,err:=ioutil.ReadFile("file.txt")
+            f,err:=os.Open("write.txt",os.O_WRONLY|os.O_CREATE,0666)
+            ow:=bufio.NewWriter(f)
+            ow.WriteString("hello")
+            ow.Flush()
+        bufio            
+            reader = bufio.NewReader(file)
+            str,err:=reader.ReadString("\n")
+        compress
+            fz,err:=gzip.NewReader(file)
+            r = bufio.NewReader(fz)            
+        encoding
+            data,err:=json.Marshal(stud)
+            err := json.UnMarshal([]byte(data), &stud)
+        runtime
+            num:=runtime.NumCPU()
+            GOMAXPROCS(num)
+        testing        
+            unit_test_filename "xxx_test.go"
+            func TestAdd(t *testing.T){ T.Fatal("xxx") }
+            t.Logf("test")
+            go test
