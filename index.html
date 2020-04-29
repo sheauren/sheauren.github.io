@@ -2,28 +2,71 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>sheauren's mindmap index page</title>
+    <meta charset="utf-8">
+    <title>sheauren's mindmap index page</title>
+    <style>
+        .list-style{
+            width:100%;
+            overflow:auto;
+            vertical-align: top;
+            overflow-y: auto;
+            color:black;
+            background-color: #A0FFA0;
+            font-size:smaller
+        }
+    </style>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-3.5.0.slim.min.js'></script>    
+    <script type="text/javascript">        
+        $(()=>{
+            $("#container").height(window.innerHeight -10);            
+            $('#list').height(window.innerHeight -10);            
+        })
+        function load_jsmind(url) {            
+            $("#container").attr('src','./show_mindmap.html?json='+url)
+        }
+    </script>
 </head>
 
-<body>
-  <h2>Mind Map Index</h1>
-  <h4>Machine Learning</h4>
-  <ol>
-    <li><a href='show_mindmap?json=mindmap/Probability_Statistics.json'>Probability&Statistics(2020/04/26)</a></li>
-  </ol>
-  <h4>Program Language</h4>
-  <ol>
-    <li><a href='show_mindmap?json=mindmap/nodejs.json'>Node.js(2020/04/26)</a></li>
-  </ol>
-  <ol>
-    <li><a href='show_mindmap?json=mindmap/golang.json'>golang(2020/04/26)</a></li>
-  </ol>
-  <h2> Tool </h2>
-  <ul>
-    <li><a href='random_color_generate.html'>Random Color Generate</a></li>
-  </ul>
-  
+<body style='overflow:hidden'>
+    <table style='width:100%;'>
+        <tr>
+            <td style='width:100px;vertical-align: top;'>
+                <div id='list' class='list-style'>
+                    <h2>Mind Map Index</h1>
+                        <h4>Machine Learning</h4>
+                        <ol>
+                            <li>
+                                <a href='#' onclick="javascript:load_jsmind('mindmap/Probability_Statistics.json')">Probability&Statistics(2020/04/26)</a>
+                                <!--<a href='show_mindmap?json=mindmap/Probability_Statistics.json'>Probability&Statistics(2020/04/26)</a>-->
+                            </li>
+                        </ol>
+                        <h4>Program Language</h4>
+                        <ol>
+                            <li>
+                                <a href='#' onclick="javascript:load_jsmind('mindmap/nodejs.json')">Node.js(2020/04/26)</a>
+                                <!--<a href='show_mindmap?json=mindmap/nodejs.json'>Node.js(2020/04/26)</a>--></li>
+                        </ol>
+                        <ol>
+                            <li>
+                                <a href='#' onclick="javascript:load_jsmind('mindmap/golang.json')">golang(2020/04/28)</a>
+                                <!--<a href='show_mindmap?json=mindmap/golang.json'>golang(2020/04/28)</a>--></li>
+                        </ol>
+                        <h2> Tool </h2>
+                        <ul>
+                            <li>
+                                <a href='random_color_generate.html'>Random Color Generate</a></li>
+                        </ul>
+                </div>
+            </td>
+            <td>
+                <iframe frameBorder='0' id='container' style='overflow:hidden;width:100%'>                    
+                </iframe>
+            </td>
+        </tr>
+    </table>
+
+
+    
 </body>
 
 </html>
