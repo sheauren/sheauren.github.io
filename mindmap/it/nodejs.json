@@ -884,5 +884,39 @@
         "topic": "vscode",
         "background-color": "#e82ad2",
         "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "root",
+        "topic": "plugin",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_128",
+        "topic": ".editconfig",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_128",
+        "topic": ".esLint",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_130",
+        "topic": "to see esLint mindmap",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_128",
+        "topic": ".gitignore",
+        "background-color": "#e82ad2",
+        "expanded": false
     }
 ]

@@ -1,0 +1,66 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "common"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "increment",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "root",
+        "topic": "simplicity",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_3",
+        "parentid": "root",
+        "topic": "external",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_4",
+        "parentid": "root",
+        "topic": "improperly",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_5",
+        "parentid": "root",
+        "topic": "highly",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_6",
+        "parentid": "root",
+        "topic": "excellent",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_7",
+        "parentid": "root",
+        "topic": "improperly",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_8",
+        "parentid": "root",
+        "topic": "sternly",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": ""
+    },
+    {
+        "id": "line_10",
+        "parentid": "root",
+        "topic": "pertaining to",
+        "background-color": "#e3aba7"
+    }
+]

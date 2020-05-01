@@ -1,0 +1,518 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "esLint"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "feature",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "js syntax checker",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "ide support",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "vscode by plugin",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_3",
+        "topic": "webstrom native support",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "root",
+        "topic": "file",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": ".eslintrc.*",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "js",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_7",
+        "topic": "json",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_7",
+        "topic": "yaml",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_6",
+        "topic": ".eslintrc",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "// deprecated",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_11",
+        "topic": "json",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_11",
+        "topic": "yaml",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_6",
+        "topic": "package.json",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "eslintConfig attribute",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_6",
+        "topic": ".eslintignore",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "// skip check",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_17",
+        "topic": "build",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_17",
+        "topic": "node_modules",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_17",
+        "topic": "test",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "root",
+        "topic": "config - module.exports",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "extends",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "eslint:recommand",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_22",
+        "topic": "root:true /* root config */",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_22",
+        "topic": "rules",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "no-console",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "error",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_27",
+        "topic": "allow:['warn','error','info']",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_26",
+        "topic": "all rules",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "https://eslint.org/docs/rules/",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_26",
+        "topic": "disable rule in code",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "/* eslint eqeqeq: \"off\", curly: \"error\" */",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "same: /* eslint eqeqeq: 0, curly: 2 */",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_26",
+        "topic": "disable rule in code region",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "disable all",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "/* eslint-disable */",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_36",
+        "topic": "code ...",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_36",
+        "topic": "/* eslint-enable */",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_35",
+        "topic": "disable some",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "/* eslint-disable no-alert, no-console */",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_40",
+        "topic": "code ..",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_40",
+        "topic": "/* eslint-enable no-alert, no-console */",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_35",
+        "topic": "disable one line",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "/* eslint-disable-next-line no-alert */",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_44",
+        "topic": "alert('xxx')",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_35",
+        "topic": "dosable this line",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "alert('xxx') // eslint-disable-line no-alert",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_22",
+        "topic": "parser",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "esprima // default",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_49",
+        "topic": "Babel-ESLint",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_22",
+        "topic": "parserOptions",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "ecmaVersion:6",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_52",
+        "topic": "sourceType:script",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_22",
+        "topic": "globals",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_55",
+        "topic": "window:true",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_22",
+        "topic": "env",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_57",
+        "topic": "browser:false",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_57",
+        "topic": "node:true",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_57",
+        "topic": "es6:true",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_57",
+        "topic": "mocha:true",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_57",
+        "topic": "jquery/mongo/worker ...",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "root",
+        "topic": "command",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "eslint --init",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "create default config by command",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "root",
+        "topic": "npm check syntax",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "package.json",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_67",
+        "topic": "\"scripts\"",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "\"lint\":\"eslint .\"",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_68",
+        "topic": "\"fix\":\"eslint --fix .\"",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_67",
+        "topic": "\"pre-commit\":[\"fix\",\"lint]",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "npm install pre-commit",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_71",
+        "topic": "npm install --save-dev pre-commit",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": ""
+    }
+]

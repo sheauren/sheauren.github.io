@@ -126,3 +126,8 @@ nodejs
             plugin - Nodejs Inspector Manager
             chrome://inspect
         vscode
+    plugin
+        .editconfig
+        .esLint   
+            to see esLint mindmap         
+        .gitignore

@@ -1,0 +1,75 @@
+esLint
+    feature
+        js syntax checker
+        ide support
+            vscode by plugin
+            webstrom native support
+    file
+        .eslintrc.*
+            js
+            json
+            yaml
+        .eslintrc
+            // deprecated
+            json
+            yaml
+        package.json
+            eslintConfig attribute    
+        .eslintignore
+            // skip check
+            build
+            node_modules
+            test
+    config - module.exports
+        extends
+            eslint:recommand
+        root:true /* root config */        
+        rules
+            no-console
+                error
+                allow:['warn','error','info']
+            all rules
+                https://eslint.org/docs/rules/
+            disable rule in code
+                /* eslint eqeqeq: "off", curly: "error" */
+                    same: /* eslint eqeqeq: 0, curly: 2 */
+            disable rule in code region
+                disable all
+                    /* eslint-disable */
+                    code ...
+                    /* eslint-enable */
+                disable some
+                    /* eslint-disable no-alert, no-console */
+                    code ..
+                    /* eslint-enable no-alert, no-console */
+                disable one line
+                    /* eslint-disable-next-line no-alert */
+                    alert('xxx')
+                dosable this line
+                    alert('xxx') // eslint-disable-line no-alert
+        parser
+            esprima // default
+            Babel-ESLint
+        parserOptions
+            ecmaVersion:6
+            sourceType:script
+        globals
+            window:true
+        env
+            browser:false
+            node:true                
+            es6:true
+            mocha:true
+            jquery/mongo/worker ...
+    command
+        eslint --init 
+            create default config by command
+    npm check syntax
+        package.json
+            "scripts"
+                "lint":"eslint ."
+                "fix":"eslint --fix ."                            
+            "pre-commit":["fix","lint]
+                npm install pre-commit
+                npm install --save-dev pre-commit
+            
