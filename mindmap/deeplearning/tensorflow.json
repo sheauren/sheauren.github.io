@@ -1,0 +1,362 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "tensorflow"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "python",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "conda",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "tensorflow",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_2",
+        "topic": "tensorflow-gpu",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_1",
+        "topic": "pip",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "tensorflow",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_5",
+        "topic": "numpy",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_5",
+        "topic": "cv2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_5",
+        "topic": "Pillow",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_5",
+        "topic": "matplotlib",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "root",
+        "topic": "loss_function",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "sparse_categorical_crossentropy",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_11",
+        "topic": "mean_squared_error:mse",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_14",
+        "parentid": "root",
+        "topic": "optimizer",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "SGDOptimizer",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_14",
+        "topic": "AdamOptimizer",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_14",
+        "topic": "RMSPropOptimizer",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_18",
+        "parentid": "root",
+        "topic": "metrics",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "accuracy",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_18",
+        "topic": "mean_absolute_error:mae",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_21",
+        "parentid": "root",
+        "topic": "callbacks",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "EarlyStopping",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_21",
+        "topic": "ModelCheckpoint",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_21",
+        "topic": "class PrintDot(keras.callbacks.Callback):",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "def on_epoch_end(self,epoch,logs):",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "if epoch % 100 == 0: print('')",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_25",
+        "topic": "print('.', end='')",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "root",
+        "topic": "pretrain model",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "tf.keras.Application.MobileNetV2",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_28",
+        "topic": "tf.keras.Application.ResNet152V2",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_31",
+        "parentid": "root",
+        "topic": "overfit",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "DropOut",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_31",
+        "topic": "BatchNormalized",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_31",
+        "topic": "Weight Normalized",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_31",
+        "topic": "Data Argumentation",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_36",
+        "parentid": "root",
+        "topic": "underfit",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "increate epochs",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": ""
+    },
+    {
+        "id": "line_39",
+        "parentid": "root",
+        "topic": "studing dataset",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "train_x,train_y=tf.keras.dataset.fashion_mist.load_data()",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_39",
+        "topic": "train_x,train_y=tf.keras.dataset.imdb.load_data()",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_42",
+        "parentid": "root",
+        "topic": "save",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "all info",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_42",
+        "topic": "h5 file",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_45",
+        "parentid": "root",
+        "topic": "load_model",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "h5 file",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_47",
+        "parentid": "root",
+        "topic": "save_weights",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "ckpt-checkpoint",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_47",
+        "topic": "weight",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "file",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_49",
+        "topic": "weight file",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_49",
+        "topic": "tflite for deploy",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "convert form weight/h5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "root",
+        "topic": "load_weights",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "ckpt",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_54",
+        "topic": "h5",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_54",
+        "topic": "weight",
+        "background-color": "#e82ad2"
+    }
+]

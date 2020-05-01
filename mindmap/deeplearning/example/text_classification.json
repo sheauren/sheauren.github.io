@@ -1,0 +1,357 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "text classification"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "dataset:imdb",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "imdb.load_data(num_words=10000/*Glossary Number*/)",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "train_data",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "15000,",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_2",
+        "topic": "train_labels",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "15000,",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_2",
+        "topic": "valid_data",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "10000,",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_2",
+        "topic": "valid_labels",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "10000,",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_2",
+        "topic": "imdb.get_word_index()",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "# get index by word",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_11",
+        "topic": "custom func reverse_word_index",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_11",
+        "topic": "# get word by index",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_2",
+        "topic": "keras.preprocessing.sequence.pad_sequences",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "train_data/test_data",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_15",
+        "topic": "value = get_index_by_word \"<PAD>\"",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_15",
+        "topic": "padding = 'post'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_15",
+        "topic": "maxlen=256",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "root",
+        "topic": "model",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "Embedding 10000 /*Glossary Number*/ output dim:16  (batch,sequence,embedding)",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_20",
+        "topic": "GlobalAveragePooling1D",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_20",
+        "topic": "Dense(16)/relu",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_20",
+        "topic": "Dense(1)/sigmoid",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_25",
+        "parentid": "root",
+        "topic": "loss_function",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "binary_crossentropy",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_25",
+        "topic": "mean_squared_error",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_28",
+        "parentid": "root",
+        "topic": "optimizer",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "AdamOptimizer",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_30",
+        "parentid": "root",
+        "topic": "metric",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "accuracy",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_32",
+        "parentid": "root",
+        "topic": "fit # train",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "train_images,train_labels",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_32",
+        "topic": "epochs",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "40",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_32",
+        "topic": "batch_size",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "512",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_32",
+        "topic": "valid_data",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_32",
+        "topic": "valid_labels",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_32",
+        "topic": "verbose",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "o: no log",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_40",
+        "topic": "1:progress",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_40",
+        "topic": "2:epocs log",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_32",
+        "topic": "history",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "fit's return value",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "history_dict = history.history",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_45",
+        "topic": "history_dict.keys()",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_45",
+        "topic": "dict_keys(['acc', 'val_loss', 'val_acc', 'loss'])",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "root",
+        "topic": "evaluate",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "test_images,test_labels",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_49",
+        "topic": "test_loss",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_49",
+        "topic": "test_acc",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_53",
+        "parentid": "root",
+        "topic": "predict",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "predict_classes=np.argmax(predict[:,:],axis=1])",
+        "background-color": "#e82ad2"
+    }
+]

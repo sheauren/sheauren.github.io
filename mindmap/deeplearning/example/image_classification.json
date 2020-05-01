@@ -1,0 +1,204 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "image classification"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "dataset:fashion_mist",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "train_images",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "(60000,28,28)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_1",
+        "topic": "train_labels",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "(60000,10)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_1",
+        "topic": "valid_dataset",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": "(10000,28,28)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_1",
+        "topic": "valid_labels",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "(10000,10)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "root",
+        "topic": "classes",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "10",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_12",
+        "parentid": "root",
+        "topic": "model",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "Flatten",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_12",
+        "topic": "Dense(128)/relu",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_12",
+        "topic": "Dense(10)/softmax",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_16",
+        "parentid": "root",
+        "topic": "loss_function",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "sparse_categorical_crossentropy",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_18",
+        "parentid": "root",
+        "topic": "optimizer",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "AdamOptimizer",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_20",
+        "parentid": "root",
+        "topic": "metric",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "accuracy",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_22",
+        "parentid": "root",
+        "topic": "fit # train",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "train_images,train_labels",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_22",
+        "topic": "epochs",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "5",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_22",
+        "topic": "batch_size",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_27",
+        "parentid": "root",
+        "topic": "evaluate",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "test_images,test_labels",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_27",
+        "topic": "test_loss",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_27",
+        "topic": "test_acc",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_31",
+        "parentid": "root",
+        "topic": "predict",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "predict_classes=np.argmax(predict[:,:],axis=1])",
+        "background-color": "#e82ad2"
+    }
+]

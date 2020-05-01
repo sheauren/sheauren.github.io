@@ -1,0 +1,169 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "regression"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "dataset: boston_housing",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "boston_housing.load_data()",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "train_data",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "404,13",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_1",
+        "topic": "test_data",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "102,13",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_1",
+        "topic": "Normalize features",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "mean = train_data.mean(axis=0)",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_7",
+        "topic": "train_data = (train_data - mean) / std",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_7",
+        "topic": "test_data = (test_data - mean) / std",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_11",
+        "parentid": "root",
+        "topic": "model",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "Dense(64)/relu",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_11",
+        "topic": "Dense(64)/relu",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_11",
+        "topic": "Dense(1)",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_15",
+        "parentid": "root",
+        "topic": "optimizer",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "RMSPropOptimizer(0.001)",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_17",
+        "parentid": "root",
+        "topic": "loss_function",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "mean_squared_error:mse",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_19",
+        "parentid": "root",
+        "topic": "metric",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "mean_absolute_error:mae",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_21",
+        "parentid": "root",
+        "topic": "fit",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "epochs",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "500",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_21",
+        "topic": "validation_split",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "0.2",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_21",
+        "topic": "verbose",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "0",
+        "background-color": "#0fbdff"
+    }
+]

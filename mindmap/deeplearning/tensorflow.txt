@@ -1,0 +1,58 @@
+tensorflow
+    python
+        conda
+            tensorflow
+            tensorflow-gpu
+        pip
+            tensorflow
+            numpy
+            cv2
+            Pillow
+            matplotlib            
+    loss_function
+        sparse_categorical_crossentropy
+        mean_squared_error:mse
+    optimizer
+        SGDOptimizer
+        AdamOptimizer
+        RMSPropOptimizer
+    metrics
+        accuracy
+        mean_absolute_error:mae
+    callbacks
+        EarlyStopping
+        ModelCheckpoint
+        class PrintDot(keras.callbacks.Callback):
+            def on_epoch_end(self,epoch,logs):
+                if epoch % 100 == 0: print('')
+                print('.', end='')
+    pretrain model
+        tf.keras.Application.MobileNetV2
+        tf.keras.Application.ResNet152V2
+    overfit
+        DropOut
+        BatchNormalized
+        Weight Normalized
+        Data Argumentation
+    underfit
+        increate epochs
+    
+    studing dataset
+        train_x,train_y=tf.keras.dataset.fashion_mist.load_data()
+        train_x,train_y=tf.keras.dataset.imdb.load_data()  
+    save
+        all info
+        h5 file
+    load_model
+        h5 file
+    save_weights
+        ckpt-checkpoint
+        weight        
+            file
+            weight file
+            tflite for deploy
+                convert form weight/h5
+    load_weights
+        ckpt
+        h5
+        weight

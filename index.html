@@ -5,24 +5,24 @@
     <meta charset="utf-8">
     <title>sheauren's mindmap index page</title>
     <style>
-        .list-style{
-            width:100%;
-            overflow:auto;
+        .list-style {
+            width: 100%;
+            overflow: auto;
             vertical-align: top;
             overflow-y: auto;
-            color:black;
+            color: black;
             background-color: #A0FFA0;
-            font-size:smaller
+            font-size: smaller
         }
     </style>
-    <script type='text/javascript' src='https://code.jquery.com/jquery-3.5.0.slim.min.js'></script>    
-    <script type="text/javascript">        
-        $(()=>{
-            $("#container").height(window.innerHeight -10);            
-            $('#list').height(window.innerHeight -10);            
+    <script type='text/javascript' src='https://code.jquery.com/jquery-3.5.0.slim.min.js'></script>
+    <script type="text/javascript">
+        $(() => {
+            $("#container").height(window.innerHeight - 10);
+            $('#list').height(window.innerHeight - 10);
         })
-        function load_jsmind(url) {            
-            $("#container").attr('src','./show_mindmap.html?json='+url)
+        function load_jsmind(url) {
+            $("#container").attr('src', './show_mindmap.html?json=' + url)
         }
     </script>
 </head>
@@ -36,29 +36,61 @@
                         <h4>Machine Learning</h4>
                         <ul>
                             <li>
-                                <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Probability_Statistics.json')">Probability&Statistics(2020/04/26)</a>
-                                <!--<a href='show_mindmap?json=mindmap/Probability_Statistics.json'>Probability&Statistics(2020/04/26)</a>-->
+                                <a href='#'
+                                    onclick="javascript:load_jsmind('mindmap/deeplearning/Probability_Statistics.json')">Probability&Statistics(2020/04/26)</a>
+
+                            </li>
+                            <li>
+                                <a href='#'
+                                    onclick="javascript:load_jsmind('mindmap/deeplearning/tensorflow.json')">Tensorflow(2020/05/01)</a>
+
+                            </li>
+                            <li>
+                                <a href='#'
+                                    onclick="javascript:load_jsmind('mindmap/deeplearning/overfitting.json')">Overfit(2020/05/01)</a>
+
+                            </li>
+                            Example
+                            <li>
+                                <a href='#'
+                                    onclick="javascript:load_jsmind('mindmap/deeplearning/example/image_classification.json')">Image Classification(2020/05/01)</a>
+
+                            </li>
+                            <li>
+                                <a href='#'
+                                    onclick="javascript:load_jsmind('mindmap/deeplearning/example/text_classification.json')">Text Classification(2020/05/01)</a>
+
+                            </li>
+                            <li>
+                                <a href='#'
+                                    onclick="javascript:load_jsmind('mindmap/deeplearning/example/regression.json')">Regression(2020/05/01)</a>
+
                             </li>
                         </ul>
                         <h4>Program Language</h4>
                         <ul>
                             <li>
-                                <a href='#' onclick="javascript:load_jsmind('mindmap/it/nodejs.json')">Node.js(2020/05/01)</a>
-                                <!--<a href='show_mindmap?json=mindmap/nodejs.json'>Node.js(2020/04/26)</a>--></li>
-                                <li>
-                                    <a href='#' onclick="javascript:load_jsmind('mindmap/it/esLint.json')">esLint - ESLint - Pluggable JavaScript linter(2020/05/01)</a>
+                                <a href='#'
+                                    onclick="javascript:load_jsmind('mindmap/it/nodejs.json')">Node.js(2020/05/01)</a>
+                            <li>
+                                <a href='#' onclick="javascript:load_jsmind('mindmap/it/esLint.json')">esLint - ESLint -
+                                    Pluggable JavaScript linter(2020/05/01)</a>
                         </ul>
                         <ul>
                             <li>
-                                <a href='#' onclick="javascript:load_jsmind('mindmap/it/golang.json')">golang(2020/04/29)</a>
-                                <!--<a href='show_mindmap?json=mindmap/golang.json'>golang(2020/04/28)</a>--></li>
+                                <a href='#'
+                                    onclick="javascript:load_jsmind('mindmap/it/golang.json')">golang(2020/04/29)</a>
+
                         </ul>
                         <h2> English</h2>
                         <ul>
-                            <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/vocabulary_job.json')">job(2020/04/29)</a>
-                            
+                            <li> <a href='#'
+                                    onclick="javascript:load_jsmind('mindmap/english/vocabulary_job.json')">job(2020/04/29)</a>
+
                             </li>
-                            <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/vocabulary_adjective.json')">adjective(2020/04/29)</a></li>
+                            <li> <a href='#'
+                                    onclick="javascript:load_jsmind('mindmap/english/vocabulary_adjective.json')">adjective(2020/04/29)</a>
+                            </li>
                         </ul>
                         <h2> Tool </h2>
                         <ul>
@@ -68,14 +100,11 @@
                 </div>
             </td>
             <td>
-                <iframe frameBorder='0' id='container' style='overflow:hidden;width:100%'>                    
+                <iframe frameBorder='0' id='container' style='overflow:hidden;width:100%'>
                 </iframe>
             </td>
         </tr>
     </table>
-
-
-    
 </body>
 
 </html>

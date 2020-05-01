@@ -1,0 +1,55 @@
+text classification
+    dataset:imdb
+        imdb.load_data(num_words=10000/*Glossary Number*/)
+            train_data
+                15000,
+            train_labels
+                15000,
+            valid_data
+                10000,
+            valid_labels
+                10000,
+            imdb.get_word_index()
+                # get index by word
+                custom func reverse_word_index
+                # get word by index
+            keras.preprocessing.sequence.pad_sequences
+                train_data/test_data
+                value = get_index_by_word "<PAD>"
+                padding = 'post'
+                maxlen=256
+    model                    
+        Embedding 10000 /*Glossary Number*/ output dim:16  (batch,sequence,embedding)
+        GlobalAveragePooling1D
+        Dense(16)/relu
+        Dense(1)/sigmoid
+    loss_function
+        binary_crossentropy
+        mean_squared_error
+    optimizer
+        AdamOptimizer
+    metric
+        accuracy
+    fit # train
+        train_images,train_labels
+        epochs
+            40
+        batch_size
+            512
+        valid_data
+        valid_labels
+        verbose
+            o: no log
+            1:progress
+            2:epocs log
+        history
+            fit's return value
+                history_dict = history.history
+                history_dict.keys()
+                dict_keys(['acc', 'val_loss', 'val_acc', 'loss'])                            
+    evaluate
+        test_images,test_labels
+        test_loss
+        test_acc
+    predict
+        predict_classes=np.argmax(predict[:,:],axis=1])
