@@ -5,11 +5,6 @@
         "topic": "adjective"
     },
     {
-        "id": "root",
-        "isroot": true,
-        "topic": ""
-    },
-    {
         "id": "line_2",
         "parentid": "root",
         "topic": "eligible",
@@ -88,11 +83,6 @@
         "background-color": "#e3aba7"
     },
     {
-        "id": "root",
-        "isroot": true,
-        "topic": ""
-    },
-    {
         "id": "line_16",
         "parentid": "root",
         "topic": "self-motivation",
@@ -139,16 +129,6 @@
         "parentid": "root",
         "topic": "on occasion",
         "background-color": "#e3aba7"
-    },
-    {
-        "id": "root",
-        "isroot": true,
-        "topic": ""
-    },
-    {
-        "id": "root",
-        "isroot": true,
-        "topic": ""
     },
     {
         "id": "line_26",

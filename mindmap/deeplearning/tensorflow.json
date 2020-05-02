@@ -14,7 +14,8 @@
         "id": "line_2",
         "parentid": "line_1",
         "topic": "conda",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_3",
@@ -34,7 +35,8 @@
         "id": "line_5",
         "parentid": "line_1",
         "topic": "pip",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_6",
@@ -81,13 +83,15 @@
         "id": "line_12",
         "parentid": "line_11",
         "topic": "sparse_categorical_crossentropy",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_13",
         "parentid": "line_11",
         "topic": "mean_squared_error:mse",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_14",
@@ -99,19 +103,22 @@
         "id": "line_15",
         "parentid": "line_14",
         "topic": "SGDOptimizer",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_16",
         "parentid": "line_14",
         "topic": "AdamOptimizer",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_17",
         "parentid": "line_14",
         "topic": "RMSPropOptimizer",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_18",
@@ -123,13 +130,15 @@
         "id": "line_19",
         "parentid": "line_18",
         "topic": "accuracy",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_20",
         "parentid": "line_18",
         "topic": "mean_absolute_error:mae",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_21",
@@ -141,19 +150,22 @@
         "id": "line_22",
         "parentid": "line_21",
         "topic": "EarlyStopping",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_23",
         "parentid": "line_21",
         "topic": "ModelCheckpoint",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_24",
         "parentid": "line_21",
         "topic": "class PrintDot(keras.callbacks.Callback):",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_25",
@@ -179,184 +191,1282 @@
     {
         "id": "line_28",
         "parentid": "root",
-        "topic": "pretrain model",
+        "topic": "layer",
         "background-color": "#e3aba7"
     },
     {
         "id": "line_29",
         "parentid": "line_28",
-        "topic": "tf.keras.Application.MobileNetV2",
-        "background-color": "#e82ad2"
+        "topic": "Dense",
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_30",
         "parentid": "line_28",
-        "topic": "tf.keras.Application.ResNet152V2",
-        "background-color": "#e82ad2"
+        "topic": "Conv2D",
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_31",
-        "parentid": "root",
-        "topic": "overfit",
-        "background-color": "#e3aba7"
+        "parentid": "line_28",
+        "topic": "LSTM",
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_32",
-        "parentid": "line_31",
-        "topic": "DropOut",
-        "background-color": "#e82ad2"
+        "parentid": "line_28",
+        "topic": "BatchNormalized",
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_33",
-        "parentid": "line_31",
-        "topic": "BatchNormalized",
-        "background-color": "#e82ad2"
+        "parentid": "line_28",
+        "topic": "Dropout",
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_34",
-        "parentid": "line_31",
-        "topic": "Weight Normalized",
-        "background-color": "#e82ad2"
+        "parentid": "line_28",
+        "topic": "Custom Layer",
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_35",
-        "parentid": "line_31",
-        "topic": "Data Argumentation",
-        "background-color": "#e82ad2"
+        "parentid": "line_34",
+        "topic": "class MyDenseLayer(tf.keras.layers.Layer):",
+        "background-color": "#0fbdff",
+        "expanded": false
     },
     {
         "id": "line_36",
-        "parentid": "root",
-        "topic": "underfit",
-        "background-color": "#e3aba7"
-    },
-    {
-        "id": "line_37",
-        "parentid": "line_36",
-        "topic": "increate epochs",
-        "background-color": "#e82ad2"
-    },
-    {
-        "id": "root",
-        "isroot": true,
-        "topic": ""
-    },
-    {
-        "id": "line_39",
-        "parentid": "root",
-        "topic": "studing dataset",
-        "background-color": "#e3aba7"
-    },
-    {
-        "id": "line_40",
-        "parentid": "line_39",
-        "topic": "train_x,train_y=tf.keras.dataset.fashion_mist.load_data()",
-        "background-color": "#e82ad2"
-    },
-    {
-        "id": "line_41",
-        "parentid": "line_39",
-        "topic": "train_x,train_y=tf.keras.dataset.imdb.load_data()",
-        "background-color": "#e82ad2"
-    },
-    {
-        "id": "line_42",
-        "parentid": "root",
-        "topic": "save",
-        "background-color": "#e3aba7"
-    },
-    {
-        "id": "line_43",
-        "parentid": "line_42",
-        "topic": "all info",
-        "background-color": "#e82ad2"
-    },
-    {
-        "id": "line_44",
-        "parentid": "line_42",
-        "topic": "h5 file",
-        "background-color": "#e82ad2"
-    },
-    {
-        "id": "line_45",
-        "parentid": "root",
-        "topic": "load_model",
-        "background-color": "#e3aba7"
-    },
-    {
-        "id": "line_46",
-        "parentid": "line_45",
-        "topic": "h5 file",
-        "background-color": "#e82ad2"
-    },
-    {
-        "id": "line_47",
-        "parentid": "root",
-        "topic": "save_weights",
-        "background-color": "#e3aba7"
-    },
-    {
-        "id": "line_48",
-        "parentid": "line_47",
-        "topic": "ckpt-checkpoint",
-        "background-color": "#e82ad2"
-    },
-    {
-        "id": "line_49",
-        "parentid": "line_47",
-        "topic": "weight",
-        "background-color": "#e82ad2"
-    },
-    {
-        "id": "line_50",
-        "parentid": "line_49",
-        "topic": "file",
-        "background-color": "#0fbdff",
-        "expanded": false
-    },
-    {
-        "id": "line_51",
-        "parentid": "line_49",
-        "topic": "weight file",
-        "background-color": "#0fbdff",
-        "expanded": false
-    },
-    {
-        "id": "line_52",
-        "parentid": "line_49",
-        "topic": "tflite for deploy",
-        "background-color": "#0fbdff",
-        "expanded": false
-    },
-    {
-        "id": "line_53",
-        "parentid": "line_52",
-        "topic": "convert form weight/h5",
+        "parentid": "line_35",
+        "topic": "def __init__(self, num_outputs):",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "super(MyDenseLayer, self).__init__()",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_36",
+        "topic": "self.num_outputs = num_outputs",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_35",
+        "topic": "def build(self, input_shape):",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "self.kernel = self.add_variable(\"kernel\",",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "shape=[input_shape[-1].value,",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_40",
+        "topic": "self.num_outputs])",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_35",
+        "topic": "def call(self, input):",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "return tf.matmul(input, self.kernel)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_34",
+        "topic": "layer = MyDenseLayer(10)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_28",
+        "topic": "Composing Layer",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_46",
+        "topic": "class ResnetIdentityBlock(tf.keras.Model):",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "def __init__(self, kernel_size, filters):",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_48",
+        "topic": "super(ResnetIdentityBlock, self).__init__(name='')",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_48",
+        "topic": "filters1, filters2, filters3 = filters",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_48",
+        "topic": "self.conv2a = tf.keras.layers.Conv2D(filters1, (1, 1))",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_48",
+        "topic": "self.bn2a = tf.keras.layers.BatchNormalization()",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_48",
+        "topic": "self.conv2b = tf.keras.layers.Conv2D(filters2, kernel_size, padding='same')",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
         "id": "line_54",
-        "parentid": "root",
-        "topic": "load_weights",
-        "background-color": "#e3aba7"
+        "parentid": "line_48",
+        "topic": "self.bn2b = tf.keras.layers.BatchNormalization()",
+        "background-color": "#d41dea",
+        "expanded": false
     },
     {
         "id": "line_55",
-        "parentid": "line_54",
-        "topic": "ckpt",
-        "background-color": "#e82ad2"
+        "parentid": "line_48",
+        "topic": "self.conv2c = tf.keras.layers.Conv2D(filters3, (1, 1))",
+        "background-color": "#d41dea",
+        "expanded": false
     },
     {
         "id": "line_56",
-        "parentid": "line_54",
-        "topic": "h5",
-        "background-color": "#e82ad2"
+        "parentid": "line_48",
+        "topic": "self.bn2c = tf.keras.layers.BatchNormalization()",
+        "background-color": "#d41dea",
+        "expanded": false
     },
     {
         "id": "line_57",
-        "parentid": "line_54",
+        "parentid": "line_47",
+        "topic": "def call(self, input_tensor, training=False):",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_57",
+        "topic": "x = self.conv2a(input_tensor)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_57",
+        "topic": "x = self.bn2a(x, training=training)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_57",
+        "topic": "x = tf.nn.relu(x)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_57",
+        "topic": "x = self.conv2b(x)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_57",
+        "topic": "x = self.bn2b(x, training=training)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_57",
+        "topic": "x = tf.nn.relu(x)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_57",
+        "topic": "x = self.conv2c(x)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_57",
+        "topic": "x = self.bn2c(x, training=training)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_57",
+        "topic": "x += input_tensor",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_57",
+        "topic": "return tf.nn.relu(x)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_46",
+        "topic": "block = ResnetIdentityBlock(1, [1, 2, 3])",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "root",
+        "topic": "overfit/underfit prevent",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_69",
+        "topic": "overfit",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_70",
+        "topic": "DropOut",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_70",
+        "topic": "BatchNormalized",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_70",
+        "topic": "Weight Normalized",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_70",
+        "topic": "Data Argumentation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_69",
+        "topic": "underfit",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_75",
+        "topic": "more epochs",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "root",
+        "topic": "dataset",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_77",
+        "topic": "studing dataset",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_78",
+        "topic": "train_x,train_y=tf.keras.dataset.fashion_mist.load_data()",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_78",
+        "topic": "train_x,train_y=tf.keras.dataset.imdb.load_data()",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_77",
+        "topic": "custom dataset",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_81",
+        "topic": "tf.data.Dataset.from_tensor_slices()",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_77",
+        "topic": "transformations",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_83",
+        "topic": "batch",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_83",
+        "topic": "map",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_83",
+        "topic": "shuffle",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "root",
+        "topic": "save/load weight",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_87",
+        "topic": "save",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_88",
+        "topic": "all training info",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_88",
+        "topic": "h5 file",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_87",
+        "topic": "load_model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_91",
+        "topic": "h5 file",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_87",
+        "topic": "save_weights",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_93",
+        "topic": "only weight data",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_93",
+        "topic": "ckpt-checkpoint",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_93",
         "topic": "weight",
-        "background-color": "#e82ad2"
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_96",
+        "topic": "file",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_96",
+        "topic": "weight file",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_96",
+        "topic": "tflite for deploy",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_99",
+        "topic": "convert form weight/h5",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_87",
+        "topic": "load_weights",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_101",
+        "topic": "ckpt",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_101",
+        "topic": "h5",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_101",
+        "topic": "weight",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_87",
+        "topic": "load pretrain model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_105",
+        "topic": "tf.keras.Application.MobileNetV2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_105",
+        "topic": "tf.keras.Application.ResNet152V2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "root",
+        "topic": "enable_eager_execution",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_108",
+        "topic": "tf.enable_eager_execution()",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_108",
+        "topic": "gradient function",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_110",
+        "topic": "tf.contrib.eager.gradients_function(f)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_108",
+        "topic": "gradient tape",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_112",
+        "topic": "with tf.GradientTape() as tape:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_113",
+        "topic": "pred = model(input_data), training=True)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_113",
+        "topic": "loss = loss_func(pred,target)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_112",
+        "topic": "gradients = tape.gradient(loss,model.trainable_variables)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_112",
+        "topic": "optimizer.apply_gradients(zip(gradients, model.trainable_variables))",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "root",
+        "topic": "gpu",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_118",
+        "topic": "nvida graphic card",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_119",
+        "topic": "cuda version",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_119",
+        "topic": "cudnn version",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_119",
+        "topic": "tensorflow-gpu in conda",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_119",
+        "topic": "tensorflow-gpu in tf1.x",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "root",
+        "topic": "train_example:iris",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_124",
+        "topic": "dataset",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_125",
+        "topic": "train_dataset_url = \"http://download.tensorflow.org/data/iris_training.csv\"",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_125",
+        "topic": "train_dataset_fp = tf.keras.utils.get_file(fname=os.path.basename(train_dataset_url),origin=train_dataset_url)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_125",
+        "topic": "column_names : ['sepal_length', 'sepal_width', 'petal_length', 'petal_width','species']",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_125",
+        "topic": "train_dataset = tf.contrib.data.make_csv_dataset(",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_129",
+        "topic": "train_dataset_fp,",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_129",
+        "topic": "batch_size,",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_129",
+        "topic": "column_names=column_names ,",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_129",
+        "topic": "label_name=label_name,",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_129",
+        "topic": "num_epochs=1)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_125",
+        "topic": "train_x",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_135",
+        "topic": "(120,4)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_135",
+        "topic": "Features: ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_125",
+        "topic": "train_y",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_138",
+        "topic": "(120,1)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_138",
+        "topic": "Label: species",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_124",
+        "topic": "model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_141",
+        "topic": "model = tf.keras.Sequential([",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_141",
+        "topic": "tf.keras.layers.Dense(10, activation=tf.nn.relu, input_shape=(4,)),  # input shape required",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_141",
+        "topic": "tf.keras.layers.Dense(10, activation=tf.nn.relu),",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_141",
+        "topic": "tf.keras.layers.Dense(3)])",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_124",
+        "topic": "Using the model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_146",
+        "topic": "predictions = model(features)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_146",
+        "topic": "predictions=tf.nn.softmax(predictions[:,:],axis=1)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_146",
+        "topic": "predictions=tf.argmax(predictions, axis=1)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_124",
+        "topic": "loss",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_150",
+        "topic": "def loss(model, x, y):",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_151",
+        "topic": "y_ = model(x)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_151",
+        "topic": "return tf.losses.sparse_softmax_cross_entropy(labels=y, logits=y_)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_124",
+        "topic": "gradient decent",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_154",
+        "topic": "def grad(model, inputs, targets):",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_155",
+        "topic": "with tf.GradientTape() as tape:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_156",
+        "topic": "loss_value = loss(model, inputs, targets)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_155",
+        "topic": "return loss_value, tape.gradient(loss_value, model.trainable_variables)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_124",
+        "topic": "optimizer",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_159",
+        "topic": "optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.01)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_159",
+        "topic": "global_step = tf.train.get_or_create_global_step()",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_159",
+        "topic": "optimizer.apply_gradients(zip(grads, model.variables), global_step)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_124",
+        "topic": "epochs",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_163",
+        "topic": "train_loss_results = []",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_163",
+        "topic": "train_accuracy_results = []",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_163",
+        "topic": "num_epochs = 201",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_163",
+        "topic": "for epoch in range(num_epochs):",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_167",
+        "topic": "epoch_loss_avg = tfe.metrics.Mean()",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_167",
+        "topic": "epoch_accuracy = tfe.metrics.Accuracy()",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_167",
+        "topic": "for x, y in train_dataset:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_167",
+        "topic": "loss_value, grads = grad(model, x, y)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_167",
+        "topic": "optimizer.apply_gradients(zip(grads, model.variables),global_step)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_167",
+        "topic": "epoch_loss_avg(loss_value)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_167",
+        "topic": "epoch_accuracy(tf.argmax(model(x), axis=1, output_type=tf.int32), y)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_163",
+        "topic": "train_loss_results.append(epoch_loss_avg.result())",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_163",
+        "topic": "train_accuracy_results.append(epoch_accuracy.result())",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_163",
+        "topic": "if epoch % 50 == 0:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_177",
+        "topic": "print(\"Epoch {:03d}: Loss: {:.3f}, Accuracy: {:.3%}\".format(epoch,",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_178",
+        "topic": "epoch_loss_avg.result(),",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_178",
+        "topic": "epoch_accuracy.result()))",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_124",
+        "topic": "test",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_181",
+        "topic": "dataset",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_182",
+        "topic": "test_url = \"http://download.tensorflow.org/data/iris_test.csv\"",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_182",
+        "topic": "test_fp = tf.keras.utils.get_file(fname=os.path.basename(test_url),origin=test_url)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_182",
+        "topic": "test_dataset = tf.contrib.data.make_csv_dataset(",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_185",
+        "topic": "train_dataset_fp,",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_185",
+        "topic": "batch_size,",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_185",
+        "topic": "column_names=column_names,",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_185",
+        "topic": "label_name='species',",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_185",
+        "topic": "num_epochs=1,",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_191",
+        "parentid": "line_185",
+        "topic": "shuffle=False)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_182",
+        "topic": "test_dataset = test_dataset.map(pack_features_vector)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_181",
+        "topic": "testing",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "line_193",
+        "topic": "test_accuracy = tfe.metrics.Accuracy()",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_193",
+        "topic": "for (x, y) in test_dataset:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_195",
+        "topic": "logits = model(x)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_197",
+        "parentid": "line_195",
+        "topic": "prediction = tf.argmax(logits, axis=1, output_type=tf.int32)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_198",
+        "parentid": "line_195",
+        "topic": "test_accuracy(prediction, y)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_199",
+        "parentid": "line_193",
+        "topic": "print(\"Test set accuracy: {:.3%}\".format(test_accuracy.result()))",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_200",
+        "parentid": "line_124",
+        "topic": "predict",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_201",
+        "parentid": "line_200",
+        "topic": "predict_dataset = tf.convert_to_tensor([",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_202",
+        "parentid": "line_201",
+        "topic": "[5.1, 3.3, 1.7, 0.5,],",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_203",
+        "parentid": "line_201",
+        "topic": "[5.9, 3.0, 4.2, 1.5,],",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_204",
+        "parentid": "line_201",
+        "topic": "[6.9, 3.1, 5.4, 2.1]",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_205",
+        "parentid": "line_200",
+        "topic": "])",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_206",
+        "parentid": "line_200",
+        "topic": "predictions = model(predict_dataset)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_207",
+        "parentid": "line_200",
+        "topic": "for i, logits in enumerate(predictions):",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_208",
+        "parentid": "line_207",
+        "topic": "class_idx = tf.argmax(logits).numpy()",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_209",
+        "parentid": "line_207",
+        "topic": "p = tf.nn.softmax(logits)[class_idx]",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_210",
+        "parentid": "line_207",
+        "topic": "name = class_names[class_idx]",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_211",
+        "parentid": "line_207",
+        "topic": "print(\"Example {} prediction: {} ({:4.1f}%)\".format(i, name, 100*p))",
+        "background-color": "#e3aba7",
+        "expanded": false
     }
 ]

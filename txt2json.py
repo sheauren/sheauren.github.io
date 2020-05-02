@@ -25,6 +25,8 @@ def txt2json(file):
         json_list =[]
         last_tab_parent = dict()    
         for index,line in enumerate(lines):
+            if len(line.strip())==0:
+                continue
             line = line.rstrip()
             line = line.replace('    ',"\t")
             offset = line.count('\t')

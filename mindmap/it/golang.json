@@ -60,11 +60,6 @@
         "expanded": false
     },
     {
-        "id": "root",
-        "isroot": true,
-        "topic": ""
-    },
-    {
         "id": "line_10",
         "parentid": "line_4",
         "topic": "close",
@@ -915,11 +910,6 @@
         "topic": "car.GetName()",
         "background-color": "#e3aba7",
         "expanded": false
-    },
-    {
-        "id": "root",
-        "isroot": true,
-        "topic": ""
     },
     {
         "id": "line_133",
