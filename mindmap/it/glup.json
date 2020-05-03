@@ -1,0 +1,486 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "glup"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "automate and enhance your workflow",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "root",
+        "topic": "example:",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "prototype in glupfile.js",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "var glup = require('glup')",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_3",
+        "topic": "glup.task('default',['clean','less'],()=>{",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "console.log('done')",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_3",
+        "topic": "})",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_3",
+        "topic": "run glup",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "glup",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "run default task",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_8",
+        "topic": "glup <task> <othertaks>",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "run spec task",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_3",
+        "topic": "// less",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_3",
+        "topic": "gloup.task('less',()=>{",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "glup.src('src/**/*.less')",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": ".pipe(less())",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_15",
+        "topic": ".pipe(gulp.dest('build))",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_3",
+        "topic": "})",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_3",
+        "topic": "// clean-task",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_3",
+        "topic": "glup.task('clean',()=>{",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "del.sync('build')",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_3",
+        "topic": "})",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "root",
+        "topic": "api",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "glup.src('client/template/*.jade')",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": ".pipe(jade())",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_24",
+        "topic": ".pipe(minify())",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_24",
+        "topic": ".pipe(glup.dest('build/minified_template'))",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_23",
+        "topic": "glob",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "*",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "any chars/length",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_28",
+        "topic": "?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "any one char",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_28",
+        "topic": "[...]",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "range char",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_28",
+        "topic": "!(pattern1|pattern2)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "not match pattern",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_28",
+        "topic": "?(pattern1|pattern2)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "match 0 or 1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_28",
+        "topic": "+(pattern1|pattern2)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "match 1 or more",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_28",
+        "topic": "*(a|b|c)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_41",
+        "topic": "match any",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_28",
+        "topic": "@(pattern|pat*|pat?erN)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "match spec 1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_28",
+        "topic": "**",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "any level match",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_23",
+        "topic": "src",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "select source file by glob",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_23",
+        "topic": "dest",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "build target",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_23",
+        "topic": "task(name,[deps],fn)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "name",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "taskname",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_51",
+        "topic": "deps",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "depend by other taskname array",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_51",
+        "topic": "fn",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_56",
+        "topic": "callback",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_23",
+        "topic": "watcher = watch(glob,[.opts],tasks)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "watcher.on('change',event=>{})",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "root",
+        "topic": "other library",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_60",
+        "topic": "glup-less",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_60",
+        "topic": "glup-clean-css",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "compress css",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_60",
+        "topic": "glup-source-map",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_60",
+        "topic": "glup-jade",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_60",
+        "topic": "del",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_60",
+        "topic": "glup-autoprefixer",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_67",
+        "topic": "browsers:['last 5 versions','firefox>20'],",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_67",
+        "topic": "cascade:false",
+        "background-color": "#0fbdff",
+        "expanded": false
+    }
+]
