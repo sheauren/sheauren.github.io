@@ -1,0 +1,117 @@
+webpack
+    feature
+        module bounder
+    run
+        package.json
+        "script":
+            "webpack":"webpack"        
+    config - webpack.config.js
+        entry:
+            './app/entry'
+            ['./app/entry1','./app/entry2']
+            { a:'./app/entry1',b:['./app/entry2','./app/entry3'] }
+        output:
+            path:
+                path.resolve(__dirname,'dist)
+            filename:
+                'bundle.js'
+                '[name].js'
+                '[chunkhash].js'
+        module:
+            rules:
+                /*js*/{
+                    test:
+                        /\.js?$/
+                    include:
+                        [path.resolve(__dirname,'src/script')]
+                    exclude:
+                        ...
+                    loader:
+                        'babel-loader'
+                    options:{
+                        presets:['es2015']
+                    }
+                }
+                /*less*/{
+                    test:
+                        /\.less?$/
+                    use:[
+                        {loader:'style-loader'} /* create style form js */
+                        {loader:'css-loader'} /* css->commonjs */
+                        {loader:'less-loader'} /* less->css */
+                    ]
+                }
+        plugins
+            MiniCssExtractPlugin
+                feature
+                    This plugin extracts CSS into separate files. 
+                create
+                    const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+                rules.use:
+                    [MiniCssExtractPlugin.loader, 'css-loader'],
+                plugins:
+                    [new MiniCssExtractPlugin()],
+            ExtractTextPlugin
+                feature
+                    It moves all the required *.css modules in entry chunks into a separate CSS file. 
+                create
+                    const ExtractTextPlugin = require('extract-text-webpack-plugin)
+                    const extractless = new ExtractTextPlugin({
+                        filename:'../style/[name].[contenthash].css',
+                        disable:process.env.NODE_ENV==='development'
+                    })
+                rules.use:
+                    use: extractless.extract({
+                        use:[
+                            {loader:'css-loader'} /* css->commonjs */
+                            {loader:'less-loader'} /* less->css */
+                        ],
+                        fallback:'style-loader'
+                    })
+                plugin:
+                    [extractless]            
+            UglifyJSPlugin
+                feature
+                    This plugin uses uglify-js to minify your JavaScript.
+                create
+                    const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+                plugin:
+                    [new UglifyJSPlugin()]
+                .babelrc
+                    from "presets":["env","react"]
+                    to "presets:[["env",{"modules":false}],"react"]
+        externals
+            'jquery':'jQuery'
+                // import $ from 'jquery'
+            'react':'React'
+            'react-dom':'ReactDOM'
+        vendor
+            const webpack=require('webpack')
+            entry
+                vendor:['react','react-dom']
+            plugins
+                new webpack.optimize.CommonsChunkPlugin({
+                    name:'vendor'
+                    //names:['vendor']
+                    //names:['vendor','runtime']
+                })
+        
+    production
+        const ExtractTextPlugin = require('extract-text-webpack-plugin)
+            const extractless = new ExtractTextPlugin({
+                filename:'../style/[name].[contenthash].css',
+                disable:process.env.NODE_ENV==='development'
+            })
+            /*less*/{
+                test:
+                    /\.less?$/
+                use: extractless.extract({
+                    use:[
+                        {loader:'css-loader'} /* css->commonjs */
+                        {loader:'less-loader'} /* less->css */
+                    ],
+                    fallback:'style-loader'
+                })
+            }
+            plugins:
+                [extractless]

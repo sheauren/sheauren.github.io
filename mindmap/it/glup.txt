@@ -1,5 +1,6 @@
 glup
-    automate and enhance your workflow
+    feature
+        automate and enhance your workflow
     example:
         prototype in glupfile.js
             var glup = require('glup')

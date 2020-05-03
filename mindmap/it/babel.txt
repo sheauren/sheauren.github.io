@@ -1,0 +1,44 @@
+babel
+    feature
+        a javascript compiler
+        use next generation javascript
+        write es6 compile to  es5
+    npm
+        babel-cli
+        babel-preset-env
+    env
+        .babelrc
+            {
+                "presets": ["@babel/preset-env",
+                "react" /* if need */
+                ],
+                "plugins":["transform-object-assign"]
+            }
+        
+    setup
+        glup-babel
+            npm install --save-dev gulp-babel@next @babel/core
+            use
+                var gulp = require("gulp");
+                var babel = require("gulp-babel");
+                gulp.task("default", function () {
+                return gulp.src("src/app.js")
+                    .pipe(babel())
+                    .pipe(gulp.dest("dist"));
+                });
+        webpack
+            use by config
+                module: {
+                    rules: [
+                        { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+                    ]}
+            use by loader
+                var Person = require("babel!./Person.js").default;
+                new Person();
+        cli
+            package.json
+                "scripts": {
+                    "babel": "babel src/script -d build/script"
+                },
+            run
+                npm run babel

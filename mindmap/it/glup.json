@@ -7,478 +7,485 @@
     {
         "id": "line_1",
         "parentid": "root",
-        "topic": "automate and enhance your workflow",
+        "topic": "feature",
         "background-color": "#e3aba7"
     },
     {
         "id": "line_2",
+        "parentid": "line_1",
+        "topic": "automate and enhance your workflow",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
         "parentid": "root",
         "topic": "example:",
         "background-color": "#e3aba7"
     },
     {
-        "id": "line_3",
-        "parentid": "line_2",
+        "id": "line_4",
+        "parentid": "line_3",
         "topic": "prototype in glupfile.js",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_4",
-        "parentid": "line_3",
+        "id": "line_5",
+        "parentid": "line_4",
         "topic": "var glup = require('glup')",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_5",
-        "parentid": "line_3",
+        "id": "line_6",
+        "parentid": "line_4",
         "topic": "glup.task('default',['clean','less'],()=>{",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_6",
-        "parentid": "line_5",
+        "id": "line_7",
+        "parentid": "line_6",
         "topic": "console.log('done')",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_7",
-        "parentid": "line_3",
-        "topic": "})",
-        "background-color": "#0fbdff",
-        "expanded": false
-    },
-    {
         "id": "line_8",
-        "parentid": "line_3",
-        "topic": "run glup",
+        "parentid": "line_4",
+        "topic": "})",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_9",
-        "parentid": "line_8",
-        "topic": "glup",
-        "background-color": "#e3aba7",
+        "parentid": "line_4",
+        "topic": "run glup",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_10",
         "parentid": "line_9",
+        "topic": "glup",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
         "topic": "run default task",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_11",
-        "parentid": "line_8",
+        "id": "line_12",
+        "parentid": "line_9",
         "topic": "glup <task> <othertaks>",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_12",
-        "parentid": "line_11",
+        "id": "line_13",
+        "parentid": "line_12",
         "topic": "run spec task",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_13",
-        "parentid": "line_3",
+        "id": "line_14",
+        "parentid": "line_4",
         "topic": "// less",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_14",
-        "parentid": "line_3",
+        "id": "line_15",
+        "parentid": "line_4",
         "topic": "gloup.task('less',()=>{",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_15",
-        "parentid": "line_14",
+        "id": "line_16",
+        "parentid": "line_15",
         "topic": "glup.src('src/**/*.less')",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_16",
-        "parentid": "line_15",
+        "id": "line_17",
+        "parentid": "line_16",
         "topic": ".pipe(less())",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_17",
-        "parentid": "line_15",
+        "id": "line_18",
+        "parentid": "line_16",
         "topic": ".pipe(gulp.dest('build))",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_18",
-        "parentid": "line_3",
-        "topic": "})",
-        "background-color": "#0fbdff",
-        "expanded": false
-    },
-    {
         "id": "line_19",
-        "parentid": "line_3",
-        "topic": "// clean-task",
+        "parentid": "line_4",
+        "topic": "})",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_20",
-        "parentid": "line_3",
-        "topic": "glup.task('clean',()=>{",
+        "parentid": "line_4",
+        "topic": "// clean-task",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_21",
-        "parentid": "line_20",
+        "parentid": "line_4",
+        "topic": "glup.task('clean',()=>{",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
         "topic": "del.sync('build')",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_22",
-        "parentid": "line_3",
+        "id": "line_23",
+        "parentid": "line_4",
         "topic": "})",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_23",
+        "id": "line_24",
         "parentid": "root",
         "topic": "api",
         "background-color": "#e3aba7"
     },
     {
-        "id": "line_24",
-        "parentid": "line_23",
+        "id": "line_25",
+        "parentid": "line_24",
         "topic": "glup.src('client/template/*.jade')",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_25",
-        "parentid": "line_24",
+        "id": "line_26",
+        "parentid": "line_25",
         "topic": ".pipe(jade())",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_26",
-        "parentid": "line_24",
+        "id": "line_27",
+        "parentid": "line_25",
         "topic": ".pipe(minify())",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_27",
-        "parentid": "line_24",
+        "id": "line_28",
+        "parentid": "line_25",
         "topic": ".pipe(glup.dest('build/minified_template'))",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_28",
-        "parentid": "line_23",
+        "id": "line_29",
+        "parentid": "line_24",
         "topic": "glob",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_29",
-        "parentid": "line_28",
+        "id": "line_30",
+        "parentid": "line_29",
         "topic": "*",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_30",
-        "parentid": "line_29",
+        "id": "line_31",
+        "parentid": "line_30",
         "topic": "any chars/length",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_31",
-        "parentid": "line_28",
+        "id": "line_32",
+        "parentid": "line_29",
         "topic": "?",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_32",
-        "parentid": "line_31",
+        "id": "line_33",
+        "parentid": "line_32",
         "topic": "any one char",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_33",
-        "parentid": "line_28",
+        "id": "line_34",
+        "parentid": "line_29",
         "topic": "[...]",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_34",
-        "parentid": "line_33",
+        "id": "line_35",
+        "parentid": "line_34",
         "topic": "range char",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_35",
-        "parentid": "line_28",
+        "id": "line_36",
+        "parentid": "line_29",
         "topic": "!(pattern1|pattern2)",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_36",
-        "parentid": "line_35",
+        "id": "line_37",
+        "parentid": "line_36",
         "topic": "not match pattern",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_37",
-        "parentid": "line_28",
+        "id": "line_38",
+        "parentid": "line_29",
         "topic": "?(pattern1|pattern2)",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_38",
-        "parentid": "line_37",
+        "id": "line_39",
+        "parentid": "line_38",
         "topic": "match 0 or 1",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_39",
-        "parentid": "line_28",
+        "id": "line_40",
+        "parentid": "line_29",
         "topic": "+(pattern1|pattern2)",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_40",
-        "parentid": "line_39",
+        "id": "line_41",
+        "parentid": "line_40",
         "topic": "match 1 or more",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_41",
-        "parentid": "line_28",
+        "id": "line_42",
+        "parentid": "line_29",
         "topic": "*(a|b|c)",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_42",
-        "parentid": "line_41",
+        "id": "line_43",
+        "parentid": "line_42",
         "topic": "match any",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_43",
-        "parentid": "line_28",
+        "id": "line_44",
+        "parentid": "line_29",
         "topic": "@(pattern|pat*|pat?erN)",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_44",
-        "parentid": "line_43",
+        "id": "line_45",
+        "parentid": "line_44",
         "topic": "match spec 1",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_45",
-        "parentid": "line_28",
+        "id": "line_46",
+        "parentid": "line_29",
         "topic": "**",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_46",
-        "parentid": "line_45",
+        "id": "line_47",
+        "parentid": "line_46",
         "topic": "any level match",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_47",
-        "parentid": "line_23",
+        "id": "line_48",
+        "parentid": "line_24",
         "topic": "src",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_48",
-        "parentid": "line_47",
+        "id": "line_49",
+        "parentid": "line_48",
         "topic": "select source file by glob",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_49",
-        "parentid": "line_23",
+        "id": "line_50",
+        "parentid": "line_24",
         "topic": "dest",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_50",
-        "parentid": "line_49",
+        "id": "line_51",
+        "parentid": "line_50",
         "topic": "build target",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_51",
-        "parentid": "line_23",
+        "id": "line_52",
+        "parentid": "line_24",
         "topic": "task(name,[deps],fn)",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_52",
-        "parentid": "line_51",
+        "id": "line_53",
+        "parentid": "line_52",
         "topic": "name",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_53",
-        "parentid": "line_52",
+        "id": "line_54",
+        "parentid": "line_53",
         "topic": "taskname",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_54",
-        "parentid": "line_51",
+        "id": "line_55",
+        "parentid": "line_52",
         "topic": "deps",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_55",
-        "parentid": "line_54",
+        "id": "line_56",
+        "parentid": "line_55",
         "topic": "depend by other taskname array",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_56",
-        "parentid": "line_51",
+        "id": "line_57",
+        "parentid": "line_52",
         "topic": "fn",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_57",
-        "parentid": "line_56",
+        "id": "line_58",
+        "parentid": "line_57",
         "topic": "callback",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_58",
-        "parentid": "line_23",
+        "id": "line_59",
+        "parentid": "line_24",
         "topic": "watcher = watch(glob,[.opts],tasks)",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_59",
-        "parentid": "line_58",
+        "id": "line_60",
+        "parentid": "line_59",
         "topic": "watcher.on('change',event=>{})",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_60",
+        "id": "line_61",
         "parentid": "root",
         "topic": "other library",
         "background-color": "#e3aba7"
     },
     {
-        "id": "line_61",
-        "parentid": "line_60",
+        "id": "line_62",
+        "parentid": "line_61",
         "topic": "glup-less",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_62",
-        "parentid": "line_60",
+        "id": "line_63",
+        "parentid": "line_61",
         "topic": "glup-clean-css",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_63",
-        "parentid": "line_62",
+        "id": "line_64",
+        "parentid": "line_63",
         "topic": "compress css",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_64",
-        "parentid": "line_60",
+        "id": "line_65",
+        "parentid": "line_61",
         "topic": "glup-source-map",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_65",
-        "parentid": "line_60",
+        "id": "line_66",
+        "parentid": "line_61",
         "topic": "glup-jade",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_66",
-        "parentid": "line_60",
+        "id": "line_67",
+        "parentid": "line_61",
         "topic": "del",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_67",
-        "parentid": "line_60",
+        "id": "line_68",
+        "parentid": "line_61",
         "topic": "glup-autoprefixer",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_68",
-        "parentid": "line_67",
+        "id": "line_69",
+        "parentid": "line_68",
         "topic": "browsers:['last 5 versions','firefox>20'],",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_69",
-        "parentid": "line_67",
+        "id": "line_70",
+        "parentid": "line_68",
         "topic": "cascade:false",
         "background-color": "#0fbdff",
         "expanded": false

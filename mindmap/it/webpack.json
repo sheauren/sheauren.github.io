@@ -1,0 +1,808 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "webpack"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "feature",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "module bounder",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "root",
+        "topic": "run",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "package.json",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_3",
+        "topic": "\"script\":",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "\"webpack\":\"webpack\"",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "root",
+        "topic": "config - webpack.config.js",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "entry:",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "'./app/entry'",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_8",
+        "topic": "['./app/entry1','./app/entry2']",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_8",
+        "topic": "{ a:'./app/entry1',b:['./app/entry2','./app/entry3'] }",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_7",
+        "topic": "output:",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "path:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "path.resolve(__dirname,'dist)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_12",
+        "topic": "filename:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "'bundle.js'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_15",
+        "topic": "'[name].js'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_15",
+        "topic": "'[chunkhash].js'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_7",
+        "topic": "module:",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "rules:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "/*js*/{",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "test:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "/\\.js?$/",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_21",
+        "topic": "include:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "[path.resolve(__dirname,'src/script')]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_21",
+        "topic": "exclude:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "...",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_21",
+        "topic": "loader:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "'babel-loader'",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_21",
+        "topic": "options:{",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "presets:['es2015']",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_21",
+        "topic": "}",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_20",
+        "topic": "}",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_20",
+        "topic": "/*less*/{",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "test:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "/\\.less?$/",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_34",
+        "topic": "use:[",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "{loader:'style-loader'} /* create style form js */",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_37",
+        "topic": "{loader:'css-loader'} /* css->commonjs */",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_37",
+        "topic": "{loader:'less-loader'} /* less->css */",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_34",
+        "topic": "]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_20",
+        "topic": "}",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_7",
+        "topic": "plugins",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "MiniCssExtractPlugin",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "feature",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "This plugin extracts CSS into separate files.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_44",
+        "topic": "create",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "const MiniCssExtractPlugin = require('mini-css-extract-plugin');",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_44",
+        "topic": "rules.use:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "[MiniCssExtractPlugin.loader, 'css-loader'],",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_44",
+        "topic": "plugins:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "[new MiniCssExtractPlugin()],",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_43",
+        "topic": "ExtractTextPlugin",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "feature",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "It moves all the required *.css modules in entry chunks into a separate CSS file.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_53",
+        "topic": "create",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_56",
+        "topic": "const ExtractTextPlugin = require('extract-text-webpack-plugin)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_56",
+        "topic": "const extractless = new ExtractTextPlugin({",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "filename:'../style/[name].[contenthash].css',",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_58",
+        "topic": "disable:process.env.NODE_ENV==='development'",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_56",
+        "topic": "})",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_53",
+        "topic": "rules.use:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "use: extractless.extract({",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "use:[",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "{loader:'css-loader'} /* css->commonjs */",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_64",
+        "topic": "{loader:'less-loader'} /* less->css */",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_63",
+        "topic": "],",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_63",
+        "topic": "fallback:'style-loader'",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_62",
+        "topic": "})",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_53",
+        "topic": "plugin:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_70",
+        "topic": "[extractless]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_43",
+        "topic": "UglifyJSPlugin",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_72",
+        "topic": "feature",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_73",
+        "topic": "This plugin uses uglify-js to minify your JavaScript.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_72",
+        "topic": "create",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_75",
+        "topic": "const UglifyJSPlugin = require('uglifyjs-webpack-plugin')",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_72",
+        "topic": "plugin:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_77",
+        "topic": "[new UglifyJSPlugin()]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_72",
+        "topic": ".babelrc",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_79",
+        "topic": "from \"presets\":[\"env\",\"react\"]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_79",
+        "topic": "to \"presets:[[\"env\",{\"modules\":false}],\"react\"]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_7",
+        "topic": "externals",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_82",
+        "topic": "'jquery':'jQuery'",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_83",
+        "topic": "// import $ from 'jquery'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_82",
+        "topic": "'react':'React'",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_82",
+        "topic": "'react-dom':'ReactDOM'",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_7",
+        "topic": "vendor",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_87",
+        "topic": "const webpack=require('webpack')",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_87",
+        "topic": "entry",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_89",
+        "topic": "vendor:['react','react-dom']",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_87",
+        "topic": "plugins",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_91",
+        "topic": "new webpack.optimize.CommonsChunkPlugin({",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_92",
+        "topic": "name:'vendor'",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_92",
+        "topic": "//names:['vendor']",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_92",
+        "topic": "//names:['vendor','runtime']",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_91",
+        "topic": "})",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "root",
+        "topic": "production",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_98",
+        "topic": "const ExtractTextPlugin = require('extract-text-webpack-plugin)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_99",
+        "topic": "const extractless = new ExtractTextPlugin({",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_100",
+        "topic": "filename:'../style/[name].[contenthash].css',",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_100",
+        "topic": "disable:process.env.NODE_ENV==='development'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_99",
+        "topic": "})",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_99",
+        "topic": "/*less*/{",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_104",
+        "topic": "test:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_105",
+        "topic": "/\\.less?$/",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_104",
+        "topic": "use: extractless.extract({",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_107",
+        "topic": "use:[",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_108",
+        "topic": "{loader:'css-loader'} /* css->commonjs */",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_108",
+        "topic": "{loader:'less-loader'} /* less->css */",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_107",
+        "topic": "],",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_107",
+        "topic": "fallback:'style-loader'",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_104",
+        "topic": "})",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_99",
+        "topic": "}",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_99",
+        "topic": "plugins:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_115",
+        "topic": "[extractless]",
+        "background-color": "#e3aba7",
+        "expanded": false
+    }
+]
