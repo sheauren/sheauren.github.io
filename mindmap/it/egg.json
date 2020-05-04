@@ -1,0 +1,31 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "egg"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "github repo-badges",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "build passing",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "converage",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_1",
+        "topic": "etc",
+        "background-color": "#e82ad2"
+    }
+]

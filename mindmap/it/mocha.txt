@@ -3,12 +3,11 @@ mocha
         npm -g install mocha
         npm install --dev mocha
     package.json
-        "script"
+        "scripts"
             "test":"mocha"
     example
         js in test folder
         ex1:
-            
             var assert = require('assert')
             decribe('#Array',()=>{
                 decribe('#IndexOf',()=>{
