@@ -214,6 +214,14 @@ nodejs
                     res.statusCode=304
                     res.end()
                     return
+        assert
+            equal
+            deepEqual
+            fail
+            doesNot
+            ok
+            throws
+            
     register project to global
         package.json
             versoin "0.0.1"

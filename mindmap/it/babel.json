@@ -1,1 +1,288 @@
-[]
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "babel"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "feature",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "a javascript compiler",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "use next generation javascript",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_1",
+        "topic": "write es6 compile to  es5",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_5",
+        "parentid": "root",
+        "topic": "npm",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "babel-cli",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_5",
+        "topic": "babel-preset-env",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_8",
+        "parentid": "root",
+        "topic": "env",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": ".babelrc",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "{",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "\"presets\": [\"@babel/preset-env\",",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_10",
+        "topic": "\"react\" /* if need */",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_10",
+        "topic": "],",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_10",
+        "topic": "\"plugins\":[\"transform-object-assign\"]",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_9",
+        "topic": "}",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "root",
+        "topic": "setup",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "glup-babel",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "npm install --save-dev gulp-babel@next @babel/core",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_18",
+        "topic": "use",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "var gulp = require(\"gulp\");",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_20",
+        "topic": "var babel = require(\"gulp-babel\");",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_20",
+        "topic": "gulp.task(\"default\", function () {",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_20",
+        "topic": "return gulp.src(\"src/app.js\")",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": ".pipe(babel())",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_24",
+        "topic": ".pipe(gulp.dest(\"dist\"));",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_20",
+        "topic": "});",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_17",
+        "topic": "webpack",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "use by config",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "module: {",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "rules: [",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "{ test: /\\.js$/, exclude: /node_modules/, loader: \"babel-loader\" }",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_30",
+        "topic": "]}",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_28",
+        "topic": "use by loader",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "var Person = require(\"babel!./Person.js\").default;",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_34",
+        "topic": "new Person();",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_17",
+        "topic": "cli",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "package.json",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_38",
+        "topic": "\"scripts\": {",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "\"babel\": \"babel src/script -d build/script\"",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_38",
+        "topic": "},",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_37",
+        "topic": "run",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "npm run babel",
+        "background-color": "#e3aba7",
+        "expanded": false
+    }
+]

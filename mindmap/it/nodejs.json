@@ -1493,590 +1493,639 @@
     },
     {
         "id": "line_216",
-        "parentid": "root",
-        "topic": "register project to global",
-        "background-color": "#e3aba7"
-    },
-    {
-        "id": "line_217",
-        "parentid": "line_216",
-        "topic": "package.json",
+        "parentid": "line_48",
+        "topic": "assert",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
+        "id": "line_217",
+        "parentid": "line_216",
+        "topic": "equal",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
         "id": "line_218",
-        "parentid": "line_217",
-        "topic": "versoin \"0.0.1\"",
+        "parentid": "line_216",
+        "topic": "deepEqual",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_219",
-        "parentid": "line_217",
-        "topic": "bin",
+        "parentid": "line_216",
+        "topic": "fail",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_220",
-        "parentid": "line_219",
-        "topic": "'anydoor':'bin/anydoor'",
-        "background-color": "#e3aba7",
+        "parentid": "line_216",
+        "topic": "doesNot",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_221",
-        "parentid": "line_219",
-        "topic": "bin/anydoor",
-        "background-color": "#e3aba7",
+        "parentid": "line_216",
+        "topic": "ok",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_222",
-        "parentid": "line_221",
-        "topic": "#! /usr/bin/env node",
-        "background-color": "#d41dea",
-        "expanded": false
-    },
-    {
-        "id": "line_223",
-        "parentid": "line_221",
-        "topic": "require('../src/index')",
-        "background-color": "#d41dea",
+        "parentid": "line_216",
+        "topic": "throws",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_224",
-        "parentid": "line_216",
-        "topic": "readme.md",
-        "background-color": "#e82ad2",
-        "expanded": false
+        "parentid": "root",
+        "topic": "register project to global",
+        "background-color": "#e3aba7"
     },
     {
         "id": "line_225",
-        "parentid": "line_216",
-        "topic": "cmd",
+        "parentid": "line_224",
+        "topic": "package.json",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_226",
         "parentid": "line_225",
-        "topic": "npm login",
+        "topic": "versoin \"0.0.1\"",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_227",
         "parentid": "line_225",
-        "topic": "npm publish",
+        "topic": "bin",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_228",
-        "parentid": "root",
-        "topic": "npm modules",
-        "background-color": "#e3aba7"
+        "parentid": "line_227",
+        "topic": "'anydoor':'bin/anydoor'",
+        "background-color": "#e3aba7",
+        "expanded": false
     },
     {
         "id": "line_229",
-        "parentid": "line_228",
-        "topic": "mime",
-        "background-color": "#e82ad2",
+        "parentid": "line_227",
+        "topic": "bin/anydoor",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_230",
         "parentid": "line_229",
-        "topic": "file mapping content-type",
-        "background-color": "#0fbdff",
+        "topic": "#! /usr/bin/env node",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_231",
-        "parentid": "line_228",
-        "topic": "Handlebars",
-        "background-color": "#e82ad2",
+        "parentid": "line_229",
+        "topic": "require('../src/index')",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_232",
-        "parentid": "line_231",
-        "topic": "html template like mustache",
-        "background-color": "#0fbdff",
+        "parentid": "line_224",
+        "topic": "readme.md",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_233",
-        "parentid": "line_232",
-        "topic": "template_source:",
-        "background-color": "#e3aba7",
+        "parentid": "line_224",
+        "topic": "cmd",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_234",
         "parentid": "line_233",
-        "topic": "<title>{{title}}</title>",
-        "background-color": "#d41dea",
+        "topic": "npm login",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_235",
         "parentid": "line_233",
-        "topic": "{{#each files}}",
-        "background-color": "#d41dea",
+        "topic": "npm publish",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_236",
-        "parentid": "line_235",
-        "topic": "<a href=\"/{{dir}}//{{this}}\">{{this}}</a>",
-        "background-color": "#01a6d5",
-        "expanded": false
+        "parentid": "root",
+        "topic": "npm modules",
+        "background-color": "#e3aba7"
     },
     {
         "id": "line_237",
-        "parentid": "line_233",
-        "topic": "{{/each}}",
-        "background-color": "#d41dea",
+        "parentid": "line_236",
+        "topic": "mime",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_238",
-        "parentid": "line_232",
-        "topic": "template = Handlerbarsc.complie(template_source)",
-        "background-color": "#e3aba7",
+        "parentid": "line_237",
+        "topic": "file mapping content-type",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_239",
-        "parentid": "line_232",
-        "topic": "varibles:",
-        "background-color": "#e3aba7",
+        "parentid": "line_236",
+        "topic": "Handlebars",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_240",
         "parentid": "line_239",
-        "topic": "files=[...]",
-        "background-color": "#d41dea",
+        "topic": "html template like mustache",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_241",
-        "parentid": "line_239",
-        "topic": "data = {",
-        "background-color": "#d41dea",
+        "parentid": "line_240",
+        "topic": "template_source:",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_242",
         "parentid": "line_241",
-        "topic": "title:'title',",
-        "background-color": "#01a6d5",
+        "topic": "<title>{{title}}</title>",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_243",
         "parentid": "line_241",
-        "topic": "files",
-        "background-color": "#01a6d5",
-        "expanded": false
-    },
-    {
-        "id": "line_244",
-        "parentid": "line_239",
-        "topic": "}",
+        "topic": "{{#each files}}",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
+        "id": "line_244",
+        "parentid": "line_243",
+        "topic": "<a href=\"/{{dir}}//{{this}}\">{{this}}</a>",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
         "id": "line_245",
-        "parentid": "line_232",
-        "topic": "template.",
+        "parentid": "line_241",
+        "topic": "{{/each}}",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_246",
+        "parentid": "line_240",
+        "topic": "template = Handlerbarsc.complie(template_source)",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_247",
-        "parentid": "line_228",
-        "topic": "chalk",
-        "background-color": "#e82ad2",
+        "parentid": "line_240",
+        "topic": "varibles:",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_248",
         "parentid": "line_247",
-        "topic": "change terminal color",
-        "background-color": "#0fbdff",
+        "topic": "files=[...]",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_249",
         "parentid": "line_247",
-        "topic": "chalk.green('text')",
-        "background-color": "#0fbdff",
+        "topic": "data = {",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_250",
-        "parentid": "line_228",
-        "topic": "supervisor",
-        "background-color": "#e82ad2",
+        "parentid": "line_249",
+        "topic": "title:'title',",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_251",
-        "parentid": "line_250",
-        "topic": "debug runtime restart server",
-        "background-color": "#0fbdff",
+        "parentid": "line_249",
+        "topic": "files",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_252",
-        "parentid": "line_251",
-        "topic": "supervisor simple_server.js",
-        "background-color": "#e3aba7",
+        "parentid": "line_247",
+        "topic": "}",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_253",
-        "parentid": "line_228",
-        "topic": "yargs",
-        "background-color": "#e82ad2",
-        "expanded": false
-    },
-    {
-        "id": "line_254",
-        "parentid": "line_253",
-        "topic": "const yargs = require('yargs')",
-        "background-color": "#0fbdff",
+        "parentid": "line_240",
+        "topic": "template.",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_255",
-        "parentid": "line_253",
-        "topic": "const argv = yargs",
-        "background-color": "#0fbdff",
+        "parentid": "line_236",
+        "topic": "chalk",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_256",
         "parentid": "line_255",
-        "topic": ".usgae('anywhere [options]')",
-        "background-color": "#e3aba7",
+        "topic": "change terminal color",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_257",
         "parentid": "line_255",
+        "topic": "chalk.green('text')",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_258",
+        "parentid": "line_236",
+        "topic": "supervisor",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_259",
+        "parentid": "line_258",
+        "topic": "debug runtime restart server",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_260",
+        "parentid": "line_259",
+        "topic": "supervisor simple_server.js",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_261",
+        "parentid": "line_236",
+        "topic": "yargs",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_262",
+        "parentid": "line_261",
+        "topic": "const yargs = require('yargs')",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_263",
+        "parentid": "line_261",
+        "topic": "const argv = yargs",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_264",
+        "parentid": "line_263",
+        "topic": ".usgae('anywhere [options]')",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_265",
+        "parentid": "line_263",
         "topic": ".option('p',{",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_258",
-        "parentid": "line_257",
+        "id": "line_266",
+        "parentid": "line_265",
         "topic": "alias:'port',",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_259",
-        "parentid": "line_257",
+        "id": "line_267",
+        "parentid": "line_265",
         "topic": "describ:'port number',",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_260",
-        "parentid": "line_257",
+        "id": "line_268",
+        "parentid": "line_265",
         "topic": "default:9527",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_261",
-        "parentid": "line_255",
+        "id": "line_269",
+        "parentid": "line_263",
         "topic": "})",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_262",
-        "parentid": "line_255",
+        "id": "line_270",
+        "parentid": "line_263",
         "topic": ".option('h',{",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_263",
-        "parentid": "line_262",
+        "id": "line_271",
+        "parentid": "line_270",
         "topic": "alias:'host',",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_264",
-        "parentid": "line_262",
+        "id": "line_272",
+        "parentid": "line_270",
         "topic": "describ:'host name',",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_265",
-        "parentid": "line_262",
+        "id": "line_273",
+        "parentid": "line_270",
         "topic": "default:'127.0.0.1'",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_266",
-        "parentid": "line_255",
-        "topic": "})",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_267",
-        "parentid": "line_255",
-        "topic": ".option('d',{",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_268",
-        "parentid": "line_267",
-        "topic": "alias:'root',",
-        "background-color": "#d41dea",
-        "expanded": false
-    },
-    {
-        "id": "line_269",
-        "parentid": "line_267",
-        "topic": "describ:'root path',",
-        "background-color": "#d41dea",
-        "expanded": false
-    },
-    {
-        "id": "line_270",
-        "parentid": "line_267",
-        "topic": "default:process.cwd()",
-        "background-color": "#d41dea",
-        "expanded": false
-    },
-    {
-        "id": "line_271",
-        "parentid": "line_255",
-        "topic": "})",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_272",
-        "parentid": "line_255",
-        "topic": ".version()",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_273",
-        "parentid": "line_255",
-        "topic": ".alias('v','version')",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
         "id": "line_274",
-        "parentid": "line_255",
-        "topic": ".help()",
+        "parentid": "line_263",
+        "topic": "})",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_275",
-        "parentid": "line_255",
-        "topic": ".argv()",
+        "parentid": "line_263",
+        "topic": ".option('d',{",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_276",
-        "parentid": "root",
-        "topic": "promise/async",
-        "background-color": "#e3aba7"
+        "parentid": "line_275",
+        "topic": "alias:'root',",
+        "background-color": "#d41dea",
+        "expanded": false
     },
     {
         "id": "line_277",
-        "parentid": "line_276",
-        "topic": "promisify",
-        "background-color": "#e82ad2",
+        "parentid": "line_275",
+        "topic": "describ:'root path',",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_278",
-        "parentid": "line_277",
-        "topic": "util.promisify(fs.readFile).read",
-        "background-color": "#0fbdff",
+        "parentid": "line_275",
+        "topic": "default:process.cwd()",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_279",
-        "parentid": "line_278",
-        "topic": "when in non async function",
+        "parentid": "line_263",
+        "topic": "})",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_280",
-        "parentid": "line_277",
-        "topic": "then",
-        "background-color": "#0fbdff",
+        "parentid": "line_263",
+        "topic": ".version()",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_281",
-        "parentid": "line_277",
-        "topic": "catch",
-        "background-color": "#0fbdff",
+        "parentid": "line_263",
+        "topic": ".alias('v','version')",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_282",
-        "parentid": "line_276",
-        "topic": "promise",
-        "background-color": "#e82ad2",
+        "parentid": "line_263",
+        "topic": ".help()",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_283",
-        "parentid": "line_282",
-        "topic": "return new promise",
-        "background-color": "#0fbdff",
+        "parentid": "line_263",
+        "topic": ".argv()",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_284",
-        "parentid": "line_282",
-        "topic": "resolve",
-        "background-color": "#0fbdff",
-        "expanded": false
+        "parentid": "root",
+        "topic": "promise/async",
+        "background-color": "#e3aba7"
     },
     {
         "id": "line_285",
-        "parentid": "line_282",
-        "topic": "reject",
-        "background-color": "#0fbdff",
+        "parentid": "line_284",
+        "topic": "promisify",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_286",
-        "parentid": "line_276",
-        "topic": "aync/await",
-        "background-color": "#e82ad2",
+        "parentid": "line_285",
+        "topic": "util.promisify(fs.readFile).read",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_287",
         "parentid": "line_286",
-        "topic": "aync function: read = util.promisify(fs.readFile)",
-        "background-color": "#0fbdff",
+        "topic": "when in non async function",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_288",
-        "parentid": "line_286",
-        "topic": "await call: await read",
+        "parentid": "line_285",
+        "topic": "then",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_289",
-        "parentid": "root",
-        "topic": "debug",
-        "background-color": "#e3aba7"
+        "parentid": "line_285",
+        "topic": "catch",
+        "background-color": "#0fbdff",
+        "expanded": false
     },
     {
         "id": "line_290",
-        "parentid": "line_289",
-        "topic": "inspect",
+        "parentid": "line_284",
+        "topic": "promise",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_291",
         "parentid": "line_290",
-        "topic": "node --inspect",
+        "topic": "return new promise",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_292",
         "parentid": "line_290",
-        "topic": "node --inspect-brk",
+        "topic": "resolve",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_293",
-        "parentid": "line_289",
-        "topic": "chrome",
-        "background-color": "#e82ad2",
-        "expanded": false
-    },
-    {
-        "id": "line_294",
-        "parentid": "line_293",
-        "topic": "plugin - Nodejs Inspector Manager",
+        "parentid": "line_290",
+        "topic": "reject",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
+        "id": "line_294",
+        "parentid": "line_284",
+        "topic": "aync/await",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
         "id": "line_295",
-        "parentid": "line_293",
-        "topic": "chrome://inspect",
+        "parentid": "line_294",
+        "topic": "aync function: read = util.promisify(fs.readFile)",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_296",
-        "parentid": "line_289",
-        "topic": "vscode",
-        "background-color": "#e82ad2",
+        "parentid": "line_294",
+        "topic": "await call: await read",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_297",
         "parentid": "root",
-        "topic": "plugin",
+        "topic": "debug",
         "background-color": "#e3aba7"
     },
     {
         "id": "line_298",
         "parentid": "line_297",
-        "topic": ".editconfig",
+        "topic": "inspect",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_299",
-        "parentid": "line_297",
-        "topic": ".esLint",
-        "background-color": "#e82ad2",
+        "parentid": "line_298",
+        "topic": "node --inspect",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_300",
-        "parentid": "line_299",
-        "topic": "to see esLint mindmap",
+        "parentid": "line_298",
+        "topic": "node --inspect-brk",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_301",
         "parentid": "line_297",
+        "topic": "chrome",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_302",
+        "parentid": "line_301",
+        "topic": "plugin - Nodejs Inspector Manager",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_303",
+        "parentid": "line_301",
+        "topic": "chrome://inspect",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_304",
+        "parentid": "line_297",
+        "topic": "vscode",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_305",
+        "parentid": "root",
+        "topic": "plugin",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_306",
+        "parentid": "line_305",
+        "topic": ".editconfig",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_307",
+        "parentid": "line_305",
+        "topic": ".esLint",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_308",
+        "parentid": "line_307",
+        "topic": "to see esLint mindmap",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_309",
+        "parentid": "line_305",
         "topic": ".gitignore",
         "background-color": "#e82ad2",
         "expanded": false
