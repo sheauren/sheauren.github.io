@@ -1,0 +1,48 @@
+Banchmark
+    install
+        npm -i --save benchmark        
+        npm -i --save microtime
+        Banchmark.js
+    usage
+        var suite = require('benchmark')
+        var suite = new Banchmark.suite
+    example 1
+        suite.add('RegExp#test',()=>{
+            /o/.test('hello world')
+        })
+        .add('String#indexOf',()=>{
+            'Hello world'.indexOf('o')>-1
+        })
+        .add('String#match',()=>{
+            'Hello world'.match(/o/)>-1
+        })
+        .on('cycle',(event)=>{
+            console.log(String(event.target))
+        })
+        .on('complete',()=>{
+            console.log('Fastest is'+this.filter('fastest')).map('name'))
+        })
+        .run({async:true})
+        run:
+            node test/benchmark.js
+        
+    example 2
+        suite.add('parseInt',()=>{
+            num1('123456')
+        })
+        .add('Number',()=>{
+            num2('123456')
+        })
+        .on('cycle',(event)=>{
+            console.log(String(event.target))
+        })
+        .on('complete',()=>{
+            console.log('Fastest is'+this.filter('fastest')).map('name'))
+        })
+        .run({async:true})
+        run:
+            node test/benchmark.js
+    jsPerf
+        jsPerf.com
+        javascript performance background
+        test case in web

@@ -1,0 +1,221 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "travis"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "egg",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "github repo-badges",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "build passing",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_2",
+        "topic": "converage",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_2",
+        "topic": "etc",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "root",
+        "topic": "login",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": "github",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_8",
+        "parentid": "root",
+        "topic": "using",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "active your github Repository",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_8",
+        "topic": ".travis.yml",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "language: nodejs",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_10",
+        "topic": "node_js:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "- \"6\"",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_12",
+        "topic": "- \"8\"",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_10",
+        "topic": "brancher:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "only:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "- \"dev\"",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_16",
+        "topic": "- \"master\"",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_10",
+        "topic": "install",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "- \"npm install\"",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_19",
+        "topic": "- \"npm install -g codecov\"",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_10",
+        "topic": "script:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "- \"npm run cover\"",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_22",
+        "topic": "- \"codecov\"",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_8",
+        "topic": "commit",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "auto CI",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_8",
+        "topic": "debug",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "show job log",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_8",
+        "topic": "coverge info",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "codecov.io",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_29",
+        "topic": "install",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "npm install -g codecov",
+        "background-color": "#e3aba7",
+        "expanded": false
+    }
+]
