@@ -24,8 +24,15 @@
     <script type='text/javascript' src='https://code.jquery.com/jquery-3.5.0.slim.min.js'></script>
     <script type="text/javascript">
         $(() => {
-            $("#container").height(window.innerHeight - 10);
-            $('#list').height(window.innerHeight - 40);
+            var height = Math.max(
+                document.body.scrollHeight,
+                document.body.offsetHeight,
+                document.documentElement.clientHeight,
+                document.documentElement.scrollHeight,
+                document.documentElement.offsetHeight
+            )
+            $("#container").height(height - 10);
+            $('#list').height(height - 40);
         })
         function load_jsmind(url) {
             $("#container").attr('src', './show_mindmap.html?json=' + url)
