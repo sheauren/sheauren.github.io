@@ -1,0 +1,163 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "webdriver"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "feature",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "a browser automation library",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "root",
+        "topic": "install",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "npm install selenium-webdriver",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_3",
+        "topic": "browser component",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "chrome",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_5",
+        "topic": "firefox",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_8",
+        "parentid": "root",
+        "topic": "usage",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "var webdriver = require('selenium-webdriver')",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_8",
+        "topic": "By = webdriver.By",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_8",
+        "topic": "util = webdriver.until",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_8",
+        "topic": "var driver = new webdriver.Builder()",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": ".forBrowser('firefox')",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_12",
+        "topic": ".build()",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_8",
+        "topic": "driver.get('http://www.google.com/ncr')",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_8",
+        "topic": "driver.getElement(By.name('q')).sendKeys('webdriver')",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_8",
+        "topic": "driver.getElement(By.name('btnG')).click()",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_8",
+        "topic": "driver.wait(until.titleIs('webdriver - Google Search'),1000)",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_8",
+        "topic": "driver.quit()",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_21",
+        "parentid": "root",
+        "topic": "use Builder API",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "var webdriver = require('selenium-webdriver')",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_21",
+        "topic": "var chrome  = require('selenium-webdriver/chrome')",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_21",
+        "topic": "var firefox  = require('selenium-webdriver/firefox')",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_21",
+        "topic": "var driver = new webdriver.Builder()",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": ".forBrowser('firefox')",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_25",
+        "topic": ".build()",
+        "background-color": "#0fbdff"
+    }
+]

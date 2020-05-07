@@ -32,7 +32,7 @@
                 document.documentElement.offsetHeight
             )
             $("#container").height(height - 10);
-            $('#list').height(height - 40);
+            $('#list').height(height - 50);
         })
         function load_jsmind(url) {
             $("#container").attr('src', './show_mindmap.html?json=' + url)
@@ -130,6 +130,14 @@
                             <li>
                                 <a href='#' onclick="javascript:load_jsmind('mindmap/it/benchmark.json')">benchmark.js
                                     (2020/05/05)</a>
+                            </li>
+                            <li>
+                                <a href='#' onclick="javascript:load_jsmind('mindmap/it/jest.json')">jest - Delightful Javascript Testing
+                                    (2020/05/07)</a>
+                            </li>
+                            <li>
+                                <a href='#' onclick="javascript:load_jsmind('mindmap/it/webdriver.json')">webdriver - a browser automation library
+                                    (2020/05/07)</a>
                             </li>
                         </ul>
                         <h5>Other</h5>

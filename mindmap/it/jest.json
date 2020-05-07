@@ -1,0 +1,473 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Jest"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "feature",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "Delightful Javascript Testing",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "root",
+        "topic": "install",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "npm install --save-dev jest",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_3",
+        "topic": "npm install --save-dev sinon",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "Standalone test spies, stubs and mocks for JavaScript",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_3",
+        "topic": "yarn add --dev jest",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "root",
+        "topic": "example",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "basic example",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "sum.js",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "sum.test.js",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "test sum.js",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "test('adds 1+2 to equal 3'),()=>{",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "expect(sum(1,2)).toBe(3)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_12",
+        "topic": "}",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_9",
+        "topic": "package.json",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "scripts",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "\"test\":\"jest\"",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_17",
+        "topic": "\"test\":\"jest --converge\"",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_8",
+        "topic": "test react",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "npm install --save-dev jest babel-jest babel-preset-es2015 babel-preset-react react-test-renderer",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_20",
+        "topic": ".babelrc",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "\"presets\":[\"es2015\",\"react\"]",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_20",
+        "topic": "DOM test",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "npm install --save-dev enzyme",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_20",
+        "topic": "test code",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "import React from 'react'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_26",
+        "topic": "import {shallow} from 'enzyme'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_26",
+        "topic": "import CheckboxWithLabel from '../CheckboxWithLabel'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_26",
+        "topic": "test('CheckboxWithLabel change the text after click',()=>{",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "const checkbox = shallow(",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "<CheckboxWithLabel labelOn='On' labelOff='Off'/>",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_30",
+        "topic": ")",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_30",
+        "topic": "expect(checkbox.text()).toEqual('Off')",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_30",
+        "topic": "checkbox.find('input').simulate('change')",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_30",
+        "topic": "expect(checkbox.text()).toEqual('On')",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_26",
+        "topic": "})",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_20",
+        "topic": "watch DOM test",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_38",
+        "topic": "import {shallow} from 'enzyme'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_20",
+        "topic": "full DOM test",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "import {mount} from 'enzyme'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_40",
+        "topic": "import sinon from 'sinon'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_40",
+        "topic": "import {expect} from 'chai'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_40",
+        "topic": "import React from 'react'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_40",
+        "topic": "describe('<Foo/>',()=>{",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "it('allow us to set props',()=>{",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_46",
+        "topic": "const wrapper = mount('<Foo bar=\"bar\"/>')",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_46",
+        "topic": "wrapper.setProps({bar:'foo'})",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_46",
+        "topic": "expect(wrapper.props().bar).to.equal('foo')",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_45",
+        "topic": "})",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_45",
+        "topic": "it('simulate click event',()=>{",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "const onButtonClick = sinon.spy()",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_51",
+        "topic": "const wrapper = mount({",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "<Foo onButtonClick={onButtonClick}/>",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_51",
+        "topic": "})",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_51",
+        "topic": "wrapper.find('button').simulate('click')",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_51",
+        "topic": "expect(onButtonClick).to.have.property('callCount',1)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_45",
+        "topic": "})",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_45",
+        "topic": "it('call componentDidMount',()=>{",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_59",
+        "topic": "sinon.spy(Foo.prototype,'componentDidMount')",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_59",
+        "topic": "const wrapper = mount(<Foo/>)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_59",
+        "topic": "expect(Foo.prototype.componentDidMount).to.have.property('callCount',1)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_59",
+        "topic": "Foo.prototype.componentDidMount.restore()",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_45",
+        "topic": "})",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_40",
+        "topic": "})",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_20",
+        "topic": "static renderer test",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "import {renderer} from 'enzyme'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    }
+]
