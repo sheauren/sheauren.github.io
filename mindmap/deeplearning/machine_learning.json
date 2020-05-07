@@ -1,0 +1,714 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Machine Learning"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Linear Regression",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "MSE",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "Regularized",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "Ridge(L2)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_3",
+        "topic": "LASSOL(L1)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_3",
+        "topic": "Elastic Net(L1+L2)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_3",
+        "topic": "Norm",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_3",
+        "topic": "Frobenius",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "root",
+        "topic": "Logistic Regression",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "From Generative to Discriminative Proof",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "logits",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_10",
+        "topic": "Activation Function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "Sigmoid",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_12",
+        "topic": "tanh",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_12",
+        "topic": "Relu",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_12",
+        "topic": "Leakly Relu",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_12",
+        "topic": "PRelu",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_12",
+        "topic": "ELU",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_12",
+        "topic": "Maxout",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_12",
+        "topic": "Representation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_12",
+        "topic": "Learning",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_9",
+        "topic": "Maximize Likelihood is Minimize Cross Entropy Proof",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "Gradient Descent",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "Taylor Series Proof",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_23",
+        "topic": "Convex Function",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "Jensen's inequality",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_23",
+        "topic": "Learning Rate",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_23",
+        "topic": "Backpropagation Proof",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_23",
+        "topic": "Graient Vanishing & Exploding Proof",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_23",
+        "topic": "Finite Difference Method",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_23",
+        "topic": "SGD(b=1)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_23",
+        "topic": "Optimization",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "Momentum",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_32",
+        "topic": "NAG",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_32",
+        "topic": "Adograd",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_32",
+        "topic": "RMSProp",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_32",
+        "topic": "AdoDelto",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_32",
+        "topic": "Adam",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_32",
+        "topic": "Nadam",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "root",
+        "topic": "Regularization",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "Early Stopping",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_40",
+        "topic": "Weight Decay",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_40",
+        "topic": "Dropout",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_40",
+        "topic": "Normalization",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "Layer",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_44",
+        "topic": "Batch",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_44",
+        "topic": "Weight",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "root",
+        "topic": "Non-Probabilistic",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_48",
+        "topic": "SVM",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "Lograngian approach",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_49",
+        "topic": "KMT Condition",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_49",
+        "topic": "C-SVM",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_49",
+        "topic": "Kernel SVM",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_49",
+        "topic": "Duality",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_49",
+        "topic": "Primal Problem",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_49",
+        "topic": "Dual ProblemMapping Function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_49",
+        "topic": "Kernel Trick",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "root",
+        "topic": "Clustering",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "Hierarchical",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_58",
+        "topic": "Pational",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_60",
+        "topic": "K-means",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_58",
+        "topic": "SOM",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_58",
+        "topic": "Spectrol",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_58",
+        "topic": "Instance-based Learning",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_58",
+        "topic": "KNN Algorithm",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "root",
+        "topic": "Dimensionality Reduction",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "Eigen Decomposition",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_67",
+        "topic": "SVD",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_67",
+        "topic": "PCA",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_67",
+        "topic": "Kernel PCA",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_67",
+        "topic": "Eigen Decomposition",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "Eigen Value",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_71",
+        "topic": "Eigen Vector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_71",
+        "topic": "Projection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_71",
+        "topic": "Determinant",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_71",
+        "topic": "Matrix Property",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_76",
+        "topic": "Idempotent",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_76",
+        "topic": "Square Matrix",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_76",
+        "topic": "Symmetric",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_76",
+        "topic": "Orthogonal",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_76",
+        "topic": "Singular",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "root",
+        "topic": "Training",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_82",
+        "topic": "Ensemble",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_83",
+        "topic": "Bagging",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_83",
+        "topic": "AdaBoost",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_83",
+        "topic": "Random Forest",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_82",
+        "topic": "Score",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_87",
+        "topic": "Diagnosing Model",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_88",
+        "topic": "Variance-Bias",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_87",
+        "topic": "Confusion Matrix",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "ROC",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_91",
+        "topic": "AUC",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_90",
+        "topic": "Accuracy",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_90",
+        "topic": "Presiion & Recall",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_94",
+        "topic": "Trade Off",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_95",
+        "topic": "Type 1,2, Error",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_94",
+        "topic": "F1 Score",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_90",
+        "topic": "k-fold cross validation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_82",
+        "topic": "Data Splitting",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_99",
+        "topic": "Training",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_99",
+        "topic": "Validation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_99",
+        "topic": "Test",
+        "background-color": "#0fbdff",
+        "expanded": false
+    }
+]

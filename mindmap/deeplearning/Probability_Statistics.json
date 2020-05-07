@@ -14,102 +14,752 @@
         "id": "line_2",
         "parentid": "line_1",
         "topic": "Basic Term",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
         "id": "line_3",
-        "parentid": "line_1",
-        "topic": "Sample Space",
-        "background-color": "#e82ad2"
+        "parentid": "line_2",
+        "topic": "Distance",
+        "background-color": "#0fbdff",
+        "expanded": false
     },
     {
         "id": "line_4",
-        "parentid": "line_1",
-        "topic": "Random Varibles",
-        "background-color": "#e82ad2"
+        "parentid": "line_3",
+        "topic": "Manhattan",
+        "background-color": "#e3aba7",
+        "expanded": false
     },
     {
         "id": "line_5",
-        "parentid": "line_1",
-        "topic": "Probability Distribution",
-        "background-color": "#e82ad2"
+        "parentid": "line_3",
+        "topic": "Euclidean",
+        "background-color": "#e3aba7",
+        "expanded": false
     },
     {
         "id": "line_6",
-        "parentid": "line_1",
-        "topic": "Independent",
-        "background-color": "#e82ad2"
+        "parentid": "line_3",
+        "topic": "Maholanobis",
+        "background-color": "#e3aba7",
+        "expanded": false
     },
     {
         "id": "line_7",
-        "parentid": "line_1",
-        "topic": "Conjucate",
-        "background-color": "#e82ad2"
+        "parentid": "line_3",
+        "topic": "Correlation",
+        "background-color": "#e3aba7",
+        "expanded": false
     },
     {
         "id": "line_8",
+        "parentid": "line_2",
+        "topic": "Expecation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_2",
+        "topic": "Mean",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "Median",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_2",
+        "topic": "Variance",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "Bias-trade off",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_11",
+        "topic": "Covariance",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "Correlation Coefficient",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_1",
+        "topic": "Sample Space",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_1",
+        "topic": "Random Varibles",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_1",
+        "topic": "Probability Distribution",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "Uniform",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "GMM",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "EM Algorithm",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_17",
+        "topic": "Gaussion",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "GMM",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "EM Algorithm",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_17",
+        "topic": "Bernoulli",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_17",
+        "topic": "Binomial",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_17",
+        "topic": "MultiNomial",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_17",
+        "topic": "Categorical",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "GMM",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "EM Algorithm",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_17",
+        "topic": "Dirichlet",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_17",
+        "topic": "Beta",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_17",
+        "topic": "Gamma",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_17",
+        "topic": "Exponential",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_17",
+        "topic": "Poisson",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_17",
+        "topic": "Chi-squared",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_17",
+        "topic": "Student-t",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "t-SNE",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_17",
+        "topic": "Central Limit Theorem",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_17",
+        "topic": "PDF",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_17",
+        "topic": "CDF",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_1",
+        "topic": "Independent",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_1",
+        "topic": "Conjucate",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
         "parentid": "root",
         "topic": "Baysian",
         "background-color": "#e3aba7"
     },
     {
-        "id": "line_9",
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "Joint Probability",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_43",
+        "topic": "Posterior",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_43",
+        "topic": "Evidence",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_43",
+        "topic": "likelihood",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "Marginal Probability",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_47",
+        "topic": "Class-Conditional Density",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_43",
+        "topic": "Inference",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "Statistical Hypothesis",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "T-test",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_51",
+        "topic": "ANOVA",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "Bonferroni",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_53",
+        "topic": "FDR",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_50",
+        "topic": "Baysian Inference",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_56",
+        "topic": "Variational",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_57",
+        "topic": "Mean Field Approximate",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_57",
+        "topic": "Reparameterization Trick",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_57",
+        "topic": "Normalizing Flow",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_50",
+        "topic": "Estimator",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_61",
+        "topic": "Statistical Estimation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_61",
+        "topic": "Parameter Estimator",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "Bayesion Estimate",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_63",
+        "topic": "MAP",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_65",
+        "topic": "Weight Decay Term",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "Latent Variable",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_67",
+        "topic": "EM Algorithm",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_63",
+        "topic": "MLE",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_69",
+        "topic": "Overfitting",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_69",
+        "topic": "Minimize Cross-Entropy",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "Latent Variable",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_72",
+        "topic": "EM Algorithm",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_50",
+        "topic": "Baysian Inference",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_74",
+        "topic": "Variational",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_75",
+        "topic": "Reparameterization Trick",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_75",
+        "topic": "Normalizing Flow",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_75",
+        "topic": "Mean Field Aprroximate",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_50",
+        "topic": "Statistical Hypothesis",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_79",
+        "topic": "T-test",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_79",
+        "topic": "p-value",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_79",
+        "topic": "Signifcance Level",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_79",
+        "topic": "ANOVA",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_83",
+        "topic": "Bonferroni",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_83",
+        "topic": "FDR",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
         "parentid": "root",
         "topic": "Model",
         "background-color": "#e3aba7"
     },
     {
-        "id": "line_10",
-        "parentid": "line_9",
+        "id": "line_87",
+        "parentid": "line_86",
         "topic": "Discriminative",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
-        "id": "line_11",
-        "parentid": "line_10",
+        "id": "line_88",
+        "parentid": "line_87",
         "topic": "Linear Regression",
-        "background-color": "#0fbdff"
+        "background-color": "#0fbdff",
+        "expanded": false
     },
     {
-        "id": "line_12",
-        "parentid": "line_9",
+        "id": "line_89",
+        "parentid": "line_86",
         "topic": "Generative",
-        "background-color": "#e82ad2"
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
-        "id": "line_13",
-        "parentid": "line_12",
+        "id": "line_90",
+        "parentid": "line_89",
         "topic": "Unsupervised",
-        "background-color": "#0fbdff"
+        "background-color": "#0fbdff",
+        "expanded": false
     },
     {
-        "id": "line_14",
-        "parentid": "line_13",
+        "id": "line_91",
+        "parentid": "line_90",
         "topic": "VAE",
-        "background-color": "#e3aba7"
+        "background-color": "#e3aba7",
+        "expanded": false
     },
     {
-        "id": "line_15",
-        "parentid": "line_13",
+        "id": "line_92",
+        "parentid": "line_90",
         "topic": "GAN",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_86",
+        "topic": "Supervised",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_93",
+        "topic": "Navie Bayesion",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_93",
+        "topic": "Linear Discriminant Analysis",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_93",
+        "topic": "Logistic Regression",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "root",
+        "topic": "Information Theroy",
         "background-color": "#e3aba7"
     },
     {
-        "id": "line_16",
-        "parentid": "line_9",
-        "topic": "Supervised",
-        "background-color": "#e82ad2"
+        "id": "line_98",
+        "parentid": "line_97",
+        "topic": "KL Divergence",
+        "background-color": "#e82ad2",
+        "expanded": false
     },
     {
-        "id": "line_17",
+        "id": "line_99",
+        "parentid": "line_97",
+        "topic": "Cross Entropy",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_97",
+        "topic": "Shannon Entropy",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_97",
+        "topic": "Uncertainy",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
         "parentid": "root",
         "topic": "Sampling",
         "background-color": "#e3aba7"
     },
     {
-        "id": "line_18",
-        "parentid": "root",
-        "topic": "Information Theroy",
-        "background-color": "#e3aba7"
+        "id": "line_103",
+        "parentid": "line_102",
+        "topic": "Gibbs",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_102",
+        "topic": "Markov Chain",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_104",
+        "topic": "MCMC",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_102",
+        "topic": "Monte Cario Method",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_106",
+        "topic": "MCMC",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_102",
+        "topic": "Negative Sampling",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_102",
+        "topic": "Condidate Sampling",
+        "background-color": "#e82ad2",
+        "expanded": false
     }
 ]

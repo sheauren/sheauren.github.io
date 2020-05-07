@@ -1,0 +1,911 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Text Mining(NLP Background)"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Basic Procedure",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "Syntax",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "Parsing",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "CYK Algorithm",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_3",
+        "topic": "Graph Parsing",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_1",
+        "topic": "Morphological&Lexical",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": "Analysis Procedure",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "Tokenizing",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "Unsupervisor Noun Extraction[korean]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "Cohesion Score",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_9",
+        "topic": "Branching Entropy",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_9",
+        "topic": "Accessor Variety",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_8",
+        "topic": "Unsupervisor Tokenizing",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "L-Tokenizer",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "L-R Graph",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_13",
+        "topic": "Max Score Tokenizer(Non-Spacing Language)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "Word Segmentation",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_13",
+        "topic": "Regex Tokenizer",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_13",
+        "topic": "Subword Tokenizer",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "Byte Pair Encoding",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_19",
+        "topic": "Word Piece",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_19",
+        "topic": "Subword Regularization",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_19",
+        "topic": "Out of Vocabulary",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_19",
+        "topic": "Katz's back-off model",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_7",
+        "topic": "Sentence splitting",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_7",
+        "topic": "Morphological Analysis",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "Folding",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_26",
+        "topic": "Stemming",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "Porter",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_28",
+        "topic": "Lancaster",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_26",
+        "topic": "Lemmatization",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_7",
+        "topic": "Part-of-Speech Tagging",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "Dictionary based",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_32",
+        "topic": "Morpheme based",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_7",
+        "topic": "StopWord Removal",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_6",
+        "topic": "Task",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "Part-Of-Speech Tagging",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_36",
+        "topic": "NER Analysis",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_38",
+        "topic": "IOB1 Tagging",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_36",
+        "topic": "Co-reference",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_36",
+        "topic": "Dependencies Tree",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "root",
+        "topic": "NLP Basic Hypothesis",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "VSMs",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_42",
+        "topic": "Distributional Hypothesis",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_42",
+        "topic": "Statistical Semantics Hypothesis",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_42",
+        "topic": "Bag of words Hypothesis",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_42",
+        "topic": "Latent relation Hypothesis",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_42",
+        "topic": "Representation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_48",
+        "topic": "Term-Document Matrix",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_48",
+        "topic": "Word-Context Matrix",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_48",
+        "topic": "Pair-Pattern Matrix",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "root",
+        "topic": "Sequential Labeling",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "HMM",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "Markov Assumption",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_53",
+        "topic": "Emission Probability",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_53",
+        "topic": "Transition Probability",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_52",
+        "topic": "Maximum Entropy Model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_57",
+        "topic": "Feature Function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_52",
+        "topic": "Maximum Entropy Markov Model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_59",
+        "topic": "Feature Function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_52",
+        "topic": "Condition Random Field",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_52",
+        "topic": "Label Bias",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_52",
+        "topic": "RNN",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "root",
+        "topic": "Word Embedding",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "Character Embedding",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_64",
+        "topic": "One-hot representation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_64",
+        "topic": "Curse of Dimension",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_64",
+        "topic": "Dimensionality Reduction",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_64",
+        "topic": "Distributed Representation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_69",
+        "topic": "Co-Occurrences(n-gram)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_70",
+        "topic": "Word2Vec",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "CBOW",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_71",
+        "topic": "Skip-gram",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_70",
+        "topic": "Glove",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_70",
+        "topic": "FastText",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_70",
+        "topic": "Co-Occurrences + Shifted PPMI",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_69",
+        "topic": "Implicit Matrix Factorization",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_77",
+        "topic": "PMI",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_77",
+        "topic": "PPMI",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_77",
+        "topic": "Positive PMI",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_77",
+        "topic": "Shifted PPMI",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_69",
+        "topic": "Topic Modeling",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_82",
+        "topic": "LDA(LDI)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_83",
+        "topic": "SVD",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_83",
+        "topic": "Probabilistic LDA(pLDI)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_85",
+        "topic": "Multinomial",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_82",
+        "topic": "Sparse Coding",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_82",
+        "topic": "NMF",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_82",
+        "topic": "Matrix Factorization",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_82",
+        "topic": "Latent Dirichlet Allocation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "Dirichlet",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_90",
+        "topic": "Gibbs Sampling",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_90",
+        "topic": "Perplexity",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "root",
+        "topic": "Document",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_94",
+        "topic": "Bag of Words model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_95",
+        "topic": "Distance&Similarity",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_96",
+        "topic": "Euclidean",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_96",
+        "topic": "Cosine",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_95",
+        "topic": "Term Vector Representation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_99",
+        "topic": "TF-IDF",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_94",
+        "topic": "Clustering",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_101",
+        "topic": "DBSCAN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_101",
+        "topic": "Hierachical Clustering",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_101",
+        "topic": "Bayesian GMM",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_101",
+        "topic": "GMM",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_101",
+        "topic": "K-means",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_106",
+        "topic": "Lloyd",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_106",
+        "topic": "Euclidean",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_106",
+        "topic": "Spherical",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_106",
+        "topic": "Cosine",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_106",
+        "topic": "Voronoi Diagram",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_94",
+        "topic": "Classification",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_112",
+        "topic": "Logistic Regression",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_112",
+        "topic": "LASSO Regression",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_112",
+        "topic": "Naive Bayes Classifer",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_112",
+        "topic": "Support Vector Machine",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_112",
+        "topic": "Decision Tree",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_94",
+        "topic": "String Distance",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_118",
+        "topic": "Cosine",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_118",
+        "topic": "Jaccard",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_118",
+        "topic": "Levenshitein",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "root",
+        "topic": "Graph",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_122",
+        "topic": "Similarity",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_123",
+        "topic": "RWR",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_123",
+        "topic": "SimRank",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_122",
+        "topic": "Ranking Algorithm",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_126",
+        "topic": "HITS",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_126",
+        "topic": "PageRank",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_126",
+        "topic": "Word Rank",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_126",
+        "topic": "Text Rank",
+        "background-color": "#0fbdff",
+        "expanded": false
+    }
+]

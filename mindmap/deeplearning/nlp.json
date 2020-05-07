@@ -1,0 +1,899 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Natural Language Processing(Based on Deep Learning)"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Basic",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "Recurrent Model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "Sequential Model",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "Teacher Forcing",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_3",
+        "topic": "Non-Teacher Forcing",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_3",
+        "topic": "n-gram",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_3",
+        "topic": "katz-Backoff Model",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_3",
+        "topic": "RNN",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "Bi-directional RNN",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "Deep RNN",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_3",
+        "topic": "GRU",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_3",
+        "topic": "LSTM",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_3",
+        "topic": "BPTT",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_3",
+        "topic": "Vanishing Gradient",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_3",
+        "topic": "Cell State",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_2",
+        "topic": "P(wi | w1: i-1)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "Greedy Search",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_16",
+        "topic": "Beam Search",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_1",
+        "topic": "Convolutional Model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "TexCNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_19",
+        "topic": "DCNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_19",
+        "topic": "Kernel Size = n-gram",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_19",
+        "topic": "Channel = number of Perception",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_1",
+        "topic": "Recursive Model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "Syntatically-United RNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_24",
+        "topic": "RNTN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_24",
+        "topic": "Matrix-Vector RNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "root",
+        "topic": "Language Model",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "Encoder-Decoder Model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "Source-Target",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "Task",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "Machine Translation",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_31",
+        "topic": "Summarization",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_30",
+        "topic": "OOV Problem Slove",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "Copying Mechanism",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_34",
+        "topic": "Subword Tokenizing based NMT",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "Byte Pair Encoding",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_36",
+        "topic": "Word Piece Model",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_36",
+        "topic": "Subword Regularization",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_36",
+        "topic": "Based Frequency",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_36",
+        "topic": "Based Likelihood",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_36",
+        "topic": "EM Algorithm",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_36",
+        "topic": "Google Sentence Piece",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_29",
+        "topic": "Model",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "Seq2Seq",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_44",
+        "topic": "Attention Mechanism",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_46",
+        "topic": "Context Vector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_46",
+        "topic": "Alignment Model",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_46",
+        "topic": "Query",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_46",
+        "topic": "Key",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_46",
+        "topic": "Value",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_44",
+        "topic": "Seq2Seq based on",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_44",
+        "topic": "Skip-Thought",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_44",
+        "topic": "Transformer",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "Self-Attention",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_54",
+        "topic": "Scale-Dot Product Attention",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_54",
+        "topic": "Positional Encoding",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_54",
+        "topic": "Sinusoid Function",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_54",
+        "topic": "Poswise FeedForwordNet",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_54",
+        "topic": "Multi-Head Attention",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_54",
+        "topic": "Masked Multi-Head Attention",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_44",
+        "topic": "Unsupervised Machine Translation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_28",
+        "topic": "Word Reprentation to Contextual Representation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "CoVe",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_63",
+        "topic": "ELMo",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_63",
+        "topic": "2Layers LSTM",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_63",
+        "topic": "Pretrained for Embedding",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_63",
+        "topic": "State of the Art Model",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "Pretrainin-Finetuning",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_68",
+        "topic": "Transformer Based Model",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_68",
+        "topic": "Deep Transformer",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_68",
+        "topic": "OpenAI-GPT",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_68",
+        "topic": "P(wi|w1:i-1)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_68",
+        "topic": "Auxiliary Task Head",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_68",
+        "topic": "BERT",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_75",
+        "topic": "Masking Language Model",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_75",
+        "topic": "Next Sentence Predict(NSP)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_77",
+        "topic": "CLS",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_77",
+        "topic": "SEP",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_77",
+        "topic": "MASK",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_68",
+        "topic": "Universal Transformer",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_68",
+        "topic": "Inductive Bias of RNN",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_68",
+        "topic": "OpenAI-GPT2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_68",
+        "topic": "Zero-Shot Learning",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_68",
+        "topic": "Not Fine Tuning",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_68",
+        "topic": "RoBERTo",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_68",
+        "topic": "Skip NSP",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_68",
+        "topic": "Large Batch",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_68",
+        "topic": "Relative Positional Encoding",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_68",
+        "topic": "Transformer XL",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_68",
+        "topic": "Segment-Level Recurrence with State Reuse",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_68",
+        "topic": "XLNet",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_92",
+        "topic": "Two-Stream Self-Attention for Target-Aware",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_93",
+        "topic": "Content Stream",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_93",
+        "topic": "Query Stream",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_92",
+        "topic": "Permutation Language Model",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_92",
+        "topic": "Segement Recurrence Mechanism",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "root",
+        "topic": "Distributed Representation",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_98",
+        "topic": "Word Representation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_98",
+        "topic": "Co-occurence Matrix",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_98",
+        "topic": "NNLM",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_98",
+        "topic": "Embedding",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_102",
+        "topic": "Word Embedding",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_103",
+        "topic": "Word2Vec",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_104",
+        "topic": "Cost Method",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_105",
+        "topic": "Hierarchical Softmax",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_105",
+        "topic": "Negative Sampling",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_104",
+        "topic": "CBOW",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_104",
+        "topic": "Skip-gram",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_103",
+        "topic": "Glove",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_103",
+        "topic": "FastText",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_102",
+        "topic": "Character Embedding",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "root",
+        "topic": "Task",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_113",
+        "topic": "POS Tagging",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_113",
+        "topic": "Parsing",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_113",
+        "topic": "Named Entity Recognition",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_113",
+        "topic": "Coreference Resolution",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_113",
+        "topic": "Sentiment Analysis",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_113",
+        "topic": "BLEU Score",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_113",
+        "topic": "Machine Translation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_113",
+        "topic": "Question Answering",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_113",
+        "topic": "Reading Comprehension",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_113",
+        "topic": "Text Generation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_113",
+        "topic": "Summarization",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_113",
+        "topic": "ROUGE Score",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_113",
+        "topic": "Dialogue Systems",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_113",
+        "topic": "Perplexity",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_113",
+        "topic": "Language Modeling",
+        "background-color": "#e82ad2",
+        "expanded": false
+    }
+]

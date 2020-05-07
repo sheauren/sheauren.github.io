@@ -1,12 +1,89 @@
 Probability & Statistics
 	Basic
 		Basic Term
+			Distance
+				Manhattan
+				Euclidean
+				Maholanobis
+				Correlation
+			Expecation
+			Mean
+				Median
+			Variance
+				Bias-trade off
+				Covariance
+					Correlation Coefficient
 		Sample Space
 		Random Varibles
 		Probability Distribution
+			Uniform
+				GMM
+					EM Algorithm
+			Gaussion
+				GMM
+					EM Algorithm
+			Bernoulli
+			Binomial
+			MultiNomial
+			Categorical
+				GMM
+					EM Algorithm
+			Dirichlet
+			Beta
+			Gamma
+			Exponential
+			Poisson
+			Chi-squared
+			Student-t
+				t-SNE
+			Central Limit Theorem
+			PDF
+			CDF
 		Independent
 		Conjucate	
 	Baysian
+		Joint Probability
+		Posterior
+		Evidence
+		likelihood
+			Marginal Probability
+			Class-Conditional Density
+		Inference
+			Statistical Hypothesis
+				T-test
+				ANOVA
+					Bonferroni
+					FDR
+			Baysian Inference
+				Variational
+					Mean Field Approximate
+					Reparameterization Trick
+					Normalizing Flow
+			Estimator
+				Statistical Estimation
+				Parameter Estimator
+					Bayesion Estimate
+					MAP
+						Weight Decay Term
+							Latent Variable
+								EM Algorithm
+					MLE
+						Overfitting
+						Minimize Cross-Entropy
+							Latent Variable
+								EM Algorithm
+			Baysian Inference
+				Variational
+					Reparameterization Trick
+					Normalizing Flow
+					Mean Field Aprroximate
+			Statistical Hypothesis
+				T-test
+				p-value
+				Signifcance Level
+				ANOVA
+					Bonferroni
+					FDR
 	Model
 		Discriminative
 			Linear Regression
@@ -14,6 +91,20 @@ Probability & Statistics
 			Unsupervised
 				VAE
 				GAN
-		Supervised	
-	Sampling
+		Supervised
+			Navie Bayesion
+			Linear Discriminant Analysis
+			Logistic Regression
 	Information Theroy
+		KL Divergence
+		Cross Entropy
+		Shannon Entropy
+		Uncertainy
+	Sampling
+		Gibbs
+		Markov Chain
+			MCMC
+		Monte Cario Method
+			MCMC
+		Negative Sampling
+		Condidate Sampling

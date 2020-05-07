@@ -1,0 +1,103 @@
+Machine Learning
+    Linear Regression
+        MSE
+        Regularized
+            Ridge(L2)
+            LASSOL(L1)
+            Elastic Net(L1+L2)
+            Norm
+            Frobenius
+    Logistic Regression
+        From Generative to Discriminative Proof
+            logits
+            Activation Function
+                Sigmoid
+                tanh
+                Relu
+                Leakly Relu
+                PRelu
+                ELU
+                Maxout
+                Representation
+                Learning
+        Maximize Likelihood is Minimize Cross Entropy Proof
+            Gradient Descent
+                Taylor Series Proof
+                Convex Function
+                    Jensen's inequality
+                Learning Rate
+                Backpropagation Proof
+                Graient Vanishing & Exploding Proof
+                Finite Difference Method
+                SGD(b=1)
+                Optimization
+                    Momentum
+                    NAG
+                    Adograd
+                    RMSProp
+                    AdoDelto
+                    Adam
+                    Nadam
+    Regularization
+        Early Stopping
+        Weight Decay
+        Dropout
+        Normalization
+            Layer
+            Batch
+            Weight
+    Non-Probabilistic
+        SVM
+            Lograngian approach
+            KMT Condition
+            C-SVM
+            Kernel SVM
+            Duality
+            Primal Problem
+            Dual ProblemMapping Function
+            Kernel Trick
+    Clustering
+        Hierarchical
+        Pational
+            K-means
+        SOM
+        Spectrol
+        Instance-based Learning
+        KNN Algorithm
+    Dimensionality Reduction
+        Eigen Decomposition
+            SVD
+            PCA
+            Kernel PCA
+            Eigen Decomposition
+                Eigen Value
+                Eigen Vector
+                Projection
+                Determinant
+                Matrix Property
+                    Idempotent
+                    Square Matrix
+                    Symmetric
+                    Orthogonal
+                    Singular
+    Training
+        Ensemble
+            Bagging
+            AdaBoost
+            Random Forest
+        Score
+            Diagnosing Model
+                Variance-Bias
+            Confusion Matrix
+                ROC
+                    AUC
+                Accuracy
+                Presiion & Recall
+                    Trade Off
+                        Type 1,2, Error
+                    F1 Score
+                k-fold cross validation
+        Data Splitting
+            Training
+            Validation
+            Test
