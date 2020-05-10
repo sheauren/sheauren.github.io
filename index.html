@@ -5,13 +5,24 @@
     <meta charset="utf-8">
     <title>sheauren's mindmap index page</title>
     <style>
-        .list-style {
+        .mindmap-menu div {
+            width: 200px;           
+            overflow: hidden;
+        }
+        .mindmap-title{
+            text-align: center;
+            vertical-align: top;
+            height: 20px;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        .list-style {            
             width: 100%;
             overflow: auto;
             border: 2px solid #666666;
             border-radius: 5px;
             vertical-align: top;
-            overflow-y: auto;
             background-color: #333333;
             color: white;
             font-size: smaller
@@ -20,22 +31,86 @@
         a {
             color: white;
         }
+
+        ul,
+        .main-group {
+            list-style-type: none;
+        }
+
+        .main-group {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        li {
+            padding-left: 10px;
+        }
+
+        a {
+            white-space: nowrap
+        }
+        
+        .caret {
+            cursor: pointer;
+            -webkit-user-select: none;
+            /* Safari 3.1+ */
+            -moz-user-select: none;
+            /* Firefox 2+ */
+            -ms-user-select: none;
+            /* IE 10+ */
+            user-select: none;
+        }
+
+        .caret::before {
+            content: "\25B6";
+            color: white;
+            display: inline-block;
+            margin-right: 6px;
+        }
+
+        .caret-down::before {
+            margin-right: 6px;
+            -ms-transform: rotate(90deg);
+            /* IE 9 */
+            -webkit-transform: rotate(90deg);
+            /* Safari */
+            transform: rotate(90deg);
+        }
+
+        .nested {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
     </style>
     <script type='text/javascript' src='https://code.jquery.com/jquery-3.5.0.slim.min.js'></script>
     <script type="text/javascript">
         $(() => {
-            var height = Math.max(
-                //document.body.scrollHeight,
-                document.body.offsetHeight,
-                document.documentElement.clientHeight,
-                //document.documentElement.scrollHeight,
-                document.documentElement.offsetHeight
-            )
+            var height = document.documentElement.clientHeight
             $("#container").height(height - 10);
             $('#list').height(height - 50);
+
+            var toggler = document.getElementsByClassName("caret");
+            var i;
+
+            for (i = 0; i < toggler.length; i++) {
+                toggler[i].addEventListener("click", function () {
+                    this.parentElement.querySelector(".nested").classList.toggle("active");
+                    this.classList.toggle("caret-down");
+                });                
+            }
+            
         })
         function load_jsmind(url) {
+            //alert('load_jsmind:'+url)
             $("#container").attr('src', './show_mindmap.html?json=' + url)
+        }
+        function load_url(url) {
+            
+            $("#container").attr('src', url)
         }
     </script>
 </head>
@@ -43,8 +118,8 @@
 <body style='overflow:hidden'>
     <table style='width:100%;'>
         <tr>
-            <td style='width:100px;text-align:center;vertical-align: top;height:30px'>
-                <h2>Mind Map Index</h2>
+            <td class='mindmap-menu mindmap-title'>
+                <div>Mindmap List</div>
             </td>
             <td rowspan="2">
                 <iframe frameBorder='0' id='container' style='overflow:hidden;width:100%'>
@@ -52,156 +127,191 @@
             </td>
         </tr>
         <tr>
-            <td width:100px;vertical-align: top;>
+            <td style='vertical-align: top;' class='mindmap-menu'>
                 <div id='list' class='list-style'>
-                    <h4>Machine Learning</h4>
-                    <ul>
-                        <li>
-                            <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/deeplearning/Probability_Statistics.json')">Probability&Statistics(2020/04/26)</a>
+                    <ul class='main-group'>
+                        <li><span class="caret caret-down">Machine Learning</span>
+                            <ul class="nested active">
+                                <li><a href='#'
+                                        onclick="javascript:load_jsmind('mindmap/deeplearning/Probability_Statistics.json')">Probability&Statistics(2020/04/26)</a>
+                                </li>
+                                <li>
+                                    <a href='#'
+                                        onclick="javascript:load_jsmind('mindmap/deeplearning/machine_learning.json')">Machine
+                                        Learning(2020/05/07)</a>
 
-                        </li>
-                        <li>
-                            <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/deeplearning/machine_learning.json')">Machine
-                                Learning(2020/05/07)</a>
+                                </li>
+                                <li>
+                                    <a href='#'
+                                        onclick="javascript:load_jsmind('mindmap/deeplearning/nlp.json')">NLP(2020/05/07)</a>
 
-                        </li>
-                        <li>
-                            <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/deeplearning/nlp.json')">NLP(2020/05/07)</a>
+                                </li>
+                                <li>
+                                    <a href='#'
+                                        onclick="javascript:load_jsmind('mindmap/deeplearning/tensorflow.json')">Tensorflow(2020/05/02)</a>
 
-                        </li>
-                        <li>
-                            <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/deeplearning/tensorflow.json')">Tensorflow(2020/05/02)</a>
+                                </li>
+                                <li>
+                                    <a href='#'
+                                        onclick="javascript:load_jsmind('mindmap/deeplearning/overfitting.json')">Overfit(2020/05/01)</a>
 
-                        </li>
-                        <li>
-                            <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/deeplearning/overfitting.json')">Overfit(2020/05/01)</a>
+                                </li>
 
-                        </li>
-                        Example
-                        <li>
-                            <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/deeplearning/example/image_classification.json')">Image
-                                Classification(2020/05/01)</a>
+                                <li><span class="caret">Example</span>
+                                    <ul class="nested">
+                                        <li>
+                                            <a href='#'
+                                                onclick="javascript:load_jsmind('mindmap/deeplearning/example/image_classification.json')">Image
+                                                Classification(2020/05/01)</a>
 
-                        </li>
-                        <li>
-                            <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/deeplearning/example/text_classification.json')">Text
-                                Classification(2020/05/01)</a>
+                                        </li>
+                                        <li>
+                                            <a href='#'
+                                                onclick="javascript:load_jsmind('mindmap/deeplearning/example/text_classification.json')">Text
+                                                Classification(2020/05/01)</a>
 
-                        </li>
-                        <li>
-                            <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/deeplearning/example/regression.json')">Regression(2020/05/01)</a>
+                                        </li>
+                                        <li>
+                                            <a href='#'
+                                                onclick="javascript:load_jsmind('mindmap/deeplearning/example/regression.json')">Regression(2020/05/01)</a>
 
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                    <h4>Program Language</h4>
-                    <h5>Nodejs</h5>
-                    <ul>
-                        <li>
-                            <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/it/nodejs.json')">Node.js(2020/05/01)</a>
-                        </li>
-                        <li>
-                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/esLint.json')">ESLint -
-                                Pluggable JavaScript linter(2020/05/01)</a>
-                        </li>
-                        <li>
-                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/glup.json')">glup - automate and
-                                enhance your workflow(2020/05/03)</a>
-                        </li>
-                        <li>
-                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/webpack.json')">webpack - module
-                                bounder(2020/05/03)</a>
-                        </li>
-                        <li>
-                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/chai.json')">chai - Chai is a
-                                BDD / TDD assertion library for [node](2020/05/04)</a>
-                        </li>
-                        <li>
-                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/mocha.json')">mocha - Mocha is a
-                                feature-rich JavaScript test framework(2020/05/04)</a>
-                        </li>
-                        <li>
-                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/istanbul.json')">istanbul, a
-                                JavaScript test coverage tool.(2020/05/04)</a>
-                        </li>
-                        <li>
-                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/travis.json')">travis CI - Test
-                                and Deploy with Confidence (2020/05/05)</a>
-                        </li>
-                        <li>
-                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/benchmark.json')">benchmark.js
-                                (2020/05/05)</a>
-                        </li>
-                        <li>
-                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/jest.json')">jest - Delightful
-                                Javascript Testing
-                                (2020/05/07)</a>
-                        </li>
-                        <li>
-                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/webdriver.json')">webdriver - a
-                                browser automation library
-                                (2020/05/07)</a>
+                    <ul class='main-group'>
+                        <li><span class="caret caret-down">Program Language</span>
+                            <ul class="nested  active">
+                                <li><span class='caret'>Nodejs</span>
+                                    <ul class='nested'>
+                                        <li>
+                                            <a href='#'
+                                                onclick="javascript:load_jsmind('mindmap/it/nodejs.json')">Node.js(2020/05/01)</a>
+                                        </li>
+                                        <li>
+                                            <a href='#'
+                                                onclick="javascript:load_jsmind('mindmap/it/esLint.json')">ESLint -
+                                                Pluggable JavaScript linter(2020/05/01)</a>
+                                        </li>
+                                        <li>
+                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/glup.json')">glup -
+                                                automate and
+                                                enhance your workflow(2020/05/03)</a>
+                                        </li>
+                                        <li>
+                                            <a href='#'
+                                                onclick="javascript:load_jsmind('mindmap/it/webpack.json')">webpack -
+                                                module
+                                                bounder(2020/05/03)</a>
+                                        </li>
+                                        <li>
+                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/chai.json')">chai -
+                                                Chai is a
+                                                BDD / TDD assertion library for [node](2020/05/04)</a>
+                                        </li>
+                                        <li>
+                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/mocha.json')">mocha
+                                                - Mocha is a
+                                                feature-rich JavaScript test framework(2020/05/04)</a>
+                                        </li>
+                                        <li>
+                                            <a href='#'
+                                                onclick="javascript:load_jsmind('mindmap/it/istanbul.json')">istanbul, a
+                                                JavaScript test coverage tool.(2020/05/04)</a>
+                                        </li>
+                                        <li>
+                                            <a href='#'
+                                                onclick="javascript:load_jsmind('mindmap/it/travis.json')">travis CI -
+                                                Test
+                                                and Deploy with Confidence (2020/05/05)</a>
+                                        </li>
+                                        <li>
+                                            <a href='#'
+                                                onclick="javascript:load_jsmind('mindmap/it/benchmark.json')">benchmark.js
+                                                (2020/05/05)</a>
+                                        </li>
+                                        <li>
+                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/jest.json')">jest -
+                                                Delightful
+                                                Javascript Testing
+                                                (2020/05/07)</a>
+                                        </li>
+                                        <li>
+                                            <a href='#'
+                                                onclick="javascript:load_jsmind('mindmap/it/webdriver.json')">webdriver
+                                                - a
+                                                browser automation library
+                                                (2020/05/07)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class='caret'>Other</span>
+                                    <ul class='nested '>
+                                        <li><a href='#'
+                                                onclick="javascript:load_jsmind('mindmap/it/golang.json')">golang(2020/04/29)</a>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                    <h5>Other</h5>
-                    <ul>
-                        <li>
-                            <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/it/golang.json')">golang(2020/04/29)</a>
-                        </li>
-                    </ul>
-                    <h2> English</h2>
-                    <ul>
-                        <li> <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/english/賴世雄.json')">賴世雄-我如何學英文(2020/05/06)</a>
-                        </li>
-                        <li>
-                            <h4> 龍飛虎 69堂課 </h4>
-                            <ol>
-                                <li> <a href='#'
-                                        onclick="javascript:load_jsmind('mindmap/english/龍飛虎/01-學英語的前題.json')">01-學英語的前題(2020/05/07)</a>
+                    <ul class='main-group'>
+                        <li><span class="caret caret-down">Language</span>
+                            <ul class="nested  active">
+                                <li><span class="caret">English</span>
+                                    <ul class="nested">
+                                        <li> <a href='#'
+                                                onclick="javascript:load_jsmind('mindmap/english/賴世雄.json')">賴世雄-我如何學英文(2020/05/06)</a>
+                                        </li>
+                                        <li><span class="caret">龍飛虎 69堂課</span>
+                                            <ul class="nested">
+                                                <li> <a href='#'
+                                                        onclick="javascript:load_jsmind('mindmap/english/龍飛虎/01-學英語的前題.json')">01-學英語的前題(2020/05/07)</a>
+                                                </li>
+                                                <li> <a href='#'
+                                                        onclick="javascript:load_jsmind('mindmap/english/龍飛虎/02-意識腦vs下意識.json')">02-學英語的前題(2020/05/08)</a>
+                                                </li>
+                                                <li> <a href='#'
+                                                        onclick="javascript:load_jsmind('mindmap/english/龍飛虎/03-核心圈.json')">03-核心圈(2020/05/09)</a>
+                                                </li>
+                                                <li> <a href='#'
+                                                        onclick="javascript:load_jsmind('mindmap/english/龍飛虎/04-明確英文目標.json')">04-明確英文目標(2020/05/09)</a>
+                                                </li>
+                                                <li> <a href='#'
+                                                        onclick="javascript:load_jsmind('mindmap/english/龍飛虎/05-成年人的優勢.json')">05-成年人的優勢(2020/05/09)</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li> <a href='#'
-                                        onclick="javascript:load_jsmind('mindmap/english/龍飛虎/02-意識腦vs下意識.json')">02-學英語的前題(2020/05/08)</a>
+                                <li><span class="caret">Japanese</span>
+                                    <ul class="nested">
+                                    </ul>
                                 </li>
-                                <li> <a href='#'
-                                        onclick="javascript:load_jsmind('mindmap/english/龍飛虎/03-核心圈.json')">03-核心圈(2020/05/09)</a>
-                                </li>
-                                <li> <a href='#'
-                                        onclick="javascript:load_jsmind('mindmap/english/龍飛虎/04-明確英文目標.json')">04-明確英文目標(2020/05/09)</a>
-                                </li>
-                                <li> <a href='#'
-                                        onclick="javascript:load_jsmind('mindmap/english/龍飛虎/05-成年人的優勢.json')">05-成年人的優勢(2020/05/09)</a>
-                                </li>
-                            </ol>
+                            </ul>
                         </li>
 
-                        <li> <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/english/vocabulary_job.json')">job(2020/04/29)</a>
-
-                        </li>
-                        <li> <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/english/vocabulary_adjective.json')">adjective(2020/04/29)</a>
+                    </ul>
+                    <ul class='main-group'>
+                        <li><span class="caret caret-down">Other</span>
+                            <ul class="nested  active">
+                                <li> <a href='#'
+                                        onclick="javascript:load_jsmind('mindmap/english/王學賢全腦速讀學習法.json')">王學賢全腦速讀學習法(2020/05/06)</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                    <h2> Other</h2>
-                    <ul>
-                        <li> <a href='#'
-                                onclick="javascript:load_jsmind('mindmap/english/王學賢全腦速讀學習法.json')">王學賢全腦速讀學習法(2020/05/06)</a>
+                    <ul class='main-group'>
+                        <li><span class="caret caret-down">Tool</span>
+                            <ul class="nested  active">
+                                <li>
+                                    <a href='load_url("random_color_generate.html")'>Random Color Generate</a></li>
+                            </ul>
                         </li>
-                    </ul>
-                    <h2> Tool </h2>
-                    <ul>
-                        <li>
-                            <a href='random_color_generate.html'>Random Color Generate</a></li>
                     </ul>
                 </div>
             </td>
