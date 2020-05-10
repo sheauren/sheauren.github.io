@@ -1,0 +1,100 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u7b2c6\u500b\u7fd2\u6163\u73a9\u8a5e"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "root",
+        "topic": "\u65bc\u81ea\u8a00\u81ea\u8a9e\u8aaa\u82f1\u6587\u4e0a\u52a0\u5165",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "\u73a9\u8a5e",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "ex:",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "man,car,cup",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "the man in the car",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_5",
+        "topic": "the man in the cup",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_5",
+        "topic": "the man in the cpu left the car",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_4",
+        "topic": "\u628a\u4f60\u6703\u7684\u8a5e\u7528\u4e0d\u540c\u7684\u7d44\u6210\u65b9\u5f0f\u9020\u53e5",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_3",
+        "topic": "\u63d0\u5347\u4f60\u7684\u8a0a\u606f\u7db2",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_3",
+        "topic": "\u7528\u4f60\u7684\u5275\u610f\u7522\u751f\u53e5\u5b50",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_3",
+        "topic": "\u638c\u63e1\u82f1\u6587\u8a9e\u611f\u8207\u898f\u5f8b",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_2",
+        "topic": "\u4e94\u5206\u9418\u6642\u9593\u73a9\u4e00\u4e0b\u8a5e",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "\u7fd2\u6163\u82f1\u8a9e\u8a9e\u6cd5",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_13",
+        "topic": "\u7fd2\u6163\u82f1\u8a9e\u8a9e\u611f",
+        "background-color": "#0fbdff"
+    }
+]

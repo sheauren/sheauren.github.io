@@ -1,0 +1,73 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u7fd2\u61638\u4e00\u5929\u7df4\u597d\u4e00\u500b\u767c\u97f3"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "root",
+        "topic": "\u82f1\u8a9e\u53ea\u670944\u500b\u8072\u97f3",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "\u5982\u679c\u6bcf\u5929\u641e\u5b9a\u4e00\u500b\u97f3",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "\u53ea\u8981\u4e00\u500b\u534a\u6708",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_2",
+        "topic": "\u4f60\u8981\u96a8\u6642\u96a8\u5730\u7df4\u81ea\u5df1\u7684\u767c\u97f3",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "\u7b49\u96fb\u68af\u7684\u6642\u9593",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": "\u62ff\u51fa\u7df4\u7fd2\u7d20\u6750\u4f86\u7df4\u7fd2",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_5",
+        "topic": "\u7b49\u8eca\u7684\u6642\u9593",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "\u62ff\u51fa\u7df4\u7fd2\u7d20\u6750\u4f86\u7df4\u7fd2",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_5",
+        "topic": "30s~60s",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "\u90fd\u53ef\u4ee5\u62ff\u51fa\u4f86\u7df4\u7fd2",
+        "background-color": "#e3aba7"
+    }
+]
