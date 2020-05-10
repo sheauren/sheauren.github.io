@@ -5,14 +5,16 @@
     <meta charset="utf-8">
     <title>sheauren's mindmap index page</title>
     <style>
-        .mindmap-menu{
+        .mindmap-menu {
             width: 200px;
         }
+
         .mindmap-menu div {
-            width: 200px;           
+            width: 200px;
             overflow: hidden;
         }
-        .mindmap-title{
+
+        .mindmap-title {
             text-align: center;
             vertical-align: top;
             height: 20px;
@@ -20,7 +22,7 @@
             font-weight: bold;
         }
 
-        .list-style {            
+        .list-style {
             width: 100%;
             overflow: auto;
             border: 2px solid #666666;
@@ -53,7 +55,7 @@
         a {
             white-space: nowrap
         }
-        
+
         .caret {
             cursor: pointer;
             -webkit-user-select: none;
@@ -103,15 +105,15 @@
                 toggler[i].addEventListener("click", function () {
                     this.parentElement.querySelector(".nested").classList.toggle("active");
                     this.classList.toggle("caret-down");
-                });                
+                });
             }
-            
+
         })
         function load_jsmind(url) {
             //alert('load_jsmind:'+url)
             $("#container").attr('src', './show_mindmap.html?json=' + url)
         }
-        function load_url(url) {            
+        function load_url(url) {
             $("#container").attr('src', url)
         }
     </script>
@@ -286,7 +288,15 @@
                                                 <li> <a href='#'
                                                         onclick="javascript:load_jsmind('mindmap/english/龍飛虎/05-成年人的優勢.json')">05-成年人的優勢(2020/05/09)</a>
                                                 </li>
+                                                <li> <a href='#'
+                                                        onclick="javascript:load_jsmind('mindmap/english/龍飛虎/06-如何更好更快的學好英文.json')">06-如何更好更快的學好英文(2020/05/10)</a>
+                                                </li>
+                                                <li> <a href='#'
+                                                        onclick="javascript:load_jsmind('mindmap/english/龍飛虎/07-堅持學英文的秘訣.json')">07-堅持學英文的秘訣(2020/05/10)</a>
+                                                </li>
+
                                             </ul>
+
                                         </li>
                                     </ul>
                                 </li>
@@ -311,7 +321,8 @@
                         <li><span class="caret caret-down">Tool</span>
                             <ul class="nested  active">
                                 <li>
-                                    <a a href='#' onclick="javascript:load_url('random_color_generate.html')">Random Color Generate</a></li>
+                                    <a a href='#' onclick="javascript:load_url('random_color_generate.html')">Random
+                                        Color Generate</a></li>
                             </ul>
                         </li>
                     </ul>
