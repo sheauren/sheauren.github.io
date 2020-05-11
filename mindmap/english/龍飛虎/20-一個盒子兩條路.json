@@ -1,0 +1,378 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u4e00\u500b\u76d2\u5b50\u5169\u689d\u8def"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u4f7f\u8a9e\u6cd5\u4fe1\u606f\u8b8a\u6210\u756b\u9762\u548c\u611f\u89ba",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "\u9748\u6d3b\u904b\u52d5\u8a9e\u8a00\u6e9d\u901a\u5b78\u7fd2\"\u4e00\u500b\u76d2\u5b50\u5169\u689d\u8def\"\u7684\u65b9\u6cd5",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "root",
+        "topic": "\u807d\u5230\u8a5e\u6709\u4ec0\u9ebc\u53cd\u61c9",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "\u6c34",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_4",
+        "topic": "\u5abd\u5abd",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_4",
+        "topic": "\u8eca",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_4",
+        "topic": "\u8003\u8a66",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_4",
+        "topic": "\u706b",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_4",
+        "topic": "\u8001\u5a46",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_4",
+        "topic": "\u6bcf\u500b\u4eba\u5fc3\u88e1\u90fd\u6709\u4e0d\u4e00\u5b9a\u76f8\u540c\u7684\u53cd\u61c9",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_12",
+        "parentid": "root",
+        "topic": "\u8a9e\u8a00\u662f\u6e9d\u901a\u4ea4\u6d41\u7684\u95dc\u9375",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_13",
+        "parentid": "root",
+        "topic": "\u6e9d\u901a\u7684\u904e\u7a0b",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "\u7d44\u7e54\u6210\u8072\u97f3\u50b3\u51fa\u53bb",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_13",
+        "topic": "\u807d\u5230\u8072\u97f3\u65bc\u5fc3\u76ee\u4e2d\u88fd\u9020\u756b\u9762",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_13",
+        "topic": "\u8166\u5b50\u88e1\u51fa\u73fe\u7684\u756b\u9762\u4e0d\u4e00\u5b9a\u662f\u4f60\u60f3\u50cf\u7684\u756b\u9762",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_13",
+        "topic": "\u4e0d\u540c\u6587\u5316\u76f8\u5dee\u6703\u66f4\u5927",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_18",
+        "parentid": "root",
+        "topic": "same box different path",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "\u756b\u9762\u9023\u7d50\u5230\u4e2d\u6587",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_18",
+        "topic": "\u756b\u9762\u9023\u7d50\u5230\u82f1\u6587",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_18",
+        "topic": "\u4e0d\u662f\u82f1\u6587\u9023\u7d50\u5230\u4e2d\u6587",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_22",
+        "parentid": "root",
+        "topic": "\u600e\u9ebc\u5b78\u7fd2",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "\u5148\u5b78\u5177\u9ad4\u7684\u540d\u8a5e\u52d5\u8a5e\u958b\u59cb",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "\u770b\u5230\u7269\u9ad4\u7528\u82f1\u8a9e\u7684\u8072\u97f3\u6a19\u7c64",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_23",
+        "topic": "\u628a\u756b\u9762\u8ddf\u8072\u97f3\u4e32\u8d77\u4f86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_23",
+        "topic": "\u628a\u52d5\u4f5c\u8ddf\u8072\u97f3\u4e32\u8d77\u4f86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_23",
+        "topic": "\u628a\u984f\u8272\u8ddf\u8072\u97f3\u4e32\u8d77\u4f86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_22",
+        "topic": "\u8a5e\u7d44\u8b8a\u6210\u756b\u9762",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "where is...?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "\u60f3\u50cf\u68ee\u6797\u88e1\u9762\u627e\u4e0d\u627e\u8def",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_28",
+        "topic": "how do you...?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "\u5275\u9020\u756b\u9762\u4ee3\u8868\u9019\u500b\u610f\u601d",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_28",
+        "topic": "\u628a\u756b\u9762\u8ddf\u8a5e\u7d44\u653e\u5728\u4e00\u8d77",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_22",
+        "topic": "\u8a9e\u6cd5\u4fe1\u606f\u4e5f\u53ef\u4ee5\u8b8a\u6210\u756b\u9762\u548c\u611f\u89ba",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "A",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "\u591a\u500b\u4eba\u4e2d\u9078\u4e00\u500b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_34",
+        "topic": "The",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "\u591a\u500b\u4eba\u4e2d\u6307\u5b9a\u4e00\u500b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_22",
+        "topic": "\u589e\u52a0\u6bd4\u55bb",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_22",
+        "topic": "\u7528\u756b\u9762\u8ddf\u611f\u89ba\u89e3\u6c7a\u9577\u53e5\u5b50",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "The woman who is standing by the door is our english teacher.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_40",
+        "topic": "\u756b\u9762\u51fa\u73fe",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "woman",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_42",
+        "topic": "standing",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_42",
+        "topic": "door",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_42",
+        "topic": "english teacher",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_40",
+        "topic": "\u5728\u958b\u59cb\u7d44\u5408\u8d77\u4f86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_22",
+        "topic": "\u5408\u9069\u7684\u6559\u6750",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_48",
+        "topic": "\u4e2d\u82f1\u8a5e\u7d44\u5c0d\u7167",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "\u60f3\u8981",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "Would Like",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_49",
+        "topic": "\u6211\u60f3\u8981",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "I Would Like",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_49",
+        "topic": "\u5496\u5561",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "Coffee",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_49",
+        "topic": "\u6211\u60f3\u8981\u958b\u767c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_56",
+        "topic": "I Would Like Coffee",
+        "background-color": "#d41dea",
+        "expanded": false
+    }
+]
