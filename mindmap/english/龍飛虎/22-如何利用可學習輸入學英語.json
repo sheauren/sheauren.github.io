@@ -1,0 +1,301 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u5982\u4f55\u5229\u7528\u53ef\u5b78\u7fd2\u8f38\u5165\u5b78\u82f1\u8a9e"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u5584\u65bc\u89c0\u5bdf\u82f1\u8a9e\u6587\u5316",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "\u8981\u76f8\u4fe1\u611f\u77e5\u57f9\u990a\u7368\u8aaa",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "root",
+        "topic": "\u5927\u8166\u5982\u4f55\u7406\u89e3\u8a0a\u606f\u7684\u60c5\u5883",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "\u7406\u89e3\u65b0\u55ae\u5b57",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "\u540c\u6642\u807d\u5230\u7247\u8a9e\u6216\u55ae\u5b57",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_5",
+        "topic": "\u5c31\u7b97\u6c92\u6709\u807d\u8aaa\u904e",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_5",
+        "topic": "\u56e0\u70ba\u6574\u9ad4\u74b0\u5883\u662f\u80fd\u7406\u89e3\u610f\u601d",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_5",
+        "topic": "\u4e0b\u610f\u8b58\u6703\u5e6b\u5fd9\u7fd2\u5f97\u9019\u500b\u65b0\u8a9e\u8a00",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_4",
+        "topic": "\u5927\u8166\u5584\u65bc\u5728\u74b0\u5883\u4e2d\u627e\u5230\u6db5\u7fa9",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "apple\u7167\u7247",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "\u80fd\u5403",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_10",
+        "topic": "lion\u7167\u7247",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "\u5371\u96aa",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_10",
+        "topic": "point\u7167\u7247",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "\u6ce8\u610f,\u91cd\u9ede",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_4",
+        "topic": "\u6240\u6709\u5668\u5b98\u767c\u73fe\u5834\u666f\u88e1\u7684\u6db5\u7fa9",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "\u8996\u89ba,\u807d\u89ba,\u611f\u89ba,\u55c5\u89ba,\u5473\u89ba",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_4",
+        "topic": "\u7b2c\u516d\u500b\u7cfb\u7d71\u662f\u8a9e\u8a00\u6703\u6210\u70ba\u53e6\u4e00\u500b\u8a0a\u606f\u7ba1\u9053",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_20",
+        "parentid": "root",
+        "topic": "\u5982\u4f55\u5229\u7528\u53ef\u5b78\u7fd2\u8f38\u5165\u5b78\u82f1\u8a9e",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "\u89c0\u5bdf\u6574\u9ad4\u74b0\u5883",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "\u96ea\u5730\u63e1\u8457\u624b\u8aaa",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "i'm freeze",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_22",
+        "topic": "i'm so cold",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_22",
+        "topic": "\u4f60\u5c31\u660e\u767d\u610f\u601d\u4e86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_20",
+        "topic": "\u89c0\u5bdf\u5177\u9ad4\u52d5\u4f5c",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "please came this way(\u6307\u4e00\u500b\u65b9\u5411)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_20",
+        "topic": "\u4e3b\u8981\u6b65\u9a5f",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "\u89c0\u5bdf\u5834\u666f\u88e1\u6240\u6709\u8a0a\u606f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_28",
+        "topic": "\u628a\u5834\u666f\u6db5\u7fa9\u6c89\u6fb1\u51fa\u4f86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_28",
+        "topic": "\u807d\u8a5e\u6642\u628a\u4ed6\u7576\u5834\u666f\u591a\u4e00\u689d\u8a0a\u606f\u7dda",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_28",
+        "topic": "\u8a18\u4f4f\u9019\u4e9b\u4e8b\u4ef6\u4e26\u4e14\u628a\u5834\u666f\u6db5\u7fa9\u878d\u70ba\u4e00\u9ad4",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_20",
+        "topic": "\u76f8\u4fe1\u81ea\u5df1\u7684\u611f\u77e5",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "\u66f4\u52a0\u767c\u63ee\u5927\u8166\u5c0b\u627e\u6db5\u7fa9\u7684\u6a5f\u80fd",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_20",
+        "topic": "\u6c92\u6709\u5be6\u9ad4\u74b0\u5883\u600e\u9ebc\u8fa6",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "\u4e2d\u82f1\u5c0d\u7167\u8868",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "The Thrid Ear",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "\u5168\u82f1\u8a9e\u807d\u4e00\u904d",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_38",
+        "topic": "baseline\u53ef\u80fd\u53ea\u807d\u61c25~10%",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_37",
+        "topic": "\u770b\u4e2d\u6587\u7406\u89e3\u610f\u601d",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_37",
+        "topic": "\u807d\u7b2c\u4e8c\u904d\u82f1\u8a9e\u767c\u73fe\u63d0\u9ad8\u7406\u89e3",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_37",
+        "topic": "\u5b57\u7d44\u5c0d\u7167\u4e00\u500b\u76d2\u5b50\u5169\u689d\u8def",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "\u5c0f\u6a21\u584a\u5c0f\u6a21\u584a\u5c0d\u6620",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "\u807d\u5230\u82f1\u6587\u6a21\u584a\u5c0d\u61c9\u4e2d\u6587",
+        "background-color": "#97d9c7",
+        "expanded": false
+    }
+]

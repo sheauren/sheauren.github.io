@@ -1,0 +1,334 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u7247\u8a9e\u6bd4\u55ae\u5b57\u9084\u91cd\u8981"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u7247\u8a9e\u91cd\u8981\u8981\u8a18\u7262",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "\u52e4\u5b78\u82e6\u7df4\u6709\u65b9\u6cd5",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "root",
+        "topic": "\u7247\u8a9e\u662f\u4ec0\u9ebc",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "\u7247\u8a9e\u662f\u4e00\u500b\u4ee3\u8868\u78ba\u5b9a\u6db5\u7fa9\u7684\u8a5e\u8a9e\u55ae\u5143",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_4",
+        "topic": "\u53ef\u4ee5\u67092,3\u500b\u55ae\u5b57\u7d44\u6210",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_7",
+        "parentid": "root",
+        "topic": "\u4e2d\u6587\u7247\u8a9e",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "\u4e86,\u4e0d",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "\u4e0d\u4e86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_7",
+        "topic": "\u9192,\u904e,\u4f86",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "\u9192\u904e\u4f86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_7",
+        "topic": "\u53ef,\u4e0d,\u662f",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "\u53ef\u4e0d\u662f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_7",
+        "topic": "\u4e86,\u4e0d,\u5f97",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "\u4e86\u4e0d\u5f97",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_14",
+        "topic": "\u4e0d\u5f97\u4e86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_7",
+        "topic": "\u9593,\u63a5",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "\u9593\u63a5",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_7",
+        "topic": "\u800c,\u5df2",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "\u800c\u5df2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "root",
+        "topic": "\u82f1\u6587\u7247\u8a9e",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "about,talk",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "talk about",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_21",
+        "topic": "does,work",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "does this work",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_21",
+        "topic": "back,go,up",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "go back",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_26",
+        "topic": "back up",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_21",
+        "topic": "to,be",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "to be",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_21",
+        "topic": "do,you,it",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "do you",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_31",
+        "topic": "do it",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_21",
+        "topic": "have,you",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "you have",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_34",
+        "topic": "have you",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "root",
+        "topic": "\u7247\u8a9e\u610f\u5473\u8457\u4ec0\u9ebc",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "\u55ae\u5b57\u62fc\u6e4a\u5728\u4e00\u8d77!=\u55ae\u5b57\u7684\u610f\u601d",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_37",
+        "topic": "\u7247\u8a9e\u7684\u6db5\u7fa9\u8ddf\u55ae\u5b57\u4e0d\u4e00\u5b9a\u6709\u908f\u8f2f\u95dc\u4fc2",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_37",
+        "topic": "\u55ae\u5b57\u4e4b\u9593\u7684\u908f\u8f2f!=\u7247\u8a9e\u7684\u610f\u601d",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_37",
+        "topic": "\u5c11\u80cc\u55ae\u5b57",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_41",
+        "topic": "\u89e3\u6c7a\u4e0d\u77ad\u7247\u8a9e\u6db5\u7fa9\u7684\u554f\u984c",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_37",
+        "topic": "\u8981\u76f4\u63a5\u611f\u77e5\u5230\u7247\u8a9e\u7684\u610f\u601d",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "go back",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_43",
+        "topic": "to be",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_43",
+        "topic": "do you",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "root",
+        "topic": "\u600e\u9ebc\u5b78\u7247\u8a9e",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "\u591a\u770b\u591a\u807d\u53ef\u7406\u89e3\u8f38\u5165\u7684\u5167\u5bb9",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_48",
+        "topic": "\u7528\u4e0b\u610f\u8b58",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "root",
+        "topic": "\u7247\u8a9e\u5c0d\u7167\u7684\u65b9\u6cd5",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "\u7528\u4e2d\u6587\u5c0d\u7167\u82f1\u6587\u7247\u8a9e",
+        "background-color": "#e82ad2"
+    }
+]
