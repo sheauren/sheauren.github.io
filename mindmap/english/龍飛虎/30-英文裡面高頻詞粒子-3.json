@@ -1,0 +1,225 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u82f1\u6587\u88e1\u9762\u9ad8\u983b\u8a5e\u7c92\u5b50-3"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "ness\u5f8c\u7db4\u662f\u5c07\u82f1\u6587\u7684\u5f62\u5bb9\u8a5e\u8b8a\u540d\u8a5e",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "ly\u5f8c\u7db4\u52e2\u5c07\u540d\u8a5e\u8b8a\u6210\u5f62\u5bb9\u8a5e,\u7b49\u65bc\u5730",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "root",
+        "topic": "\u9ad8\u983b\u8a5e\u7c92\u5b50",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "-ness",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "\u5f62\u5bb9\u8a5e\u8b8a\u6210\u540d\u8a5e",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_5",
+        "topic": "happyiness",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "i am happy",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "\u6211\u5f88\u958b\u5fc3",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_7",
+        "topic": "i am full of happiness",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "\u6211\u5145\u6eff\u958b\u5fc3\u611f",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_5",
+        "topic": "selfishness",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "He is selfishness",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "\u4ed6\u5f88\u81ea\u79c1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_12",
+        "topic": "His selfishness is obvious",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "\u4ed6\u81ea\u79c1\u7684\u5fc3\u5f88\u986f\u800c\u6613\u898b",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_5",
+        "topic": "slowness",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "Bikes are slow",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "\u8173\u8e0f\u8eca\u5f88\u6162",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_17",
+        "topic": "I dislike the slowness of bikes",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "\u6211\u4e0d\u559c\u6b61\u8173\u8e0f\u8eca\u6162\u884c\u7684\u7279\u9ede",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_5",
+        "topic": "sleeplessness",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "I was sleepless last night",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "\u6211\u6628\u5929\u5931\u7720",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_22",
+        "topic": "I suffer from sleeplessness",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "\u6211\u6709\u5931\u7720\u75c7\u72c0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_4",
+        "topic": "-ly",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "...\u5730",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_27",
+        "topic": "happily",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_27",
+        "topic": "friendly",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_27",
+        "topic": "slowly",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_27",
+        "topic": "rapidly",
+        "background-color": "#0fbdff",
+        "expanded": false
+    }
+]
