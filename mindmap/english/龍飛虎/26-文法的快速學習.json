@@ -1,0 +1,427 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u6587\u6cd5\u7684\u5feb\u901f\u5b78\u7fd2"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u638c\u63e1\u6587\u6cd5\u662f\u4e00\u7a2e\u6a21\u5f0f\u8b58\u5225\u904e\u7a0b",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "\u800c\u4e0d\u662f\u908f\u8f2f\u5206\u6790\u904e\u7a0b",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "root",
+        "topic": "\u82f1\u6587\u7684\u6587\u6cd5\u5f88\u96e3\u7406\u89e3",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "\u82f1\u6587\u8a9e\u6cd5\u5169\u500b\u6982\u5ff5",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "\u7528\u8a5e\u9806\u5e8f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_5",
+        "topic": "\u591a\u5ea6\u6db5\u7fa9\u55ae\u5143(\u8a5e\u7d20)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_4",
+        "topic": "\u5982\u4f55\u5feb\u901f\u5b78\u7fd2",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "\u8b8a\u6210\u81ea\u5df1\u80fd\u7528\u7684\u5c0f\u5de5\u5177",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_8",
+        "topic": "\u5716\u6a23\u8a8d\u51fa",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "pattern recognition",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "\u6a21\u5f0f\u8b58\u5225",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_10",
+        "topic": "\u4eba\u985e\u9032\u5316\u904e\u7a0b\u7576\u4e2d",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "\u5e6b\u52a9\u751f\u5b58\u7684\u6280\u80fd",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "\u770b\u5230\u773c\u93e1\u86c7",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "\u8df3\u958b",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_15",
+        "topic": "\u5982\u679c\u6c92\u53cd\u61c9\u53ef\u80fd\u5c31\u649e\u4e0a\u4e86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_14",
+        "topic": "\u53ea\u8981\u5927\u8166\u8b58\u5225\u5230\u6a21\u5f0f",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "\u4e0b\u610f\u8b58\u5c31\u53cd\u61c9\u4e86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_10",
+        "topic": "\u5feb\u901f\u8b58\u5225\u6a21\u5f0f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "I will Go To Work Tomorrow",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_20",
+        "topic": "I Went To Work Yesterday",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_20",
+        "topic": "She Want to Go To Work Next Week",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_20",
+        "topic": "They Have to GO To Work Every Day",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_20",
+        "topic": "I Will Go To Lunch At Tweleve O'clock",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_20",
+        "topic": "I Go To School Every Tuesday",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_10",
+        "topic": "\u589e\u5ea6\u8a5e",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "\u90fd\u6709\u51fa\u73fe\u898f\u5f8b",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_27",
+        "topic": "from",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_27",
+        "topic": "to",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_27",
+        "topic": "the",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_27",
+        "topic": "a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_10",
+        "topic": "\u8b8a\u5f62\u8a5e",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "I/Me/My/Mine",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_33",
+        "topic": "He/Him/His",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_33",
+        "topic": "She/Her/Hers",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_33",
+        "topic": "We/Us/Our/Ours",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_33",
+        "topic": "They/Then/Their/Theirs",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_33",
+        "topic": "\u540c\u4e00\u500b\u8a5e\u7684\u8b8a\u5f62\u4ee3\u8868\u65b9\u5411\u6027",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_33",
+        "topic": "Go/Going/Went",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_33",
+        "topic": "Is/Am/Are/Were/Was",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_33",
+        "topic": "Do/Doing/Did/Does",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_33",
+        "topic": "Will/Would",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_33",
+        "topic": "Grow/Grew/Grown",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_33",
+        "topic": "\u91cd\u8981\u5c0f\u55ae\u5b57\u90fd\u6709\u8b8a\u5f62",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_10",
+        "topic": "\u908f\u8f2f\u8a5e",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_10",
+        "topic": "\u8a5e\u7c92\u5b50",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_10",
+        "topic": "4\u7a2e\u4ee3\u8868\u82f1\u6587\u6240\u6709\u6587\u6cd5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_4",
+        "topic": "\u5c0b\u627e\u6a21\u5f0f",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "I will Go To Work",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_49",
+        "topic": "\u5f9e\u611f\u8208\u8da3\u5167\u5bb9\u4e2d\u5c0b\u627e\u7d93\u5e38\u51fa\u73fe\u7684\u53e5\u5b50\u6a21\u5f0f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "\u5c0f\u8aaa",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_51",
+        "topic": "\u6f2b\u756b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_51",
+        "topic": "\u4e2d\u82f1\u5c0d\u7167\u6cd5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "\u81ea\u5df1\u6478\u51fa\u898f\u5f8b",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_55",
+        "topic": "you",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_55",
+        "topic": "you go",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_55",
+        "topic": "will you go",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_55",
+        "topic": "Did you go",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_51",
+        "topic": "\u5e36\u8457\u97f3\u6a02\u5167\u5bb9",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_51",
+        "topic": "\u8b8a\u6210\u81ea\u5df1\u61c2\u5f97\u5c0f\u6771\u897f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    }
+]

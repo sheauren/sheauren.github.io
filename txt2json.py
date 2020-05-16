@@ -52,7 +52,10 @@ if os.path.isdir(input_file):
     for root,dirs,files in os.walk(input_file):        
         for file in files:
             if file.endswith('.txt'):
-                txt2json(os.path.join(root,file))
+                try:
+                    txt2json(os.path.join(root,file))
+                except Exception as ex:
+                    print(ex)
 elif os.path.isfile(input_file):
     txt2json(input_file)
 else:

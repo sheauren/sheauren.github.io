@@ -1,0 +1,501 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u7528\u4e00\u500b\u76d2\u5b50\u5169\u689d\u8def\u89e3\u6c7a\u6587\u6cd5\u554f\u984c"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u9748\u6d3b\u638c\u63e1\u8a9e\u6cd5\u7684\u898f\u5f8b",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "\u66f4\u597d\u7684\u904b\u7528\u4e00\u500b\u76d2\u5b50\u5169\u689d\u8def\u7684\u65b9\u6cd5",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "root",
+        "topic": "\u4efb\u4f55\u756b\u9762\u8a9e\u611f\u77e5",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "\u4e2d\u6587",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_4",
+        "topic": "\u82f1\u6587",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "root",
+        "topic": "\u82f1\u6587\u6587\u6cd5",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "\u591a\u5ea6\u6db5\u7fa9\u55ae\u5143",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "\u589e\u5ea6\u8a5e",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "to",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_9",
+        "topic": "from",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_9",
+        "topic": "the",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_8",
+        "topic": "\u8b8a\u5f62\u8a5e",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "I/me",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_13",
+        "topic": "he/him",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_8",
+        "topic": "\u908f\u8f2f\u8a5e(\u81a0\u6c34\u8a5e)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "although",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_16",
+        "topic": "but",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_16",
+        "topic": "and",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_8",
+        "topic": "\u8a5e\u7c92\u5b50",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "-ing",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_20",
+        "topic": "-ed",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_20",
+        "topic": "-ly",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_20",
+        "topic": "-ness",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_7",
+        "topic": "\u7528\u8996\u89ba\u8ddf\u611f\u89ba\u4f86\u8a8d\u8b58\u9019\u4e9b\u5c0f\u8072\u97f3",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "\u76f4\u63a5\u5c0d\u4ed6\u6709\u53cd\u61c9",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_25",
+        "topic": "\u6709\u4e00\u500b\u82f1\u8a9e\u7684\u689d\u4ef6\u53cd\u5c04",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_25",
+        "topic": "A/The",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "A Car",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "\u4e00\u7fa4\u8eca\u4e2d\u4efb\u9078\u4e00\u500b",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_28",
+        "topic": "The Car",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "\u9019\u53f0\u8eca",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_28",
+        "topic": "\u7528\u756b\u9762\u4f86\u60f3\u50cf\u9019\u6982\u5ff5\u4e0a\u7684\u5340\u5225",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_28",
+        "topic": "The Brown Car Is My",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "\u8eca\u4e2d\u53ef\u80fd\u53ea\u6709\u4e00\u53f0\u662fBrown Car",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_25",
+        "topic": "Much/Many",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "Many",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "\u5f88\u591a\u7368\u7acb\u7684\u6771\u897f",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_37",
+        "topic": "\u5f88\u591a\u4eba",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_37",
+        "topic": "Dollars",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "\u9214\u7968",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_41",
+        "topic": "\u53ef\u6578",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_36",
+        "topic": "Much",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "\u5f88\u591a\u6c34",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_43",
+        "topic": "\u4ed6\u6c92\u6709\u908a\u7de3\u53ef\u4ee5\u6578",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_43",
+        "topic": "Money",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_46",
+        "topic": "\u85aa\u6c34",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "\u4e5f\u662f\u6c92\u6709\u908a\u7de3",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_47",
+        "topic": "Much Money",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_25",
+        "topic": "\u8a5e\u7c92\u5b50\u4e5f\u80fd\u7528\u756b\u9762\u548c\u611f\u89ba",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "\u5c0d\u5176\u6a21\u5f0f\u6709\u76f4\u63a5\u53cd\u61c9",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "-ing",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "[start][-ing][stop]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_52",
+        "topic": "Going",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_52",
+        "topic": "Playing",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_52",
+        "topic": "Working",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_52",
+        "topic": "Thinking",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_52",
+        "topic": "Sleeping",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_51",
+        "topic": "-ed",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_51",
+        "topic": "-ly",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_51",
+        "topic": "un-",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_51",
+        "topic": "dis-",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_51",
+        "topic": "-est",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_51",
+        "topic": "-ness",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_51",
+        "topic": "-ize",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_50",
+        "topic": "\u4e2d\u6587\u8a5e\u7c92\u5b50",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "\u7684",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_66",
+        "topic": "\u5730",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_66",
+        "topic": "\u4e86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_66",
+        "topic": "\u55ce",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_66",
+        "topic": "\u5427",
+        "background-color": "#d41dea",
+        "expanded": false
+    }
+]
