@@ -1,0 +1,442 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u82f1\u6587\u88e1\u9762\u9ad8\u983b\u8b8a\u5f62\u8a5e-1"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u7528\u82f1\u8a9e\u6642\u5fc5\u9808\u6ce8\u610f\u7528\u72c0\u614b\u6ce8\u610f\u7528\u72c0\u614b\u6a19\u7c64\u8a5e",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "Am",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_2",
+        "topic": "Is",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_2",
+        "topic": "Are",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_2",
+        "topic": "(To)be",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_2",
+        "topic": "Being",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_2",
+        "topic": "Will be",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_2",
+        "topic": "Was",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_2",
+        "topic": "Where",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "root",
+        "topic": "\u5b58\u5728\u72c0\u614b\u6a19\u7c64\u8a5e(to)be",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "\u90fd\u4ee3\u8868\"\u662f\"",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "Am",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_12",
+        "topic": "Is",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_12",
+        "topic": "Are",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_12",
+        "topic": "(To)be",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_12",
+        "topic": "Being",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_12",
+        "topic": "Will be",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_12",
+        "topic": "Was",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_12",
+        "topic": "Where",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_12",
+        "topic": "\u5f8c\u9762\u4f86\u7684\u55ae\u5b57\u5c31\u662f\u63cf\u8ff0\u9019\u500b\u72c0\u614b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_11",
+        "topic": "\u82f1\u6587\u7684(to)be\u6bd4\u4e2d\u6587\u7684\u662f\u7528\u9014\u66f4\u5ee3\u6cdb",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "\u719f\u6089\u6703\u66f4\u50cf\u662f\u5916\u570b\u4eba\u8aaa\u8a71",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_11",
+        "topic": "\u5b58\u5728\u8457\u72c0\u614b\u7684\u6a19\u7c64",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "\u8eab\u9ad4\u7684",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "hot",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "\u4e2d\u5f0f\u82f1\u8a9e",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "he hot",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_27",
+        "topic": "i very hot",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_27",
+        "topic": "you hot",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_27",
+        "topic": "they hot",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_26",
+        "topic": "\u8981\u6709\u72c0\u614b\u7684\u6a19\u7c64\u4e0a\u53bb\u624d\u662f\u82f1\u8a9e",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "he is hot",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "he\u7684\u72c0\u614b\u662fhot",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_32",
+        "topic": "i am very hot",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "i\u7684\u72c0\u614b\u662fvery hot",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_32",
+        "topic": "you are hot",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "you\u7684\u72c0\u614b\u662fhot",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_32",
+        "topic": "they are hot",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "hey\u7684\u72c0\u614b\u662fhot",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_24",
+        "topic": "\u5fc3\u88e1\u7684",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_41",
+        "topic": "She is happy",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_41",
+        "topic": "I am happy",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_41",
+        "topic": "You are happy",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_41",
+        "topic": "They are happy",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_41",
+        "topic": "I am not happy",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_24",
+        "topic": "\u89d2\u8272\u7684",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "He is a doctor",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_47",
+        "topic": "I am a doctor",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_47",
+        "topic": "You are a doctor",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_47",
+        "topic": "They are doctors",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_47",
+        "topic": "I want to be a doctor",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_24",
+        "topic": "\u5730\u9ede",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "He is here",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_53",
+        "topic": "I am lost",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_53",
+        "topic": "Where am I?",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_53",
+        "topic": "I was lost",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_53",
+        "topic": "Thy were lost",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_24",
+        "topic": "\u6642\u9593",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_59",
+        "topic": "She is late",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_59",
+        "topic": "I will be late",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_59",
+        "topic": "I am late",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_59",
+        "topic": "They are late",
+        "background-color": "#e3aba7",
+        "expanded": false
+    }
+]

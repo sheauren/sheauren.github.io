@@ -1,0 +1,169 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u82f1\u6587\u88e1\u9762\u9ad8\u983b\u8a5e\u8b8a\u5f62\u8a5e-2"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u638c\u63e1\u8b8a\u5f62\u8a5e(to)be\u5169\u5ea6\u7684\u61c9\u7528\u898f\u5f8b",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "\u9023\u63a5\u5fc3\u4e2d\u7684\u756b\u9762\u548c\u611f\u89ba\u4f86\u5b78\u82f1\u6587",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "root",
+        "topic": "\u5b58\u5728\u72c0\u614b\u6a19\u7c64\u8a5e(to)be",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "\u591a\u5ea6\u542b\u7fa9\u55ae\u5143",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_4",
+        "topic": "\u90fd\u4ee3\u8868\"\u662f\"",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": "Am",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_6",
+        "topic": "Will be",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_6",
+        "topic": "Where",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_6",
+        "topic": "Is",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_6",
+        "topic": "(To)be",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_6",
+        "topic": "Are",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_6",
+        "topic": "Being",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_6",
+        "topic": "Was",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_4",
+        "topic": "\u5f71\u97ff\u5f62\u5f0f",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "\u6211/\u4f60/\u4ed6/\u5979/\u5b83/\u4ed6\u5011",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "I/You/he/she/it/they",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_15",
+        "topic": "\u904e\u53bb/\u73fe\u5728/\u6b63\u5728",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "Was/Were/Was/Were",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_18",
+        "topic": "Am/Are/Is/Are",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_15",
+        "topic": "\u672a\u4f86",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "Will Be",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_4",
+        "topic": "\u4e00\u500b\u76d2\u5b50\u5169\u689d\u8def",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "was/were",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "\u6642\u9593\u5f80\u56de\u7684\u756b\u9762",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_23",
+        "topic": "will be",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "\u6642\u9593\u672a\u4f86\u7684\u756b\u9762",
+        "background-color": "#e3aba7"
+    }
+]
