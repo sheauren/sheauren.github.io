@@ -1,0 +1,295 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u82f1\u6587\u88e1\u9762\u9ad8\u983b\u8b8a\u5f62\u8a5e-3"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "Do\u7684\u7684\u672c\u610f\u662f'\u505a'",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "\u4f5c\u70ba\u6587\u6cd5\u8a5e\u7c92\u5b50\u6709\u5169\u7a2e\u610f\u601d",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "'\u5c31\u4e0d\u2018",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_3",
+        "topic": "\u2019\u55ce'",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "root",
+        "topic": "Do",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": "5\u500b\u8b8a\u5f62",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "do",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_7",
+        "topic": "does",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_7",
+        "topic": "doing",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_7",
+        "topic": "did",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_7",
+        "topic": "will do",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_6",
+        "topic": "\u64c1\u6709\u5169\u5ea6\u4f5c\u7528",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "\u672c\u610f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "\u505a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "I/You/He/She/It/They",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_15",
+        "topic": "\u904e\u53bb",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "Did/Did/Did/Did/Did/Did",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_15",
+        "topic": "\u6b63\u5728",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "Am Doing/Are Doing/Is Doing/Are Doing",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_15",
+        "topic": "\u672a\u4f86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "Will do/Will do/Will do/Will do/Will do",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_13",
+        "topic": "\u8a5e\u7c92\u5b50",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "\u5169\u500b\u8a9e\u6cd5\u89d2\u8272",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_23",
+        "topic": "do + not \u8a5e\u7d44",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "\u5c31\u4e0d",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "do not",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "I do not known his name",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_26",
+        "topic": "does not",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "She does not eat meat",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_25",
+        "topic": "\u5c31\u6c92",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "did not",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "He did not work Firday",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_23",
+        "topic": "\u554f\u53e5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "Do you",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "Do you want coffee?",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_34",
+        "topic": "Does he",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "Does he go to university?",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_34",
+        "topic": "Did he",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "Did he finish work yes?",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_34",
+        "topic": "...\u55ce?",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_13",
+        "topic": "do\u6709\u4e09\u500b\u4e0d\u540c\u89d2\u8272",
+        "background-color": "#0fbdff",
+        "expanded": false
+    }
+]
