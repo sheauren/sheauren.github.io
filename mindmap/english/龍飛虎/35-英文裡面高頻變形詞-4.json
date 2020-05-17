@@ -1,0 +1,143 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u82f1\u6587\u88e1\u9762\u9ad8\u983b\u8b8a\u5f62\u8a5e-4"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "have\u6709\u5169\u500b\u6709\u5169\u500b\u5ea6",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "\u4e2d\u6587\u76f4\u8b6f\"\u64c1\u6709\"",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_2",
+        "topic": "\u6587\u6cd5\u8a5e\u7c92\u5b50\u8868\u793a\u4e2d\u6587\"\u904e\"\u548c\"\u4e86\"\u7684\u610f\u601d",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_5",
+        "parentid": "root",
+        "topic": "Have",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "\u82f1\u8a9e\u6e9d\u901a\u6838\u5fc3\u5c0f\u5de5\u5177",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_5",
+        "topic": "\u6709\u56db\u500b\u8b8a\u5f62",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "have",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_7",
+        "topic": "has",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_7",
+        "topic": "had",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_7",
+        "topic": "will have",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_5",
+        "topic": "\u672c\u610f",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "\u64c1\u6709",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_5",
+        "topic": "\u8a9e\u6cd5\u8a5e\u7c92\u5b50",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "\u4e86,\u904e(\u5b8c\u6210)",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "have + verb",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "They have come to play",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_16",
+        "topic": "I have been watching you",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_15",
+        "topic": "had + verb",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "She had been sleeping",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_15",
+        "topic": "has + verb",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "He has been studying",
+        "background-color": "#d41dea",
+        "expanded": false
+    }
+]
