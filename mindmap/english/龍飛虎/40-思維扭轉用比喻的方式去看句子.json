@@ -1,0 +1,488 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u4e2d\u82f1\u6587\u7528\u8a9e\u6587\u7684\u601d\u7dad\u4e0d\u540c"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u878d\u5165\u82f1\u8a9e\u6587\u5316\u5584\u65bc\u7406\u89e3\u6bd4\u55bb",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "\u6709\u6548\u5c07\u62bd\u8c61\u7684\u6982\u5ff5\u4ee5\u5be6\u7269\u9084\u539f",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "root",
+        "topic": "\u4e2d\u82f1\u6587\u7528\u8a9e\u6587\u7684\u601d\u7dad\u4e0d\u540c",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "\u9020\u6210\u8aa4\u89e3\u5916\u5546\u8001\u95c6\u7684\u610f\u601d",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_4",
+        "topic": "\u4e00\u65b9\u8aaa\u7684\u82f1\u8a9e\u53e6\u4e00\u65b9\u5b8c\u5168\u8aa4\u89e3\u8a72\u610f\u601d",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_4",
+        "topic": "\u5178\u578b\u82f1\u6587\u53e3\u8a9e",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "We arrived far too late to buy a ticket!",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "far too?",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_7",
+        "topic": "It far too late!",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "\u82f1\u6587\u8a9e\u6cd5\u7121\u6cd5\u89e3\u91cb\u7684",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_10",
+        "topic": "\u5fc5\u9808\u7528\u6bd4\u55bb\u7684\u65b9\u5f0f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_4",
+        "topic": "\u8a9e\u8a00\u672c\u8eab\u5f88\u591a\u5c64\u9762\u5c31\u662f\u6bd4\u55bb",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "\u694a\u67f3\u7d30\u8170",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_13",
+        "topic": "Wasp Waist",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_4",
+        "topic": "\u8ddf\u8001\u95c6\u8ac7\u4e8b\u60c5",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "I want you to keep me posted about all developements in this project please",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "keep me posted",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "\u4f86\u6e90\u65bc\u5e7e\u767e\u5e74\u524d\u5bc4\u4fe1\u8981\u53bb\u90f5\u5c40\u7684\u90a3\u500b\u904e\u7a0b",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_18",
+        "topic": "\u5b9a\u671f\u7d66\u6211\u767c\u4fe1\u904e\u4f86,\u8b93\u6211\u4e86\u89e3\u72c0\u6cc1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_4",
+        "topic": "Frequently Used Metaphors",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "We should be careful. This strategy is a one way street.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "one way street",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "\u4e00\u9032\u5c31\u7121\u6cd5\u56de\u982d\u4e86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_21",
+        "topic": "It's a big company, but they can turn on a dime.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "turn on a dime",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "\u975e\u5e38\u654f\u6377",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_26",
+        "topic": "\u5728\u5c0f\u7a7a\u9593\u5167\u626d\u8f49",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_25",
+        "topic": "dime",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "\u4e00\u6bdb\u9322",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_4",
+        "topic": "Newly Created Metapoher",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "Let's start with a blanket agreement",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "a blanket agreement",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "\u5b8c\u6574\u8986\u84cb\u7684\u65b9\u5f0f",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_33",
+        "topic": "\u5b8f\u89c0\u7684\u89d2\u5ea6\u4f86\u770b",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_4",
+        "topic": "\u6bd4\u55bb",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "\u7528\u5177\u9ad4\u7684\u4e8b\u7269\u4f86\u8868\u9054\u62bd\u8c61\u7684\u6982\u5ff5",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_4",
+        "topic": "Frozen Metaphors",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_38",
+        "topic": "\u51cd\u7d50\u7684\u6bd4\u55bb",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_38",
+        "topic": "\u5bec\u5bb9",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "\u5bec\u5927\u7684\u5bb9\u5668\u5f62\u5bb9\u5fc3\u80f8\u5bec\u5ee3",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_38",
+        "topic": "Break+fast",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "\u51cd\u7d50\u6bd4\u55bb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_42",
+        "topic": "Break your fast",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "\u6253\u65b7\u7d55\u98df",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_44",
+        "topic": "\u665a\u4e0a\u6c92\u5403=\u7d55\u98df\u4e00\u500b\u665a\u4e0a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_38",
+        "topic": "It's far too late",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "far too",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_48",
+        "topic": "\u9060\u9060\u592a...",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_38",
+        "topic": "That prolonged weakness has dampened hopes for June's report.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "proloned wekness",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "prolonged",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "long",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "\u5f88\u9577",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_52",
+        "topic": "pro-",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_55",
+        "topic": "\u540d\u8a5e\u8b8a\u52d5\u8a5e",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_52",
+        "topic": "-ed",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_57",
+        "topic": "\u904e\u53bb",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_51",
+        "topic": "weak",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_59",
+        "topic": "\u5f88\u5f31",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_51",
+        "topic": "\u5f31\u9805\u62c9\u9577\u5f88\u4e45\u7684\u6642\u9593",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_50",
+        "topic": "Dampended hopes",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "Damp",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "\u6f6e\u6fd5",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_63",
+        "topic": "\u6c34\u64b2\u5728\u706b\u4e0a",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_62",
+        "topic": "\u628a\u5e0c\u671b\u6de1\u8584\u4e86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_50",
+        "topic": "\u5e02\u5834\u6709\u9577\u6642\u9593\u75b2\u8edf\u64b2\u6ec5\u7684\u4eba\u5011\u5c0d\u516d\u6708\u4efd\u5831\u544a\u7684\u5e0c\u671b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_4",
+        "topic": "\u601d\u7dad\u626d\u8f49\u7528\u6bd4\u55bb\u7684\u65b9\u5f0f\u53bb\u770b\u53e5\u5b50",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "\u5c31\u53ef\u4ee5\u770b\u61c2\u6db5\u7fa9",
+        "background-color": "#0fbdff",
+        "expanded": false
+    }
+]
