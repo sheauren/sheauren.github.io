@@ -8,7 +8,7 @@ import json
 if len(sys.argv)==2:
     input_file = sys.argv[1]
 else:
-    input_file = 'mindmap'
+    input_file = 'mindmap/paper/Object Detection in 20 Years A Survey.txt'
 #else:
 #    input_file='./mindmap/nodejs.txt'
 

@@ -1,0 +1,4265 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "OBJECTDETECTION IN20 YEAR"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "A Road Map of Object Detection",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "Milestones: Traditional Detectors",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "Viola-Jones(VJ) detector features:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "integral image",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "Haar wavelet is used in VJ detector as the feature representation of an image",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_4",
+        "topic": "The integral image makes the computational complexity of each window in VJ detectorindependent of its window size.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_3",
+        "topic": "feature selection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "Instead of using a set of manually selected Haar basis filters",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_7",
+        "topic": "the authors used Adaboost algorithm [32] to select a small set of features that are mostlyhelpful for face detection from a huge set of random features pools (about 180k-dimensional).",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_3",
+        "topic": "detection cascades",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "A multi-stage detection paradigm(a.k.a. the \"detection cascades\") was introduced in VJ detector to reduce its computational overhead by spending less computations on background windows but more on face targets.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_2",
+        "topic": "HOG Detector features:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "improvement of the scale-invariant feature transform and shape contexts",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_12",
+        "topic": "To balance the feature invariance(including translation, scale, illumination, etc) and the nonlinearity (on discriminating different objects cat-egories)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_12",
+        "topic": "designed to be computed on a dense grid of uniformly spaced cells and use overlapping local contrast normalization (on \"blocks\") for improving accuracy",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_2",
+        "topic": "Deformable Part-based Model (DPM) features:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "divide and conquer",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_16",
+        "topic": "A typical DPM detector consists of a root-filter and anumber of part-filters.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_16",
+        "topic": "Instead of manually specifying theconfigurations of the part filters",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_16",
+        "topic": "aweakly supervised learning method is developed in DPM where all configurations of part filters can be learned automatically as latent variables.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_1",
+        "topic": "Milestones: CNN based Two-stage Detectors",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "RCNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "It starts with the extraction of a set of object proposals (object candidate boxes)by selective search",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_22",
+        "topic": "Then each proposal is rescaled to a fixed size image and fed into a CNN model trained onImageNet (say, AlexNet [40]) to extract features.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_22",
+        "topic": "linear SVM classifiers are used to predict the presence of anobject within each region and to recognize object categories.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_21",
+        "topic": "Spatial Pyramid PoolingNetworks (SPPNet)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "introduction of a Spatial Pyramid Pooling (SPP) layer, which enables a CNN to generate a fixed-length representation regardless of the size of image/region of interest without rescaling it.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_26",
+        "topic": "the training is still multi-stage, second, SPPNet only fine-tunes its fully connected layers while simply ignores all previous layers",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_21",
+        "topic": "Fast RCNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "enables us to simultaneously train adetector and a bounding box regressor under the same network configurations.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_21",
+        "topic": "Faster RCNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "RCNN is the first end-to-end, and the first near-realtime deep learning detector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_31",
+        "topic": "The main contribution of Faster-RCNN is the introduction of Region Proposal Network (RPN) that enables nearly cost-free region proposals.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_21",
+        "topic": "Feature Pyramid Networks",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "a top-down architecture with lateral connections is developed inFPN for building high-level semantics at all scales.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_1",
+        "topic": "Milestones: CNN based One-stage Detectors",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "You Only Look Once (YOLO)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "This network divides the image into regionsand predicts bounding boxes and probabilities for eachregion simultaneously.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_37",
+        "topic": "YOLO suffers from a drop of the localization accuracy com-pared with two-stage detectors, especially for some smallobjects.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_36",
+        "topic": "Single Shot MultiBox Detector (SSD)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "introduction of the multi-referenceand multi-resolution detection techniques",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_40",
+        "topic": "improves the detectionaccuracy of a one-stage detector, especially for some small objects.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_36",
+        "topic": "RetinaNet",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "a new loss function named \"focal loss\" has been introduced in RetinaNet by reshaping the standard crossentropy loss so that detector will put more focus on hard,misclassified examples during training.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "root",
+        "topic": "Dataset",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "PASCAL VOC Challenges",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_46",
+        "topic": "The PASCAL Visual Object Classes (VOC) Challenges",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "VOC07",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_48",
+        "topic": "5k tr. images + 12k annotated objects",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_47",
+        "topic": "VOC12",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "11k tr. images + 27k annotated objects.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_47",
+        "topic": "20 classes",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_47",
+        "topic": "Person: person; Animal: bird, cat, cow,dog, horse, sheep; Vehicle: aeroplane, bicycle, boat, bus, car,motor-bike, train; Indoor: bottle, chair, dining table, pottedplant, sofa, tv/monitor).",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_47",
+        "topic": "ImageNet Large Scale Visual Recognition Challenge",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_45",
+        "topic": "ILSVRC",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_55",
+        "topic": "The ImageNet Large Scale Visual Recognition Challenge(ILSVRC)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_55",
+        "topic": "using ImageNet images",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_55",
+        "topic": "ILSVRC-14",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "517k images and 534k annotated objects.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_45",
+        "topic": "MS COCO",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_60",
+        "topic": "MS-COCO-17",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_61",
+        "topic": "164k images and 897k annotated objects from 80 categories",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_60",
+        "topic": "MS-COCO contains more small objects (whose area is smaller than 1% of the image)and more densely located objects than VOC and ILSVRC.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_45",
+        "topic": "Open Images",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "Open Images Detection (OID) challenge",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_65",
+        "topic": "1. the standard object detection,",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_65",
+        "topic": "2. the visual relationship detection which detects paired objects inparticular relations.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_65",
+        "topic": "1,910k images with 15,440k annotated boundingboxes on 600 object categories.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_45",
+        "topic": "Datasets of Other Detection Tasks",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_69",
+        "topic": "detection applications in specific areas",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_69",
+        "topic": "pedestrian detection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "MIT Ped.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_71",
+        "topic": "INRIA",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_71",
+        "topic": "Caltech",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_71",
+        "topic": "KITTI",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_71",
+        "topic": "CityPersons",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_71",
+        "topic": "EuroCity",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_69",
+        "topic": "face detection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_78",
+        "topic": "FDDB",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_78",
+        "topic": "AFLW",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_78",
+        "topic": "IJB",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_78",
+        "topic": "WiderFace",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_78",
+        "topic": "UFDD",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_78",
+        "topic": "WildestFaces",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_69",
+        "topic": "textdetection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_85",
+        "topic": "ICDAR",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_85",
+        "topic": "STV",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_85",
+        "topic": "MSRA-TD500",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_85",
+        "topic": "IIIT5K",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_85",
+        "topic": "Syn90k",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_85",
+        "topic": "COCOText",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_69",
+        "topic": "traffic sign/light detection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_92",
+        "topic": "TLR",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_92",
+        "topic": "LISA",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_92",
+        "topic": "GTSDB",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_92",
+        "topic": "BelgianTSD",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_92",
+        "topic": "TT100K",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_92",
+        "topic": "BSTL",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_69",
+        "topic": "remote sensing",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_99",
+        "topic": "TAS",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_99",
+        "topic": "OIRDS",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_99",
+        "topic": "DLR3K",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_99",
+        "topic": "UCAS-AOD",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_99",
+        "topic": "VeDAI",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_99",
+        "topic": "NWPU-VHR10",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_99",
+        "topic": "LEVIR",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_99",
+        "topic": "DOTA",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_99",
+        "topic": "xView",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_69",
+        "topic": "target detection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "root",
+        "topic": "Metrics",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_110",
+        "topic": "How can we evaluate the effectiveness of an object detector?",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_110",
+        "topic": "different answers at different time",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_110",
+        "topic": "pedestriandetection",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_113",
+        "topic": "miss rate vs. false positives per-window(FPPW)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_113",
+        "topic": "Caltech pedestrian detection benchmark",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_113",
+        "topic": "false positives per-image (FPPI)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_110",
+        "topic": "average presicion",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_117",
+        "topic": "most frequently used evaluation forobject detection is \"Average Precision (AP)\"",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_117",
+        "topic": "the mean AP (mAP)averaged over all object categories is usually used as thefinal metric of performance.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_110",
+        "topic": "measure the object localization accuracy",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_120",
+        "topic": "the Intersection over Union (IoU)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_120",
+        "topic": "the IoU between the predicted box andthe ground truth box is greater than a predefined threshold(0.5)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_120",
+        "topic": "IoU thresholds between 0.5 (coarse localization) and 0.95 (perfect localization).",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_120",
+        "topic": "the Open Images dataset consideringthe group-of boxes and the non-exhaustive image-level category hierarchies.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_120",
+        "topic": "localization recall precision",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "root",
+        "topic": "Technical Evolution in Object Detection",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_126",
+        "topic": "Early Time's Dark Knowledge",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_127",
+        "topic": "designed based on low-level and mid-level vision",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_128",
+        "topic": "Components, shapes and edges",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_128",
+        "topic": "Recognition-by-components",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_128",
+        "topic": "a measurement ofsimilarity between the object components, shapes and contours, including Distance Transforms, Shape Contexts, and Edgelet, etc.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_127",
+        "topic": "Machine learning based detection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_132",
+        "topic": "statistical models of appearance(before 1998)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_133",
+        "topic": "Eigenfaces",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_132",
+        "topic": "wavelet feature representations (1998-2005)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_135",
+        "topic": "transforming an imagefrom pixels to a set of wavelet coefficients",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_135",
+        "topic": "Haar wavelets basis learned by a VJ detector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_132",
+        "topic": "gradient-based representations (2005-2012)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_138",
+        "topic": "Early time's CNN for object detection",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_138",
+        "topic": "\"shared-weight replicated neural network\"",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_138",
+        "topic": "\"space displacement network\"",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_126",
+        "topic": "Technical Evolution of Multi-Scale Detection",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_142",
+        "topic": "feature pyramids and sliding windows (before 2014)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_143",
+        "topic": "VJ detector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_143",
+        "topic": "mixture model",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_143",
+        "topic": "feature pyramid",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_143",
+        "topic": "exemplar-based detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_142",
+        "topic": "detection with object proposals (2010-2015)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_148",
+        "topic": "HOG detector, DPM, and even the Overfeatdetector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_148",
+        "topic": "the detection of \"various aspectratios\" was not considered at that time.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_148",
+        "topic": "Object proposals refer to a group of class-agnostic candidate boxes that likely to contain any objects.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_151",
+        "topic": "An object proposal detection algorithm should meetthe following three requirements:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_152",
+        "topic": "1. high recall rate",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_152",
+        "topic": "2. high localization accuracy",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_152",
+        "topic": "3. basis of the first two requirements, to improve precision and reduce processingtime.",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_151",
+        "topic": "Modern proposal detection methods",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_156",
+        "topic": "1. segmentation grouping approaches",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_156",
+        "topic": "2. window scoring approaches",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_156",
+        "topic": "3. neural network based approaches",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_142",
+        "topic": "deep regression(2013-2016)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_160",
+        "topic": "directly predict the co-ordinates of a bounding box based on the deep learningfeatures",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_142",
+        "topic": "multi-reference/-resolution detection (after 2015/after 2016)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_162",
+        "topic": "Multi-reference detection is the most popular frameworkfor multi-scale object detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_162",
+        "topic": "pre-define a set of reference boxes (a.k.a. anchor boxes)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_164",
+        "topic": "A typical loss of each predefined anchor box consists of two parts:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_165",
+        "topic": "1.a cross-entropy loss for category recognitionand",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_165",
+        "topic": "2.an L1/L2 regression loss for object localization.",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_162",
+        "topic": "Multi-resolution detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_168",
+        "topic": "from a feature pyramid during its forward propagation",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_126",
+        "topic": "Technical Evolution of Bounding Box Regression",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_170",
+        "topic": "Without BB regression (before 2008)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_171",
+        "topic": "usually directly consider the sliding window as the detection result.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_171",
+        "topic": "build very dense pyramid and slide thedetector densely on each location.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_170",
+        "topic": "From BB to BB (2008-2013)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_174",
+        "topic": "the BB regression at that time usually acted as a post-processing block, thusit is optional",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_174",
+        "topic": "predict a bounding box based on the complete configuration of an object hypothesis andformulate this process as a linear least-squares regression problem",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_170",
+        "topic": "From features to BB (after 2013)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_177",
+        "topic": "BB regression no longer serves as an individual post-processing block but has been integrated with the detector and trainedin an end-to-end fashion.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_177",
+        "topic": "BB regression has evolved to predicting BB directly based on CNN fea-tures.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_126",
+        "topic": "Technical Evolution of Context Priming",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_180",
+        "topic": "detection with local context",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_181",
+        "topic": "Local context refers to the visual information in the area that surrounds the object to detect.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_181",
+        "topic": "deep learning based detectorscan also be improved with local context by simply enlargingthe networks' receptive field or the size of object proposals",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_180",
+        "topic": "detection with global context",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_184",
+        "topic": "Global context exploits scene configuration as an additional source of information for object detection.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_184",
+        "topic": "For modern deeplearning based detectors, there are two methods to integrateglobal context.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_186",
+        "topic": "The first way is to take advantage of large receptive field orglobal pooling operation of a CNN feature",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_186",
+        "topic": "The secondway is to think of the global context as a kind of sequential information and to learn it with the recurrent neural net-works",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_180",
+        "topic": "context interactives",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_189",
+        "topic": "Context interactive refers to the piece of information that conveys by the interactions of visual elements, such as the constraints and dependencies.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_191",
+        "parentid": "line_189",
+        "topic": "Some recent improvements can be grouped into two categories",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_191",
+        "topic": "the first one is to explore the relationship between individual objects",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_191",
+        "topic": "the second one is toexplore modeling the dependencies between objects and scenes",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "line_126",
+        "topic": "Technical Evolution of Non-Maximum Suppression",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_194",
+        "topic": "Non-maximum suppression (NMS) is an important group oftechniques in object detection.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_194",
+        "topic": "the non-maximumsuppression is herein used as a post-processing step toremove the replicated bounding boxes and obtain the finaldetection result",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_197",
+        "parentid": "line_194",
+        "topic": "NMS has been graduallydeveloped into the following three groups of methods:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_198",
+        "parentid": "line_197",
+        "topic": "1. greedy selection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_199",
+        "parentid": "line_198",
+        "topic": "for a set of overlapped detections, the bounding box with the maximum detectionscore is selected while its neighboring boxes are removed according to a predefined overlap threshold (say, 0.5).",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_200",
+        "parentid": "line_198",
+        "topic": "it does not suppress false positives.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_201",
+        "parentid": "line_198",
+        "topic": "the greedyselection still performs as the strongest baseline for today'sobject detection.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_202",
+        "parentid": "line_197",
+        "topic": "2. bounding box aggregation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_203",
+        "parentid": "line_202",
+        "topic": "the idea of combining or clustering multiple overlapped bounding boxes into one final detection.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_204",
+        "parentid": "line_202",
+        "topic": "The advantage of this type of method is that it takes full consideration of object relationships and their spatial layout.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_205",
+        "parentid": "line_197",
+        "topic": "3. learning to NMS",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_206",
+        "parentid": "line_205",
+        "topic": "The main idea of such group of methods is to thinkof NMS as a filter to re-score all raw detections and to trainthe NMS as part of a network in an end-to-end fashion.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_207",
+        "parentid": "line_126",
+        "topic": "Technical Evolution of Hard Negative Mining",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_208",
+        "parentid": "line_207",
+        "topic": "The training of an object detector is essentially an imbalanced data learning problem.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_209",
+        "parentid": "line_207",
+        "topic": "Hard negative mining (HNM) aims to deal with theproblem of imbalanced data during training.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_210",
+        "parentid": "line_207",
+        "topic": "Bootstrap",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_211",
+        "parentid": "line_210",
+        "topic": "Bootstrap in object detection refers to a group of training techniques in which the training starts with a small partof background samples and then iteratively add new missclassified backgrounds during the training process",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_212",
+        "parentid": "line_207",
+        "topic": "HNM in deep learning based detectors",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_213",
+        "parentid": "line_212",
+        "topic": "balance the weights between the positive and negative windows.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_214",
+        "parentid": "line_212",
+        "topic": "the weight-balancing cannot completely solvethe imbalanced data problem",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_215",
+        "parentid": "line_212",
+        "topic": "only the gradients of a very small part of samples will be back-propagated",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_216",
+        "parentid": "line_212",
+        "topic": "In RefineDet ,an \"anchor refinement module\" is designed to filter easy negatives",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_217",
+        "parentid": "line_212",
+        "topic": "An alternative improvementis to design new loss functions",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_218",
+        "parentid": "line_212",
+        "topic": "reshapingthe standard cross entropy loss so that it will put more focuson hard, misclassified examples",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "SPEED-UP OFDETECTION"
+    },
+    {
+        "id": "line_220",
+        "parentid": "root",
+        "topic": "1. speed up of detection pipeline",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_221",
+        "parentid": "root",
+        "topic": "2. speed up of detection engine",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_222",
+        "parentid": "root",
+        "topic": "3. speed up of numerical computation",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_223",
+        "parentid": "root",
+        "topic": "Feature Map Shared Computation",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_224",
+        "parentid": "line_223",
+        "topic": "the feature extraction usually dominates the amountof computation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_225",
+        "parentid": "line_223",
+        "topic": "a sliding window based detector, the computational redundancy starts from both positions and scales",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_226",
+        "parentid": "root",
+        "topic": "Spatial Computational Redundancy and Speed Up",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_227",
+        "parentid": "line_226",
+        "topic": "The most commonly used idea to reduce the spatial computational redundancy is feature map shared computation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_228",
+        "parentid": "line_226",
+        "topic": "The idea of feature map shared computation has alsobeen extensively used in convolutional based detectors",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_229",
+        "parentid": "root",
+        "topic": "Scale Computational Redundancy and Speed Up",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_230",
+        "parentid": "line_229",
+        "topic": "directly scale the features rather than the images",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_231",
+        "parentid": "line_229",
+        "topic": "building \"detector pyramid\" is another way to avoid scale computational redundancy",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_232",
+        "parentid": "root",
+        "topic": "Speed up of Classifiers",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_233",
+        "parentid": "line_232",
+        "topic": "Detec-tion with nonlinear classifiers such as kernel SVM suggestshigher accuracy, but at the same time brings high computational overhead.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_234",
+        "parentid": "line_232",
+        "topic": "the \"model approximation\" is most commonly used.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_235",
+        "parentid": "line_234",
+        "topic": "Since the decision boundary of a classical kernel SVM can only be determined by a small set of its training samples.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_236",
+        "parentid": "line_234",
+        "topic": "Reduced Set Vectors is an approximation method for kernel SVM, which aims to obtain an equivalent decisionboundary in terms of a small number of synthetic vectors.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_237",
+        "parentid": "line_234",
+        "topic": "its decision boundary to a piece-wiselinear form so as to achieve a constant inference time",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_238",
+        "parentid": "line_234",
+        "topic": "The kernel method can also be accelerated with the sparseencoding methods",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_239",
+        "parentid": "root",
+        "topic": "Cascaded Detection",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_240",
+        "parentid": "line_239",
+        "topic": "to filter out most of the simple backgroundwindows using simple calculations, then to process thosemore difficult windows with complex ones.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_241",
+        "parentid": "root",
+        "topic": "Network Pruning and Quantification",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_242",
+        "parentid": "line_241",
+        "topic": "\"Network pruning\" and \"network quantification\" are two commonly used techniques to speed up a CNN model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_243",
+        "parentid": "line_242",
+        "topic": "pruning the network structure or weight to reduce its size and the latter one refers to reducing the code-length of activations or weights.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_244",
+        "parentid": "line_241",
+        "topic": "Network Pruning",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_245",
+        "parentid": "line_244",
+        "topic": "optimal brain damage",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_246",
+        "parentid": "line_244",
+        "topic": "compress the parameters of a multi-layer perceptron network",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_247",
+        "parentid": "line_244",
+        "topic": "the loss function of a network is approximated by taking the second-order derivatives so that to remove some unimportant weights.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_248",
+        "parentid": "line_244",
+        "topic": "the network pruning methods in recent years usually take an iterative training and pruning process",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_249",
+        "parentid": "line_248",
+        "topic": "to remove only a smallgroup of unimportant weights after each stage of training",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_250",
+        "parentid": "line_248",
+        "topic": "to repeat those operations",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_251",
+        "parentid": "line_248",
+        "topic": "As traditional network pruning simply removes unimportant weights, which may result in some sparse connectivity patterns in a convolutional filter",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_252",
+        "parentid": "line_248",
+        "topic": "A simple solution is to remove thewhole filters instead of the independent weights",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_253",
+        "parentid": "line_241",
+        "topic": "Network Quantification",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_254",
+        "parentid": "line_253",
+        "topic": "accelerate a networkby quantifying its activations or weights to binary variablessay, 0/1) so that the floating-point operation is convertedto AND, OR, NOT logical operations.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_255",
+        "parentid": "line_253",
+        "topic": "etwork binariza-tion can significantly speed up computations and reducethe network's storage so that it can be much easier to bedeployed on mobile devices.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_256",
+        "parentid": "line_253",
+        "topic": "One possible implementationof the above ideas is to approximate the convolution bybinary variables with the least squares method",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_257",
+        "parentid": "line_253",
+        "topic": "some researchers have further developed GPUacceleration libraries for binarized computation, which ob-tained more significant acceleration results",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_258",
+        "parentid": "line_241",
+        "topic": "Network Distillation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_259",
+        "parentid": "line_258",
+        "topic": "Network distillation is a general framework to compress theknowledge of a large network (\u201cteacher net\u201d) into a smallone (\u201cstudent net\u201d) [",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_260",
+        "parentid": "line_258",
+        "topic": "Onestraight forward approach of this idea is to use a teacher netto instruct the training of a (light-weight) student net so thatthe latter can be used for speed up detection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_261",
+        "parentid": "line_258",
+        "topic": "Anotherapproach is to make transform of the candidate regions soas to minimize the features distance between the student netand teacher net.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_262",
+        "parentid": "root",
+        "topic": "Lightweight Network Design",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_263",
+        "parentid": "line_262",
+        "topic": "The last group of methods to speed up a CNN based detector is to directly design a lightweight network instead ofusing off-the-shelf detection engines.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_264",
+        "parentid": "line_262",
+        "topic": "factorizing convolutions",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_265",
+        "parentid": "line_264",
+        "topic": "First group of methods is to factorize a large convolution filter into a set of small ones in their spatial dimension",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_266",
+        "parentid": "line_265",
+        "topic": "one canfactorize a 7x7 filter into three 3x3 filters",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_267",
+        "parentid": "line_265",
+        "topic": "or factorize a k\u00d7k filter into a k\u00d71 filterand a 1\u00d7k filter",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_268",
+        "parentid": "line_264",
+        "topic": "The second group of methods is to factorize a large group of convolutions into two small groups in their channel dimension",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_269",
+        "parentid": "line_262",
+        "topic": "group convolution",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_270",
+        "parentid": "line_269",
+        "topic": "Group convolution aims to reduce the number of parameters in a convolution layer by dividing the feature channelsinto many different groups, and then convolve on each group independently.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_271",
+        "parentid": "line_262",
+        "topic": "depth-wise separable convolution",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_272",
+        "parentid": "line_271",
+        "topic": "It can be viewed as a special case of thegroup convolution when the number of groups is set equalto the number of channels",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_273",
+        "parentid": "line_262",
+        "topic": "bottle-neck design",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_274",
+        "parentid": "line_273",
+        "topic": "A bottleneck layer in a neural network contains few nodescompared to the previous layers. It can be used to learningefficient data encodings of the input with reduced dimensionality.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_275",
+        "parentid": "line_262",
+        "topic": "neural architecture search",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_276",
+        "parentid": "line_275",
+        "topic": "there has been significant interest in designing network architectures automatically by neural ar-chitecture search (NAS) instead of relying heavily on expert experience and knowledge.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_277",
+        "parentid": "root",
+        "topic": "Numerical Acceleration",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_278",
+        "parentid": "line_277",
+        "topic": "The last group of methods to speed up a CNN based detector is to directly design a lightweight network instead ofusing off-the-shelf detection engines.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_279",
+        "parentid": "line_277",
+        "topic": "speed up with the integral image",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_280",
+        "parentid": "line_279",
+        "topic": "The integral image is an important method in image processing",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_281",
+        "parentid": "line_280",
+        "topic": "sparse signal",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_282",
+        "parentid": "line_280",
+        "topic": "color histogram",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_283",
+        "parentid": "line_280",
+        "topic": "gradient histogram",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_284",
+        "parentid": "line_280",
+        "topic": "integral HOG maps",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_285",
+        "parentid": "line_280",
+        "topic": "Integral Channel Features (ICF)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_286",
+        "parentid": "line_277",
+        "topic": "speed up in the frequency domain",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_287",
+        "parentid": "line_286",
+        "topic": "As the detection of a linear detectorcan be viewed as the window-wise inner product between the feature map and detector's weights",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_288",
+        "parentid": "line_287",
+        "topic": "Fourier transform",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_289",
+        "parentid": "line_287",
+        "topic": "Fast Fourier Transform (FFT)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_290",
+        "parentid": "line_287",
+        "topic": "Inverse Fast Fourier Transform (IFFT)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_291",
+        "parentid": "line_277",
+        "topic": "vector quantization",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_292",
+        "parentid": "line_291",
+        "topic": "The Vector Quantization (VQ) is a classical quantization method in signal processing that aims to approximate thedistribution of a large group of data by a small set of prototype vectors.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_293",
+        "parentid": "line_277",
+        "topic": "reduced rank approximation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_294",
+        "parentid": "line_293",
+        "topic": "The reduced rank approximation is a method to accelerate matrix multiplications.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "RECENT ADVANCES IN OBJECT DETECTION"
+    },
+    {
+        "id": "line_296",
+        "parentid": "root",
+        "topic": "Detection with Better Engines",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_297",
+        "parentid": "line_296",
+        "topic": "Alexnet",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_298",
+        "parentid": "line_297",
+        "topic": "an eight-layer deep network",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_299",
+        "parentid": "line_297",
+        "topic": "AlexNet famously won the2012 ImageNet LSVRC-2012 competition by a large margin",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_300",
+        "parentid": "line_296",
+        "topic": "VGG",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_301",
+        "parentid": "line_300",
+        "topic": "VGG increased the model'sdepth to 16-19 layers and used very small (3x3) convolutionfilters instead of 5x5 and 7x7 those were previously used inAlexNet.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_302",
+        "parentid": "line_296",
+        "topic": "Inception(GoogLeNet)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_303",
+        "parentid": "line_302",
+        "topic": "The main contribution of theInception family is the introduction of factorizing convolu-tion and batch normalization.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_304",
+        "parentid": "line_296",
+        "topic": "ResNet(The Deep Residual Networks)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_305",
+        "parentid": "line_304",
+        "topic": "ResNet aims to ease the training of networks by reformulating its layers aslearning residual functions with reference to the layer inputs.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_306",
+        "parentid": "line_296",
+        "topic": "DenseNet",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_307",
+        "parentid": "line_306",
+        "topic": "The authors embracedthis observation and introduced a densely connected block,which connects each layer to every other layer in a feed-forward fashion",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_308",
+        "parentid": "line_296",
+        "topic": "SENet(Squeeze and Excitation Networks )",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_309",
+        "parentid": "line_308",
+        "topic": "Itsmain contribution is the integration of global pooling andshuffling to learn channel-wise importance of the featuremap.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_310",
+        "parentid": "line_296",
+        "topic": "Object detectors with new engines",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_311",
+        "parentid": "line_310",
+        "topic": "STDN, DSOD,TinyDSOD, and Pelee choose DenseNet as their detection engine.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_312",
+        "parentid": "line_310",
+        "topic": "The Mask RCNN, as the state of the art model for instance segmentation, applied the next generation of ResNet: ResNeXt as its detection engine.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_313",
+        "parentid": "line_310",
+        "topic": "Xception, an improved version of Incepion, has also been used in detectors such as MobileNet and LightHead RCNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_314",
+        "parentid": "root",
+        "topic": "Detection with Better Features",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_315",
+        "parentid": "line_314",
+        "topic": "The quality of feature representations is critical for objectdetection.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_316",
+        "parentid": "line_314",
+        "topic": "feature fusion",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_317",
+        "parentid": "line_316",
+        "topic": "Invariance and equivariance are two important propertiesin image feature representations.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_318",
+        "parentid": "line_316",
+        "topic": "Classification desires invariant feature representations",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_319",
+        "parentid": "line_316",
+        "topic": "Object localization desiresequivariant representations",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_320",
+        "parentid": "line_316",
+        "topic": "object detection consists oftwo sub-tasks of object recognition and localization, it is cru-cial for a detector to learn both invariance and equivarianceat the same time.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_321",
+        "parentid": "line_316",
+        "topic": "features in deeper layers will have stronger invariance but less equivariance.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_322",
+        "parentid": "line_316",
+        "topic": "features in shallower layers is not conducive to learning semantics, but it helps object localization",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_323",
+        "parentid": "line_316",
+        "topic": "the integration of deep and shallow features ina CNN model helps improve both invariance and equivariance.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_324",
+        "parentid": "line_314",
+        "topic": "Feature Fusion in Different Ways",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_325",
+        "parentid": "line_324",
+        "topic": "processing flow",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_326",
+        "parentid": "line_325",
+        "topic": "bottom-up fusion",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_327",
+        "parentid": "line_326",
+        "topic": "Bottom-up fusionfeeds forward shallow features to deeper layers via skip connections",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_328",
+        "parentid": "line_325",
+        "topic": "top-down fusion",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_329",
+        "parentid": "line_328",
+        "topic": "top-down fusion feeds back the features of deeper layers into the shallowerones",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_330",
+        "parentid": "line_325",
+        "topic": "Apart from these methods, there are more complex approaches proposed recently, e.g., weaving features across different layers",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_331",
+        "parentid": "line_325",
+        "topic": "fractional strided convolution (a.k.a. transpose convolution) is an-other recent popular way to resize the feature maps and adjust the number of channels.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_332",
+        "parentid": "line_324",
+        "topic": "element-wise operation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_333",
+        "parentid": "line_332",
+        "topic": "From a local point of view, feature fusion can be consid-ered as the element-wise operation between different featuremaps.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_334",
+        "parentid": "line_332",
+        "topic": "There are three groups of methods:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_335",
+        "parentid": "line_332",
+        "topic": "element-wise sum",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_336",
+        "parentid": "line_332",
+        "topic": "element-wise product",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_337",
+        "parentid": "line_332",
+        "topic": "concatenation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_338",
+        "parentid": "line_314",
+        "topic": "learning high-resolution features with large receptive fields",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_339",
+        "parentid": "line_338",
+        "topic": "The receptive field and feature resolution are two important characteristics of a CNN based detector",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_340",
+        "parentid": "line_338",
+        "topic": "the latter one corresponds to the down-sampling rate betweenthe input and the feature map.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_341",
+        "parentid": "line_338",
+        "topic": "lower the feature resolutionis, the harder will be to detect small objects",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_342",
+        "parentid": "line_341",
+        "topic": "remove pooling layer",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_343",
+        "parentid": "line_341",
+        "topic": "reduce the convolution down-sampling rate.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_344",
+        "parentid": "line_341",
+        "topic": "but narrow a detector's \"sight\", may result in the miss detection of some large objects.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_345",
+        "parentid": "line_341",
+        "topic": "A piratical method to increase both of the receptive field and feature resolution at the same time is to introduce dilated convolution (a.k.a. atrous convolution, or convolution with holes)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_346",
+        "parentid": "line_345",
+        "topic": "expand the convolution filter and use sparse parameters",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_347",
+        "parentid": "line_341",
+        "topic": "Dilated convolution has now been widelyused in object detection and proves tobe effective for improved accuracy without any additionalparameters and computational cost",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_348",
+        "parentid": "root",
+        "topic": "Beyond Sliding Window",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_349",
+        "parentid": "line_348",
+        "topic": "Detection as sub-region search",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_350",
+        "parentid": "line_349",
+        "topic": "One recent method is to think of detection as a path planning process that starts from initial grids and finally converges to the desired groundtruth boxes",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_351",
+        "parentid": "line_349",
+        "topic": "Another method is to think of detectionas an iterative updating process to refine the corners of apredicted bounding box",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_352",
+        "parentid": "line_348",
+        "topic": "Detection as key points localization",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_353",
+        "parentid": "line_352",
+        "topic": "As any object in an image can be uniquely determined by its upper left corner and lower right corner of the ground truth box, the detection task, therefore, can beequivalently framed as a pair-wise key points localization problem.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_354",
+        "parentid": "line_353",
+        "topic": "predict a heat-map for the corners",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_355",
+        "parentid": "root",
+        "topic": "Improvements of Localization",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_356",
+        "parentid": "line_355",
+        "topic": "Bounding Box Refinement",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_357",
+        "parentid": "line_356",
+        "topic": "The most intuitive way to improve localization accuracyis bounding box refinement, which can be considered asa post-processing of the detection results",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_358",
+        "parentid": "line_356",
+        "topic": "the \"iterative bounding box refinement\" has been in-troduced recently by iteratively feeding the detection resultsinto a BB regressor until the prediction converges to a correctlocation and size.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_359",
+        "parentid": "line_355",
+        "topic": "designing new loss functions for accurate localization.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_360",
+        "parentid": "line_359",
+        "topic": "object localization is consideredas a coordinate regression problem",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_361",
+        "parentid": "line_359",
+        "topic": "there are two drawbacks of this paradigm.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_362",
+        "parentid": "line_361",
+        "topic": "the regression lossfunction does not correspond to the final evaluation oflocalization.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_363",
+        "parentid": "line_361",
+        "topic": "traditional bounding box regression methoddoes not provide the confidence of localization.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_364",
+        "parentid": "line_363",
+        "topic": "When thereare multiple BB\u2019s overlapping with each other, this may leadto failure in non-maximum suppression",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_365",
+        "parentid": "line_359",
+        "topic": "The most intuitive design is to directly use IoU as the localization loss function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_366",
+        "parentid": "line_359",
+        "topic": "Some otherresearchers have further proposed an IoU-guided NMS to improve localization in both training and detection stages",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_367",
+        "parentid": "line_359",
+        "topic": "to improve localization under a probabilistic inference framework",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_368",
+        "parentid": "line_359",
+        "topic": "Different from the previous methods that directly predictthe box coordinates, this method predicts the probabilitydistribution of a bounding box location",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_369",
+        "parentid": "root",
+        "topic": "Learning with Segmentation",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_370",
+        "parentid": "line_369",
+        "topic": "recent researches suggestobject detection can be improved by learning with semanticsegmentation.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_371",
+        "parentid": "line_369",
+        "topic": "Why Segmentation Improves Detection",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_372",
+        "parentid": "line_371",
+        "topic": "There are three reasons why the semantic segmentationimproves object detection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_373",
+        "parentid": "line_371",
+        "topic": "Segmentation helps category recognition",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_374",
+        "parentid": "line_373",
+        "topic": "As the feature of semantic segmentation tasks well captures the boundary of an object, segmentation may be helpful for category recognition.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_375",
+        "parentid": "line_371",
+        "topic": "Segmentation helps accurate localization",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_376",
+        "parentid": "line_375",
+        "topic": "The ground-truth bounding box of an object is determined by its well-defined boundary.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_377",
+        "parentid": "line_375",
+        "topic": "As objectboundaries can be well encoded in semantic segmentation features, learning with segmentation would be helpful for accurate object localization.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_378",
+        "parentid": "line_371",
+        "topic": "Segmentation can be embedded as context",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_379",
+        "parentid": "line_378",
+        "topic": "Objects in daily life are surrounded by different back-grounds, such as the sky, water, grass, etc, and all theseelements constitute the context of an object.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_380",
+        "parentid": "line_369",
+        "topic": "How Segmentation Improves Detection",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_381",
+        "parentid": "line_380",
+        "topic": "Learning with enriched features",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_382",
+        "parentid": "line_381",
+        "topic": "The simplest way is to think of the segmentation net-work as a fixed feature extractor and to integrate it into a de-tection framework as additional features [",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_383",
+        "parentid": "line_380",
+        "topic": "Learning with multi-task loss functions",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_384",
+        "parentid": "line_383",
+        "topic": "to train this model with multi-task loss functions (segmenta-tion loss + detection loss)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_385",
+        "parentid": "line_383",
+        "topic": "the segmen-tation brunch will be removed at the inference stage",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_386",
+        "parentid": "root",
+        "topic": "Robust Detection of Rotation and Scale Changes",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_387",
+        "parentid": "line_386",
+        "topic": "features learned by CNN arenot invariant to rotation and large degree of scale changes",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_388",
+        "parentid": "line_386",
+        "topic": "Rotation Robust Detection",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_389",
+        "parentid": "line_388",
+        "topic": "solution to this problem is data augmentation so that anobject in any orientation can be well covered by the aug-mented data",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_390",
+        "parentid": "line_388",
+        "topic": "Another solution is to train independent detectors for every orientation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_391",
+        "parentid": "line_388",
+        "topic": "Rotation invariant loss functions",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_392",
+        "parentid": "line_391",
+        "topic": "Some recent workshave introduced a constraint on the original detection lossfunction so that to make the features of rotated objects unchanged",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_393",
+        "parentid": "line_388",
+        "topic": "Rotation calibration",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_394",
+        "parentid": "line_393",
+        "topic": "make geometric transformations of the objects candidates",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_395",
+        "parentid": "line_393",
+        "topic": "This will be especially helpful for multi-stage detectors, where the correlation at early stages will benefit the subsequent detections.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_396",
+        "parentid": "line_395",
+        "topic": "The representative of this ideais Spatial Transformer Networks (STN)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_397",
+        "parentid": "line_388",
+        "topic": "Rotation RoI Pooling",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_398",
+        "parentid": "line_397",
+        "topic": "A recent improvement is to mesh the grids in polarcoordinates so that the features could be robust to therotation changes",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_399",
+        "parentid": "line_386",
+        "topic": "Scale Robust Detection",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_400",
+        "parentid": "line_399",
+        "topic": "Scale adaptive training",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_401",
+        "parentid": "line_400",
+        "topic": "Most of the modern detectors re-scale the input imageto a fixed size and back propagate the loss of the objectsin all scales",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_402",
+        "parentid": "line_401",
+        "topic": "scale imbalance",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_403",
+        "parentid": "line_400",
+        "topic": "Building an image pyramid during detection could alleviate this problem but not fundamentally",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_404",
+        "parentid": "line_400",
+        "topic": "A recent improvement is Scale Normalization for Image Pyramids(SNIP), which builds image pyramids at both of training and detection stages and only backpropagates the loss of some selected scales.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_405",
+        "parentid": "line_400",
+        "topic": "a more efficient training strategy: SNIP with Efficient Resampling (SNIPER),to crop and re-scale an image to a set of sub-regions so that to benefit from large batch training",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_406",
+        "parentid": "line_399",
+        "topic": "Scale adaptive detection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_407",
+        "parentid": "line_406",
+        "topic": "Most of the modern detectors use the fixed configura-tions for detecting objects of different sizes.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_408",
+        "parentid": "line_406",
+        "topic": "we need to carefullydefine the size of anchors",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_409",
+        "parentid": "line_408",
+        "topic": "A drawback of doing this isthe configurations cannot be adaptive to unexpected scalechanges.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_410",
+        "parentid": "line_406",
+        "topic": "To improve the detection of small objects,",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_411",
+        "parentid": "line_410",
+        "topic": "\"adaptive zoom-in\" techniques are proposed in some recent detectors to adaptively enlarge the small objects into the \"larger ones\"",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_412",
+        "parentid": "line_406",
+        "topic": "learning to predict the scale distribution of objects in an image",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_413",
+        "parentid": "line_406",
+        "topic": "then adaptively rescaling the image according to the distribution",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_414",
+        "parentid": "root",
+        "topic": "Training from Scratch",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_415",
+        "parentid": "root",
+        "topic": "Most deep learning based detectors are first pre-trained onlarge scale datasets, say ImageNet, and then fine-tuned onspecific detection tasks.",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_416",
+        "parentid": "line_415",
+        "topic": "do we really need topre-training a detector on ImageNet?",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_417",
+        "parentid": "line_416",
+        "topic": "The first limitation is the divergence between ImageNet classification and object detection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_418",
+        "parentid": "line_416",
+        "topic": "he second limitation is the domain mismatch.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_419",
+        "parentid": "root",
+        "topic": "some researchers have tried to train an object detector from scratch",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_420",
+        "parentid": "line_419",
+        "topic": "using standard models trained fromrandom initialization",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_421",
+        "parentid": "line_420",
+        "topic": "he sole exception of increasing the number of training iterations so the randomly initialized models may converg",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_422",
+        "parentid": "line_420",
+        "topic": "that ImageNet pre-training mayspeed up convergence, but does not necessarily provideregularization or improve final detection accuracy",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_423",
+        "parentid": "root",
+        "topic": "Adversarial Training",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_424",
+        "parentid": "line_423",
+        "topic": "GAN has been used to enhance the detection on small objects by narrowing the representations between small and large ones",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_425",
+        "parentid": "line_423",
+        "topic": "To improve the detection of occluded objects, one recent idea is to generate occlusion masks by using adversarial training",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_426",
+        "parentid": "line_423",
+        "topic": "adversarial attack",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_427",
+        "parentid": "line_426",
+        "topic": "which aims to study how to attack a detector with adver-sarial examples,has drawn increasing attention recently.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_428",
+        "parentid": "root",
+        "topic": "Weakly Supervised Object Detection",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_429",
+        "parentid": "line_428",
+        "topic": "The training of a modern object detector usually requiresa large amount of manually labeled data, while the label-ing process is time-consuming, expensive, and inefficient.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_430",
+        "parentid": "line_429",
+        "topic": "Weakly Supervised Object Detection (WSOD) aims to solve this problem by training a detector with only image level annotations instead of bounding boxes.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_431",
+        "parentid": "line_429",
+        "topic": "multi-instance learning has been used for WSOD, Multi-instance learning is a group of supervised learning method ,each containing many instances",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_432",
+        "parentid": "line_428",
+        "topic": "Class activation mapping is another recently group of methods for WSOD",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_433",
+        "parentid": "line_432",
+        "topic": "Class activation mapping shedlight on how to enable a CNN to have localization ability despite being trained on image level labels",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_434",
+        "parentid": "line_428",
+        "topic": "some other researchers considered the WSOD as a proposal ranking process by selecting the most informative regions and then training these regions with image-level annotation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_435",
+        "parentid": "line_428",
+        "topic": "simple method for WSOD is to mask out different parts of the image.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Application"
+    },
+    {
+        "id": "line_438",
+        "parentid": "root",
+        "topic": "pedestrian detection",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_439",
+        "parentid": "line_438",
+        "topic": "autonomous driving, video surveillance, criminal investigation, etc.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_440",
+        "parentid": "line_438",
+        "topic": "Difficulties and Challenges",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_441",
+        "parentid": "line_440",
+        "topic": "Small pedestrian",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_442",
+        "parentid": "line_441",
+        "topic": "the small pedestrians that are captured far from the camera.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_443",
+        "parentid": "line_441",
+        "topic": "In Caltech Dataset, 15% of the pedestrians are less than 30 pixels in height.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_444",
+        "parentid": "line_440",
+        "topic": "Hard negatives",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_445",
+        "parentid": "line_444",
+        "topic": "Some backgrounds in street view images are very similar to pedestrians in their visual appearance",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_446",
+        "parentid": "line_440",
+        "topic": "Dense and occluded pedestrian",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_447",
+        "parentid": "line_446",
+        "topic": "In the Caltech Dataset , pedestrians that haven't been occluded only account for 29% of the total pedestrian instances.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_448",
+        "parentid": "line_440",
+        "topic": "Real-time detection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_449",
+        "parentid": "line_448",
+        "topic": "The real-time pedestrian detectionfrom HD video is crucial for some applications like autonomous driving and video surveillance.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_450",
+        "parentid": "line_438",
+        "topic": "Literature Review",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_451",
+        "parentid": "line_450",
+        "topic": "Traditional pedestrian detection methods",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_452",
+        "parentid": "line_451",
+        "topic": "the Haar wavelet feature has been broadly used in early time\u2019s pedestrian detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_453",
+        "parentid": "line_451",
+        "topic": "one popular idea of that time was \"detection by components\"",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_454",
+        "parentid": "line_451",
+        "topic": "trained individually on different human parts,",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_455",
+        "parentid": "line_451",
+        "topic": "since 2005, gradient-based representation and DPM have become the mainstream of pedes-trian detection.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_456",
+        "parentid": "line_451",
+        "topic": "In 2009, by using the integral image acceleration, an effective and lightweight feature representation: the Integral Channel Features (ICF)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_457",
+        "parentid": "line_451",
+        "topic": "some domain knowledge also has been considered, such asappearance constancy and shape symmetry and stereo information",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_458",
+        "parentid": "line_450",
+        "topic": "Deep learning based pedestrian detection methods",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_459",
+        "parentid": "line_458",
+        "topic": "To improve small pedestrian detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_460",
+        "parentid": "line_459",
+        "topic": "Some recent solutions to this problem include featurefusion",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_461",
+        "parentid": "line_459",
+        "topic": "introducing extra high-resolution handcraftedfeatures",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_462",
+        "parentid": "line_459",
+        "topic": "ensembling detection results onmultiple resolutions",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_463",
+        "parentid": "line_458",
+        "topic": "To improve hard negative detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_464",
+        "parentid": "line_463",
+        "topic": "integration of boosted decision tree",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_465",
+        "parentid": "line_463",
+        "topic": "semantics segmentation (as the context of thepedestrians)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_466",
+        "parentid": "line_463",
+        "topic": "the idea of \"cross-modallearning\" has also been introduced to enrich the feature of hard negatives by using both RGB and infrared images",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_467",
+        "parentid": "line_458",
+        "topic": "To improve dense and occluded pedestrian detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_468",
+        "parentid": "line_467",
+        "topic": "the features indeeper layers of CNN have richer semantics but are not effective for detecting dense objects.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_469",
+        "parentid": "line_467",
+        "topic": "some researchers have designed new loss function by considering the attraction of target and the repulsion of other surrounding objects",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_470",
+        "parentid": "line_467",
+        "topic": "Target occlusion is another problem that usually comes up with dense pedestrians.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_471",
+        "parentid": "line_467",
+        "topic": "The ensemble ofpart detectors and the attention mechanism are the most common ways to improve occluded pedestrian detection",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_472",
+        "parentid": "root",
+        "topic": "face detection",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_473",
+        "parentid": "line_472",
+        "topic": "\"smile\" detection in digital cameras, \"face swiping\" in e-commerce,facial makeup in mobile apps, etc.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_474",
+        "parentid": "line_472",
+        "topic": "Difficulties and Challenges",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_475",
+        "parentid": "line_474",
+        "topic": "Intra-class variation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_476",
+        "parentid": "line_475",
+        "topic": "Human faces may present a variety of expressions, skin colors, poses, and movements",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_477",
+        "parentid": "line_474",
+        "topic": "Occlusion",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_478",
+        "parentid": "line_477",
+        "topic": "Faces may be partially occluded by other objects",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_479",
+        "parentid": "line_474",
+        "topic": "Multi-scale detection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_480",
+        "parentid": "line_479",
+        "topic": "Detecting faces in a large variety of scales, especially for some tiny faces",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_481",
+        "parentid": "line_474",
+        "topic": "Real-time detection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_482",
+        "parentid": "line_481",
+        "topic": "Face detection on mobile devices usually requires a CPU real-time detection speed.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_483",
+        "parentid": "line_472",
+        "topic": "Literature Review",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_484",
+        "parentid": "line_483",
+        "topic": "Early time's face detection (before 2001)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_485",
+        "parentid": "line_484",
+        "topic": "Rule-based method",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_486",
+        "parentid": "line_485",
+        "topic": "This group ofmethods encode human knowledge of what constitutes a typical face and capture the relationships between facial elements",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_487",
+        "parentid": "line_484",
+        "topic": "Subspace analysis-based methods",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_488",
+        "parentid": "line_487",
+        "topic": "This group of methods analyze the face distribution in underlying linear subspace",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_489",
+        "parentid": "line_487",
+        "topic": "Eigenfaces is the representative of this group of methods",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_490",
+        "parentid": "line_484",
+        "topic": "Learning basedmethods",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_491",
+        "parentid": "line_490",
+        "topic": "to frame the face detection as a sliding window+ binary classification (target vs background) process.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_492",
+        "parentid": "line_483",
+        "topic": "Traditional face detection (2000-2015)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_493",
+        "parentid": "line_492",
+        "topic": "First group of methods are built based on boosted decisiontrees",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_494",
+        "parentid": "line_493",
+        "topic": "These methods are easy to compute, butusually suffer from low detection accuracy under complexscenes.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_495",
+        "parentid": "line_492",
+        "topic": "The second group is based on early time\u2019s convolutional neural networks",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_496",
+        "parentid": "line_495",
+        "topic": "where the shared computation of features are used to speed up detection",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_497",
+        "parentid": "line_483",
+        "topic": "Deep learning based face detection (after 2015)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_498",
+        "parentid": "line_497",
+        "topic": "To speed up face detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_499",
+        "parentid": "line_498",
+        "topic": "Cascaded detection is the most common way tospeed up a face detector in deep learning era",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_500",
+        "parentid": "line_498",
+        "topic": "Another speed up method is to predict the scale distributionof the faces in an image and then run detection on some selected scales",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_501",
+        "parentid": "line_497",
+        "topic": "To improve multi-pose and occluded face detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_502",
+        "parentid": "line_501",
+        "topic": "The idea of \"face calibration\" has been used to improve multipose face detection by estimating the calibration parameters or using progressive calibration through multiple detection stages",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_503",
+        "parentid": "line_501",
+        "topic": "improve occluded face detection",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_504",
+        "parentid": "line_503",
+        "topic": "attention mechanism",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_505",
+        "parentid": "line_503",
+        "topic": "detection based on parts",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_506",
+        "parentid": "line_497",
+        "topic": "To improve multi-scale face detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_507",
+        "parentid": "line_506",
+        "topic": "multi-scale feature fusion and multi-resolution detection",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_508",
+        "parentid": "root",
+        "topic": "text detection",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_509",
+        "parentid": "line_508",
+        "topic": "to \"read\" street signs and currency",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_510",
+        "parentid": "line_508",
+        "topic": "In geographic information systems, the detectionand recognition of house numbers and street signs make iteasier to build digital maps",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_511",
+        "parentid": "line_508",
+        "topic": "Difficulties and Challenges",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_512",
+        "parentid": "line_511",
+        "topic": "Different fonts and languages",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_513",
+        "parentid": "line_512",
+        "topic": "Texts may have differentfonts, colors, and languages",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_514",
+        "parentid": "line_511",
+        "topic": "Text rotation and perspective distortion",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_515",
+        "parentid": "line_514",
+        "topic": "Texts mayhave different orientations and even may have perspective distortion",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_516",
+        "parentid": "line_511",
+        "topic": "Densely arranged text localization",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_517",
+        "parentid": "line_516",
+        "topic": "Text lines with largeaspect ratios and dense layout are difficult to localize accu-rately",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_518",
+        "parentid": "line_511",
+        "topic": "Broken and blurred characters",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_519",
+        "parentid": "line_518",
+        "topic": "Broken and blurredcharacters are common in street view images",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_520",
+        "parentid": "line_508",
+        "topic": "Literature Review",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_521",
+        "parentid": "line_520",
+        "topic": "Text detection consists of two related but relatively independent tasks",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_522",
+        "parentid": "line_521",
+        "topic": "text localization",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_523",
+        "parentid": "line_521",
+        "topic": "text recognition",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_524",
+        "parentid": "line_520",
+        "topic": "text detection methods can be divided into two groups",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_525",
+        "parentid": "line_524",
+        "topic": "Step-wise detection vs integrated detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_526",
+        "parentid": "line_525",
+        "topic": "Step-wise detection methods consist of a series of processing steps including character segmentation,candidate region verification, character grouping, and wordre cognition.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_527",
+        "parentid": "line_526",
+        "topic": "most of the background can be filtered in the coarse segmentationstep, which greatly reduces the computational cost of thefollowing process.",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_528",
+        "parentid": "line_526",
+        "topic": "the parameters of all steps need to be set carefully, and the errors will occurand accumulate throughout each of these steps",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_529",
+        "parentid": "line_525",
+        "topic": "the text detection as ajoint probability inference problem, where the steps of char-acter localization, grouping, and recognition are processedunder a unified framework.",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_530",
+        "parentid": "line_529",
+        "topic": "these methodsis it avoids the cumulative error and is easy to integrate language models.",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_531",
+        "parentid": "line_529",
+        "topic": "inference will be computationally expensive when considering a largenumber of character classes and candidate windows",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_532",
+        "parentid": "line_524",
+        "topic": "Traditional methods vs deep learning methods",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_533",
+        "parentid": "line_532",
+        "topic": "Most of the traditional text detection methods generatetext candidates in an unsupervised way",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_534",
+        "parentid": "line_533",
+        "topic": "the commonly used techniques include Maximally Stable ExtremalRegions (MSER) segmentation and morphological filtering",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_535",
+        "parentid": "line_533",
+        "topic": "the symmetry of texts and the structures of strokes, also have been considered in these methods",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_536",
+        "parentid": "line_533",
+        "topic": "researchers have paid more attention tothe problem of text localization rather than recognition",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_537",
+        "parentid": "line_536",
+        "topic": "The first group ofmethods frame the text detection as a special case of generalobject detection",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_538",
+        "parentid": "line_537",
+        "topic": "These methods have a unified detection framework, but it is less effective for detecting texts with orientation or with large aspect ratio.",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_539",
+        "parentid": "line_536",
+        "topic": "The second group of methods frame the text detection as an image segmentation problem",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_540",
+        "parentid": "line_539",
+        "topic": "The advantage of these methods is there are no special restrictions for the shape and orientation of text",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_541",
+        "parentid": "line_539",
+        "topic": "the disadvantage is that it is not easy to distinguish densely arranged text lines from each other based on the segmentation result.",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_542",
+        "parentid": "line_536",
+        "topic": "For text rotation and perspective changes",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_543",
+        "parentid": "line_542",
+        "topic": "The most common solution to this problem is to introduce additionalparameters in anchor boxes and RoI pooling layer that are associated with rotation and perspective changes",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_544",
+        "parentid": "line_536",
+        "topic": "To improve densely arranged text detection",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_545",
+        "parentid": "line_544",
+        "topic": "The segmentation-based approach shows more advantages indetecting densely arranged texts.",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_546",
+        "parentid": "line_544",
+        "topic": "To distinguish the adjacent text lines, two groups of solutions have been proposedrecently",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_547",
+        "parentid": "line_546",
+        "topic": "segment and linking",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_548",
+        "parentid": "line_547",
+        "topic": "\"segment\" refers to the character heatma",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_549",
+        "parentid": "line_547",
+        "topic": "\"linking\" refers to the connection between two adjacent segments indicating that they belong to the same word or line of text",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_550",
+        "parentid": "line_546",
+        "topic": "additional corner/borderdetection",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_551",
+        "parentid": "line_550",
+        "topic": "task to help separate densely arrange texts, where a group of corners or a closed boundary corresponds to an individual line of text",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_552",
+        "parentid": "line_536",
+        "topic": "To improve broken and blurred text detection",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_553",
+        "parentid": "line_552",
+        "topic": "A recent idea to deal with broken and blurred texts is to use word level recognition and sentence level recognition",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_554",
+        "parentid": "line_552",
+        "topic": "To deal with texts with different fonts, the mosteffective way is training with synthetic samples",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_555",
+        "parentid": "root",
+        "topic": "traffic sign/lightdetection",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_556",
+        "parentid": "line_555",
+        "topic": "the automatic detection of traffic sign and traffic light has attracted great attention",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_557",
+        "parentid": "line_555",
+        "topic": "Difficulties and Challenges",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_558",
+        "parentid": "line_557",
+        "topic": "Illumination changes",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_559",
+        "parentid": "line_558",
+        "topic": "The detection will be particularly difficult when driving into the sun glare or at night",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_560",
+        "parentid": "line_557",
+        "topic": "Motion blur",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_561",
+        "parentid": "line_560",
+        "topic": "The image captured by an on-board camera will become blurred due to the motion of the car",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_562",
+        "parentid": "line_557",
+        "topic": "Bad weather",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_563",
+        "parentid": "line_562",
+        "topic": "In bad weathers, e.g., rainy and snowy days, the image quality will be affected",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_564",
+        "parentid": "line_557",
+        "topic": "Real-time detection",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_565",
+        "parentid": "line_564",
+        "topic": "This is particularly important for autonomous driving",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_566",
+        "parentid": "line_555",
+        "topic": "Literature Review",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_567",
+        "parentid": "line_566",
+        "topic": "Traditional detection methods",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_568",
+        "parentid": "line_567",
+        "topic": "the traditionaldetection methods are usually based on color thresholding, visual saliency detection,morphological filtering and edge/contour analysis.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_569",
+        "parentid": "line_567",
+        "topic": "they usually fail under complex environments",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_570",
+        "parentid": "line_567",
+        "topic": "vision-based approaches, e.g.,to combine GPS and digital maps in traffic light detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_571",
+        "parentid": "line_566",
+        "topic": "deep learning based detection methods.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_572",
+        "parentid": "line_571",
+        "topic": "In deep learning era, some well-known detectors suchas Faster RCNN and SSD were applied in traffic sign/lightdetection tasks",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_573",
+        "parentid": "line_571",
+        "topic": "On basis on these detectors,some new techniques, such as the attention mechanism andadversarial training have been used to improve detectionunder complex traffic environments",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_574",
+        "parentid": "root",
+        "topic": "remote sensing/target detection",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_575",
+        "parentid": "line_574",
+        "topic": "emotesensing target detection (e.g., the detection of airplane, ship,oil-pot, etc), has become a research hot-spot. Remote sensingtarget detection has broad applications",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_576",
+        "parentid": "line_574",
+        "topic": "Difficulties and Challenges",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_577",
+        "parentid": "line_576",
+        "topic": "Detection in \"big data\"",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_578",
+        "parentid": "line_577",
+        "topic": "Due to the huge data volumeof remote sensing images, how to quickly and accuratelydetect remote sensing targets remains a problem",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_579",
+        "parentid": "line_576",
+        "topic": "Occluded targets",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_580",
+        "parentid": "line_579",
+        "topic": "Over 50% of the earth\u2019s surface is covered by cloud every day.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_581",
+        "parentid": "line_576",
+        "topic": "Domain adaptation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_582",
+        "parentid": "line_581",
+        "topic": "Remote sensing images capturedby different sensors present a high degree of differences.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_583",
+        "parentid": "line_574",
+        "topic": "Literature Review",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_584",
+        "parentid": "line_583",
+        "topic": "Traditional detection methods",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_585",
+        "parentid": "line_584",
+        "topic": "traditional remote sensing target detection methods follow a two-stage detection paradigm",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_586",
+        "parentid": "line_585",
+        "topic": "candidate extraction",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_587",
+        "parentid": "line_586",
+        "topic": "some frequently used methods include gray value filtering based methods , visual saliency-based methods , wavelet transform based methods, anomaly detection based methods , etc.",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_588",
+        "parentid": "line_586",
+        "topic": "Onesimilarity of the above methods is they are all unsupervised methods, thus usually fail in complex environments.",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_589",
+        "parentid": "line_585",
+        "topic": "target verification",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_590",
+        "parentid": "line_589",
+        "topic": "some frequently used features include HOG , LBP , SIFT , etc.",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_591",
+        "parentid": "line_589",
+        "topic": "To improve the occluded target detection, one commonly used idea is \"detection by parts\"",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_592",
+        "parentid": "line_589",
+        "topic": "To detect targets with different orientations, the \"mixture model\" is used by training different detectors fortargets of different orientations",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_593",
+        "parentid": "line_583",
+        "topic": "Deep learning based detection methods",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_594",
+        "parentid": "line_593",
+        "topic": "After the great success of RCNN in 2014, deep CNN hasbeen soon applied to remote sensing target detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_595",
+        "parentid": "line_593",
+        "topic": "The general object detection framework like Faster RCNN and SSD have attracted increasing attention inremote sensing community [",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_596",
+        "parentid": "line_593",
+        "topic": "the deep CNN is no better than traditional methods for spectral data",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_597",
+        "parentid": "line_593",
+        "topic": "To detect targets with different orientations, some researchers have im-proved the ROI Pooling layer for better rotation invariance",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_598",
+        "parentid": "line_593",
+        "topic": "To improve domain adaptation, some researchers formulated the detection from a Bayesian view that at the detection stage, the model is adaptively updated based onthe distribution of test images",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_599",
+        "parentid": "line_593",
+        "topic": "the attention mechanisms and feature fusion strategy also have been used to improve small target detection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "CONCLUSION AND FUTURE DIRECTIONS"
+    },
+    {
+        "id": "line_601",
+        "parentid": "root",
+        "topic": "The future research of object detection may focus but isnot limited to the following aspects",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_602",
+        "parentid": "root",
+        "topic": "Lightweight object detection",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_603",
+        "parentid": "line_602",
+        "topic": "To speed up the detection algorithm so that it can run smoothly on mobile devices.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_604",
+        "parentid": "root",
+        "topic": "Detection meets AutoML",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_605",
+        "parentid": "line_604",
+        "topic": "A future direction is to reduce human intervention when designing the detection model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_606",
+        "parentid": "root",
+        "topic": "Detection meets domain adaptation",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_607",
+        "parentid": "line_606",
+        "topic": "The training process of any target detector can be essentially considered as a likelihood estimation process under the assumption of independent and identically distributed (i.i.d.) data",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_608",
+        "parentid": "root",
+        "topic": "Weakly supervised detection",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_609",
+        "parentid": "line_608",
+        "topic": "Developing weakly supervised detection techniques where the detectors areonly trained with image-level annotations, or partially withbounding box annotations is of great importance for reducing labor costs and improving detection flexibility.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_610",
+        "parentid": "root",
+        "topic": "Small object detection",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_611",
+        "parentid": "line_610",
+        "topic": "Some further directions may include the integration of the visual attention mechanisms and the design of high resolution lightweight networks",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_612",
+        "parentid": "root",
+        "topic": "Detection in videos",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_613",
+        "parentid": "line_612",
+        "topic": "whilesimply ignores the correlations between videos frames. Improving detection by exploring the spatial and temporal correlation is an important research direction",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_614",
+        "parentid": "root",
+        "topic": "Detection with information fusion",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_615",
+        "parentid": "line_614",
+        "topic": "Object detectionwith multiple sources/modalities of data,",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_616",
+        "parentid": "line_614",
+        "topic": "Some open questions include: how to immigrate well-trained detectors to different modalities of data",
+        "background-color": "#e82ad2",
+        "expanded": false
+    }
+]
