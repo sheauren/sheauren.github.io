@@ -1,0 +1,541 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u5982\u4f55\u7df4\u597d\u82f1\u8a9e\u53e3\u8a9e"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u5f9e\u6bcf\u5929\u6253\u62db\u547c\u958b\u59cb\u8aaa\u82f1\u8a9e",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "\u958b\u53e3\u8aaa\u8a71\u8981\u5f9e\u81ea\u5df1\u7684\u5167\u5fc3\u51fa\u767c",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_1",
+        "topic": "\u7df4\u7fd2\u53e3\u80b2\u6700\u91cd\u8981\u7684\u662f'\u660e\u767d\u6db5\u7fa9'",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "root",
+        "topic": "\u4f60\u5f9e\u5c0f\u600e\u9ebc\u5b78\u6703\u8d70\u8def",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "\u5148\u5f9e\u722c\u958b\u59cb",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_5",
+        "topic": "\u6bcf\u5929\u958b\u59cb\u7df4",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "\u4e00\u6b65\u4e00\u6b65\u8d77\u4f86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "root",
+        "topic": "\u7b77\u5b50\u600e\u9ebc\u5b78\u7684",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "\u4e00\u6b65\u4e00\u6b65\u5b78\u8d77\u4f86",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "root",
+        "topic": "\u600e\u9ebc\u6a23\u628a\u53e3\u8a9e\u7df4\u597d",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "\u6bcf\u5929\u53bb\u8aaa",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_11",
+        "topic": "\u6bcf\u5929\u7528\u82f1\u8a9e\u505a\u771f\u5be6\u6e9d\u901a",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "\u8f38\u5165/\u8f38\u51fa",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "\u6253\u62db\u547c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "hi",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_15",
+        "topic": "good morning",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_15",
+        "topic": "how are you",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_15",
+        "topic": "\u7c21\u55ae",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_15",
+        "topic": "\u9ad8\u983b",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_15",
+        "topic": "\u5f88\u77ed",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_15",
+        "topic": "\u6bcf\u5929\u90fd\u53ef\u4ee5\u7528",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_15",
+        "topic": "\u6bcf\u5929\u7684\u5c0f\u5178\u79ae",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_14",
+        "topic": "\u5403\u98ef\u6c92",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_14",
+        "topic": "\u53bb\u54ea\u88e1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_14",
+        "topic": "\u6c92\u6709\u4e3b\u8981\u6db5\u7fa9\u7684\u6210\u5206",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_11",
+        "topic": "\u7c21\u55ae\u65e5\u5e38\u751f\u6d3b\u4ea4\u6d41",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "\u6eff\u8db3\u81ea\u5df1\u7684\u65e5\u5e38\u9700\u8981",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "\u6b63\u5728\u958b\u53e3\u8aaa\u82f1\u8a9e",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_27",
+        "topic": "\u6c92\u6709\u8a72\u74b0\u5883\u5c31\u60f3\u50cf\u4e00\u4e0b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "\u4f60\u5728\u9910\u5ef3\u5403\u6771\u897f\u53eb\u4e86\u4e00\u4efd\u65e9\u9910",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_30",
+        "topic": "\u5f9e\u81ea\u5df1\u771f\u5be6\u7684\u5fc3\u7406\u51fa\u767c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "\u6838\u5fc3",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_32",
+        "topic": "\u4e0d\u8981\u5148\u7528\u4e2d\u6587\u8a2d\u8a08\u8981\u8aaa\u7684\u8a71",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_32",
+        "topic": "\u628a\u5fc3\u4e2d\u7684\u611f\u89ba\u93c8\u7d50\u5230\u8a5e",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_32",
+        "topic": "\u80fd\u8aaa\u4ec0\u9ebc\u5c31\u8aaa\u4ec0\u9ebc",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_32",
+        "topic": "\u7528\u77ed\u8ddf\u76f4\u63a5\u7684\u5c0f\u8a5e\u53e5",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_11",
+        "topic": "\u525b\u5b78\u4e2d\u6587\u7684\u6642\u5019",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_38",
+        "topic": "\u5beb\u6587\u7ae0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "\u540c\u5b78\u90fd\u67e5\u5b57\u5178\u600e\u9ebc\u5beb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_39",
+        "topic": "\u6211\u5c31\u6703\u5e7e\u5341\u500b\u8a5e\u5c31\u9019\u9ebc\u7528\u9019\u9ebc\u5beb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_39",
+        "topic": "\u76e1\u91cf\u7528\u6703\u7684\u8a5e\u4f86\u5de5\u4f5c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "\u53ef\u7528\u975e\u5e38\u77ed\u7684\u77ed\u53e5\u5c31\u597d",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_11",
+        "topic": "\u5bb3\u6015\u5167\u5bb9\u4e0d\u5920",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "\u9019\u500b\u8981\u767c\u63ee\u4e0b\u610f\u8b58\u7684\u5a01\u529b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "\u76e1\u91cf\u5927\u91cf\u7684\u8f38\u5165\u82f1\u8a9e\u5167\u5bb9",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_46",
+        "topic": "\u704c\u6e89\u5927\u8166",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_46",
+        "topic": "\u628a\u5f88\u591a\u82f1\u8a9e\u8cab\u9053\u4f60\u7684\u8166\u5b50",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_46",
+        "topic": "\u570d\u7e5e\u4f60\u53ef\u7406\u89e3\u7684\u5167\u5bb9",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_46",
+        "topic": "\u4e0b\u610f\u8b58\u7d2f\u7a4d\u81ea\u5df1\u7684\u8a5e\u91cf",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_46",
+        "topic": "\u6ce1\u8166\u5b50\u65b9\u5f0f\u807d\u82f1\u8a9e",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_46",
+        "topic": "\u8aaa\u8a71\u4e0b\u610f\u8b58\u5c31\u6703\u8aaa\u4e86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_11",
+        "topic": "\u7df4\u7fd2\u53e3\u8a9e\u975e\u5e38\u6838\u5fc3\u7684\u4efb\u52d9",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "\u660e\u767d\u6db5\u7fa9",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_53",
+        "topic": "\u7528\u53ef\u7406\u89e3\u7684\u904e\u7a0b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_55",
+        "topic": "\u4e0b\u610f\u8b58\u6703\u8b93\u4f60\u8a18\u4f4f\u9019\u4e9b\u8a5e",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_11",
+        "topic": "\u53ef\u660e\u767d\u6db5\u7fa9\u8a72\u600e\u9ebc\u505a",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_57",
+        "topic": "\u5927\u91cf\u807d",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "\u91cd\u8907\u591a\u807d\u5df2\u7d93\u9047\u5230\u904e\u7684\u5167\u5bb9",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_58",
+        "topic": "\u6709\u4e9b\u4eba\u6703\u53bb\u807d\u4e0d\u6703\u7684\u5167\u5bb9",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_60",
+        "topic": "\u6548\u679c\u4e0d\u597d",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_57",
+        "topic": "\u7528\u4e2d\u82f1\u5c0d\u7167\u7684\u5167\u5bb9",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "\u4e0b\u610f\u8b58\u4e5f\u6478\u5230\u7247\u8a9e\u7684\u898f\u5f8b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_62",
+        "topic": "\u628a\u6ce8\u610f\u653e\u5728\u7247\u8a9e\u4e0a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_62",
+        "topic": "\u5f9e\u5c0d\u7167\u7684\u5167\u5bb9\u88e1\u9762\u719f\u6089\u82f1\u8a9e\u7247\u8a9e\u7684\u61c9\u7528\u898f\u5f8b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_57",
+        "topic": "\u5927\u91cf\u770b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "\u4f60\u559c\u6b61\u6709\u8208\u8da3\u7684\u5167\u5bb9",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_67",
+        "topic": "\u5c0f\u8aaa",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_67",
+        "topic": "\u6f2b\u756b\u7247",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_67",
+        "topic": "\u53ea\u8981\u5c0d\u88e1\u9762\u5167\u5bb9\u6709\u8208\u8da3\u5c31\u53ef\u4ee5",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_67",
+        "topic": "\u559c\u6b61\u7684\u96fb\u5f71",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "\u4e00\u6b65\u4e00\u6b65\u628a\u96fb\u5f71\u6240\u8aaa\u7684\u8a71\u8b8a\u6210\u81ea\u5df1\u7279\u5225\u6709\u611f\u89ba\u5c31\u53ef\u4ee5",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_66",
+        "topic": "\u9019\u4e9b\u90fd\u662f\u7528\u82f1\u8a9e\u771f\u5be6\u6e9d\u901a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "root",
+        "topic": "\u70ba\u4e86\u628a\u53e3\u8a9e\u5b78\u597d",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_74",
+        "topic": "\u6bcf\u5929\u90fd\u8981\u7528",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_74",
+        "topic": "\u8aaa\u51fa\u7136\u5f8c\u8f38\u5165",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_74",
+        "topic": "\u8b8a\u6210\u6bcf\u5929\u7684\u5c0f\u7fd2\u6163",
+        "background-color": "#e82ad2",
+        "expanded": false
+    }
+]

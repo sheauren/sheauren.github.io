@@ -1,0 +1,1041 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u82f1\u6587\u6642\u614b\u7684\u9053\u7406\u548c\u7528\u6cd5-2"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u756b\u9762\u914d\u5408\u611f\u89ba\u8a8d\u8b58\u6642\u614b",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "\u66f4\u597d\u66f4\u5feb\u901f\u7684\u638c\u63e1\u82f1\u6587\u6642\u614b",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "root",
+        "topic": "\u5982\u4f55\u8a18\u4f4f",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "\u7528\u8868\u683c\u7d66\u81ea\u5df1\u5b8f\u89c0\u7684\u8a8d\u8b58",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_4",
+        "topic": "\u7528\u756b\u9762\u548c\u611f\u89ba\u5efa\u7acb\u82f1\u6587\u601d\u7dad",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_4",
+        "topic": "\u6642\u614b\u7684\u7b2c\u4e00\u5ea6",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "\u904e\u53bb-ed",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_7",
+        "topic": "\u73fe\u5728-ing",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_7",
+        "topic": "\u672a\u4f86will",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "\u6642\u614b\u7b2c\u4e8c\u5ea6",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "\u7c21\u55ae",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_11",
+        "topic": "\u5b8c\u6210",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_11",
+        "topic": "\u9032\u884c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_11",
+        "topic": "\u9032\u884c+\u5b8c\u6210",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_4",
+        "topic": "\u7b2c\u4e00\u5ea6*\u7b2c\u4e8c\u5ea6",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "12\u500b\u4e0d\u540c\u7684\u6642\u614b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_16",
+        "topic": "\u7528\u8b8a\u5f62\u8a5e,\u8a5e\u7c92\u5b50\u548c\u7247\u8a9e\u4f86\u89e3\u6c7a",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "-ing,-ed",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_18",
+        "topic": "am,is,are,was",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_18",
+        "topic": "were,will,be,been",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_18",
+        "topic": "have,has,had",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_16",
+        "topic": "\u7c21\u55ae",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "\u6b63\u5728",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "word",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_23",
+        "topic": "\u904e\u53bb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "word+ed",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_23",
+        "topic": "\u672a\u4f86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "will + word",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_16",
+        "topic": "\u73fe\u884c-ing",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "\u6b63\u5728",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "am/is/are word + ing",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_30",
+        "topic": "\u904e\u53bb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "was/were word + ing",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_30",
+        "topic": "\u672a\u4f86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "will be word + ing",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_16",
+        "topic": "\u5b8c\u6210",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "\u73fe\u5728",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_38",
+        "topic": "have/has word+ed",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_37",
+        "topic": "\u904e\u53bb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "has word+ed",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_37",
+        "topic": "\u672a\u4f86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "will have word+ed",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_16",
+        "topic": "\u5b8c\u6210+\u9032\u884c",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "\u73fe\u5728",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "have/had been word+ing",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_44",
+        "topic": "\u904e\u53bb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "had been word+ing",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_44",
+        "topic": "\u672a\u4f86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "will have been word+ing",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_4",
+        "topic": "\u4e00\u500b\u76d2\u5b50\u5169\u689d\u8def",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "learn English",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "\u7528\u7a7a\u9593\u8a8d\u8b58\u6642\u9593",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "\u8166\u5b50\u7684\u6bd4\u55bb",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_53",
+        "topic": "\u904e\u53bb",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_55",
+        "topic": "\u5f8c\u9762",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_53",
+        "topic": "\u73fe\u5728",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_53",
+        "topic": "\u672a\u4f86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "\u524d\u9762",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_53",
+        "topic": "learn",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_60",
+        "topic": "\u7c21\u55ae",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_61",
+        "topic": "\u73fe\u5728",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "I learn English",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "\u6c92\u6709\u6642\u9593",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_61",
+        "topic": "\u904e\u53bb",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_65",
+        "topic": "I learned English",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "\u904e\u53bb\u7684\u4e00\u500b\u9ede,\u4e86",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_66",
+        "topic": "I learned English",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_66",
+        "topic": "I learned English at school last year",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_66",
+        "topic": "I learned English in my spare time",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_66",
+        "topic": "I learned English as a child",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_66",
+        "topic": "I learned English when i was studying in Britain",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_61",
+        "topic": "\u672a\u4f86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_73",
+        "topic": "I will learn English",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_74",
+        "topic": "\u5c07\u4f86\u7684\u4e00\u500b\u9ede",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_74",
+        "topic": "\u807d\u5230will\u5c31\u662f\u524d\u9762\u7684\u4e00\u500b\u9ede\u5b50",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_74",
+        "topic": "I will learn English",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_74",
+        "topic": "I will learn English at school next year",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_74",
+        "topic": "I will learn English someday",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_74",
+        "topic": "I will learn English when I have more time",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_74",
+        "topic": "I will learn English after I go to Ameraica",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_74",
+        "topic": "I will learn English before I go to University",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_60",
+        "topic": "\u9032\u884c",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_83",
+        "topic": "\u73fe\u5728",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_84",
+        "topic": "I am learning English",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_85",
+        "topic": "\u6709\u4e00\u500b\u9032\u884c\u904e\u7a0b\u6b63\u5728\u767c\u751f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_85",
+        "topic": "\u6211\u5728\u904e\u7a0b\u7684\u4e2d\u9593",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_85",
+        "topic": "I am learning English at school this year",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_85",
+        "topic": "I am learning English right now",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_85",
+        "topic": "I am learning English for my job",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_83",
+        "topic": "\u904e\u53bb",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_91",
+        "topic": "I was learning English",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_92",
+        "topic": "\u6709\u4e00\u500b\u9032\u884c\u904e\u7a0b\u767c\u751f\u5728\u904e\u53bb",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_92",
+        "topic": "\u662f\u904e\u53bb\u7684\u4e00\u500b\u904e\u7a0b",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_92",
+        "topic": "\u8a72\u904e\u7a0b\u5df2\u7d93\u5b8c\u7562\u4e86",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_92",
+        "topic": "I was learning English at school last year",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_92",
+        "topic": "I was learning English when my brother graduated",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_92",
+        "topic": "I was learning English for some time when I lived in Britain",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_83",
+        "topic": "\u672a\u4f86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_99",
+        "topic": "I will be learning English",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_100",
+        "topic": "\u6709\u4e00\u500b\u9032\u884c\u904e\u7a0b\u767c\u751f\u5728\u672a\u4f86",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_100",
+        "topic": "I will be learning English at school next year",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_100",
+        "topic": "I will be learning English during my summer break",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_100",
+        "topic": "I will be learning English for six months after I arrive in Australia",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_60",
+        "topic": "\u5b8c\u6210",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_105",
+        "topic": "\u73fe\u5728",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_106",
+        "topic": "I have learned English",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_106",
+        "topic": "\u6709\u4e00\u500b\u9032\u884c\u904e\u7a0b\u7684\u5b8c\u6210\u9ede",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_108",
+        "topic": "I have learned English to fluency",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_108",
+        "topic": "I have learned English for six months already",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_108",
+        "topic": "I have learned English on-and-off for many years",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_108",
+        "topic": "I have learned English quite well",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_105",
+        "topic": "\u904e\u53bb",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_113",
+        "topic": "I had learned English",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_113",
+        "topic": "\u6709\u4e00\u500b\u9032\u884c\u904e\u7a0b\u7684\u5b8c\u6210\u9ede\u632a\u5230\u904e\u53bb",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_115",
+        "topic": "I had learned English for six months before I went to the UK",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_115",
+        "topic": "Before I was 12 years old, I had learned English",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_115",
+        "topic": "I had learned English up to native level by the time I was 20 years old",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_105",
+        "topic": "\u672a\u4f86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_119",
+        "topic": "I will have learned English",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_119",
+        "topic": "\u6709\u4e00\u500b\u9032\u884c\u904e\u7a0b\u7684\u5b8c\u6210\u9ede\u632a\u5230\u672a\u4f86",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_121",
+        "topic": "\u5f9e\u4ec0\u9ebc\u6642\u5019\u958b\u59cb\u5f88\u96e3\u8aaa",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_122",
+        "topic": "\u53ef\u80fd\u672a\u4f86\u624d\u958b\u59cb",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_122",
+        "topic": "\u53ef\u80fd\u73fe\u5728\u958b\u59cb",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_122",
+        "topic": "\u53ef\u80fd\u904e\u53bb\u5c31\u958b\u59cb",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_122",
+        "topic": "\u518d\u8aaa\u7684\u6642\u9593\u9ede\u662f\u5b8c\u6210\u4e86",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_121",
+        "topic": "I will have learned English for six years by the time I immigrate to Canada",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_121",
+        "topic": "At my next birthday, I will have learned English for half of my life already",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_121",
+        "topic": "I will have learned English to fluency by this time next year",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_60",
+        "topic": "\u5b8c\u6210\u9032\u884c",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_130",
+        "topic": "\u73fe\u5728",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_131",
+        "topic": "I have been learning English",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_131",
+        "topic": "\u4ee5\u524d\u5230\u73fe\u5728\u6211\u6b63\u5728\u9032\u884c\u7684\u904e\u7a0b\u9084\u672a\u7d50\u675f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_133",
+        "topic": "I have been learning English for about three months",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_133",
+        "topic": "I have been learning English since I arrived",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_133",
+        "topic": "I have been learning English since starting my new job",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_133",
+        "topic": "I have been learning English, but I think I'll change to learning French",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_130",
+        "topic": "\u904e\u53bb",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_138",
+        "topic": "I had been learning English",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_138",
+        "topic": "\u4ee5\u524d\u9084\u5728\u9032\u884c\u7684\u904e\u7a0b\u00b7\u4e26\u65bc\u8aaa\u8a71\u8005\u60f3\u50cf\u7684\u6642\u9593\u9ede\u8a72\u9032\u884c\u9084\u672a\u7d50\u675f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_140",
+        "topic": "I had been learning English for about three months before the earthquake",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_140",
+        "topic": "I had been learning English, but couldn't keep going because of family reason",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_140",
+        "topic": "I had been learning English, but the financial panic of 2008 changed everything. I had to get a job",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_130",
+        "topic": "\u672a\u4f86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_144",
+        "topic": "I will have been learning English",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_144",
+        "topic": "\u672a\u4f86\u9084\u5728\u9032\u884c\u7684\u904e\u7a0b\u00b7\u4e26\u65bc\u8aaa\u8a71\u8005\u60f3\u50cf\u7684\u6642\u9593\u9ede\u8a72\u9032\u884c\u9084\u672a\u7d50\u675f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_146",
+        "topic": "Before the time I'm 20,I will have been learning English for 17 years",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_146",
+        "topic": "I will have been learning English full-time for three years by the time I graduate",
+        "background-color": "#412ffc",
+        "expanded": false
+    }
+]
