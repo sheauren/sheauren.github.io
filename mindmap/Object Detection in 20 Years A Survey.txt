@@ -1,0 +1,642 @@
+# OBJECTDETECTION IN20 YEAR
+	## A Road Map of Object Detection
+		### Milestones: Traditional Detectors 
+			#### Viola-Jones(VJ) detector features:
+				##### integral image
+					Haar wavelet is used in VJ detector as the feature representation of an image
+					The integral image makes the computational complexity of each window in VJ detectorindependent of its window size.		
+				##### feature selection
+					Instead of using a set of manually selected Haar basis filters
+					the authors used Adaboost algorithm [32] to select a small set of features that are mostlyhelpful for face detection from a huge set of random features pools (about 180k-dimensional).
+				##### detection cascades
+					A multi-stage detection paradigm(a.k.a. the "detection cascades") was introduced in VJ detector to reduce its computational overhead by spending less computations on background windows but more on face targets.
+				
+			#### HOG Detector features:
+				improvement of the scale-invariant feature transform and shape contexts
+				To balance the feature invariance(including translation, scale, illumination, etc) and the nonlinearity (on discriminating different objects cat-egories)
+				designed to be computed on a dense grid of uniformly spaced cells and use overlapping local contrast normalization (on "blocks") for improving accuracy
+
+			#### Deformable Part-based Model (DPM) features:
+				divide and conquer
+				A typical DPM detector consists of a root-filter and anumber of part-filters. 
+				Instead of manually specifying theconfigurations of the part filters 
+				aweakly supervised learning method is developed in DPM where all configurations of part filters can be learned automatically as latent variables.
+				
+		### Milestones: CNN based Two-stage Detectors
+			#### RCNN
+				It starts with the extraction of a set of object proposals (object candidate boxes)by selective search
+				Then each proposal is rescaled to a fixed size image and fed into a CNN model trained onImageNet (say, AlexNet [40]) to extract features.
+				linear SVM classifiers are used to predict the presence of anobject within each region and to recognize object categories.
+
+			#### Spatial Pyramid PoolingNetworks (SPPNet) 
+				introduction of a Spatial Pyramid Pooling (SPP) layer, which enables a CNN to generate a fixed-length representation regardless of the size of image/region of interest without rescaling it.
+				the training is still multi-stage, second, SPPNet only fine-tunes its fully connected layers while simply ignores all previous layers
+
+			#### Fast RCNN
+				enables us to simultaneously train adetector and a bounding box regressor under the same network configurations. 
+
+			#### Faster RCNN
+				RCNN is the first end-to-end, and the first near-realtime deep learning detector
+				The main contribution of Faster-RCNN is the introduction of Region Proposal Network (RPN) that enables nearly cost-free region proposals. 
+
+			#### Feature Pyramid Networks
+				 a top-down architecture with lateral connections is developed inFPN for building high-level semantics at all scales. 
+
+		### Milestones: CNN based One-stage Detectors
+
+			#### You Only Look Once (YOLO)
+				This network divides the image into regionsand predicts bounding boxes and probabilities for eachregion simultaneously. 
+				YOLO suffers from a drop of the localization accuracy com-pared with two-stage detectors, especially for some smallobjects.
+				
+			#### Single Shot MultiBox Detector (SSD)
+				introduction of the multi-referenceand multi-resolution detection techniques
+				improves the detectionaccuracy of a one-stage detector, especially for some small objects.
+				
+			#### RetinaNet
+				a new loss function named "focal loss" has been introduced in RetinaNet by reshaping the standard crossentropy loss so that detector will put more focus on hard,misclassified examples during training.
+			
+	## Dataset
+		### PASCAL VOC Challenges
+			#### The PASCAL Visual Object Classes (VOC) Challenges
+				##### VOC07 
+					5k tr. images + 12k annotated objects
+				##### VOC12
+					11k tr. images + 27k annotated objects.
+				20 classes
+				Person: person; Animal: bird, cat, cow,dog, horse, sheep; Vehicle: aeroplane, bicycle, boat, bus, car,motor-bike, train; Indoor: bottle, chair, dining table, pottedplant, sofa, tv/monitor).
+				ImageNet Large Scale Visual Recognition Challenge 
+		### ILSVRC
+			The ImageNet Large Scale Visual Recognition Challenge(ILSVRC)
+			using ImageNet images 
+			#### ILSVRC-14
+				517k images and 534k annotated objects.
+		### MS COCO
+			#### MS-COCO-17
+				164k images and 897k annotated objects from 80 categories
+			MS-COCO contains more small objects (whose area is smaller than 1% of the image)and more densely located objects than VOC and ILSVRC.
+		### Open Images
+			#### Open Images Detection (OID) challenge
+				 1. the standard object detection,
+				 2. the visual relationship detection which detects paired objects inparticular relations.
+				1,910k images with 15,440k annotated boundingboxes on 600 object categories.
+
+		### Datasets of Other Detection Tasks
+			detection applications in specific areas
+			#### pedestrian detection
+				MIT Ped.
+				INRIA 
+				Caltech
+				KITTI
+				CityPersons
+				EuroCity 
+			#### face detection
+				FDDB 
+				AFLW 
+				IJB 
+				WiderFace
+				UFDD 
+				WildestFaces		
+			#### textdetection
+				ICDAR
+				STV
+				MSRA-TD500
+				IIIT5K
+				Syn90k
+				COCOText
+			#### traffic sign/light detection
+				TLR
+				LISA
+				GTSDB
+				BelgianTSD
+				TT100K
+				BSTL
+				 
+			#### remote sensing
+				TAS
+				OIRDS
+				DLR3K
+				UCAS-AOD
+				VeDAI
+				NWPU-VHR10
+				LEVIR 
+				DOTA 
+				xView
+				
+			#### target detection
+	
+	## Metrics
+		How can we evaluate the effectiveness of an object detector?
+		different answers at different time
+		### pedestriandetection
+			miss rate vs. false positives per-window(FPPW)
+			Caltech pedestrian detection benchmark
+			false positives per-image (FPPI)
+			
+		### average presicion
+			most frequently used evaluation forobject detection is "Average Precision (AP)"
+			the mean AP (mAP)averaged over all object categories is usually used as thefinal metric of performance.
+		### measure the object localization accuracy
+			the Intersection over Union (IoU)
+			the IoU between the predicted box andthe ground truth box is greater than a predefined threshold(0.5)
+			IoU thresholds between 0.5 (coarse localization) and 0.95 (perfect localization).
+			the Open Images dataset consideringthe group-of boxes and the non-exhaustive image-level category hierarchies. 
+			localization recall precision
+	
+	## Technical Evolution in Object Detection
+
+		### Early Time's Dark Knowledge
+			#### designed based on low-level and mid-level vision
+				Components, shapes and edges
+				Recognition-by-components
+				a measurement ofsimilarity between the object components, shapes and contours, including Distance Transforms, Shape Contexts, and Edgelet, etc.
+			#### Machine learning based detection 
+				statistical models of appearance(before 1998)
+					Eigenfaces
+				wavelet feature representations (1998-2005)
+					transforming an imagefrom pixels to a set of wavelet coefficients
+					Haar wavelets basis learned by a VJ detector
+				gradient-based representations (2005-2012)
+					Early time's CNN for object detection
+					"shared-weight replicated neural network" 
+					"space displacement network" 
+					
+		### Technical Evolution of Multi-Scale Detection
+			#### feature pyramids and sliding windows (before 2014)
+				VJ detector		
+				mixture model
+				feature pyramid
+				exemplar-based detection
+			#### detection with object proposals (2010-2015)
+				HOG detector, DPM, and even the Overfeatdetector
+				the detection of "various aspectratios" was not considered at that time.
+				Object proposals refer to a group of class-agnostic candidate boxes that likely to contain any objects.
+					An object proposal detection algorithm should meetthe following three requirements: 
+						1. high recall rate
+						2. high localization accuracy
+						3. basis of the first two requirements, to improve precision and reduce processingtime.
+					Modern proposal detection methods 
+						1. segmentation grouping approaches
+						2. window scoring approaches 
+						3. neural network based approaches 			
+			#### deep regression(2013-2016)		
+				directly predict the co-ordinates of a bounding box based on the deep learningfeatures
+			#### multi-reference/-resolution detection (after 2015/after 2016)
+				Multi-reference detection is the most popular frameworkfor multi-scale object detection 
+				pre-define a set of reference boxes (a.k.a. anchor boxes)
+					A typical loss of each predefined anchor box consists of two parts:
+						1.a cross-entropy loss for category recognitionand 
+						2.an L1/L2 regression loss for object localization.
+				Multi-resolution detection
+					from a feature pyramid during its forward propagation			
+			
+		### Technical Evolution of Bounding Box Regression
+			#### Without BB regression (before 2008)
+				usually directly consider the sliding window as the detection result.
+				build very dense pyramid and slide thedetector densely on each location.
+			#### From BB to BB (2008-2013)
+				the BB regression at that time usually acted as a post-processing block, thusit is optional
+				predict a bounding box based on the complete configuration of an object hypothesis andformulate this process as a linear least-squares regression problem 
+			#### From features to BB (after 2013)
+				BB regression no longer serves as an individual post-processing block but has been integrated with the detector and trainedin an end-to-end fashion. 
+				BB regression has evolved to predicting BB directly based on CNN fea-tures.
+				
+		### Technical Evolution of Context Priming
+			#### detection with local context
+				Local context refers to the visual information in the area that surrounds the object to detect.
+				deep learning based detectorscan also be improved with local context by simply enlargingthe networks' receptive field or the size of object proposals
+			#### detection with global context
+				Global context exploits scene configuration as an additional source of information for object detection. 
+				For modern deeplearning based detectors, there are two methods to integrateglobal context. 
+					The first way is to take advantage of large receptive field orglobal pooling operation of a CNN feature 
+					The secondway is to think of the global context as a kind of sequential information and to learn it with the recurrent neural net-works 			
+			#### context interactives
+				Context interactive refers to the piece of information that conveys by the interactions of visual elements, such as the constraints and dependencies. 
+				Some recent improvements can be grouped into two categories
+					the first one is to explore the relationship between individual objects 
+					the second one is toexplore modeling the dependencies between objects and scenes
+		### Technical Evolution of Non-Maximum Suppression
+			Non-maximum suppression (NMS) is an important group oftechniques in object detection.	
+			the non-maximumsuppression is herein used as a post-processing step toremove the replicated bounding boxes and obtain the finaldetection result
+			NMS has been graduallydeveloped into the following three groups of methods:
+				1. greedy selection
+					for a set of overlapped detections, the bounding box with the maximum detectionscore is selected while its neighboring boxes are removed according to a predefined overlap threshold (say, 0.5).
+					it does not suppress false positives.
+					the greedyselection still performs as the strongest baseline for today'sobject detection.
+				2. bounding box aggregation
+					the idea of combining or clustering multiple overlapped bounding boxes into one final detection. 
+					The advantage of this type of method is that it takes full consideration of object relationships and their spatial layout.			
+				3. learning to NMS
+					 The main idea of such group of methods is to thinkof NMS as a filter to re-score all raw detections and to trainthe NMS as part of a network in an end-to-end fashion.
+					 
+		### Technical Evolution of Hard Negative Mining
+			The training of an object detector is essentially an imbalanced data learning problem.
+			Hard negative mining (HNM) aims to deal with theproblem of imbalanced data during training.
+			#### Bootstrap
+				Bootstrap in object detection refers to a group of training techniques in which the training starts with a small partof background samples and then iteratively add new missclassified backgrounds during the training process
+			#### HNM in deep learning based detectors
+				balance the weights between the positive and negative windows.
+				the weight-balancing cannot completely solvethe imbalanced data problem 
+				only the gradients of a very small part of samples will be back-propagated
+				In RefineDet ,an "anchor refinement module" is designed to filter easy negatives
+				An alternative improvementis to design new loss functions 		
+				reshapingthe standard cross entropy loss so that it will put more focuson hard, misclassified examples
+		
+# SPEED-UP OFDETECTION
+	1. speed up of detection pipeline
+	2. speed up of detection engine
+	3. speed up of numerical computation
+	## Feature Map Shared Computation
+		the feature extraction usually dominates the amountof computation
+		a sliding window based detector, the computational redundancy starts from both positions and scales
+	### Spatial Computational Redundancy and Speed Up
+		The most commonly used idea to reduce the spatial computational redundancy is feature map shared computation
+		The idea of feature map shared computation has alsobeen extensively used in convolutional based detectors
+	### Scale Computational Redundancy and Speed Up
+		directly scale the features rather than the images
+		building "detector pyramid" is another way to avoid scale computational redundancy
+	### Speed up of Classifiers
+		Detec-tion with nonlinear classifiers such as kernel SVM suggestshigher accuracy, but at the same time brings high computational overhead.
+		the "model approximation" is most commonly used.
+			Since the decision boundary of a classical kernel SVM can only be determined by a small set of its training samples.
+			Reduced Set Vectors is an approximation method for kernel SVM, which aims to obtain an equivalent decisionboundary in terms of a small number of synthetic vectors.
+			its decision boundary to a piece-wiselinear form so as to achieve a constant inference time
+			The kernel method can also be accelerated with the sparseencoding methods
+	### Cascaded Detection
+		to filter out most of the simple backgroundwindows using simple calculations, then to process thosemore difficult windows with complex ones.		
+	### Network Pruning and Quantification
+		"Network pruning" and "network quantification" are two commonly used techniques to speed up a CNN model
+			pruning the network structure or weight to reduce its size and the latter one refers to reducing the code-length of activations or weights.
+		#### Network Pruning
+			optimal brain damage
+			compress the parameters of a multi-layer perceptron network
+			the loss function of a network is approximated by taking the second-order derivatives so that to remove some unimportant weights.
+			the network pruning methods in recent years usually take an iterative training and pruning process
+				to remove only a smallgroup of unimportant weights after each stage of training
+				to repeat those operations
+				As traditional network pruning simply removes unimportant weights, which may result in some sparse connectivity patterns in a convolutional filter
+				A simple solution is to remove thewhole filters instead of the independent weights 
+		#### Network Quantification
+			accelerate a networkby quantifying its activations or weights to binary variablessay, 0/1) so that the floating-point operation is convertedto AND, OR, NOT logical operations. 
+			etwork binariza-tion can significantly speed up computations and reducethe network's storage so that it can be much easier to bedeployed on mobile devices.
+			One possible implementationof the above ideas is to approximate the convolution bybinary variables with the least squares method 
+			some researchers have further developed GPUacceleration libraries for binarized computation, which ob-tained more significant acceleration results
+		#### Network Distillation
+			Network distillation is a general framework to compress theknowledge of a large network (“teacher net”) into a smallone (“student net”) [
+			Onestraight forward approach of this idea is to use a teacher netto instruct the training of a (light-weight) student net so thatthe latter can be used for speed up detection
+			Anotherapproach is to make transform of the candidate regions soas to minimize the features distance between the student netand teacher net.
+	### Lightweight Network Design
+		The last group of methods to speed up a CNN based detector is to directly design a lightweight network instead ofusing off-the-shelf detection engines. 
+		#### factorizing convolutions
+			First group of methods is to factorize a large convolution filter into a set of small ones in their spatial dimension
+				one canfactorize a 7x7 filter into three 3x3 filters
+				or factorize a k×k filter into a k×1 filterand a 1×k filter 
+			The second group of methods is to factorize a large group of convolutions into two small groups in their channel dimension			
+		#### group convolution
+			Group convolution aims to reduce the number of parameters in a convolution layer by dividing the feature channelsinto many different groups, and then convolve on each group independently.
+		#### depth-wise separable convolution
+			It can be viewed as a special case of thegroup convolution when the number of groups is set equalto the number of channels			
+		#### bottle-neck design
+			A bottleneck layer in a neural network contains few nodescompared to the previous layers. It can be used to learningefficient data encodings of the input with reduced dimensionality.
+		#### neural architecture search
+			there has been significant interest in designing network architectures automatically by neural ar-chitecture search (NAS) instead of relying heavily on expert experience and knowledge. 
+	### Numerical Acceleration
+		The last group of methods to speed up a CNN based detector is to directly design a lightweight network instead ofusing off-the-shelf detection engines.
+		#### speed up with the integral image
+			The integral image is an important method in image processing
+				sparse signal
+				color histogram
+				gradient histogram
+				integral HOG maps
+				Integral Channel Features (ICF)
+		#### speed up in the frequency domain			
+			As the detection of a linear detectorcan be viewed as the window-wise inner product between the feature map and detector's weights
+				Fourier transform
+				Fast Fourier Transform (FFT)
+				Inverse Fast Fourier Transform (IFFT)							 
+		#### vector quantization
+			The Vector Quantization (VQ) is a classical quantization method in signal processing that aims to approximate thedistribution of a large group of data by a small set of prototype vectors.			
+		#### reduced rank approximation
+			The reduced rank approximation is a method to accelerate matrix multiplications.
+# RECENT ADVANCES IN OBJECT DETECTION		
+	## Detection with Better Engines
+		### Alexnet
+			an eight-layer deep network
+			AlexNet famously won the2012 ImageNet LSVRC-2012 competition by a large margin
+		### VGG
+			VGG increased the model'sdepth to 16-19 layers and used very small (3x3) convolutionfilters instead of 5x5 and 7x7 those were previously used inAlexNet.
+		### Inception(GoogLeNet)
+			The main contribution of theInception family is the introduction of factorizing convolu-tion and batch normalization.
+		### ResNet(The Deep Residual Networks)
+			ResNet aims to ease the training of networks by reformulating its layers aslearning residual functions with reference to the layer inputs.
+		### DenseNet
+			The authors embracedthis observation and introduced a densely connected block,which connects each layer to every other layer in a feed-forward fashion
+		### SENet(Squeeze and Excitation Networks )
+			Itsmain contribution is the integration of global pooling andshuffling to learn channel-wise importance of the featuremap. 
+		### Object detectors with new engines
+			STDN, DSOD,TinyDSOD, and Pelee choose DenseNet as their detection engine.
+			The Mask RCNN, as the state of the art model for instance segmentation, applied the next generation of ResNet: ResNeXt as its detection engine.
+			Xception, an improved version of Incepion, has also been used in detectors such as MobileNet and LightHead RCNN			 
+	## Detection with Better Features
+		The quality of feature representations is critical for objectdetection.
+		### feature fusion
+			Invariance and equivariance are two important propertiesin image feature representations.			
+			Classification desires invariant feature representations
+			Object localization desiresequivariant representations
+			object detection consists oftwo sub-tasks of object recognition and localization, it is cru-cial for a detector to learn both invariance and equivarianceat the same time.
+			features in deeper layers will have stronger invariance but less equivariance.
+			features in shallower layers is not conducive to learning semantics, but it helps object localization
+			the integration of deep and shallow features ina CNN model helps improve both invariance and equivariance.			
+		### Feature Fusion in Different Ways
+			#### processing flow
+				##### bottom-up fusion
+					Bottom-up fusionfeeds forward shallow features to deeper layers via skip connections
+				##### top-down fusion
+					top-down fusion feeds back the features of deeper layers into the shallowerones
+				Apart from these methods, there are more complex approaches proposed recently, e.g., weaving features across different layers
+				fractional strided convolution (a.k.a. transpose convolution) is an-other recent popular way to resize the feature maps and adjust the number of channels. 				
+			#### element-wise operation
+				From a local point of view, feature fusion can be consid-ered as the element-wise operation between different featuremaps.
+				There are three groups of methods:
+				#### element-wise sum
+				#### element-wise product
+				#### concatenation
+		### learning high-resolution features with large receptive fields
+			The receptive field and feature resolution are two important characteristics of a CNN based detector	
+			the latter one corresponds to the down-sampling rate betweenthe input and the feature map.
+			lower the feature resolutionis, the harder will be to detect small objects			
+				remove pooling layer
+				reduce the convolution down-sampling rate.
+				but narrow a detector's "sight", may result in the miss detection of some large objects.
+				A piratical method to increase both of the receptive field and feature resolution at the same time is to introduce dilated convolution (a.k.a. atrous convolution, or convolution with holes)
+					expand the convolution filter and use sparse parameters
+				Dilated convolution has now been widelyused in object detection and proves tobe effective for improved accuracy without any additionalparameters and computational cost
+	## Beyond Sliding Window
+		### Detection as sub-region search
+			One recent method is to think of detection as a path planning process that starts from initial grids and finally converges to the desired groundtruth boxes
+			Another method is to think of detectionas an iterative updating process to refine the corners of apredicted bounding box
+		### Detection as key points localization
+			As any object in an image can be uniquely determined by its upper left corner and lower right corner of the ground truth box, the detection task, therefore, can beequivalently framed as a pair-wise key points localization problem.
+				predict a heat-map for the corners 
+	## Improvements of Localization
+		### Bounding Box Refinement		
+			The most intuitive way to improve localization accuracyis bounding box refinement, which can be considered asa post-processing of the detection results	
+			the "iterative bounding box refinement" has been in-troduced recently by iteratively feeding the detection resultsinto a BB regressor until the prediction converges to a correctlocation and size. 			
+		### designing new loss functions for accurate localization.
+			object localization is consideredas a coordinate regression problem
+			there are two drawbacks of this paradigm. 
+				#### the regression lossfunction does not correspond to the final evaluation oflocalization.
+				#### traditional bounding box regression methoddoes not provide the confidence of localization.
+					When thereare multiple BB’s overlapping with each other, this may leadto failure in non-maximum suppression
+			The most intuitive design is to directly use IoU as the localization loss function
+			Some otherresearchers have further proposed an IoU-guided NMS to improve localization in both training and detection stages
+			to improve localization under a probabilistic inference framework
+			Different from the previous methods that directly predictthe box coordinates, this method predicts the probabilitydistribution of a bounding box location
+	## Learning with Segmentation
+		recent researches suggestobject detection can be improved by learning with semanticsegmentation.
+		### Why Segmentation Improves Detection
+			There are three reasons why the semantic segmentationimproves object detection
+			#### Segmentation helps category recognition
+				As the feature of semantic segmentation tasks well captures the boundary of an object, segmentation may be helpful for category recognition.
+			#### Segmentation helps accurate localization
+				The ground-truth bounding box of an object is determined by its well-defined boundary.
+				As objectboundaries can be well encoded in semantic segmentation features, learning with segmentation would be helpful for accurate object localization.
+			#### Segmentation can be embedded as context
+				Objects in daily life are surrounded by different back-grounds, such as the sky, water, grass, etc, and all theseelements constitute the context of an object.
+		### How Segmentation Improves Detection
+			#### Learning with enriched features
+				The simplest way is to think of the segmentation net-work as a fixed feature extractor and to integrate it into a de-tection framework as additional features [				
+			#### Learning with multi-task loss functions
+				 to train this model with multi-task loss functions (segmenta-tion loss + detection loss) 
+				 the segmen-tation brunch will be removed at the inference stage
+	## Robust Detection of Rotation and Scale Changes
+		features learned by CNN arenot invariant to rotation and large degree of scale changes
+		### Rotation Robust Detection
+			solution to this problem is data augmentation so that anobject in any orientation can be well covered by the aug-mented data
+			Another solution is to train independent detectors for every orientation
+			#### Rotation invariant loss functions
+				Some recent workshave introduced a constraint on the original detection lossfunction so that to make the features of rotated objects unchanged
+			#### Rotation calibration
+				make geometric transformations of the objects candidates
+				This will be especially helpful for multi-stage detectors, where the correlation at early stages will benefit the subsequent detections.
+					The representative of this ideais Spatial Transformer Networks (STN) 
+			#### Rotation RoI Pooling
+				A recent improvement is to mesh the grids in polarcoordinates so that the features could be robust to therotation changes
+		### Scale Robust Detection
+			#### Scale adaptive training
+				Most of the modern detectors re-scale the input imageto a fixed size and back propagate the loss of the objectsin all scales
+					scale imbalance
+				Building an image pyramid during detection could alleviate this problem but not fundamentally 
+				A recent improvement is Scale Normalization for Image Pyramids(SNIP), which builds image pyramids at both of training and detection stages and only backpropagates the loss of some selected scales.
+				a more efficient training strategy: SNIP with Efficient Resampling (SNIPER),to crop and re-scale an image to a set of sub-regions so that to benefit from large batch training
+			#### Scale adaptive detection
+				Most of the modern detectors use the fixed configura-tions for detecting objects of different sizes.
+				we need to carefullydefine the size of anchors
+					A drawback of doing this isthe configurations cannot be adaptive to unexpected scalechanges.
+				To improve the detection of small objects,
+					"adaptive zoom-in" techniques are proposed in some recent detectors to adaptively enlarge the small objects into the "larger ones" 
+				learning to predict the scale distribution of objects in an image
+				then adaptively rescaling the image according to the distribution 
+	## Training from Scratch
+	Most deep learning based detectors are first pre-trained onlarge scale datasets, say ImageNet, and then fine-tuned onspecific detection tasks.
+		do we really need topre-training a detector on ImageNet?
+			The first limitation is the divergence between ImageNet classification and object detection
+			he second limitation is the domain mismatch.
+	some researchers have tried to train an object detector from scratch
+		using standard models trained fromrandom initialization
+			he sole exception of increasing the number of training iterations so the randomly initialized models may converg
+			that ImageNet pre-training mayspeed up convergence, but does not necessarily provideregularization or improve final detection accuracy
+	## Adversarial Training
+		GAN has been used to enhance the detection on small objects by narrowing the representations between small and large ones
+		To improve the detection of occluded objects, one recent idea is to generate occlusion masks by using adversarial training 
+		adversarial attack
+			which aims to study how to attack a detector with adver-sarial examples,has drawn increasing attention recently.
+	## Weakly Supervised Object Detection
+		The training of a modern object detector usually requiresa large amount of manually labeled data, while the label-ing process is time-consuming, expensive, and inefficient.
+			Weakly Supervised Object Detection (WSOD) aims to solve this problem by training a detector with only image level annotations instead of bounding boxes.
+			multi-instance learning has been used for WSOD, Multi-instance learning is a group of supervised learning method ,each containing many instances
+		Class activation mapping is another recently group of methods for WSOD 
+			Class activation mapping shedlight on how to enable a CNN to have localization ability despite being trained on image level labels
+		some other researchers considered the WSOD as a proposal ranking process by selecting the most informative regions and then training these regions with image-level annotation 
+		simple method for WSOD is to mask out different parts of the image.
+
+# Application		
+	## pedestrian detection
+		autonomous driving, video surveillance, criminal investigation, etc.
+		### Difficulties and Challenges
+			#### Small pedestrian
+				the small pedestrians that are captured far from the camera.
+				In Caltech Dataset, 15% of the pedestrians are less than 30 pixels in height.
+			#### Hard negatives
+				Some backgrounds in street view images are very similar to pedestrians in their visual appearance
+			#### Dense and occluded pedestrian				
+				In the Caltech Dataset , pedestrians that haven't been occluded only account for 29% of the total pedestrian instances.
+			#### Real-time detection
+				The real-time pedestrian detectionfrom HD video is crucial for some applications like autonomous driving and video surveillance.
+		### Literature Review
+			#### Traditional pedestrian detection methods
+				the Haar wavelet feature has been broadly used in early time’s pedestrian detection 
+				one popular idea of that time was "detection by components" 
+				trained individually on different human parts, 
+				since 2005, gradient-based representation and DPM have become the mainstream of pedes-trian detection.
+				In 2009, by using the integral image acceleration, an effective and lightweight feature representation: the Integral Channel Features (ICF)
+				some domain knowledge also has been considered, such asappearance constancy and shape symmetry and stereo information
+			#### Deep learning based pedestrian detection methods
+				To improve small pedestrian detection
+					Some recent solutions to this problem include featurefusion
+					introducing extra high-resolution handcraftedfeatures
+					ensembling detection results onmultiple resolutions 
+				To improve hard negative detection
+					integration of boosted decision tree
+					semantics segmentation (as the context of thepedestrians)
+					the idea of "cross-modallearning" has also been introduced to enrich the feature of hard negatives by using both RGB and infrared images
+				To improve dense and occluded pedestrian detection
+					the features indeeper layers of CNN have richer semantics but are not effective for detecting dense objects.
+					some researchers have designed new loss function by considering the attraction of target and the repulsion of other surrounding objects
+					Target occlusion is another problem that usually comes up with dense pedestrians. 					
+					The ensemble ofpart detectors and the attention mechanism are the most common ways to improve occluded pedestrian detection
+	## face detection
+		"smile" detection in digital cameras, "face swiping" in e-commerce,facial makeup in mobile apps, etc.
+		### Difficulties and Challenges
+			#### Intra-class variation
+				Human faces may present a variety of expressions, skin colors, poses, and movements
+			#### Occlusion
+				Faces may be partially occluded by other objects
+			#### Multi-scale detection
+				Detecting faces in a large variety of scales, especially for some tiny faces
+			#### Real-time detection
+				Face detection on mobile devices usually requires a CPU real-time detection speed.
+		### Literature Review
+			#### Early time's face detection (before 2001)
+				Rule-based method
+					This group ofmethods encode human knowledge of what constitutes a typical face and capture the relationships between facial elements 
+				Subspace analysis-based methods
+					This group of methods analyze the face distribution in underlying linear subspace 
+					Eigenfaces is the representative of this group of methods
+				Learning basedmethods
+					to frame the face detection as a sliding window+ binary classification (target vs background) process. 					
+			#### Traditional face detection (2000-2015)
+				First group of methods are built based on boosted decisiontrees
+					These methods are easy to compute, butusually suffer from low detection accuracy under complexscenes. 
+				The second group is based on early time’s convolutional neural networks
+					where the shared computation of features are used to speed up detection
+			#### Deep learning based face detection (after 2015)
+				To speed up face detection
+					Cascaded detection is the most common way tospeed up a face detector in deep learning era
+					Another speed up method is to predict the scale distributionof the faces in an image and then run detection on some selected scales
+				To improve multi-pose and occluded face detection
+					The idea of "face calibration" has been used to improve multipose face detection by estimating the calibration parameters or using progressive calibration through multiple detection stages
+					improve occluded face detection
+						attention mechanism
+						detection based on parts
+				To improve multi-scale face detection
+					multi-scale feature fusion and multi-resolution detection					
+	## text detection
+		to "read" street signs and currency
+		In geographic information systems, the detectionand recognition of house numbers and street signs make iteasier to build digital maps 
+		### Difficulties and Challenges
+			#### Different fonts and languages
+				Texts may have differentfonts, colors, and languages
+			#### Text rotation and perspective distortion
+				Texts mayhave different orientations and even may have perspective distortion
+			#### Densely arranged text localization
+				Text lines with largeaspect ratios and dense layout are difficult to localize accu-rately
+			#### Broken and blurred characters
+				Broken and blurredcharacters are common in street view images
+		### Literature Review
+			Text detection consists of two related but relatively independent tasks
+				#### text localization			
+				#### text recognition
+			text detection methods can be divided into two groups
+				Step-wise detection vs integrated detection
+					Step-wise detection methods consist of a series of processing steps including character segmentation,candidate region verification, character grouping, and wordre cognition. 
+						most of the background can be filtered in the coarse segmentationstep, which greatly reduces the computational cost of thefollowing process.
+						the parameters of all steps need to be set carefully, and the errors will occurand accumulate throughout each of these steps
+					the text detection as ajoint probability inference problem, where the steps of char-acter localization, grouping, and recognition are processedunder a unified framework. 
+						these methodsis it avoids the cumulative error and is easy to integrate language models.
+						inference will be computationally expensive when considering a largenumber of character classes and candidate windows 
+				Traditional methods vs deep learning methods
+					Most of the traditional text detection methods generatetext candidates in an unsupervised way
+						the commonly used techniques include Maximally Stable ExtremalRegions (MSER) segmentation and morphological filtering
+						the symmetry of texts and the structures of strokes, also have been considered in these methods 
+						researchers have paid more attention tothe problem of text localization rather than recognition
+							The first group ofmethods frame the text detection as a special case of generalobject detection
+								These methods have a unified detection framework, but it is less effective for detecting texts with orientation or with large aspect ratio.
+							The second group of methods frame the text detection as an image segmentation problem 
+								The advantage of these methods is there are no special restrictions for the shape and orientation of text
+								the disadvantage is that it is not easy to distinguish densely arranged text lines from each other based on the segmentation result. 
+							For text rotation and perspective changes
+								The most common solution to this problem is to introduce additionalparameters in anchor boxes and RoI pooling layer that are associated with rotation and perspective changes 
+							To improve densely arranged text detection
+								The segmentation-based approach shows more advantages indetecting densely arranged texts.
+								To distinguish the adjacent text lines, two groups of solutions have been proposedrecently
+									segment and linking
+										"segment" refers to the character heatma
+										"linking" refers to the connection between two adjacent segments indicating that they belong to the same word or line of text
+									additional corner/borderdetection
+										task to help separate densely arrange texts, where a group of corners or a closed boundary corresponds to an individual line of text
+							To improve broken and blurred text detection
+								A recent idea to deal with broken and blurred texts is to use word level recognition and sentence level recognition
+								To deal with texts with different fonts, the mosteffective way is training with synthetic samples 								
+	## traffic sign/lightdetection
+		the automatic detection of traffic sign and traffic light has attracted great attention 
+		### Difficulties and Challenges
+			#### Illumination changes
+				The detection will be particularly difficult when driving into the sun glare or at night
+			#### Motion blur
+				The image captured by an on-board camera will become blurred due to the motion of the car
+			#### Bad weather
+				In bad weathers, e.g., rainy and snowy days, the image quality will be affected
+			#### Real-time detection
+				This is particularly important for autonomous driving
+		### Literature Review
+			#### Traditional detection methods
+				the traditionaldetection methods are usually based on color thresholding, visual saliency detection,morphological filtering and edge/contour analysis.
+				they usually fail under complex environments
+				vision-based approaches, e.g.,to combine GPS and digital maps in traffic light detection
+				
+			#### deep learning based detection methods.
+				In deep learning era, some well-known detectors suchas Faster RCNN and SSD were applied in traffic sign/lightdetection tasks 
+				On basis on these detectors,some new techniques, such as the attention mechanism andadversarial training have been used to improve detectionunder complex traffic environments 
+	## remote sensing/target detection
+		emotesensing target detection (e.g., the detection of airplane, ship,oil-pot, etc), has become a research hot-spot. Remote sensingtarget detection has broad applications
+		### Difficulties and Challenges
+			#### Detection in "big data"
+				Due to the huge data volumeof remote sensing images, how to quickly and accuratelydetect remote sensing targets remains a problem
+			#### Occluded targets
+				Over 50% of the earth’s surface is covered by cloud every day. 
+			#### Domain adaptation
+				Remote sensing images capturedby different sensors present a high degree of differences.
+		### Literature Review
+			#### Traditional detection methods
+				traditional remote sensing target detection methods follow a two-stage detection paradigm
+					candidate extraction
+						some frequently used methods include gray value filtering based methods , visual saliency-based methods , wavelet transform based methods, anomaly detection based methods , etc. 
+						Onesimilarity of the above methods is they are all unsupervised methods, thus usually fail in complex environments.
+					target verification
+						some frequently used features include HOG , LBP , SIFT , etc.
+						To improve the occluded target detection, one commonly used idea is "detection by parts"
+						To detect targets with different orientations, the "mixture model" is used by training different detectors fortargets of different orientations
+			#### Deep learning based detection methods
+				After the great success of RCNN in 2014, deep CNN hasbeen soon applied to remote sensing target detection
+				The general object detection framework like Faster RCNN and SSD have attracted increasing attention inremote sensing community [
+				the deep CNN is no better than traditional methods for spectral data 
+				To detect targets with different orientations, some researchers have im-proved the ROI Pooling layer for better rotation invariance
+				To improve domain adaptation, some researchers formulated the detection from a Bayesian view that at the detection stage, the model is adaptively updated based onthe distribution of test images
+				 the attention mechanisms and feature fusion strategy also have been used to improve small target detection 
+# CONCLUSION AND FUTURE DIRECTIONS
+	The future research of object detection may focus but isnot limited to the following aspects
+	## Lightweight object detection
+		To speed up the detection algorithm so that it can run smoothly on mobile devices.
+	## Detection meets AutoML
+		A future direction is to reduce human intervention when designing the detection model
+	## Detection meets domain adaptation
+		The training process of any target detector can be essentially considered as a likelihood estimation process under the assumption of independent and identically distributed (i.i.d.) data
+	## Weakly supervised detection
+		 Developing weakly supervised detection techniques where the detectors areonly trained with image-level annotations, or partially withbounding box annotations is of great importance for reducing labor costs and improving detection flexibility.
+	## Small object detection
+		Some further directions may include the integration of the visual attention mechanisms and the design of high resolution lightweight networks
+	## Detection in videos
+		whilesimply ignores the correlations between videos frames. Improving detection by exploring the spatial and temporal correlation is an important research direction
+	## Detection with information fusion
+		Object detectionwith multiple sources/modalities of data, 
+		Some open questions include: how to immigrate well-trained detectors to different modalities of data
