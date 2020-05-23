@@ -31,13 +31,13 @@ jmexpander{position:absolute;width:11px;height:11px;display:block;overflow:hidde
 jmnode{padding:10px;background-color:#fff;color:#333;border-radius:5px;box-shadow:1px 1px 1px #666;font:16px/1.125 Verdana,Arial,Helvetica,sans-serif;}
 jmnode:hover{box-shadow:2px 2px 8px #000;background-color:#ebebeb;color:#333;}
 jmnode.selected{background-color:#11f;color:#fff;box-shadow:2px 2px 8px #000;}
-jmnode.root{font-size:24px;}
+jmnode.root{font-size:18px;}
 jmexpander{border-color:gray;}
 jmexpander:hover{border-color:#000;}
 
 @media screen and (max-device-width: 1024px) {
-    jmnode{padding:5px;border-radius:3px;font-size:14px;}
-    jmnode.root{font-size:21px;}
+    jmnode{padding:5px;border-radius:3px;font-size:12px;}
+    jmnode.root{font-size:18px;}
 }
 /* primary theme */
 jmnodes.theme-primary jmnode{background-color:#428bca;color:#fff;border-color:#357ebd;}
