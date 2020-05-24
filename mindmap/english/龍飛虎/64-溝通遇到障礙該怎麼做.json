@@ -1,0 +1,262 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\u6e9d\u901a\u9047\u5230\u969c\u7919\u8a72\u600e\u9ebc\u505a"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u91cd\u9ede",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u82f1\u8a9e\u6293\u4e0d\u4f4f\u610f\u601d\u7684\u554f\u6cd5",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "I'm sorry, I don't understand",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_2",
+        "topic": "What's that?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_2",
+        "topic": "Could you say that again,please?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_2",
+        "topic": "what does that mean?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_2",
+        "topic": "You lose me there, Come again!",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_2",
+        "topic": "Huh?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "root",
+        "topic": "\u6e9d\u901a\u9047\u5230\u969c\u7919",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "\u5225\u4eba\u807d\u4e0d\u61c2\u6211",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_9",
+        "topic": "\u6211\u807d\u4e0d\u61c2\u5225\u4eba",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_9",
+        "topic": "\u6211\u8a72\u600e\u9ebc\u8fa6",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_13",
+        "parentid": "root",
+        "topic": "\u6e9d\u901a\u672c\u8eab\u5728\u6bcd\u8a9e\u88e1\u9762\u969c\u7919\u5c31\u5f88\u591a",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "\u807d\u4e0d\u6e05\u695a",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_13",
+        "topic": "\u6293\u4e0d\u4f4f\u6838\u5fc3\u6db5\u7fa9",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_13",
+        "topic": "\u6709\u807d\u5230\u8a5e\u4e0d\u77e5\u9053\u5728\u6e9d\u901a\u4ec0\u9ebc",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_13",
+        "topic": "\u65e5\u5e38\u6b63\u5e38\u6e9d\u901a\u5e38\u5e38\u5c31\u6703\u6293\u4e0d\u6e96\u5c0d\u65b9\u5728\u8aaa\u4ec0\u9ebc",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_13",
+        "topic": "\u4eba\u5bb6\u8aaa\u7684\u8a71\u4f60\u807d\u4e0d\u660e\u767d",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "\u91cd\u65b0\u8aaa\u624d\u660e\u767d",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_13",
+        "topic": "\u6bcd\u8a9e\u807d\u4e0d\u6e05\u695a",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "\u4e0d\u6703\u6709\u7169\u60f1\u767c\u706b\u7684\u53cd\u61c9",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_20",
+        "topic": "\u6211\u662f\u6c92\u7528\u7684\u53cd\u61c9",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_13",
+        "topic": "\u6b63\u5e38\u6bcd\u8a9e\u8005\u807d\u4e0d\u61c2\u7684\u53cd\u61c9\u662f",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "\u554f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "\u91cd\u65b0",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_23",
+        "topic": "\u6c92\u641e\u660e\u767d",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "\u518d\u554f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "root",
+        "topic": "\u82f1\u8a9e\u6e9d\u901a\u51fa\u73fe\u969c\u7919\u600e\u9ebc\u8fa6",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "\u554f",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "\u5c31\u9019\u9ebc\u7c21\u55ae",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_28",
+        "topic": "\u6211\u4e0d\u61c2",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "\u518d\u8aaa\u4e00\u904d",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_28",
+        "topic": "\u82f1\u8a9e\u5f88\u591a\u77ed\u53e5\u7528\u65bc\u9019\u500b\u72c0\u614b",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "I'm sorry, I don't understand",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_33",
+        "topic": "What's that?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_33",
+        "topic": "Could you say that again,please?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_33",
+        "topic": "what does that mean?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_33",
+        "topic": "You lose me there, Come again!",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_33",
+        "topic": "Huh?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    }
+]
