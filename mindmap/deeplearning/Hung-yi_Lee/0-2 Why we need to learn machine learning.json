@@ -1,0 +1,49 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Why we need to learn machine learning"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "AI\u6703\u53d6\u4ee3\u73fe\u6709\u4e00\u4e9b\u5de5\u4f5c",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u4f46\u6703\u51fa\u73feAI\u8a13\u7df4\u5e2b",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "\u8ca0\u8cac\u6311\u9078model/lose function",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_2",
+        "topic": "\u4e0d\u540c\u7684\u554f\u984c\u9069\u5408\u4e0d\u540c\u7684model/lose function",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_2",
+        "topic": "\u6709\u4e9b\u6a21\u578b\u6700\u4f73\u5316\u975e\u5e38\u56f0\u96e3",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "\u5982\u6df1\u5ea6\u5b78\u7fd2",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_2",
+        "topic": "\u9700\u8981\u6709\u7d93\u9a57\u7684AI\u8a13\u7df4\u5e2b",
+        "background-color": "#0fbdff"
+    }
+]
