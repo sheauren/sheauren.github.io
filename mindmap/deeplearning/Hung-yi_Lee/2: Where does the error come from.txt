@@ -1,0 +1,52 @@
+Where does the error come from
+    error due to "bias"
+    error due to "variance"
+    a more complex model does not always lead to better performance on testing data
+    如果能診斷你的error來源就可以挑選適當的方法來整頓error
+    example 找寶可夢CP值最佳function
+        f^ ＝ f^(寶可夢)
+            最佳function
+        from training data
+            we find f*
+        f* is an estimator of f^
+        f* 與 f^之間的差距來自於
+            bias
+            variance
+            機率方式估算
+                Estimate the mean of a variable x
+                    assume the mean of x is μ
+                    assume the variance of x is σ^2
+                Estimator of mean μ
+                    Simple N point: {x^1,x^2,... x^n}
+                    m = 1/N*∑_n x^n != μ
+                        除非n有無限多個點
+                Estimator
+                    Var[m] = σ^2 / N
+                    Variance depends on the number of samples
+                    s^2 = 1/N*∑_n(x^n-m)^2
+                    E[s^2] = (N-1)/N * σ^2
+                Estimator
+                    f^
+                        把中心
+                    bias
+                        瞄準中心是否偏移
+                    variance
+                        瞄準位置偏移的情況
+                    集中中心但是分散
+                        variance偏移
+                    集中點與中心有落差但不分散
+                        bias偏移
+                用不同的training data
+                    f*會不同
+                    簡單的model比較集中
+                        variance比較小
+                        比較不會受到不同data影響
+                    複雜的model散佈非常廣
+                        variance越來越大
+                bias
+                    if we average all the f*, is it close to f^
+                    Large bias
+                        整體偏贏
+                    Small bias
+                        核心與靶心接近
+                        
