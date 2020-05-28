@@ -1,0 +1,158 @@
+Where does the error come from
+    error due to "bias"
+    error due to "variance"
+    a more complex model does not always lead to better performance on testing data
+    如果能診斷你的error來源就可以挑選適當的方法來整頓error
+    example 找寶可夢CP值最佳function
+        f^ ＝ f^(寶可夢)
+            最佳function
+        from training data
+            we find f*
+        f* is an estimator of f^
+        f* 與 f^之間的差距來自於
+            bias
+            variance
+    機率方式估算
+        Estimate the mean of a variable x
+            assume the mean of x is μ
+            assume the variance of x is σ^2
+        Estimator of mean μ
+            Simple N point: {x^1,x^2,... x^n}
+            m = 1/N*∑_n x^n != μ
+                除非n有無限多個點
+        Estimator
+            Var[m] = σ^2 / N
+            Variance depends on the number of samples
+            s^2 = 1/N*∑_n(x^n-m)^2
+            E[s^2] = (N-1)/N * σ^2
+        Estimator
+            f^
+                把中心
+            bias
+                瞄準中心是否偏移
+            variance
+                瞄準位置偏移的情況
+            集中中心但是分散
+                variance偏移
+            集中點與中心有落差但不分散
+                bias偏移
+        用不同的training data
+            f*會不同
+            簡單的model比較集中
+                variance比較小
+                比較不會受到不同data影響
+            複雜的model散佈非常廣
+                variance越來越大
+        bias
+            if we average all the f*, is it close to f^
+            Large bias
+                整體偏贏
+            Small bias
+                核心與靶心接近
+            5000條平均
+                1次方
+                    與f^有差距
+                    較大的bias
+                    large bias
+                2次方
+                    貼近f^
+                    較小的bias
+                3次方
+                    更貼近f^
+                    比較小的bais
+                    Small bias
+            why
+                model是一個function set=>一個範圍
+                    定一個model就已經選好在靶的範圍
+                    最好的function只能在這個範圍挑選出來
+                        小的model範圍比較小
+                            可能根本沒包含到target
+                            只能在接近的地方
+                            small variance
+                            big bias
+                        大的model範圍更大
+                            可能有涵蓋到目標
+                            只是沒有辦法找出target在哪裏
+                            因為traing data不夠
+                            Small bias
+                            Larger variance
+                error bias依照複雜度越來越少
+                error variance依照複雜度越來越大
+                    error observed在bias縮小variancec還受控制的時候
+                        產生最佳點
+                        當error variance
+                            overfitting
+                        當error bias很大
+                            underfitting
+            what to do with large bias?
+                diagnosis:
+                    if your model cannot even fit the training,example: then you have large bais
+                        bias大
+                        underfitting
+                    if your model fit the training,but large error on testing data, then you probably have large variance
+                        variance大
+                        overrfiting 
+                    for bias
+                        redesign your model
+                            add more feature as input
+                            a more complex model
+                    for variance
+                        more data
+                            very effective but no always practical
+                            collect more data
+                            data augemtation
+                        regularization λ
+                            add λ smooth f*曲線
+                            依據λ決定平滑程度
+                            但是可能會傷害bias
+    Model Selection
+        There is usually a trade-off between bias and variance
+        Select a model that balance two kinds of error to minimize total error
+        what you should NOT do:
+            training set/testing set/real testing set1
+                model 1 -> Err = 0.9
+                model 2 -> Err = 0.7
+                model 3 -> Err = 0.5(I beat baseline) => Err > 0.5 (no you don't)
+                best is model 3?
+                testing set有自己的bias
+                    拿testing set來選最好的model
+                        於real testing通常不是最好的model
+        Cross validation
+            training set
+                split
+                    training set
+                    validation set
+                    用這資料來選model(traing by training set)
+                        model1
+                            validation Err=0.9
+                        model2
+                            validation Err=0.7
+                        model3            
+                            validation Err=0.5
+                            best f*
+                    決定model再用全部的data在training一次
+                        再去public Testing Set測試
+                            可能會得到 Err > 0.5
+                                private Testing Set
+                                    Err > 0.5
+                            表面上看起來比較大
+                            但是才能真的反應Error
+                            不推薦如果測試結果不好再回去重測
+                                因為model裡面已經有public dataset的bias
+            怕validation分壞了
+            N-fold Cross validation
+                不相信某一次分的validation
+                3-fold cross validation
+                    [Train][Train][Valid]
+                    [Train][Valid][Train]
+                    [Valid][Train][Train]
+                    3個model三種都跑一次看Error
+                        model1 Error 0.2,0.4,0.3
+                        model2 Error 0.4,0.5,0.6
+                        model3 Error 0.4,0.5,0.3
+                        看avg error誰最好
+                            model1 avg error=0.3
+                model 1在traing完整training set
+                少用public testing調整model
+                在private testing的結果才會比較好
+                    與public testing差距會比較小
