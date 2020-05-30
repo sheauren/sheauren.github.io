@@ -1,0 +1,1411 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Gradient Descent"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "In Step3, we have to slove the following optimization problem",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u03b8* = arg min_\u03b8 L(\u03b8)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "L: loss function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_2",
+        "topic": "\u03b8: parameters",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_1",
+        "topic": "suppose the \u03b8 has two varibles {\u03b8_1,\u03b8_2}",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_1",
+        "topic": "Randomly start at \u03b8^0 = [\u03b8_1^0 , \u03b8_2^0]",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_1",
+        "topic": "[\u03b8_1^1 , \u03b8_2^1] = [\u03b8_1^0 , \u03b8_2^0] - \u03b7[\u2202*L(\u03b8_1^0)/\u2202*\u03b8_1 , \u2202*L(\u03b8_2^0)/\u2202*\u03b8_2]",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_1",
+        "topic": "\u91cd\u8907\u8a08\u7b97",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_1",
+        "topic": "\u03b8^1 = \u03b8^0 - \u03b7\u2207L(\u03b8^0)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_1",
+        "topic": "\u03b8^2 = \u03b8^1 - \u03b7\u2207L(\u03b8^1)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "root",
+        "topic": "Tip 1: Tuning your learning rates",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "set the learning rate \u03b7 carefully",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "\u592a\u5c0f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "\u6703\u5f88\u6162",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_12",
+        "topic": "\u592a\u5927",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "\u6c38\u9060\u6c92\u8fa6\u6cd5\u8d70\u4e0b\u53bb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_12",
+        "topic": "\u8d85\u5927",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "update\u53cd\u800c\u722c\u4e0a\u53bb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_11",
+        "topic": "visualized\u53ea\u6709\u57283\u7dad\u4ee5\u4e0b\u624d\u6709\u8fa6\u6cd5",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_11",
+        "topic": "\u53ea\u80fdvisualized loss\u8ddf\u53c3\u6578\u7684\u6539\u8b8a\u72c0\u614b",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "\u592a\u5c0f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "loss\u6162\u6162\u4e0b\u6ed1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_20",
+        "topic": "\u592a\u5927",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "loss\u5feb\u901f\u4e0b\u964d\u5c31\u5361\u4f4f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_20",
+        "topic": "\u8d85\u5927",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "loss\u98db\u51fa\u53bb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_20",
+        "topic": "\u5982\u4f55\u8abf\u7684\u525b\u525b\u597d",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "\u628a\u5716\u756b\u51fa\u4f86\u770b\u8d70\u6cd5\u5c31\u77e5\u9053\u600e\u9ebc\u4e86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_27",
+        "topic": "\u8981\u78ba\u5b9a\u662f\u7a69\u5b9a\u7684\u4e0b\u964d",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_11",
+        "topic": "Adaptive learning rates",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "popular & simple idea:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "reduce the learning rate by some factor every few epochs",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "at the begining, we are far from the destination",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "so we use larger learning rate",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_32",
+        "topic": "after serveral epochs, we are close to the destincation",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "so we reduce the learning rate",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_32",
+        "topic": "ex:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "1/t decay: \u03b7^t = \u03b7/\u221a(t+1)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_30",
+        "topic": "learning rate cannot be one-size-fits-all",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "giving different parameters different learning rates",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_30",
+        "topic": "Adagrad",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_41",
+        "topic": "divide the learning rate of each parameter by the root mean square of its previous derivatives",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_41",
+        "topic": "Vanilla gradient descent:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "w^t+1 <- w^t - \u03b7^t * g^t",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "w is one parameters",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_44",
+        "topic": "\u03b7^t = \u03b7/\u221a(t+1)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_44",
+        "topic": "g^t = \u2202L(\u03b8^t)/\u2202w",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_43",
+        "topic": "Larger gradient",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_48",
+        "topic": "larger step",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_41",
+        "topic": "Adagrad",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "w^t+1 <- w^t - \u03b7^t/\u03c3^t * g^t",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "\u03c3^t",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "root mean square of the previous derivatives of parameter W",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "parameter dependent",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_50",
+        "topic": "w^1 = w^0 - \u03b7^0/\u03c3^0 * g^0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_55",
+        "topic": "\u03c3^0 = \u221a(g^0)^2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_50",
+        "topic": "w^2 = w^1 - \u03b7^1/\u03c3^1 * g^1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_57",
+        "topic": "\u03c3^1 = \u221a1/2*[(g^0)^2+(g^1)^2]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_50",
+        "topic": "w^t+1 = w^t - \u03b7^t/\u03c3^t * g^t",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_59",
+        "topic": "\u03c3^t = \u221a1/t*\u03a3_i=0^t(g^i)^2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_50",
+        "topic": "\u516c\u5f0f\u6d88\u53bb\u5f8c\u6700\u7d42\u7d50\u679c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_61",
+        "topic": "w^t+1 = w^t - \u03b7 * g^t / (\u221a*\u03a3_i=0^t(g^i)^2)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_50",
+        "topic": "g^t",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "Larger gradient",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "larger step",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_63",
+        "topic": "\u4e00\u6b21\u5fae\u5206",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_50",
+        "topic": "\u03a3_i=0^t(g^i)^2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_67",
+        "topic": "Larget gradient",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "smaller step",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_67",
+        "topic": "\u8207\u539f\u672c\u8981\u505a\u7684\u4e8b\u60c5\u6709\u9ede\u885d\u7a81",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_67",
+        "topic": "\u4e8c\u6b21\u5fae\u5206\u7684\u9810\u4f30\u503c",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "\u600e\u9ebc\u4e0d\u7b97\u4e8c\u6b21\u5fae\u5206",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_72",
+        "topic": "\u964d\u4f4e\u904b\u7b97\u91cf\u4f46\u53ef\u4ee5\u4f30\u7b97\u52302\u6b21\u5fae\u5206\u503c",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_71",
+        "topic": "\u60f3\u50cf\u5728\u4e00\u6b21\u5fae\u5206\u88e1\u9762\u505asample\u4f5c\u5e73\u5747\u7b972\u6b21\u5fae\u5206\u503c",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_50",
+        "topic": "Intuitive Reason",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_75",
+        "topic": "How surprise it is",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_76",
+        "topic": "Adagrad\u662f\u89e3\u6c7a\u53cd\u5dee\u7684\u554f\u984c",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_77",
+        "topic": "\u6bcf\u6b21gradient\u90fd\u5f88\u7a69\u5b9a",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_78",
+        "topic": "\u5ffd\u7136\u6709\u4e00\u500bpeak\u53cd\u5dee\u51fa\u73fe",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_79",
+        "topic": "\u5ffd\u7136\u51fa\u73fe\u5f88\u5927",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_79",
+        "topic": "\u5ffd\u7136\u51fa\u73fe\u597d\u5c0f",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_79",
+        "topic": "\u5f37\u8abf\u53cd\u5dee\u6548\u679c",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_82",
+        "topic": "\u770b\u53cd\u5dee\u6709\u591a\u5927",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_76",
+        "topic": "y = ax^2+bx+c",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_76",
+        "topic": "|\u2202y/\u2202x| = |2ax+b|",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_76",
+        "topic": "x_0 best step",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_86",
+        "topic": "|x_0+(b/2a)| = |2ax_0+b|/2a",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_87",
+        "topic": "|2ax_0+b| =  |\u2202y/\u2202x|",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_87",
+        "topic": "\u5fae\u5206\u503c\u8d8a\u5927\u96e2\u5f97\u8d8a\u9060",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_89",
+        "topic": "\u6210\u6b63\u6bd4",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_89",
+        "topic": "\u53ea\u6709\u4e00\u500b\u53c3\u6578\u624d\u6210\u7acb",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_89",
+        "topic": "\u591a\u53c3\u6578\u4e0d\u4e00\u5b9a\u6210\u7acb",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_89",
+        "topic": "\u8de8\u53c3\u6578\u6bd4\u8f03\u9019\u500b\u60f3\u6cd5\u6703\u6709\u554f\u984c",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_87",
+        "topic": "|2ax_0+b|/2a \u76842ax_0+b\u5728\u4e8c\u6b21\u5fae\u5206",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_94",
+        "topic": "2a\u51fa\u73fe\u5728\u5206\u6bcd\u9805",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_95",
+        "topic": "\u4ed6\u4e0d\u53ea\u662f\u6b63\u6bd4\u65bc\u4e00\u6b21\u5fae\u5206\u5927\u5c0f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_95",
+        "topic": "\u9084\u53cd\u6bd4\u65bc2\u6b21\u5fae\u5206\u5927\u5c0f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_94",
+        "topic": "\u6700\u597d\u7684step\u61c9\u8a72\u662f\u8003\u616e",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_98",
+        "topic": "|First derviative|/Second derivative",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_11",
+        "topic": "Tip 2: Stochastic Gradient Descent",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_100",
+        "topic": "Loss function:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_101",
+        "topic": "L = \u2211n(y^n-(b+\u2211w_i*x_i^n))^2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_100",
+        "topic": "Gradient Descent:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_103",
+        "topic": "\u03b8^(i+1) = \u03b8^i - \u03b7\u2207L(\u03b8^i)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_100",
+        "topic": "Stochastic Gradient Descent",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_105",
+        "topic": "\u601d\u8def\u6709\u9ede\u4e0d\u540c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_105",
+        "topic": "Pick an example x^n",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_107",
+        "topic": "\u96a8\u6a5f\u6216\u7167\u9806\u5e8f",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_108",
+        "topic": "deep learning\u96a8\u6a5f\u53d6\u6709\u5e6b\u52a9",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_105",
+        "topic": "L^n = (y^n-(b+\u2211w_i*x_i^n))^2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_110",
+        "topic": "\u53ea\u7b97\u4e00\u500bexample\u7684loss",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_110",
+        "topic": "\u03b8^i = \u03b8^(i-1) - \u03b7\u2207L(\u03b8^(i-1))",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_112",
+        "topic": "\u7136\u5f8c\u5c31update\u53c3\u6578",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_105",
+        "topic": "\u770b\u4e00\u500bexample\u5c31update\u4e00\u500b\u53c3\u6578",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_114",
+        "topic": "\u539f\u672cgradient descent\u670920\u500bexample",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_115",
+        "topic": "\u770b\u5b8c20\u500bexample update\u4e00\u6b21\u53c3\u6578",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_114",
+        "topic": "SGD\u770b\u4e00\u500bexample update\u4e00\u6b21\u53c3\u6578",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_117",
+        "topic": "update 20\u6b21",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_117",
+        "topic": "\u6b65\u4f10\u5c0f\u4e14\u6563\u4f46\u5feb",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_11",
+        "topic": "Tip 3: Feature Scaling",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_120",
+        "topic": "y = b + w_1*x_1 + w_2*x_2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_120",
+        "topic": "\u5206\u5e03\u7bc4\u570d\u9650\u5236\u7e2e\u5c0f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_122",
+        "topic": "\u8b93\u4e0d\u540cfeature scale\u662f\u4e00\u6a23\u7684",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_122",
+        "topic": "\u907f\u514d\u76f8\u52a0\u4e4b\u5f8cfeature\u90fd\u53d7\u5230\u5927\u6578\u503c\u7684x",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_122",
+        "topic": "\u8b93\u6bcf\u500b\u53c3\u6578\u5c0dloss\u5f71\u97ff\u6bd4\u8f03\u5408\u7406",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_125",
+        "topic": "update\u53c3\u6578\u6703\u6bd4\u8f03\u5bb9\u6613",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_122",
+        "topic": "\u5e38\u898b\u4f5c\u6cd5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_127",
+        "topic": "x^1,x^2,x^3",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_128",
+        "topic": "x_1^1,x_2^1,...",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_128",
+        "topic": "x_1^2,x_2^2,...",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_128",
+        "topic": "x_1^3,x_3^3,...",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_127",
+        "topic": "\u6bcf\u4e00\u500bdimension i\u90fd\u7b97",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_132",
+        "topic": "mean: mean_i",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_132",
+        "topic": "standard deviation: \u03c3_i",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_132",
+        "topic": "x_i^r <= (x_i^r - m_i) / \u03c3_i",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_135",
+        "topic": "means of all dimension are 0",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_135",
+        "topic": "the variances are all 1",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_11",
+        "topic": "Gradient Descent Theroy",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_138",
+        "topic": "When solving:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_139",
+        "topic": "\u03b8* = arg min_\u03b8 L(\u03b8)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_138",
+        "topic": "Each time we update the parameters, we obtain \u03b8 that makes L(\u03b8) smaller",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_141",
+        "topic": "\u4e0d\u4fdd\u8b49\u90fd\u4e0b\u964d",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_138",
+        "topic": "Warning of Math",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_143",
+        "topic": "Formal Derivation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_144",
+        "topic": "Suppose that \u03b8 has two variables {\u03b81,\u03b82}",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_144",
+        "topic": "\u4e00\u500bLose Fucntion\u8ddf\u521d\u59cb\u9ede",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_146",
+        "topic": "\u627e\u67d0\u4e00\u500b\u5c0f\u7bc4\u570d\u5167\u6700\u4f4e\u9ede",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_147",
+        "topic": "based on Taylor Series",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_148",
+        "topic": "L(\u03b8) \u2248 L(a,b) + \u2202L(a,b)/\u2202*\u03b8_1 * (\u03b8_1-a) + \u2202L(a,b)/\u2202*\u03b8_2 * (\u03b8_2-b)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_148",
+        "topic": "s = L(a,b)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_148",
+        "topic": "u = \u2202L(a,b)/\u2202*\u03b8_1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_148",
+        "topic": "v = \u2202L(a,b)/\u2202*\u03b8_2",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_148",
+        "topic": "L(\u03b8) \u2248 s+u(\u03b8_1-a)+v(\u03b8_2-a)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_153",
+        "topic": "* Not satisifed if the red circle (learning rate) is not small enough",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_153",
+        "topic": "\u7d05\u8272\u5708\u5708\u5920\u5c0f\u624d\u6703\u7cbe\u78ba",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_153",
+        "topic": "learning rate\u8981\u7121\u7aae\u5c0f\u624d\u80fd\u4fdd\u8b49\u9019\u6a23\u5b50",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_153",
+        "topic": "\u7576\u516c\u5f0f\u4e0d\u6210\u7acb\u5247loss\u7121\u6cd5\u8d8a\u4f86\u8d8a\u5c0f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_153",
+        "topic": "\u5982\u679c\u628aTaylor Series\u4e8c\u6b21\u5f0f\u8003\u616e\u9032\u4f86",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_158",
+        "topic": "LR\u5c31\u53ef\u4ee5\u8a2d\u5b9a\u5927\u4e00\u9ede",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_158",
+        "topic": "\u4f46\u662f\u4e0d\u662f\u5f88\u666e\u53ca",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_160",
+        "topic": "\u56e0\u70ba\u8981\u7b97\u4e8c\u6b21\u5fae\u5206",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_160",
+        "topic": "\u6703\u591a\u5f88\u591a\u904b\u7b97",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_160",
+        "topic": "\u53ef\u80fd\u7121\u6cd5\u627f\u53d7\u4e0d\u5212\u7b97",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_148",
+        "topic": "\u627e\u6700\u5c0floss",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_164",
+        "topic": "(\u03b8_1-a)^2 + (\u03b8_2-b)^2 <= d^2",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_164",
+        "topic": "\u2206\u03b8_1 = (\u03b8_1-a)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_164",
+        "topic": "\u2206\u03b8_2 = (\u03b8_2-b)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_164",
+        "topic": "\u2206\u03b8_1^2 + \u2206\u03b8_2^2 <= d^2",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_164",
+        "topic": "vector",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_169",
+        "topic": "(\u2206\u03b8_1,\u2206\u03b8_2)",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_169",
+        "topic": "(u,v)",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_169",
+        "topic": "inner product",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_172",
+        "topic": "\u5c31\u6703\u53d6\u5f97L",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_169",
+        "topic": "\u6700\u5c0f\u503c\u5c31\u662f\u9078",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_174",
+        "topic": "\u53ea\u8981\u8ddf(u,v)\u525b\u597d\u53cd\u65b9\u5411",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_174",
+        "topic": "\u62c9\u5230\u5340\u5708\u908a\u7de3",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_169",
+        "topic": "[\u2206\u03b8_1,\u2206\u03b8_2] = -\u03b7[u,v]",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_169",
+        "topic": "[\u03b8_1,\u03b8_2] = [a,b]-\u03b7[u,v]",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_169",
+        "topic": "[\u03b8_1,\u03b8_2] = [a,b]-\u03b7[\u2202L(a,b)/\u2202*\u03b8_1,\u2202L(a,b)/\u2202*\u03b8_2]",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_169",
+        "topic": "this is gradient descent",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_146",
+        "topic": "\u66f4\u65b0\u4f4d\u7f6e\u518d\u4f86\u4e00\u6b21",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_143",
+        "topic": "Taylor Series",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_183",
+        "topic": "Let h(x) be any function inifitely differentiable around x = x_0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_184",
+        "topic": "h(x) = \u2211_k=0^\u221e(h^(k)*(x_0)/k!) * (x-x_0)^k",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_184",
+        "topic": "when x is close to x_0",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_186",
+        "topic": "h(x) \u2248 h(x_0)+h'(x_0)(x-x_0)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_183",
+        "topic": "ex: h(x)=sin(x) around x_0 = \u03c0/4",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_188",
+        "topic": "sin(x) = 1/\u221a2 + (x-\u03c0/4)/\u221a2 - (x-\u03c0/4)^2/2\u221a2 - ...",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_188",
+        "topic": "\u7dda\u5716\u4f86\u770b\u5dee\u5f88\u591a\u4f46\u65bc\u03c0/4\u6703\u975e\u5e38\u63a5\u8fd1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_191",
+        "parentid": "line_183",
+        "topic": "h(x,y) = h(x_0,y_0) + \u2202h(x_0,y_0)/\u2202x * (x-x_0) + \u2202h(x_0,y_0)/\u2202y * (y-y_0) ...",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_191",
+        "topic": "when x and y is close to x_0 and y_0",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_192",
+        "topic": "h(x,y) \u2248 h(x_0,y_0) + \u2202h(x_0,y_0)/\u2202x * (x-x_0) + \u2202h(x_0,y_0)/\u2202y * (y-y_0)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "root",
+        "topic": "More Limitation of Gradient Descent",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_194",
+        "topic": "stuck at Local minimum",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_195",
+        "topic": "\u2202L / \u2202w = 0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_197",
+        "parentid": "line_194",
+        "topic": "stuck at saddle point",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_198",
+        "parentid": "line_197",
+        "topic": "\u2202L / \u2202w = 0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_199",
+        "parentid": "line_194",
+        "topic": "very slow at the plateau",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_200",
+        "parentid": "line_199",
+        "topic": "\u2202L / \u2202w \u2248 0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_201",
+        "parentid": "line_199",
+        "topic": "\u4f60\u4ee5\u70ba\u63a5\u8fd1local minimum\u5c31\u505c\u4e0b\u4f86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_202",
+        "parentid": "line_199",
+        "topic": "\u53ef\u80fd\u662f\u9ad8\u539f\u96e2\u5f88\u9060",
+        "background-color": "#0fbdff",
+        "expanded": false
+    }
+]

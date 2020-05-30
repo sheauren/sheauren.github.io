@@ -1,0 +1,297 @@
+Classification
+    Probabilistic Generative Model
+    input(x)=> model => class n
+    example:
+        Credit Scoring
+            Input:
+                income,savings,profession,age,past finanical history ...
+            Output:
+                accept or refuse
+        Medical Diagnosis
+            Input:
+                current symptons,age,gender,past medical history...
+            Output:
+                which kind of diseases
+        Handwritten character recognition
+            Input:
+                handwritten image
+            Output:
+                word
+        Face recognition
+            Input:
+                image of a face
+            Output:
+                person
+    Example Application:
+        Pokemon type symbols
+            18種屬性
+        f(某一隻寶可夢) => 屬於哪一種屬性
+        f(皮卡丘)=>雷
+        f(傑尼龜)=>水
+        f(妙蛙草)=>草
+        怎麼寶可夢數值化當input
+            total:
+                sum of all stats that come after this, general guide to how strong a pokemon is
+            HP:
+                hit point, or health, defines how much damage a pokemon can withstand before fainting
+            Attack:
+                the base modifier for noraml attack (e.g. scrath,punch)
+            Defense:
+                this base damage resistence against normal attacks
+            SP Atk:
+                special attack, the base modifier for special attack(e.g. fire blast,bubble beam)
+            SP Def:
+                the base damage resistence against special attacks
+            Speed:
+                determines which pokemon attacks first each round
+            ex:
+                皮卡丘
+                    total
+                        320
+                    HP
+                        35
+                    Attack
+                        55
+                    Defense
+                        40
+                    SP Atk
+                        50
+                    SP Def
+                        50
+                    Speed
+                        90
+                    七個數字組成vector
+                我們能不能用七個數字輸入一個function
+        How to Classification
+            training data for Classification
+                皮卡丘
+                    (x^1,y^1)                
+                傑尼龜
+                    (x^2,y^2)
+                妙花草
+                    (x^n,y^n)
+            Classification as regression?
+                binary classification as example
+                    training: class1 means the target is 1; class2 means the target is -1
+                    testing: closer to 1 -> class1 , closer to -1 -> class2
+                    會遇到問題
+                        y = b+ w_1*x_1 + w_2*x_2
+                        分兩群class中間切開
+                        但是當有sample遠離切開的分隔線時 >> 1
+                            反而會被期望=1造成太大不行
+                                從regression來看變成error
+                                反而會因為>>1的sample造成mean偏移過去
+                                為了decrease error
+                                regression會懲罰太正確的examples
+                    regression的方式對於classification來說並不是這麼適用
+                multiple class:
+                    class1 means the target is 1
+                    class2 means the target is 2
+                    class3 means the target is 3
+                    problematic
+                        class1跟class2比較近
+                        class2跟class3比較近
+                        如果這個關係不存在
+            ideal alternatives
+                Function(model):
+                    x=> f(x) =>
+                        g(x)>0 output class1
+                        else output class2
+                    無法微分
+                Loss function:
+                    L(f) = ∑_n ∂(f(x^n)≠y^^n)
+                    the number of times f get incorrect results on training data
+                    無法微分
+                Find the best function:
+                    Example: perceptron, SVM
+                    先用機率的方式解
+        Two boxes
+            Box1
+                4 Blue Ball,1 Green Ball
+            Box2
+                2 Blue Ball,3 Green Ball
+            Blue Ball from one of boxes
+            where does it come from
+                P(Box1) = 2/3
+                P(Box2) = 1/3
+                P(Blue|Box1) = 4/5
+                P(Green|Box1) = 1/5
+                P(Blue|Box2) = 2/5
+                P(Green|Box2) = 3/5
+                P(Box1|Blue) = P(Blue1|Box1)P(Box11) / ( P(Blue|Box1)P(Box1) + P(Blue|Box2)P(Box2) ) 
+        Two classes
+            P(C1)
+            P(C2)
+            P(x|C1)
+            P(x|C2)
+            Given an x, which class does it belong to
+                P(C1|x)
+                    P(x|C1)P(C1) / ( P(x|C1)P(C1) + P(x|C2)P(C2) )
+                知道P(C1|x)就可以知道答案
+                    但要知道必須要下列四個變數都算出來
+                        P(C1)
+                        P(C2)
+                        P(x|C1)
+                        P(x|C2)
+            this is Generative Model
+                P(x) = P(x|C1)P(C1) + P(x|C2)P(C2)
+                可以計算每一個x出現的機率
+            Prior
+                比較好算
+                ex: type: water,normal
+                P(C1): water
+                P(C2): normal
+                water and normal type with ID <400 for training, rest for testing
+                Training: 79 water, 61 normal
+                P(C1) = 79/(79+61) = 0.56
+                P(C2) = 61/(79+61) = 0.44                
+            Probability from class
+                P(x|C1) = ?
+                    P(海龜|Water) = ?
+                    Water type
+                        傑尼龜,可達鴨... 79 in total
+                each pokemon is represented as a vector by it's attribute
+                    feature
+                consider defense and sp defense chart
+                    79 pointer in chart
+                    P(x|water) = ?
+                    assume the points are samples from a gaussion distribution
+                    gaussion distribution
+                        f_μΣ(x) = 1/(2π)^(D/2) * 1/|Σ|^(1/2) * exp{ -1/2*(x-μ)^TΣ(x-μ) }
+                        input: vector x
+                        output: probability of sampling x
+                        the shape of the function determines by mean μ and convariance matrix Σ
+                            ex1:
+                                μ = [0,0]
+                                Σ = [[2,0],[0,2]]
+                            ex2:
+                                μ = [2,3]
+                                Σ = [[2,0],[0,2]]
+                    找出79個點的gaussion distribution
+                        μ = [75,71.3]
+                        Σ = [[874,327],[327,929]]
+                        new X = 
+                            f_μΣ(x) = 1/(2π)^(D/2) * 1/|Σ|^(1/2) * exp{ -1/2*(x-μ)^TΣ(x-μ) }
+                            算出x在gaussion distribution的機率
+                    如何找μ,Σ
+                        Maximum Likelihood
+                        The Gaussion with any mean μ and convariance martix Σ can generate these points
+                            but different likelihood
+                            只要有μ,Σ就可以給予79個點算出likelihood                            
+                            L(μ,Σ) = fμΣ(x^1)fμΣ(x^2)...fμΣ(x^79)                                
+                                每一個點的機率乘起來
+                                f_μΣ(x) = 1/(2π)^(D/2) * 1/|Σ|^(1/2) * exp{ -1/2*(x-μ)^TΣ(x-μ) }
+                            再來目標找到最大的機率的gaussion distribution μ*,Σ*
+                                μ*,Σ* = arg max_μ,Σ L(μ,Σ)
+                                μ* = 1/79 Σ_n=1^79 x^n 
+                                Σ* = 1/79 Σ_n=1^79 (x^n-μ*)(x^n-μ*)^T
+                        計算79隻water pokemon
+                            class1
+                            μ^1 = [75.0,71.3]
+                            Σ^1 = [[874,327],[327,929]]
+                        計算61隻normal pokemon
+                            class2
+                            μ^1 = [55.6,59.8]
+                            Σ^1 = [[847,422],[422,685]]
+                        now we can do classification
+                            P(C1|x) = P(x|C1)P(C1) / ( P(x|C1)P(C1) + P(x|C2)P(C2) )
+                                if P(C1|x) > 0.5
+                                    class1
+                                P(C1)= 79/(79+61) = 0.56
+                                P(C2)= 61/(79+61) = 0.44
+                                f_μΣ(x) = 1/(2π)^(D/2) * 1/|Σ|^(1/2) * exp{ -1/2*(x-μ)^TΣ(x-μ) }
+                                    P(x|C1)
+                                        μ^1 = [75.0,71.3]
+                                        Σ^1 = [[874,327],[327,929]]
+                                    P(x|C2)
+                                        μ^1 = [55.6,59.8]
+                                        Σ^1 = [[847,422],[422,685]]
+                                testing data accuracy = 47%
+                                all(7 features):
+                                    total,hp,sp,attack,defense,special attack,special defense,speed
+                                    μ^1,μ^1: 7-dim vector
+                                    Σ^1,Σ^2: 7x7 matrices
+                                        testing data accuracy = 54%
+                                這手法比較少見
+                                    因為Σ各自有一組
+                                        參數多convariance就大
+                                            運算量太大
+                                        很容易overfitting
+                                    比較常見的是share共同的Σ
+                                modify model
+                                    故意給用同的convariance
+                                        較少的運算量
+                                    water pokemon
+                                        x^1~x^79
+                                        μ^1
+                                        Σ
+                                    normal pokemon
+                                        x^80~x^140
+                                        μ^2
+                                        Σ
+                                    find μ^1,μ^2,Σ maximum the likelihood
+                                        L(μ^1,μ^2,Σ)
+                                            f_μ^1,Σ(x^1) * f_μ^1,Σ(x^2) ... * f_μ^1,Σ(x^79) * f_μ^2,Σ(x^80) * f_μ^2,Σ(x^2) ... * f_μ^2,Σ(x^180)
+                                            μ^1 μ^2 is the same
+                                            new Σ = 79/140Σ^1 + 61/140Σ^2                                            
+                                        reference: Bishop chapter 4.2.2
+                                        共用 convariance matrices後
+                                            原本分隔class的曲線變成直線 linear
+                                                變成linear model                                                
+                                            total features
+                                                testing data accuracy = 54% -> 73%
+                                            不好解釋
+                                                多維度之後為什麼會分出來
+    Three steps
+        Function Set(Model):
+            x =>
+                function
+                    P(C1|x) = P(x|C1)P(C1) / ( P(x|C1)P(C1) + P(x|C2)P(C2) )
+                    if P(C1|x)>0, output class1
+                    otherwise, output class2                
+        Goodness of function:
+            The mean μ and convariance Σ that maximizing the likelihood ( the probability of generating data)            
+        Find the best function: easy
+    Probability Distribution
+        You can always use the distribution you like
+        這部分不是人工智慧是人的智慧
+        選擇的模型決定bias/variance之間偏差去調整
+        有另一種模型
+            P(C1|x) = P(C1|x_1) * P(C1|x_2) * ... *P(C1|x_k)
+                每一個都是一維 1-D Gaussion
+                    參數量會更少
+                        在寶可夢case會壞掉
+                            feature之間有正相關
+            x=[x_1,x_2...,x_k]
+                例如7個feature
+                每個feature機率是independent的時候可以這樣設計
+        for binary distribution, you may assume they are from Bernoulli distribution
+            是不是神獸binary的問題
+                就不適合用 gaussion distribution
+                可能是一個Bernoulli distribution
+        if you assume all the determines are independent 
+            you are using Naive Bayes Classifier
+    Poseriror Probability
+        P(C1|x) = P(x|C1)P(C1) / ( P(x|C1)P(C1) + P(x|C2)P(C2) )
+        除以P(x|C1)P(C1)
+            1/ ( 1 + P(x|C1)P(C1)/P(x|C2)P(C2) )
+            z = ln(P(x|C1)P(C1)/P(x|C2)P(C2))
+            1/ 1+exp(-z)
+            = sigmoid function
+    warning of math
+        P(C1|x) = σ(z) sigmoid
+        z = ln(P(x|C1)P(C1)/P(x|C2)P(C2))
+        z = ln(P(x|C1)/P(x|C2))+ln((P(C2)/P(C1))
+        P(C1)/P(C2) = N1/(N1+N2) / N2/(N1+N2) = N1/N2
+        P(x|C1) = = 1/(2π)^(D/2) * 1/|Σ^1|^(1/2) * exp{ -1/2*(x-μ)^T*(Σ^1)^-1(x-μ^1) }
+        P(x|C2) = = 1/(2π)^(D/2) * 1/|Σ^2|^(1/2) * exp{ -1/2*(x-μ)^T*(Σ^2)^-1(x-μ^2) }
+        ln(P(x|C1)/P(x|C2)) = ln(|Σ^2|^(1/2)/|Σ^1|^(1/2)) - 1/2[((x-μ)^T(Σ^1)^-1(x-μ^1)-(x-μ^2)^T(Σ^2)^-1(x-μ^2))]
+        Σ^2 = Σ^1 = Σ
+        z = (μ^1-μ^2)^T*Σ^1*x - 1/2(μ^1)^T(Σ^1)^-1*μ^1 + 1/2(μ^2)^T(Σ^2)^-1*μ^2 + ln(N1/N2)
+        w^T = (μ^1-μ^2)^T*Σ^1*
+        b = 1/2(μ^1)^T(Σ^1)^-1*μ^1 + 1/2(μ^2)^T(Σ^2)^-1*μ^2 + ln(N1/N2)
+    P(C1|x) = σ(w*x+b)
+        regression
+    in generative model
+        we estimate N1,N2,μ1,μ2,Σ
+        how about direct find w and b

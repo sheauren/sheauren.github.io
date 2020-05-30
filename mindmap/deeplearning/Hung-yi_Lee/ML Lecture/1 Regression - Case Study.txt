@@ -207,7 +207,7 @@ Regression
             back to step2: regularization
                 redesign loss funciton 
                     y = b+∑w_i*x_i
-                    L = ∑n(y^n-(b+∑w_i*x_i))^2
+                    L = ∑n(y^n-(b+∑w_i*x_i^n))^2
                         + regularization
                             λ*∑(w_i)^2
                             b不需要加入因為他是整體偏移跟平滑無關

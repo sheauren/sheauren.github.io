@@ -1461,7 +1461,7 @@
     {
         "id": "line_209",
         "parentid": "line_207",
-        "topic": "L = \u2211n(y^n-(b+\u2211w_i*x_i))^2",
+        "topic": "L = \u2211n(y^n-(b+\u2211w_i*x_i^n))^2",
         "background-color": "#d41dea",
         "expanded": false
     },
