@@ -1,0 +1,38 @@
+Logistic Regression
+    Step 1: function set
+        we want to find P_w,b(C1|x)
+        if P_w,b(C1|x) >=0.5
+            output C1
+        otherwise
+            output C2
+        P_w,b(C1|x) = σ(z)
+            σ(z) = 1/(1+exp(-z))
+            z = w*x+b = Σ_i(w_i*x_i) + b
+        function set:
+            f_w,b(x) = P_w,b(C1|x)
+                including all differenct w and b
+            由x_i,w_i,b取得z
+            sigmoid function
+                σ(z) 取得 P_w,b(C1|x)
+            這些是logistic regression
+            因為function有經過sigmoid所以一定介於0~1之間
+    step 2: goodness of function
+        Training data
+            x^1=>C_1
+            x^2=>C_1
+            x^3=>C_2
+            ...
+            x^N=>C_1
+            assume the data is generated base on f_w,b(x) = P_w,b(C1|x)
+            Given a set of w and b, what is its probability of generating the data?
+            L(w,b) = f_w,b(x^1)*f_w,b(x^2)(1-f_w,b(x^3))...f_w,b(x^N)
+            the mose likely w* and b* is the one 
+    logistic regression vs linear regression
+        step1:
+            logistic regression
+                output: between 0 and 1
+            linear regression
+                output: any value
+        step2:
+            goodness of function
+        step3:
