@@ -27,12 +27,246 @@ Logistic Regression
             Given a set of w and b, what is its probability of generating the data?
             L(w,b) = f_w,b(x^1)*f_w,b(x^2)(1-f_w,b(x^3))...f_w,b(x^N)
             the mose likely w* and b* is the one 
+            w*,b* = arg max_w,b L(w,b)
+                = arg min_w,b -ln(L(w,b))
+                讓計算變得容易
+                -ln(L(w,b))
+                = -ln(f_w,b(x^1)) -ln(f_w,b(x^2)) -ln(1-f_w,b(x^3)) ...  -ln(f_w,b(x^n))
+                    x^3是class2
+                y^n: 1 for class 1, 0 for class 2
+                = -[y^1ln(f(x^1))+(1-y^1)ln(1-f(x^1))]  -[y^1ln(f(x^2))+(1-y^2)ln(1-f(x^2))] -[y^1ln(f(x^3))+(1-y^3)ln(1-f(x^3))] ...
+                = Σ_n -[y^nln(f(x^n))+(1-y^n)ln(1-f(x^n))]
+                    cross entropy between two bernoulli distribution
+                        distribution p:
+                            p(x=1) = y^n
+                            p(x=0) = 1-y^n
+                        distribution q
+                            q(x=1) = f(x^n)
+                            q(x=0) = 1-f(x^n)
+                        cross entropy
+                            H(p,q) = -Σp(x)ln(q(x))
+                            這兩個distribuion有多接近
+                            接近 = 0                            
+    setp 3: find the best function
+        -ln(L(w,b)) = Σ_n(-[y^nln(f(x^n))+(1-y^n)ln(1-f(x^n))])
+        -ln(L(w,b)) / ∂w_i = 
+            Σ_n(-[y^nln(f(x^n))/∂w_i +(1-y^n)ln(1-f(x^n)/∂w_i)])
+            f_w,b(x) = σ(z)
+            z = w*b+b = Σw_i*x_i + b
+            ∂lnf_w,b(x)/∂w^i = ∂lnf_w,b(x)/∂z* ∂z/∂w_i
+            ∂z/∂w_i = xi
+            ∂lnσ(z)/∂z = 1/σ(z) * ∂σ(z)/σz = 1/σ(z)*σ(z)(1-σ(z)) = 1-σ(z)
+        -ln(L(w,b)) / ∂w_i = 
+            Σ_n(-[y^n(1-f(_w,b(x^n))-(1-y^n)f_w,b(x^n)*x_i^n])
+            =  Σ_n(-(y^n - f_w,b(x^n))*x_i^n)
+        wi <- wi- η Σ_n(-(y^n - f_w,b(x^n))*x_i^n)
+            y^n-f_w,b(x^n)
+                larger difference, larger update
+            η
+                learning rate
+            x_i^n
+                training data
+
     logistic regression vs linear regression
         step1:
             logistic regression
                 output: between 0 and 1
             linear regression
                 output: any value
-        step2:
-            goodness of function
+        step2:            
+            logistic regression
+                Training data:(x^n,y^^n)
+                y^^n: 1 for class 1, 0 for class 2
+                L(f) = Σ_n C(f(x^n),y^^n)
+                loss = cross entropy的總和
+                -[y^nln(f(x^n))+(1-y^n)ln(1-f(x^n))]
+                function的target跟output兩個distribution越接近越好                
+            linear regression
+                Training data:(x^n,y^^n)
+                y^n: a real number
+                L(f) = 1/2 Σ_n(f(x^n)-(y^^n))^2 
+                target跟output差的平方和平均(MSE)
         step3:
+            logistic regression
+                wi <- wi- η Σ_n(-(y^n - f_w,b(x^n))*x_i^n)
+            linear regression           
+                wi <- wi- η Σ_n(-(y^n - f_w,b(x^n))*x_i^n)
+            same
+            update方式是一樣的
+    Logistic regression + square error
+        step1:
+            f_w,b(x) = σ(Σ_i(x_i*x_i)+b)
+        step2
+            training data:(x^n,y^^n)
+                y^^n:1 for class1,0 for class2
+            L(f) = 1/2 Σ_n(f_w,b(x^n)-y^^n)^2
+        step3
+            ∂(f_w,b(x)-y^)^2/∂w_i
+            = 2(f_w,b(x)-y^)*∂f_w,b(x)/∂z*∂z/∂w_i
+            = 2(f_w,b(x)-y^)f_w,b(x)(1-f_w,b(x))x_i
+            y^n = 1,
+                f_w,b(x^n)=1
+                    close to target
+                        ∂L/∂w_i =0
+                        合理
+                f_w,b(x^n)=0
+                    far from target
+                        ∂L/∂w_i =0
+                        這是有問題的
+    cross entropy vs square error
+        total loss與參數的變化
+            cross entropy
+                距離目標越遠微分就越大
+                    合理
+            square error
+                距離近
+                    微分小
+                距離遠
+                    微分小
+                    移動非常慢
+                    一開始可能就卡住了
+                無法知道是近還是遠              
+    Discriminative vs Generative
+        logistic = Discriminative
+        gaussion = Generative
+        機率模型都一樣        
+            P(C_1|x) = σ(w*x+b)
+            directly find w and b
+            find μ^1,μ^2,Σ^-1
+                w^T = (μ^1-μ^2)^T*Σ^-1
+                b = -1/2(μ^1)^T*(Σ^1)^-1*μ^1 + 1/2(μ^2)^T*(Σ^2)^-1*μ^2 + ln(N1/N2)
+        找出來結果w,b不會相同
+        the model(function set),but differenct function is selectd by the same training data
+        不同假設找出來的參數不同
+            哪一個找出來的w,b會比較好?
+            water/normal pokemon in 7 features
+                Generative accuracy 73%
+                Discriminative accuracy 79%
+                Discriminative performance會比較好
+        example:
+            training data 7筆資料,2個feature
+                [1,1] => class1
+                [1,0]*4 => class2
+                [0,1]*4 => class2
+                [0,0]*4 => class2
+            testing data
+                [1,1] => class1
+                naive bayes?
+                    P(x|Ci) = P(x1|Ci)P(x2|Ci)
+                    class1? P(C1)1/13
+                        P(x1=1|C1) = 1
+                        P(x2=1|C1) = 1
+                    class2? P(C2)12/13
+                        P(x1=1|C2) = 1/3
+                        P(x2=1|C2) = 1/3
+                    [1,1]?
+                        P(C1|x) 
+                            = P(x|C1)*P(C1)/P[(x|C1)*P(C1)+P(x|C2)*P(C2)]
+                            = (1*1*1/13) / (1*1*1/13)*(1/3*1/3*12/13)
+                                <0.5
+                            跑到class2了
+                    generative有做了某些假設
+                        有些機率模型
+                        腦補了一些事情
+                        data明明沒有觀察到
+                            但是會被腦補
+                            會出現一些跟人類直覺不對的事情
+                                通常腦補結果都不大好
+                            不過當training data真的很少的時候
+                                腦補會取得更多的情報
+                        受data影響較小
+                            被預先假設影響比較大
+                            有可能會贏過discriminative
+                            data本身是noise
+                                有機會忽視調data的noise
+                        prior and class-dependent probabilites can be estimated form differenct sources
+                            語音辨識為例
+                                現在都用unet model是discriminative
+                                但整個語音辨識是一個generative的system
+                                DNN只是其中一塊
+                                因為他還是需要一個fine probabilites
+                                    每一句話被說出來的機率
+                                    estimated每一句話出來的機率不一定要真的有語音資料
+                                prior部分用文字處理
+                                    estimated更精確
+                                class-dependent用語音資料
+                    Discriminative model在training data太小的時候
+                        受到data影響會很大
+    Multi-class classification
+        Bishop, P209-210
+        C1:w^1,b^1 z_1=w^1*x+b_1
+        C2 w^2,b^2 z_2=w^2*x+b_2
+        C3 w^3,b^3 z_3=w^3*x+b_3
+        softmax:          
+            e^z_1,e^z_2,e^z_3
+            Σ_j=1^3 e^z_j
+            e^z_1/Σ_j = y^1
+            e^z_2/Σ_j = y^2
+            e^z_3/Σ_j = y^3
+            example: 
+                3,1,-3
+                => 20,2,7,0.05
+                => 0.88,0.12,≈0
+                probability:
+                    1>y_i>0
+                    Σ_i(y_j) = 1
+            對最大值強化
+        有興趣可以google
+            maximum entropy
+            另一個觀點解釋softmax
+        target:
+            y^_1,y^_2,y^_3
+        cross entropy:
+            -Σ_i=1^3(y^_i(lny_i))
+            if x ⊆ class1
+                y^ = [1,0,0]
+            if x ⊆ class2
+                y^ = [0,1,0]
+            if x ⊆ class3
+                y^ = [0,0,1]
+    Limitation of Logistic Regression
+        input features:
+            f(x1,x2)=label
+                f(0,0)=class2
+                f(0,1)=class1
+                f(1,0)=class1
+                f(1,1)=class2
+            x_1*w_1+x_2*w_2+b = z => sigmod => y 
+            做不到
+                四個點一條直線切不開
+                    左上右下一類
+                    左下右上一類
+        如果還是堅持要用logistic regression
+            有一招feature transformation
+                原本features(x1,x2)訂的不好
+                找一個比較好的features set
+                     x_1',x_2'
+                     假設定義
+                        x_1': distance to [0,0]
+                        x_2': distance to [1,1]
+                        原本資料:
+                            f(0,0)=class2
+                                x_1' = 1
+                                x_2' = 1
+                            f(0,1)=class1
+                                x_1' = 0
+                                x_2' = √2
+                            f(1,0)=class1
+                                x_1' = √2
+                                x_2' = 0
+                            f(1,1)=class2        
+                                x_1' = 1
+                                x_2' = 1
+                not always easy to find a good transformation
+            是否能讓機器產生transformation
+                cascading logistic regression
+                    x_1*w_1+x_2*w_2=z1 z1 =>transformation => x_1'
+                    x_1*w_3+x_2*w_4=z2 z2 =>transformation => x_2'
+                    於新的transformation後的x_1'與x_2'是可以切開時
+                        就將x_1'*w_5+x_2'*w_6 = z => transformation => y
+                        可以把class1,class2分開
+                    產生x_1',x_2'就是在做feature transformation
+                    後面才做classification做分類
+                每一個z公式就是一個nerous
+                串接起來就是nervous network
+                形成deep learning

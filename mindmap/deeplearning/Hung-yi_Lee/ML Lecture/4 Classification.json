@@ -1,0 +1,2069 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Classification"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Probabilistic Generative Model",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "root",
+        "topic": "input(x)=> model => class n",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_3",
+        "parentid": "root",
+        "topic": "example:",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "Credit Scoring",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "Input:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "income,savings,profession,age,past finanical history ...",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_4",
+        "topic": "Output:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "accept or refuse",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_3",
+        "topic": "Medical Diagnosis",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "Input:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "current symptons,age,gender,past medical history...",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_9",
+        "topic": "Output:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "which kind of diseases",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_3",
+        "topic": "Handwritten character recognition",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "Input:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "handwritten image",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_14",
+        "topic": "Output:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "word",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_3",
+        "topic": "Face recognition",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "Input:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "image of a face",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_19",
+        "topic": "Output:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "person",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "root",
+        "topic": "Example Application:",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "Pokemon type symbols",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "18\u7a2e\u5c6c\u6027",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_24",
+        "topic": "f(\u67d0\u4e00\u96bb\u5bf6\u53ef\u5922) => \u5c6c\u65bc\u54ea\u4e00\u7a2e\u5c6c\u6027",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_24",
+        "topic": "f(\u76ae\u5361\u4e18)=>\u96f7",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_24",
+        "topic": "f(\u5091\u5c3c\u9f9c)=>\u6c34",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_24",
+        "topic": "f(\u5999\u86d9\u8349)=>\u8349",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_24",
+        "topic": "\u600e\u9ebc\u5bf6\u53ef\u5922\u6578\u503c\u5316\u7576input",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "total:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "sum of all stats that come after this, general guide to how strong a pokemon is",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_31",
+        "topic": "HP:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "hit point, or health, defines how much damage a pokemon can withstand before fainting",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_31",
+        "topic": "Attack:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "the base modifier for noraml attack (e.g. scrath,punch)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_31",
+        "topic": "Defense:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_38",
+        "topic": "this base damage resistence against normal attacks",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_31",
+        "topic": "SP Atk:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "special attack, the base modifier for special attack(e.g. fire blast,bubble beam)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_31",
+        "topic": "SP Def:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "the base damage resistence against special attacks",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_31",
+        "topic": "Speed:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "determines which pokemon attacks first each round",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_31",
+        "topic": "ex:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_46",
+        "topic": "\u76ae\u5361\u4e18",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "total",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_48",
+        "topic": "320",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_47",
+        "topic": "HP",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "35",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_47",
+        "topic": "Attack",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "55",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_47",
+        "topic": "Defense",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "40",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_47",
+        "topic": "SP Atk",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_56",
+        "topic": "50",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_47",
+        "topic": "SP Def",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "50",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_47",
+        "topic": "Speed",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_60",
+        "topic": "90",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_47",
+        "topic": "\u4e03\u500b\u6578\u5b57\u7d44\u6210vector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_46",
+        "topic": "\u6211\u5011\u80fd\u4e0d\u80fd\u7528\u4e03\u500b\u6578\u5b57\u8f38\u5165\u4e00\u500bfunction",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_24",
+        "topic": "How to Classification",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "training data for Classification",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_65",
+        "topic": "\u76ae\u5361\u4e18",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "(x^1,y^1)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_65",
+        "topic": "\u5091\u5c3c\u9f9c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "(x^2,y^2)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_65",
+        "topic": "\u5999\u82b1\u8349",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_70",
+        "topic": "(x^n,y^n)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_64",
+        "topic": "Classification as regression?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_72",
+        "topic": "binary classification as example",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_73",
+        "topic": "training: class1 means the target is 1; class2 means the target is -1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_73",
+        "topic": "testing: closer to 1 -> class1 , closer to -1 -> class2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_73",
+        "topic": "\u6703\u9047\u5230\u554f\u984c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_76",
+        "topic": "y = b+ w_1*x_1 + w_2*x_2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_76",
+        "topic": "\u5206\u5169\u7fa4class\u4e2d\u9593\u5207\u958b",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_76",
+        "topic": "\u4f46\u662f\u7576\u6709sample\u9060\u96e2\u5207\u958b\u7684\u5206\u9694\u7dda\u6642 >> 1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_79",
+        "topic": "\u53cd\u800c\u6703\u88ab\u671f\u671b=1\u9020\u6210\u592a\u5927\u4e0d\u884c",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_80",
+        "topic": "\u5f9eregression\u4f86\u770b\u8b8a\u6210error",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_80",
+        "topic": "\u53cd\u800c\u6703\u56e0\u70ba>>1\u7684sample\u9020\u6210mean\u504f\u79fb\u904e\u53bb",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_80",
+        "topic": "\u70ba\u4e86decrease error",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_80",
+        "topic": "regression\u6703\u61f2\u7f70\u592a\u6b63\u78ba\u7684examples",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_73",
+        "topic": "regression\u7684\u65b9\u5f0f\u5c0d\u65bcclassification\u4f86\u8aaa\u4e26\u4e0d\u662f\u9019\u9ebc\u9069\u7528",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_72",
+        "topic": "multiple class:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_86",
+        "topic": "class1 means the target is 1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_86",
+        "topic": "class2 means the target is 2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_86",
+        "topic": "class3 means the target is 3",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_86",
+        "topic": "problematic",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "class1\u8ddfclass2\u6bd4\u8f03\u8fd1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_90",
+        "topic": "class2\u8ddfclass3\u6bd4\u8f03\u8fd1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_90",
+        "topic": "\u5982\u679c\u9019\u500b\u95dc\u4fc2\u4e0d\u5b58\u5728",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_64",
+        "topic": "ideal alternatives",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_94",
+        "topic": "Function(model):",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_95",
+        "topic": "x=> f(x) =>",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_96",
+        "topic": "g(x)>0 output class1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_96",
+        "topic": "else output class2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_95",
+        "topic": "\u7121\u6cd5\u5fae\u5206",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_94",
+        "topic": "Loss function:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_100",
+        "topic": "L(f) = \u2211_n \u2202(f(x^n)\u2260y^^n)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_100",
+        "topic": "the number of times f get incorrect results on training data",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_100",
+        "topic": "\u7121\u6cd5\u5fae\u5206",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_94",
+        "topic": "Find the best function:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_104",
+        "topic": "Example: perceptron, SVM",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_104",
+        "topic": "\u5148\u7528\u6a5f\u7387\u7684\u65b9\u5f0f\u89e3",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_24",
+        "topic": "Two boxes",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_107",
+        "topic": "Box1",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_108",
+        "topic": "4 Blue Ball,1 Green Ball",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_107",
+        "topic": "Box2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_110",
+        "topic": "2 Blue Ball,3 Green Ball",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_107",
+        "topic": "Blue Ball from one of boxes",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_107",
+        "topic": "where does it come from",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_113",
+        "topic": "P(Box1) = 2/3",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_113",
+        "topic": "P(Box2) = 1/3",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_113",
+        "topic": "P(Blue|Box1) = 4/5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_113",
+        "topic": "P(Green|Box1) = 1/5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_113",
+        "topic": "P(Blue|Box2) = 2/5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_113",
+        "topic": "P(Green|Box2) = 3/5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_113",
+        "topic": "P(Box1|Blue) = P(Blue1|Box1)P(Box11) / ( P(Blue|Box1)P(Box1) + P(Blue|Box2)P(Box2) )",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_24",
+        "topic": "Two classes",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_121",
+        "topic": "P(C1)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_121",
+        "topic": "P(C2)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_121",
+        "topic": "P(x|C1)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_121",
+        "topic": "P(x|C2)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_121",
+        "topic": "Given an x, which class does it belong to",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_126",
+        "topic": "P(C1|x)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_127",
+        "topic": "P(x|C1)P(C1) / ( P(x|C1)P(C1) + P(x|C2)P(C2) )",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_126",
+        "topic": "\u77e5\u9053P(C1|x)\u5c31\u53ef\u4ee5\u77e5\u9053\u7b54\u6848",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_129",
+        "topic": "\u4f46\u8981\u77e5\u9053\u5fc5\u9808\u8981\u4e0b\u5217\u56db\u500b\u8b8a\u6578\u90fd\u7b97\u51fa\u4f86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_130",
+        "topic": "P(C1)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_130",
+        "topic": "P(C2)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_130",
+        "topic": "P(x|C1)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_130",
+        "topic": "P(x|C2)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_121",
+        "topic": "this is Generative Model",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_135",
+        "topic": "P(x) = P(x|C1)P(C1) + P(x|C2)P(C2)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_135",
+        "topic": "\u53ef\u4ee5\u8a08\u7b97\u6bcf\u4e00\u500bx\u51fa\u73fe\u7684\u6a5f\u7387",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_121",
+        "topic": "Prior",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_138",
+        "topic": "\u6bd4\u8f03\u597d\u7b97",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_138",
+        "topic": "ex: type: water,normal",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_138",
+        "topic": "P(C1): water",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_138",
+        "topic": "P(C2): normal",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_138",
+        "topic": "water and normal type with ID <400 for training, rest for testing",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_138",
+        "topic": "Training: 79 water, 61 normal",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_138",
+        "topic": "P(C1) = 79/(79+61) = 0.56",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_138",
+        "topic": "P(C2) = 61/(79+61) = 0.44",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_121",
+        "topic": "Probability from class",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_147",
+        "topic": "P(x|C1) = ?",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_148",
+        "topic": "P(\u6d77\u9f9c|Water) = ?",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_148",
+        "topic": "Water type",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_150",
+        "topic": "\u5091\u5c3c\u9f9c,\u53ef\u9054\u9d28... 79 in total",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_147",
+        "topic": "each pokemon is represented as a vector by it's attribute",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_152",
+        "topic": "feature",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_147",
+        "topic": "consider defense and sp defense chart",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_154",
+        "topic": "79 pointer in chart",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_154",
+        "topic": "P(x|water) = ?",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_154",
+        "topic": "assume the points are samples from a gaussion distribution",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_154",
+        "topic": "gaussion distribution",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_158",
+        "topic": "f_\u03bc\u03a3(x) = 1/(2\u03c0)^(D/2) * 1/|\u03a3|^(1/2) * exp{ -1/2*(x-\u03bc)^T\u03a3(x-\u03bc) }",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_158",
+        "topic": "input: vector x",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_158",
+        "topic": "output: probability of sampling x",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_158",
+        "topic": "the shape of the function determines by mean \u03bc and convariance matrix \u03a3",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_162",
+        "topic": "ex1:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_163",
+        "topic": "\u03bc = [0,0]",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_163",
+        "topic": "\u03a3 = [[2,0],[0,2]]",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_162",
+        "topic": "ex2:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_166",
+        "topic": "\u03bc = [2,3]",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_166",
+        "topic": "\u03a3 = [[2,0],[0,2]]",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_154",
+        "topic": "\u627e\u51fa79\u500b\u9ede\u7684gaussion distribution",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_169",
+        "topic": "\u03bc = [75,71.3]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_169",
+        "topic": "\u03a3 = [[874,327],[327,929]]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_169",
+        "topic": "new X =",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_172",
+        "topic": "f_\u03bc\u03a3(x) = 1/(2\u03c0)^(D/2) * 1/|\u03a3|^(1/2) * exp{ -1/2*(x-\u03bc)^T\u03a3(x-\u03bc) }",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_172",
+        "topic": "\u7b97\u51fax\u5728gaussion distribution\u7684\u6a5f\u7387",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_154",
+        "topic": "\u5982\u4f55\u627e\u03bc,\u03a3",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_175",
+        "topic": "Maximum Likelihood",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_175",
+        "topic": "The Gaussion with any mean \u03bc and convariance martix \u03a3 can generate these points",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_177",
+        "topic": "but different likelihood",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_177",
+        "topic": "\u53ea\u8981\u6709\u03bc,\u03a3\u5c31\u53ef\u4ee5\u7d66\u4e8879\u500b\u9ede\u7b97\u51falikelihood",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_177",
+        "topic": "L(\u03bc,\u03a3) = f\u03bc\u03a3(x^1)f\u03bc\u03a3(x^2)...f\u03bc\u03a3(x^79)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_180",
+        "topic": "\u6bcf\u4e00\u500b\u9ede\u7684\u6a5f\u7387\u4e58\u8d77\u4f86",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_180",
+        "topic": "f_\u03bc\u03a3(x) = 1/(2\u03c0)^(D/2) * 1/|\u03a3|^(1/2) * exp{ -1/2*(x-\u03bc)^T\u03a3(x-\u03bc) }",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_177",
+        "topic": "\u518d\u4f86\u76ee\u6a19\u627e\u5230\u6700\u5927\u7684\u6a5f\u7387\u7684gaussion distribution \u03bc*,\u03a3*",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_183",
+        "topic": "\u03bc*,\u03a3* = arg max_\u03bc,\u03a3 L(\u03bc,\u03a3)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_183",
+        "topic": "\u03bc* = 1/79 \u03a3_n=1^79 x^n",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_183",
+        "topic": "\u03a3* = 1/79 \u03a3_n=1^79 (x^n-\u03bc*)(x^n-\u03bc*)^T",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_175",
+        "topic": "\u8a08\u7b9779\u96bbwater pokemon",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_187",
+        "topic": "class1",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_187",
+        "topic": "\u03bc^1 = [75.0,71.3]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_187",
+        "topic": "\u03a3^1 = [[874,327],[327,929]]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_191",
+        "parentid": "line_175",
+        "topic": "\u8a08\u7b9761\u96bbnormal pokemon",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_191",
+        "topic": "class2",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_191",
+        "topic": "\u03bc^1 = [55.6,59.8]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "line_191",
+        "topic": "\u03a3^1 = [[847,422],[422,685]]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_175",
+        "topic": "now we can do classification",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_195",
+        "topic": "P(C1|x) = P(x|C1)P(C1) / ( P(x|C1)P(C1) + P(x|C2)P(C2) )",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_197",
+        "parentid": "line_196",
+        "topic": "if P(C1|x) > 0.5",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_198",
+        "parentid": "line_197",
+        "topic": "class1",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_199",
+        "parentid": "line_196",
+        "topic": "P(C1)= 79/(79+61) = 0.56",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_200",
+        "parentid": "line_196",
+        "topic": "P(C2)= 61/(79+61) = 0.44",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_201",
+        "parentid": "line_196",
+        "topic": "f_\u03bc\u03a3(x) = 1/(2\u03c0)^(D/2) * 1/|\u03a3|^(1/2) * exp{ -1/2*(x-\u03bc)^T\u03a3(x-\u03bc) }",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_202",
+        "parentid": "line_201",
+        "topic": "P(x|C1)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_203",
+        "parentid": "line_202",
+        "topic": "\u03bc^1 = [75.0,71.3]",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_204",
+        "parentid": "line_202",
+        "topic": "\u03a3^1 = [[874,327],[327,929]]",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_205",
+        "parentid": "line_201",
+        "topic": "P(x|C2)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_206",
+        "parentid": "line_205",
+        "topic": "\u03bc^1 = [55.6,59.8]",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_207",
+        "parentid": "line_205",
+        "topic": "\u03a3^1 = [[847,422],[422,685]]",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_208",
+        "parentid": "line_196",
+        "topic": "testing data accuracy = 47%",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_209",
+        "parentid": "line_196",
+        "topic": "all(7 features):",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_210",
+        "parentid": "line_209",
+        "topic": "total,hp,sp,attack,defense,special attack,special defense,speed",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_211",
+        "parentid": "line_209",
+        "topic": "\u03bc^1,\u03bc^1: 7-dim vector",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_212",
+        "parentid": "line_209",
+        "topic": "\u03a3^1,\u03a3^2: 7x7 matrices",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_213",
+        "parentid": "line_212",
+        "topic": "testing data accuracy = 54%",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_214",
+        "parentid": "line_196",
+        "topic": "\u9019\u624b\u6cd5\u6bd4\u8f03\u5c11\u898b",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_215",
+        "parentid": "line_214",
+        "topic": "\u56e0\u70ba\u03a3\u5404\u81ea\u6709\u4e00\u7d44",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_216",
+        "parentid": "line_215",
+        "topic": "\u53c3\u6578\u591aconvariance\u5c31\u5927",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_217",
+        "parentid": "line_216",
+        "topic": "\u904b\u7b97\u91cf\u592a\u5927",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_218",
+        "parentid": "line_215",
+        "topic": "\u5f88\u5bb9\u6613overfitting",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_219",
+        "parentid": "line_214",
+        "topic": "\u6bd4\u8f03\u5e38\u898b\u7684\u662fshare\u5171\u540c\u7684\u03a3",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_220",
+        "parentid": "line_196",
+        "topic": "modify model",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_221",
+        "parentid": "line_220",
+        "topic": "\u6545\u610f\u7d66\u7528\u540c\u7684convariance",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_222",
+        "parentid": "line_221",
+        "topic": "\u8f03\u5c11\u7684\u904b\u7b97\u91cf",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_223",
+        "parentid": "line_220",
+        "topic": "water pokemon",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_224",
+        "parentid": "line_223",
+        "topic": "x^1~x^79",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_225",
+        "parentid": "line_223",
+        "topic": "\u03bc^1",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_226",
+        "parentid": "line_223",
+        "topic": "\u03a3",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_227",
+        "parentid": "line_220",
+        "topic": "normal pokemon",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_228",
+        "parentid": "line_227",
+        "topic": "x^80~x^140",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_229",
+        "parentid": "line_227",
+        "topic": "\u03bc^2",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_230",
+        "parentid": "line_227",
+        "topic": "\u03a3",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_231",
+        "parentid": "line_220",
+        "topic": "find \u03bc^1,\u03bc^2,\u03a3 maximum the likelihood",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_232",
+        "parentid": "line_231",
+        "topic": "L(\u03bc^1,\u03bc^2,\u03a3)",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_233",
+        "parentid": "line_232",
+        "topic": "f_\u03bc^1,\u03a3(x^1) * f_\u03bc^1,\u03a3(x^2) ... * f_\u03bc^1,\u03a3(x^79) * f_\u03bc^2,\u03a3(x^80) * f_\u03bc^2,\u03a3(x^2) ... * f_\u03bc^2,\u03a3(x^180)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_234",
+        "parentid": "line_232",
+        "topic": "\u03bc^1 \u03bc^2 is the same",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_235",
+        "parentid": "line_232",
+        "topic": "new \u03a3 = 79/140\u03a3^1 + 61/140\u03a3^2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_236",
+        "parentid": "line_231",
+        "topic": "reference: Bishop chapter 4.2.2",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_237",
+        "parentid": "line_231",
+        "topic": "\u5171\u7528 convariance matrices\u5f8c",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_238",
+        "parentid": "line_237",
+        "topic": "\u539f\u672c\u5206\u9694class\u7684\u66f2\u7dda\u8b8a\u6210\u76f4\u7dda linear",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_239",
+        "parentid": "line_238",
+        "topic": "\u8b8a\u6210linear model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_240",
+        "parentid": "line_237",
+        "topic": "total features",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_241",
+        "parentid": "line_240",
+        "topic": "testing data accuracy = 54% -> 73%",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_242",
+        "parentid": "line_237",
+        "topic": "\u4e0d\u597d\u89e3\u91cb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_243",
+        "parentid": "line_242",
+        "topic": "\u591a\u7dad\u5ea6\u4e4b\u5f8c\u70ba\u4ec0\u9ebc\u6703\u5206\u51fa\u4f86",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_244",
+        "parentid": "root",
+        "topic": "Three steps",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_245",
+        "parentid": "line_244",
+        "topic": "Function Set(Model):",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_246",
+        "parentid": "line_245",
+        "topic": "x =>",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_247",
+        "parentid": "line_246",
+        "topic": "function",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_248",
+        "parentid": "line_247",
+        "topic": "P(C1|x) = P(x|C1)P(C1) / ( P(x|C1)P(C1) + P(x|C2)P(C2) )",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_249",
+        "parentid": "line_247",
+        "topic": "if P(C1|x)>0, output class1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_250",
+        "parentid": "line_247",
+        "topic": "otherwise, output class2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_251",
+        "parentid": "line_244",
+        "topic": "Goodness of function:",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_252",
+        "parentid": "line_251",
+        "topic": "The mean \u03bc and convariance \u03a3 that maximizing the likelihood ( the probability of generating data)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_253",
+        "parentid": "line_244",
+        "topic": "Find the best function: easy",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_254",
+        "parentid": "root",
+        "topic": "Probability Distribution",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_255",
+        "parentid": "line_254",
+        "topic": "You can always use the distribution you like",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_256",
+        "parentid": "line_254",
+        "topic": "\u9019\u90e8\u5206\u4e0d\u662f\u4eba\u5de5\u667a\u6167\u662f\u4eba\u7684\u667a\u6167",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_257",
+        "parentid": "line_254",
+        "topic": "\u9078\u64c7\u7684\u6a21\u578b\u6c7a\u5b9abias/variance\u4e4b\u9593\u504f\u5dee\u53bb\u8abf\u6574",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_258",
+        "parentid": "line_254",
+        "topic": "\u6709\u53e6\u4e00\u7a2e\u6a21\u578b",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_259",
+        "parentid": "line_258",
+        "topic": "P(C1|x) = P(C1|x_1) * P(C1|x_2) * ... *P(C1|x_k)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_260",
+        "parentid": "line_259",
+        "topic": "\u6bcf\u4e00\u500b\u90fd\u662f\u4e00\u7dad 1-D Gaussion",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_261",
+        "parentid": "line_260",
+        "topic": "\u53c3\u6578\u91cf\u6703\u66f4\u5c11",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_262",
+        "parentid": "line_261",
+        "topic": "\u5728\u5bf6\u53ef\u5922case\u6703\u58de\u6389",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_263",
+        "parentid": "line_262",
+        "topic": "feature\u4e4b\u9593\u6709\u6b63\u76f8\u95dc",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_264",
+        "parentid": "line_258",
+        "topic": "x=[x_1,x_2...,x_k]",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_265",
+        "parentid": "line_264",
+        "topic": "\u4f8b\u59827\u500bfeature",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_266",
+        "parentid": "line_264",
+        "topic": "\u6bcf\u500bfeature\u6a5f\u7387\u662findependent\u7684\u6642\u5019\u53ef\u4ee5\u9019\u6a23\u8a2d\u8a08",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_267",
+        "parentid": "line_254",
+        "topic": "for binary distribution, you may assume they are from Bernoulli distribution",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_268",
+        "parentid": "line_267",
+        "topic": "\u662f\u4e0d\u662f\u795e\u7378binary\u7684\u554f\u984c",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_269",
+        "parentid": "line_268",
+        "topic": "\u5c31\u4e0d\u9069\u5408\u7528 gaussion distribution",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_270",
+        "parentid": "line_268",
+        "topic": "\u53ef\u80fd\u662f\u4e00\u500bBernoulli distribution",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_271",
+        "parentid": "line_254",
+        "topic": "if you assume all the determines are independent",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_272",
+        "parentid": "line_271",
+        "topic": "you are using Naive Bayes Classifier",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_273",
+        "parentid": "root",
+        "topic": "Poseriror Probability",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_274",
+        "parentid": "line_273",
+        "topic": "P(C1|x) = P(x|C1)P(C1) / ( P(x|C1)P(C1) + P(x|C2)P(C2) )",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_275",
+        "parentid": "line_273",
+        "topic": "\u9664\u4ee5P(x|C1)P(C1)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_276",
+        "parentid": "line_275",
+        "topic": "1/ ( 1 + P(x|C1)P(C1)/P(x|C2)P(C2) )",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_277",
+        "parentid": "line_275",
+        "topic": "z = ln(P(x|C1)P(C1)/P(x|C2)P(C2))",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_278",
+        "parentid": "line_275",
+        "topic": "1/ 1+exp(-z)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_279",
+        "parentid": "line_275",
+        "topic": "= sigmoid function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_280",
+        "parentid": "root",
+        "topic": "warning of math",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_281",
+        "parentid": "line_280",
+        "topic": "P(C1|x) = \u03c3(z) sigmoid",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_282",
+        "parentid": "line_280",
+        "topic": "z = ln(P(x|C1)P(C1)/P(x|C2)P(C2))",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_283",
+        "parentid": "line_280",
+        "topic": "z = ln(P(x|C1)/P(x|C2))+ln((P(C2)/P(C1))",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_284",
+        "parentid": "line_280",
+        "topic": "P(C1)/P(C2) = N1/(N1+N2) / N2/(N1+N2) = N1/N2",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_285",
+        "parentid": "line_280",
+        "topic": "P(x|C1) = = 1/(2\u03c0)^(D/2) * 1/|\u03a3^1|^(1/2) * exp{ -1/2*(x-\u03bc)^T*(\u03a3^1)^-1(x-\u03bc^1) }",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_286",
+        "parentid": "line_280",
+        "topic": "P(x|C2) = = 1/(2\u03c0)^(D/2) * 1/|\u03a3^2|^(1/2) * exp{ -1/2*(x-\u03bc)^T*(\u03a3^2)^-1(x-\u03bc^2) }",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_287",
+        "parentid": "line_280",
+        "topic": "ln(P(x|C1)/P(x|C2)) = ln(|\u03a3^2|^(1/2)/|\u03a3^1|^(1/2)) - 1/2[((x-\u03bc)^T(\u03a3^1)^-1(x-\u03bc^1)-(x-\u03bc^2)^T(\u03a3^2)^-1(x-\u03bc^2))]",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_288",
+        "parentid": "line_280",
+        "topic": "\u03a3^2 = \u03a3^1 = \u03a3",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_289",
+        "parentid": "line_280",
+        "topic": "z = (\u03bc^1-\u03bc^2)^T*\u03a3^1*x - 1/2(\u03bc^1)^T(\u03a3^1)^-1*\u03bc^1 + 1/2(\u03bc^2)^T(\u03a3^2)^-1*\u03bc^2 + ln(N1/N2)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_290",
+        "parentid": "line_280",
+        "topic": "w^T = (\u03bc^1-\u03bc^2)^T*\u03a3^1*",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_291",
+        "parentid": "line_280",
+        "topic": "b = 1/2(\u03bc^1)^T(\u03a3^1)^-1*\u03bc^1 + 1/2(\u03bc^2)^T(\u03a3^2)^-1*\u03bc^2 + ln(N1/N2)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_292",
+        "parentid": "root",
+        "topic": "P(C1|x) = \u03c3(w*x+b)",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_293",
+        "parentid": "line_292",
+        "topic": "regression",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_294",
+        "parentid": "root",
+        "topic": "in generative model",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_295",
+        "parentid": "line_294",
+        "topic": "we estimate N1,N2,\u03bc1,\u03bc2,\u03a3",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_296",
+        "parentid": "line_294",
+        "topic": "how about direct find w and b",
+        "background-color": "#e82ad2",
+        "expanded": false
+    }
+]
