@@ -267,6 +267,6 @@ Logistic Regression
                         可以把class1,class2分開
                     產生x_1',x_2'就是在做feature transformation
                     後面才做classification做分類
-                每一個z公式就是一個nerous
-                串接起來就是nervous network
+                每一個z公式就是一個neuron
+                串接起來就是neural network
                 形成deep learning

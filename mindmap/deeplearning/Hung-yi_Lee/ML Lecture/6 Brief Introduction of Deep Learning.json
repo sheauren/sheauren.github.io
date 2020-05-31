@@ -1,0 +1,1322 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Brief Introduction of Deep Learning"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Deep learning attract lots of attention",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "I believe you have seen lots of exciting results before.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "root",
+        "topic": "Ups and downs of Deep Learning",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "1958: Preceptron (linear model)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "Frank Roseblatt",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_4",
+        "topic": "\u5f88\u50cflogistic regression",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_4",
+        "topic": "\u6c92\u6709sigmod\u90e8\u5206",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_3",
+        "topic": "1969: Preceptoron has limitation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "MIT",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_3",
+        "topic": "1980s: Multi-layer preceptron",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "Do not have significant differenct from DNN today",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_3",
+        "topic": "1986: Backpropagation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "Usually more than 3 hidden layer is not helpful",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "train\u4e0d\u51fa\u597d\u7d50\u679c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_12",
+        "topic": "Hiton",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_3",
+        "topic": "1989: 1 hidden layer is \"good enough\", why deep?",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_3",
+        "topic": "2006: RBM initialization (breakthougt)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "restricted boltzmann machine\u505ainitialization",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_3",
+        "topic": "2009: GPU",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_3",
+        "topic": "2011: Start to be popular in speech recognition",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_3",
+        "topic": "2012: win ILSVRC image competition",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "root",
+        "topic": "Three Step of Deep Learning",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "Step1: define a set of function",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "neural network",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_23",
+        "topic": "different connection leads to different network structures",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_23",
+        "topic": "network parameters \u03b8: all the weights and bias in the \"neurons\"",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_23",
+        "topic": "\u5982\u4f55\u5efa\u7acbnetwork - \u624b\u52d5\u5efa\u7acb",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "\u5e38\u898bnetwork",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "Fully Connect Feedforward Network",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "\u5168\u90e8\u5217\u51fa\u4f86\u9023\u8d77\u4f86",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_23",
+        "topic": "1\u500bneural network\u90fd\u77e5\u9053\u53c3\u6578\u503c\u6642",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "\u53ef\u4ee5\u60f3\u50cf\u662f\u4e00\u500bfunction",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "input: vector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_32",
+        "topic": "output: vector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_23",
+        "topic": "\u5982\u679c\u53c3\u6578\u503c\u9084\u6c92\u78ba\u5b9a",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "\u53ef\u4ee5\u60f3\u50cf\u662ffunction set",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_35",
+        "topic": "\u6bd4\u8f03\u5927\u7684function set",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_23",
+        "topic": "layer\u8aaa\u660e",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_38",
+        "topic": "\u7b2c\u4e00\u5c64: input layer",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_38",
+        "topic": "\u6700\u5f8c\u4e00\u5c64: output layer",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_38",
+        "topic": "\u4e2d\u9593n\u5c64: hidden layer",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_38",
+        "topic": "deep = many hidden layers",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "alexnet(2012)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "8 layers",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_43",
+        "topic": "error 16.4%",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_42",
+        "topic": "vgg(2014)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_46",
+        "topic": "19 layers",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_46",
+        "topic": "error 7.3%",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_42",
+        "topic": "googlenet(2014)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "22 layers",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_49",
+        "topic": "6.7%",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_42",
+        "topic": "residual network(2015)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "152 layers",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_52",
+        "topic": "3.57%",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_38",
+        "topic": "martrix operation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_55",
+        "topic": "w_1 = [[1,-2],[-1,2]]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_55",
+        "topic": "input_1 = [1,1]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_55",
+        "topic": "bias_1 = [1,0]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_55",
+        "topic": "input_1*w_1+bias_1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_59",
+        "topic": "= [[1,-2],[-1,2]] * [1,1] + [1,0]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_59",
+        "topic": "= [4,-2]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_55",
+        "topic": "activate funciton : sigmod",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "[4,-2] => [0.98,0.12]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_55",
+        "topic": "hidden layer1:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "weight matrix: w_1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_64",
+        "topic": "bais matrix: b_1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_55",
+        "topic": "hidden layer2:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_67",
+        "topic": "weight matrix: w_2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_67",
+        "topic": "bais matrix: b_2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_55",
+        "topic": "input matrix:x",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_55",
+        "topic": "output y:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "a1 = \u03c3(w_1*x+b_1)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_71",
+        "topic": "a2 = \u03c3(w_2*a1+b_2)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_71",
+        "topic": "...",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_71",
+        "topic": "y = \u03c3(w_L*aL-1+b_L)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_71",
+        "topic": "y = f(x) = \u4e0a\u8ff0\u4e32\u8d77\u4f86",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_55",
+        "topic": "\u77e9\u9663\u904b\u7b97\u512a\u9ede\u5c31\u662f\u53ef\u4ee5\u7528GPU\u52a0\u901f",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_55",
+        "topic": "\u5728output layer\u4e4b\u524d\u7684layer\u53ef\u4ee5\u770b\u6210feature extractor replace",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_55",
+        "topic": "feature engineering",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_55",
+        "topic": "output layer = multi-class classifier",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_80",
+        "topic": "\u7528\u524d\u4e00\u500blayer\u7684output\u7576feature",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_80",
+        "topic": "output layer\u6703\u52a0\u5165softmax function",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_22",
+        "topic": "Setp2: goodness of function",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_83",
+        "topic": "Loss for an Example",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_84",
+        "topic": "Given a set of parameters",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_84",
+        "topic": "target: label 1 => y^ = [1,0,0,0,0,0,0,0,0,0]",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_84",
+        "topic": "output: y = [y1,y2,...y10]",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_84",
+        "topic": "C(y,y^) = -\u03a3_i=1^10(y^lny_i)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_88",
+        "topic": "cross entropy",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_22",
+        "topic": "Setp3: pick the best function",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "total loss:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_91",
+        "topic": "L = \u03a3_n=1^N C^n",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_91",
+        "topic": "find a function in function set that minimum total loss L",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_91",
+        "topic": "find a network parameters \u03b8* that minimum total loss L",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_90",
+        "topic": "gradient descent",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_95",
+        "topic": "\u03b8 random initialization",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_95",
+        "topic": "compute \u2202L/\u2202w1 ... \u2202L/\u2202b1 ...",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_95",
+        "topic": "\u2207L = [\u2202L/\u2202w1...\u2202L/\u2202b1 ...]",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_98",
+        "topic": "gradient",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_98",
+        "topic": "update parameters",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_100",
+        "topic": "-\u03b7\u2202L/\u2202w1 ...",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_98",
+        "topic": "\u91cd\u8907\u66f4\u65b0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_95",
+        "topic": "\u5c31\u505a\u5b8cdeep learning\u7684training",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_103",
+        "topic": "even alpha go using this approach",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_95",
+        "topic": "Backpropagation:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_105",
+        "topic": "is an efficient way to compute \u2202L/\u2202w in nerual network",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_106",
+        "topic": "tensorflow",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_106",
+        "topic": "caffe",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_106",
+        "topic": "libdnn",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_106",
+        "topic": "theano",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_106",
+        "topic": "CNTK",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_106",
+        "topic": "mxnet",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_106",
+        "topic": "DASTNE",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_106",
+        "topic": "pytorch",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_22",
+        "topic": "deep learning is so simple...",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_115",
+        "topic": "\u5927\u8c61\u653e\u9032\u51b0\u7bb1",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "root",
+        "topic": "Example Application",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_117",
+        "topic": "Input -> image",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_118",
+        "topic": "16x16=256 pixel",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_118",
+        "topic": "x1...x256",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_118",
+        "topic": "\u5167\u5bb9:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_121",
+        "topic": "no ink:0",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_121",
+        "topic": "ink:1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_117",
+        "topic": "Output -> \u6578\u5b57",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_124",
+        "topic": "y1 is 1",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_124",
+        "topic": "y2 is 2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_124",
+        "topic": "y10 is 0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_124",
+        "topic": "\u8f38\u51fa\u6bcf\u500b\u7684\u6a5f\u7387",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_124",
+        "topic": "Each dimension represents the confidence of a digit",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_117",
+        "topic": "function:",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_130",
+        "topic": "neural network",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_130",
+        "topic": "inptut:256",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_130",
+        "topic": "output:10\u5c0d\u61c9\u5230\u6578\u5b57",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_130",
+        "topic": "a function set containing the candidates for Handwriting Digital Recognition",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_130",
+        "topic": "\u7528gradient descent\u627e\u4e00\u500b\u6700\u9069\u5408\u53c3\u6578\u505a\u624b\u5beb\u8fa8\u8b58\u7684function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_130",
+        "topic": "You need to decide the network structure to let a good function in your function set.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_136",
+        "topic": "input/output\u4f9d\u7167\u9700\u6c42\u9650\u5236\u4e86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_136",
+        "topic": "hidden layer\u8981\u591a\u5c11\u6c92\u6709\u9650\u5236\u4e86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_138",
+        "topic": "\u53ef\u4ee5\u81ea\u5df1\u8a2d\u8a08",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_138",
+        "topic": "\u81ea\u5df1\u6c7a\u5b9a\u8981\u591a\u5c11\u500bneurons",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_138",
+        "topic": "\u6c7a\u5b9a\u5dee\u7684function set",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_141",
+        "topic": "\u5927\u6d77\u6488\u91dd\u91dd\u4e0d\u5728\u6d77\u88e1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_138",
+        "topic": "\u6c7a\u5b9a\u597d\u7684function set\u6703\u5f88\u95dc\u9375",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_130",
+        "topic": "FAQ",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_144",
+        "topic": "Q: How many layers? Home many neurons for each layer?",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_145",
+        "topic": "Trial and Error + Intuition",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_145",
+        "topic": "\u6c92\u90a3\u9ebc\u5bb9\u6613",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_145",
+        "topic": "\u6709\u6642\u5019\u9700\u8981\u4e00\u4e9bdomain knowlege",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_145",
+        "topic": "\u5f9e\u4ee5\u524d\u627efeature transformer\u8b8a\u6210\u627enetwork structure",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_145",
+        "topic": "\u8a9e\u97f3\u8fa8\u8b58\u4f86\u8aaa",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_150",
+        "topic": "design network structure\u6bd4feature transformer\u5bb9\u6613",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_150",
+        "topic": "\u8981\u62bd\u4e00\u7d44\u597d\u7684feature\u5df2\u7d93\u592a\u6f5b\u610f\u8b58\u4e0d\u597d\u62bd\u7d66machine\u4f7f\u7528",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_145",
+        "topic": "\u5f71\u50cf\u4e5f\u6709\u985e\u4f3c\u8a9e\u97f3\u8fa8\u8b58\u7684\u72c0\u6cc1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_145",
+        "topic": "\u8a9e\u97f3\u8ddf\u5f71\u50cf\u662f\u6700\u65e9\u958b\u59cb\u7528deep learning",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_145",
+        "topic": "\u5176\u4ed6test\u4f86\u8aaa\u5c31case by case",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_145",
+        "topic": "deep learning\u65bcNLP\u4e0aperformance\u4e0d\u662f\u90a3\u9ebc\u597d",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_145",
+        "topic": "NLP\u9032\u6b65\u91cf\u6c92\u90a3\u9ebc\u591a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_157",
+        "topic": "\u6709\u4eba\u5728\u8aaadeep learning\u4e0d\u9069\u5408NLP",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_157",
+        "topic": "\u6587\u5b57\u8655\u7406\u4f86\u8aaa\u4eba\u662f\u6bd4\u8f03\u5f37\u7684",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_157",
+        "topic": "\u4eba\u53ef\u4ee5\u5f88\u8f15\u9b06\u8a2d\u8a08rule",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_157",
+        "topic": "\u9577\u4e45\u800c\u8a00\u6587\u5b57\u8655\u7406\u4e5f\u662f\u5f88\u56f0\u96e3\u7684",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_161",
+        "topic": "\u6162\u6162\u6703\u4f54\u5230\u512a\u52e2",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_162",
+        "topic": "\u53ea\u662f\u521d\u671f\u6c92\u90a3\u9ebc\u5feb",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_144",
+        "topic": "Q: Can the structure be automatically determined?",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_164",
+        "topic": "E.g. Evolutionary Artifical Neural Network",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_164",
+        "topic": "\u76ee\u524d\u9084\u6c92\u975e\u5e38\u666e\u53ca",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_164",
+        "topic": "\u9a5a\u4eba\u61c9\u7528\u90fd\u9084\u4e0d\u662f\u7528\u9019\u65b9\u6cd5",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_144",
+        "topic": "Q: Can we design the network strucure?",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_168",
+        "topic": "Convolutional Neural Network (CNN)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "root",
+        "topic": "deeper is better?",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_170",
+        "topic": "Layer X size=>word error rate(%)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_170",
+        "topic": "1x2K=>24.2%",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_170",
+        "topic": "2x2K=>20.4%",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_170",
+        "topic": "3x2K=>18.4%",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_170",
+        "topic": "4x2K=>17.8%",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_170",
+        "topic": "5x2K=>17.2%",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_170",
+        "topic": "7x2K=>17.1%",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_170",
+        "topic": "Not surprised, more parameters, better performance",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "root",
+        "topic": "Universality Theorem",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_179",
+        "topic": "Any continuous function f",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_180",
+        "topic": "f: R^N -> R^M",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_179",
+        "topic": "Can be realized by network with one hidden layer",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_179",
+        "topic": "(given enough hidden neurons)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "root",
+        "topic": "why \"Deep\" nerual network not \"Fat\" nerual network?",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_184",
+        "topic": "to be continue",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "root",
+        "topic": "other Course",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_186",
+        "topic": "machine learning and having it deep and structured",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_186",
+        "topic": "nerual network and deep learning",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_186",
+        "topic": "deep learning",
+        "background-color": "#e82ad2",
+        "expanded": false
+    }
+]
