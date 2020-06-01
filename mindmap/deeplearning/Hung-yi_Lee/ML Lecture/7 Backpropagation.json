@@ -1,0 +1,611 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Backpropagation"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Gradient Descent",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "Network parameter \u03b8 = {w1,w2...,b1,b2...}",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "Start parameter \u03b8^0",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "compute \u2207L(\u03b8^0)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "= [\u2202L(\u03b8)/\u2202w1,\u2202L(\u03b8)/\u2202w2...,\u2202L(\u03b8)/\u2202b1,\u2202L(\u03b8)/\u2202b2...]",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_4",
+        "topic": "\u03b8^1 = \u03b8^0 - \u03b7\u2207L(\u03b8^0)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_3",
+        "topic": "\u91cd\u8907\u8a08\u7b97",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_1",
+        "topic": "Nerual Network has Millions of parameter ...",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "Million vector",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_1",
+        "topic": "to compute the gradient efficiently",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "we use backpropagation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "root",
+        "topic": "a efficiently algorithm for Gradient Descent",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_13",
+        "parentid": "root",
+        "topic": "Chain Rule",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "case 1 y=g(x) z=h(y)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "\u0394x -> \u0394y -> \u0394z",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_14",
+        "topic": "dz/dx = dz/dy * dy/dz",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_13",
+        "topic": "case 2 x=g(s) y=h(x) z=k(x,y)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "\u0394s -> \u0394x,\u0394y -> \u0394z",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_17",
+        "topic": "dz/dz = \u2202z/\u2202x*dx/ds + \u2202z/\u2202y*dy/ds",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "root",
+        "topic": "Backpropagation",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "x^n=>NN(\u03b8)=>y^n <- C^n -> y^^n",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_20",
+        "topic": "L(\u03b8) = \u03a3_n=1^N C^n(\u03b8)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_20",
+        "topic": "\u2202L(\u03b8)/\u2202w = \u03a3_n=1^N \u2202C^n(\u03b8)/\u2202w",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_20",
+        "topic": "\u5148\u8003\u616e\u4e00\u500bneural",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_20",
+        "topic": "z = x1*w1+x2*w2+b",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_20",
+        "topic": "\u2202C/\u2202w = ? \u2202z/\u2202w*\u2202C/\u2202z",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_20",
+        "topic": "\u2202z/\u2202w = forward pass",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "compute \u2202z/\u2202w for all parameters",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_27",
+        "topic": "\u2202z/\u2202w1 = ?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "z = x1*w1+x2*w2+b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_29",
+        "topic": "x1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_27",
+        "topic": "\u2202z/\u2202w2 = ?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "z = x1*w1+x2*w2+b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_32",
+        "topic": "x2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_27",
+        "topic": "the value of the input connected by the weight",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_20",
+        "topic": "\u2202C/\u2202z = backward pass",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "compute \u2202C/\u2202z for all activation function input z",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_36",
+        "topic": "activation function : a = \u03c3(z)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_36",
+        "topic": "Nerual Output = a",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_36",
+        "topic": "output * w3 , w4 => z',z\"",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_36",
+        "topic": "\u2202C/\u2202z = \u2202a/\u2202z*\u2202C/\u2202a",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_36",
+        "topic": "\u2202z = sigmod function \u5fae\u5206 => \u2202\u2018(z)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_36",
+        "topic": "\u2202C/\u2202a = \u2202z'/\u2202a*\u2202C/\u2202z' + \u2202z\"/\u2202a*\u2202C/\u2202z\" (chain rule)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_36",
+        "topic": "\u2202z'/\u2202a = w3",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_36",
+        "topic": "\u2202z\"/\u2202a = w4",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_36",
+        "topic": "\u2202C/\u2202z' = ?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_36",
+        "topic": "\u2202C/az\" = ?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_36",
+        "topic": "Assume \u5df2\u77e5\u503c\u2202z',\u2202z\"",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_36",
+        "topic": "\u2202C/\u2202z = \u03c3'(z)[w3*\u2202C/\u2202z'+w4*\u2202C/\u2202z\"]",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_36",
+        "topic": "\u60f3\u50cf\u6709\u53e6\u4e00\u500bnerual\u53cd\u5411",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "w3*\u2202C/\u2202z'\u662f\u4e00\u500binput",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_50",
+        "topic": "w4*\u2202C/\u2202z\"\u662f\u4e00\u500binput",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_50",
+        "topic": "\u03c3' activation function",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_50",
+        "topic": "output: \u2202C/\u2202z",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_36",
+        "topic": "\u03c3'(z) is a constant because z is already determined in the forward pass.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_36",
+        "topic": "\u6700\u5f8c\u5982\u4f55\u7b97",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_56",
+        "topic": "\u2202C/\u2202z'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_56",
+        "topic": "\u2202C/\u2202z\"",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_56",
+        "topic": "case 1. output layer y1,y2 = network output",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_59",
+        "topic": "\u2202C/\u2202z' = \u2202y1/\u2202z'*\u2202C/\u2202y1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_59",
+        "topic": "\u2202C/\u2202z\" = \u2202y1/\u2202z\"*\u2202C/\u2202y1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_59",
+        "topic": "\u2202C crossentropy",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_56",
+        "topic": "case 2. not output layer",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "za,zb ...",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_63",
+        "topic": "\u2202C/\u2202za\u5047\u8a2d\u77e5\u9053",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_63",
+        "topic": "\u2202C/\u2202zb\u5047\u8a2d\u77e5\u9053",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_63",
+        "topic": "\u5c31\u80fd\u8a08\u7b97",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_63",
+        "topic": "\u8981\u600e\u9ebc\u77e5\u9053\u5c31\u5728\u5f80\u4e0b\u63a8\u8ad6\u4e0b\u4e00layer",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_63",
+        "topic": "until we reach the output layer",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_56",
+        "topic": "\u5f9eoutput layer",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_70",
+        "topic": "compute \u2202C/\u2202z for all activation function input z",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_70",
+        "topic": "\u985e\u4f3c\u65bcforward pass\u8a08\u7b97",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_70",
+        "topic": "compute \u2202C/\u2202z from the output layer",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_70",
+        "topic": "last layer",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_74",
+        "topic": "z5,z6",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_75",
+        "topic": "\u2202C/\u2202z5,\u2202C/\u2202z6",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_74",
+        "topic": "z3,z4",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_77",
+        "topic": "...",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_74",
+        "topic": "z1,z2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_79",
+        "topic": "...",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "root",
+        "topic": "summary",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_81",
+        "topic": "forward pass",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_82",
+        "topic": "\u2202z/\u2202w = a",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_81",
+        "topic": "backward pass",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_84",
+        "topic": "\u2202C/\u2202z",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_81",
+        "topic": "\u5169\u500b\u4e58\u8d77\u4f86\u5c31\u77e5\u9053\u504f\u5fae\u5206\u503c",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_81",
+        "topic": "\u2202C/\u2202w",
+        "background-color": "#e82ad2",
+        "expanded": false
+    }
+]

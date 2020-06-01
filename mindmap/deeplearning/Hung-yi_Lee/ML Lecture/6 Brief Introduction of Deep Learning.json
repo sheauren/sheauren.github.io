@@ -1307,13 +1307,41 @@
     },
     {
         "id": "line_188",
+        "parentid": "line_187",
+        "topic": "http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLSD15_2.html",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_187",
+        "topic": "6 hour version",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_189",
+        "topic": "http://www.slideshare.net/tw_dsconf/ss-62245351",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_191",
         "parentid": "line_186",
         "topic": "nerual network and deep learning",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_189",
+        "id": "line_192",
+        "parentid": "line_191",
+        "topic": "http://neuralnetworksanddeeplearning.com/",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
         "parentid": "line_186",
         "topic": "deep learning",
         "background-color": "#e82ad2",

@@ -1,0 +1,88 @@
+Backpropagation
+    Gradient Descent
+        Network parameter θ = {w1,w2...,b1,b2...}
+        Start parameter θ^0
+            compute ∇L(θ^0)
+                = [∂L(θ)/∂w1,∂L(θ)/∂w2...,∂L(θ)/∂b1,∂L(θ)/∂b2...]
+                θ^1 = θ^0 - η∇L(θ^0)
+            重複計算
+        Nerual Network has Millions of parameter ...
+            Million vector
+        to compute the gradient efficiently
+            we use backpropagation
+    a efficiently algorithm for Gradient Descent
+    Chain Rule
+        case 1 y=g(x) z=h(y)
+            Δx -> Δy -> Δz
+            dz/dx = dz/dy * dy/dz
+        case 2 x=g(s) y=h(x) z=k(x,y)
+            Δs -> Δx,Δy -> Δz
+            dz/dz = ∂z/∂x*dx/ds + ∂z/∂y*dy/ds
+    Backpropagation
+        x^n=>NN(θ)=>y^n <- C^n -> y^^n
+        L(θ) = Σ_n=1^N C^n(θ)
+        ∂L(θ)/∂w = Σ_n=1^N ∂C^n(θ)/∂w
+        先考慮一個neural
+        z = x1*w1+x2*w2+b
+        ∂C/∂w = ? ∂z/∂w*∂C/∂z
+        ∂z/∂w = forward pass
+            compute ∂z/∂w for all parameters
+            ∂z/∂w1 = ?
+                z = x1*w1+x2*w2+b
+                x1
+            ∂z/∂w2 = ?
+                z = x1*w1+x2*w2+b
+                x2
+            the value of the input connected by the weight
+        ∂C/∂z = backward pass
+            compute ∂C/∂z for all activation function input z
+            activation function : a = σ(z)
+            Nerual Output = a
+            output * w3 , w4 => z',z"
+            ∂C/∂z = ∂a/∂z*∂C/∂a
+            ∂z = sigmod function 微分 => ∂‘(z)
+            ∂C/∂a = ∂z'/∂a*∂C/∂z' + ∂z"/∂a*∂C/∂z" (chain rule)
+            ∂z'/∂a = w3
+            ∂z"/∂a = w4
+            ∂C/∂z' = ?
+            ∂C/az" = ?
+            Assume 已知值∂z',∂z"
+            ∂C/∂z = σ'(z)[w3*∂C/∂z'+w4*∂C/∂z"]
+            想像有另一個nerual反向
+                w3*∂C/∂z'是一個input
+                w4*∂C/∂z"是一個input
+                σ' activation function
+                output: ∂C/∂z 
+            σ'(z) is a constant because z is already determined in the forward pass.
+            最後如何算
+                ∂C/∂z'
+                ∂C/∂z"
+                case 1. output layer y1,y2 = network output
+                    ∂C/∂z' = ∂y1/∂z'*∂C/∂y1
+                    ∂C/∂z" = ∂y1/∂z"*∂C/∂y1
+                    ∂C crossentropy
+                case 2. not output layer
+                    za,zb ...
+                    ∂C/∂za假設知道
+                    ∂C/∂zb假設知道
+                    就能計算
+                    要怎麼知道就在往下推論下一layer
+                    until we reach the output layer
+                從output layer
+                    compute ∂C/∂z for all activation function input z
+                    類似於forward pass計算
+                    compute ∂C/∂z from the output layer
+                    last layer
+                        z5,z6
+                            ∂C/∂z5,∂C/∂z6
+                        z3,z4
+                            ...
+                        z1,z2
+                            ...
+    summary
+        forward pass
+            ∂z/∂w = a
+        backward pass
+            ∂C/∂z
+        兩個乘起來就知道偏微分值
+        ∂C/∂w
