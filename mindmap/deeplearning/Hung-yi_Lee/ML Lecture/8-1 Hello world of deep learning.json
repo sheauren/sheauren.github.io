@@ -1,0 +1,1114 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "\"Hello world\" of deep learning"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "keras",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u6578\u5341\u5206\u9418\u5167\u5c31\u719f\u6089",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "keras\u662ftensorflow/theano\u7684interface",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "\u628a\u64cd\u4f5ctensorflow\u7684\u4e8b\u60c5\u5305\u8d77\u4f86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_3",
+        "topic": "easy learn and use",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "still have some flexible",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_3",
+        "topic": "you can modify it if you write tensorflow or theano",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_1",
+        "topic": "Francois Chollet is the author of keras",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "He currently works for google as a deep learning engineer and researcher.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_1",
+        "topic": "Keras mean horn in Greek",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_1",
+        "topic": "Documentation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "http://keras.io",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_1",
+        "topic": "Example",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "https://github.com/fchollet/keras/tree/master/example",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "root",
+        "topic": "tensorflow/theano",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "very flexible",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_15",
+        "topic": "need some effort to learn",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_15",
+        "topic": "\u53ef\u4ee5\u7576\u500b\u5fae\u5206\u5668",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_15",
+        "topic": "\u53ef\u4ee5\u505adeep learning\u4ee5\u5916\u7684\u4e8b\u60c5",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "root",
+        "topic": "\"hello world\" - handwrite digit recognition",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "mnist data",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "http://yann.lecun.com/exdb/mnist/",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_21",
+        "topic": "input",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "28x28 matrix",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_21",
+        "topic": "output:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "0-9 label",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_20",
+        "topic": "keras",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "step1:define a set of function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "model = sequential",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_28",
+        "topic": "model.add(Dense(input_dim=(28,28),output_dim=(500)))",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_28",
+        "topic": "model.add(Activation('sigmoid'))",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "softplus",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_31",
+        "topic": "softsign",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_31",
+        "topic": "relu",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_31",
+        "topic": "tanh",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_31",
+        "topic": "hard_sigmod",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_31",
+        "topic": "linear",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_28",
+        "topic": "model.add(Dense(output_dim=(500)))",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_28",
+        "topic": "model.add(Activation('sigmoid'))",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_28",
+        "topic": "model.add(Dense(output_dim=(10)))",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_28",
+        "topic": "model.add(Activation('softmax'))",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_27",
+        "topic": "step2:goodness of function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "model.compile(",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "loss='categorical_crossentropy',",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "\u63a1\u7528crossentropy",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_43",
+        "topic": "optimizer='adam',",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_43",
+        "topic": "metrics=['accuracy'])",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_27",
+        "topic": "step3:pick the best function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_48",
+        "topic": "step3.1 configuration",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "model.compile(",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "loss='categorical_crossentropy',",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_50",
+        "topic": "optimizer='adam',",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "SGD",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_52",
+        "topic": "RMSprop",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_52",
+        "topic": "Adagrad",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_52",
+        "topic": "Adadelta",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_52",
+        "topic": "Adam",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_52",
+        "topic": "Adamax",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_52",
+        "topic": "Nadam",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_52",
+        "topic": "\u90fd\u662fgradient descent base\u7684\u65b9\u6cd5",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_50",
+        "topic": "metrics=['accuracy'])",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_48",
+        "topic": "step3.2 find the optimal network parameters",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "model.fit(x_train,y_train,batch_size=100,nb_epoch=20)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "x_train",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "numpy array",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_65",
+        "topic": "two dimension",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "[num_of_examples,28*28]",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_64",
+        "topic": "train_data",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "images",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_63",
+        "topic": "y_train",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "numpy array",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_72",
+        "topic": "tow dimension",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_73",
+        "topic": "[num_of_examples,10]",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_74",
+        "topic": "10\u5167\u53ea\u6709\u4e00\u500b1\u5176\u4ed60",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_71",
+        "topic": "labels",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_76",
+        "topic": "digits",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_63",
+        "topic": "mini-batch",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_78",
+        "topic": "we do not really minimum total loss",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_78",
+        "topic": "training data\u5206\u6210\u4e00\u500b\u4e00\u500bbatch",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_78",
+        "topic": "batch\u8981\u96a8\u6a5f\u5206\u907f\u514d\u901a\u901a\u90fd\u540c\u4e00\u500b\u7d50\u679c",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_81",
+        "topic": "training\u6703\u6709\u554f\u984c",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_78",
+        "topic": "randomly initialize network parameters",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_78",
+        "topic": "pick the 1th batch",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_84",
+        "topic": "L' = l1+l32+...",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_84",
+        "topic": "update parameters once",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_78",
+        "topic": "pick the 2th batch",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_87",
+        "topic": "L'' = l2+l16+...",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_87",
+        "topic": "update parameters once",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_78",
+        "topic": "until all mini-batches have been picked",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "one epoch",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_90",
+        "topic": "repeat the above process",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_78",
+        "topic": "batch_size",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_93",
+        "topic": "100:",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_94",
+        "topic": "100 examples in a mini-batch",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_93",
+        "topic": "1:",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_96",
+        "topic": "stochastic gradient descent",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_78",
+        "topic": "nb_epoch",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_98",
+        "topic": "20:",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_99",
+        "topic": "repeat 20 times",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "root",
+        "topic": "speed",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_101",
+        "topic": "smaller batch size means more updates in one epoch",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_102",
+        "topic": "E.g. 50000 example",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_102",
+        "topic": "batch size = 1, 50000 update in one epoch",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_102",
+        "topic": "batch size = 10,5000 update in one epoch",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_102",
+        "topic": "batch size\u4e0d\u540c\u6642",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_106",
+        "topic": "\u4e00\u500bepoch\u9700\u8981\u7684\u6642\u9593\u662f\u4e0d\u540c\u7684",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_106",
+        "topic": "GTX 980 on MINIST 50000 training examples",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_108",
+        "topic": "batch_size/times",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_108",
+        "topic": "1/166s",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_110",
+        "topic": "\u7b971\u500bepoch\u6642\u9593",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_108",
+        "topic": "10/17s",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_112",
+        "topic": "\u53ef\u4ee5\u7b9710\u500bepoch\u6642\u9593\u4e86",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_108",
+        "topic": "100/0.xs",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_108",
+        "topic": "1000/0.xs",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_108",
+        "topic": "10000/0.xs",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_106",
+        "topic": "batch_size=1 or 10\u4f86\u770b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_117",
+        "topic": "update\u53c3\u6578\u5dee\u4e0d\u591a\u662f\u4e00\u6a23\u7684",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_117",
+        "topic": "batch_size=10 is more statble,convege faster",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_106",
+        "topic": "batch_size=10",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_120",
+        "topic": "\u901f\u5ea6\u5feb\u662f\u56e0\u70ba\u5e73\u884c\u904b\u7b97\u8b9310\u500bbatch\u540c\u6642\u904b\u7b97",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_106",
+        "topic": "batch_size\u8a2d\u592a\u9ad8",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_122",
+        "topic": "GPU\u5c31\u7121\u6cd5\u627f\u64d4\u540c\u6642\u904b\u7b97\u7684\u80fd\u529b",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_122",
+        "topic": "GPU\u6709\u5176\u6975\u9650",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_122",
+        "topic": "\u5bb9\u6613\u9677\u5230local minimum / saddle point",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_122",
+        "topic": "\u65bcdeep learning\u4e0d\u662f\u4e00\u500bconvex optimization problem",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_126",
+        "topic": "\u5145\u6eff\u5751\u5751\u6d1e\u6d1e",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_126",
+        "topic": "\u9806\u8457total loss\u5f88\u5feb\u5c31\u5361\u4f4f\u4e86",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_122",
+        "topic": "very large batch size can yield worse performance",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_122",
+        "topic": "\u4e0d\u662f\u5f88\u9ebb\u7169\u7684saddle point",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_130",
+        "topic": "\u52a0\u4e00\u9ederandom mini batch\u5c31\u6709\u53ef\u80fd\u8df3\u51fa",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_101",
+        "topic": "matrix operation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_132",
+        "topic": "forward pass",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_132",
+        "topic": "backward pass",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_132",
+        "topic": "why mini-batch is faster than stochastic gradient descent?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_135",
+        "topic": "stochastic gradient descent",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_136",
+        "topic": "z1 = w1x",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_137",
+        "topic": "update parameters",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_137",
+        "topic": "z1 = w1x",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_139",
+        "topic": "update parameters",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_135",
+        "topic": "mini-batch",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_141",
+        "topic": "matrix",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_142",
+        "topic": "[x,x...]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_141",
+        "topic": "[z1,z1...] = w1*[x,x...]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_144",
+        "topic": "update parameters",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_135",
+        "topic": "parctically,which one is faster?",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_146",
+        "topic": "GPU\u904b\u7b97\u5169\u500b\u901f\u5ea6\u662f\u76f8\u540c\u7684",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_147",
+        "topic": "\u77e9\u9663\u90fd\u53ef\u4ee5\u5e73\u884c\u904b\u7b97",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_147",
+        "topic": "\u9020\u6210mini-batch\u901f\u5ea6\u76f4\u63a5\u52a0\u901f\u4e86",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "root",
+        "topic": "save and load method",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_150",
+        "topic": "http://keras.io/getting-started/fag/#show-can-i-save-a-keras-model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "root",
+        "topic": "how to use the neural network(testing)",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_152",
+        "topic": "score=model.evaluate(x_test,y_test)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_153",
+        "topic": "score[0]",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_154",
+        "topic": "total loss",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_153",
+        "topic": "score[1]",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_156",
+        "topic": "accuracy",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_152",
+        "topic": "predict",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_158",
+        "topic": "input: image",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_158",
+        "topic": "output: result",
+        "background-color": "#0fbdff",
+        "expanded": false
+    }
+]

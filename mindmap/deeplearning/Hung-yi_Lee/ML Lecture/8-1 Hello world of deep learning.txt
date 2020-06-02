@@ -1,0 +1,161 @@
+"Hello world" of deep learning
+    keras
+        數十分鐘內就熟悉
+        keras是tensorflow/theano的interface
+            把操作tensorflow的事情包起來
+            easy learn and use
+                still have some flexible
+            you can modify it if you write tensorflow or theano
+        Francois Chollet is the author of keras
+            He currently works for google as a deep learning engineer and researcher.
+        Keras mean horn in Greek
+        Documentation
+            http://keras.io
+        Example
+            https://github.com/fchollet/keras/tree/master/example
+    tensorflow/theano
+        very flexible
+        need some effort to learn
+        可以當個微分器
+        可以做deep learning以外的事情
+    "hello world" - handwrite digit recognition
+        mnist data
+            http://yann.lecun.com/exdb/mnist/
+            input
+                28x28 matrix
+            output:
+                0-9 label
+        keras
+            step1:define a set of function
+                model = sequential
+                model.add(Dense(input_dim=(28,28),output_dim=(500)))
+                model.add(Activation('sigmoid'))
+                    softplus
+                    softsign
+                    relu
+                    tanh
+                    hard_sigmod
+                    linear
+                model.add(Dense(output_dim=(500)))
+                model.add(Activation('sigmoid'))
+                model.add(Dense(output_dim=(10)))
+                model.add(Activation('softmax'))
+            step2:goodness of function
+                model.compile(
+                    loss='categorical_crossentropy',
+                        採用crossentropy
+                    optimizer='adam',
+                    metrics=['accuracy'])
+            step3:pick the best function
+                step3.1 configuration
+                    model.compile(
+                        loss='categorical_crossentropy',
+                        optimizer='adam',
+                            SGD
+                            RMSprop
+                            Adagrad
+                            Adadelta
+                            Adam
+                            Adamax
+                            Nadam
+                            都是gradient descent base的方法
+                        metrics=['accuracy'])
+                step3.2 find the optimal network parameters
+                    model.fit(x_train,y_train,batch_size=100,nb_epoch=20)
+                        x_train
+                            numpy array
+                                two dimension
+                                    [num_of_examples,28*28]
+                            train_data
+                                images
+
+                        y_train
+                            numpy array
+                                tow dimension
+                                    [num_of_examples,10]
+                                        10內只有一個1其他0
+                            labels
+                                digits
+                        mini-batch
+                            we do not really minimum total loss
+                            training data分成一個一個batch
+                            batch要隨機分避免通通都同一個結果
+                                training會有問題
+                            randomly initialize network parameters
+                            pick the 1th batch
+                                L' = l1+l32+...
+                                update parameters once
+                            pick the 2th batch
+                                L'' = l2+l16+...
+                                update parameters once
+                            until all mini-batches have been picked
+                                one epoch
+                                repeat the above process
+                            batch_size
+                                100:
+                                    100 examples in a mini-batch
+                                1:
+                                    stochastic gradient descent
+                            nb_epoch
+                                20:
+                                    repeat 20 times
+    speed
+        smaller batch size means more updates in one epoch
+            E.g. 50000 example
+            batch size = 1, 50000 update in one epoch
+            batch size = 10,5000 update in one epoch
+            batch size不同時
+                一個epoch需要的時間是不同的
+                GTX 980 on MINIST 50000 training examples
+                    batch_size/times
+                    1/166s
+                        算1個epoch時間
+                    10/17s
+                        可以算10個epoch時間了
+                    100/0.xs
+                    1000/0.xs
+                    10000/0.xs
+                batch_size=1 or 10來看
+                    update參數差不多是一樣的
+                    batch_size=10 is more statble,convege faster
+                batch_size=10
+                    速度快是因為平行運算讓10個batch同時運算
+                batch_size設太高
+                    GPU就無法承擔同時運算的能力
+                    GPU有其極限
+                    容易陷到local minimum / saddle point
+                    於deep learning不是一個convex optimization problem
+                        充滿坑坑洞洞
+                        順著total loss很快就卡住了
+                    very large batch size can yield worse performance
+                    不是很麻煩的saddle point
+                        加一點random mini batch就有可能跳出
+        matrix operation
+            forward pass
+            backward pass
+            why mini-batch is faster than stochastic gradient descent?
+                stochastic gradient descent
+                    z1 = w1x
+                        update parameters
+                        z1 = w1x
+                            update parameters
+                mini-batch
+                    matrix
+                        [x,x...]
+                    [z1,z1...] = w1*[x,x...]
+                        update parameters
+                parctically,which one is faster?
+                    GPU運算兩個速度是相同的
+                        矩陣都可以平行運算
+                        造成mini-batch速度直接加速了
+    save and load method
+        http://keras.io/getting-started/fag/#show-can-i-save-a-keras-model
+    how to use the neural network(testing)
+        score=model.evaluate(x_test,y_test)
+            score[0]
+                total loss
+            score[1]
+                accuracy
+        predict
+            input: image
+            output: result
