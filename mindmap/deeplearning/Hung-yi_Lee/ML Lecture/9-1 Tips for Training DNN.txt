@@ -1,0 +1,211 @@
+Tips for Training DNN
+    Recipe of deep learning
+        step1: define a set of function
+        step2: goodnees of function
+        step3: pick the best function        
+        get a neural network
+            Good results on training set?
+                no
+                    restart step1-3
+                yes
+                    good results on testing data?
+                        no:overfitting                            
+                            restart step1-3
+                        yes:
+                            success!
+    Do not always blame overfitting
+        not well trained
+    differenct apporaches for differenct problems
+        good results on training data?
+        good results on testing data?
+    tips:
+        dropout
+            using when bad results on testing data
+        early stopping
+        regularization
+        new activation function
+            using when bad results on training data
+            e.g. handwriting digit classification            
+                deeper usually does not imply better
+                layer++ accuracy-- in training
+                    not overfitting
+                    not well trained
+                Vanishing Gradient Problem
+                    small gradient in bottom
+                        learning very slow
+                        almost random
+                    large gradient in top
+                        learning very fast
+                        already converge
+                            loss decline very slow
+                            bad of training result 
+                                converge base on random
+                    sigmod會導致這件事情發生
+                        large input
+                        small output
+                        很強的衰減
+                        input經過衰減對output變化很小
+                        導致越接近top衰減越少
+                    intuitive way to compute the derivatives...
+                        ∂C/∂w = ? ΔC/Δw
+                        bottom layer + Δw
+                            monitor output loss effect
+                            smaller gradients   
+                    早年作法:
+                        train RBM:Restricted Boltzmann Machines
+                            認識好第一個layer
+                            一個一個layer training
+                    改一下activation function:
+                        ReLU:Rectified Linear Unit
+                            input>=0:
+                                output=input
+                            input<0:
+                                output=0
+                            Reason:
+                                fast to compute
+                                biologic reason
+                                inifinite sigmoid with differenct biases
+                                Vanishing gradient problem
+                                    when input<0
+                                        remove the neural
+                                    when input>=output
+                                        linear
+                                    from a thinner linear network
+                                        does not have smaller gradients
+                                        smaller gradients on bottom的問題了
+                            原本不是希望nerual network是一個non-learning funciton
+                                所以才用deep learning
+                                用ReLU又變成linear function
+                                但是整個model還是non-linear funciton
+                                    當每個neuron做operatoin
+                                        operation region一樣時
+                                            linear function
+                                    當input做比較大的改變
+                                        operation region變化時
+                                            non-linear function
+                            ReLU不能derivatives
+                                當input>=0
+                                    gradient = 1
+                                當input<0
+                                    gradient = 0
+                                不可能剛好=0
+                            換Relu的handwriting結果
+                        ReLU-variant
+                            Leaky ReLU
+                                避免input<0
+                                    gradient = 0
+                                input>0
+                                    a=z
+                                input<0
+                                    a=0.001z
+                            Parametric ReLU
+                                input>0
+                                    a=z
+                                input<0
+                                    a=αz
+                                    α training by neural
+                        Maxout network
+                            Learnable activation funciton
+                                Activateion function in maxout network can be any piecewise linear convex function
+                                How many pieces depending on how many elements in a group                                    
+                            ReLU is a special case in Maxout
+                                ReLU:
+                                    input:x
+                                    z = x*w+b
+                                    a = ReLU(z)
+                                z = w*x+b
+                                Maxout:
+                                    input:x
+                                    z1 = x*w1+b
+                                    z2 = x*0+0
+                                    a = max(z1,z2)
+                            maxout ex:
+                                input:[x1,x2]
+                                [x1w1+x2w2 , x2w3+x2w4, x1w5+x2w6, x1w7+x2w8 ] 
+                                    groupping 事先決定                                        
+                                        [x1w1+x2w2,x2w3+x2w4]
+                                        [x1w5+x2w6,x1w7+x2w8]
+                                    同group選value最大的output
+                                        類似maxpooling
+                                        一個layer的maxpooling
+                            you can have more than 2 elements in a group
+                                可以調整的參數
+                            maxout-training
+                                given a training data x,we know which z would be the max
+                                    當決定max之後就是一個linear operation
+                                    沒接到的element就沒用了
+                                    又產生一個比較細長的nerual network
+                                        只training這細長的參數
+                                    沒training到的怎麼辦?
+                                        當input變化
+                                            max值會變化
+                                                network structure會變化
+                                                每個weight應該都會被train到
+        adaptive learning rate
+            adagrad
+                每一個parameter都有不同lr
+                    w^t+1 = w^t - η * g^t / (√*Σ_i=0^t(g^i)^2)
+                    每個參數的η除以過去所有gradient值平方和開根號
+                平坦的給予比較大的lr
+                陡峭的給予比較小的lr
+            Error surface can be very complex when training NN
+                smaller learning rate
+                need more dynamic adjust lr
+                    RMSProp: hinton mooc course
+                        cite the course link
+                        w^1 <- w^0 - η/σ^0 * g^0
+                            σ^0 = g^0
+                        w^2 <- w^0 - η/σ^1 * g^1
+                            σ^1 = √[α*(σ^0)^2 + (1-α)(g^1)^2]
+                                α: adjustable parameter
+                                    α小一點 傾向相信新的gradient對error surface陡峭程度
+                                    α大一點 傾向相信歷史的gradient對error surface陡峭程度
+                        w^3 <- w^0 - η/σ^2 * g^2
+                            σ^2 = √[α*(σ^1)^2 + (1-α)(g^2)^2]
+                        w^t+1 <- w^0 - η/σ^t * g^t
+                            σ^t = √[α*(σ^(t-1))^2 + (1-α)(g^t)^2]
+            Hard to find optimal network parameters
+                stuck at saddle point
+                    ∂L/∂w=0
+                stuck at local minimum
+                    ∂L/∂w=0
+                very slow at the plateau
+                    ∂L/∂w≈0
+                tom mark 2007 say
+                    you don't worry about local minimum problems
+                        error surface很少local minimum
+                            你要一個local minimum是每一個dimension都有山谷形狀
+                                山谷出現率是p
+                                network參數非常多
+                                每一個都是山谷谷底的機率
+                                    參數越多local minimum機率就越低
+                                    因此參數夠多通常你認為是local minimum的地方應該都很接近global minimum了
+                heuristics method for plateau , local minimum problems
+                    in physical world
+                        Momentum
+                            how about put this phenomenon in gradients descent
+                            how to use?
+                                movement of last step minus gradient at present
+                                    這次的graident+前次的方向
+                                start point
+                                    θ^0
+                                movement
+                                    v^0=0
+                                gradient
+                                    ∇L(θ^0)
+                                movement
+                                    v^1 = λv^0 - η∇L(θ^0)
+                                        原本走的方向還是有一定程度的影響
+                                    λ: 手調參數
+                                move to 
+                                    θ^1 = θ^0 + v^1
+                                gradient
+                                    ∇L(θ^1)
+                                movement
+                                    v^2 = λv^1 - η∇L(θ^1)
+                                move to 
+                                    θ^2 = θ^1 + v^2
+                                v^i
+                                    sum of all the previous gradients
+                                    λ < 0 時
+                                        越久的gradient影響越小
