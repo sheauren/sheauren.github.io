@@ -1,0 +1,105 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "ML"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Regression",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "Classification",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "RNN",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "Seq2Seq",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_2",
+        "topic": "CNN",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "GAN",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": "Explainable AI",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "Adversarial Attack",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "Network Compression",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_5",
+        "topic": "Unsupervised Learning(Auto-encoder)",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "Anomaly Detection",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "Transfer Learning - Domain Adversarial Learning",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "Meta Learning - Learn to learn",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "Life-long Learning - continue learning, never ending learning,increment learning",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "Reinforcement Learning",
+        "background-color": "#412ffc",
+        "expanded": false
+    }
+]

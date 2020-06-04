@@ -1,0 +1,159 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Keras 2.0"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "keras: Building a network",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "model = Sequential()",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "model.add(Dense(input_dim=28*28,units=500,activation='relu'))",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_1",
+        "topic": "model.add(Dense(units=500,activation='relu'))",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "softplus,softsign,sigmoid,tanh,hard_sigmod,linear",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_1",
+        "topic": "model.add(Dense(units=10,activation='softmax'))",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_7",
+        "parentid": "root",
+        "topic": "configuration",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "model.compile(loss='categorical_crossentropy',",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "optimizer='adam',",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_8",
+        "topic": "metrics=['accuracy'])",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_11",
+        "parentid": "root",
+        "topic": "pick the best function",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "model.fit(x_train,y_train,batch_size=100,epochs=20)",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_13",
+        "parentid": "root",
+        "topic": "save and load models",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "http://keras.io/getting-started/fag/#show-can-i-save-a-keras-model",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_15",
+        "parentid": "root",
+        "topic": "how to use the neural network(testing)",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "score=model.evaluate(x_test,y_test)",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "score[0]",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "total loss",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "\u53ef\u80fd\u662fcrossentropy",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_16",
+        "topic": "score[1]",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "accuracy",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "yes/no",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_15",
+        "topic": "predict",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "input: image",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_23",
+        "topic": "output: result",
+        "background-color": "#0fbdff"
+    }
+]
