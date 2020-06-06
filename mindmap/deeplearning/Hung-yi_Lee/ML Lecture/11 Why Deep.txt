@@ -1,0 +1,320 @@
+Why Deep learning?
+    deep is better?
+        layer x size
+            word error rate(%)
+        1x2k
+            24.2
+        2x2k
+            20.4
+        3x2k
+            18.4
+        4x2k
+            17.8
+        5x2k
+            17.2
+        7x2k
+            17.1
+        not superised,more paramters,better performance        
+        Conversational Speech Transcription using context-dependent deep neural network
+            http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.368.3047&rep=rep1&type=pdf
+        fat+short vs thin+tall
+            shallow vs deep
+                矮胖vs瘦高
+                讓兩者參數一樣比較比較公平
+                which is better? 
+                    layer x size
+                        word error rate(%)
+                    1x3772
+                        22.5
+                        vs 5x2k
+                        比較差
+                    1x6434
+                        22.6
+                        vs 7x2k
+                        比較差
+                    1x16k
+                        22.1
+                        極大量參數也沒好多少
+                    只有1 layer performance比較差的
+            why?
+                deep learning有人說是暴力法
+                但實際上不是
+                    單純增加參數加寬
+                        對performance幫助沒那麼好
+                deep->modularization
+                    don't put everything in your main function
+                        main function
+                            sub function
+                                sub function
+                                    sub function
+                                sub function
+                            sub function
+                                sub function
+                                sub function
+                                    sub function
+                                    sub function
+                        function can sharing
+                        https://rinuboney.github.io/2015/10/18/theoretical-motivations-deep-learning.html
+                    modularization
+                        classification
+                            detect girls with long hair
+                            detect boys with long hair
+                                little examples
+                                    weak
+                            detect girls with short hair
+                            detect boys with short hair
+                            basic classification
+                                classifiers for the attributes
+                                boys or girls
+                                    長髮男很少但男生data還是可以collect到不少
+                                long or short               
+                                    長髮男少但是長頭髮data還是可以collect到不少
+                                train basic classifier can have sufficient training examples
+                            classifier參考basic classification output
+                                sharing by the following classifiers as module
+                                can trained by little data
+                                fine tuning
+                        deep -> modularization
+                            一個neron就是一個classifier
+                            1st layer's neuron 是basic classifier
+                            2nd layer's neuron 是比較複雜的classifier
+                            3nd layer's neuron 是更複雜的clasifier
+                            ...
+                            the modularization is automatically learned from data
+                        modularization讓我們模型變簡單了
+                            當training data沒那麼多也能做好
+                            deep -> modularization -> less training data
+                        常見AI = big data + deep learning
+                            並不是這樣的
+                            當你有足夠的data只要table lookup就不用training了
+                            就是data不夠才需要做舉一反三的能力
+    modularization - Speech
+        the hierarchical structure of human languages
+        人類語言的架構
+            what do you think
+                Phoneme:
+                    hh w aa t
+                    d uw
+                    y uw
+                    th ih ng k
+                同樣的phoneme可能會有不同的發音tri-Phone
+                    tri-Phoneme:
+                        把該音前後也加進去
+                            來描述該phoneme
+                            一個phoneme context不同
+                                就用不同的model來模擬描述
+                        hh w aa t
+                        d uw
+                            t-d+uw
+                                自訂model的state,要訂幾個看設計,通常訂成3個state
+                                t-d+uw1
+                                t-d+uw2
+                                t-d+uw3
+                            d-uw+y
+                                d-uw+y1
+                                d-uw+y2
+                                d-uw+y3
+                        y uw
+                            uw-y+uw
+                            y-uw+th
+                        th ih ng k
+        the first stage of speech recognition
+            classification: input -> acoustic feature, output -> state
+            input 聲音訊號 wave phone
+                在wave phone取一個window(ex 250ms)
+                    一個window用一個feature描述特性
+                        acoustic feature
+                一段聲音一直取window size出來產生acoustic feature
+                    形成 acoustic feature sequence
+            determine the state each acoustic feature belongs to 
+                acoustic feature 1
+                    state a
+                acoustic feature 2
+                    state b
+                ...
+                state -> phoneme -> word
+                還要考慮同音異字的部分
+                    language model考慮同音異字...
+        each state has a stationary distribution for acoustic features
+            HMM-GMM
+                GMM如何做
+                    Gaussian Mixture Model(GMM)
+                    假設每一個state的acoustic features分布是stationary                    
+                        可以用一個model描述他
+                            第一當作tri-phone中心的tri-phone的第一個state
+                                可以用GMM來描述他
+                                    P(x|"t-d+uw1")
+                            另一個state可用另一個GMM描述
+                                P(x|"d-uw+y3")
+                        這樣給一個feature就可以算
+                            這一個acoustic features從每一個state產生的機率
+                    但這招不大work因為tri-phone的數目太多了
+                        一般語言、中文、英文都有將近30幾個40個phoneme
+                            於tri-phone在每一個phonme隨著contest不同
+                                要用不同的model
+                                到底有多少個tri-phone30個3次方tri-phone
+                                    27000
+                                        每個tri-phone有3個state
+                                            產生數萬的state
+                                                每個state都用GMM描述
+                                                    training data根本不夠
+                無deep learning,傳統設計方式
+                    有些state會共用同樣的model distribution
+                        Tied-State
+                            P(x|"d-uw-y3")
+                            P(x|"y-uw+th3")
+                            不同state好像pointer
+                                指向同樣的distribution
+                    有些state共用有些沒共用
+                        哪些要共用哪些不用要憑經驗、語文學知識
+                        如何讓他部分共用很多手法
+                            subspace GMM
+                                有modularizatiion的影子
+                                先把gaussion都找出來形成gaussion pool
+                                    每個state information就是一個key
+                                        key告訴這個state要從gaussion pool挑哪些gaussion出來
+                                    挑出來有些state可以share gaussion
+                                    有些又不share gaussion
+                                    要share多少gaussion可以用training data學出來
+                in HMM-GMM, all phoneme are modeled independent
+                    not an effective way to model human voice
+                        the sound of vowel is only controlled by a few factors
+                            舌頭前後
+                            舌頭上下
+                            嘴型
+                            自己念感覺不大出來舌頭位置
+                            phoneme是有關係的
+                                每個phoneme搞一個model是非常沒效率的
+        in deep learning
+            learn一個deep learning network
+            input: acoustic feature
+            output:
+                probability of each state
+                size of output layer = No. of states
+            classification problem
+            all the states use the same DNN
+            HMM-GMM跟deep learning用的參數差不多
+                DNN用一個很大的model
+                    所有state用同一個model分類
+                    比較有效率的做法
+                        output of hidden layer reduce to two dimensions
+                            The lower layers detect the manner of articulation
+                                不是detect哪個phome或state
+                                而是觀察出舌頭位置嘴型...
+                                    知道發音方式之後接下來的layer在去決定是屬於哪個state/phome
+                                所有layer用同一組detect
+                                    lower detect發音方式
+                                    phome偵測都是同一組detector
+                                        share同一組參數
+                                            做到 modularization
+
+                HMM-GMM用很多小model
+            Universality Theorem
+                Can be realized by a network with one hidden layer
+                Any continue function f
+                    f: R^N -> R^M
+                90年代放棄deep learning的原因
+                    reference for the reason
+                        http://neuralnetworksanddeeplearning.com/chap4.html
+                這理論只有告訴我們可能性
+                    要做到這事情多有效率
+                Yes, shallow network can represent any function
+                    however,using deep structure is more effective
+                        multi-layer, hierachy的structure比較有效率
+    analogy
+        logic circuits
+            logic circuits consists of gates
+            a two layers of logic gates can represent any Boolean function
+            using multiple layers of logic gates to build some function are more simpler
+                less gates needed
+        neural network
+            neural network consists of neurons
+            a hidden layer network can represent any continuous function
+            using multiple layers of neurons to represent some function are much simpler
+    end-to-end learning
+        production line
+            model - hypothesis functions                 
+                very complex function
+                    simple function 1
+                    simple function 2
+                    simple function 3
+                    simple function N
+        end-to-end training
+            what each function should do is learned automatically
+                疊一個很深的nerual network
+                    每一層會自己學到該做什麼
+        speech recognition
+            shallow approach
+                waveform ->
+                    DFT -> 
+                        spectrogram -> 
+                            filter bank -> 
+                                log -> 
+                                    DCT ->(MFCC)-> 
+                                            GMM -> 
+                                                "hello"
+                                            GMM換成DNN也會有顯著的performance
+                只有GMM由training data學出來
+                其他都是人手訂的
+            deeplearning
+                layer多加幾層把DCT換掉
+                    這是typical做法了
+                        過去MFCC的feature
+                            deep learning都從log output開始做會有比較好的結果
+                現在更有從spectrogram之後就開始做deep nerual network
+                    他會自動學到要做filter bank事情
+                能不能疊超級深從waveform之後就開始做
+                    all functions are learned from data
+                    這樣就不用學訊號與系統
+                    less engineering labor, but machine learns more
+                    google結果
+                        超大deep learning
+                        只能做到跟feature tranform打平而已
+                        目前沒有不做fourier transform做得比較好的例子
+        image recognition
+            shallow approach
+            http://www.robots.ox.ac.uk/~vgg/research/encoding_eval/
+            image->
+                feature extractor->
+                    encoding->
+                        pooling->
+                            classification
+            all function are learned from data
+    complex task
+        image
+            very similar input,differenct output
+                白色狗->dog
+                北極熊->bear
+                兩個長得很像
+                    machine要學會區隔
+            very differenct output,similar output
+                傳統火車->train
+                子彈列車->train
+                差異很大兩個是同樣東西
+            layer只有一層時，很難把不一樣的東西變得很像或把原本很像的東西變成不一樣
+                需要多層次的轉換
+        speech
+            speech recognition: speaker normalization is automatically done in DNN
+            input: acoustic feature
+                不同能說同一個句子會不一樣
+            1-st layer: 不同人同一句話看起來還是差很多
+            8-th layer: 不同人同一個句子被align/map在一起了
+        mnist:
+            input: 28x28 pixel proejct to 2d chart
+            1-st layer: 彼此個數字還是很近
+            2-nd layer: 彼此數字群開始分開
+            3-rd layer: 彼此數字群分得更開了
+            多層比較好分拆合併
+        paper
+            do deep nets really need to be deep?
+            https://arxiv.org/abs/1312.6184
+            一個hidden layer learning不要用真正的label
+                用3層hidden layer的output當你的feature
+                    performance會比較好 逼近3層
+                    用一層hidden layer模擬3層hidden layer的行為
+            deep learning: theoretical motivations 
+                http://videolectures.net/deeplearning2015_bengio_theoretical_motivations/
+            Connections between physics and deep learning
+                https://www.youtube.com/watch?v=5MdSE-N0bxs
+            why deep learning works: Perspectives from Theoretical Chemistry
+                https://www.youtube.com/watch?v=kIbKHIPbxiU
