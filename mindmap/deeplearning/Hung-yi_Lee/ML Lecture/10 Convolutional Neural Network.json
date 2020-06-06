@@ -1,0 +1,2889 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Convolutional Neural Network"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "why CNN for image?",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "1st layer",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "the most basic classifiers",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "color",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "\u7da0\u8272",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_4",
+        "topic": "\u9ed1\u8272",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_4",
+        "topic": "\u7d05\u8272",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_3",
+        "topic": "line",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "\u76f4\u7dda",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_8",
+        "topic": "\u6a6b\u7dda",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_8",
+        "topic": "\u659c\u7dda",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_1",
+        "topic": "2nd layer",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "use 1st layer as module to build classifiers",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "\u76f4\u7dda\u6a6b\u7dda",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "\u7a97\u6846",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_13",
+        "topic": "\u68d5\u8272\u76f4\u689d\u7d0b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "\u6728\u7d0b",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_13",
+        "topic": "\u7070\u8272\u659c\u689d\u7d0b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "\u8f2a\u80ce\u4e00\u90e8\u5206...",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_1",
+        "topic": "3th layer",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "use 2nd layer as module...",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "\u770b\u5230\u8702\u5de2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "activate",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_21",
+        "topic": "\u770b\u5230\u8eca\u5b50",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "activate",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_21",
+        "topic": "\u770b\u4eba\u534a\u8eab",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "activate",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_1",
+        "topic": "\u7528\u4e00\u822cfully connected network\u505a\u5f71\u50cf\u8655\u7406\u5f80\u5f80\u9700\u8981\u592a\u591a\u53c3\u6578",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "can the network be simplified by considering the properties of images?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_28",
+        "topic": "CNN\u7c21\u5316\u67b6\u69cb",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "\u67d0\u4e9bweight\u7528\u4e0d\u4e0a\u4e00\u958b\u59cb\u5c31\u6ffe\u6389",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_30",
+        "topic": "\u4e0d\u8981\u7528\u5230fully connected",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_1",
+        "topic": "some patterns are much smaller than whole image",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "a neuron does not have to see the whole image to discover the pattern",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_33",
+        "topic": "bird",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "\u5075\u6e2c\u9ce5\u5634\u7684neuron",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "\u4e0d\u7528\u770b\u6574\u5f35\u5716",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_36",
+        "topic": "\u5c0f\u5340\u57df\u5c31\u53ef\u4ee5\u5224\u65b7",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_35",
+        "topic": "\u5075\u6e2c\u7fc5\u8180\u7684neuron",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_35",
+        "topic": "\u5075\u6e2c\u722a\u5b50\u7684neuron",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_35",
+        "topic": "\u5075\u6e2c\u5c3e\u5df4\u7684neuron",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_35",
+        "topic": "\u5408\u8d77\u4f86\u5c31\u53ef\u4ee5\u5075\u6e2c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_33",
+        "topic": "connecting to small region with less parameters",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_33",
+        "topic": "the same patterns appear in differenct regions",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "\u6211\u5011\u4e0d\u9700\u8981\u53bb\u8a13\u7df4\u91dd\u5c0d\u4e0d\u540c\u4f4d\u7f6e\u540c\u6a23pattern\u7684model",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "cost down",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_45",
+        "topic": "\u53ef\u4ee5\u5171\u7528\u540c\u7d44\u53c3\u6578",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "share\u53c3\u6578",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_33",
+        "topic": "Subsampling the pixes will not change get object",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "\u7e2e\u5c0f\u4e00\u9ede\u5c0d\u65bc\u4eba\u7684\u8fa8\u8b58\u6c92\u6709\u5f71\u97ff",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_49",
+        "topic": "\u5229\u7528\u9019\u500b\u6982\u5ff5\u628aimage\u7e2e\u5c0f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_49",
+        "topic": "less parameters for the network to process the image",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "root",
+        "topic": "The whole CNN",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "input",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_53",
+        "topic": "can repeat repeat many times",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_55",
+        "topic": "convolution",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_55",
+        "topic": "max pooling",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_55",
+        "topic": "convolution",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_55",
+        "topic": "max pooling",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_53",
+        "topic": "flatten",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_53",
+        "topic": "fully connected feedforward network",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_53",
+        "topic": "property1-convolution",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "some patterns are much smaller than the whole image",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_53",
+        "topic": "property2-convolution",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "the same patterns appear in differenct regions",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_53",
+        "topic": "property3-max pooling",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "Subsampling the pixels will not change the object",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "root",
+        "topic": "CNN-convolution",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "input 6x6 materix value:[0,1]",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_68",
+        "topic": "filter(matrix) set:",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_70",
+        "topic": "[[1,-1,-1],[-1,1,-1],[-1,-1,1]]",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_70",
+        "topic": "[[-1,1,-1],[-1,1,-1],[-1,1,-1]]",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_70",
+        "topic": "...",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_70",
+        "topic": "filter value is parameters",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_74",
+        "topic": "each filter like a neuron",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_74",
+        "topic": "like weight/bias",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_74",
+        "topic": "need trained",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_70",
+        "topic": "when filter 3x3",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_78",
+        "topic": "find a 3x3 pattern",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_70",
+        "topic": "compute",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_80",
+        "topic": "\u628afilter\u653e\u5230\u5716\u7247\u5de6\u4e0a\u89d2\u505a\u5167\u7a4d",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_80",
+        "topic": "\u632a\u52d5filter\u4f4d\u7f6e",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_82",
+        "topic": "\u632a\u52d5\u591a\u5c11\u53ef\u4ee5\u8a2d\u5b9a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_82",
+        "topic": "stride=1 \u4e00\u6b65",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_82",
+        "topic": "\u5f80\u53f3\u79fb\u52d5\u7d50\u675f\u63db\u5f80\u4e0b\u4e00\u683c\u91cd\u8dd1\u4e00\u884c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_80",
+        "topic": "\u5168\u90e8\u90fd\u7b97\u5b8c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_86",
+        "topic": "\u5f97\u52304x4 matric",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_86",
+        "topic": "filter\u5982\u679c\u662f\u5de6\u4e0a\u53f3\u4e0b111\u5176\u4ed6-1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_88",
+        "topic": "\u5247\u4e3b\u8981\u5075\u6e2c\u6709\u6c92\u6709\u5de6\u4e0a\u53f3\u4e0b\u7684\u6a6b\u7dda",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_86",
+        "topic": "\u9019\u90e8\u5206\u8981\u63d0\u4f9bproperty2\u4f7f\u7528",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "\u540c\u4e00\u500bpattern\u51fa\u73fe\u5728\u4e0d\u540c\u4f4d\u7f6e",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_90",
+        "topic": "\u540c\u4e00\u500bfilter\u5c31\u53ef\u4ee5\u5075\u6e2c\u51fa\u4f86",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_70",
+        "topic": "convolution layer\u6703\u6709\u4e00\u5927\u5806filter",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_93",
+        "topic": "\u6bcf\u500bfilter\u6703\u6709\u4e0d\u540c\u7684\u53c3\u6578",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_94",
+        "topic": "\u627e\u76f4\u7dda",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_94",
+        "topic": "\u627e\u6a6b\u7dda",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_94",
+        "topic": "\u627e\u659c\u7dda",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_70",
+        "topic": "\u4e0d\u540c\u7684filter\u7d50\u679c\u5408\u8d77\u4f86\u5c31\u53eb\u505afeature map",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_98",
+        "topic": "\u6709\u591a\u5c11filter\u5c31\u6703\u5f97\u5230\u591a\u5c11\u500bimage",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_98",
+        "topic": "\u6bcf\u4e00\u500bfilter size\u90fd\u4e00\u6a23",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_100",
+        "topic": "\u4eca\u5929\u6709\u540c\u4e00\u500bpattern",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_101",
+        "topic": "\u4ed6\u6709\u4e0d\u540c\u7684size",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_102",
+        "topic": "\u5927\u9ce5\u5634",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_102",
+        "topic": "\u5c0f\u9ce5\u5634",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_102",
+        "topic": "\u4e8b\u5148\u77e5\u9053\u53ef\u4ee5\u7528normalized",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_102",
+        "topic": "\u4e8b\u5148\u4e0d\u77e5\u9053\u5927\u5c0f\u9ce5\u5634",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_106",
+        "topic": "\u5c31\u6c92\u8fa6\u6cd5normalized",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_100",
+        "topic": "CNN\u4e0d\u80fd\u81ea\u52d5\u8655\u7406scale\u7684\u554f\u984c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_108",
+        "topic": "\u4e0d\u898b\u5f97\u80fd\u5920\u8655\u7406",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_108",
+        "topic": "deepmind\u6709\u4e00\u500bpaper",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_110",
+        "topic": "\u5728CNN\u524d\u9762\u5728\u63a5\u4e00\u500bnetwork",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_110",
+        "topic": "\u9019network output scalar",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_112",
+        "topic": "\u628aimage\u88e1\u9762\u505a\u65cb\u8f49,\u7e2e\u653e",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_112",
+        "topic": "\u5728\u4e1f\u5230CNN",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_70",
+        "topic": "colorful image",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_115",
+        "topic": "input_sizexinput_size*RGB channel",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_116",
+        "topic": "\u7acb\u9ad4matric",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_115",
+        "topic": "filter\u4e5f\u6703\u662f\u7acb\u65b9\u9ad4matric",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_118",
+        "topic": "filter: 3x3x3",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_118",
+        "topic": "filter\u8ddfsilding window\u505a\u5167\u7a4d",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_120",
+        "topic": "\u4e26\u6c92\u6709\u628aRGB channel\u5206\u958b\u7b97",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_121",
+        "topic": "\u5408\u8d77\u4f86\u7b97",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_121",
+        "topic": "\u4e0d\u540c\u984f\u8272\u4e00\u8d77\u770b",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_68",
+        "topic": "convolution vs fully connected",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_124",
+        "topic": "convolution\u662f\u4e00\u500bnerual network",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_125",
+        "topic": "\u5c31\u662ffull connected\u628a\u4e00\u4e9blayer/weight\u62ff\u6389\u7684\u7d50\u679c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_125",
+        "topic": "filter inner product\u53d6\u5f97\u503c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_127",
+        "topic": "\u7b49\u540c\u65bc\u53ea\u53d6\u7279\u5b9aweight(filter)\u8a08\u7b97\u51fa\u7684\u503c\u505ahidden neuron output",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_127",
+        "topic": "filter weight\u7b49\u65bcneuron\u7684weight",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_127",
+        "topic": "\u539f\u672cfully connected\u53ef\u80fd\u8981\u902336\u500binput",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_130",
+        "topic": "\u6539\u6210\u53ea\u90239\u500binput",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_130",
+        "topic": "detect\u4e00\u500bpattern\u53ea\u89819\u500binput\u4e0d\u9700\u898136\u500b",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_132",
+        "topic": "\u9019\u6a23\u53c3\u6578\u5c31\u6bd4\u8f03\u5c11\u4e86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_130",
+        "topic": "strde\u79fb\u52d5filter\u5247\u6703\u5f97\u5230\u53e6\u4e00\u500bnerual output",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_134",
+        "topic": "\u6539\u7528\u53e6\u59169\u500binput",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_127",
+        "topic": "\u539f\u672c\u5728fully connected neuron\u90fd\u6709\u7368\u7acbweight",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_136",
+        "topic": "\u505aCNN\u6642neuron \u6e1b\u5c11\u8ddf\u5171\u7528weight",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_137",
+        "topic": "\u5f62\u6210wegith sharing",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_138",
+        "topic": "\u9019\u6a23\u53c3\u6578\u91cf\u53c8\u66f4\u5c11",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_125",
+        "topic": "how to training?",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_140",
+        "topic": "toolkit\u505a\u597d\u4e86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_140",
+        "topic": "\u7528backpropagation\u4e00\u6a23\u7684\u505a\u6cd5",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_142",
+        "topic": "\u53ea\u662f\u6709\u4e9bweight\u90fd\u4e0dtraining\u4ed6",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_142",
+        "topic": "share weight\u90e8\u5206\u5c31\u662f\u90fdgraidient\u5f8c\u5e73\u5747",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_68",
+        "topic": "max pooling",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_145",
+        "topic": "Subsampling",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_146",
+        "topic": "filter\u51fa\u4f86\u7684\u7d50\u679c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_147",
+        "topic": "\u4ee52x2\u53d6\u6700\u5927\u503coutput",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_148",
+        "topic": "image\u7e2e\u5c0f",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_68",
+        "topic": "convolution+maxpooling",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_150",
+        "topic": "input 6x6",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_150",
+        "topic": "output 2x2xfilter",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_150",
+        "topic": "\u6bd4\u8f03\u6df1\u4f46\u6bd4\u8f03\u5c0f\u7684output",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_150",
+        "topic": "repeat n\u6b21",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_154",
+        "topic": "\u53ef\u4ee5\u5f97\u5230\u66f4\u5c0f\u66f4\u6df1\u7684image",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_68",
+        "topic": "Q&A \u5982\u679c\u670925 filter -> 25 feature map",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_156",
+        "topic": "\u4e0b\u4e00\u6b21\u5728\u505a25filter -> 25*25 feature map?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_157",
+        "topic": "NO \u9084\u662f\u5f97\u523025\u500bfilter",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_158",
+        "topic": "filter\u6703\u628achannel\u90fd\u8003\u616e\u9032\u53bb\u7684",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_159",
+        "topic": "filter\u662fcube",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_68",
+        "topic": "flatten",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_161",
+        "topic": "\u4e1f\u5230fully connected\u7684feedforward network",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_161",
+        "topic": "\u5c31\u53ef\u4ee5\u505a\u5b8c\u4e86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "root",
+        "topic": "CNN in keras",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_164",
+        "topic": "\u53ea\u8981\u6539\u4e00\u4e0bnetwork structure\u8ddfinput format",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_164",
+        "topic": "\u539f\u672cinput\u662fvector\u73fe\u5728\u8981\u8003\u616eimage\u5e7e\u4f55\u7a7a\u9593",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_166",
+        "topic": "\u5f9evector\u6539\u6210tensor",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_167",
+        "topic": "tensor\u662f\u9ad8\u7dad\u5ea6vector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_167",
+        "topic": "\u8981\u7d663\u7dad\u5ea6\u7684vector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_169",
+        "topic": "w*h*rgb",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_164",
+        "topic": "model.add(Convolution2D(25,3,3,input_shape=(1,28,28)))",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_171",
+        "topic": "25 filter",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_172",
+        "topic": "3x3 matric",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_171",
+        "topic": "\u55ae\u827228x28",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_174",
+        "topic": "1,28,28",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_171",
+        "topic": "\u5f69\u827228x28",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_176",
+        "topic": "3,28,28",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_171",
+        "topic": "1x28x28",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_178",
+        "topic": "conv 25x3x3",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_178",
+        "topic": "\u4e0d\u8003\u616e\u908a\u908aoutput",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_180",
+        "topic": "25x26x26",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_181",
+        "topic": "\u53c3\u6578\u53ea\u67099\u500b",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_182",
+        "topic": "\u56e0\u70ba3x3 matric",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_178",
+        "topic": "\u8981\u8003\u616e\u908a\u908a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_184",
+        "topic": "\u53ef\u4ee5\u5728\u65c1\u908a\u88dc0\u8b93\u4ed6\u51fa\u4f86\u9084\u662f28x28",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_171",
+        "topic": "25x13x13",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_186",
+        "topic": "conv 50x3x3",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_186",
+        "topic": "output 50x11x11",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_186",
+        "topic": "\u53c3\u6578",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_189",
+        "topic": "3*3*25",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_164",
+        "topic": "model.add(MaxPooling2D((2,2))",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_192",
+        "topic": "2*2->max one",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "line_193",
+        "topic": "input 25x26x26",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_194",
+        "topic": "output 25x13x13",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_193",
+        "topic": "input 50x11x11",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_197",
+        "parentid": "line_196",
+        "topic": "output 50x5x5",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_198",
+        "parentid": "line_164",
+        "topic": "flatten 50x5x5",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_199",
+        "parentid": "line_198",
+        "topic": "1250 vector",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_200",
+        "parentid": "line_199",
+        "topic": "fully connected",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_201",
+        "parentid": "line_200",
+        "topic": "output",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_202",
+        "parentid": "root",
+        "topic": "what does CNN learn?",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_203",
+        "parentid": "line_202",
+        "topic": "deep learning\u662f\u500b\u9ed1\u76d2\u5b50\u7121\u6cd5\u7406\u89e3",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_204",
+        "parentid": "line_202",
+        "topic": "\u7576\u4f60\u80fd\u8f15\u6613\u7406\u89e3\u5c31\u89ba\u5f97\u4e0d\u5920intelligent",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_205",
+        "parentid": "line_202",
+        "topic": "\u975e\u5e38intelligent\u5c31\u8981\u4f60\u7121\u6cd5\u7406\u89e3",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_206",
+        "parentid": "line_205",
+        "topic": "\u624d\u6703\u89ba\u5f97\u5979\u5f88intelligent",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_207",
+        "parentid": "line_202",
+        "topic": "\u5206\u6790CNN",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_208",
+        "parentid": "line_207",
+        "topic": "\u7b2c\u4e00\u5c64filter",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_209",
+        "parentid": "line_208",
+        "topic": "input pixel",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_210",
+        "parentid": "line_208",
+        "topic": "3x3 matric\u5c0d\u6620\u52309\u500bpixel",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_211",
+        "parentid": "line_210",
+        "topic": "\u80fd\u77e5\u9053\u5728detect\u4ec0\u9ebc\u6771\u897f",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_212",
+        "parentid": "line_207",
+        "topic": "\u7b2c\u4e8c\u5c64filter",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_213",
+        "parentid": "line_212",
+        "topic": "\u6bd4\u8f03\u96e3\u60f3\u50cf",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_214",
+        "parentid": "line_212",
+        "topic": "input\u5df2\u7d93\u4e0d\u662fpixel",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_215",
+        "parentid": "line_214",
+        "topic": "\u800c\u662fconv+maxpooling\u7684\u7d50\u679c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_216",
+        "parentid": "line_214",
+        "topic": "\u62ffweight\u51fa\u4f86\u4e5f\u4e0d\u77e5\u9053\u5728\u505a\u4ec0\u9ebc",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_217",
+        "parentid": "line_214",
+        "topic": "\u7bc4\u570d\u4e5f\u4e0d\u518d\u662f3x3 \u4ed6\u524d\u4e00\u500binput\u6709\u505a\u4e86conv+maxpooling",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_218",
+        "parentid": "line_217",
+        "topic": "\u56e0\u6b64\u770b\u5230\u7bc4\u570d\u6bd43x3\u66f4\u5927",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_219",
+        "parentid": "line_214",
+        "topic": "the output of the k-th filter is 11x11 matric",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_220",
+        "parentid": "line_219",
+        "topic": "element: a_ij^k",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_221",
+        "parentid": "line_220",
+        "topic": "k: k-th filter",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_222",
+        "parentid": "line_220",
+        "topic": "ij: in 11x11 position",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_223",
+        "parentid": "line_220",
+        "topic": "degree of the activation of the k-th filter:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_224",
+        "parentid": "line_223",
+        "topic": "k-th\u6709\u591a\u88abactivate",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_225",
+        "parentid": "line_223",
+        "topic": "input\u8207k-th\u6709\u591a\u76f8\u8fd1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_226",
+        "parentid": "line_223",
+        "topic": "a^k = \u03a3_i=1^11\u03a3_j=1^11 a_ij^k",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_227",
+        "parentid": "line_226",
+        "topic": "\u88abactivate\u7684\u7a0b\u5ea6",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_228",
+        "parentid": "line_223",
+        "topic": "\u627e\u8b93k-th filter\u88abactivate\u6700\u5927\u7a0b\u5ea6\u7684input",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_229",
+        "parentid": "line_223",
+        "topic": "x* = arg max_x a^k",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_230",
+        "parentid": "line_229",
+        "topic": "\u627ex\u8b93a^k\u6700\u5927",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_231",
+        "parentid": "line_230",
+        "topic": "gradient descent",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_232",
+        "parentid": "line_230",
+        "topic": "\u53cd\u5411",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_233",
+        "parentid": "line_230",
+        "topic": "gradient acent",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_234",
+        "parentid": "line_223",
+        "topic": "\u73fe\u5728model\u53c3\u6578\u56fa\u5b9a\u7684",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_235",
+        "parentid": "line_234",
+        "topic": "\u662f\u8981\u7528gradient descent/acent",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_236",
+        "parentid": "line_235",
+        "topic": "\u4f86update input x",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_237",
+        "parentid": "line_235",
+        "topic": "\u8b93\u4ed6activate function\u7d50\u679c\u6700\u5927",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_238",
+        "parentid": "line_235",
+        "topic": "\u9019\u6a23\u53ef\u4ee5\u627e\u5230image x\u8b93filter\u6700\u5927",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_239",
+        "parentid": "line_238",
+        "topic": "image\u901a\u5e38\u6703\u5177\u5099\u67d0\u7a2etexture",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_240",
+        "parentid": "line_239",
+        "topic": "\u5728\u5716\u4e0a\u53cd\u8986\u51fa\u73fe",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_241",
+        "parentid": "line_240",
+        "topic": "\u4f8b\u5982\u659c\u689d\u7d0b\u8def",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_242",
+        "parentid": "line_223",
+        "topic": "\u7b2c\u4e00\u5c64\u6307\u5728\u5716\u4e0a\u8003\u616e\u5c0f\u7bc4\u570d",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_243",
+        "parentid": "line_242",
+        "topic": "\u6240\u4ee5\u9019\u500bfilter\u5c31\u6703\u5bc6\u96c6\u88ab\u9019\u500b\u659c\u689d",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_244",
+        "parentid": "line_243",
+        "topic": "\u5247\u9019\u500bfilter degree of activation\u6703\u6700\u5927",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_245",
+        "parentid": "line_242",
+        "topic": "\u6bcf\u4e00\u500bfilter\u5c31\u662fdetect\u4e0d\u540c\u89d2\u5ea6\u7684\u689d\u7d0b",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_246",
+        "parentid": "line_207",
+        "topic": "fully connected neural network",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_247",
+        "parentid": "line_246",
+        "topic": "maxpooling -> flatten -> fully connected neural network",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_248",
+        "parentid": "line_246",
+        "topic": "find a image maximizing the output of neuron",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_249",
+        "parentid": "line_246",
+        "topic": "ex: j-th neuron:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_250",
+        "parentid": "line_249",
+        "topic": "x* = arg max_x a^j",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_251",
+        "parentid": "line_249",
+        "topic": "each figure corresponds to a neuron",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_252",
+        "parentid": "line_249",
+        "topic": "\u9019\u908a\u89c0\u5bdf\u5230\u8ddffilter\u5dee\u5f88\u591a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_253",
+        "parentid": "line_252",
+        "topic": "filter\u89c0\u5bdf\u5230\u7d0b\u8def",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_254",
+        "parentid": "line_252",
+        "topic": "fully connected\u770b\u5230\u662f\u6574\u5f35\u5716",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_255",
+        "parentid": "line_254",
+        "topic": "\u5b8c\u6574\u7684\u5716\u5f62\u96d6\u7136\u4e0d\u50cf\u6578\u5b57",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_256",
+        "parentid": "line_254",
+        "topic": "\u9019\u4e9b\u7dda\u689d\u76f8\u7b26\u7684\u5c31\u6703\u88abactivate",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_257",
+        "parentid": "line_207",
+        "topic": "can we see digits?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_258",
+        "parentid": "line_257",
+        "topic": "x* = arg max_x y^i",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_259",
+        "parentid": "line_257",
+        "topic": "\u627e\u4e00\u5f35image\u8b93y^i\u7522\u751f\u6700\u5927\u503c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_260",
+        "parentid": "line_259",
+        "topic": "\u8b93\u4e00\u5f35\u8b93\u6578\u5b571\u7684y^i\u7522\u751f\u6700\u5927\u503c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_261",
+        "parentid": "line_260",
+        "topic": "\u61c9\u8a72\u8a72\u5716\u6703\u9577\u7684\u6700\u50cf\u6578\u5b57i ?",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_262",
+        "parentid": "line_257",
+        "topic": "\u4f46\u5be6\u969b\u5f97\u5230\u7d50\u679c\u90fd\u50cf\u4e82\u78bc",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_263",
+        "parentid": "line_262",
+        "topic": "\u4e0d\u662f\u60f3\u50cf\u50cf\u6578\u5b57",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_264",
+        "parentid": "line_262",
+        "topic": "\u50cf\u662f\u96fb\u8996\u58de\u6389\u7684\u756b\u9762",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_265",
+        "parentid": "line_257",
+        "topic": "Deep nerual networks are easily fooled",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_266",
+        "parentid": "line_265",
+        "topic": "https://www.youtube.com/watch?v=M2IebCN9Ht4",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_267",
+        "parentid": "line_257",
+        "topic": "\u80fd\u4e0d\u80fd\u8b93\u4ed6\u66f4\u50cf\u6578\u5b57",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_268",
+        "parentid": "line_267",
+        "topic": "\u5c0dx*\u505a\u4e00\u4e9b\u9650\u5236\u5f88\u660e\u986f\u4e0d\u662f\u6578\u5b57\u7684\u5716\u7247",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_269",
+        "parentid": "line_268",
+        "topic": "\u5c0d\u4e00\u500bdigits\u4f86\u8aaa\u5857\u767d\u90e8\u5206\u662f\u6709\u9650\u7684",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_270",
+        "parentid": "line_269",
+        "topic": "\u4e0d\u6703\u6574\u7576\u5716\u90fd\u662f\u5857\u767d\u7684\u7b46\u756b",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_271",
+        "parentid": "line_270",
+        "topic": "\u4e0d\u6703\u592a\u591a",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_272",
+        "parentid": "line_269",
+        "topic": "\u6578\u5b57\u53ea\u6709\u6574\u5f35\u5716\u7684\u4e00\u5c0f\u90e8\u5206",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_273",
+        "parentid": "line_268",
+        "topic": "x* = arg max_x (y^i - \u03a3_i,j|x_ij|)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_274",
+        "parentid": "line_273",
+        "topic": "overall pixel value",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_275",
+        "parentid": "line_273",
+        "topic": "\u6bcf\u500bpixel\u7528 x_ij",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_276",
+        "parentid": "line_275",
+        "topic": "28x28",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_277",
+        "parentid": "line_273",
+        "topic": "\u628apixel\u503c\u7d55\u5c0d\u503c\u52a0\u8d77\u4f86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_278",
+        "parentid": "line_277",
+        "topic": "L1 regularization",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_279",
+        "parentid": "line_273",
+        "topic": "\u627e\u5230\u4e00\u500byi\u8b93x*\u6700\u5927\u7684\u540c\u6642\u03a3x_ij\u8d8a\u5c0f\u8d8a\u597d",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_280",
+        "parentid": "line_279",
+        "topic": "\u5927\u90e8\u5206\u5730\u65b9\u6c92\u5857\u984f\u8272\u7684",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_281",
+        "parentid": "line_273",
+        "topic": "\u5c31\u6703\u51fa\u73fe\u7070\u8272\u51f9\u69fd\u5716",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_282",
+        "parentid": "line_281",
+        "topic": "\u6bd4\u96dc\u8a0a\u5716\u597d\u4e00\u9ede\u53ef\u4ee5\u770b\u5230\u4e00\u4e9b\u7dda\u7d22",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_283",
+        "parentid": "line_267",
+        "topic": "\u5982\u679c\u518d\u52a0\u66f4\u591a\u7684constraint\u53ef\u80fd\u6703\u5f97\u5230\u66f4\u597d\u7684\u7d50\u679c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_284",
+        "parentid": "line_283",
+        "topic": "\u4f8b\u5982\u76f8\u9130\u7684\u984f\u8272\u8981\u76e1\u53ef\u80fd\u76f8\u540c",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_285",
+        "parentid": "line_267",
+        "topic": "\u9019\u4e9b\u624b\u6cd5\u662fdeepdream",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_286",
+        "parentid": "line_285",
+        "topic": "given a photo, machine adds what it see...",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_287",
+        "parentid": "line_285",
+        "topic": "http://deepdreamgenerator.com/",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_288",
+        "parentid": "line_285",
+        "topic": "input a image",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_289",
+        "parentid": "line_285",
+        "topic": "get cnn filter",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_290",
+        "parentid": "line_289",
+        "topic": "gradient vector",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_291",
+        "parentid": "line_290",
+        "topic": "\u8abf\u9ad8positive value",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_292",
+        "parentid": "line_290",
+        "topic": "\u964d\u4f4enegative value",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_293",
+        "parentid": "line_290",
+        "topic": "\u6b63\u7684\u66f4\u6b63\u8ca0\u7684\u66f4\u8ca0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_294",
+        "parentid": "line_293",
+        "topic": "\u539f\u672c\u6709\u770b\u5230\u6771\u897f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_295",
+        "parentid": "line_294",
+        "topic": "\u73fe\u5728\u8b93\u4ed6\u770b\u8d77\u4f86\u66f4\u50cf\u4ed6\u770b\u5230\u7684\u6771\u897f",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_296",
+        "parentid": "line_293",
+        "topic": "\u628a\u5b83\u7576\u4f5c\u65b0\u7684image\u7684\u76ee\u6a19",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_297",
+        "parentid": "line_293",
+        "topic": "\u627e\u4e00\u5f35image\u662f\u8a2d\u5b9a\u7684target\u503c",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_298",
+        "parentid": "line_297",
+        "topic": "CNN exaggerates what it sees",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_299",
+        "parentid": "line_290",
+        "topic": "\u7522\u751f\u7684\u7d50\u679c\u6703\u51fa\u73fe\u4e00\u5806\u602a\u7378\u5728\u88e1\u9762",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_300",
+        "parentid": "line_299",
+        "topic": "\u77f3\u982d\u8b8a\u718a",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_301",
+        "parentid": "line_300",
+        "topic": "\u539f\u672c\u5f62\u72c0\u6709\u9ede\u50cf\u718a\u7684\u6642\u5019\u5c31\u8b8a\u718a\u4e86",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_302",
+        "parentid": "line_299",
+        "topic": "\u539f\u672c\u6a5f\u5668\u770b\u8d77\u4f86\u6709\u9ede\u50cf\u67d0\u6771\u897f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_303",
+        "parentid": "line_302",
+        "topic": "\u88ab\u5f37\u5316\u5f8c\u5c31\u771f\u7684\u8b8a\u4e86",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_304",
+        "parentid": "line_267",
+        "topic": "deep style",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_305",
+        "parentid": "line_304",
+        "topic": "given a photo, make its style like famous paintings",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_306",
+        "parentid": "line_304",
+        "topic": "https://dreamscopeapp.com/",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_307",
+        "parentid": "line_304",
+        "topic": "http://arxiv.org/abs/1508.06576",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_308",
+        "parentid": "line_304",
+        "topic": "\u4f5c\u6cd5\u7cbe\u795e",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_309",
+        "parentid": "line_308",
+        "topic": "\u65bc\u4f86image\u4e1f\u7d66CNN",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_310",
+        "parentid": "line_309",
+        "topic": "\u5f97\u5230filter output: content",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_311",
+        "parentid": "line_308",
+        "topic": "\u628astyle image\u4e1f\u7d66CNN",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_312",
+        "parentid": "line_311",
+        "topic": "\u5f97\u5230filter ouput: style",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_313",
+        "parentid": "line_311",
+        "topic": "\u6ce8\u610foutput\u8ddfoutput\u4e4b\u9593\u7684correlation",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_314",
+        "parentid": "line_311",
+        "topic": "correlation\u4ee3\u8868image\u7684style",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_315",
+        "parentid": "line_308",
+        "topic": "\u7528\u540c\u4e00\u500bCNN",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_316",
+        "parentid": "line_315",
+        "topic": "\u627e\u4e00\u5f35image",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_317",
+        "parentid": "line_316",
+        "topic": "content\u50cfinput image\u7684content",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_318",
+        "parentid": "line_316",
+        "topic": "\u4ed6\u7684correlation\u50cfstyle image\u7684filter output\u4e4b\u9593\u7684correlation",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_319",
+        "parentid": "line_316",
+        "topic": "\u540c\u6642\u6eff\u8db3\u7684\u5c31\u6703\u8f49\u63db\u98a8\u683c",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_320",
+        "parentid": "line_319",
+        "topic": "\u7528graident decsent\u7684\u65b9\u6cd5",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_321",
+        "parentid": "root",
+        "topic": "More Application: Playing Go",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_322",
+        "parentid": "line_321",
+        "topic": "\u4e00\u822ctypical Network\u4e5f\u80fd\u505a\u9019\u4e8b\u60c5\u4e0d\u4e00\u5b9a\u8981CNN",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_323",
+        "parentid": "line_322",
+        "topic": "\u53ea\u8981learn\u4e00\u500bnetwork\u627e\u5230function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_324",
+        "parentid": "line_323",
+        "topic": "input",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_325",
+        "parentid": "line_324",
+        "topic": "\u68cb\u76e4(19x19 vector)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_326",
+        "parentid": "line_324",
+        "topic": "black:1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_327",
+        "parentid": "line_324",
+        "topic": "white:-1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_328",
+        "parentid": "line_324",
+        "topic": "none:0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_329",
+        "parentid": "line_323",
+        "topic": "output",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_330",
+        "parentid": "line_329",
+        "topic": "\u68cb\u76e4\u4f4d\u7f6e(19x19 position)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_331",
+        "parentid": "line_322",
+        "topic": "fully connected feedforward network can be used",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_332",
+        "parentid": "line_322",
+        "topic": "but CNN perform much better",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_333",
+        "parentid": "line_332",
+        "topic": "\u628a\u68cb\u76e4\u7576image\u4f86\u770b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_334",
+        "parentid": "line_321",
+        "topic": "training:",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_335",
+        "parentid": "line_334",
+        "topic": "record of previous plays",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_336",
+        "parentid": "line_334",
+        "topic": "\u68cb\u76e4 input -> CNN -> output \u5929\u5143=1, other=0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_337",
+        "parentid": "line_321",
+        "topic": "why CNN for playing GO?",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_338",
+        "parentid": "line_337",
+        "topic": "\u4ec0\u9ebc\u6642\u5019\u7528CNN?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_339",
+        "parentid": "line_338",
+        "topic": "\u6709image\u8a72\u6709\u7684\u7279\u6027\u5c31\u9069\u5408",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_340",
+        "parentid": "line_337",
+        "topic": "some pattern are much smaller the whole image",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_341",
+        "parentid": "line_340",
+        "topic": "\u570d\u68cb\u4e09\u500b\u9ed1\u7d2b\u570d\u4e00\u767d\u5b50",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_342",
+        "parentid": "line_341",
+        "topic": "\u53ea\u9700\u8981\u770b\u9019\u5c0f\u5c0fpattern\u5c31\u597d",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_343",
+        "parentid": "line_341",
+        "topic": "CNN in Go",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_344",
+        "parentid": "line_343",
+        "topic": "5x5 pattern",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_345",
+        "parentid": "line_337",
+        "topic": "the same pattern appear in differenct regions",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_346",
+        "parentid": "line_345",
+        "topic": "\u570d\u68cb\u7684\u7d44\u5408\u51fa\u73fe\u5728\u4e0d\u540c\u671f\u76e4\u4f4d\u7f6e\u4ee3\u8868\u76f8\u540c\u610f\u8b70",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_347",
+        "parentid": "line_337",
+        "topic": "Subsampling the pixels will not change the object",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_348",
+        "parentid": "line_347",
+        "topic": "maxpooling",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_349",
+        "parentid": "line_348",
+        "topic": "how to expand this in Go?",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_350",
+        "parentid": "line_347",
+        "topic": "alpha go network architecture",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_351",
+        "parentid": "line_350",
+        "topic": "19x19x48 feature map",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_352",
+        "parentid": "line_351",
+        "topic": "\u6bcf\u4e00\u500b\u4f4d\u7f6e\u90fd\u752848\u500bvalue\u4f86\u63cf\u8ff0\u4ed6",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_353",
+        "parentid": "line_352",
+        "topic": "domain knowledge",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_354",
+        "parentid": "line_353",
+        "topic": "\u662f\u4e0d\u662f\u5c6c\u65bc\u53eb\u5403\u7684\u72c0\u614b",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_355",
+        "parentid": "line_353",
+        "topic": "...",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_356",
+        "parentid": "line_350",
+        "topic": "first layer",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_357",
+        "parentid": "line_356",
+        "topic": "zero padding to 23x23 image",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_358",
+        "parentid": "line_356",
+        "topic": "conv 5x5 in k filter with stride 1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_359",
+        "parentid": "line_358",
+        "topic": "k=192",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_360",
+        "parentid": "line_358",
+        "topic": "relu activate function",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_361",
+        "parentid": "line_350",
+        "topic": "2-12 layer",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_362",
+        "parentid": "line_361",
+        "topic": "input 21x21",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_363",
+        "parentid": "line_361",
+        "topic": "conv 3x3 stride 1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_364",
+        "parentid": "line_350",
+        "topic": "not maxpooling",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_365",
+        "parentid": "line_347",
+        "topic": "\u91dd\u5c0d\u570d\u68cb\u7279\u6027\u8a2d\u8a08",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_366",
+        "parentid": "line_365",
+        "topic": "neural network\u6642\u628a\u4e0d\u9069\u5408\u7684maxpooling\u62ff\u6389",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_367",
+        "parentid": "root",
+        "topic": "More Application: Speech",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_368",
+        "parentid": "line_367",
+        "topic": "Spectrogram:",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_369",
+        "parentid": "line_368",
+        "topic": "y:Frequency",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_370",
+        "parentid": "line_368",
+        "topic": "x:Time",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_371",
+        "parentid": "line_368",
+        "topic": "\u984f\u8272\u4ee3\u8868\u90a3\u6bb5\u6642\u9593\u7684\u8a72\u983b\u7387\u5f37\u5ea6",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_372",
+        "parentid": "line_368",
+        "topic": "Specturgram reading\u7684\u4eba\u53ef\u4ee5\u770b\u61c2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_373",
+        "parentid": "line_372",
+        "topic": "\u4eba\u53ef\u4ee5\u770b\u5c31\u77e5\u9053\u4ec0\u9ebc\u8072\u97f3\u8a0a\u865f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_374",
+        "parentid": "line_373",
+        "topic": "\u6240\u4ee5\u628a\u5716\u7247\u4e1f\u7d66\u6a5f\u5668\u7576CNN\u5224\u65b7\u9019image\u662f\u4ec0\u9ebc\u6a23\u7684\u8072\u97f3\u8a0a\u865f",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_375",
+        "parentid": "line_373",
+        "topic": "output:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_376",
+        "parentid": "line_375",
+        "topic": "phoneme\u985e\u4f3c\u97f3\u6a19\u7684\u55ae\u4f4d",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_377",
+        "parentid": "line_368",
+        "topic": "\u628a\u5716\u7247\u4e1f\u7d66CNN\u6642",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_378",
+        "parentid": "line_377",
+        "topic": "\u6211\u5011\u901a\u5e38\u53ea\u8003\u616efrequecy\u65b9\u5411\u7684filter",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_379",
+        "parentid": "line_378",
+        "topic": "filter\u6307\u79fb\u52d5frequency\u4e0d\u79fb\u52d5time\u65b9\u5411",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_380",
+        "parentid": "line_378",
+        "topic": "\u79fb\u52d5time\u65b9\u5411\u6c92\u4ec0\u9ebc\u5e6b\u52a9",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_381",
+        "parentid": "line_380",
+        "topic": "\u901a\u5e38CNN\u5f8c\u9762\u6703\u63a5LSTN\u6216\u5176\u4ed6\u6771\u897f",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_382",
+        "parentid": "line_381",
+        "topic": "\u90fd\u5df2\u7d93\u8003\u616etime\u7684info\u4e86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_383",
+        "parentid": "line_378",
+        "topic": "Frequency\u7684filter\u70ba\u4ec0\u9ebc\u6709\u5e6b\u52a9",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_384",
+        "parentid": "line_383",
+        "topic": "detect\u540c\u6a23pattern",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_385",
+        "parentid": "line_383",
+        "topic": "\u7537\u5973\u767c\u540c\u6a23\u8072\u97f3\u983b\u7387\u5728\u4e0d\u540c\u5340\u9593",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_386",
+        "parentid": "line_385",
+        "topic": "\u4f46pattern\u76f8\u540c",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_387",
+        "parentid": "line_385",
+        "topic": "\u53ea\u662f\u983b\u7387shift",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_388",
+        "parentid": "line_385",
+        "topic": "\u6240\u4ee5\u5728frequency shift\u6703\u6709\u5e6b\u52a9",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_389",
+        "parentid": "line_368",
+        "topic": "\u4f9d\u7167application\u7279\u6027design",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_390",
+        "parentid": "root",
+        "topic": "More Application: Text",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_391",
+        "parentid": "line_390",
+        "topic": "word sequence -> CNN ->output",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_392",
+        "parentid": "line_391",
+        "topic": "\u6bcf\u4e00\u500bword\u90fd\u662f\u4e00\u500bvector",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_393",
+        "parentid": "line_392",
+        "topic": "word embedding dimension",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_394",
+        "parentid": "line_393",
+        "topic": "word vector\u6392\u5217\u8d77\u4f86\u5c31\u8b8a\u6210\u4e00\u500bimage",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_395",
+        "parentid": "line_392",
+        "topic": "CNN filter\u6383word\u7684\u9806\u5e8f\u5f62\u6210vector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_396",
+        "parentid": "line_395",
+        "topic": "filter\u53ea\u5728time shift",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_397",
+        "parentid": "line_396",
+        "topic": "sentence\u65b9\u5411",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_398",
+        "parentid": "line_395",
+        "topic": "\u5728word embedding shift\u662f\u4e0dmake sense\u7684",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_399",
+        "parentid": "line_392",
+        "topic": "word\u9806\u5e8f\u8ddfpattern\u5f88\u985e\u4f3c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_400",
+        "parentid": "root",
+        "topic": "to learn more...",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_401",
+        "parentid": "line_400",
+        "topic": "the method of visualization in these slides",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_402",
+        "parentid": "line_401",
+        "topic": "https://blog.keras.io/how-convolutional-neural-networks-see-the-world.html",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_403",
+        "parentid": "line_400",
+        "topic": "more about visualization",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_404",
+        "parentid": "line_403",
+        "topic": "https://cs231n.github.io/understanding-cnn/",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_405",
+        "parentid": "line_400",
+        "topic": "very cool CNN visualization toolkit\u505a\u597d\u4e86",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_406",
+        "parentid": "line_405",
+        "topic": "http://yosinski.com/deepvis",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_407",
+        "parentid": "line_405",
+        "topic": "http://scs.ryerson.ca/~aharley/vis/conv/",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_408",
+        "parentid": "line_400",
+        "topic": "how to let machine draw an image",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_409",
+        "parentid": "line_408",
+        "topic": "pixelRNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_410",
+        "parentid": "line_409",
+        "topic": "http://arxiv.org/abs/1601.06759",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_411",
+        "parentid": "line_408",
+        "topic": "Variation Autoencoder(VAE)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_412",
+        "parentid": "line_411",
+        "topic": "http://arxiv.org/abs/1312.6114",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_413",
+        "parentid": "line_408",
+        "topic": "Generation Adverservial Network(GAN)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_414",
+        "parentid": "line_413",
+        "topic": "http://arxiv.org/abs/1406.2661",
+        "background-color": "#e3aba7",
+        "expanded": false
+    }
+]

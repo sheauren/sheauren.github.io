@@ -1,0 +1,15 @@
+Fizz Buzz in tensorflow
+    硬"train"一發的代表故事
+        https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/
+        看起來好像不能train的東西還是用train解決
+        ex:
+            一串數字
+            %3==0 fizz
+            %5==0 buzz
+            %3%3==0 fizz buzz
+            用tensorflow做
+            1-100是output要用
+            101-1000當training data
+            training:
+                train acc太小就加大model
+                

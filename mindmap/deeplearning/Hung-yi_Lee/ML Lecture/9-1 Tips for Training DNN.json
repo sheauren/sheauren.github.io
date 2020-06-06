@@ -156,1318 +156,2564 @@
     },
     {
         "id": "line_23",
-        "parentid": "line_20",
-        "topic": "early stopping",
-        "background-color": "#e82ad2",
-        "expanded": false
-    },
-    {
-        "id": "line_24",
-        "parentid": "line_20",
-        "topic": "regularization",
-        "background-color": "#e82ad2",
-        "expanded": false
-    },
-    {
-        "id": "line_25",
-        "parentid": "line_20",
-        "topic": "new activation function",
-        "background-color": "#e82ad2",
-        "expanded": false
-    },
-    {
-        "id": "line_26",
-        "parentid": "line_25",
-        "topic": "using when bad results on training data",
+        "parentid": "line_21",
+        "topic": "each time before updating the parameters",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "each neuron has p% to dropout",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "the structure of the network is changed",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_24",
+        "topic": "using the new network for training",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
         "id": "line_27",
-        "parentid": "line_25",
-        "topic": "e.g. handwriting digit classification",
+        "parentid": "line_21",
+        "topic": "for each mini batch, we resample the dropout neuron",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_28",
-        "parentid": "line_27",
-        "topic": "deeper usually does not imply better",
-        "background-color": "#e3aba7",
+        "parentid": "line_21",
+        "topic": "training\u4f7f\u7528dropout performance\u6703\u8b8a\u5dee",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_29",
-        "parentid": "line_27",
-        "topic": "layer++ accuracy-- in training",
+        "parentid": "line_28",
+        "topic": "\u8b93\u4f60\u7684training\u7d50\u679c\u8b8a\u5dee",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_30",
         "parentid": "line_29",
-        "topic": "not overfitting",
+        "topic": "\u5982\u679ctraining\u5df2\u7d93\u4e0d\u5920\u597d\u52a0dropout\u6703\u66f4\u6158",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_31",
-        "parentid": "line_29",
-        "topic": "not well trained",
-        "background-color": "#d41dea",
+        "parentid": "line_28",
+        "topic": "\u4f46\u8b93testing\u7d50\u679c\u8b8a\u597d",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_32",
-        "parentid": "line_27",
-        "topic": "Vanishing Gradient Problem",
-        "background-color": "#e3aba7",
+        "parentid": "line_31",
+        "topic": "no dropout",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_33",
         "parentid": "line_32",
-        "topic": "small gradient in bottom",
-        "background-color": "#d41dea",
+        "topic": "if the dropout rate at training is p%",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_34",
         "parentid": "line_33",
-        "topic": "learning very slow",
-        "background-color": "#01a6d5",
+        "topic": "all the weight times (1-p)%",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_35",
-        "parentid": "line_33",
-        "topic": "almost random",
+        "parentid": "line_32",
+        "topic": "assume that the dropout rate is 50%",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_36",
-        "parentid": "line_32",
-        "topic": "large gradient in top",
-        "background-color": "#d41dea",
+        "parentid": "line_35",
+        "topic": "if a weight w=1 by training set",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_37",
-        "parentid": "line_36",
-        "topic": "learning very fast",
-        "background-color": "#01a6d5",
+        "parentid": "line_35",
+        "topic": "set w = 0.5 for testing",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_38",
-        "parentid": "line_36",
-        "topic": "already converge",
-        "background-color": "#01a6d5",
+        "parentid": "line_21",
+        "topic": "intuitive reason",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_39",
         "parentid": "line_38",
-        "topic": "loss decline very slow",
-        "background-color": "#97d9c7",
+        "topic": "training dropout neuron",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_40",
-        "parentid": "line_38",
-        "topic": "bad of training result",
-        "background-color": "#97d9c7",
+        "parentid": "line_39",
+        "topic": "\u7d81\u91cd\u7269\u8a13\u7df4",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_41",
-        "parentid": "line_40",
-        "topic": "converge base on random",
-        "background-color": "#eb6a68",
+        "parentid": "line_38",
+        "topic": "testing no dropout",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_42",
-        "parentid": "line_32",
-        "topic": "sigmod\u6703\u5c0e\u81f4\u9019\u4ef6\u4e8b\u60c5\u767c\u751f",
+        "parentid": "line_41",
+        "topic": "\u91cd\u7269\u62ff\u4e0b\u4f86\u5c31\u6703\u8b8a\u5f88\u5f37",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_43",
-        "parentid": "line_42",
-        "topic": "large input",
-        "background-color": "#01a6d5",
+        "parentid": "line_38",
+        "topic": "\u6bcf\u4e00\u500bneuron\u7576\u4e00\u500b\u5b78\u751f",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_44",
-        "parentid": "line_42",
-        "topic": "small output",
-        "background-color": "#01a6d5",
+        "parentid": "line_43",
+        "topic": "\u9023\u7d50\u8981\u505afinal project",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_45",
-        "parentid": "line_42",
-        "topic": "\u5f88\u5f37\u7684\u8870\u6e1b",
+        "parentid": "line_44",
+        "topic": "\u5718\u968a\u88e1\u9762\u6709\u4eba\u6703\u64fa\u721b",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_46",
-        "parentid": "line_42",
-        "topic": "input\u7d93\u904e\u8870\u6e1b\u5c0doutput\u8b8a\u5316\u5f88\u5c0f",
+        "parentid": "line_44",
+        "topic": "\u4f60\u89ba\u5f97\u968a\u53cb\u6703\u64fa\u721b",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_47",
-        "parentid": "line_42",
-        "topic": "\u5c0e\u81f4\u8d8a\u63a5\u8fd1top\u8870\u6e1b\u8d8a\u5c11",
-        "background-color": "#01a6d5",
+        "parentid": "line_46",
+        "topic": "\u4f60\u5c31\u8981\u597d\u597d\u505a",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_48",
-        "parentid": "line_32",
-        "topic": "intuitive way to compute the derivatives...",
-        "background-color": "#d41dea",
+        "parentid": "line_46",
+        "topic": "\u6e96\u5099cover\u968a\u53cb",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_49",
-        "parentid": "line_48",
-        "topic": "\u2202C/\u2202w = ? \u0394C/\u0394w",
+        "parentid": "line_44",
+        "topic": "testing\u5927\u5bb6\u90fd\u597d\u597d\u505a",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_50",
-        "parentid": "line_48",
-        "topic": "bottom layer + \u0394w",
-        "background-color": "#01a6d5",
+        "parentid": "line_49",
+        "topic": "\u66f4\u52aa\u529b\u6240\u4ee5\u7d50\u679c\u66f4\u597d",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_51",
-        "parentid": "line_50",
-        "topic": "monitor output loss effect",
-        "background-color": "#97d9c7",
+        "parentid": "line_38",
+        "topic": "why the weights should multiply (1-p)% when testing?",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_52",
-        "parentid": "line_50",
-        "topic": "smaller gradients",
-        "background-color": "#97d9c7",
+        "parentid": "line_51",
+        "topic": "tarining of dropout",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_53",
-        "parentid": "line_32",
-        "topic": "\u65e9\u5e74\u4f5c\u6cd5:",
-        "background-color": "#d41dea",
+        "parentid": "line_52",
+        "topic": "assume dropout rate is 50%",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_54",
         "parentid": "line_53",
-        "topic": "train RBM:Restricted Boltzmann Machines",
-        "background-color": "#01a6d5",
+        "topic": "z",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_55",
-        "parentid": "line_54",
-        "topic": "\u8a8d\u8b58\u597d\u7b2c\u4e00\u500blayer",
-        "background-color": "#97d9c7",
+        "parentid": "line_51",
+        "topic": "testing of dropout",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_56",
-        "parentid": "line_54",
-        "topic": "\u4e00\u500b\u4e00\u500blayer training",
-        "background-color": "#97d9c7",
+        "parentid": "line_55",
+        "topic": "No dropout",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_57",
-        "parentid": "line_32",
-        "topic": "\u6539\u4e00\u4e0bactivation function:",
-        "background-color": "#d41dea",
+        "parentid": "line_56",
+        "topic": "weight from training",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_58",
         "parentid": "line_57",
-        "topic": "ReLU:Rectified Linear Unit",
-        "background-color": "#01a6d5",
+        "topic": "z' \u2248 2z",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_59",
         "parentid": "line_58",
-        "topic": "input>=0:",
-        "background-color": "#97d9c7",
+        "topic": "(p=50%)",
+        "background-color": "#412ffc",
         "expanded": false
     },
     {
         "id": "line_60",
-        "parentid": "line_59",
-        "topic": "output=input",
-        "background-color": "#eb6a68",
+        "parentid": "line_56",
+        "topic": "testing training not match",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_61",
-        "parentid": "line_58",
-        "topic": "input<0:",
-        "background-color": "#97d9c7",
+        "parentid": "line_38",
+        "topic": "dropout is a kind of ensemble",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_62",
         "parentid": "line_61",
-        "topic": "output=0",
-        "background-color": "#eb6a68",
+        "topic": "ultimate ensemble method",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_63",
-        "parentid": "line_58",
-        "topic": "Reason:",
-        "background-color": "#97d9c7",
+        "parentid": "line_61",
+        "topic": "ensemble",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_64",
         "parentid": "line_63",
-        "topic": "fast to compute",
-        "background-color": "#eb6a68",
+        "topic": "training set",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_65",
-        "parentid": "line_63",
-        "topic": "biologic reason",
-        "background-color": "#eb6a68",
+        "parentid": "line_64",
+        "topic": "\u6bcf\u6b21\u53easample\u4e00\u90e8\u5206data",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_66",
-        "parentid": "line_63",
-        "topic": "inifinite sigmoid with differenct biases",
-        "background-color": "#eb6a68",
+        "parentid": "line_64",
+        "topic": "\u5f88\u8907\u96dc\u7684model",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_67",
-        "parentid": "line_63",
-        "topic": "Vanishing gradient problem",
+        "parentid": "line_66",
+        "topic": "bias\u6e96",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_68",
-        "parentid": "line_67",
-        "topic": "when input<0",
-        "background-color": "#412ffc",
+        "parentid": "line_66",
+        "topic": "variance\u5f88\u5927",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_69",
-        "parentid": "line_68",
-        "topic": "remove the neural",
-        "background-color": "#fff",
+        "parentid": "line_63",
+        "topic": "\u5982\u679c\u5206\u5f88\u591a\u500b\u8a13\u7df4",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_70",
-        "parentid": "line_67",
-        "topic": "when input>=output",
-        "background-color": "#412ffc",
+        "parentid": "line_69",
+        "topic": "\u5e73\u5747\u8d77\u4f86\u7d50\u679c\u5c31\u5f88\u6e96",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_71",
-        "parentid": "line_70",
-        "topic": "linear",
-        "background-color": "#fff",
+        "parentid": "line_63",
+        "topic": "train\u5f88\u591a\u500bmodel",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_72",
-        "parentid": "line_67",
-        "topic": "from a thinner linear network",
-        "background-color": "#412ffc",
+        "parentid": "line_71",
+        "topic": "\u6bcf\u500bmodel structure\u4e0d\u4e00\u6a23",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_73",
-        "parentid": "line_72",
-        "topic": "does not have smaller gradients",
-        "background-color": "#fff",
+        "parentid": "line_71",
+        "topic": "\u6bcf\u500bmodel variance\u5f88\u5927",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_74",
-        "parentid": "line_72",
-        "topic": "smaller gradients on bottom\u7684\u554f\u984c\u4e86",
-        "background-color": "#fff",
+        "parentid": "line_71",
+        "topic": "\u5e73\u5747\u8d77\u4f86bias\u5c31\u5f88\u5c0f",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_75",
-        "parentid": "line_58",
-        "topic": "\u539f\u672c\u4e0d\u662f\u5e0c\u671bnerual network\u662f\u4e00\u500bnon-learning funciton",
+        "parentid": "line_71",
+        "topic": "input\u901a\u904e\u6240\u6709\u7684model\u5e73\u5747\u8d77\u4f86",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_76",
         "parentid": "line_75",
-        "topic": "\u6240\u4ee5\u624d\u7528deep learning",
+        "topic": "\u7576\u6700\u5f8c\u7684\u7d50\u679c",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_77",
-        "parentid": "line_75",
-        "topic": "\u7528ReLU\u53c8\u8b8a\u6210linear function",
-        "background-color": "#eb6a68",
+        "parentid": "line_63",
+        "topic": "\u7576model\u771f\u7684\u5f88\u5927\u9019\u62db\u5c31\u5f88\u597d\u7528",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_78",
-        "parentid": "line_75",
-        "topic": "\u4f46\u662f\u6574\u500bmodel\u9084\u662fnon-linear funciton",
-        "background-color": "#eb6a68",
+        "parentid": "line_77",
+        "topic": "random forest\u5c31\u7528\u9019\u65b9\u6cd5",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_79",
         "parentid": "line_78",
-        "topic": "\u7576\u6bcf\u500bneuron\u505aoperatoin",
-        "background-color": "#412ffc",
+        "topic": "\u4e0d\u5bb9\u6613overfitting",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_80",
-        "parentid": "line_79",
-        "topic": "operation region\u4e00\u6a23\u6642",
-        "background-color": "#fff",
+        "parentid": "line_77",
+        "topic": "decision tree\u5c31\u5f88\u5f31,\u4e82\u505a\u6703overfiiting",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_81",
-        "parentid": "line_80",
-        "topic": "linear function",
-        "background-color": "#e3aba7",
+        "parentid": "line_61",
+        "topic": "why ultimate ensemble method?",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_82",
-        "parentid": "line_78",
-        "topic": "\u7576input\u505a\u6bd4\u8f03\u5927\u7684\u6539\u8b8a",
-        "background-color": "#412ffc",
+        "parentid": "line_81",
+        "topic": "minibatch\u9047\u5230sample\u6bcf\u6b21training\u7684model\u90fd\u4e0d\u540c",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_83",
-        "parentid": "line_82",
-        "topic": "operation region\u8b8a\u5316\u6642",
-        "background-color": "#fff",
+        "parentid": "line_81",
+        "topic": "\u65bcM\u500bneurons",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_84",
         "parentid": "line_83",
-        "topic": "non-linear function",
-        "background-color": "#e3aba7",
+        "topic": "training 2^M possible networks",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_85",
-        "parentid": "line_58",
-        "topic": "ReLU\u4e0d\u80fdderivatives",
+        "parentid": "line_83",
+        "topic": "\u6bcf\u500bnetwork\u7528\u4e00\u500bminibatch\u4f86train",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_86",
         "parentid": "line_85",
-        "topic": "\u7576input>=0",
+        "topic": "\u6703\u6709\u9ede\u4e0d\u5b89",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_87",
         "parentid": "line_86",
-        "topic": "gradient = 1",
+        "topic": "\u4f46\u5f7c\u6b64network share\u53c3\u6578\u7684",
         "background-color": "#412ffc",
         "expanded": false
     },
     {
         "id": "line_88",
-        "parentid": "line_85",
-        "topic": "\u7576input<0",
-        "background-color": "#eb6a68",
-        "expanded": false
-    },
-    {
-        "id": "line_89",
-        "parentid": "line_88",
-        "topic": "gradient = 0",
+        "parentid": "line_86",
+        "topic": "\u4e00\u500bweight\u53ef\u80fd\u88ab\u597d\u591a\u500bbatch train\u904e",
         "background-color": "#412ffc",
         "expanded": false
     },
     {
+        "id": "line_89",
+        "parentid": "line_83",
+        "topic": "train\u4e00\u5927\u628a\u7684network",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
         "id": "line_90",
-        "parentid": "line_85",
-        "topic": "\u4e0d\u53ef\u80fd\u525b\u597d=0",
-        "background-color": "#eb6a68",
+        "parentid": "line_81",
+        "topic": "testing\u6642",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_91",
-        "parentid": "line_58",
-        "topic": "\u63dbRelu\u7684handwriting\u7d50\u679c",
+        "parentid": "line_90",
+        "topic": "\u7406\u60f3:",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_92",
-        "parentid": "line_57",
-        "topic": "ReLU-variant",
-        "background-color": "#01a6d5",
+        "parentid": "line_91",
+        "topic": "\u4e00\u5927\u628a\u7684network\u62ff\u51fa\u4f86",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_93",
-        "parentid": "line_92",
-        "topic": "Leaky ReLU",
-        "background-color": "#97d9c7",
+        "parentid": "line_91",
+        "topic": "\u628a\u6240\u6709\u7d50\u679c\u5e73\u5747\u8d77\u4f86",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_94",
-        "parentid": "line_93",
-        "topic": "\u907f\u514dinput<0",
-        "background-color": "#eb6a68",
+        "parentid": "line_90",
+        "topic": "\u5be6\u969b:",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_95",
         "parentid": "line_94",
-        "topic": "gradient = 0",
-        "background-color": "#412ffc",
+        "topic": "\u5b8c\u6574network\u4e0ddropout",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_96",
-        "parentid": "line_93",
-        "topic": "input>0",
+        "parentid": "line_94",
+        "topic": "\u628aweight*(1-p)",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_97",
-        "parentid": "line_96",
-        "topic": "a=z",
-        "background-color": "#412ffc",
-        "expanded": false
-    },
-    {
-        "id": "line_98",
-        "parentid": "line_93",
-        "topic": "input<0",
+        "parentid": "line_94",
+        "topic": "approximate",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
+        "id": "line_98",
+        "parentid": "line_97",
+        "topic": "train input+dropout",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
         "id": "line_99",
-        "parentid": "line_98",
-        "topic": "a=0.001z",
+        "parentid": "line_97",
+        "topic": "test input+nodropout * (1-p)",
         "background-color": "#412ffc",
         "expanded": false
     },
     {
         "id": "line_100",
-        "parentid": "line_92",
-        "topic": "Parametric ReLU",
-        "background-color": "#97d9c7",
+        "parentid": "line_61",
+        "topic": "testing of dropout",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_101",
         "parentid": "line_100",
-        "topic": "input>0",
-        "background-color": "#eb6a68",
+        "topic": "z = x1w1+x2w2",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_102",
-        "parentid": "line_101",
-        "topic": "a=z",
-        "background-color": "#412ffc",
+        "parentid": "line_100",
+        "topic": "Activation function linear",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_103",
         "parentid": "line_100",
-        "topic": "input<0",
-        "background-color": "#eb6a68",
+        "topic": "ensemble",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_104",
         "parentid": "line_103",
-        "topic": "a=\u03b1z",
-        "background-color": "#412ffc",
+        "topic": "z = x1w1+x2w2",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_105",
         "parentid": "line_103",
-        "topic": "\u03b1 training by neural",
-        "background-color": "#412ffc",
+        "topic": "z = x2w2",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_106",
-        "parentid": "line_57",
-        "topic": "Maxout network",
-        "background-color": "#01a6d5",
+        "parentid": "line_103",
+        "topic": "z = x1w1",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_107",
-        "parentid": "line_106",
-        "topic": "Learnable activation funciton",
+        "parentid": "line_103",
+        "topic": "z = 0",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_108",
-        "parentid": "line_107",
-        "topic": "Activateion function in maxout network can be any piecewise linear convex function",
-        "background-color": "#eb6a68",
+        "parentid": "line_103",
+        "topic": "\u6a5f\u7387",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_109",
-        "parentid": "line_107",
-        "topic": "How many pieces depending on how many elements in a group",
+        "parentid": "line_108",
+        "topic": "1/2 x1w1",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_110",
-        "parentid": "line_106",
-        "topic": "ReLU is a special case in Maxout",
-        "background-color": "#97d9c7",
+        "parentid": "line_108",
+        "topic": "1/2 x2w2",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_111",
-        "parentid": "line_110",
-        "topic": "ReLU:",
-        "background-color": "#eb6a68",
+        "parentid": "line_103",
+        "topic": "\u5408\u4f75output",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_112",
         "parentid": "line_111",
-        "topic": "input:x",
-        "background-color": "#412ffc",
+        "topic": "z = x1w1*1/2+x2w2*1/2",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_113",
-        "parentid": "line_111",
-        "topic": "z = x*w+b",
-        "background-color": "#412ffc",
+        "parentid": "line_103",
+        "topic": "\u5f97\u5230output\u76f8\u540c",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_114",
-        "parentid": "line_111",
-        "topic": "a = ReLU(z)",
-        "background-color": "#412ffc",
+        "parentid": "line_113",
+        "topic": "\u4e0d\u540cnetwork structure ensemble",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_115",
-        "parentid": "line_110",
-        "topic": "z = w*x+b",
+        "parentid": "line_113",
+        "topic": "\u8ddf\u4e0densemble multiple\u4e00\u500b\u503c\u5f97\u5230\u76f8\u540c\u7d50\u679c",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_116",
-        "parentid": "line_110",
-        "topic": "Maxout:",
-        "background-color": "#eb6a68",
+        "parentid": "line_100",
+        "topic": "when deep learning equivalent?",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_117",
         "parentid": "line_116",
-        "topic": "input:x",
-        "background-color": "#412ffc",
+        "topic": "activation function non-learning",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_118",
-        "parentid": "line_116",
-        "topic": "z1 = x*w1+b",
-        "background-color": "#412ffc",
+        "parentid": "line_117",
+        "topic": "not equivalent",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_119",
-        "parentid": "line_116",
-        "topic": "z2 = x*0+0",
-        "background-color": "#412ffc",
+        "parentid": "line_117",
+        "topic": "but can work",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_120",
         "parentid": "line_116",
-        "topic": "a = max(z1,z2)",
-        "background-color": "#412ffc",
+        "topic": "\u7576network\u63a5\u8fd1linear\u6642",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_121",
-        "parentid": "line_106",
-        "topic": "maxout ex:",
-        "background-color": "#97d9c7",
+        "parentid": "line_120",
+        "topic": "dropout performance\u6703\u6bd4\u8f03\u597d",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_122",
         "parentid": "line_121",
-        "topic": "input:[x1,x2]",
-        "background-color": "#eb6a68",
+        "topic": "ReLU",
+        "background-color": "#412ffc",
         "expanded": false
     },
     {
         "id": "line_123",
         "parentid": "line_121",
-        "topic": "[x1w1+x2w2 , x2w3+x2w4, x1w5+x2w6, x1w7+x2w8 ]",
-        "background-color": "#eb6a68",
+        "topic": "Maxout",
+        "background-color": "#412ffc",
         "expanded": false
     },
     {
         "id": "line_124",
         "parentid": "line_123",
-        "topic": "groupping \u4e8b\u5148\u6c7a\u5b9a",
-        "background-color": "#412ffc",
+        "topic": "\u76f8\u5c0dsigmoid\u4f86\u8aaa\u4e0a\u8ff0\u6703\u6bd4\u8f03\u63a5\u8fd1linear",
+        "background-color": "#fff",
         "expanded": false
     },
     {
         "id": "line_125",
-        "parentid": "line_124",
-        "topic": "[x1w1+x2w2,x2w3+x2w4]",
-        "background-color": "#fff",
+        "parentid": "line_20",
+        "topic": "early stopping",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_126",
-        "parentid": "line_124",
-        "topic": "[x1w5+x2w6,x1w7+x2w8]",
-        "background-color": "#fff",
+        "parentid": "line_125",
+        "topic": "\u96a8training\u65bctraining set\u7684total loss\u4e0b\u964d",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_127",
-        "parentid": "line_123",
-        "topic": "\u540cgroup\u9078value\u6700\u5927\u7684output",
-        "background-color": "#412ffc",
+        "parentid": "line_125",
+        "topic": "\u96a8training\u65bctesting set\u7684total loss\u53ef\u80fd\u5f8c\u4f86\u53cd\u800c\u6703\u4e0a\u5347",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_128",
         "parentid": "line_127",
-        "topic": "\u985e\u4f3cmaxpooling",
-        "background-color": "#fff",
+        "topic": "\u5982\u679c\u77e5\u9053testing loss\u7684\u7d50\u679c",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_129",
         "parentid": "line_127",
-        "topic": "\u4e00\u500blayer\u7684maxpooling",
-        "background-color": "#fff",
+        "topic": "trainig\u7d50\u679c\u61c9\u8a72\u505c\u5728testing loss\u6700\u5c0f\u7684\u5730\u65b9",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_130",
-        "parentid": "line_106",
-        "topic": "you can have more than 2 elements in a group",
-        "background-color": "#97d9c7",
+        "parentid": "line_125",
+        "topic": "\u5be6\u969b\u4e0a\u4e0d\u77e5\u9053training set\u662f\u4ec0\u9ebc",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_131",
         "parentid": "line_130",
-        "topic": "\u53ef\u4ee5\u8abf\u6574\u7684\u53c3\u6578",
-        "background-color": "#eb6a68",
+        "topic": "\u6240\u4ee5\u6703\u7528valitation set\u4f86vertify\u9019\u4e8b\u60c5",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_132",
-        "parentid": "line_106",
-        "topic": "maxout-training",
-        "background-color": "#97d9c7",
+        "parentid": "line_20",
+        "topic": "regularization",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_133",
         "parentid": "line_132",
-        "topic": "given a training data x,we know which z would be the max",
-        "background-color": "#eb6a68",
+        "topic": "New loss function to be minimized",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_134",
         "parentid": "line_133",
-        "topic": "\u7576\u6c7a\u5b9amax\u4e4b\u5f8c\u5c31\u662f\u4e00\u500blinear operation",
-        "background-color": "#412ffc",
+        "topic": "find a set of weight not only minimizing original cost but also close to zero",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_135",
-        "parentid": "line_133",
-        "topic": "\u6c92\u63a5\u5230\u7684element\u5c31\u6c92\u7528\u4e86",
-        "background-color": "#412ffc",
+        "parentid": "line_132",
+        "topic": "L'(\u03b8) = L(\u03b8) + \u03bb1/2||\u03b8||_2",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_136",
-        "parentid": "line_133",
-        "topic": "\u53c8\u7522\u751f\u4e00\u500b\u6bd4\u8f03\u7d30\u9577\u7684nerual network",
-        "background-color": "#412ffc",
+        "parentid": "line_135",
+        "topic": "L(\u03b8): original loss",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_137",
         "parentid": "line_136",
-        "topic": "\u53eatraining\u9019\u7d30\u9577\u7684\u53c3\u6578",
-        "background-color": "#fff",
+        "topic": "corssentropy",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_138",
-        "parentid": "line_133",
-        "topic": "\u6c92training\u5230\u7684\u600e\u9ebc\u8fa6?",
-        "background-color": "#412ffc",
+        "parentid": "line_136",
+        "topic": "MSE",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_139",
-        "parentid": "line_138",
-        "topic": "\u7576input\u8b8a\u5316",
-        "background-color": "#fff",
+        "parentid": "line_135",
+        "topic": "\u03bb1/2||\u03b8||_2: regularization term",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_140",
         "parentid": "line_139",
-        "topic": "max\u503c\u6703\u8b8a\u5316",
-        "background-color": "#e3aba7",
+        "topic": "\u53ef\u4ee5\u662f\u53c3\u6578\u7684L2 norm",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_141",
         "parentid": "line_140",
-        "topic": "network structure\u6703\u8b8a\u5316",
-        "background-color": "#e82ad2",
+        "topic": "\u03b8:{w1,w2...}",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_142",
         "parentid": "line_140",
-        "topic": "\u6bcf\u500bweight\u61c9\u8a72\u90fd\u6703\u88abtrain\u5230",
-        "background-color": "#e82ad2",
+        "topic": "L2 regularization:",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_143",
-        "parentid": "line_20",
-        "topic": "adaptive learning rate",
-        "background-color": "#e82ad2",
+        "parentid": "line_142",
+        "topic": "||\u03b8||_2 =(w1)^2+(w2)^2+...",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_144",
-        "parentid": "line_143",
-        "topic": "adagrad",
-        "background-color": "#0fbdff",
+        "parentid": "line_142",
+        "topic": "\u8b93\u53c3\u6578\u5e73\u6ed1",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_145",
-        "parentid": "line_144",
-        "topic": "\u6bcf\u4e00\u500bparameter\u90fd\u6709\u4e0d\u540clr",
+        "parentid": "line_135",
+        "topic": "gradients:",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_146",
         "parentid": "line_145",
-        "topic": "w^t+1 = w^t - \u03b7 * g^t / (\u221a*\u03a3_i=0^t(g^i)^2)",
+        "topic": "\u2202L'/\u2202w = \u2202L/\u2202w + \u03bbw",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_147",
-        "parentid": "line_145",
-        "topic": "\u6bcf\u500b\u53c3\u6578\u7684\u03b7\u9664\u4ee5\u904e\u53bb\u6240\u6709gradient\u503c\u5e73\u65b9\u548c\u958b\u6839\u865f",
-        "background-color": "#d41dea",
+        "parentid": "line_135",
+        "topic": "update:",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_148",
-        "parentid": "line_144",
-        "topic": "\u5e73\u5766\u7684\u7d66\u4e88\u6bd4\u8f03\u5927\u7684lr",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_149",
-        "parentid": "line_144",
-        "topic": "\u9661\u5ced\u7684\u7d66\u4e88\u6bd4\u8f03\u5c0f\u7684lr",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_150",
-        "parentid": "line_143",
-        "topic": "Error surface can be very complex when training NN",
-        "background-color": "#0fbdff",
-        "expanded": false
-    },
-    {
-        "id": "line_151",
-        "parentid": "line_150",
-        "topic": "smaller learning rate",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_152",
-        "parentid": "line_150",
-        "topic": "need more dynamic adjust lr",
-        "background-color": "#e3aba7",
-        "expanded": false
-    },
-    {
-        "id": "line_153",
-        "parentid": "line_152",
-        "topic": "RMSProp: hinton mooc course",
+        "parentid": "line_147",
+        "topic": "w^t+1 = w^t - \u03b7*\u2202L'/\u2202w",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
+        "id": "line_149",
+        "parentid": "line_148",
+        "topic": "= w^t -\u03b7(\u2202L/\u2202w + \u03bbw)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_148",
+        "topic": "= (1-\u03b7\u03bb)w^t -\u03b7\u2202L/\u2202w",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_148",
+        "topic": "\u03b7\u901a\u5e38\u5f88\u5c0f",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_148",
+        "topic": "\u03bb\u901a\u5e38\u4e5f\u5f88\u5c0f\u53ef\u80fd\u662f0.001",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_148",
+        "topic": "\u6240\u4ee51-\u03b7\u03bb\u53ef\u80fd\u662f0.99",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
         "id": "line_154",
-        "parentid": "line_153",
-        "topic": "cite the course link",
+        "parentid": "line_148",
+        "topic": "\u4e0d\u5206\u6e05\u7d05\u7682\u767e\u6bcf\u6b21update\u5148\u8b93w*0.99",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_155",
-        "parentid": "line_153",
-        "topic": "w^1 <- w^0 - \u03b7/\u03c3^0 * g^0",
+        "parentid": "line_148",
+        "topic": "\u8b93\u53c3\u6578\u8d8a\u4f86\u8d8a\u63a5\u8fd10",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_156",
-        "parentid": "line_155",
-        "topic": "\u03c3^0 = g^0",
-        "background-color": "#97d9c7",
+        "parentid": "line_147",
+        "topic": "L2 regularization",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_157",
-        "parentid": "line_153",
-        "topic": "w^2 <- w^0 - \u03b7/\u03c3^1 * g^1",
+        "parentid": "line_156",
+        "topic": "weight decay",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_158",
-        "parentid": "line_157",
-        "topic": "\u03c3^1 = \u221a[\u03b1*(\u03c3^0)^2 + (1-\u03b1)(g^1)^2]",
-        "background-color": "#97d9c7",
+        "parentid": "line_156",
+        "topic": "\u6bcf\u6b21\u90fd\u4e58\u4e0a\u5c0f\u65bc1\u7684\u56fa\u5b9a\u503c",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_159",
         "parentid": "line_158",
-        "topic": "\u03b1: adjustable parameter",
-        "background-color": "#eb6a68",
+        "topic": "\u7576weight\u5f88\u5927\u5c31\u780d\u5f88\u5927",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_160",
-        "parentid": "line_159",
-        "topic": "\u03b1\u5c0f\u4e00\u9ede \u50be\u5411\u76f8\u4fe1\u65b0\u7684gradient\u5c0derror surface\u9661\u5ced\u7a0b\u5ea6",
-        "background-color": "#412ffc",
+        "parentid": "line_158",
+        "topic": "\u7576weight\u5f88\u5c0f\u6642\u5c31\u780d\u5f88\u5c0f",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_161",
-        "parentid": "line_159",
-        "topic": "\u03b1\u5927\u4e00\u9ede \u50be\u5411\u76f8\u4fe1\u6b77\u53f2\u7684gradient\u5c0derror surface\u9661\u5ced\u7a0b\u5ea6",
-        "background-color": "#412ffc",
+        "parentid": "line_158",
+        "topic": "\u5e73\u5747\u53c3\u6578\u90fd\u63a5\u8fd10",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_162",
-        "parentid": "line_153",
-        "topic": "w^3 <- w^0 - \u03b7/\u03c3^2 * g^2",
-        "background-color": "#01a6d5",
+        "parentid": "line_135",
+        "topic": "regularization\u5e6b\u52a9\u6c92\u6709SVM\u90a3\u9ebc\u9ad8",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_163",
         "parentid": "line_162",
-        "topic": "\u03c3^2 = \u221a[\u03b1*(\u03c3^1)^2 + (1-\u03b1)(g^2)^2]",
-        "background-color": "#97d9c7",
+        "topic": "early stopping\u53ef\u4ee5\u6c7a\u5b9atraining\u4ec0\u9ebc\u6642\u5019\u505c\u4e0b\u4f86",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_164",
-        "parentid": "line_153",
-        "topic": "w^t+1 <- w^0 - \u03b7/\u03c3^t * g^t",
-        "background-color": "#01a6d5",
+        "parentid": "line_162",
+        "topic": "\u521d\u59cb\u53c3\u6578\u5f88\u5c0f\u503c\u63a5\u8fd10",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_165",
         "parentid": "line_164",
-        "topic": "\u03c3^t = \u221a[\u03b1*(\u03c3^(t-1))^2 + (1-\u03b1)(g^t)^2]",
-        "background-color": "#97d9c7",
+        "topic": "training\u6703\u8b93\u53c3\u6578\u9060\u96e20",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_166",
-        "parentid": "line_143",
-        "topic": "Hard to find optimal network parameters",
-        "background-color": "#0fbdff",
+        "parentid": "line_164",
+        "topic": "regularization\u53c8\u5e0c\u671b\u53c3\u6578\u4e0d\u8981\u96e20\u592a\u9060",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_167",
-        "parentid": "line_166",
-        "topic": "stuck at saddle point",
-        "background-color": "#e3aba7",
+        "parentid": "line_162",
+        "topic": "early stopping\u4e5f\u6703\u907f\u514d\u53c3\u6578\u96e20\u592a\u9060",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_168",
         "parentid": "line_167",
-        "topic": "\u2202L/\u2202w=0",
-        "background-color": "#d41dea",
+        "topic": "\u5169\u8005\u5f88\u63a5\u8fd1\u6548\u679c",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_169",
-        "parentid": "line_166",
-        "topic": "stuck at local minimum",
-        "background-color": "#e3aba7",
+        "parentid": "line_162",
+        "topic": "svm\u6548\u679c\u53cd\u800c\u6bd4\u8f03\u597d",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_170",
         "parentid": "line_169",
-        "topic": "\u2202L/\u2202w=0",
-        "background-color": "#d41dea",
+        "topic": "\u4ed6\u662f\u8981\u89e3convex optimalization problem",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_171",
-        "parentid": "line_166",
-        "topic": "very slow at the plateau",
-        "background-color": "#e3aba7",
+        "parentid": "line_170",
+        "topic": "\u53ef\u80fd\u4e00\u6b65\u5c31\u89e3\u51fa\u7d50\u679c",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_172",
-        "parentid": "line_171",
-        "topic": "\u2202L/\u2202w\u22480",
-        "background-color": "#d41dea",
+        "parentid": "line_170",
+        "topic": "\u6c92\u8fa6\u6cd5\u7528early stopping",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_173",
-        "parentid": "line_166",
-        "topic": "tom mark 2007 say",
-        "background-color": "#e3aba7",
+        "parentid": "line_170",
+        "topic": "\u6240\u4ee5\u9700\u8981\u628aregularization explicitly\u52a0\u5230loss function\u88e1\u9762",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_174",
-        "parentid": "line_173",
-        "topic": "you don't worry about local minimum problems",
+        "parentid": "line_162",
+        "topic": "L1 regularization:",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_175",
         "parentid": "line_174",
-        "topic": "error surface\u5f88\u5c11local minimum",
+        "topic": "||\u03b8||_1 =(w1)+(w2)+...",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_176",
-        "parentid": "line_175",
-        "topic": "\u4f60\u8981\u4e00\u500blocal minimum\u662f\u6bcf\u4e00\u500bdimension\u90fd\u6709\u5c71\u8c37\u5f62\u72c0",
-        "background-color": "#97d9c7",
+        "parentid": "line_174",
+        "topic": "New loss function to be minimized",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_177",
-        "parentid": "line_176",
-        "topic": "\u5c71\u8c37\u51fa\u73fe\u7387\u662fp",
-        "background-color": "#eb6a68",
+        "parentid": "line_174",
+        "topic": "L'(\u03b8) = L(\u03b8) + \u03bb1/2||\u03b8||_1",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_178",
-        "parentid": "line_176",
-        "topic": "network\u53c3\u6578\u975e\u5e38\u591a",
-        "background-color": "#eb6a68",
+        "parentid": "line_174",
+        "topic": "\u2202L'/\u2202w = \u2202L/\u2202w + \u03bbsgn(w)",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_179",
-        "parentid": "line_176",
-        "topic": "\u6bcf\u4e00\u500b\u90fd\u662f\u5c71\u8c37\u8c37\u5e95\u7684\u6a5f\u7387",
-        "background-color": "#eb6a68",
+        "parentid": "line_174",
+        "topic": "update:",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_180",
         "parentid": "line_179",
-        "topic": "\u53c3\u6578\u8d8a\u591alocal minimum\u6a5f\u7387\u5c31\u8d8a\u4f4e",
-        "background-color": "#412ffc",
+        "topic": "w^t+1 = w^t - \u03b7*\u2202L'/\u2202w",
+        "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_181",
-        "parentid": "line_179",
-        "topic": "\u56e0\u6b64\u53c3\u6578\u5920\u591a\u901a\u5e38\u4f60\u8a8d\u70ba\u662flocal minimum\u7684\u5730\u65b9\u61c9\u8a72\u90fd\u5f88\u63a5\u8fd1global minimum\u4e86",
-        "background-color": "#412ffc",
+        "parentid": "line_180",
+        "topic": "= w^t - \u03b7*(\u2202L/\u2202w + \u03bbsgn(w))",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_182",
-        "parentid": "line_166",
-        "topic": "heuristics method for plateau , local minimum problems",
-        "background-color": "#e3aba7",
+        "parentid": "line_180",
+        "topic": "= w^t - \u03b7*(\u2202L/\u2202w) -\u03b7\u03bbsgn(w)",
+        "background-color": "#eb6a68",
         "expanded": false
     },
     {
         "id": "line_183",
         "parentid": "line_182",
-        "topic": "in physical world",
-        "background-color": "#d41dea",
+        "topic": "always delete\u56fa\u5b9a\u503c",
+        "background-color": "#412ffc",
         "expanded": false
     },
     {
         "id": "line_184",
         "parentid": "line_183",
-        "topic": "Momentum",
-        "background-color": "#01a6d5",
+        "topic": "\u7576weight\u5f88\u5927\u5c31\u7121\u611f",
+        "background-color": "#fff",
         "expanded": false
     },
     {
         "id": "line_185",
-        "parentid": "line_184",
-        "topic": "how about put this phenomenon in gradients descent",
-        "background-color": "#97d9c7",
+        "parentid": "line_183",
+        "topic": "\u4e0d\u6703\u4fdd\u7559\u5f88\u591a\u5c0f\u7684\u503c",
+        "background-color": "#fff",
         "expanded": false
     },
     {
         "id": "line_186",
-        "parentid": "line_184",
-        "topic": "how to use?",
-        "background-color": "#97d9c7",
+        "parentid": "line_185",
+        "topic": "sparse",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_187",
         "parentid": "line_186",
-        "topic": "movement of last step minus gradient at present",
-        "background-color": "#eb6a68",
+        "topic": "\u6703\u6709\u5f88\u591a\u53c3\u6578\u63a5\u8fd10",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_188",
-        "parentid": "line_187",
-        "topic": "\u9019\u6b21\u7684graident+\u524d\u6b21\u7684\u65b9\u5411",
-        "background-color": "#412ffc",
+        "parentid": "line_186",
+        "topic": "\u4e5f\u6703\u6709\u5f88\u591a\u5f88\u5927\u7684\u503c",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_189",
-        "parentid": "line_186",
-        "topic": "start point",
-        "background-color": "#eb6a68",
+        "parentid": "line_185",
+        "topic": "\u60f3\u8981\u505aCN\u7522\u751f\u6642\uff0c\u5e0c\u671b\u53c3\u6578sparse\u5247L1\u6bd4\u8f03\u9069\u5408",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_190",
-        "parentid": "line_189",
-        "topic": "\u03b8^0",
-        "background-color": "#412ffc",
+        "parentid": "line_132",
+        "topic": "weight decay",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_191",
-        "parentid": "line_186",
-        "topic": "movement",
-        "background-color": "#eb6a68",
+        "parentid": "line_190",
+        "topic": "our brain prunes out the useless link between nerous",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_192",
         "parentid": "line_191",
-        "topic": "v^0=0",
-        "background-color": "#412ffc",
+        "topic": "\u525b\u51fa\u751f\u795e\u7d93\u9023\u7d50\u4e0d\u591a",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_193",
-        "parentid": "line_186",
-        "topic": "gradient",
-        "background-color": "#eb6a68",
+        "parentid": "line_191",
+        "topic": "6\u6b72\u795e\u7d93\u9023\u7d50\u8d85\u904e",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_194",
-        "parentid": "line_193",
-        "topic": "\u2207L(\u03b8^0)",
-        "background-color": "#412ffc",
+        "parentid": "line_191",
+        "topic": "14\u6b72\u795e\u7d93\u9023\u7d50\u53c8\u6e1b\u5c11\u4e86",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_195",
-        "parentid": "line_186",
-        "topic": "movement",
-        "background-color": "#eb6a68",
+        "parentid": "line_191",
+        "topic": "Doing the same thing to machine's brain improve the performance.",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_196",
-        "parentid": "line_195",
-        "topic": "v^1 = \u03bbv^0 - \u03b7\u2207L(\u03b8^0)",
-        "background-color": "#412ffc",
+        "parentid": "line_191",
+        "topic": "\u7576\u6709\u4e9bweight\u90fd\u4e0d\u53bbupdate\u4e45\u4e86\u5c31\u63a5\u8fd10\u6d88\u5931",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_197",
-        "parentid": "line_196",
-        "topic": "\u539f\u672c\u8d70\u7684\u65b9\u5411\u9084\u662f\u6709\u4e00\u5b9a\u7a0b\u5ea6\u7684\u5f71\u97ff",
-        "background-color": "#fff",
+        "parentid": "line_20",
+        "topic": "new activation function",
+        "background-color": "#e82ad2",
         "expanded": false
     },
     {
         "id": "line_198",
-        "parentid": "line_195",
-        "topic": "\u03bb: \u624b\u8abf\u53c3\u6578",
-        "background-color": "#412ffc",
+        "parentid": "line_197",
+        "topic": "using when bad results on training data",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_199",
-        "parentid": "line_186",
-        "topic": "move to",
-        "background-color": "#eb6a68",
+        "parentid": "line_197",
+        "topic": "e.g. handwriting digit classification",
+        "background-color": "#0fbdff",
         "expanded": false
     },
     {
         "id": "line_200",
         "parentid": "line_199",
-        "topic": "\u03b8^1 = \u03b8^0 + v^1",
-        "background-color": "#412ffc",
+        "topic": "deeper usually does not imply better",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_201",
-        "parentid": "line_186",
-        "topic": "gradient",
-        "background-color": "#eb6a68",
+        "parentid": "line_199",
+        "topic": "layer++ accuracy-- in training",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_202",
         "parentid": "line_201",
-        "topic": "\u2207L(\u03b8^1)",
-        "background-color": "#412ffc",
+        "topic": "not overfitting",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_203",
-        "parentid": "line_186",
-        "topic": "movement",
-        "background-color": "#eb6a68",
+        "parentid": "line_201",
+        "topic": "not well trained",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_204",
-        "parentid": "line_203",
-        "topic": "v^2 = \u03bbv^1 - \u03b7\u2207L(\u03b8^1)",
-        "background-color": "#412ffc",
+        "parentid": "line_199",
+        "topic": "Vanishing Gradient Problem",
+        "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_205",
-        "parentid": "line_186",
-        "topic": "move to",
-        "background-color": "#eb6a68",
+        "parentid": "line_204",
+        "topic": "small gradient in bottom",
+        "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_206",
         "parentid": "line_205",
+        "topic": "learning very slow",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_207",
+        "parentid": "line_205",
+        "topic": "almost random",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_208",
+        "parentid": "line_204",
+        "topic": "large gradient in top",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_209",
+        "parentid": "line_208",
+        "topic": "learning very fast",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_210",
+        "parentid": "line_208",
+        "topic": "already converge",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_211",
+        "parentid": "line_210",
+        "topic": "loss decline very slow",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_212",
+        "parentid": "line_210",
+        "topic": "bad of training result",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_213",
+        "parentid": "line_212",
+        "topic": "converge base on random",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_214",
+        "parentid": "line_204",
+        "topic": "sigmod\u6703\u5c0e\u81f4\u9019\u4ef6\u4e8b\u60c5\u767c\u751f",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_215",
+        "parentid": "line_214",
+        "topic": "large input",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_216",
+        "parentid": "line_214",
+        "topic": "small output",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_217",
+        "parentid": "line_214",
+        "topic": "\u5f88\u5f37\u7684\u8870\u6e1b",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_218",
+        "parentid": "line_214",
+        "topic": "input\u7d93\u904e\u8870\u6e1b\u5c0doutput\u8b8a\u5316\u5f88\u5c0f",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_219",
+        "parentid": "line_214",
+        "topic": "\u5c0e\u81f4\u8d8a\u63a5\u8fd1top\u8870\u6e1b\u8d8a\u5c11",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_220",
+        "parentid": "line_204",
+        "topic": "intuitive way to compute the derivatives...",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_221",
+        "parentid": "line_220",
+        "topic": "\u2202C/\u2202w = ? \u0394C/\u0394w",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_222",
+        "parentid": "line_220",
+        "topic": "bottom layer + \u0394w",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_223",
+        "parentid": "line_222",
+        "topic": "monitor output loss effect",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_224",
+        "parentid": "line_222",
+        "topic": "smaller gradients",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_225",
+        "parentid": "line_204",
+        "topic": "\u65e9\u5e74\u4f5c\u6cd5:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_226",
+        "parentid": "line_225",
+        "topic": "train RBM:Restricted Boltzmann Machines",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_227",
+        "parentid": "line_226",
+        "topic": "\u8a8d\u8b58\u597d\u7b2c\u4e00\u500blayer",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_228",
+        "parentid": "line_226",
+        "topic": "\u4e00\u500b\u4e00\u500blayer training",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_229",
+        "parentid": "line_204",
+        "topic": "\u6539\u4e00\u4e0bactivation function:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_230",
+        "parentid": "line_229",
+        "topic": "ReLU:Rectified Linear Unit",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_231",
+        "parentid": "line_230",
+        "topic": "input>=0:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_232",
+        "parentid": "line_231",
+        "topic": "output=input",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_233",
+        "parentid": "line_230",
+        "topic": "input<0:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_234",
+        "parentid": "line_233",
+        "topic": "output=0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_235",
+        "parentid": "line_230",
+        "topic": "Reason:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_236",
+        "parentid": "line_235",
+        "topic": "fast to compute",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_237",
+        "parentid": "line_235",
+        "topic": "biologic reason",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_238",
+        "parentid": "line_235",
+        "topic": "inifinite sigmoid with differenct biases",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_239",
+        "parentid": "line_235",
+        "topic": "Vanishing gradient problem",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_240",
+        "parentid": "line_239",
+        "topic": "when input<0",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_241",
+        "parentid": "line_240",
+        "topic": "remove the neural",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_242",
+        "parentid": "line_239",
+        "topic": "when input>=output",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_243",
+        "parentid": "line_242",
+        "topic": "linear",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_244",
+        "parentid": "line_239",
+        "topic": "from a thinner linear network",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_245",
+        "parentid": "line_244",
+        "topic": "does not have smaller gradients",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_246",
+        "parentid": "line_244",
+        "topic": "smaller gradients on bottom\u7684\u554f\u984c\u4e86",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_247",
+        "parentid": "line_230",
+        "topic": "\u539f\u672c\u4e0d\u662f\u5e0c\u671bnerual network\u662f\u4e00\u500bnon-learning funciton",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_248",
+        "parentid": "line_247",
+        "topic": "\u6240\u4ee5\u624d\u7528deep learning",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_249",
+        "parentid": "line_247",
+        "topic": "\u7528ReLU\u53c8\u8b8a\u6210linear function",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_250",
+        "parentid": "line_247",
+        "topic": "\u4f46\u662f\u6574\u500bmodel\u9084\u662fnon-linear funciton",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_251",
+        "parentid": "line_250",
+        "topic": "\u7576\u6bcf\u500bneuron\u505aoperatoin",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_252",
+        "parentid": "line_251",
+        "topic": "operation region\u4e00\u6a23\u6642",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_253",
+        "parentid": "line_252",
+        "topic": "linear function",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_254",
+        "parentid": "line_250",
+        "topic": "\u7576input\u505a\u6bd4\u8f03\u5927\u7684\u6539\u8b8a",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_255",
+        "parentid": "line_254",
+        "topic": "operation region\u8b8a\u5316\u6642",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_256",
+        "parentid": "line_255",
+        "topic": "non-linear function",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_257",
+        "parentid": "line_230",
+        "topic": "ReLU\u4e0d\u80fdderivatives",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_258",
+        "parentid": "line_257",
+        "topic": "\u7576input>=0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_259",
+        "parentid": "line_258",
+        "topic": "gradient = 1",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_260",
+        "parentid": "line_257",
+        "topic": "\u7576input<0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_261",
+        "parentid": "line_260",
+        "topic": "gradient = 0",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_262",
+        "parentid": "line_257",
+        "topic": "\u4e0d\u53ef\u80fd\u525b\u597d=0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_263",
+        "parentid": "line_230",
+        "topic": "\u63dbRelu\u7684handwriting\u7d50\u679c",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_264",
+        "parentid": "line_229",
+        "topic": "ReLU-variant",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_265",
+        "parentid": "line_264",
+        "topic": "Leaky ReLU",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_266",
+        "parentid": "line_265",
+        "topic": "\u907f\u514dinput<0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_267",
+        "parentid": "line_266",
+        "topic": "gradient = 0",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_268",
+        "parentid": "line_265",
+        "topic": "input>0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_269",
+        "parentid": "line_268",
+        "topic": "a=z",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_270",
+        "parentid": "line_265",
+        "topic": "input<0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_271",
+        "parentid": "line_270",
+        "topic": "a=0.001z",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_272",
+        "parentid": "line_264",
+        "topic": "Parametric ReLU",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_273",
+        "parentid": "line_272",
+        "topic": "input>0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_274",
+        "parentid": "line_273",
+        "topic": "a=z",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_275",
+        "parentid": "line_272",
+        "topic": "input<0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_276",
+        "parentid": "line_275",
+        "topic": "a=\u03b1z",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_277",
+        "parentid": "line_275",
+        "topic": "\u03b1 training by neural",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_278",
+        "parentid": "line_229",
+        "topic": "Maxout network",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_279",
+        "parentid": "line_278",
+        "topic": "Learnable activation funciton",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_280",
+        "parentid": "line_279",
+        "topic": "Activateion function in maxout network can be any piecewise linear convex function",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_281",
+        "parentid": "line_279",
+        "topic": "How many pieces depending on how many elements in a group",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_282",
+        "parentid": "line_278",
+        "topic": "ReLU is a special case in Maxout",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_283",
+        "parentid": "line_282",
+        "topic": "ReLU:",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_284",
+        "parentid": "line_283",
+        "topic": "input:x",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_285",
+        "parentid": "line_283",
+        "topic": "z = x*w+b",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_286",
+        "parentid": "line_283",
+        "topic": "a = ReLU(z)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_287",
+        "parentid": "line_282",
+        "topic": "z = w*x+b",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_288",
+        "parentid": "line_282",
+        "topic": "Maxout:",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_289",
+        "parentid": "line_288",
+        "topic": "input:x",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_290",
+        "parentid": "line_288",
+        "topic": "z1 = x*w1+b",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_291",
+        "parentid": "line_288",
+        "topic": "z2 = x*0+0",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_292",
+        "parentid": "line_288",
+        "topic": "a = max(z1,z2)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_293",
+        "parentid": "line_278",
+        "topic": "maxout ex:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_294",
+        "parentid": "line_293",
+        "topic": "input:[x1,x2]",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_295",
+        "parentid": "line_293",
+        "topic": "[x1w1+x2w2 , x2w3+x2w4, x1w5+x2w6, x1w7+x2w8 ]",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_296",
+        "parentid": "line_295",
+        "topic": "groupping \u4e8b\u5148\u6c7a\u5b9a",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_297",
+        "parentid": "line_296",
+        "topic": "[x1w1+x2w2,x2w3+x2w4]",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_298",
+        "parentid": "line_296",
+        "topic": "[x1w5+x2w6,x1w7+x2w8]",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_299",
+        "parentid": "line_295",
+        "topic": "\u540cgroup\u9078value\u6700\u5927\u7684output",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_300",
+        "parentid": "line_299",
+        "topic": "\u985e\u4f3cmaxpooling",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_301",
+        "parentid": "line_299",
+        "topic": "\u4e00\u500blayer\u7684maxpooling",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_302",
+        "parentid": "line_278",
+        "topic": "you can have more than 2 elements in a group",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_303",
+        "parentid": "line_302",
+        "topic": "\u53ef\u4ee5\u8abf\u6574\u7684\u53c3\u6578",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_304",
+        "parentid": "line_278",
+        "topic": "maxout-training",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_305",
+        "parentid": "line_304",
+        "topic": "given a training data x,we know which z would be the max",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_306",
+        "parentid": "line_305",
+        "topic": "\u7576\u6c7a\u5b9amax\u4e4b\u5f8c\u5c31\u662f\u4e00\u500blinear operation",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_307",
+        "parentid": "line_305",
+        "topic": "\u6c92\u63a5\u5230\u7684element\u5c31\u6c92\u7528\u4e86",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_308",
+        "parentid": "line_305",
+        "topic": "\u53c8\u7522\u751f\u4e00\u500b\u6bd4\u8f03\u7d30\u9577\u7684nerual network",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_309",
+        "parentid": "line_308",
+        "topic": "\u53eatraining\u9019\u7d30\u9577\u7684\u53c3\u6578",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_310",
+        "parentid": "line_305",
+        "topic": "\u6c92training\u5230\u7684\u600e\u9ebc\u8fa6?",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_311",
+        "parentid": "line_310",
+        "topic": "\u7576input\u8b8a\u5316",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_312",
+        "parentid": "line_311",
+        "topic": "max\u503c\u6703\u8b8a\u5316",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_313",
+        "parentid": "line_312",
+        "topic": "network structure\u6703\u8b8a\u5316",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_314",
+        "parentid": "line_312",
+        "topic": "\u6bcf\u500bweight\u61c9\u8a72\u90fd\u6703\u88abtrain\u5230",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_315",
+        "parentid": "line_20",
+        "topic": "adaptive learning rate",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_316",
+        "parentid": "line_315",
+        "topic": "adagrad",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_317",
+        "parentid": "line_316",
+        "topic": "\u6bcf\u4e00\u500bparameter\u90fd\u6709\u4e0d\u540clr",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_318",
+        "parentid": "line_317",
+        "topic": "w^t+1 = w^t - \u03b7 * g^t / (\u221a*\u03a3_i=0^t(g^i)^2)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_319",
+        "parentid": "line_317",
+        "topic": "\u6bcf\u500b\u53c3\u6578\u7684\u03b7\u9664\u4ee5\u904e\u53bb\u6240\u6709gradient\u503c\u5e73\u65b9\u548c\u958b\u6839\u865f",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_320",
+        "parentid": "line_316",
+        "topic": "\u5e73\u5766\u7684\u7d66\u4e88\u6bd4\u8f03\u5927\u7684lr",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_321",
+        "parentid": "line_316",
+        "topic": "\u9661\u5ced\u7684\u7d66\u4e88\u6bd4\u8f03\u5c0f\u7684lr",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_322",
+        "parentid": "line_315",
+        "topic": "Error surface can be very complex when training NN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_323",
+        "parentid": "line_322",
+        "topic": "smaller learning rate",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_324",
+        "parentid": "line_322",
+        "topic": "need more dynamic adjust lr",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_325",
+        "parentid": "line_324",
+        "topic": "RMSProp: hinton mooc course",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_326",
+        "parentid": "line_325",
+        "topic": "cite the course link",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_327",
+        "parentid": "line_325",
+        "topic": "w^1 <- w^0 - \u03b7/\u03c3^0 * g^0",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_328",
+        "parentid": "line_327",
+        "topic": "\u03c3^0 = g^0",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_329",
+        "parentid": "line_325",
+        "topic": "w^2 <- w^0 - \u03b7/\u03c3^1 * g^1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_330",
+        "parentid": "line_329",
+        "topic": "\u03c3^1 = \u221a[\u03b1*(\u03c3^0)^2 + (1-\u03b1)(g^1)^2]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_331",
+        "parentid": "line_330",
+        "topic": "\u03b1: adjustable parameter",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_332",
+        "parentid": "line_331",
+        "topic": "\u03b1\u5c0f\u4e00\u9ede \u50be\u5411\u76f8\u4fe1\u65b0\u7684gradient\u5c0derror surface\u9661\u5ced\u7a0b\u5ea6",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_333",
+        "parentid": "line_331",
+        "topic": "\u03b1\u5927\u4e00\u9ede \u50be\u5411\u76f8\u4fe1\u6b77\u53f2\u7684gradient\u5c0derror surface\u9661\u5ced\u7a0b\u5ea6",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_334",
+        "parentid": "line_325",
+        "topic": "w^3 <- w^0 - \u03b7/\u03c3^2 * g^2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_335",
+        "parentid": "line_334",
+        "topic": "\u03c3^2 = \u221a[\u03b1*(\u03c3^1)^2 + (1-\u03b1)(g^2)^2]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_336",
+        "parentid": "line_325",
+        "topic": "w^t+1 <- w^0 - \u03b7/\u03c3^t * g^t",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_337",
+        "parentid": "line_336",
+        "topic": "\u03c3^t = \u221a[\u03b1*(\u03c3^(t-1))^2 + (1-\u03b1)(g^t)^2]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_338",
+        "parentid": "line_315",
+        "topic": "Hard to find optimal network parameters",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_339",
+        "parentid": "line_338",
+        "topic": "stuck at saddle point",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_340",
+        "parentid": "line_339",
+        "topic": "\u2202L/\u2202w=0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_341",
+        "parentid": "line_338",
+        "topic": "stuck at local minimum",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_342",
+        "parentid": "line_341",
+        "topic": "\u2202L/\u2202w=0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_343",
+        "parentid": "line_338",
+        "topic": "very slow at the plateau",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_344",
+        "parentid": "line_343",
+        "topic": "\u2202L/\u2202w\u22480",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_345",
+        "parentid": "line_338",
+        "topic": "tom mark 2007 say",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_346",
+        "parentid": "line_345",
+        "topic": "you don't worry about local minimum problems",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_347",
+        "parentid": "line_346",
+        "topic": "error surface\u5f88\u5c11local minimum",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_348",
+        "parentid": "line_347",
+        "topic": "\u4f60\u8981\u4e00\u500blocal minimum\u662f\u6bcf\u4e00\u500bdimension\u90fd\u6709\u5c71\u8c37\u5f62\u72c0",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_349",
+        "parentid": "line_348",
+        "topic": "\u5c71\u8c37\u51fa\u73fe\u7387\u662fp",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_350",
+        "parentid": "line_348",
+        "topic": "network\u53c3\u6578\u975e\u5e38\u591a",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_351",
+        "parentid": "line_348",
+        "topic": "\u6bcf\u4e00\u500b\u90fd\u662f\u5c71\u8c37\u8c37\u5e95\u7684\u6a5f\u7387",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_352",
+        "parentid": "line_351",
+        "topic": "\u53c3\u6578\u8d8a\u591alocal minimum\u6a5f\u7387\u5c31\u8d8a\u4f4e",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_353",
+        "parentid": "line_351",
+        "topic": "\u56e0\u6b64\u53c3\u6578\u5920\u591a\u901a\u5e38\u4f60\u8a8d\u70ba\u662flocal minimum\u7684\u5730\u65b9\u61c9\u8a72\u90fd\u5f88\u63a5\u8fd1global minimum\u4e86",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_354",
+        "parentid": "line_338",
+        "topic": "heuristics method for plateau , local minimum problems",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_355",
+        "parentid": "line_354",
+        "topic": "in physical world",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_356",
+        "parentid": "line_355",
+        "topic": "Momentum",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_357",
+        "parentid": "line_356",
+        "topic": "how about put this phenomenon in gradients descent",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_358",
+        "parentid": "line_356",
+        "topic": "how to use?",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_359",
+        "parentid": "line_358",
+        "topic": "movement of last step minus gradient at present",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_360",
+        "parentid": "line_359",
+        "topic": "\u9019\u6b21\u7684graident+\u524d\u6b21\u7684\u65b9\u5411",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_361",
+        "parentid": "line_358",
+        "topic": "start point",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_362",
+        "parentid": "line_361",
+        "topic": "\u03b8^0",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_363",
+        "parentid": "line_358",
+        "topic": "movement",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_364",
+        "parentid": "line_363",
+        "topic": "v^0=0",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_365",
+        "parentid": "line_358",
+        "topic": "gradient",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_366",
+        "parentid": "line_365",
+        "topic": "\u2207L(\u03b8^0)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_367",
+        "parentid": "line_358",
+        "topic": "movement",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_368",
+        "parentid": "line_367",
+        "topic": "v^1 = \u03bbv^0 - \u03b7\u2207L(\u03b8^0)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_369",
+        "parentid": "line_368",
+        "topic": "\u539f\u672c\u8d70\u7684\u65b9\u5411\u9084\u662f\u6709\u4e00\u5b9a\u7a0b\u5ea6\u7684\u5f71\u97ff",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_370",
+        "parentid": "line_367",
+        "topic": "\u03bb: \u624b\u8abf\u53c3\u6578",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_371",
+        "parentid": "line_358",
+        "topic": "move to",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_372",
+        "parentid": "line_371",
+        "topic": "\u03b8^1 = \u03b8^0 + v^1",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_373",
+        "parentid": "line_358",
+        "topic": "gradient",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_374",
+        "parentid": "line_373",
+        "topic": "\u2207L(\u03b8^1)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_375",
+        "parentid": "line_358",
+        "topic": "movement",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_376",
+        "parentid": "line_375",
+        "topic": "v^2 = \u03bbv^1 - \u03b7\u2207L(\u03b8^1)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_377",
+        "parentid": "line_358",
+        "topic": "move to",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_378",
+        "parentid": "line_377",
         "topic": "\u03b8^2 = \u03b8^1 + v^2",
         "background-color": "#412ffc",
         "expanded": false
     },
     {
-        "id": "line_207",
-        "parentid": "line_186",
+        "id": "line_379",
+        "parentid": "line_358",
         "topic": "v^i",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
-        "id": "line_208",
-        "parentid": "line_207",
+        "id": "line_380",
+        "parentid": "line_379",
         "topic": "sum of all the previous gradients",
         "background-color": "#412ffc",
         "expanded": false
     },
     {
-        "id": "line_209",
-        "parentid": "line_207",
+        "id": "line_381",
+        "parentid": "line_379",
         "topic": "\u03bb < 0 \u6642",
         "background-color": "#412ffc",
         "expanded": false
     },
     {
-        "id": "line_210",
-        "parentid": "line_209",
+        "id": "line_382",
+        "parentid": "line_381",
         "topic": "\u8d8a\u4e45\u7684gradient\u5f71\u97ff\u8d8a\u5c0f",
         "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_383",
+        "parentid": "line_356",
+        "topic": "movement =",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_384",
+        "parentid": "line_383",
+        "topic": "negative of \u2202L/\u2202w",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_385",
+        "parentid": "line_383",
+        "topic": "+ Momentum",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_386",
+        "parentid": "line_356",
+        "topic": "still not guarantee reaching global minimum, but give some hope...",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_387",
+        "parentid": "line_355",
+        "topic": "Adam",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_388",
+        "parentid": "line_387",
+        "topic": "RMSProp + Momentum",
+        "background-color": "#97d9c7",
         "expanded": false
     }
 ]

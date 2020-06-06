@@ -1,0 +1,85 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Fizz Buzz in tensorflow"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u786c\"train\"\u4e00\u767c\u7684\u4ee3\u8868\u6545\u4e8b",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "\u770b\u8d77\u4f86\u597d\u50cf\u4e0d\u80fdtrain\u7684\u6771\u897f\u9084\u662f\u7528train\u89e3\u6c7a",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_1",
+        "topic": "ex:",
+        "background-color": "#e82ad2"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "\u4e00\u4e32\u6578\u5b57",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_4",
+        "topic": "%3==0 fizz",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_4",
+        "topic": "%5==0 buzz",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_4",
+        "topic": "%3%3==0 fizz buzz",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_4",
+        "topic": "\u7528tensorflow\u505a",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_4",
+        "topic": "1-100\u662foutput\u8981\u7528",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_4",
+        "topic": "101-1000\u7576training data",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_4",
+        "topic": "training:",
+        "background-color": "#0fbdff"
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "train acc\u592a\u5c0f\u5c31\u52a0\u5927model",
+        "background-color": "#e3aba7"
+    }
+]
