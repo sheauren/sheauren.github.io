@@ -1,0 +1,1724 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Semi-supervised"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "supervised learning:",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "{{x^r,y^^r}}_r^R = 1",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "E.g.: image,y^^r:class labels",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "root",
+        "topic": "semi-supervised learning:",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "{{x^r,y^^r}}_r^R = 1,{x^u}_u=R^R+U",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_4",
+        "topic": "a set of unlabeled data, usually U>>R",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_4",
+        "topic": "Transductive learning: unlabeled data is testing data",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_4",
+        "topic": "Inductive learning: unlabeled data is not the testing data",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_4",
+        "topic": "\u4e0a\u8ff0\u5169\u7a2ecase depend on test data\u662f\u5426\u7d66\u4f60\u4e86",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "root",
+        "topic": "why semi-supervised learning?",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "collecting data is easy, but collecting \"labelled\" data is expensive.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_10",
+        "topic": "we do semi-supervised learning in our lives",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "root",
+        "topic": "why semi-supervised learning helps?",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "labelled data",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "dog",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_14",
+        "topic": "cat",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_13",
+        "topic": "unlabeled data",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "dog?cat?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_13",
+        "topic": "\u7576\u53ea\u7528labelled data classification",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "\u53ef\u80fd\u5c31\u7c21\u55ae\u5206\u958b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_19",
+        "topic": "\u4f46\u628aunlabeled data\u4e5f\u653e\u9032\u53bb\u4f46\u662f\u6c92label",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_19",
+        "topic": "the distribution of the unlabeled data tell us something",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "\u53ef\u80fd\u5f71\u97ff\u5230\u6c7a\u5b9a\u5206\u5272\u7dda",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_19",
+        "topic": "usually with some assumptions",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "\u6709\u6c92\u6709\u7528\u6c7a\u5b9a\u5047\u8a2d\u7b26\u4e0d\u7b26\u5408\u548c\u5be6\u969b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "\u4ee5\u70ba\u672a\u77e5\u9ede\u61c9\u8a72\u662f\u8c93",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "\u7d50\u679c\u662f\u72d7",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "\u53cd\u800c\u9020\u6210\u5206\u5272\u932f\u4e86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "root",
+        "topic": "outline",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "Semi-supervised learning for Generative Model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "Supervised Generative Model",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "Given labelled training example",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "x^r \u2286 C1,C2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_32",
+        "topic": "looking for most likey prior probability P(Ci) and class-dependent probability P(X|C1)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_32",
+        "topic": "P(X|C1) is a gaussian parameterized by \u03bc^i and \u03a3",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_32",
+        "topic": "with P(C1),P(C2),\u03bc^1,\u03bc^2,\u03a3",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "P(C1|X) = P(X|C1) P(C1) / P(X|C1)P(C1) + P(X|C2)P(C2)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_32",
+        "topic": "decision boundary",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_31",
+        "topic": "when given unlabeled data",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "\u03a3: gaussian distribution \u7684\u7bc4\u570d\u53ef\u80fd\u5c31\u4e0d\u662f\u6a62\u5713\u8981\u6539\u5713\u5708",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_39",
+        "topic": "\u03bc: mean\u4e2d\u9593\u9ede\u4f4d\u7f6e\u53ef\u80fd\u70ba\u4e86\u6db5\u84cb\u66f4\u591a\u9ede\u632a\u52d5\u4f4d\u7f6e",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_39",
+        "topic": "prior probability:positive\u539f\u672c\u9810\u8a08\u662f\u4e00\u6a23\u591asample\uff0c\u7d50\u679cunlabeled data\u770b\u4f86\u662f\u4e0d\u5e73\u8861\u7684(class2\u6578\u91cf\u6bd4\u8f03\u591a)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_39",
+        "topic": "formulation:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "initialization: \u03b8 = {P(C1),P(C2),\u03bc^1,\u03bc^2,\u03a3}",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_43",
+        "topic": "step 1: compute the posterior probability of unlabeled data",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "P_\u03b8(C1|X^\u03bc)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_46",
+        "topic": "depend on model \u03b8",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_43",
+        "topic": "step 2: update model",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_48",
+        "topic": "P(C1) = (N_1+\u03a3_x^u(P(C1|X^u)))/N",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "N: total number of examples",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_49",
+        "topic": "N1: number of examples belonging to C1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_48",
+        "topic": "\u539f\u672cP(C1)\u662f\u6240\u6709\u53ef\u80fd\u662fC1\u7684\u6a5f\u7387",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "unlabeled data\u5f71\u97ff\u9810\u6e2c\u7d50\u679c\u7684\u6a5f\u7387\u4e5f\u7d0d\u5165",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_48",
+        "topic": "\u03bc^1 = 1/N^1 * \u03a3_(x^r\u2286C1) x^r + [ 1/(\u03a3_x^u P(C1|X^u))*\u03a3_x^u P(C1|X^u)X^u ]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "[]\u88e1\u9762\u662funlabled data\u5c0dC1\u7684\u5f71\u97ffweigthed sum\u9664\u4ee5\u6240\u6709weight sum\u4f86\u9032\u884cnormalization",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_48",
+        "topic": "\u5176\u4ed6\u90fd\u53ef\u4ee5\u7167\u9019\u6982\u5ff5\u7b97\u51fa\u4f86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_48",
+        "topic": "\u7b97\u5b8c\u4e4b\u5f8cupdate\u6210\u65b0\u7684model",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_57",
+        "topic": "\u6709\u65b0\u7684model\u5c31back to step 1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "\u6a5f\u7387\u4e0d\u540c\u6574\u500bstep 2\u90fd\u8981\u91cd\u7b97",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_59",
+        "topic": "\u53cd\u8986\u904b\u7b97\u53bb\u6536\u6582",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_60",
+        "topic": "\u521d\u59cb\u503c\u6703\u6c7a\u5b9a\u6536\u6582\u7d50\u679c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_43",
+        "topic": "EM Algorithm",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "step1: E step",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_62",
+        "topic": "step2: M step",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_31",
+        "topic": "why?",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_65",
+        "topic": "initialization: \u03b8 = {P(C1),P(C2),\u03bc^1,\u03bc^2,\u03a3}",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_65",
+        "topic": "Maximum likelihood with labelled data",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_67",
+        "topic": "logL(\u03b8) = \u03a3_x^r logP_\u03b8(x^r,y^^r)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_67",
+        "topic": "P_\u03b8(x^r,y^^r)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_69",
+        "topic": "= P_\u03b8(x^r|y^^r)P(y^^r)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_67",
+        "topic": "cross-form solution",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_65",
+        "topic": "Maximum likelihood with labelled+unlabeled data",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_72",
+        "topic": "logL(\u03b8) = \u03a3_x^r logP_\u03b8(x^r,y^^r) + \u03a3_x^u logP_\u03b8(x^u,y^^u)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_72",
+        "topic": "P_\u03b8(x^u) = P_\u03b8(X^u|C1) P(C1) + P_\u03b8(X^u|C2)P(C2)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_72",
+        "topic": "not convex problem",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_75",
+        "topic": "EM Algorithm\u89e3",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_76",
+        "topic": "solved iteratively",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_77",
+        "topic": "\u4e0a\u9762step1,step2\u53cd\u8986",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_78",
+        "topic": "\u6536\u6582\u5230local minimum",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_29",
+        "topic": "Low-density Separation Assumption",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_80",
+        "topic": "black or white",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_81",
+        "topic": "labeled data,unlabeled data",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_81",
+        "topic": "\u5728class1/class2\u4e4b\u9593\u6703\u6709\u975e\u5e38\u660e\u986f\u7684\u9d3b\u6e9d",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_83",
+        "topic": "\u4ea4\u63a5\u8655density\u662f\u4f4e\u7684",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_84",
+        "topic": "\u4e0d\u6703\u51fa\u73fedata",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_80",
+        "topic": "self-training",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_86",
+        "topic": "given:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_87",
+        "topic": "labelled data set",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_88",
+        "topic": "{{ x^r , y^^r }}_u=l^R",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_87",
+        "topic": "unlabeled data set",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "{{ x^u}}_u=l^R+U",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_86",
+        "topic": "Repeat",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_92",
+        "topic": "train model f* from labelled data set",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_93",
+        "topic": "indenpendent to the model",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_94",
+        "topic": "deep learning ... \u90fd\u53ef\u4ee5",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_93",
+        "topic": "regression?",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_96",
+        "topic": "\u6c92\u6709\u7528",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_97",
+        "topic": "\u4e0d\u5f71\u97fff*",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_92",
+        "topic": "apply f* to the unlabeled data set",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_99",
+        "topic": "obtain {{x^u,y^u}}_u=1^R+U",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_100",
+        "topic": "Pseudo-label",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_92",
+        "topic": "Remove a set of data from unlabeled data set, and add them in to unlabeled data set",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_102",
+        "topic": "How to choose the data set remains open",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_102",
+        "topic": "You can also provide a weight to each data",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_86",
+        "topic": "similar to semi-supervised learning for generative model",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_86",
+        "topic": "Hard label vs Soft label",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_106",
+        "topic": "hard label",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_107",
+        "topic": "self-training",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_106",
+        "topic": "soft label",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_109",
+        "topic": "generative model",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_106",
+        "topic": "consider using nerual network",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_111",
+        "topic": "\u03b8*(network parameter) from labelled data",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_111",
+        "topic": "x^u-> \u03b8* -> [0.7,0.3]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_113",
+        "topic": "hard label [1,0]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_114",
+        "topic": "\u6709\u6a5f\u6703training",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_114",
+        "topic": "\u6bd4\u8f03\u985e\u4f3c low density\u6982\u5ff5",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_113",
+        "topic": "soft label [0.7,0.3]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_117",
+        "topic": "\u6c92\u8fa6\u6cd5training",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_117",
+        "topic": "\u539f\u672coutput\u5c31\u5982\u6b64",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_80",
+        "topic": "entropy-base regularization",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_120",
+        "topic": "x^u->\u03b8*->y^u",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_121",
+        "topic": "output distribution",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_121",
+        "topic": "\u5047\u8a2d5\u500b\u5206\u985e",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_123",
+        "topic": "output\u6a5f\u7387\u90fd\u96c6\u4e2d\u5230\u67d0\u4e00\u985e->Good!",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_123",
+        "topic": "output\u6a5f\u7387\u592a\u5e73\u5747->Bad!",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_120",
+        "topic": "entropy of y^u:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_126",
+        "topic": "evaluate how concentrate the distribution y^u is",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_127",
+        "topic": "E(y^u) = - \u03a3_m=1^5 y_m^u ln(y_m^u)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_128",
+        "topic": "output\u6709\u4e00\u985e\u662f1\u5176\u4ed6\u662f0 => E(y^u) = 0",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_128",
+        "topic": "output\u75765\u985e\u5e73\u5747 => E(y^u) = -ln(1/5) = ln5",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_127",
+        "topic": "E(y^n) as small as possible",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_126",
+        "topic": "new loss function",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_132",
+        "topic": "\u539f\u672c",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_133",
+        "topic": "L = \u03a3_x^r C(y^r,y^^r)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_132",
+        "topic": "\u6539\u6210",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_135",
+        "topic": "L = \u03a3_x^r C(y^r,y^^r) + \u03bb \u03a3_x^u E(y^u)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_136",
+        "topic": "label_data + unlabled data",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_136",
+        "topic": "\u770b\u8981\u504f\u5411label data\u591a\u4e00\u9ede\u9084\u662funlabeled data\u591a\u4e00\u9ede",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_136",
+        "topic": "\u53ef\u4ee5\u5fae\u5206\u5c31gradient descent",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_136",
+        "topic": "\u89d2\u8272\u5f88\u50cfregularization",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_140",
+        "topic": "\u5229\u7528unlabeled data\u8b93\u5979\u6bd4\u8f03\u4e0d\u6703overfitting",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_80",
+        "topic": "outlook: semi-supervised SVM",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_142",
+        "topic": "transductive inference for text classification using Support Vector Machines",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_143",
+        "topic": "https://www.cs.cornell.edu/people/tj/publications/joachims_99c.pdf",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_142",
+        "topic": "svm",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_145",
+        "topic": "find a boundary that an provide the largest margin and least error",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_142",
+        "topic": "enumeration all possible labels of the unlabeled data",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_147",
+        "topic": "\u7aae\u8209\u6240\u6709unlabled data\u53ef\u80fd\u662fclass1\u6216class2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_148",
+        "topic": "\u5c0d\u6bcf\u4e00\u500b\u7d50\u679c\u90fd\u505a\u4e00\u500bSVM",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_149",
+        "topic": "\u627e\u51fa\u6700\u5927margin\u8ddfleast error",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_147",
+        "topic": "\u91cf\u592a\u5927\u4e86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_151",
+        "topic": "\u6539\u6210",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_152",
+        "topic": "\u6bcf\u6b21\u6539\u4e00\u7b46unlabel data classification\u770b\u80fd\u4e0d\u80fd\u8b8a\u597d",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_29",
+        "topic": "Smoothness Assumption",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_154",
+        "topic": "\u8fd1\u6731\u8005\u8d64\uff0c\u8fd1\u58a8\u8005\u9ed1",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_154",
+        "topic": "assumption \"similar\" x has same y^",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_154",
+        "topic": "more precisely",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_157",
+        "topic": "x is not uniform",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_157",
+        "topic": "if x^1 and x^2 are close in a high density region,",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_159",
+        "topic": "\u5169\u8005\u4e4b\u9593\u76f8\u9023\u4e00\u500bhigh desntiy region",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_159",
+        "topic": "\u5169\u8005\u4e4b\u9593\u53ef\u4ee5\u627e\u5230\u5f88\u591a\u5c0f\u5dee\u7570\u7684\u8cc7\u6599",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_161",
+        "topic": "'indirectly' similar with stepping stones",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_159",
+        "topic": "connected by a high density path",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_159",
+        "topic": "\u4eba\u81c9\u8fa8\u8b58\u4e5f\u662f\u985e\u4f3c\u9019\u72c0\u6cc1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_159",
+        "topic": "\u6587\u4ef6\u5206\u985e\u4e0a\u4e5f\u985e\u4f3c\u9019\u72c0\u6cc1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_165",
+        "topic": "classify astronomy vs travel articles",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_157",
+        "topic": "y^^1 and y^^2 are the same.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_154",
+        "topic": "cluster and then label",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_168",
+        "topic": "clustering",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_169",
+        "topic": "\u5206\u51fa\u6bcf\u500bclass->cluster",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_170",
+        "topic": "\u6846\u5230\u90fd\u7b97\u8a72class",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_168",
+        "topic": "\u8981\u8b93cluster\u65b9\u6cd5\u6709\u7528",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_172",
+        "topic": "clustering\u7684\u65b9\u6cd5\u8981\u5f88\u5f37",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_173",
+        "topic": "autoencoder\u62bdfeature\u4f86\u505aclustering",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_154",
+        "topic": "graph-based approach",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_175",
+        "topic": "how to know x^1 and x^2 are close is a high density region",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_176",
+        "topic": "connected by high density path",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_175",
+        "topic": "represented the data points as a graph",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_178",
+        "topic": "\u7576\u4e00\u500b\u65b0\u7684\u9ede\u5728graph\u662f\u76f8\u9023\u5c31\u7b97\u540cclass",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_178",
+        "topic": "\u6c92\u76f8\u9023\u5c31\u7b97\u5f88\u8fd1\u4e5f\u4e0d\u7b97",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_175",
+        "topic": "graph representation is nature sometimes",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_181",
+        "topic": "E.g. hyperlink of webpages, citation of papers",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_175",
+        "topic": "sometimes you have to construct the graph yourself",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_175",
+        "topic": "\u5e38\u898b\u505a\u6cd5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_184",
+        "topic": "define the similarity s(x^i,x^j) between x^i and x^j",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_185",
+        "topic": "\u5716\u7247\u53ef\u80fd\u7528\u62bd\u51fa\u4f86feature\u7b97\u76f8\u4f3c\u5ea6",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_184",
+        "topic": "add edge:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_187",
+        "topic": "K Nearest Neighbor",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_188",
+        "topic": "\u6700\u8fd1k\u500b\u9ede\u505a\u76f8\u9023\u7b97\u76f8\u4f3c\u5ea6",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_187",
+        "topic": "e-Nerighborhood",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_191",
+        "parentid": "line_190",
+        "topic": "\u6bcf\u4e00\u500b\u9ede\u53ea\u6709\u76f8\u4f3c\u5ea6\u8d85\u904ethreshold,\u76f8\u4f3c\u5927\u65bc1\u7684\u90a3\u4e9b\u9ede\u624d\u6703\u88ab\u9ecf\u8d77\u4f86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_187",
+        "topic": "\u4e0d\u662f\u53ea\u6709\u76f8\u9023\u8ddf\u4e0d\u76f8\u9023\u9019\u6a23binary\u7684\u9078\u64c7",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_187",
+        "topic": "\u53ef\u4ee5\u7d66edge\u6709weight",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "line_193",
+        "topic": "\u53ef\u4ee5\u8ddf\u76f8\u4f3c\u5ea6\u6210\u6b63\u6bd4",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_187",
+        "topic": "edge weight is proportional to s(x^i,x^j)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_195",
+        "topic": "RBM function - gaussian radial basis function",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_197",
+        "parentid": "line_196",
+        "topic": "s(x^i,x^j) = exp(-y||x^i-x^j||2)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_198",
+        "parentid": "line_197",
+        "topic": "x^i,x^j = Vector",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_199",
+        "parentid": "line_197",
+        "topic": "\u7b97euclidean distance",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_200",
+        "parentid": "line_197",
+        "topic": "exp\u7d93\u9a57\u4e0a\u6703\u7d66\u4f60\u6bd4\u8f03\u597d\u7684performance",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_201",
+        "parentid": "line_200",
+        "topic": "why?",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_202",
+        "parentid": "line_201",
+        "topic": "exp\u4e0b\u964d\u901f\u5ea6\u5f88\u5feb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_203",
+        "parentid": "line_201",
+        "topic": "exp\u53ea\u6709\u5728\u76f8\u8fd1\u7684\u6642\u5019singularity\u624d\u6703\u5927",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_204",
+        "parentid": "line_201",
+        "topic": "\u53ea\u8981\u7a0d\u5fae\u9060\u5c31\u6703\u4e0b\u964d\u5f88\u5feb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_205",
+        "parentid": "line_201",
+        "topic": "\u90fd\u53ea\u80fd\u8ddf\u975e\u5e38\u8fd1\u7684\u9ede\u9023",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_206",
+        "parentid": "line_205",
+        "topic": "\u7a0d\u5fae\u9060\u4e00\u9ede\u5c31\u6c92\u8fa6\u6cd5\u9023\u7d50",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_207",
+        "parentid": "line_201",
+        "topic": "\u6709\u9019\u7a2e\u6a5f\u5236\u6bd4\u8f03\u80fd\u756b\u51fa\u597d\u7684graph",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_208",
+        "parentid": "line_175",
+        "topic": "\u7cbe\u795e\u4e0a\u9762",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_209",
+        "parentid": "line_208",
+        "topic": "\u5728\u8cc7\u6599\u4e0a\u6709\u4e00\u4e9blabel data",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_210",
+        "parentid": "line_209",
+        "topic": "graph\u4e0a\u6709\u4e9b\u662flabel class\u5247\u9019\u500bgraph\u5c6c\u65bcclass\u6a5f\u7387\u5c31\u5f88\u9ad8",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_211",
+        "parentid": "line_209",
+        "topic": "\u6bcf\u7b46data\u6703\u5f71\u97ff\u5230\u9130\u5c45",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_212",
+        "parentid": "line_211",
+        "topic": "data\u7684label\u662f\u6703\u50b3\u905e\u53bb\u5f71\u97ff\u4e32\u5230\u7684\u8f03\u9060\u7684\u9ede",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_213",
+        "parentid": "line_208",
+        "topic": "the labelled data influence their neighbors",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_214",
+        "parentid": "line_208",
+        "topic": "propagate through the graph",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_215",
+        "parentid": "line_154",
+        "topic": "define the Smoothness of the labels on the graph",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_216",
+        "parentid": "line_215",
+        "topic": "\u9019label\u6709\u591a\u7b26\u5408smoothness assumption",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_217",
+        "parentid": "line_215",
+        "topic": "S =1/2\u03a3_ij w_ij(y^i-y^j)^2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_218",
+        "parentid": "line_217",
+        "topic": "for all data (no matter labelled or not)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_219",
+        "parentid": "line_217",
+        "topic": "smaller means smoother",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_220",
+        "parentid": "line_217",
+        "topic": "simple:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_221",
+        "parentid": "line_220",
+        "topic": "y: (R+U)-dim vector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_222",
+        "parentid": "line_220",
+        "topic": "y = [..y^i...y^j...]^T",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_223",
+        "parentid": "line_220",
+        "topic": "S = y^tLy",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_224",
+        "parentid": "line_220",
+        "topic": "L = R+U x R+U vector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_225",
+        "parentid": "line_224",
+        "topic": "Graph Laplacian",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_226",
+        "parentid": "line_225",
+        "topic": "\u8abf\u548c\u77e9\u9663",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_227",
+        "parentid": "line_224",
+        "topic": "L = D - W",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_228",
+        "parentid": "line_227",
+        "topic": "W",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_229",
+        "parentid": "line_228",
+        "topic": "\u628a\u6240\u6709data\u4e4b\u9593\u7684connection\u95dc\u806f\u5efa\u6210\u7684matrix",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_230",
+        "parentid": "line_227",
+        "topic": "D",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_231",
+        "parentid": "line_230",
+        "topic": "W\u7684\u6bcf\u4e00\u500brow\u5408\u8d77\u4f86\u7684\u503c\u653e\u5728diagonal\u4f4d\u7f6e",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_232",
+        "parentid": "line_227",
+        "topic": "\u5169\u8005\u6e1b\u8d77\u4f86\u5c31\u5f97\u5230",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_233",
+        "parentid": "line_232",
+        "topic": "Laplacian",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_234",
+        "parentid": "line_220",
+        "topic": "y^tLY => depend on network parameters",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_235",
+        "parentid": "line_234",
+        "topic": "evaluate label smoothness",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_236",
+        "parentid": "line_234",
+        "topic": "y = label \u53d6\u6c7anetwork parameters",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_237",
+        "parentid": "line_236",
+        "topic": "network dependent",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_238",
+        "parentid": "line_234",
+        "topic": "\u539f\u672closs function\u53ef\u80fd\u8003\u616ecrossentropy",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_239",
+        "parentid": "line_234",
+        "topic": "\u52a0\u5165smooth => \u03bb*s",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_240",
+        "parentid": "line_239",
+        "topic": "as regularization term",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_241",
+        "parentid": "line_234",
+        "topic": "\u53ef\u5728deepleanring\u4efb\u4f55layer\u5916\u63a5\u51fa\u4f86\u7b97smooth\u6216\u901a\u901a\u90fd\u8981\u6c42smooth",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_242",
+        "parentid": "line_29",
+        "topic": "Better Representation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_243",
+        "parentid": "line_242",
+        "topic": "\u53bb\u856a\u5b58\u83c1 \u5316\u7e41\u70ba\u7c21",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_244",
+        "parentid": "line_242",
+        "topic": "unsupervised\u518d\u8aaa",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_245",
+        "parentid": "line_242",
+        "topic": "find the latent factors behind the observation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_246",
+        "parentid": "line_242",
+        "topic": "the latent factors(usually simpler) are better representations",
+        "background-color": "#0fbdff",
+        "expanded": false
+    }
+]
