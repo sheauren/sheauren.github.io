@@ -1,0 +1,440 @@
+Unsupervised Learning - Linear Methods
+    Clustering & Dimension Reduction
+        化繁為簡
+        input
+            真實樹的照片
+        output
+            抽象的樹
+        於unsupervised時
+            only having function output
+                有一堆樹的照片要抽象化成簡單的樹                
+    Generation
+        無中生有
+        input
+            隨機資料
+        output
+            產生一棵樹
+            產生另一棵樹
+    這次focus linear Dimension Reduction
+        Clustering
+            有一堆image要做image clustering
+                分成cluster 1 , cluster 2 , cluster 3
+                    之後貼上label
+            how many cluster we neeed?
+                最citical問題...
+                    empirical問題
+                    跟neural network要幾層類似
+                    你決定要幾個clusteri
+                    但不能太多
+            k-means
+                clustering X= {x^1,x^2...x^n,....x^N} into K clusters
+                x = image
+                initialize cluster center c^i, i=1..K { K random x^n from X}
+                    隨便挑避免segementation fault
+                Repeat
+                    for all x^n in X:
+                        b_i^＿n : 
+                            1: x^n is most "close" to c^i
+                            0: othewise
+                    update all c^i:
+                        c^i = Σ_x^n b_i^n*x^n / Σx^n b_i^n
+                            找出center
+            Hierarchical Agglomeration Clustering (HAC)
+                step1 : build a tree
+                    tree structure
+                        假設有5個example
+                            兩兩算相似度
+                                挑最相似的pair出來
+                                    把兩個merge(avg)
+                                        產生新的vector
+                        變成4個example
+                            兩兩算相似度
+                                挑最相似的pair出來
+                                    把兩個merge(avg)
+                                        產生新的vector
+                        取得tree root
+                step2 : pick a threshold
+                    在樹中間切一刀
+                        段開的就自成一個cluster
+                    不像k-mean要先決定K的數值
+                        可以事後再切哪裡在評估
+            Distribed Representation
+                Clustering: an object must belong to one cluster
+                Distributed Representation
+                    dimension reduction
+                        look like 3-D
+                            actually, 2-D
+                        in MNIST, a digits is 28x28 dims
+                            most 28x28 dim vector are not digits
+                                ex: 中間的3旋轉特定角度就是另一個3
+                                    record轉幾度就可以區隔其他張圖
+                                    用一個維度就描述28x28 dimension
+                        x-> function ->z 
+                            the dimension of z would be smaller than x
+                            feature selection
+                                拿掉沒用的dimension
+                            principle compoenent analysis (PCA)
+                                [bitshop chapter 12]
+                                z = Wx
+                                    根據一大堆x把W找出來
+                                Reduce 1-D
+                                    z_1 = w^1*x
+                                        assume ||w1||_2 = 1
+                                        x是高維度的vector
+                                        w^1 inner product x = x投影到w^1的值 = z_1
+                                        把一堆w1把它投影變成z1
+                                        問題是該選什麼樣的w1
+                                            we want to variance of z_1 as large as possible
+                                                Var(z_1) = Σ_z_1 (z_1-z_1^-)^2
+                                                ||w^1||_2 = 1
+                                                z_1^- = 所有z_1的平均
+                                Reduce 2-D
+                                    z = Wx
+                                    z_1 = w^1*x
+                                    z_2 = w^2*x
+                                    w^1,w^2 transpose 排起來就是 w
+                                    z^1,z^2 串起來就是z
+                                    找z_2
+                                        Var(z_2) = Σ_z_2 (z_2-z_2^-)^2
+                                        ||w^2||_2 = 1
+                                        要多一個限制w_2跟w_1是垂直或orthogonal
+                                            w^1 inner product w^2 = 0
+                                這樣就可以先找w^1在找w^2在找....
+                                    看project幾個維度
+                                    找出來的w會是一個orthogonal的matrix
+                                        norm都是1
+                                    怎麼找w^1,w^2
+                                        也可以用gradient descent方法去解
+                                        Lagrange multiplier以及warming of math
+                                            z_1=w^1*x
+                                            z_1^- = Σz_1 = Σw^1*x = w^1 * Σx = w^1 * x^-
+                                            Var(z_1) = Σ_z_1 (z_1-z_1^-)^2
+                                                = Σ_x (w^1*x-w^1-x^-)^2
+                                                    = Σ(w^1(x-x^-))^2
+                                                        = Σ(w^1(x-x^-)(x-x^-)^T)*w^1
+                                                             = w^1^T Σ(x-x^-)(x-x^-)^T
+                                                                 =  w^1^T*Conv(x)*w^1
+                                                                    x的covariance matrix
+                                                                    = w^1^T*S(x)*w^1
+                                                                        找一個w^1可以maximizing
+                                                                            (w^1)^T*S*w^1
+                                                                            constraint
+                                                                                w^1的2-norm = 1
+                                                                                find w^1 maximizing
+                                                                                    (w^1)^T S w^1
+                                                                                    (w^1)^T * w^1 = 1
+                                                                                    S = conv(x)
+                                                                                        symetric
+                                                                                        x的covariance matrix
+                                                                                        positive-semidefinite
+                                                                                            non-negative eigenvalues
+                                                                                                看一下線性代數教學                                                                                        
+                                                                                    w^1 is then eigenvector of the covariance matrix S
+                                                                                        對應到最大的eigenvalues
+                                                                                            λ1
+                                                                                    過程
+                                                                                        using Lagrange mutiplier [bitshop,appendix E]                                                                        
+                                                                                        g(w^1) = (w^1)^T Sw^1 - α((w^1)^Tw^1-1)
+                                                                                            ∂g(w^1)/∂(w_1^1) = 0
+                                                                                            ∂g(w^1)/∂(w_2^1) = 0
+                                                                                            ...
+                                                                                            形成
+                                                                                                Sw^1 - αw^1 = 0
+                                                                                                Sw^1 = αw^1
+                                                                                                    w^1 = s的eigenvector
+                                                                                                        可以找到一大把eigenvector
+                                                                                                        所以要帶入找maximum (w^1)^T Sw^1 
+                                                                                                             (w^1)^T Sw^1  = α((w^1)^Tw^1) = α 
+                                                                                                                 choose the maximum one
+                                                                                                                 α是最大的eigenvalues λ1
+                                                                                        find w^2
+                                                                                            maximizing (w^2)^T Sw^2
+                                                                                                同時滿足
+                                                                                                    (w^2)^T * w^2 = 1
+                                                                                                    (w^2)^T * w^1 = 0
+                                                                                            最大的eigenvalues λ2
+                                                                                            g(w^2) = (w^2)^T Sw^2 - α((w^2)^Tw^2-1) - βα((w^2)^Tw^1-1)
+                                                                                                ∂g(w^2)/∂(w_1^2) = 0
+                                                                                                ∂g(w^2)/∂(w_2^2) = 0
+                                                                                                ...
+                                                                                                形成
+                                                                                                Sw^1 - αw^2 - βw^1 = 0
+                                                                                                    (w^1)^T Sw^2  - α((w^1)^Tw^2) - βα((w^1)^Tw^1-1) = 0
+                                                                                                    α((w^1)^Tw^2) = 0
+                                                                                                    βα((w^1)^Tw^1-1) = 1
+                                                                                                    剩下
+                                                                                                        (w^1)^T Sw^2 = 0
+                                                                                                        scalar transpose還是自己
+                                                                                                            所以可以把自己transpose
+                                                                                                                ((w^1)^T Sw^2)^T
+                                                                                                                    = (w^2)^T S^Tw^1
+                                                                                                                        = (w^2)^T Sw^1
+                                                                                                                            = λ_1(w^2)^Tw^1
+                                                                                                                                 = 0
+                                                                                                                                    β = 0
+                                                                                                                                        形成
+                                                                                                                                            Sw^2 - αw^2 = 0
+                                                                                                                                                Sw^2 = αw^2
+                                                                                                                                                    w^2 = eigenvector
+                                                                                                                                                        選第二大的
+                                                                                                                        Sw^1 = λ_1w^1
+                                                                                                                        
+
+                                                (a*b)^2 
+                                                    = (a^T*b)^2 
+                                                    = a^T*b*a^T*b
+                                                    = a^T*b*(a^T*b)^T
+                                                    = a^T*b*b^T*a
+                                        z = Wx
+                                        Conv(z) = D
+                                            Diagonal matrix
+                                            z的vector的convariance matrix是diagonal
+                                                PCA得到新的feature z
+                                                    是要給其他model用
+                                                        例如generative model
+                                                            那用gaussian描述class distribution
+                                                                可以減少參數量
+                                                                其他model可以假設dimension之間沒有colrelation
+                                                                    用簡單的model處理data
+                                                                    trival
+                                        conv(z) = Σ(z-z^-)(z-z^-)^T 
+                                            = WSW^T
+                                                = WS[w^1...w^K]
+                                                    = W[Sw^1...Sw^K]
+                                                        = W[λ_1w^1...λ_kw^K]
+                                                             = [λ_1Ww^1...λ_kWw^K]
+                                                                = [λ_1e_1...λ_ke_k]
+                                                                    diagonal matrix
+                                                             Ww^i = e_i
+                                                                第i個維度是1其他都0
+                                                                
+                                            S = Conv(x)
+                                PCA - Another Point to View
+                                    Basic Component:
+                                        handwrite
+                                            代表筆畫
+                                            橫,豎,大圈,小圈,長直線,長橫線....
+                                                把每一個筆畫當成一個u^i，假設有k個
+                                                    一個筆畫一個vector
+                                                    把vector加起來就會形成一個digit,該formulation
+                                                        x ≈ c^1^u^1 + c^2^u^2 + ... + c^ku^k + x^-
+                                                            x會等於每個筆畫的機率
+                                                            x^-是所有image平均
+                                                            可以用[c^1,c^2,...c^k]代表image
+                                                            compoent數量比pixel少的話
+                                                                這個描述會比較有效
+                                                            x - x^- ≈ c^1^u^1 + c^2^u2 + ... + c^ku^k = x^^
+                                                                我們不知道u^1~u^k
+                                                                    要如何找k個vector出來
+                                                                        無法描述的差距 - reconstrcution error                                                                        
+                                                                            || (x-x^-) - x^^ ||_2
+                                                                            find{u^1...u^k} minimizing the error
+                                                                                formulation
+                                                                                    L = min_{u^1...u^k} Σ||(x-x^-)-(Σ_k=1^k c_k*u^k)  ||_2
+                                                                                    PCA
+                                                                                        z=W*x
+                                                                                        [z1...z^k] = [(w_1)^T....(w_k)^T]*x
+                                                                                        {w_1...w_k} is the component {u^1...u^k} minimizing L
+                                                                                    x^1 - x^- ≈ c_1^1^u^1 + c_2^1^u2 + ... + c_k^1u^k
+                                                                                        x^1-x^- is vector
+                                                                                        [u^1 + u2 + ... + u^k] matrix
+                                                                                        [c_1^1,c_1^2...] vector
+                                                                                        [c_2^1,c_2^2...] vector
+                                                                                        [c_3^1,c_3^2...] vector
+                                                                                        matrix x ≈  u matrix * c matrix
+                                                                                            minimizing error u*c matrix
+                                                                                                SVD: http://speech.ee.ntu.edu.tw/~tlkagk/courses/LA_2016/Lecture/SVD.pdf
+                                                                                                x matrix(m*n) ≈ u matrix(m*k) Σ matrix(k*k) v matrixs(k*n)
+                                                                                                    k component number
+                                                                                                    k columns of U: a set of orthonormal eigenvector corresponding to the k largest eigenvector of XX^T
+                                                                                                this is a solution of PCA
+                                PCA look like a nerual network with one hidden layer (liner activation function)
+                                    Autoencoder
+                                    if{w^1,w^2...w^k} is the component{u^1,u^2...u^k}
+                                    x^^ = Σ_k=1^k c_k*w^k 與 x-x^-之間越小越好
+                                        To minimizing reconstrcution error:
+                                            c^k = (x-x^-)*w^k
+                                    neural network
+                                        x-x^- 形成 3-dims vector
+                                            k=2情況
+                                                (x-x^-)(w_1^1+w_2^1+w_3^1) = c^1
+                                                input : x^-^-
+                                                c^1: output
+                                                input: c^1 
+                                                    c1^1 * (w_1^1+w_2^1+w_3^1)
+                                                output: x_1^^
+                                                    c^2也來一次
+                                                    兩者相加
+                                                PCA形成autoencoder nerual network
+                                                    PCA找出來的解跟nerual network找出來的解會不大一樣
+                                                        PCA有orthonormal限制
+                                                        nerual network沒有只能說是另一組解
+                                                            但不會比PCA找出來的error小
+                                                                linear時候直接PCA比較快
+                                                                nerual network好處可以deep
+                                                graident descent
+                                weakness of PCA
+                                    Unsupervised
+                                        dimension reduction到分最開的vector
+                                            可能還是會導致原本分別的group data被混在一起
+                                                可能適合label data
+                                                    LDA - Linear Discriminant Analysis
+                                                        supervised Methods
+                                    Linear
+                                        dimension reduction時把曲面拉值
+                                            PCA做不到
+                                            這需要unlinear transformation
+                                            non-linear dimension reduction in the following lectures
+                                PCA-pokemon
+                                    inspried from :
+                                        https://www.kaggle.com/strakul5/principal-component-analysis-of-pokemon-data
+                                    800 pokemons, 6 features for each(HP,Atk,Def,Sp,Sp Atk,Sp Def,Speed)
+                                    How many principle components?
+                                        跟neuron一樣自己決定
+                                        常見方法
+                                            ratio_i = λi/(λ1+λ2+...λ6)
+                                            每一個λ都是eigenvector
+                                                eigenvector都對映到一個eignvalues
+                                                    就是這個λ
+                                                        做dimension reductoin後他的variance有多大
+                                                            convariance matrix是六維
+                                                                找出六個eigenvector
+                                                                    算出每個eigenvalue的ratio
+                                                                        ratio1 = 0.45
+                                                                        ratio2 = 0.18
+                                                                        ratio3 = 0.13
+                                                                        ratio4 = 0.12
+                                                                        ratio5 = 0.07
+                                                                            variance很小
+                                                                        ratio6 = 0.04
+                                                                            variance很小
+                                                                        principle component前四個就好了
+                                                                            4個principle component
+                                                                                各自是一個6維vector
+                                                                                    PC1...
+                                                                                        每一個dimension都是正的
+                                                                                            強度
+                                                                                    PC2...
+                                                                                        Def正
+                                                                                        Speed負
+                                                                                        Def/Speed反比
+                                                                                    PC3...
+                                                                                        Sp.Def正
+                                                                                        HP/Atk負
+                                                                                            HP/Atk換取Sp.Def
+                                                                                    PC4...
+                                                                                        HP正
+                                                                                        Atk/Def負
+                                                                                        HP與Atk/Def互斥
+                                                                                    四個vector combine的結果產生pokemon
+                                PCA-MNIST
+                                    input image = a1w1+a2w2....
+                                        a1w1 = images
+                                        a2w2 = images
+                                    30 components
+                                        看起來很像筆畫
+                                        用這些component做linear combination就可以得到所有的digtit
+                                            0-9
+                                        Eigen-digit
+                                        怎麼不像component
+                                            像馬雅文字
+                                PCA-face
+                                    找principle compoenent
+                                    找前30 components
+                                        看到一堆哀怨的臉
+                                        每一個都是一個臉
+                                        Eigen-face
+                                        怎麼不像component
+                                            都是一個完整的臉
+                                                PCA involes adding up and sbustracting some components(images)
+                                                    可能有些是負的
+                                                        所以不是圖的basic
+                                                    Then the components may not be 'part of digits'
+                                                        畫9
+                                                            先畫8
+                                                                減下面圈圈
+                                                                    加一槓
+                                想要得到類似筆畫的東西
+                                    Non-Negative matrix Factorization (NMF)
+                                        force a1,a2...be non-negative
+                                            additive combination
+                                        force w1,s2...be non-negative
+                                            more like 'part-of-digits'
+                                        ref:
+                                            https://papers.nips.cc/paper/1861-algorithms-for-non-negative-matrix-factorization.pdf
+                                        MINIST會變成筆畫了
+                                        Face會變成臉的一些部分
+                Matrix Factorization
+                    兩個object受到共通的latent factor影響
+                        有涼宮春日公仔的比較容易御板美琴公仔
+                        有姊寺公仔的比較容易有小維公仔
+                        角色背後有些共通性來操控這個事情
+                        vector
+                            萌傲嬌
+                            萌天然呆
+                        the factors is latent
+                            otaku
+                                not one cares
+                            character
+                                not directly observable
+                            只有互相之間的matrix
+                                去推算兩者的vector
+                                    r^A*r^1 ≈ 5
+                                        inner product 很大
+                                    r^B*r^1 ≈ 4
+                                    ...
+                                M: No. of otaku
+                                N: No. of characters
+                                K: No. of latent factor
+                                    K自己要試出來
+                                        跟neuron一樣要自己先設定
+                                    [M*K] * [K*N] => [M*N]
+                                    找[r^A...] [r^1...]出來的值跟[M*N]越接近越好
+                                        算reconstructure error
+                                            用SVD解
+                                    有時候會遇到有些數量是未知的
+                                        某些公仔數量不知道
+                                        SVD有點卡
+                                        用gradient descent的方法
+                                            L = Σ_(i,j) (r^i*r^j - n_ij)^2
+                                                missing data就跳過
+                                            每個人都可以算出一個2 dims vector
+                                            每一個角色也會有一個vector
+                                        latent vector找出來在分析它的結果
+                    常用於推薦系統
+                    more about matrix factorization
+                        considering the induvail characters
+                            r^a*r^1 ≈ 5
+                                r^a*r^1+ba+b1 ≈ 5
+                                    ba: otakus A likes to buy figures                                        
+                                    b1: how popular character 1 is
+                                L = Σ_(i,j) (r^i*r^j - n_ij +b_i+b_j)^2
+                                graident descent硬解
+                                    r^i,r^j,b_i,b_j
+                                    也可以加regularization                                    
+                    ref:
+                        matrix factorization techniques for recommender systems
+                        https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf
+                    matrix factorization for topic analysis
+                        Latent semantic analysis(LSA)
+                        word出一個term frequency
+                            並且可以設定一個weight代表重要性
+                            term reconstrcture error比較大
+                            evalute一個term重不重要?
+                                常用weight by inverse document frequency
+                                常見詞匯weight就會很小
+                                少見詞匯且重要weight就會大
+                        latent factors are topics
+                            財經
+                            政治
+                            ...
+                        Probability latent semantic analysis(PLSA)                        
+                        latent Dirichlet allocation(LDA)
+    More related approches not introduced
+        Mutlidimensional Scaling(MDS)
+        Probability PCA
+        Kernel PCA
+        Canonical Correlation Analysis(CCA)
+        Independent Component Analysis(ICA)
+        Linear Discriminant Analysis(LDA)
+            supervised
