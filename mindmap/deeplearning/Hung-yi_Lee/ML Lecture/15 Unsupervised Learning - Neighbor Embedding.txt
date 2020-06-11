@@ -1,0 +1,131 @@
+Unsupervised Learning - Neighbor Embedding
+    t-SNE的NE
+        Neighbor Embedding
+    Manifold Learning
+        非線性降維
+        地球表面就是二維平面
+        很近的距離下歐式幾何才會成立
+            Euclidean Distance
+        在多維度空間當距離太遠
+            歐式幾何就不make sense
+        把S型高維空間的圖展開攤平
+            低微攤平以後
+                manifold空間就能用euclidean distance來計算點跟點的距離
+                     clustering
+                     supervised
+                類似方法很多
+    Locally Linear Embedding (LLE)
+        空間的點選一個點x^i
+            選x_i的neighbor
+                x^j
+                    找x^i x^j的關係
+                        w^ij
+                            Σ||x^i - Σ_j w^ij*x^j||_2 
+                                linear combination的weight sum
+                                所有neighbor x^j做weight sum Σ_j w^ijx^j
+                                越接近越好  
+                                two norm越小越好
+                                the find the dimension reduction
+                                    把所有x^i x^j轉z^i z^j
+                                    轉換後w^ij的關係是不變的
+                                orginal space
+                                    keep w^ij unchanged
+                                        in new space 
+                                            find a set of z^i minimizing
+                                                 Σ_i||z^i - Σ_j w^ij*z^j||_2 
+        neighbor數目的選擇會影響到有沒有好的結果
+    Laplacian Eigenmaps
+        Graph-based approach
+            smoothess assumption
+                high desity connection
+            construct the data point as a graph
+                smoothess distance for graph approximate
+        review in semi-supervised learning: if x^1 and x^2 are close in a high density region, y^1 and y^2 are probably the same
+            L = 
+                Σ_x^r C(y^r,y^^r) 
+                    與label有關
+                +λS
+                    與label無關
+                    as a regulariztaion term 
+                    S = 1/2Σ_i,j w_i,j(y^i-y^j)^2
+                        w_ij =
+                            similarytiy
+                                if connected
+                            0
+                                otherwise                    
+                        evaluates how smooth your label is
+                        S = y^TLy
+                            L: (R+U)x(R+U) matrix
+                                 L=D-W
+        apply unsupervised training
+            Dimension Reduction:
+                if x^1 and x^2 are close in a high density region
+                    z^1 and z^2 are the close to each other
+                        S = 1/2Σ_i,j w_i,j(z^i-z^j)^2
+                            Euclidean distance or two norm distance比較好
+                            any problem?
+                                z^i==z^j==0
+                                semi-supervised還有label data給予一個項目
+                                    所以都設一樣在superivse那項目lost會很大
+                                        balance情況不可能選都一樣的
+                                少了supervised選z都一樣反而會變成最好的solution
+                                給z一些constraint
+                                    降維度是M空間
+                                    不希望分布比M還要小的Dimension裡面
+                                    希望高維塞到低維的空間展開
+                                        不希望展開結果是在更低維度空間裡面
+                                        Span(z^1,z^2,...z^N) = R^M
+                                            他不是活在一個比M維度更低的空間
+                                            他會占據整個M維度的空間
+                                        Spectral clustering: clustering on z
+                                            Graph Laplacian的 eigenvector
+                                                比較小的eigenvalue的eigenvector
+                    先找z在做clustering
+                        k-means
+                            spectral clustering
+    T-distributed Stochastic Neighbor Embedding(t-SNE)
+        Problem of the previous approaches
+            Similar data are close,but different data my collapse
+        compute similarity between all pairs of x: S(x^i,x^j)
+            P(x^j|x^i) =
+                S(x^i,x^j) / Σ_k≠i S(x^i,x^k)            
+            Σ P(x^j|x^i) = 1
+        compute similarity between all pairs of z: S'(z^i,z^j)
+            Q(z^j|z^i) = S'(z^i,z^j) / Σ_k≠i S(z^i,z^k)
+        find a set of z making the two distributions as close as possible
+            L = Σ_i KL(P(*|x^i)||Q(*|z^i))
+                KL divergence衡量P Q相似度
+        t-SNE會計算所有point運算量有點大
+            可以先做降維度在做t-SNE
+                如PCA降到50維在用t-SNE降到2維
+        算完再給一個新的data point整個又要重跑
+            所以t-SNE比較不適合training/testing這種base的做法
+                通常拿來做visualization
+                    把high dimensional的visualize二維空間分布怎麼樣
+                        最多人選擇
+        similarity選擇非常奇妙
+            S(x^,x^j) = exp(-||x^i-x^j||_2)
+                RDF function
+                evaluates similarity方式用 Euclidean Distance
+                    取負號在exponential
+                        非常近才有值，遠了會掉非常快
+            t-SNE之前有一個SNE
+                S'(x^i,x^j) = exp(-||x^i-x^j||_2)
+                S'(z^i,z^j) = exp(-||z^i-z^j||_2)
+                    新的space跟原本space都用同一個measure 
+            t-SNE
+                S'(x^i,x^j) = exp(-||x^i-x^j||_2)
+                    RBF fuction
+                S'(z^i,z) = 1/1 + ||z^i-z^j||_2
+                    t-distributions
+                    新space選擇t-distribution的一種
+                        可以調整參數
+                    why?
+                        直覺解釋
+                        曲線距離不同要維持原本y值
+                            原本小距離影響小
+                            原本距離較遠
+                                x值要拉更開
+                                    拉開不相似的值
+                                        一群一群分開
+                ignore σ for simplicity
