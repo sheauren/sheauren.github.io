@@ -1,0 +1,549 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Unsupervised Learning - Deep Generative Model (Part I)"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Ref Generative Models",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "https://openai.com/blog/generative-models/",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "root",
+        "topic": "What I cannot create, I do not understand.",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "Richard Feynman",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "root",
+        "topic": "Create - Image Processing",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "Now",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": "Classification",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_5",
+        "topic": "In The Future",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "Machine Draw a Cat",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "root",
+        "topic": "Generative Models",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "PixelRNN",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "To crate an image, generating a pixel each time",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_11",
+        "topic": "E.g 3x3 image",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "\u5148\u756b\u4e00\u500bpixel\u984f\u8272 (3 dims vector)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "input\u8a72pixel\u984f\u8272 -> NN -> output\u8a72\u756b\u4ec0\u9ebc\u984f\u8272",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_14",
+        "topic": "input\u5169\u500bpixel\u984f\u8272 -> NN -> output\u4e0b\u4e00\u500b\u984f\u8272",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "RNN\u53ef\u4ee5\u8655\u7406variable length input",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_11",
+        "topic": "can trained just with a large collection of images without any annotation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_11",
+        "topic": "more than images...",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "audio",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "wavenet",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "input: waveform",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_21",
+        "topic": "output: ampipute",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_19",
+        "topic": "vedio",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "input video",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_24",
+        "topic": "output next video",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_11",
+        "topic": "Practicing Generative Models:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "Pokemon Creation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "image size: 20x20",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_28",
+        "topic": "image count: 792",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_28",
+        "topic": "Tips:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "each pixel is represented  by 3 numbers (correspnding to RGB)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "\u51fa\u4f86\u5716\u7247\u6703\u7070\u7070\u7684",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_32",
+        "topic": "\u9bae\u660e\u5716\u7247RGB\u6709\u4e00\u500b\u503c\u7279\u5225\u9ad8",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_31",
+        "topic": "each pixel is represented by 1-of-N encoding feature",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "\u6bcf\u4e00\u500bdims\u4ee3\u8868\u4e00\u500b\u984f\u8272",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "\u4e0d\u8b93\u4ed6\u7522\u751fRGB\u5408\u6210\u984f\u8272",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_36",
+        "topic": "\u76f4\u63a5\u7522\u751f\u984f\u8272",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_31",
+        "topic": "clustering the similar color",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "167\u500b\u4e0d\u540c\u7684\u984f\u8272",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_31",
+        "topic": "following experiment: 1-layer LSTM 512 cells",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_28",
+        "topic": "it's defficult to evaluate generation",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_28",
+        "topic": "predict",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "\u958b\u982d\u7d6625%/50%\u7522\u751f\u5f8c\u7e8c\u5716\u7247",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_43",
+        "topic": "\u5168\u90e8\u7522\u751f",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "need some randomness",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_45",
+        "topic": "predict\u4e0b\u4e00\u500bpixel\u4e0d\u898b\u5f97\u53d6\u6700\u9ad8\u6a5f\u7387\u7684",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "\u5426\u5247\u7522\u751f\u53ef\u80fd\u90fd\u4e00\u6a23",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_10",
+        "topic": "Varitional Autoencoder(VAE) 2013",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "\u5c07autoencoder training\u597d\u7684decoder\u62ff\u51fa\u4f86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "randomly generate a vector as code",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "code -> NN decoder-> image?",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "\u901a\u5e38\u90fd\u4e0d\u597d",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_49",
+        "topic": "VAE\u52a0\u4e86\u4e00\u500btrick\u53bb\u8abf\u6574",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "input -> NN Encoder ->",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_55",
+        "topic": "[\u5169\u500bvector([m1,m2,m3],[\u03c31,\u03c32,\u03c33])]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_55",
+        "topic": "From a normal distribution [e1,e2,e3]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_57",
+        "topic": "exp([\u03c31,\u03c32,\u03c33])*([e1,e2,e3]) + [m1,m2,m3]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "[c1,c2,c3]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_59",
+        "topic": "-> NN Decoder-> Output",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_55",
+        "topic": "c = exp(\u03c3)*e + m",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_55",
+        "topic": "minimum",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "reconstruction error",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_62",
+        "topic": "\u984d\u5916\u795e\u79d8\u516c\u5f0f",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "\u03a3_i=1^3 (1+\u03c3i-(mi)^2-exp(\u03c3i))",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_49",
+        "topic": "VAE\u53ef\u4ee5control\u4f60\u8981generate\u7684\u4e8b\u60c5",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "[c1,c2,c3] 10-dim",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_67",
+        "topic": "\u7522\u751f\u5716\u6642\u56fa\u5b9a8-dim \u53easample 2-dim\u7684\u503c\u770b\u7522\u751f\u7d50\u679c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "\u53ef\u4ee5\u4e86\u89e3\u9019\u5169\u500bdim\u6578\u503c\u7684\u610f\u601d",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_49",
+        "topic": "Writing Poetry",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_70",
+        "topic": "sentence -> NN Encoding ->[m][\u03c3][e] -> code -> NN decoder -> sentence",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "\u9700\u8981\u7528\u5230RNN\u624d\u80fd\u505a\u5230",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_70",
+        "topic": "\u8f38\u5165\u5169\u500b\u53e5\u5b50",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_73",
+        "topic": "\u627e\u51fasentence\u65bccode space\u7684\u9ede",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_74",
+        "topic": "\u5169\u9ede\u76f8\u9023",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_75",
+        "topic": "\u4e2d\u9593sample\u53d6\u4e00\u4e9b\u9ede",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_76",
+        "topic": "\u4e1f\u5230decoder\u53bb\u9084\u539f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_10",
+        "topic": "Generative Adversarial Network(GAN) 2014",
+        "background-color": "#e82ad2",
+        "expanded": false
+    }
+]

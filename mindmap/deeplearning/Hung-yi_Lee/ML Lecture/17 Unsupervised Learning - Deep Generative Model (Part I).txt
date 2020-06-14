@@ -1,0 +1,79 @@
+Unsupervised Learning - Deep Generative Model (Part I)
+    Ref Generative Models
+        https://openai.com/blog/generative-models/
+    What I cannot create, I do not understand.
+        Richard Feynman
+    Create - Image Processing
+        Now
+            Classification
+        In The Future
+            Machine Draw a Cat
+    Generative Models
+        PixelRNN
+            To crate an image, generating a pixel each time
+            E.g 3x3 image
+                先畫一個pixel顏色 (3 dims vector)
+                    input該pixel顏色 -> NN -> output該畫什麼顏色
+                    input兩個pixel顏色 -> NN -> output下一個顏色
+                        RNN可以處理variable length input
+            can trained just with a large collection of images without any annotation
+            more than images...
+                audio
+                    wavenet
+                        input: waveform
+                        output: ampipute
+                vedio
+                    input video
+                    output next video
+            Practicing Generative Models:
+                Pokemon Creation
+                    image size: 20x20
+                    image count: 792
+                    Tips:
+                        each pixel is represented  by 3 numbers (correspnding to RGB)
+                            出來圖片會灰灰的
+                            鮮明圖片RGB有一個值特別高
+                        each pixel is represented by 1-of-N encoding feature
+                            每一個dims代表一個顏色
+                                不讓他產生RGB合成顏色
+                                直接產生顏色
+                        clustering the similar color
+                            167個不同的顏色
+                        following experiment: 1-layer LSTM 512 cells
+                    it's defficult to evaluate generation
+                    predict
+                        開頭給25%/50%產生後續圖片
+                        全部產生
+                            need some randomness
+                            predict下一個pixel不見得取最高機率的
+                                否則產生可能都一樣
+        Varitional Autoencoder(VAE) 2013
+            將autoencoder training好的decoder拿出來
+                randomly generate a vector as code
+                    code -> NN decoder-> image?
+                        通常都不好
+            VAE加了一個trick去調整
+                input -> NN Encoder -> 
+                    [兩個vector([m1,m2,m3],[σ1,σ2,σ3])] 
+                    From a normal distribution [e1,e2,e3]
+                        exp([σ1,σ2,σ3])*([e1,e2,e3]) + [m1,m2,m3]
+                            [c1,c2,c3]
+                                -> NN Decoder-> Output
+                    c = exp(σ)*e + m
+                    minimum
+                        reconstruction error
+                        額外神秘公式
+                            Σ_i=1^3 (1+σi-(mi)^2-exp(σi))
+            VAE可以control你要generate的事情
+                [c1,c2,c3] 10-dim
+                    產生圖時固定8-dim 只sample 2-dim的值看產生結果
+                        可以了解這兩個dim數值的意思
+            Writing Poetry 
+                sentence -> NN Encoding ->[m][σ][e] -> code -> NN decoder -> sentence
+                    需要用到RNN才能做到
+                輸入兩個句子
+                    找出sentence於code space的點
+                        兩點相連
+                            中間sample取一些點
+                                丟到decoder去還原
+        Generative Adversarial Network(GAN) 2014
