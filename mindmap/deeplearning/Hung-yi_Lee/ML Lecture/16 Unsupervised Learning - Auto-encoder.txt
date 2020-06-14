@@ -1,0 +1,145 @@
+Unsupervised Learning - Auto-encoder
+    Auto-encoder
+        input(28x28) -> NN Encoder -> Code(<28x28)
+            Compat representation of the input object
+        code -> NN Decoer -> output(28x2x)
+            Can reconstruct the orginal object
+        Learn together
+    starting from PCA
+        input image(x)
+        x*w = component weight c
+            encode
+        c*w^T = x^ (reconstruct)
+            decode
+        minimize(x-x^)^2 as close as possible
+        look like NN
+            c
+                code
+                the hidden layer
+                bottlenect layer
+                    dimenstion reduction component's number
+    Deep Auto-encoder
+        of course, the auto-encoder can be deep
+    reference:
+        Hinton 2006
+            Reducing the dimensionality of data with neural networks
+                RBM layer-wise initialize
+                    W1跟W1^T tight在一起train一樣的
+                        參數會少一半比較不會有overfiting的問題
+                        但不是必要的
+                        常見做法就是兜整個NN直接train
+    dimension reduction到2 dims時
+        visualization
+            PCA
+                所有digits會混在一起
+            Deep Auto Encoder
+                所有Digits會分開形成一群
+    Auto-encoder - Text Retrieval
+        一篇文章壓成一個vector
+        文字搜尋
+            Vector Space Model
+                Document -> Vector
+                Query -> Vector
+                    Query Vector與各Document Vector計算
+                        inner product
+                        或cosine similarity
+                            效果比較好
+                            距離越近值越大
+                                retrieve夠大的document
+                成敗決定於 
+                    Document-> Vector的效果
+                        Bag-of-word
+                            有十萬的字彙就是10w的dims
+                            word string:"this is an apple"
+                                於 [this,is,an,apple]的dims都設定為1
+                            最好一點乘上 
+                                inverse document frequency 
+                            semnatic are not considered
+                                word are all independent
+        讓語意被考慮進來
+            The documents talking about the same thing will have close code
+            auto-encoder在這類應用結果很好
+                同類在2-dims上有聚集效果
+            LSA: project documents to 2 latent topics
+                就沒有拆開的效果
+    Auto-encoder - Slimilar Image Search
+        Retrieved using Euclidean distance in pixel intensity space
+        Deep Auto-encoder把image變成code
+            在code上面去搜尋
+                轉換後相似度不錯
+    Auto-encoder - Pretraining DNN
+        auto-encoder initialize很難
+            有沒有好的方法找到一組initialization
+                pre-training                                
+        Greedy layer-wise pretraining again
+            target
+                input(784) -> 1000 dense -> 1000 dense -> 500 dense -> output(10)
+            先做一個
+                input(784) -> 1000 dense -> output(784)
+                小心他直接輸出不learn了
+                這時候要加一個很強的regularization
+                    L1 regulariztaion
+                        1000 dims希望是sparse
+                training好之後保留
+                    input(784)->1000 dense
+                        fix input->1000 dense
+                            fix w1
+                        add layer 1000 dense
+                        add output layer 1000 dense
+                        形成
+                            input(784) -> 1000 dense -> 1000 dense -> output(1000)
+                                一個一個w traing下去
+                                    traing完就fix
+                    最後把正確的output(10)串上去
+                        而前面已經train好的weight就是你的initialization
+                            w1,w2,w3
+                        用fine tune方式
+                            把500 dense->output(10)的weight去調整
+                                fine-tune by backpropagation
+            以前deep都要如此才training的起來
+                現在training技術進步之後不用pre-training也train的起來
+                如果有大量unlabeled data
+                    可依賴unlabeled data把w1,w2,w3先learn好
+                        在用labled data做fine tune weight
+    De-nosing auto-encoder
+        input x + add noise = x'
+        x' -> encode -> c
+        c-> deoce -> y 
+        as close as possible x , y
+            robust會比較好
+            學去除雜訊
+    Contractive auto-encoder
+        constraint
+            input變化對c的變化minimize
+            跟de-nosing很像只是角度不大同而已
+                一個看頭尾沒被noise影響
+                一個看頭加了noise而c還是不變
+    Restricted Boltzmann machine
+        不是Nerual network
+        graph co-model
+    Deep Belief network
+        graph co-model
+    Auto-encoder for CNN
+        convolution vs deconvoluion
+        pooling vs unpooling
+        unpooling
+            做法一
+                要先記maxpooling得從哪一個取值
+                擴大原本pooling造成縮小的matrix
+                pooling記得的位置就派上用場
+                    放到該位置
+                    其他位置補0
+                    這是其中一種方法
+            keras作法
+                直接repeat所有值
+                擴大原本pooling造成縮小的matrix
+                把maxpooling的值全部填上
+        deconvoluion 
+            其實就是convolution
+                先padding在convolution就是反過來的效果
+            原本透過filter合併weight值
+                反過來應該是將合併的拆出來
+                    deconvoluion先padding在做convolution效果相同
+    Sequence-to-sequence Auto-encoder
+        Dimension reduction for a sequence with varible length
+    Can web decoder to generate something?
