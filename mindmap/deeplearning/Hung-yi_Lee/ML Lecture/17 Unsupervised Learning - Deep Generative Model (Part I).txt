@@ -63,7 +63,7 @@ Unsupervised Learning - Deep Generative Model (Part I)
                     minimum
                         reconstruction error
                         額外神秘公式
-                            Σ_i=1^3 (1+σi-(mi)^2-exp(σi))
+                            - Σ_i=1^3 (1+σi-(mi)^2-exp(σi))
             VAE可以control你要generate的事情
                 [c1,c2,c3] 10-dim
                     產生圖時固定8-dim 只sample 2-dim的值看產生結果
