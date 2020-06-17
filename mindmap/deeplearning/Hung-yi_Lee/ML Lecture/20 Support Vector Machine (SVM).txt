@@ -1,1 +1,164 @@
 Support Vector Machine (SVM)
+    ML原則熟悉時
+        不同方法之間它們非常像
+            就算沒有把所有方法都學過
+                一法通萬法通
+    What is Support Vector Machine(SVM)
+        Hinge Loss            
+        Kernel Method
+            Kernel Trick
+        => Support Vector Machine(SVM)
+    What is Hinge Loss
+        Binary Classification
+            Step1. Function Sets(Model)
+                g(x) =
+                    f(x)>0
+                        output = 1
+                    f(x)<0
+                        output = -0
+            Step2. Loss Function
+                L(f) = Σ_n σ(g(x^n)≠y^^n)
+                    the number of times g get incorrect results on training data
+                    但不可以微分不能算
+                        g(x^n)跟y^^n同+-值
+                            數值就0
+                        反之
+                            數值就1
+                        不可以微分
+                L(f) = Σ_n l(f(x^n),y^^n)
+                    l loss function
+                        自己訂
+                            f(x)當-值 就越負越好
+                            f(x)當+值 就越正越好
+                            結果變成只要
+                                f(x)*y^n
+                                    同方向值
+                                        越大越好
+                            square loss:
+                                if y^n = 1, f(x) close to 1
+                                if y^n = -1, f(x) close to -1
+                                l(f(x^n),y^n) = (y^^n f(x^n)-1)^2
+                                    y^^n = 1
+                                        f(x^n)越接近+1越好
+                                    y^^n = -1
+                                        f(x^n)越接近-1越好
+                                square loss的問題是
+                                    但會造成數值>1時候反而loss變高
+                            sigmoid+square loss:
+                                σ = sigmoid function
+                                if y^^n=1, σ(f(x)) close to 1
+                                if y^^n=-1, σ(f(x)) close to 0
+                                l(f(x^n),y^n) = (σ(y^^n f(x^n))-1)^2
+                            sigmoid+crossentropy
+                                y^^n = +1 , σ(f(x)
+                                y^^n = -1 , 1- σ(f(x)
+                                    σ 代表distribution
+                                    ground truth 代表另一個distribution
+                                    兩者之間的crossentropy就是要minimum的loss
+                                        l(f(x^n),y^n) = ln(1+exp(-y^^n f(x^n)))
+                                        divide by ln2 成為ideal loss的upper bound                                        
+                                            雖然不能minimum ideal loss
+                                            但是我們minimum 他的upper bound
+                                sigmoid+crossentropy的負值很大的時候曲線很大
+                                    可以很快graident回來
+                                        努力會有回報
+                                            比較好training
+                                sigmoid+square loss的負值比較平緩
+                                    當負值很大的時候收斂還是很慢
+                                        努力比較沒效果
+                            Hinge Loss
+                                l(f(x^n,y^^n)) = max(0,1-y^^n(f(x)))
+                                    zero shot learning有看到類似的
+                                    當y^^n = 1
+                                        max(0,1-f(x))
+                                        什麼時候zero loss
+                                            1-f(x)<0就可以
+                                                f(x)>1
+                                                    完美case
+                                    當y^^n = -1
+                                        max(0,1+f(x))
+                                        1+f(x)<0
+                                            f(x)<-1
+                                                完美case
+                                    得到好的答案不夠還要再多一段margin
+                                    為什麼max裡面用1
+                                        1是ideal loss的upper bound
+                                            如果不是1就不是那麼tight的upper bound
+                                Minimum Hinge loss
+                                    可能可以得到ideal loss function的效果
+                                    Highe loss跟crossentropy差別
+                                        對待已經train好的example的態度
+                                            假設 y^^n*f(x)從1挪到2
+                                                crossentropy來說可以得到loss下降
+                                                    好還要更好
+                                                hinge loss來說
+                                                    及格就好的loss
+                                                    值大過Margion就結束了
+                                        performance差別
+                                            可能沒那麼顯著
+                                            hinge loss有時還贏過
+                                                但是也沒贏多少
+                                                比較不害怕outlier
+                                                learn出來結果比較robust
+                                                    及格就好但是不偏科
+            Step3. Training by Gradient descent is diffcult
+    Linear SVM
+        Step1. Function Set (Model)
+            f(x) = Σ_i w_i*x_i + b
+                [w b]^T * [x 1]^T
+                new W = [w b]^T
+                new X = [x 1]^T
+                = W^Tx
+            deep version
+                deep learning using linear support vector machines
+        Step2. Loss Function
+            L(f) = Σ_n l(f(x^n),y^^n)
+                l(f(x^n),y^^n) = max(0,1-y^^n*f(x))
+                convex function
+                另外加上 + regularization term
+                    + λ||w||_2                
+                    l2也是convex function
+                        疊加還是convex function
+            compare with logistic regression , linear SVM hsa differenct loss function
+
+        Step3. Gradient descent?
+            從哪init找出來結果都一樣
+            linear SVM - gradient descent
+                Picasso
+                    在找reference
+                loss function
+                    L(f) =
+                        Σ_n l(f(x^n),y^^n)
+                        l(f(x^n),y^^n) = 
+                            max(0,1-y^^n*f(x))
+                        ∂l(f(x^n),y^^n) / ∂wi = (∂l(f(x^n),y^^n)/ ∂f(x^n)) *  (∂f(x^n) /  ∂wi)
+                            f(x^n) = w^T * x
+                            (∂f(x^n) /  ∂wi) = x^n_i
+                            (∂l(f(x^n),y^^n)/ ∂f(x^n)) = ∂max(0,1-y^^n*f(x))/∂f(x^n)) 
+                                = when -y^^n
+                                    if y^^n f(x^n)<1
+                                    if 1-y^^n f(x^n)>0
+                                = when 0 , otherwise
+                    ∂L(f)/∂wi = Σ_n -σ(y^^nf(x^n)<1)y^^n*x^n_i / c^n(w)
+                        wi <- wi - η Σ_n c^n(w)x^n_i
+                Linear SVM - another formulation
+                    minimum loss function
+                        L(f) = Σ_n l(f(x^n),y^^n)+λ||w||_2
+                            notation epsilon n 取代 hinge loss
+                                L(f) = Σ_n e^n +λ||w||_2  
+                                     e^n=max(0,1-y^^n*f(x^n))                                        
+                                        似乎不同的式子
+                                            e^n >= 0
+                                            e^n >= 1 - y^^n*f(x^n)
+                                                y^^n*f(x^n) >= 1-e^n
+                                                    e^n: slack varible
+                                                        鬆弛變數
+                                                        不能是負值
+                                            但是minimum loss L 之後就相等了
+                                                原本e^n帶入很大的值就好了
+                                                現在要e^n帶入值越小越好
+                                                    所以要兩條件最大值
+                                                回到SVM算法
+                        Quadratic Programming (QP) problem
+                            用Quadratic Programming solver把它解出來
+                            或者graident descent

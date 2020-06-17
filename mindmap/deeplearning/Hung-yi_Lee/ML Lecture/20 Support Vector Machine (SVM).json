@@ -3,5 +3,1135 @@
         "id": "root",
         "isroot": true,
         "topic": "Support Vector Machine (SVM)"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "ML\u539f\u5247\u719f\u6089\u6642",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u4e0d\u540c\u65b9\u6cd5\u4e4b\u9593\u5b83\u5011\u975e\u5e38\u50cf",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "\u5c31\u7b97\u6c92\u6709\u628a\u6240\u6709\u65b9\u6cd5\u90fd\u5b78\u904e",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "\u4e00\u6cd5\u901a\u842c\u6cd5\u901a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "root",
+        "topic": "What is Support Vector Machine(SVM)",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "Hinge Loss",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_5",
+        "topic": "Kernel Method",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "Kernel Trick",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_5",
+        "topic": "=> Support Vector Machine(SVM)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "root",
+        "topic": "What is Hinge Loss",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "Binary Classification",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "Step1. Function Sets(Model)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "g(x) =",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "f(x)>0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "output = 1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_13",
+        "topic": "f(x)<0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "output = -0",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_11",
+        "topic": "Step2. Loss Function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "L(f) = \u03a3_n \u03c3(g(x^n)\u2260y^^n)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "the number of times g get incorrect results on training data",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_19",
+        "topic": "\u4f46\u4e0d\u53ef\u4ee5\u5fae\u5206\u4e0d\u80fd\u7b97",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "g(x^n)\u8ddfy^^n\u540c+-\u503c",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "\u6578\u503c\u5c310",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_21",
+        "topic": "\u53cd\u4e4b",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "\u6578\u503c\u5c311",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_21",
+        "topic": "\u4e0d\u53ef\u4ee5\u5fae\u5206",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_18",
+        "topic": "L(f) = \u03a3_n l(f(x^n),y^^n)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "l loss function",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "\u81ea\u5df1\u8a02",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "f(x)\u7576-\u503c \u5c31\u8d8a\u8ca0\u8d8a\u597d",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_29",
+        "topic": "f(x)\u7576+\u503c \u5c31\u8d8a\u6b63\u8d8a\u597d",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_29",
+        "topic": "\u7d50\u679c\u8b8a\u6210\u53ea\u8981",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "f(x)*y^n",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "\u540c\u65b9\u5411\u503c",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "\u8d8a\u5927\u8d8a\u597d",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_29",
+        "topic": "square loss:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "if y^n = 1, f(x) close to 1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_36",
+        "topic": "if y^n = -1, f(x) close to -1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_36",
+        "topic": "l(f(x^n),y^n) = (y^^n f(x^n)-1)^2",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "y^^n = 1",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "f(x^n)\u8d8a\u63a5\u8fd1+1\u8d8a\u597d",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_39",
+        "topic": "y^^n = -1",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "f(x^n)\u8d8a\u63a5\u8fd1-1\u8d8a\u597d",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_36",
+        "topic": "square loss\u7684\u554f\u984c\u662f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "\u4f46\u6703\u9020\u6210\u6578\u503c>1\u6642\u5019\u53cd\u800closs\u8b8a\u9ad8",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_29",
+        "topic": "sigmoid+square loss:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_46",
+        "topic": "\u03c3 = sigmoid function",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_46",
+        "topic": "if y^^n=1, \u03c3(f(x)) close to 1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_46",
+        "topic": "if y^^n=-1, \u03c3(f(x)) close to 0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_46",
+        "topic": "l(f(x^n),y^n) = (\u03c3(y^^n f(x^n))-1)^2",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_29",
+        "topic": "sigmoid+crossentropy",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "y^^n = +1 , \u03c3(f(x)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_51",
+        "topic": "y^^n = -1 , 1- \u03c3(f(x)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "\u03c3 \u4ee3\u8868distribution",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_53",
+        "topic": "ground truth \u4ee3\u8868\u53e6\u4e00\u500bdistribution",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_53",
+        "topic": "\u5169\u8005\u4e4b\u9593\u7684crossentropy\u5c31\u662f\u8981minimum\u7684loss",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_56",
+        "topic": "l(f(x^n),y^n) = ln(1+exp(-y^^n f(x^n)))",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_56",
+        "topic": "divide by ln2 \u6210\u70baideal loss\u7684upper bound",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "\u96d6\u7136\u4e0d\u80fdminimum ideal loss",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_58",
+        "topic": "\u4f46\u662f\u6211\u5011minimum \u4ed6\u7684upper bound",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_51",
+        "topic": "sigmoid+crossentropy\u7684\u8ca0\u503c\u5f88\u5927\u7684\u6642\u5019\u66f2\u7dda\u5f88\u5927",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_61",
+        "topic": "\u53ef\u4ee5\u5f88\u5febgraident\u56de\u4f86",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "\u52aa\u529b\u6703\u6709\u56de\u5831",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "\u6bd4\u8f03\u597dtraining",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_51",
+        "topic": "sigmoid+square loss\u7684\u8ca0\u503c\u6bd4\u8f03\u5e73\u7de9",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_65",
+        "topic": "\u7576\u8ca0\u503c\u5f88\u5927\u7684\u6642\u5019\u6536\u6582\u9084\u662f\u5f88\u6162",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "\u52aa\u529b\u6bd4\u8f03\u6c92\u6548\u679c",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_29",
+        "topic": "Hinge Loss",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "l(f(x^n,y^^n)) = max(0,1-y^^n(f(x)))",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_69",
+        "topic": "zero shot learning\u6709\u770b\u5230\u985e\u4f3c\u7684",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_69",
+        "topic": "\u7576y^^n = 1",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "max(0,1-f(x))",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_71",
+        "topic": "\u4ec0\u9ebc\u6642\u5019zero loss",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_73",
+        "topic": "1-f(x)<0\u5c31\u53ef\u4ee5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_74",
+        "topic": "f(x)>1",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_75",
+        "topic": "\u5b8c\u7f8ecase",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_69",
+        "topic": "\u7576y^^n = -1",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_77",
+        "topic": "max(0,1+f(x))",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_77",
+        "topic": "1+f(x)<0",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_79",
+        "topic": "f(x)<-1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_80",
+        "topic": "\u5b8c\u7f8ecase",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_69",
+        "topic": "\u5f97\u5230\u597d\u7684\u7b54\u6848\u4e0d\u5920\u9084\u8981\u518d\u591a\u4e00\u6bb5margin",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_69",
+        "topic": "\u70ba\u4ec0\u9ebcmax\u88e1\u9762\u75281",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_83",
+        "topic": "1\u662fideal loss\u7684upper bound",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_84",
+        "topic": "\u5982\u679c\u4e0d\u662f1\u5c31\u4e0d\u662f\u90a3\u9ebctight\u7684upper bound",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_68",
+        "topic": "Minimum Hinge loss",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_86",
+        "topic": "\u53ef\u80fd\u53ef\u4ee5\u5f97\u5230ideal loss function\u7684\u6548\u679c",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_86",
+        "topic": "Highe loss\u8ddfcrossentropy\u5dee\u5225",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_88",
+        "topic": "\u5c0d\u5f85\u5df2\u7d93train\u597d\u7684example\u7684\u614b\u5ea6",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_89",
+        "topic": "\u5047\u8a2d y^^n*f(x)\u5f9e1\u632a\u52302",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "crossentropy\u4f86\u8aaa\u53ef\u4ee5\u5f97\u5230loss\u4e0b\u964d",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_91",
+        "topic": "\u597d\u9084\u8981\u66f4\u597d",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_90",
+        "topic": "hinge loss\u4f86\u8aaa",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_93",
+        "topic": "\u53ca\u683c\u5c31\u597d\u7684loss",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_93",
+        "topic": "\u503c\u5927\u904eMargion\u5c31\u7d50\u675f\u4e86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_88",
+        "topic": "performance\u5dee\u5225",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_96",
+        "topic": "\u53ef\u80fd\u6c92\u90a3\u9ebc\u986f\u8457",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_96",
+        "topic": "hinge loss\u6709\u6642\u9084\u8d0f\u904e",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_98",
+        "topic": "\u4f46\u662f\u4e5f\u6c92\u8d0f\u591a\u5c11",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_98",
+        "topic": "\u6bd4\u8f03\u4e0d\u5bb3\u6015outlier",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_98",
+        "topic": "learn\u51fa\u4f86\u7d50\u679c\u6bd4\u8f03robust",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_101",
+        "topic": "\u53ca\u683c\u5c31\u597d\u4f46\u662f\u4e0d\u504f\u79d1",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_11",
+        "topic": "Step3. Training by Gradient descent is diffcult",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "root",
+        "topic": "Linear SVM",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_104",
+        "topic": "Step1. Function Set (Model)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_105",
+        "topic": "f(x) = \u03a3_i w_i*x_i + b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_106",
+        "topic": "[w b]^T * [x 1]^T",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_106",
+        "topic": "new W = [w b]^T",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_106",
+        "topic": "new X = [x 1]^T",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_106",
+        "topic": "= W^Tx",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_105",
+        "topic": "deep version",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_111",
+        "topic": "deep learning using linear support vector machines",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_104",
+        "topic": "Step2. Loss Function",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_113",
+        "topic": "L(f) = \u03a3_n l(f(x^n),y^^n)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_114",
+        "topic": "l(f(x^n),y^^n) = max(0,1-y^^n*f(x))",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_114",
+        "topic": "convex function",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_114",
+        "topic": "\u53e6\u5916\u52a0\u4e0a + regularization term",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_117",
+        "topic": "+ \u03bb||w||_2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_117",
+        "topic": "l2\u4e5f\u662fconvex function",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_119",
+        "topic": "\u758a\u52a0\u9084\u662fconvex function",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_113",
+        "topic": "compare with logistic regression , linear SVM hsa differenct loss function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_104",
+        "topic": "Step3. Gradient descent?",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_123",
+        "topic": "\u5f9e\u54eainit\u627e\u51fa\u4f86\u7d50\u679c\u90fd\u4e00\u6a23",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_123",
+        "topic": "linear SVM - gradient descent",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_125",
+        "topic": "Picasso",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_126",
+        "topic": "\u5728\u627ereference",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_125",
+        "topic": "loss function",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_128",
+        "topic": "L(f) =",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_129",
+        "topic": "\u03a3_n l(f(x^n),y^^n)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_129",
+        "topic": "l(f(x^n),y^^n) =",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_131",
+        "topic": "max(0,1-y^^n*f(x))",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_129",
+        "topic": "\u2202l(f(x^n),y^^n) / \u2202wi = (\u2202l(f(x^n),y^^n)/ \u2202f(x^n)) *  (\u2202f(x^n) /  \u2202wi)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_133",
+        "topic": "f(x^n) = w^T * x",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_133",
+        "topic": "(\u2202f(x^n) /  \u2202wi) = x^n_i",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_133",
+        "topic": "(\u2202l(f(x^n),y^^n)/ \u2202f(x^n)) = \u2202max(0,1-y^^n*f(x))/\u2202f(x^n))",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_136",
+        "topic": "= when -y^^n",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_137",
+        "topic": "if y^^n f(x^n)<1",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_137",
+        "topic": "if 1-y^^n f(x^n)>0",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_136",
+        "topic": "= when 0 , otherwise",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_128",
+        "topic": "\u2202L(f)/\u2202wi = \u03a3_n -\u03c3(y^^nf(x^n)<1)y^^n*x^n_i / c^n(w)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_141",
+        "topic": "wi <- wi - \u03b7 \u03a3_n c^n(w)x^n_i",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_125",
+        "topic": "Linear SVM - another formulation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_143",
+        "topic": "minimum loss function",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_144",
+        "topic": "L(f) = \u03a3_n l(f(x^n),y^^n)+\u03bb||w||_2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_145",
+        "topic": "notation epsilon n \u53d6\u4ee3 hinge loss",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_146",
+        "topic": "L(f) = \u03a3_n e^n +\u03bb||w||_2",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_147",
+        "topic": "e^n=max(0,1-y^^n*f(x^n))",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_148",
+        "topic": "\u4f3c\u4e4e\u4e0d\u540c\u7684\u5f0f\u5b50",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_149",
+        "topic": "e^n >= 0",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_149",
+        "topic": "e^n >= 1 - y^^n*f(x^n)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_151",
+        "topic": "y^^n*f(x^n) >= 1-e^n",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_152",
+        "topic": "e^n: slack varible",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_153",
+        "topic": "\u9b06\u5f1b\u8b8a\u6578",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_153",
+        "topic": "\u4e0d\u80fd\u662f\u8ca0\u503c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_149",
+        "topic": "\u4f46\u662fminimum loss L \u4e4b\u5f8c\u5c31\u76f8\u7b49\u4e86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_156",
+        "topic": "\u539f\u672ce^n\u5e36\u5165\u5f88\u5927\u7684\u503c\u5c31\u597d\u4e86",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_156",
+        "topic": "\u73fe\u5728\u8981e^n\u5e36\u5165\u503c\u8d8a\u5c0f\u8d8a\u597d",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_158",
+        "topic": "\u6240\u4ee5\u8981\u5169\u689d\u4ef6\u6700\u5927\u503c",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_156",
+        "topic": "\u56de\u5230SVM\u7b97\u6cd5",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_144",
+        "topic": "Quadratic Programming (QP) problem",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_161",
+        "topic": "\u7528Quadratic Programming solver\u628a\u5b83\u89e3\u51fa\u4f86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_161",
+        "topic": "\u6216\u8005graident descent",
+        "background-color": "#97d9c7",
+        "expanded": false
     }
 ]
