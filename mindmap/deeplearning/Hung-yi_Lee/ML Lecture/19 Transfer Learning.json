@@ -1,0 +1,2349 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Transfer Learning"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "\u529f\u80fd",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u5047\u8a2d\u4f60\u624b\u4e0a\u6709\u4e00\u4e9b\u8ddf\u4f60task\u6c92\u6709\u76f4\u63a5\u76f8\u95dc\u7684data",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "\u80fd\u4e0d\u80fd\u7528\u6c92\u6709\u76f4\u63a5\u76f8\u95dc\u7684data\u5e6b\u52a9\u6211\u5011\u505a\u4e9b\u4ec0\u9ebc",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_1",
+        "topic": "task",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "dog/cat classifier",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "not directly related to the task data",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": "other animal, but label unrelated",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "ex: elephant vs tiger",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_6",
+        "topic": "input domain\u76f8\u4f3c\u76ee\u6a19\u4e0d\u540c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_5",
+        "topic": "input domain\u4e0d\u540c\u4f46task\u4e00\u6a23",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "\u4e00\u6a23\u662f\u8c93\u72d7\u5206\u985e\u4f46\u662f\u5716\u7247",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "\u62db\u8ca1\u8c93vs\u9ad8\u98db\u72d7",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_11",
+        "topic": "\u8ddf\u539f\u672c\u5716\u7247distribution\u4e0d\u50cf\u4f46\u662f\u8981\u505a\u7684task\u4e00\u6a23",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_1",
+        "topic": "\u80fd\u4e0d\u80fd\u5728\u6709\u4e00\u4e9b\u4e0d\u76f8\u5e72\u7684data\u60c5\u6cc1\u4e0b",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "\u5e6b\u52a9\u6211\u5011\u73fe\u5728\u8981\u505a\u7684task",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "root",
+        "topic": "why?",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "speech recognition",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "task considered",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "taiwanese",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_17",
+        "topic": "data not directly related",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "English/Chinese",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_16",
+        "topic": "Image Reconition",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "task considered",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "Medical Images",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_22",
+        "topic": "data not directly related",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "Other Images",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_16",
+        "topic": "Text Analysis",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "task considered",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "specific domain",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_27",
+        "topic": "data not directly related",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "web collect",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_16",
+        "topic": "\u6709\u53ef\u80fd\u6709\u7528\u7684",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_32",
+        "topic": "example in real life",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "\u7814\u7a76\u751f on-line",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "\u53c3\u8003 \u6f2b\u756b\u5bb6on-line",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "\u6f2b\u756b\u5bb6",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "\u7814\u7a76\u751f",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_35",
+        "topic": "\u8cac\u7de8",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_38",
+        "topic": "\u6307\u5c0e\u6559\u6388",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_35",
+        "topic": "\u6bcf\u5468\u7522\u751f\u5206\u5883\u8ddf\u8cac\u908a\u8a0e\u8ad6",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "\u6bcf\u5468\u8ddf\u6307\u5c0e\u6559\u6388\u5831\u544a\u9032\u5ea6",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_35",
+        "topic": "\u756b\u5206\u5883",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "\u8dd1\u5be6\u9a57",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_35",
+        "topic": "\u6295\u7a3fjump",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "\u6295\u7a3f\u671f\u520a",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_34",
+        "topic": "word embedding knows that",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_34",
+        "topic": "\u7814\u7a76\u751f\u751f\u5b58\u5b88\u5247",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "root",
+        "topic": "Transfer Learning - Overview",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_48",
+        "topic": "Warning: differenct terminology in different literature",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_48",
+        "topic": "Source Data(not directly related to the task)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "Labelled",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "Target Data Labelled",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "Model Fine-tuning",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "Task description",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "Target data: (x^t,y^t)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_55",
+        "topic": "very little",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_55",
+        "topic": "\u5c11\u5230\u53ea\u6709\u5e7e\u500bexample",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_57",
+        "topic": "one-shot learning:",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "only a few examples in target domain",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_54",
+        "topic": "Source data: (x^s,y^s)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_60",
+        "topic": "a large amount",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_54",
+        "topic": "examle:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "(supervised)speaker adaption",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "target data: audio data and its transcription of specific user",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "\u53ef\u80fd\u53ea\u6709\u4e09\u53e5\u8a71",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_63",
+        "topic": "source data: audio data and transcriptions from many speaker",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "\u597d\u5e7e\u842c\u5c0f\u6642",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_63",
+        "topic": "idea:",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "training a model by source data, then fine tuning the model by target data",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_69",
+        "topic": "\u628atraining\u7d50\u679c\u7576initial value\u5728\u7528target data\u5728training\u4e0b\u53bb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_69",
+        "topic": "challenge:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "only limited target data,so careful about overfitting",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_71",
+        "topic": "\u6015target data\u4e00training\u5c31\u58de\u6389\uff0c\u6709\u5f88\u591a\u624b\u6cd5",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_73",
+        "topic": "Conservative training",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_74",
+        "topic": "\u5728training\u6642\u4e0b\u4e00\u4e9bconstraint",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_75",
+        "topic": "\u65b0\u820amodel\u4e0d\u80fd\u5dee\u592a\u591a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_76",
+        "topic": "\u9632\u6b62overfitting",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_76",
+        "topic": "1. output close",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_78",
+        "topic": "\u52a0\u4e00\u500bregularization",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_79",
+        "topic": "\u985e\u4f3cL1,L2\u6982\u5ff5\u7684\u53e6\u4e00\u7a2eregularization",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_78",
+        "topic": "\u770b\u5230\u540c\u4e00\u7b46data\u9032\u5165",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_81",
+        "topic": "\u65b0\u820amodel\u7684output\u8d8a\u63a5\u8fd1\u8d8a\u597d",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_76",
+        "topic": "2. parameter close",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_83",
+        "topic": "\u6216\u8005\u65b0model\u8207\u820amodel L2 norm\u5dee\u8ddd\u8d8a\u5c0f\u8d8a\u597d",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_73",
+        "topic": "Layer Transfer",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_85",
+        "topic": "\u628atraining\u597d\u7684model\u88e1\u9762\u5e7e\u500blayer\u76f4\u63a5copy\u5230\u65b0\u7684model",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_86",
+        "topic": "\u7528source data\u53eatraining\u6c92\u6709copy\u7684layer",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_87",
+        "topic": "\u597d\u8655target data\u53ea\u8981\u8003\u616e\u975e\u5e38\u5c11\u7684\u53c3\u6578",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_88",
+        "topic": "\u907f\u514doverfitting",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_87",
+        "topic": "\u5982\u679ctarget data\u5920\u591a\u4e86",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "\u6700\u5f8c\u9084\u53ef\u4ee5fine tune\u6574\u500bmodel",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_85",
+        "topic": "tips",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_92",
+        "topic": "which layer can be transferred(copied)?",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_93",
+        "topic": "\u4e0d\u540c\u7684task\u9700\u8981\u88abtransfer\u7684layer\u5f80\u5f80\u4e0d\u540c",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_94",
+        "topic": "speech:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_95",
+        "topic": "usually copy the last few layers",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_96",
+        "topic": "\u91cd\u65b0train input\u90a3\u4e00\u5c64\u6216\u524d\u5e7e\u5c64",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_97",
+        "topic": "\u6bcf\u500b\u4eba\u53e3\u8154\u7d50\u69cb\u4e0d\u540c",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_98",
+        "topic": "\u524d\u9762\u5e7e\u5c64\u8ddf\u8072\u97f3\u95dc\u4fc2\u8f03\u5927",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_99",
+        "topic": "\u8072\u97f3\u8a0a\u865f\u5230\u767c\u97f3\u65b9\u5f0f",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_97",
+        "topic": "\u5f8c\u9762\u5e7e\u5c64\u8ddf\u4eba\u6c92\u95dc\u4fc2\u53ef\u4ee5\u88abcopy",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_94",
+        "topic": "image:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_102",
+        "topic": "usually copy the first few layers",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_103",
+        "topic": "\u524d\u5e7e\u5c64\u505a\u7c21\u55ae\u7684pattern",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_104",
+        "topic": "\u53ef\u4ee5\u88abtransfer\u5230\u5176\u4ed6\u5730\u65b9",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_103",
+        "topic": "\u5f8c\u9762\u5e7e\u5c64learn\u7684\u6771\u897f\u6bd4\u8f03abstract",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_102",
+        "topic": "experiment 1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_107",
+        "topic": "Bengio NIPS,2014",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_108",
+        "topic": "ImageNet 120\u842c\u5f35\u5206source/target",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_109",
+        "topic": "\u4f9d\u64daclasses 1000\u500bclass",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_110",
+        "topic": "source 500 classes",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_110",
+        "topic": "target 500 classes",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_109",
+        "topic": "copy layers\u5e7e\u500b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_113",
+        "topic": "0~7\u500blayer",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_114",
+        "topic": "\u5269\u4e0blayer\u5728\u7528target\u53bbtrain\u6703\u5f97\u5230\u4ec0\u9ebc\u7d50\u679c",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_114",
+        "topic": "0 layer",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_116",
+        "topic": "\u91cd\u65b0train",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_114",
+        "topic": "\u7d50\u679c\u6703\u8d8a\u4f86\u8d8a\u5dee",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_114",
+        "topic": "\u4f46\u53eacopy\u524d\u5e7e\u500blayer",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_119",
+        "topic": "1 layer",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_120",
+        "topic": "performance\u6709\u9ede\u7a0d\u5fae\u9032\u6b65",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_119",
+        "topic": "2 layer",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_122",
+        "topic": "performance\u6301\u5e73",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_119",
+        "topic": "\u66f4\u591a\u7684layer",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_124",
+        "topic": "\u5c31\u958b\u59cb\u58de\u6389",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_114",
+        "topic": "\u524d\u5e7e\u500blayer\u662f\u53ef\u4ee5\u5171\u7528\u7684",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_113",
+        "topic": "\u5982\u679ccopy\u5b8c\u662ffine tune\u6574\u500bmodel",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_127",
+        "topic": "\u5247\u8d8a\u591alayer\u6548\u679c\u8d8a\u597d",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_128",
+        "topic": "\u5c31\u7b97target data\u975e\u5e38\u591a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_129",
+        "topic": "\u7528source data transfer learning\u9084\u662f\u6709\u5e6b\u52a9\u7684",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_102",
+        "topic": "experiment 2",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_131",
+        "topic": "\u81ea\u7136\u6771\u897f\u7576source",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_131",
+        "topic": "\u4eba\u9020\u6771\u897f\u7576target",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_131",
+        "topic": "source\u8ddftarget\u5dee\u7570\u5f88\u5927",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_134",
+        "topic": "transfer learning performance\u6703\u6389\u5f88\u591a",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_135",
+        "topic": "\u53eacopy\u524d\u5e7e\u500blayer\u5f71\u97ff\u9084\u662f\u6bd4\u8f03\u5c0f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_135",
+        "topic": "source domain\u8ddftarget domain\u662f\u4e0d\u4e00\u6a23\u7684",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_137",
+        "topic": "\u5728NN\u7b2c\u4e00\u500blayer\u4ecd\u7136\u505a\u540c\u4e00\u500b\u4e8b\u60c5",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_52",
+        "topic": "Multitask Learning",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_139",
+        "topic": "fine-tuning\u53eacare target domain\u6709\u6c92\u6709\u505a\u597d",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_139",
+        "topic": "care target domain\u8ddfsource domain\u505a\u5f97\u597d\u4e0d\u597d",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_139",
+        "topic": "the multi-layer structure makes NN suitable for multitask learning",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_142",
+        "topic": "NN\u5f8c\u9762\u5206\u652f\u7d66Task A,Task B\u5206\u5225\u9810\u6e2c",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_143",
+        "topic": "\u5171\u7528\u524d\u9762\u7684layer",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_144",
+        "topic": "\u8981\u78ba\u5b9a\u6709\u6c92\u6709\u5171\u7528\u6027",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_142",
+        "topic": "crary task",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_146",
+        "topic": "\u9023input\u90fd\u6c92\u8fa6\u6cd5share\u7684",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_147",
+        "topic": "input\u5206\u958b\u7528\u4e0d\u540c\u7684NN",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_147",
+        "topic": "\u4e2d\u9593\u5171\u7528layer",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_147",
+        "topic": "\u5f8c\u9762\u5206\u652f\u7d66task A,task B\u5206\u5225\u9810\u6e2c",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_147",
+        "topic": "\u9019\u6a23\u9084\u662f\u53ef\u4ee5transfer learning",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_139",
+        "topic": "example",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_152",
+        "topic": "multilingual speech recognition",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_153",
+        "topic": "training \u4e00\u500bmodel\u540c\u6642\u8fa8\u8b585\u7a2e\u8a9e\u8a00",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_154",
+        "topic": "share layers:",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_155",
+        "topic": "human languages share some common characteristics",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_154",
+        "topic": "input:",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_157",
+        "topic": "acoustic features",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_154",
+        "topic": "\u5206\u652f5\u500blanguage NN",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_152",
+        "topic": "transation\u4e5f\u53ef\u4ee5\u7528\u9019\u7a2e\u65b9\u5f0f",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_152",
+        "topic": "\u76ee\u524d\u77e5\u9053\u8a9e\u8a00\u4e4b\u9593\u90fd\u80fdtransfer",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_161",
+        "topic": "\u5341\u5e7e\u7a2e\u8a9e\u8a00\u4e5f\u53ef\u4ee5",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_152",
+        "topic": "Progressive Neural Networks",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_163",
+        "topic": "\u5169\u500btask\u4e4b\u9593\u5230\u5e95\u80fd\u4e0d\u80fdtransfer\u5f88\u6d6a\u8cbb\u6642\u9593",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_163",
+        "topic": "train task1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_165",
+        "topic": "train\u597d\u5c31fix",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_163",
+        "topic": "task2\u6bcf\u4e00\u500bhidden layer\u90fd\u53bb\u63a5task1\u67d0\u500bhidden layer output",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_167",
+        "topic": "\u597d\u8655\u5c31\u7b97task1/task2\u975e\u5e38\u4e0d\u50cf",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_168",
+        "topic": "task2\u4e5f\u4e0d\u6703\u52d5\u5230task1 Model",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_169",
+        "topic": "task1\u4e0d\u6703\u6bd4\u539f\u672c\u5dee",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_169",
+        "topic": "task2\u53ef\u4ee5\u501f\u7528task1\u53c3\u6578",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_171",
+        "topic": "\u4f46\u4ed6\u53ef\u4ee5\u628a\u9019\u4e9b\u53c3\u6578\u76f4\u63a5\u8a2d\u5b9a\u70ba0",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_172",
+        "topic": "\u9019\u6a23\u4e5f\u4e0d\u6703\u5f71\u97fftask2 performance\u6301\u5e73",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_173",
+        "topic": "\u6700\u5dee\u60c5\u6cc1\u5c31\u662f\u81ea\u5df1train\u7684\u72c0\u6cc1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_163",
+        "topic": "task3\u7684\u6bcf\u4e00\u500bhidden layer\u90fd\u6703\u63a5task1/2\u67d0\u500bhidden layer output",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_175",
+        "topic": "\u4ee5\u6b64\u5217\u63a8",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_163",
+        "topic": "\u597d\u50cf\u54ea\u88e1\u602a\u602a\u7684",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_51",
+        "topic": "Target Data Unlabelled",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_178",
+        "topic": "Domain-adversarial training",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_179",
+        "topic": "Task description",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_180",
+        "topic": "Source data:(x^s,y^s)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_181",
+        "topic": "MNIST",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_182",
+        "topic": "with label",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_181",
+        "topic": "Training data",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_180",
+        "topic": "Target data:(x^t)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_185",
+        "topic": "MNIST-M",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_186",
+        "topic": "without label",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_185",
+        "topic": "Testing data",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_180",
+        "topic": "Training data\u8ddfTesting data mismatch",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_179",
+        "topic": "\u76f4\u63a5learning\u4e0b\u53bb\u6703\u721b\u6389\u7684",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_191",
+        "parentid": "line_179",
+        "topic": "\u5982\u679c\u628aNN\u7576\u4f5cfeature extractor",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_191",
+        "topic": "\u4e0d\u540cdomain data\u4ed6feature\u5b8c\u5168\u4e0d\u4e00\u6a23",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_192",
+        "topic": "t-SNE\u964d\u7dad\u53bb\u770b",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "line_193",
+        "topic": "\u539f\u672ctraining\u7684data\u5206\u7fa4\u5f88\u4e7e\u6de8\u6e05\u695a",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_193",
+        "topic": "\u53e6\u4e00\u500bcorpus image\u4e1f\u9032\u53bb\u5c31\u64e0\u5728\u4e00\u8d77",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_192",
+        "topic": "feature extractor",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_197",
+        "parentid": "line_196",
+        "topic": "\u539f\u672csource domain image\u8ddftarget domain image\u4e0d\u5728\u540c\u4e00\u500b\u4f4d\u7f6e\u4e0a",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_198",
+        "parentid": "line_196",
+        "topic": "\u5f8c\u9762\u7684classifier\u53ef\u4ee5\u628asource\u505a\u597dtarget\u5c31\u7121\u80fd\u70ba\u529b",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_199",
+        "parentid": "line_196",
+        "topic": "\u5e0c\u671b\u524d\u9762feature extrator\u80fd\u628adomain\u7684\u7279\u6027\u9664\u6389",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_200",
+        "parentid": "line_199",
+        "topic": "domain-adversarial training",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_201",
+        "parentid": "line_200",
+        "topic": "\u4e0d\u540cdomain\u4e0d\u61c9\u8a72\u5206\u6210\u5169\u7fa4",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_202",
+        "parentid": "line_201",
+        "topic": "\u4e0d\u540cdomain\u61c9\u8a72\u6df7\u5728\u4e00\u8d77",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_203",
+        "parentid": "line_202",
+        "topic": "\u628a\u4e0d\u540cdomain\u7684\u7279\u6027\u53d6\u6d88\u6389",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_204",
+        "parentid": "line_203",
+        "topic": "\u5728\u5f8c\u9762\u63a5\u4e00\u500bdomain\u7684classifier",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_205",
+        "parentid": "line_203",
+        "topic": "\u628afeature extractor output\u4e1f\u7d66domain classifier",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_206",
+        "parentid": "line_205",
+        "topic": "\u5224\u5b9a\u9019\u500bfeature\u4f86\u81ea\u54ea\u500bdomain",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_207",
+        "parentid": "line_206",
+        "topic": "MNIST or MNIST-M corpus",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_208",
+        "parentid": "line_206",
+        "topic": "\u8981\u9a19\u904edomain classifier",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_209",
+        "parentid": "line_208",
+        "topic": "\u901a\u901a\u90fd0\u5c31\u9a19\u904e\uff0c\u9019\u6a23\u4e0d\u5920\u8981\u589e\u52a0\u96e3\u5ea6",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_210",
+        "parentid": "line_209",
+        "topic": "domain classifer\u8981\u9a19\u904e",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_211",
+        "parentid": "line_209",
+        "topic": "label predictor\u505a\u597d",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_212",
+        "parentid": "line_209",
+        "topic": "\u5404\u61f7\u9b3c\u80ce\u6a21\u5f0f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_213",
+        "parentid": "line_212",
+        "topic": "Feature extractor",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_214",
+        "parentid": "line_213",
+        "topic": "maximum label predictor",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_215",
+        "parentid": "line_213",
+        "topic": "minimum domain classifier accuracy",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_216",
+        "parentid": "line_212",
+        "topic": "Domain Classifier",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_217",
+        "parentid": "line_216",
+        "topic": "Maximum Domain Classifier",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_218",
+        "parentid": "line_216",
+        "topic": "Gradient Reversal layer",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_219",
+        "parentid": "line_218",
+        "topic": "Domain classifier\u50b3\u7d66Feature Extractor\u5c31\u591a\u7d66\u4e00\u500b\u8ca0\u865f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_220",
+        "parentid": "line_219",
+        "topic": "\u544a\u8a34\u67d0\u500bvalue\u8981\u4e0a\u5347(\u76f8\u53cd)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_221",
+        "parentid": "line_219",
+        "topic": "Domain classifier\u6700\u5f8c\u4e00\u5b9a\u6703fail\u6389",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_222",
+        "parentid": "line_221",
+        "topic": "\u4f46\u8981\u52aa\u529b\u6399\u624e\u5224\u65b7feature domain",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_223",
+        "parentid": "line_222",
+        "topic": "\u5982\u679c\u592a\u5f31\u6216\u5077\u61f6",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_224",
+        "parentid": "line_223",
+        "topic": "\u53ef\u80fd\u7121\u6cd5feature extractor\u771f\u7684\u628adomain information remove",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_226",
+        "parentid": "line_212",
+        "topic": "Label Predictor",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_227",
+        "parentid": "line_226",
+        "topic": "Maximum Label Predictor",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_229",
+        "parentid": "line_205",
+        "topic": "similar to GAN",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_230",
+        "parentid": "line_229",
+        "topic": "too easy to feature extractor",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_231",
+        "parentid": "line_178",
+        "topic": "Zero-shot learning",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_232",
+        "parentid": "line_231",
+        "topic": "Source Data: (x^s,y^s)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_233",
+        "parentid": "line_232",
+        "topic": "training data",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_234",
+        "parentid": "line_231",
+        "topic": "Target Data: (x^t)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_235",
+        "parentid": "line_234",
+        "topic": "testing data",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_236",
+        "parentid": "line_231",
+        "topic": "differenct task",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_237",
+        "parentid": "line_236",
+        "topic": "source dog/cat",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_238",
+        "parentid": "line_236",
+        "topic": "target",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_239",
+        "parentid": "line_238",
+        "topic": "\u8349\u5c3c\u99ac",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_240",
+        "parentid": "line_238",
+        "topic": "source data\u88e1\u9762\u5f9e\u4f86\u6c92\u51fa\u73fe",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_241",
+        "parentid": "line_231",
+        "topic": "In speech recognition, we can not have all possible words in the source(training)data.",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_242",
+        "parentid": "line_241",
+        "topic": "word\u7576class",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_243",
+        "parentid": "line_242",
+        "topic": "training\u4e0d\u53ef\u80fd\u62ff\u5230\u6240\u6709\u8a5e\u5f59",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_244",
+        "parentid": "line_243",
+        "topic": "\u4e0d\u8981\u76f4\u63a5\u8b8a\u662f\u4e00\u6bb5\u8072\u97f3\u5c6c\u65bc\u54ea\u500bword",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_245",
+        "parentid": "line_244",
+        "topic": "\u8fa8\u8b58\u5c6c\u65bc\u90a3\u500bphoneme(\u97f3\u6a19)",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_246",
+        "parentid": "line_245",
+        "topic": "\u4e0d\u8981\u5b9a\u7fa9word\u6539\u5b9a\u7fa9\u97f3\u6a19",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_247",
+        "parentid": "line_245",
+        "topic": "\u5728\u505a\u4e00\u500bphoneme\u8ddftable\u4e4b\u9593\u95dc\u4fc2\u7684\u8868lixicon\u4e5f\u5c31\u662f\u8fad\u5178",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_248",
+        "parentid": "line_245",
+        "topic": "\u53ea\u8981\u8fa8\u8b58\u51faphoneme\u518d\u53bb\u67e5\u8868\u627e\u5230\u54ea\u500bword",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_249",
+        "parentid": "line_248",
+        "topic": "\u5c31\u7b97\u6c92\u6709\u51fa\u73fe\u5728training data\u88e1\u9762",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_250",
+        "parentid": "line_249",
+        "topic": "\u53ea\u8981\u5728\u4f60\u5efa\u597d\u7684lexicon\u51fa\u73fe\u904e",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_251",
+        "parentid": "line_250",
+        "topic": "model\u53ef\u4ee5\u6b63\u78ba\u8fa8\u8b58\u51fa\u8072\u97f3\u5c6c\u65bc\u54ea\u500bphoneme\u7684\u8a71",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_252",
+        "parentid": "line_251",
+        "topic": "\u5c31\u80fd\u8655\u7406\u9019\u554f\u984c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_253",
+        "parentid": "line_231",
+        "topic": "Zero-shot Learning",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_254",
+        "parentid": "line_253",
+        "topic": "Representing each class by its attributes",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_255",
+        "parentid": "line_254",
+        "topic": "\u6709\u4e00\u500bdatabase",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_256",
+        "parentid": "line_255",
+        "topic": "\u6240\u6709\u4e0d\u540c\u53ef\u80fd\u7684object\u8ddf\u4ed6\u7684\u7279\u6027",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_257",
+        "parentid": "line_256",
+        "topic": "class database",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_258",
+        "parentid": "line_257",
+        "topic": "dog",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_259",
+        "parentid": "line_258",
+        "topic": "furry",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_260",
+        "parentid": "line_258",
+        "topic": "4 legs",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_261",
+        "parentid": "line_258",
+        "topic": "tails",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_262",
+        "parentid": "line_257",
+        "topic": "fish",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_263",
+        "parentid": "line_262",
+        "topic": "tail",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_264",
+        "parentid": "line_257",
+        "topic": "chimp",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_265",
+        "parentid": "line_264",
+        "topic": "furry",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_266",
+        "parentid": "line_255",
+        "topic": "attributes\u5920\u8c50\u5bcc",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_267",
+        "parentid": "line_266",
+        "topic": "\u6bcf\u500bclass\u90fd\u6709\u7368\u4e00\u7121\u4e8c\u7684attribute",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_268",
+        "parentid": "line_266",
+        "topic": "\u4e0d\u76f4\u63a5\u8fa8\u8b58\u54ea\u500bclass",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_269",
+        "parentid": "line_268",
+        "topic": "\u5177\u5099\u54ea\u4e9battribute",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_270",
+        "parentid": "line_266",
+        "topic": "\u4f86\u4e00\u500b\u65b0\u7684image",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_271",
+        "parentid": "line_270",
+        "topic": "\u4e0d\u5728\u8fa8\u8b58\u662f\u4ec0\u9ebc\u52d5\u7269\u662f\u8fa8\u8b58\u6709\u4ec0\u9ebcattribute",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_272",
+        "parentid": "line_270",
+        "topic": "\u67e5\u8868\u770b\u54ea\u500b\u6700\u8fd1\u5c31\u662f\u4f60\u8981\u7684",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_273",
+        "parentid": "line_266",
+        "topic": "attribute\u592a\u8907\u96dc\u5c31\u53ef\u4ee5\u505aattirbute embedding",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_274",
+        "parentid": "line_273",
+        "topic": "\u6bcf\u4e00\u500bimage transform\u8b8a\u6210embedding space\u4e00\u500b\u9ede",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_275",
+        "parentid": "line_266",
+        "topic": "image\u8ddfattribute\u90fd\u53ef\u4ee5\u63cf\u8ff0\u6210vector",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_276",
+        "parentid": "line_275",
+        "topic": "\u628aimage\u8ddfattribute\u6295\u5f71\u5230\u4e00\u500b\u7a7a\u9593",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_277",
+        "parentid": "line_276",
+        "topic": "image x\u8ddfattribute y\u90fd\u964d\u7dad\u5230\u540c\u6a23dimension",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_278",
+        "parentid": "line_277",
+        "topic": "f(x1),g(y1)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_279",
+        "parentid": "line_278",
+        "topic": "\u90fd\u8b8a\u6210embedding space\u4e0a\u7684vector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_280",
+        "parentid": "line_278",
+        "topic": "\u627ef* g*\u8b93x1y1\u6295\u5f71embedding space\u8d8a\u8fd1\u8d8a\u597d",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_281",
+        "parentid": "line_278",
+        "topic": "\u627e\u51fa\u4f86\u4e4b\u5f8c \u65b0\u7684\u5716\u7247\u6295\u5f71\u5c31\u53ef\u4ee5\u62ff\u5230\u6700\u8fd1\u7684attributes",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_282",
+        "parentid": "line_281",
+        "topic": "\u5728\u770b\u5c0d\u6620\u54ea\u500b\u52d5\u7269",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_283",
+        "parentid": "line_278",
+        "topic": "\u6c92\u6709database\u501f\u7528",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_284",
+        "parentid": "line_283",
+        "topic": "word vector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_285",
+        "parentid": "line_284",
+        "topic": "\u4ee3\u8868\u67d0\u7a2eattribute",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_286",
+        "parentid": "line_283",
+        "topic": "\u7528\u5f88\u5927\u7684corpus train\u51faword vector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_287",
+        "parentid": "line_286",
+        "topic": "\u628aattribute\u76f4\u63a5\u63db\u6210word vector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_288",
+        "parentid": "line_286",
+        "topic": "\u628aword vector\u505aembedding",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_289",
+        "parentid": "line_276",
+        "topic": "\u6578\u5b78\u90e8\u5206",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_290",
+        "parentid": "line_289",
+        "topic": "f*,g* = arg min_f,g \u03a3_n || f(x^n) - g(y^n)||_2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_291",
+        "parentid": "line_290",
+        "topic": "Problem?",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_292",
+        "parentid": "line_291",
+        "topic": "\u53ea\u80fd\u78ba\u5b9a\u90fd\u5230\u6700\u8fd1\u8ddd\u96e2\u5c31\u7d50\u675f\u4e86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_293",
+        "parentid": "line_289",
+        "topic": "\u91cd\u65b0\u8a2d\u8a08",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_294",
+        "parentid": "line_293",
+        "topic": "f*,g* = arg min_f,g \u03a3_n max(0,k - f(x^n) * g(y^n) + max_m\u2260n f(x^n)g(y^m))",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_295",
+        "parentid": "line_294",
+        "topic": "\u4e0d\u662f\u540c\u4e00\u500bpair \u8ddd\u96e2\u61c9\u8a72\u62c9\u5927",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_296",
+        "parentid": "line_294",
+        "topic": "k\u81ea\u5df1defined",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_297",
+        "parentid": "line_294",
+        "topic": "k - f(x^n) * g(y^n) + max_m\u2260n f(x^n)g(y^m) < 0 \u5247 zero loss",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_298",
+        "parentid": "line_297",
+        "topic": "f(x^n) * g(y^n) - max_m\u2260n f(x^n)g(y^m) > k",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_299",
+        "parentid": "line_297",
+        "topic": "f(x^n) * g(y^n)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_300",
+        "parentid": "line_299",
+        "topic": "as close",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_301",
+        "parentid": "line_299",
+        "topic": "\u6210\u5c0d\u7684\u62c9\u8fd1",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_302",
+        "parentid": "line_297",
+        "topic": "max_m\u2260n f(x^n)g(y^m)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_303",
+        "parentid": "line_302",
+        "topic": "not as close",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_304",
+        "parentid": "line_302",
+        "topic": "\u4e0d\u6210\u5c0d\u7684\u62c6\u6563",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_305",
+        "parentid": "line_297",
+        "topic": "as close > not as close",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_306",
+        "parentid": "line_231",
+        "topic": "Convex Combination of Semantic Embedding",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_307",
+        "parentid": "line_306",
+        "topic": "\u5047\u8a2d",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_308",
+        "parentid": "line_307",
+        "topic": "\u6709\u4e00\u500boff-the-shelf \u8a9e\u97f3\u8fa8\u8b58\u7cfb\u7d71",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_309",
+        "parentid": "line_307",
+        "topic": "\u6709\u4e00\u500boff-the-shelf word vector",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_310",
+        "parentid": "line_307",
+        "topic": "\u4e0d\u662f\u81ea\u5df1train\u7684\uff0c\u7db2\u8def\u4e0a\u6293\u7684",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_311",
+        "parentid": "line_310",
+        "topic": "image input NN",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_312",
+        "parentid": "line_311",
+        "topic": "0.5 tiger 0.5 lion",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_313",
+        "parentid": "line_311",
+        "topic": "word vector(tiger)*0.5 + word vector(lion)*0.5",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_314",
+        "parentid": "line_313",
+        "topic": "\u65b0\u7684vector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_315",
+        "parentid": "line_314",
+        "topic": "find the closest word vector V (liger)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_316",
+        "parentid": "line_306",
+        "topic": "\u4e0d\u7528training",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_317",
+        "parentid": "line_316",
+        "topic": "\u6709\u4e00\u7d44word vector",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_318",
+        "parentid": "line_316",
+        "topic": "\u6709\u4e00\u500b\u8a9e\u97f3\u8fa8\u8b58\u7cfb\u7d71",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_319",
+        "parentid": "line_316",
+        "topic": "\u5c31\u53ef\u4ee5\u505atransfer learning",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_320",
+        "parentid": "line_231",
+        "topic": "example of zero-shot learning",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_321",
+        "parentid": "line_320",
+        "topic": "google's multilingual Nerual Machine Translation System: Enabling Zero-Shot Translation",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_322",
+        "parentid": "line_321",
+        "topic": "\u4e0d\u540c\u8a9e\u8a00\u8f49\u63dbtraining\u5f8c",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_323",
+        "parentid": "line_321",
+        "topic": "\u53ef\u4ee5\u8f49\u63db\u6c92\u6709training\u904e\u7684\u7ffb\u8b6f\u65b9\u5f0f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_324",
+        "parentid": "line_323",
+        "topic": "\u4e0d\u540c\u8a9e\u8a00\u4e0d\u540c\u53e5\u5b50\u53ef\u4ee5project\u5230\u540c\u4e00\u500bspace\u4e0a\u9762",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_325",
+        "parentid": "line_323",
+        "topic": "space\u4e0alanguage independent\u53ea\u8ddf\u53e5\u5b50semantic\u6709\u95dc",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_326",
+        "parentid": "line_50",
+        "topic": "Unlabeled",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_327",
+        "parentid": "line_326",
+        "topic": "Target Data Labelled",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_328",
+        "parentid": "line_327",
+        "topic": "Self-taught learning",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_329",
+        "parentid": "line_328",
+        "topic": "\u4e0d\u5927\u50cfsemi supervised learning",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_330",
+        "parentid": "line_329",
+        "topic": "\u56e0\u70balabel\u8ddfunlabel data\u5b8c\u5168\u6c92\u95dc\u4fc2\u4e86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_331",
+        "parentid": "line_328",
+        "topic": "learning to extractor better representation from the source data (unsupervised approach)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_332",
+        "parentid": "line_331",
+        "topic": "auto-encoder",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_333",
+        "parentid": "line_328",
+        "topic": "Extracting better representation for target data",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_334",
+        "parentid": "line_326",
+        "topic": "Target Data Unlabelled",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_335",
+        "parentid": "line_334",
+        "topic": "Self-taught clustering",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_336",
+        "parentid": "line_48",
+        "topic": "\u6c92\u6709\u76f8\u95dc\u7684\u5b9a\u7fa9\u5f88\u62bd\u8c61",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_337",
+        "parentid": "line_336",
+        "topic": "\u5be6\u7269 vs \u52d5\u756b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    }
+]

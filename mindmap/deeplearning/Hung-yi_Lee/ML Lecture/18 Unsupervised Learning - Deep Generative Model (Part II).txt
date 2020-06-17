@@ -184,7 +184,7 @@
                                                                             μ(x) & σ(x)
                                                                                 實做不考慮variance
                                                                                     σ
-                                                                                μ(x) close input x                                                                                
+                                                                                μ(x) close input x
                                                                                 this is auto-encoder
                                                                                 這也是loss function
     Conditional VAE

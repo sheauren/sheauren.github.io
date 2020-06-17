@@ -113,7 +113,7 @@ Unsupervised Learning - Linear Methods
                                                     = Σ(w^1(x-x^-))^2
                                                         = Σ(w^1(x-x^-)(x-x^-)^T)*w^1
                                                              = w^1^T Σ(x-x^-)(x-x^-)^T
-                                                                 =  w^1^T*Conv(x)*w^1
+                                                                =  w^1^T*Conv(x)*w^1
                                                                     x的covariance matrix
                                                                     = w^1^T*S(x)*w^1
                                                                         找一個w^1可以maximizing

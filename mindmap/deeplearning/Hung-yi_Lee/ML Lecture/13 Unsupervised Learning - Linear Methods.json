@@ -1,0 +1,3055 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Unsupervised Learning - Linear Methods"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Clustering & Dimension Reduction",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u5316\u7e41\u70ba\u7c21",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "input",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "\u771f\u5be6\u6a39\u7684\u7167\u7247",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_1",
+        "topic": "output",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "\u62bd\u8c61\u7684\u6a39",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_1",
+        "topic": "\u65bcunsupervised\u6642",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "only having function output",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "\u6709\u4e00\u5806\u6a39\u7684\u7167\u7247\u8981\u62bd\u8c61\u5316\u6210\u7c21\u55ae\u7684\u6a39",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "root",
+        "topic": "Generation",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "\u7121\u4e2d\u751f\u6709",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_10",
+        "topic": "input",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "\u96a8\u6a5f\u8cc7\u6599",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_10",
+        "topic": "output",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "\u7522\u751f\u4e00\u68f5\u6a39",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_14",
+        "topic": "\u7522\u751f\u53e6\u4e00\u68f5\u6a39",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "root",
+        "topic": "\u9019\u6b21focus linear Dimension Reduction",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "Clustering",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "\u6709\u4e00\u5806image\u8981\u505aimage clustering",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "\u5206\u6210cluster 1 , cluster 2 , cluster 3",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "\u4e4b\u5f8c\u8cbc\u4e0alabel",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_18",
+        "topic": "how many cluster we neeed?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "\u6700citical\u554f\u984c...",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "empirical\u554f\u984c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_23",
+        "topic": "\u8ddfneural network\u8981\u5e7e\u5c64\u985e\u4f3c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_23",
+        "topic": "\u4f60\u6c7a\u5b9a\u8981\u5e7e\u500bclusteri",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_23",
+        "topic": "\u4f46\u4e0d\u80fd\u592a\u591a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_18",
+        "topic": "k-means",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "clustering X= {x^1,x^2...x^n,....x^N} into K clusters",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_28",
+        "topic": "x = image",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_28",
+        "topic": "initialize cluster center c^i, i=1..K { K random x^n from X}",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "\u96a8\u4fbf\u6311\u907f\u514dsegementation fault",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_28",
+        "topic": "Repeat",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "for all x^n in X:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "b_i^\uff3fn :",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "1: x^n is most \"close\" to c^i",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_35",
+        "topic": "0: othewise",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_33",
+        "topic": "update all c^i:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_38",
+        "topic": "c^i = \u03a3_x^n b_i^n*x^n / \u03a3x^n b_i^n",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "\u627e\u51facenter",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_18",
+        "topic": "Hierarchical Agglomeration Clustering (HAC)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_41",
+        "topic": "step1 : build a tree",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "tree structure",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "\u5047\u8a2d\u67095\u500bexample",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "\u5169\u5169\u7b97\u76f8\u4f3c\u5ea6",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "\u6311\u6700\u76f8\u4f3c\u7684pair\u51fa\u4f86",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_46",
+        "topic": "\u628a\u5169\u500bmerge(avg)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "\u7522\u751f\u65b0\u7684vector",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_43",
+        "topic": "\u8b8a\u62104\u500bexample",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "\u5169\u5169\u7b97\u76f8\u4f3c\u5ea6",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "\u6311\u6700\u76f8\u4f3c\u7684pair\u51fa\u4f86",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "\u628a\u5169\u500bmerge(avg)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "\u7522\u751f\u65b0\u7684vector",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_43",
+        "topic": "\u53d6\u5f97tree root",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_41",
+        "topic": "step2 : pick a threshold",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_55",
+        "topic": "\u5728\u6a39\u4e2d\u9593\u5207\u4e00\u5200",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_56",
+        "topic": "\u6bb5\u958b\u7684\u5c31\u81ea\u6210\u4e00\u500bcluster",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_55",
+        "topic": "\u4e0d\u50cfk-mean\u8981\u5148\u6c7a\u5b9aK\u7684\u6578\u503c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "\u53ef\u4ee5\u4e8b\u5f8c\u518d\u5207\u54ea\u88e1\u5728\u8a55\u4f30",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_18",
+        "topic": "Distribed Representation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_60",
+        "topic": "Clustering: an object must belong to one cluster",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_60",
+        "topic": "Distributed Representation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "dimension reduction",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "look like 3-D",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "actually, 2-D",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_63",
+        "topic": "in MNIST, a digits is 28x28 dims",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "most 28x28 dim vector are not digits",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_67",
+        "topic": "ex: \u4e2d\u9593\u76843\u65cb\u8f49\u7279\u5b9a\u89d2\u5ea6\u5c31\u662f\u53e6\u4e00\u500b3",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "record\u8f49\u5e7e\u5ea6\u5c31\u53ef\u4ee5\u5340\u9694\u5176\u4ed6\u5f35\u5716",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_68",
+        "topic": "\u7528\u4e00\u500b\u7dad\u5ea6\u5c31\u63cf\u8ff028x28 dimension",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_63",
+        "topic": "x-> function ->z",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "the dimension of z would be smaller than x",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_71",
+        "topic": "feature selection",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_73",
+        "topic": "\u62ff\u6389\u6c92\u7528\u7684dimension",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_71",
+        "topic": "principle compoenent analysis (PCA)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_75",
+        "topic": "[bitshop chapter 12]",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_75",
+        "topic": "z = Wx",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_77",
+        "topic": "\u6839\u64da\u4e00\u5927\u5806x\u628aW\u627e\u51fa\u4f86",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_75",
+        "topic": "Reduce 1-D",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_79",
+        "topic": "z_1 = w^1*x",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_80",
+        "topic": "assume ||w1||_2 = 1",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_80",
+        "topic": "x\u662f\u9ad8\u7dad\u5ea6\u7684vector",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_80",
+        "topic": "w^1 inner product x = x\u6295\u5f71\u5230w^1\u7684\u503c = z_1",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_80",
+        "topic": "\u628a\u4e00\u5806w1\u628a\u5b83\u6295\u5f71\u8b8a\u6210z1",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_80",
+        "topic": "\u554f\u984c\u662f\u8a72\u9078\u4ec0\u9ebc\u6a23\u7684w1",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_85",
+        "topic": "we want to variance of z_1 as large as possible",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_86",
+        "topic": "Var(z_1) = \u03a3_z_1 (z_1-z_1^-)^2",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_86",
+        "topic": "||w^1||_2 = 1",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_86",
+        "topic": "z_1^- = \u6240\u6709z_1\u7684\u5e73\u5747",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_75",
+        "topic": "Reduce 2-D",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "z = Wx",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_90",
+        "topic": "z_1 = w^1*x",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_90",
+        "topic": "z_2 = w^2*x",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_90",
+        "topic": "w^1,w^2 transpose \u6392\u8d77\u4f86\u5c31\u662f w",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_90",
+        "topic": "z^1,z^2 \u4e32\u8d77\u4f86\u5c31\u662fz",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_90",
+        "topic": "\u627ez_2",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_96",
+        "topic": "Var(z_2) = \u03a3_z_2 (z_2-z_2^-)^2",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_96",
+        "topic": "||w^2||_2 = 1",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_96",
+        "topic": "\u8981\u591a\u4e00\u500b\u9650\u5236w_2\u8ddfw_1\u662f\u5782\u76f4\u6216orthogonal",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_99",
+        "topic": "w^1 inner product w^2 = 0",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_75",
+        "topic": "\u9019\u6a23\u5c31\u53ef\u4ee5\u5148\u627ew^1\u5728\u627ew^2\u5728\u627e....",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_101",
+        "topic": "\u770bproject\u5e7e\u500b\u7dad\u5ea6",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_101",
+        "topic": "\u627e\u51fa\u4f86\u7684w\u6703\u662f\u4e00\u500borthogonal\u7684matrix",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_103",
+        "topic": "norm\u90fd\u662f1",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_101",
+        "topic": "\u600e\u9ebc\u627ew^1,w^2",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_105",
+        "topic": "\u4e5f\u53ef\u4ee5\u7528gradient descent\u65b9\u6cd5\u53bb\u89e3",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_105",
+        "topic": "Lagrange multiplier\u4ee5\u53cawarming of math",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_107",
+        "topic": "z_1=w^1*x",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_107",
+        "topic": "z_1^- = \u03a3z_1 = \u03a3w^1*x = w^1 * \u03a3x = w^1 * x^-",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_107",
+        "topic": "Var(z_1) = \u03a3_z_1 (z_1-z_1^-)^2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_110",
+        "topic": "= \u03a3_x (w^1*x-w^1-x^-)^2",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_111",
+        "topic": "= \u03a3(w^1(x-x^-))^2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_112",
+        "topic": "= \u03a3(w^1(x-x^-)(x-x^-)^T)*w^1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_113",
+        "topic": "= w^1^T \u03a3(x-x^-)(x-x^-)^T",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_114",
+        "topic": "=  w^1^T*Conv(x)*w^1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_115",
+        "topic": "x\u7684covariance matrix",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_115",
+        "topic": "= w^1^T*S(x)*w^1",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_117",
+        "topic": "\u627e\u4e00\u500bw^1\u53ef\u4ee5maximizing",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_118",
+        "topic": "(w^1)^T*S*w^1",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_118",
+        "topic": "constraint",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_120",
+        "topic": "w^1\u76842-norm = 1",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_120",
+        "topic": "find w^1 maximizing",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_122",
+        "topic": "(w^1)^T S w^1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_122",
+        "topic": "(w^1)^T * w^1 = 1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_122",
+        "topic": "S = conv(x)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_125",
+        "topic": "symetric",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_125",
+        "topic": "x\u7684covariance matrix",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_125",
+        "topic": "positive-semidefinite",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_128",
+        "topic": "non-negative eigenvalues",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_129",
+        "topic": "\u770b\u4e00\u4e0b\u7dda\u6027\u4ee3\u6578\u6559\u5b78",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_122",
+        "topic": "w^1 is then eigenvector of the covariance matrix S",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_131",
+        "topic": "\u5c0d\u61c9\u5230\u6700\u5927\u7684eigenvalues",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_132",
+        "topic": "\u03bb1",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_122",
+        "topic": "\u904e\u7a0b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_134",
+        "topic": "using Lagrange mutiplier [bitshop,appendix E]",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_134",
+        "topic": "g(w^1) = (w^1)^T Sw^1 - \u03b1((w^1)^Tw^1-1)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_136",
+        "topic": "\u2202g(w^1)/\u2202(w_1^1) = 0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_136",
+        "topic": "\u2202g(w^1)/\u2202(w_2^1) = 0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_136",
+        "topic": "...",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_136",
+        "topic": "\u5f62\u6210",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_140",
+        "topic": "Sw^1 - \u03b1w^1 = 0",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_140",
+        "topic": "Sw^1 = \u03b1w^1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_142",
+        "topic": "w^1 = s\u7684eigenvector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_143",
+        "topic": "\u53ef\u4ee5\u627e\u5230\u4e00\u5927\u628aeigenvector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_143",
+        "topic": "\u6240\u4ee5\u8981\u5e36\u5165\u627emaximum (w^1)^T Sw^1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_145",
+        "topic": "(w^1)^T Sw^1  = \u03b1((w^1)^Tw^1) = \u03b1",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_146",
+        "topic": "choose the maximum one",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_146",
+        "topic": "\u03b1\u662f\u6700\u5927\u7684eigenvalues \u03bb1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_134",
+        "topic": "find w^2",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_149",
+        "topic": "maximizing (w^2)^T Sw^2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_150",
+        "topic": "\u540c\u6642\u6eff\u8db3",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_151",
+        "topic": "(w^2)^T * w^2 = 1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_151",
+        "topic": "(w^2)^T * w^1 = 0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_149",
+        "topic": "\u6700\u5927\u7684eigenvalues \u03bb2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_149",
+        "topic": "g(w^2) = (w^2)^T Sw^2 - \u03b1((w^2)^Tw^2-1) - \u03b2\u03b1((w^2)^Tw^1-1)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_155",
+        "topic": "\u2202g(w^2)/\u2202(w_1^2) = 0",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_155",
+        "topic": "\u2202g(w^2)/\u2202(w_2^2) = 0",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_155",
+        "topic": "...",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_155",
+        "topic": "\u5f62\u6210",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_155",
+        "topic": "Sw^1 - \u03b1w^2 - \u03b2w^1 = 0",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_160",
+        "topic": "(w^1)^T Sw^2  - \u03b1((w^1)^Tw^2) - \u03b2\u03b1((w^1)^Tw^1-1) = 0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_160",
+        "topic": "\u03b1((w^1)^Tw^2) = 0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_160",
+        "topic": "\u03b2\u03b1((w^1)^Tw^1-1) = 1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_160",
+        "topic": "\u5269\u4e0b",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_164",
+        "topic": "(w^1)^T Sw^2 = 0",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_164",
+        "topic": "scalar transpose\u9084\u662f\u81ea\u5df1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_166",
+        "topic": "\u6240\u4ee5\u53ef\u4ee5\u628a\u81ea\u5df1transpose",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_167",
+        "topic": "((w^1)^T Sw^2)^T",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_168",
+        "topic": "= (w^2)^T S^Tw^1",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_169",
+        "topic": "= (w^2)^T Sw^1",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_170",
+        "topic": "= \u03bb_1(w^2)^Tw^1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_171",
+        "topic": "= 0",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_172",
+        "topic": "\u03b2 = 0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_173",
+        "topic": "\u5f62\u6210",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_174",
+        "topic": "Sw^2 - \u03b1w^2 = 0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_175",
+        "topic": "Sw^2 = \u03b1w^2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_176",
+        "topic": "w^2 = eigenvector",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_177",
+        "topic": "\u9078\u7b2c\u4e8c\u5927\u7684",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_169",
+        "topic": "Sw^1 = \u03bb_1w^1",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_110",
+        "topic": "(a*b)^2",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_182",
+        "topic": "= (a^T*b)^2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_182",
+        "topic": "= a^T*b*a^T*b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_182",
+        "topic": "= a^T*b*(a^T*b)^T",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_182",
+        "topic": "= a^T*b*b^T*a",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_105",
+        "topic": "z = Wx",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_105",
+        "topic": "Conv(z) = D",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_188",
+        "topic": "Diagonal matrix",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_188",
+        "topic": "z\u7684vector\u7684convariance matrix\u662fdiagonal",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_191",
+        "parentid": "line_190",
+        "topic": "PCA\u5f97\u5230\u65b0\u7684feature z",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_191",
+        "topic": "\u662f\u8981\u7d66\u5176\u4ed6model\u7528",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_192",
+        "topic": "\u4f8b\u5982generative model",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "line_193",
+        "topic": "\u90a3\u7528gaussian\u63cf\u8ff0class distribution",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_194",
+        "topic": "\u53ef\u4ee5\u6e1b\u5c11\u53c3\u6578\u91cf",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_194",
+        "topic": "\u5176\u4ed6model\u53ef\u4ee5\u5047\u8a2ddimension\u4e4b\u9593\u6c92\u6709colrelation",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_197",
+        "parentid": "line_196",
+        "topic": "\u7528\u7c21\u55ae\u7684model\u8655\u7406data",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_198",
+        "parentid": "line_196",
+        "topic": "trival",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_199",
+        "parentid": "line_105",
+        "topic": "conv(z) = \u03a3(z-z^-)(z-z^-)^T",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_200",
+        "parentid": "line_199",
+        "topic": "= WSW^T",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_201",
+        "parentid": "line_200",
+        "topic": "= WS[w^1...w^K]",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_202",
+        "parentid": "line_201",
+        "topic": "= W[Sw^1...Sw^K]",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_203",
+        "parentid": "line_202",
+        "topic": "= W[\u03bb_1w^1...\u03bb_kw^K]",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_204",
+        "parentid": "line_203",
+        "topic": "= [\u03bb_1Ww^1...\u03bb_kWw^K]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_205",
+        "parentid": "line_204",
+        "topic": "= [\u03bb_1e_1...\u03bb_ke_k]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_206",
+        "parentid": "line_205",
+        "topic": "diagonal matrix",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_207",
+        "parentid": "line_203",
+        "topic": "Ww^i = e_i",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_208",
+        "parentid": "line_207",
+        "topic": "\u7b2ci\u500b\u7dad\u5ea6\u662f1\u5176\u4ed6\u90fd0",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_210",
+        "parentid": "line_199",
+        "topic": "S = Conv(x)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_211",
+        "parentid": "line_75",
+        "topic": "PCA - Another Point to View",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_212",
+        "parentid": "line_211",
+        "topic": "Basic Component:",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_213",
+        "parentid": "line_212",
+        "topic": "handwrite",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_214",
+        "parentid": "line_213",
+        "topic": "\u4ee3\u8868\u7b46\u756b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_215",
+        "parentid": "line_213",
+        "topic": "\u6a6b,\u8c4e,\u5927\u5708,\u5c0f\u5708,\u9577\u76f4\u7dda,\u9577\u6a6b\u7dda....",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_216",
+        "parentid": "line_215",
+        "topic": "\u628a\u6bcf\u4e00\u500b\u7b46\u756b\u7576\u6210\u4e00\u500bu^i\uff0c\u5047\u8a2d\u6709k\u500b",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_217",
+        "parentid": "line_216",
+        "topic": "\u4e00\u500b\u7b46\u756b\u4e00\u500bvector",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_218",
+        "parentid": "line_216",
+        "topic": "\u628avector\u52a0\u8d77\u4f86\u5c31\u6703\u5f62\u6210\u4e00\u500bdigit,\u8a72formulation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_219",
+        "parentid": "line_218",
+        "topic": "x \u2248 c^1^u^1 + c^2^u^2 + ... + c^ku^k + x^-",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_220",
+        "parentid": "line_219",
+        "topic": "x\u6703\u7b49\u65bc\u6bcf\u500b\u7b46\u756b\u7684\u6a5f\u7387",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_221",
+        "parentid": "line_219",
+        "topic": "x^-\u662f\u6240\u6709image\u5e73\u5747",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_222",
+        "parentid": "line_219",
+        "topic": "\u53ef\u4ee5\u7528[c^1,c^2,...c^k]\u4ee3\u8868image",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_223",
+        "parentid": "line_219",
+        "topic": "compoent\u6578\u91cf\u6bd4pixel\u5c11\u7684\u8a71",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_224",
+        "parentid": "line_223",
+        "topic": "\u9019\u500b\u63cf\u8ff0\u6703\u6bd4\u8f03\u6709\u6548",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_225",
+        "parentid": "line_219",
+        "topic": "x - x^- \u2248 c^1^u^1 + c^2^u2 + ... + c^ku^k = x^^",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_226",
+        "parentid": "line_225",
+        "topic": "\u6211\u5011\u4e0d\u77e5\u9053u^1~u^k",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_227",
+        "parentid": "line_226",
+        "topic": "\u8981\u5982\u4f55\u627ek\u500bvector\u51fa\u4f86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_228",
+        "parentid": "line_227",
+        "topic": "\u7121\u6cd5\u63cf\u8ff0\u7684\u5dee\u8ddd - reconstrcution error",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_229",
+        "parentid": "line_228",
+        "topic": "|| (x-x^-) - x^^ ||_2",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_230",
+        "parentid": "line_228",
+        "topic": "find{u^1...u^k} minimizing the error",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_231",
+        "parentid": "line_230",
+        "topic": "formulation",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_232",
+        "parentid": "line_231",
+        "topic": "L = min_{u^1...u^k} \u03a3||(x-x^-)-(\u03a3_k=1^k c_k*u^k)  ||_2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_233",
+        "parentid": "line_231",
+        "topic": "PCA",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_234",
+        "parentid": "line_233",
+        "topic": "z=W*x",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_235",
+        "parentid": "line_233",
+        "topic": "[z1...z^k] = [(w_1)^T....(w_k)^T]*x",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_236",
+        "parentid": "line_233",
+        "topic": "{w_1...w_k} is the component {u^1...u^k} minimizing L",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_237",
+        "parentid": "line_231",
+        "topic": "x^1 - x^- \u2248 c_1^1^u^1 + c_2^1^u2 + ... + c_k^1u^k",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_238",
+        "parentid": "line_237",
+        "topic": "x^1-x^- is vector",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_239",
+        "parentid": "line_237",
+        "topic": "[u^1 + u2 + ... + u^k] matrix",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_240",
+        "parentid": "line_237",
+        "topic": "[c_1^1,c_1^2...] vector",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_241",
+        "parentid": "line_237",
+        "topic": "[c_2^1,c_2^2...] vector",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_242",
+        "parentid": "line_237",
+        "topic": "[c_3^1,c_3^2...] vector",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_243",
+        "parentid": "line_237",
+        "topic": "matrix x \u2248  u matrix * c matrix",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_244",
+        "parentid": "line_243",
+        "topic": "minimizing error u*c matrix",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_245",
+        "parentid": "line_244",
+        "topic": "SVD: http://speech.ee.ntu.edu.tw/~tlkagk/courses/LA_2016/Lecture/SVD.pdf",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_246",
+        "parentid": "line_244",
+        "topic": "x matrix(m*n) \u2248 u matrix(m*k) \u03a3 matrix(k*k) v matrixs(k*n)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_247",
+        "parentid": "line_246",
+        "topic": "k component number",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_248",
+        "parentid": "line_246",
+        "topic": "k columns of U: a set of orthonormal eigenvector corresponding to the k largest eigenvector of XX^T",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_249",
+        "parentid": "line_244",
+        "topic": "this is a solution of PCA",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_250",
+        "parentid": "line_75",
+        "topic": "PCA look like a nerual network with one hidden layer (liner activation function)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_251",
+        "parentid": "line_250",
+        "topic": "Autoencoder",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_252",
+        "parentid": "line_250",
+        "topic": "if{w^1,w^2...w^k} is the component{u^1,u^2...u^k}",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_253",
+        "parentid": "line_250",
+        "topic": "x^^ = \u03a3_k=1^k c_k*w^k \u8207 x-x^-\u4e4b\u9593\u8d8a\u5c0f\u8d8a\u597d",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_254",
+        "parentid": "line_253",
+        "topic": "To minimizing reconstrcution error:",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_255",
+        "parentid": "line_254",
+        "topic": "c^k = (x-x^-)*w^k",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_256",
+        "parentid": "line_250",
+        "topic": "neural network",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_257",
+        "parentid": "line_256",
+        "topic": "x-x^- \u5f62\u6210 3-dims vector",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_258",
+        "parentid": "line_257",
+        "topic": "k=2\u60c5\u6cc1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_259",
+        "parentid": "line_258",
+        "topic": "(x-x^-)(w_1^1+w_2^1+w_3^1) = c^1",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_260",
+        "parentid": "line_258",
+        "topic": "input : x^-^-",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_261",
+        "parentid": "line_258",
+        "topic": "c^1: output",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_262",
+        "parentid": "line_258",
+        "topic": "input: c^1",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_263",
+        "parentid": "line_262",
+        "topic": "c1^1 * (w_1^1+w_2^1+w_3^1)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_264",
+        "parentid": "line_258",
+        "topic": "output: x_1^^",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_265",
+        "parentid": "line_264",
+        "topic": "c^2\u4e5f\u4f86\u4e00\u6b21",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_266",
+        "parentid": "line_264",
+        "topic": "\u5169\u8005\u76f8\u52a0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_267",
+        "parentid": "line_258",
+        "topic": "PCA\u5f62\u6210autoencoder nerual network",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_268",
+        "parentid": "line_267",
+        "topic": "PCA\u627e\u51fa\u4f86\u7684\u89e3\u8ddfnerual network\u627e\u51fa\u4f86\u7684\u89e3\u6703\u4e0d\u5927\u4e00\u6a23",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_269",
+        "parentid": "line_268",
+        "topic": "PCA\u6709orthonormal\u9650\u5236",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_270",
+        "parentid": "line_268",
+        "topic": "nerual network\u6c92\u6709\u53ea\u80fd\u8aaa\u662f\u53e6\u4e00\u7d44\u89e3",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_271",
+        "parentid": "line_270",
+        "topic": "\u4f46\u4e0d\u6703\u6bd4PCA\u627e\u51fa\u4f86\u7684error\u5c0f",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_272",
+        "parentid": "line_271",
+        "topic": "linear\u6642\u5019\u76f4\u63a5PCA\u6bd4\u8f03\u5feb",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_273",
+        "parentid": "line_271",
+        "topic": "nerual network\u597d\u8655\u53ef\u4ee5deep",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_274",
+        "parentid": "line_258",
+        "topic": "graident descent",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_275",
+        "parentid": "line_75",
+        "topic": "weakness of PCA",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_276",
+        "parentid": "line_275",
+        "topic": "Unsupervised",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_277",
+        "parentid": "line_276",
+        "topic": "dimension reduction\u5230\u5206\u6700\u958b\u7684vector",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_278",
+        "parentid": "line_277",
+        "topic": "\u53ef\u80fd\u9084\u662f\u6703\u5c0e\u81f4\u539f\u672c\u5206\u5225\u7684group data\u88ab\u6df7\u5728\u4e00\u8d77",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_279",
+        "parentid": "line_278",
+        "topic": "\u53ef\u80fd\u9069\u5408label data",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_280",
+        "parentid": "line_279",
+        "topic": "LDA - Linear Discriminant Analysis",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_281",
+        "parentid": "line_280",
+        "topic": "supervised Methods",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_282",
+        "parentid": "line_275",
+        "topic": "Linear",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_283",
+        "parentid": "line_282",
+        "topic": "dimension reduction\u6642\u628a\u66f2\u9762\u62c9\u503c",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_284",
+        "parentid": "line_283",
+        "topic": "PCA\u505a\u4e0d\u5230",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_285",
+        "parentid": "line_283",
+        "topic": "\u9019\u9700\u8981unlinear transformation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_286",
+        "parentid": "line_283",
+        "topic": "non-linear dimension reduction in the following lectures",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_287",
+        "parentid": "line_75",
+        "topic": "PCA-pokemon",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_288",
+        "parentid": "line_287",
+        "topic": "inspried from :",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_289",
+        "parentid": "line_288",
+        "topic": "https://www.kaggle.com/strakul5/principal-component-analysis-of-pokemon-data",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_290",
+        "parentid": "line_287",
+        "topic": "800 pokemons, 6 features for each(HP,Atk,Def,Sp,Sp Atk,Sp Def,Speed)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_291",
+        "parentid": "line_287",
+        "topic": "How many principle components?",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_292",
+        "parentid": "line_291",
+        "topic": "\u8ddfneuron\u4e00\u6a23\u81ea\u5df1\u6c7a\u5b9a",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_293",
+        "parentid": "line_291",
+        "topic": "\u5e38\u898b\u65b9\u6cd5",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_294",
+        "parentid": "line_293",
+        "topic": "ratio_i = \u03bbi/(\u03bb1+\u03bb2+...\u03bb6)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_295",
+        "parentid": "line_293",
+        "topic": "\u6bcf\u4e00\u500b\u03bb\u90fd\u662feigenvector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_296",
+        "parentid": "line_295",
+        "topic": "eigenvector\u90fd\u5c0d\u6620\u5230\u4e00\u500beignvalues",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_297",
+        "parentid": "line_296",
+        "topic": "\u5c31\u662f\u9019\u500b\u03bb",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_298",
+        "parentid": "line_297",
+        "topic": "\u505adimension reductoin\u5f8c\u4ed6\u7684variance\u6709\u591a\u5927",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_299",
+        "parentid": "line_298",
+        "topic": "convariance matrix\u662f\u516d\u7dad",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_300",
+        "parentid": "line_299",
+        "topic": "\u627e\u51fa\u516d\u500beigenvector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_301",
+        "parentid": "line_300",
+        "topic": "\u7b97\u51fa\u6bcf\u500beigenvalue\u7684ratio",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_302",
+        "parentid": "line_301",
+        "topic": "ratio1 = 0.45",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_303",
+        "parentid": "line_301",
+        "topic": "ratio2 = 0.18",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_304",
+        "parentid": "line_301",
+        "topic": "ratio3 = 0.13",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_305",
+        "parentid": "line_301",
+        "topic": "ratio4 = 0.12",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_306",
+        "parentid": "line_301",
+        "topic": "ratio5 = 0.07",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_307",
+        "parentid": "line_306",
+        "topic": "variance\u5f88\u5c0f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_308",
+        "parentid": "line_301",
+        "topic": "ratio6 = 0.04",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_309",
+        "parentid": "line_308",
+        "topic": "variance\u5f88\u5c0f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_310",
+        "parentid": "line_301",
+        "topic": "principle component\u524d\u56db\u500b\u5c31\u597d\u4e86",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_311",
+        "parentid": "line_310",
+        "topic": "4\u500bprinciple component",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_312",
+        "parentid": "line_311",
+        "topic": "\u5404\u81ea\u662f\u4e00\u500b6\u7dadvector",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_313",
+        "parentid": "line_312",
+        "topic": "PC1...",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_314",
+        "parentid": "line_313",
+        "topic": "\u6bcf\u4e00\u500bdimension\u90fd\u662f\u6b63\u7684",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_315",
+        "parentid": "line_314",
+        "topic": "\u5f37\u5ea6",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_316",
+        "parentid": "line_312",
+        "topic": "PC2...",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_317",
+        "parentid": "line_316",
+        "topic": "Def\u6b63",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_318",
+        "parentid": "line_316",
+        "topic": "Speed\u8ca0",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_319",
+        "parentid": "line_316",
+        "topic": "Def/Speed\u53cd\u6bd4",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_320",
+        "parentid": "line_312",
+        "topic": "PC3...",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_321",
+        "parentid": "line_320",
+        "topic": "Sp.Def\u6b63",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_322",
+        "parentid": "line_320",
+        "topic": "HP/Atk\u8ca0",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_323",
+        "parentid": "line_322",
+        "topic": "HP/Atk\u63db\u53d6Sp.Def",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_324",
+        "parentid": "line_312",
+        "topic": "PC4...",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_325",
+        "parentid": "line_324",
+        "topic": "HP\u6b63",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_326",
+        "parentid": "line_324",
+        "topic": "Atk/Def\u8ca0",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_327",
+        "parentid": "line_324",
+        "topic": "HP\u8207Atk/Def\u4e92\u65a5",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_328",
+        "parentid": "line_312",
+        "topic": "\u56db\u500bvector combine\u7684\u7d50\u679c\u7522\u751fpokemon",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_329",
+        "parentid": "line_75",
+        "topic": "PCA-MNIST",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_330",
+        "parentid": "line_329",
+        "topic": "input image = a1w1+a2w2....",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_331",
+        "parentid": "line_330",
+        "topic": "a1w1 = images",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_332",
+        "parentid": "line_330",
+        "topic": "a2w2 = images",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_333",
+        "parentid": "line_329",
+        "topic": "30 components",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_334",
+        "parentid": "line_333",
+        "topic": "\u770b\u8d77\u4f86\u5f88\u50cf\u7b46\u756b",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_335",
+        "parentid": "line_333",
+        "topic": "\u7528\u9019\u4e9bcomponent\u505alinear combination\u5c31\u53ef\u4ee5\u5f97\u5230\u6240\u6709\u7684digtit",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_336",
+        "parentid": "line_335",
+        "topic": "0-9",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_337",
+        "parentid": "line_333",
+        "topic": "Eigen-digit",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_338",
+        "parentid": "line_333",
+        "topic": "\u600e\u9ebc\u4e0d\u50cfcomponent",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_339",
+        "parentid": "line_338",
+        "topic": "\u50cf\u99ac\u96c5\u6587\u5b57",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_340",
+        "parentid": "line_75",
+        "topic": "PCA-face",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_341",
+        "parentid": "line_340",
+        "topic": "\u627eprinciple compoenent",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_342",
+        "parentid": "line_340",
+        "topic": "\u627e\u524d30 components",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_343",
+        "parentid": "line_342",
+        "topic": "\u770b\u5230\u4e00\u5806\u54c0\u6028\u7684\u81c9",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_344",
+        "parentid": "line_342",
+        "topic": "\u6bcf\u4e00\u500b\u90fd\u662f\u4e00\u500b\u81c9",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_345",
+        "parentid": "line_342",
+        "topic": "Eigen-face",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_346",
+        "parentid": "line_342",
+        "topic": "\u600e\u9ebc\u4e0d\u50cfcomponent",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_347",
+        "parentid": "line_346",
+        "topic": "\u90fd\u662f\u4e00\u500b\u5b8c\u6574\u7684\u81c9",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_348",
+        "parentid": "line_347",
+        "topic": "PCA involes adding up and sbustracting some components(images)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_349",
+        "parentid": "line_348",
+        "topic": "\u53ef\u80fd\u6709\u4e9b\u662f\u8ca0\u7684",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_350",
+        "parentid": "line_349",
+        "topic": "\u6240\u4ee5\u4e0d\u662f\u5716\u7684basic",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_351",
+        "parentid": "line_348",
+        "topic": "Then the components may not be 'part of digits'",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_352",
+        "parentid": "line_351",
+        "topic": "\u756b9",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_353",
+        "parentid": "line_352",
+        "topic": "\u5148\u756b8",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_354",
+        "parentid": "line_353",
+        "topic": "\u6e1b\u4e0b\u9762\u5708\u5708",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_355",
+        "parentid": "line_354",
+        "topic": "\u52a0\u4e00\u69d3",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_356",
+        "parentid": "line_75",
+        "topic": "\u60f3\u8981\u5f97\u5230\u985e\u4f3c\u7b46\u756b\u7684\u6771\u897f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_357",
+        "parentid": "line_356",
+        "topic": "Non-Negative matrix Factorization (NMF)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_358",
+        "parentid": "line_357",
+        "topic": "force a1,a2...be non-negative",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_359",
+        "parentid": "line_358",
+        "topic": "additive combination",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_360",
+        "parentid": "line_357",
+        "topic": "force w1,s2...be non-negative",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_361",
+        "parentid": "line_360",
+        "topic": "more like 'part-of-digits'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_362",
+        "parentid": "line_357",
+        "topic": "ref:",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_363",
+        "parentid": "line_362",
+        "topic": "https://papers.nips.cc/paper/1861-algorithms-for-non-negative-matrix-factorization.pdf",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_364",
+        "parentid": "line_357",
+        "topic": "MINIST\u6703\u8b8a\u6210\u7b46\u756b\u4e86",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_365",
+        "parentid": "line_357",
+        "topic": "Face\u6703\u8b8a\u6210\u81c9\u7684\u4e00\u4e9b\u90e8\u5206",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_366",
+        "parentid": "line_60",
+        "topic": "Matrix Factorization",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_367",
+        "parentid": "line_366",
+        "topic": "\u5169\u500bobject\u53d7\u5230\u5171\u901a\u7684latent factor\u5f71\u97ff",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_368",
+        "parentid": "line_367",
+        "topic": "\u6709\u6dbc\u5bae\u6625\u65e5\u516c\u4ed4\u7684\u6bd4\u8f03\u5bb9\u6613\u5fa1\u677f\u7f8e\u7434\u516c\u4ed4",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_369",
+        "parentid": "line_367",
+        "topic": "\u6709\u59ca\u5bfa\u516c\u4ed4\u7684\u6bd4\u8f03\u5bb9\u6613\u6709\u5c0f\u7dad\u516c\u4ed4",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_370",
+        "parentid": "line_367",
+        "topic": "\u89d2\u8272\u80cc\u5f8c\u6709\u4e9b\u5171\u901a\u6027\u4f86\u64cd\u63a7\u9019\u500b\u4e8b\u60c5",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_371",
+        "parentid": "line_367",
+        "topic": "vector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_372",
+        "parentid": "line_371",
+        "topic": "\u840c\u50b2\u5b0c",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_373",
+        "parentid": "line_371",
+        "topic": "\u840c\u5929\u7136\u5446",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_374",
+        "parentid": "line_367",
+        "topic": "the factors is latent",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_375",
+        "parentid": "line_374",
+        "topic": "otaku",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_376",
+        "parentid": "line_375",
+        "topic": "not one cares",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_377",
+        "parentid": "line_374",
+        "topic": "character",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_378",
+        "parentid": "line_377",
+        "topic": "not directly observable",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_379",
+        "parentid": "line_374",
+        "topic": "\u53ea\u6709\u4e92\u76f8\u4e4b\u9593\u7684matrix",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_380",
+        "parentid": "line_379",
+        "topic": "\u53bb\u63a8\u7b97\u5169\u8005\u7684vector",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_381",
+        "parentid": "line_380",
+        "topic": "r^A*r^1 \u2248 5",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_382",
+        "parentid": "line_381",
+        "topic": "inner product \u5f88\u5927",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_383",
+        "parentid": "line_380",
+        "topic": "r^B*r^1 \u2248 4",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_384",
+        "parentid": "line_380",
+        "topic": "...",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_385",
+        "parentid": "line_379",
+        "topic": "M: No. of otaku",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_386",
+        "parentid": "line_379",
+        "topic": "N: No. of characters",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_387",
+        "parentid": "line_379",
+        "topic": "K: No. of latent factor",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_388",
+        "parentid": "line_387",
+        "topic": "K\u81ea\u5df1\u8981\u8a66\u51fa\u4f86",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_389",
+        "parentid": "line_388",
+        "topic": "\u8ddfneuron\u4e00\u6a23\u8981\u81ea\u5df1\u5148\u8a2d\u5b9a",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_390",
+        "parentid": "line_387",
+        "topic": "[M*K] * [K*N] => [M*N]",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_391",
+        "parentid": "line_387",
+        "topic": "\u627e[r^A...] [r^1...]\u51fa\u4f86\u7684\u503c\u8ddf[M*N]\u8d8a\u63a5\u8fd1\u8d8a\u597d",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_392",
+        "parentid": "line_391",
+        "topic": "\u7b97reconstructure error",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_393",
+        "parentid": "line_392",
+        "topic": "\u7528SVD\u89e3",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_394",
+        "parentid": "line_387",
+        "topic": "\u6709\u6642\u5019\u6703\u9047\u5230\u6709\u4e9b\u6578\u91cf\u662f\u672a\u77e5\u7684",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_395",
+        "parentid": "line_394",
+        "topic": "\u67d0\u4e9b\u516c\u4ed4\u6578\u91cf\u4e0d\u77e5\u9053",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_396",
+        "parentid": "line_394",
+        "topic": "SVD\u6709\u9ede\u5361",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_397",
+        "parentid": "line_394",
+        "topic": "\u7528gradient descent\u7684\u65b9\u6cd5",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_398",
+        "parentid": "line_397",
+        "topic": "L = \u03a3_(i,j) (r^i*r^j - n_ij)^2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_399",
+        "parentid": "line_398",
+        "topic": "missing data\u5c31\u8df3\u904e",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_400",
+        "parentid": "line_397",
+        "topic": "\u6bcf\u500b\u4eba\u90fd\u53ef\u4ee5\u7b97\u51fa\u4e00\u500b2 dims vector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_401",
+        "parentid": "line_397",
+        "topic": "\u6bcf\u4e00\u500b\u89d2\u8272\u4e5f\u6703\u6709\u4e00\u500bvector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_402",
+        "parentid": "line_394",
+        "topic": "latent vector\u627e\u51fa\u4f86\u5728\u5206\u6790\u5b83\u7684\u7d50\u679c",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_403",
+        "parentid": "line_366",
+        "topic": "\u5e38\u7528\u65bc\u63a8\u85a6\u7cfb\u7d71",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_404",
+        "parentid": "line_366",
+        "topic": "more about matrix factorization",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_405",
+        "parentid": "line_404",
+        "topic": "considering the induvail characters",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_406",
+        "parentid": "line_405",
+        "topic": "r^a*r^1 \u2248 5",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_407",
+        "parentid": "line_406",
+        "topic": "r^a*r^1+ba+b1 \u2248 5",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_408",
+        "parentid": "line_407",
+        "topic": "ba: otakus A likes to buy figures",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_409",
+        "parentid": "line_407",
+        "topic": "b1: how popular character 1 is",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_410",
+        "parentid": "line_406",
+        "topic": "L = \u03a3_(i,j) (r^i*r^j - n_ij +b_i+b_j)^2",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_411",
+        "parentid": "line_406",
+        "topic": "graident descent\u786c\u89e3",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_412",
+        "parentid": "line_411",
+        "topic": "r^i,r^j,b_i,b_j",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_413",
+        "parentid": "line_411",
+        "topic": "\u4e5f\u53ef\u4ee5\u52a0regularization",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_414",
+        "parentid": "line_366",
+        "topic": "ref:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_415",
+        "parentid": "line_414",
+        "topic": "matrix factorization techniques for recommender systems",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_416",
+        "parentid": "line_414",
+        "topic": "https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_417",
+        "parentid": "line_366",
+        "topic": "matrix factorization for topic analysis",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_418",
+        "parentid": "line_417",
+        "topic": "Latent semantic analysis(LSA)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_419",
+        "parentid": "line_417",
+        "topic": "word\u51fa\u4e00\u500bterm frequency",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_420",
+        "parentid": "line_419",
+        "topic": "\u4e26\u4e14\u53ef\u4ee5\u8a2d\u5b9a\u4e00\u500bweight\u4ee3\u8868\u91cd\u8981\u6027",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_421",
+        "parentid": "line_419",
+        "topic": "term reconstrcture error\u6bd4\u8f03\u5927",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_422",
+        "parentid": "line_419",
+        "topic": "evalute\u4e00\u500bterm\u91cd\u4e0d\u91cd\u8981?",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_423",
+        "parentid": "line_422",
+        "topic": "\u5e38\u7528weight by inverse document frequency",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_424",
+        "parentid": "line_422",
+        "topic": "\u5e38\u898b\u8a5e\u532fweight\u5c31\u6703\u5f88\u5c0f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_425",
+        "parentid": "line_422",
+        "topic": "\u5c11\u898b\u8a5e\u532f\u4e14\u91cd\u8981weight\u5c31\u6703\u5927",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_426",
+        "parentid": "line_417",
+        "topic": "latent factors are topics",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_427",
+        "parentid": "line_426",
+        "topic": "\u8ca1\u7d93",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_428",
+        "parentid": "line_426",
+        "topic": "\u653f\u6cbb",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_429",
+        "parentid": "line_426",
+        "topic": "...",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_430",
+        "parentid": "line_417",
+        "topic": "Probability latent semantic analysis(PLSA)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_431",
+        "parentid": "line_417",
+        "topic": "latent Dirichlet allocation(LDA)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_432",
+        "parentid": "root",
+        "topic": "More related approches not introduced",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_433",
+        "parentid": "line_432",
+        "topic": "Mutlidimensional Scaling(MDS)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_434",
+        "parentid": "line_432",
+        "topic": "Probability PCA",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_435",
+        "parentid": "line_432",
+        "topic": "Kernel PCA",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_436",
+        "parentid": "line_432",
+        "topic": "Canonical Correlation Analysis(CCA)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_437",
+        "parentid": "line_432",
+        "topic": "Independent Component Analysis(ICA)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_438",
+        "parentid": "line_432",
+        "topic": "Linear Discriminant Analysis(LDA)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_439",
+        "parentid": "line_438",
+        "topic": "supervised",
+        "background-color": "#0fbdff",
+        "expanded": false
+    }
+]

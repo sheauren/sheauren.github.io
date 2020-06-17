@@ -1,0 +1,1865 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "18 Unsupervised Learning - Deep Generative Model (Part II)"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Why VAE?",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "Intuitive Reason",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "AE",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "input:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "\u6eff\u6708",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "code(\u6eff\u6708)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": "output:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "\u6eff\u6708",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_3",
+        "topic": "input:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "\u5f26\u6708",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "code(\u5f26\u6708)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "output:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "\u5f26\u6708",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_3",
+        "topic": "code(\u5f26\u6708\u8ddf\u6eff\u6708\u4e2d\u9593)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "output:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "\u5f26\u6708\u8ddf\u6eff\u6708\u4e2d\u9593?",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_15",
+        "topic": "\u672a\u77e5\u7684\u7d50\u679c",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "\u53ef\u80fd\u662f\u53e6\u4e00\u500b\u6771\u897f",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_15",
+        "topic": "non-linear NN\u5f88\u96e3\u9810\u6e2c",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_2",
+        "topic": "VAE",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "input:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "\u6eff\u6708+noise",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "code(\u6eff\u6708)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_22",
+        "topic": "\u5340\u9593\u7bc4\u570d\u8b8a\u5927\u90fd\u7b97\u6eff\u6708",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "output:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "\u6eff\u6708",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_20",
+        "topic": "input:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "\u5f26\u6708+noise",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "code(\u5f26\u6708)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_28",
+        "topic": "\u5340\u9593\u7bc4\u570d\u8b8a\u5927\u90fd\u7b97\u5f26\u6708",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "output:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "\u5f26\u6708",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_20",
+        "topic": "code(\u5f26\u6708\u8ddf\u6eff\u6708\u4e2d\u9593)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "output:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "\u5f26\u6708\u8ddf\u6eff\u6708\u91cd\u758a\u7684\u8cc7\u6599",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_34",
+        "topic": "VAE training",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "minimize mean square error",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_34",
+        "topic": "\u7522\u751f\u4ecb\u65bc\u6eff\u6708\u8ddf\u5f26\u6708\u7684\u5716",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_20",
+        "topic": "VAE\u516c\u5f0f\u89e3\u91cb",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "input -> NN Encoder ->",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "\u5169\u500bvector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_41",
+        "topic": "[m1,m2,m3]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "\u539f\u672c\u7684code",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_41",
+        "topic": "[\u03c31,\u03c32,\u03c33]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "the variance of noise is automatically learned",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_44",
+        "topic": "\u4f60\u7684noise\u8a72\u8981\u6709\u591a\u5927",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_40",
+        "topic": "noise",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "From a normal distribution [e1,e2,e3]",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_40",
+        "topic": "[c1,c2,c3]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "\u4ee3\u8868code+noise",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "c = exp(\u03c3)*e + m",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_40",
+        "topic": "NN Decoder",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "\u5c07c1,c2,c3 reconstruct\u56de\u539f\u672c\u7684\u5716",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_40",
+        "topic": "Output",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "\u539f\u672cimage",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_40",
+        "topic": "minimum",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_56",
+        "topic": "reconstruction error",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_57",
+        "topic": "\u53ea\u6709\u9019\u500b\u662f\u4e0d\u5920\u7684",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_57",
+        "topic": "\u56e0\u70bavariance\u662f\u81ea\u5df1\u5b78\u7684",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_59",
+        "topic": "machine\u7d66\u4ed60\u5c31\u6700\u597d",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_59",
+        "topic": "\u9700\u8981\u5f37\u8febvariance\u4e0d\u80fd\u592a\u5c0f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_61",
+        "topic": "\u9650\u5236variance",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "\u03a3_i=1^3 ( exp(\u03c3i) - (1+\u03c3i) + (mi)^2 )",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "we want \u03c3i close to 0",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "variance close to 1",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_63",
+        "topic": "(mi)^2",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "L2 norm",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_1",
+        "topic": "back to what we want to do?",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "\u6bcf\u5f35\u5bf6\u53ef\u5922\u7684\u5716\u90fd\u662f\u9ad8\u7dad\u7a7a\u9593\u7684\u4e00\u500b\u9ede",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_69",
+        "topic": "estimate the probability distribution",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_70",
+        "topic": "P(x)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "x is a vector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_70",
+        "topic": "Gaussain Mixture Model",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_73",
+        "topic": "P(x) = \u03a3_m P(m)*P(x|m)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_74",
+        "topic": "how to sample data?",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_75",
+        "topic": "m~P(m) (multinomial)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_76",
+        "topic": "multinomial distribution",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_77",
+        "topic": "\u6c7a\u5b9asample\u54ea\u500bGaussian",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_76",
+        "topic": "m is an integer",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_76",
+        "topic": "x|m~N(\u03bc^m,\u03a3^m)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_80",
+        "topic": "\u6bcf\u500bgaussian\u6709",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_81",
+        "topic": "\u81ea\u5df1\u7684 mean",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_82",
+        "topic": "\u03bc^m",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_81",
+        "topic": "\u81ea\u5df1\u7684 variance",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_84",
+        "topic": "\u03a3^m",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_81",
+        "topic": "sample x",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_74",
+        "topic": "each x you generate is from a mixture",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_87",
+        "topic": "distributed representation is better than cluster",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_73",
+        "topic": "z~N(0,I)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_89",
+        "topic": "z is a vector from normal distribution",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "each dimension of z represents an attribute",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_91",
+        "topic": "\u6839\u64daz\u6c7a\u5b9amean\u8ddfvariance",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_92",
+        "topic": "x|z~N(\u03bc(z),\u03c3(z))",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_93",
+        "topic": "\u5047\u8a2d\u03bc,\u03c3\u90fd\u4f86\u81ea\u4e00\u500bfunction",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_93",
+        "topic": "gaussain\u5c0d\u61c9\u4f4d\u7f6e\u7531function\u6c7a\u5b9a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_93",
+        "topic": "\u5f9enormal distribution\u7522\u751f\u7121\u7aae\u591a\u500bgaussain",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_93",
+        "topic": "\u9019\u500bfunction\u600e\u9ebc\u627e",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_97",
+        "topic": "NN",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_98",
+        "topic": "input",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_99",
+        "topic": "Z",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_98",
+        "topic": "output",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_101",
+        "topic": "mean",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_101",
+        "topic": "variance",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_73",
+        "topic": "P(x) = \u222b_z P(z)P(x|z)dz",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_104",
+        "topic": "P(z)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_105",
+        "topic": "is normal distribution",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_104",
+        "topic": "x|z~N(\u03bc(z),\u03c3(z))",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_107",
+        "topic": "\u03bc(z),\u03c3(z)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_108",
+        "topic": "is going to be estimated",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_108",
+        "topic": "L = \u03a3_x^z log P(x)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_110",
+        "topic": "maximizing the likelihood of th observed x",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_110",
+        "topic": "\u8abf\u6574NN\u88e1\u9762\u53c3\u6578\u5f62\u6210maximum",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_107",
+        "topic": "decoder",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_104",
+        "topic": "we need another distribution q(z|x)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_114",
+        "topic": "x-> NN'",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_115",
+        "topic": "\u03bc'(x)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_115",
+        "topic": "\u03c3'(x)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_114",
+        "topic": "z|x~N(\u03bc'(x),\u03c3'(x))",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_114",
+        "topic": "encoder",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_104",
+        "topic": "every though z is from N(0,I),P(x) can be very complex",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_120",
+        "topic": "\u70ba\u4ec0\u9ebcsample\u662f\u5f9egaussain",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_121",
+        "topic": "sample\u66f2\u7dda\u4e5f\u53ef\u4ee5\u662f\u6735\u82b1",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_122",
+        "topic": "\u81ea\u5df1\u8a2d\u8a08",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_121",
+        "topic": "gaussain\u662f\u5206\u5e03\u6bd4\u8f03\u5408\u7406\u7684\u8a2d\u8a08",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_121",
+        "topic": "\u4e0d\u7528\u64d4\u5fc3sample\u66f2\u7dda\u7684\u8a2d\u8a08",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_125",
+        "topic": "NN\u975e\u5e38powerful\u53ef\u4ee5present\u4efb\u4f55function",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_104",
+        "topic": "\u770b\u516c\u5f0f",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_127",
+        "topic": "P(x) = \u222b_z P(z)P(x|z)dz",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_128",
+        "topic": "L = \u03a3_x^z log P(x)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_129",
+        "topic": "log P(x) = \u222b_z q(z|x)log P(x)dz",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_130",
+        "topic": "q(z|x) can be any distribution",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_130",
+        "topic": "log P(x) = \u222b_z q(z|x)log P(z,x)/P(z|x) * dz",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_132",
+        "topic": "log P(x) = \u222b_z q(z|x)log P(z,x)q(z,x)/q(z,x)P(z|x) * dz",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_133",
+        "topic": "log P(x) = \u222b_z q(z|x)log P(z,x)/q(z,x) * dz + \u222b_z q(z|x)log q(z,x)/P(z|x) * dz",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_134",
+        "topic": "\u222b_z q(z|x)log P(z,x)/q(z,x) * dz",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_135",
+        "topic": "lower bound:Lb",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_136",
+        "topic": ">= \u222b_z q(z|x)log P(x,z)P(z)/q(z,x) * dz",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_134",
+        "topic": "\u222b_z q(z|x)log q(z,x)/P(z|x) * dz",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_139",
+        "topic": "KL(q(z|x)||P(z|x))",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_139",
+        "topic": "KL divergence",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_141",
+        "topic": "\u5169\u500bdistribution\u76f8\u8fd1\u7a0b\u5ea6",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_141",
+        "topic": "\u76f8\u540c=0",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_141",
+        "topic": "\u503c>=0",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_127",
+        "topic": "\u539f\u672c\u662f\u627eP(x|z)\u8b93likelihood\u8d8a\u5927\u8d8a\u597d",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_145",
+        "topic": "\u73fe\u5728\u8b8a\u6210\u627eP(x|z)\u548cq(z|x)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_146",
+        "topic": "\u8b93Lb\u8d8a\u5927\u8d8a\u597d",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_145",
+        "topic": "\u53ea\u627eP(x|z)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_148",
+        "topic": "P(x|z\u8d8a\u9ad8) \u4f46likelihood\u4e0d\u4e00\u5b9a\u4e5f\u8d8a\u9ad8",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_148",
+        "topic": "\u52a0\u5165q(z|x)",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_150",
+        "topic": "\u89e3\u6c7a\u9019\u500b\u554f\u984c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_151",
+        "topic": "likelihood logP(x) = KL + Lb",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_151",
+        "topic": "\u8abf\u6574Lb\u53ef\u80fd\u8b93KL\u8d8a\u4f86\u8d8a\u5c0f",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_153",
+        "topic": "\u5230\u6700\u5f8cLb\u8ddflikelihood\u4e00\u6a21\u4e00\u6a23",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_154",
+        "topic": "\u9019\u6642\u5019Lb\u5728\u4e0a\u5347\u4e4b\u5f8c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_155",
+        "topic": "\u56e0\u70balikelihood\u4e00\u5b9a\u8981\u6bd4lower bound\u5927",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_156",
+        "topic": "\u6240\u4ee5\u4e5f\u6703\u8ddf\u8457\u4e0a\u5347",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_150",
+        "topic": "q(z|x) will approximation of P(z|x) in the end",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_158",
+        "topic": "KL divergence\u8d8a\u4f86\u8d8a\u5c0f",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_159",
+        "topic": "q(z|x)\u8d8a\u4f86\u8d8a\u63a5\u8fd1P(z|x)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_127",
+        "topic": "Lb =  \u222b_z q(z|x)log P(x,z)P(z)/q(z,x) * dz",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_161",
+        "topic": "= \u222b_z q(z|x)log P(z)/q(z,x) * dz + \u222b_z q(z|x)log P(x,z) * dz",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_162",
+        "topic": "\u222b_z q(z|x)log P(z)/q(z,x) * dz",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_163",
+        "topic": "-KL(q(z|x)||P(z))",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_164",
+        "topic": "x-> NN'",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_165",
+        "topic": "-> \u03bc'(x)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_165",
+        "topic": "-> \u03c3'(x)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_164",
+        "topic": "Minimizing",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_168",
+        "topic": "KL(q(z|x)||P(z))",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_169",
+        "topic": "\u8abf\u6574NN'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_169",
+        "topic": "\u03a3_i=1^3 ( exp(\u03c3i) - (1+\u03c3i) + (mi)^2 )",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_171",
+        "topic": "Minimizing KL\u9019\u500b\u5f0f\u5b50",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_172",
+        "topic": "\u8b93q(z|x)||P(z)\u8d8a\u63a5\u8fd1normal distribution",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_164",
+        "topic": "Maximizing",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_174",
+        "topic": "\u222b_z q(z|x)log P(x,z) * dz = Eq(z|x)[logP(x|z)]",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_175",
+        "topic": "\u7d66x\u53bbq(z|x) sample data",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_176",
+        "topic": "\u8b93logP(x|z)\u6a5f\u7387\u8d8a\u5927\u8d8a\u597d",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_176",
+        "topic": "x->NN'->",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_178",
+        "topic": "\u03bc'(x) & \u03c3'(x)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_179",
+        "topic": "-> sample z",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_180",
+        "topic": "maximizing z\u7522\u751f P(x|z)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_180",
+        "topic": "z->NN->",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_182",
+        "topic": "\u03bc(x) & \u03c3(x)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_183",
+        "topic": "\u5be6\u505a\u4e0d\u8003\u616evariance",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_184",
+        "topic": "\u03c3",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_183",
+        "topic": "\u03bc(x) close input x",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_183",
+        "topic": "this is auto-encoder",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_183",
+        "topic": "\u9019\u4e5f\u662floss function",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "root",
+        "topic": "Conditional VAE",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_189",
+        "topic": "\u4f60\u8b93VAE\u7522\u751f\u624b\u5beb\u6578\u5b57",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_191",
+        "parentid": "line_190",
+        "topic": "\u770b\u4e00\u500b\u7d66\u4ed6\u4e00\u500bdigits",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_191",
+        "topic": "\u4ed6\u628adigits\u7279\u6027\u62bd\u51fa\u4f86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_192",
+        "topic": "\u7b46\u756b\u7c97\u7d30",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "line_190",
+        "topic": "\u4e1f\u5230encoder\u6642",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_194",
+        "topic": "\u7d66\u4ed6\u6709\u95dc\u6578\u5b57\u7279\u6027\u7684distribution",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_194",
+        "topic": "\u544a\u8a34decoder\u8aaa\u4ed6\u662f\u4ec0\u9ebc\u6578\u5b57",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_197",
+        "parentid": "line_194",
+        "topic": "\u5c31\u53ef\u4ee5generate\u4e00\u5927\u6392\u5f88\u76f8\u8fd1\u7684\u6578\u5b57",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_198",
+        "parentid": "line_197",
+        "topic": "\u756b\u51fastyle\u76f8\u8fd1\u7684\u6578\u5b57",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_199",
+        "parentid": "root",
+        "topic": "problems of VAE",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_200",
+        "parentid": "line_199",
+        "topic": "it does not really try to simulate real images",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_201",
+        "parentid": "line_199",
+        "topic": "\u53ea\u662f\u53bb\u5b78\u7522\u751f\u8ddfdatabase\u88e1\u9762\u67d0\u5f35image\u8d8a\u63a5\u8fd1\u8d8a\u597d",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_202",
+        "parentid": "line_201",
+        "topic": "evaluate\u662f\u7528mean square error",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_203",
+        "parentid": "line_202",
+        "topic": "\u627e\u76f8\u4f3c\u5ea6",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_204",
+        "parentid": "line_202",
+        "topic": "\u53ea\u5dee\u4e00\u500bpixel\u4e0d\u8ad6\u4f4d\u7f6e\u90fd\u662f\u4e00\u6a23\u597d\u7684",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_205",
+        "parentid": "line_204",
+        "topic": "\u4f46\u662f\u4f4d\u7f6e\u53ef\u80fd\u5f71\u97ff\u5230\u7406\u89e3",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_206",
+        "parentid": "line_202",
+        "topic": "\u53ea\u662f\u600e\u9ebc\u7522\u751f\u8ddfdb\u4e00\u6a23\u7684\u5716",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_207",
+        "parentid": "line_202",
+        "topic": "\u6c92\u6709\u60f3\u904e\u8981\u4ee5\u5047\u4e82\u771f\u7684\u7522\u751f\u5716\u7247",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_208",
+        "parentid": "line_207",
+        "topic": "\u53ea\u662flinear combination image",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_209",
+        "parentid": "root",
+        "topic": "Generative Adversarial Network(GAN)",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_210",
+        "parentid": "line_209",
+        "topic": "Yann LeCun's comment",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_211",
+        "parentid": "line_210",
+        "topic": "adversarial training is the collest thing since sliced bread",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_212",
+        "parentid": "line_211",
+        "topic": "\u6709\u53f2\u4ee5\u4f86\u6700\u9177\u7684\u65b9\u6cd5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_213",
+        "parentid": "line_209",
+        "topic": "GAN\u975e\u5e38\u96e3train",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_214",
+        "parentid": "line_209",
+        "topic": "\u64ec\u614b\u7684\u6f14\u5316",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_215",
+        "parentid": "line_214",
+        "topic": "NN Generator v1",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_216",
+        "parentid": "line_215",
+        "topic": "NN Generator V2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_217",
+        "parentid": "line_216",
+        "topic": "...",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_218",
+        "parentid": "line_215",
+        "topic": "\u5f9e\u4f86\u6c92\u770b\u904ereal image",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_219",
+        "parentid": "line_215",
+        "topic": "decoder in VAE",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_220",
+        "parentid": "line_219",
+        "topic": "vectors from a distribution",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_221",
+        "parentid": "line_220",
+        "topic": "NN Generator V1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_222",
+        "parentid": "line_221",
+        "topic": "decoder in VAE",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_223",
+        "parentid": "line_215",
+        "topic": "randomly sample a vector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_224",
+        "parentid": "line_223",
+        "topic": "NN generator v1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_225",
+        "parentid": "line_224",
+        "topic": "image",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_226",
+        "parentid": "line_225",
+        "topic": "Discriminator",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_227",
+        "parentid": "line_226",
+        "topic": "0.87",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_228",
+        "parentid": "line_227",
+        "topic": "tuning the parameters of generator",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_229",
+        "parentid": "line_228",
+        "topic": "the output be classified as 'real'",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_230",
+        "parentid": "line_215",
+        "topic": "Generator + Discriminator = a network",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_231",
+        "parentid": "line_230",
+        "topic": "fix the discriminator",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_232",
+        "parentid": "line_231",
+        "topic": "update generator",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_233",
+        "parentid": "line_214",
+        "topic": "Discriminator v1",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_234",
+        "parentid": "line_233",
+        "topic": "real images",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_235",
+        "parentid": "line_233",
+        "topic": "generator images",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_236",
+        "parentid": "line_233",
+        "topic": "Discriminator v2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_237",
+        "parentid": "line_236",
+        "topic": "...",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_238",
+        "parentid": "line_233",
+        "topic": "input image",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_239",
+        "parentid": "line_238",
+        "topic": "output",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_240",
+        "parentid": "line_239",
+        "topic": "1/0(real or fake)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_241",
+        "parentid": "line_214",
+        "topic": "\u4e92\u76f8\u9032\u6b65",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_242",
+        "parentid": "line_209",
+        "topic": "GAN - toy example",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_243",
+        "parentid": "line_242",
+        "topic": "z -> NN generator -> x",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_244",
+        "parentid": "line_243",
+        "topic": "z sample form uniform distribution",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_245",
+        "parentid": "line_243",
+        "topic": "x \u5e0c\u671b\u8d8a\u50cfreal\u8cc7\u6599\u8d8a\u597d",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_246",
+        "parentid": "line_243",
+        "topic": "\u628areal\u8ddfx\u4e1f\u5230discriminator",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_247",
+        "parentid": "line_246",
+        "topic": "generator\u8ddfdiscriminator\u5f7c\u6b64\u5b78\u7fd2\u9a19\u904e\u8ddf\u907f\u514d\u88ab\u9a19",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_248",
+        "parentid": "line_242",
+        "topic": "gans\u5f88\u96e3train\u9700\u8981\u5c0f\u5fc3\u8abf\u53c3\u6578",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_249",
+        "parentid": "line_248",
+        "topic": "generator\u7522\u751f\u8ddfreal data\u4e00\u6a21\u4e00\u6a23\u7684\u6771\u897f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_250",
+        "parentid": "line_248",
+        "topic": "discriminator\u7121\u6cd5\u5206\u8fa8\u771f\u5047",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_251",
+        "parentid": "line_250",
+        "topic": "\u7121\u6cd5\u77e5\u9053discriminator\u662f\u4e0d\u662f\u5c0d\u7684",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_252",
+        "parentid": "line_242",
+        "topic": "\u96e3train",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_253",
+        "parentid": "line_252",
+        "topic": "discriminator\u5f97\u5230\u5f88\u597d\u7684\u7d50\u679c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_254",
+        "parentid": "line_253",
+        "topic": "\u53ef\u80fd\u662fgenerator\u592a\u5ee2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_255",
+        "parentid": "line_252",
+        "topic": "discriminator\u5f97\u5230\u5f88\u5dee\u7684\u7d50\u679c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_256",
+        "parentid": "line_255",
+        "topic": "\u9019\u4e0d\u4ee3\u8868generator\u5f88\u597d",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_257",
+        "parentid": "line_255",
+        "topic": "\u53ef\u80fd\u662fdiscriminator\u592a\u5ee2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_258",
+        "parentid": "line_252",
+        "topic": "\u73fe\u5728\u90fd\u662f\u5728\u96fb\u8166\u524d\u9762\u770b\u4ed6generator\u7d50\u679c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_259",
+        "parentid": "line_258",
+        "topic": "\u4e0d\u597d\u5c31\u5728\u8abf\u53c3\u6578",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_260",
+        "parentid": "line_252",
+        "topic": "GANs are difficult to optimize",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_261",
+        "parentid": "line_252",
+        "topic": "No explicit signal about how good the generator is",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_262",
+        "parentid": "line_261",
+        "topic": "In standard NNs, we monitor loss",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_263",
+        "parentid": "line_261",
+        "topic": "In GANS, we have to keep 'well-matched in a contest'",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_264",
+        "parentid": "line_263",
+        "topic": "\u8981\u52e2\u5747\u529b\u6575\u72c0\u614b",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_265",
+        "parentid": "line_252",
+        "topic": "When discriminator fails, it does not guarantee that generator generates realistic images.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_266",
+        "parentid": "line_265",
+        "topic": "just because discriminator is stupid",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_267",
+        "parentid": "line_265",
+        "topic": "sometimes generator find a specific example that can fail the discriminator",
+        "background-color": "#d41dea",
+        "expanded": false
+    }
+]

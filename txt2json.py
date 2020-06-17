@@ -12,10 +12,16 @@ else:
 #else:
 #    input_file='./mindmap/nodejs.txt'
 
-colors = ['#fff','#e3aba7','#e82ad2','#0fbdff','#e3aba7','#d41dea','#01a6d5','#97d9c7','#eb6a68','#412ffc','#fff','#e3aba7','#e82ad2','#0fbdff','#e3aba7','#d41dea','#01a6d5','#97d9c7','#eb6a68','#412ffc']
+colors = ['#fff','#e3aba7','#e82ad2','#0fbdff','#e3aba7','#d41dea','#01a6d5','#97d9c7','#eb6a68','#412ffc']
+new_colors=[]
+for _ in range(10):
+    new_colors+=colors
+colors=new_colors
 
+last_id=''
 def txt2json(file):    
-    print('txt2json:%s'%file)
+    global last_id
+    #print('txt2json:%s'%file)
     with codecs.open(file,'r','utf-8') as f:
         lines = f.readlines()
         #sqrt_lines = math.sqrt(len(lines))        
@@ -38,7 +44,8 @@ def txt2json(file):
                 json_list.append({"id":"root","isroot":True,"topic":line.strip()})
             else:
                 id = "line_%d"%index
-                last_tab_parent[offset]=id
+                last_id = '%s\n%s\n%s\n%d\n'%(id,line.strip(),last_tab_parent,offset)
+                last_tab_parent[offset]=id                
                 if offset >expand_limit:                    
                     json_list.append({"id":id,"parentid":last_tab_parent[offset-1],"topic":line.strip(),"background-color":color,"expanded":False})
                 else:
@@ -55,7 +62,7 @@ if os.path.isdir(input_file):
                 try:
                     txt2json(os.path.join(root,file))
                 except Exception as ex:
-                    print(ex)
+                    print(file,'last_id',last_id,ex)
 elif os.path.isfile(input_file):
     txt2json(input_file)
 else:
