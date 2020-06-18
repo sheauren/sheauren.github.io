@@ -1133,5 +1133,1393 @@
         "topic": "\u6216\u8005graident descent",
         "background-color": "#97d9c7",
         "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "root",
+        "topic": "Kernel Method",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_164",
+        "topic": "Dual Representation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_165",
+        "topic": "minimum\u627e\u51fa\u4f86\u7684weight",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_166",
+        "topic": "w^* = \u03a3_n a^*_n x^n",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_167",
+        "topic": "data point\u7684linear combination",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_167",
+        "topic": "lagrange multipler\u89e3\u5f0f\u5b50\u8aaa\u670d\u771f\u7684\u662flinear combination",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_166",
+        "topic": "\u53e6\u4e00\u7a2e\u8aaa\u6cd5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_170",
+        "topic": "wi <- wi - \u03b7 \u03a3_n c^n(w)x^n_i",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_171",
+        "topic": "k\u7684\u7dad\u5ea6\u8cc7\u6599",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_171",
+        "topic": "\u5f62\u6210\u77e9\u9663",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_173",
+        "topic": "w <- w - \u03b7 \u03a3_n c^n(w)x^n",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_173",
+        "topic": "\u5047\u8a2dinitialized w\u662fzero vector",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_175",
+        "topic": "\u90fd\u662f\u52a0\u4e0a linear points\u7684data combination",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_176",
+        "topic": "\u5f97\u5230\u7684\u7d50\u679c\u5c31\u662fw\u7684linear combination",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_177",
+        "topic": "c^n(w)",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_178",
+        "topic": "= \u2202l(f(x^n),y^^n) / \u2202f(x^n)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_178",
+        "topic": "hinge loss\u4f86\u770b0\u4f4d\u7f6e\u7684\u7d50\u679c\u662f0",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_180",
+        "topic": "\u4e0d\u662f\u6240\u6709\u7684x^n\u90fd\u6703\u88ab\u52a0\u5230w\u88e1\u9762\u53bb",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_181",
+        "topic": "\u6700\u5f8c\u89e3\u51fa\u7684w* linear combination weight\u53ef\u80fd\u6703\u662fsparse\u7684",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_182",
+        "topic": "\u5f88\u591adata point a*\u7684\u503c=0",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_183",
+        "topic": "\u4e0d\u662fsupport vector remove\u4e5f\u4e0d\u6703\u6709\u5f71\u97ff",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_183",
+        "topic": "\u5176\u4ed6logistic regression\u6bcf\u4e00\u500bdata\u90fd\u6709count",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_185",
+        "topic": "\u90fd\u6703\u9020\u6210\u5f71\u97ff",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_182",
+        "topic": "\u5176\u4ed6a*\u4e0d\u7b49\u65bc0\u7684x^n\u5c31\u662fsupport vector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_187",
+        "topic": "\u6240\u4ee5\u7a31\u4e4b\u70basupport vector machine",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_188",
+        "topic": "\u4e0d\u662f\u6bcf\u500b\u9ede\u90fd\u6703\u88ab\u9078\u4f5csuport Vector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_189",
+        "topic": "\u53ea\u6709\u5c11\u6578\u9ede\u6703\u88ab\u9078\u51fa\u4f86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_191",
+        "parentid": "line_190",
+        "topic": "SVM\u76f8\u8f03\u65bc\u5176\u4ed6\u65b9\u6cd5\u6bd4\u8f03\u53ef\u80fd\u6bd4\u8f03robust",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_191",
+        "topic": "\u5176\u4ed6activation function\u5c31\u4e0d\u6703\u67090\u7684\u60c5\u6cc1",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_192",
+        "topic": "\u89e3\u51fa\u4f86\u5c31\u4e0d\u6703\u662fsparse\u7684",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "line_165",
+        "topic": "w = \u03a3_n a_n x^n",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_194",
+        "topic": "linear combination\u597d\u8655\u53ef\u4ee5\u7528kernel trick",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_194",
+        "topic": "= X a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_197",
+        "parentid": "line_196",
+        "topic": "X = martrix [x1 x2...xn]",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_198",
+        "parentid": "line_196",
+        "topic": "a = [a1 a2 ...a_n]^T",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_199",
+        "parentid": "line_194",
+        "topic": "step1:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_200",
+        "parentid": "line_199",
+        "topic": "f(x) = w^T*x =>",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_201",
+        "parentid": "line_200",
+        "topic": "f(x) = a^T*X^T*x",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_202",
+        "parentid": "line_201",
+        "topic": "[a1 a2 .. a_n] * [x^1*x x^2*x ... x^n*x]^T",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_203",
+        "parentid": "line_200",
+        "topic": "f(x) = \u03a3_n a_n(x^n*x)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_204",
+        "parentid": "line_203",
+        "topic": "hinge loss \u662fsparse",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_205",
+        "parentid": "line_204",
+        "topic": "\u53ea\u8003\u616e\u975e0\u7684vector\u5c31\u9084\u597d",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_206",
+        "parentid": "line_203",
+        "topic": "=  \u03a3_n a_n*K(x^n,x)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_207",
+        "parentid": "line_206",
+        "topic": "K(x^n,x) = x^n*x",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_208",
+        "parentid": "line_207",
+        "topic": "K = kernel function",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_209",
+        "parentid": "line_194",
+        "topic": "step2,3:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_210",
+        "parentid": "line_209",
+        "topic": "inner product\u7684K\u5167\u5bb9\u5df2\u7d93\u77e5\u9053",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_211",
+        "parentid": "line_210",
+        "topic": "\u4e0d\u77e5\u9053\u7684\u6771\u897f\u5269\u4e0ba^n",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_212",
+        "parentid": "line_209",
+        "topic": "find{a^*_1 a^*_2 a^*_3...a^*_N}",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_213",
+        "parentid": "line_212",
+        "topic": "\u6700\u597d\u7684a\u8b93total lose\u6700\u597d",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_214",
+        "parentid": "line_209",
+        "topic": "L(f) = \u03a3_n l(f(x^n),y^^n)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_215",
+        "parentid": "line_214",
+        "topic": "= \u03a3_n (\u03a3_n' a_n' K(x^n',x^n),y^^n)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_216",
+        "parentid": "line_214",
+        "topic": "we don't really need to know vector x",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_217",
+        "parentid": "line_214",
+        "topic": "we only need to know the inner project between a pair of vectors x and z",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_218",
+        "parentid": "line_217",
+        "topic": "K(x,z)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_219",
+        "parentid": "line_217",
+        "topic": "kernel tricks",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_220",
+        "parentid": "root",
+        "topic": "Kernel Trick",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_221",
+        "parentid": "line_220",
+        "topic": "kernel trick is useful when we transform all x to \u03c6(x)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_222",
+        "parentid": "line_221",
+        "topic": "x = [x1 x2]^T",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_223",
+        "parentid": "line_222",
+        "topic": "\u5148\u505afeature transofrom",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_224",
+        "parentid": "line_222",
+        "topic": "\u4e4b\u5f8capply linear SVM Model",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_225",
+        "parentid": "line_221",
+        "topic": "feature transform\u7d50\u679c\u5047\u8a2d\u662f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_226",
+        "parentid": "line_225",
+        "topic": "\u03c6(x) = [ x_1^2 \u221a(2)*x^1*x^2 x^2_2]^T",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_227",
+        "parentid": "line_226",
+        "topic": "feature\u8ddffeature\u4e4b\u9593\u7684\u95dc\u4fc2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_228",
+        "parentid": "line_221",
+        "topic": "k(x,z) =  \u03c6(x) * \u03c6(z)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_229",
+        "parentid": "line_228",
+        "topic": "= [ x_1^2 \u221a(2)*x^1*x^2 x^2_2]^T",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_230",
+        "parentid": "line_228",
+        "topic": "* [ z_1^2 \u221a(2)*z^1*z^2 z^2_2]^T",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_231",
+        "parentid": "line_230",
+        "topic": "= x_1^2*z_1^2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_232",
+        "parentid": "line_230",
+        "topic": "+ 2*x^1*x^2*z^1*z^2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_233",
+        "parentid": "line_230",
+        "topic": "+ x^2_2*z^2_2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_234",
+        "parentid": "line_233",
+        "topic": "= (x_1z_1+x_2z_2)^2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_235",
+        "parentid": "line_233",
+        "topic": "= ( [x_1 x_2]^T [z_1 z_2]^T )^2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_236",
+        "parentid": "line_233",
+        "topic": "= (x*z)^2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_237",
+        "parentid": "line_233",
+        "topic": "\u7d50\u679ckernal function\u53ef\u4ee5\u8b8a\u6210\u76f4\u63a5inner product\u958b\u5e73\u65b9\u5c31\u597d",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_238",
+        "parentid": "line_237",
+        "topic": "\u9019\u62db\u597d\u8655\u5c31\u662f\u76f4\u63a5\u8a08\u7b97\u7d50\u679c",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_239",
+        "parentid": "line_237",
+        "topic": "directly computing K(x,z) can be faster than \"feature transformation + inner product\" sometimes...",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_240",
+        "parentid": "line_220",
+        "topic": "high dimension example",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_241",
+        "parentid": "line_240",
+        "topic": "x = [x1 ... xk]^T",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_242",
+        "parentid": "line_240",
+        "topic": "z = [z1 ... zk]^T",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_243",
+        "parentid": "line_240",
+        "topic": "\u03c6(x) = [ x_1^2 .. x_k^2 \u221a(2)*x^1*x^2 \u221a(2)*x^1*x^3 ...]^T",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_244",
+        "parentid": "line_243",
+        "topic": "\u8003\u616e\u6240\u6709feature\u5169\u5169\u4e4b\u9593\u7684\u95dc\u4fc2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_245",
+        "parentid": "line_243",
+        "topic": "kernel tricks",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_246",
+        "parentid": "line_245",
+        "topic": "k(x,z) =  \u03c6(x) * \u03c6(z)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_247",
+        "parentid": "line_246",
+        "topic": "= (x*z)^2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_248",
+        "parentid": "line_246",
+        "topic": "\u5982\u679c\u5148transformer\u6210\u66f4\u9ad8\u7dad\u5ea6\u5728inner product\u904b\u7b97\u5927\u5f88\u591a",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_249",
+        "parentid": "line_246",
+        "topic": "= (x1z1+x2z2+...+xkzk)^2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_250",
+        "parentid": "line_246",
+        "topic": "= \u03c6(x) * \u03c6(z)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_251",
+        "parentid": "line_220",
+        "topic": "radial basis function kernel (RBF kernel)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_252",
+        "parentid": "line_251",
+        "topic": "x = [x1 ... xk]^T",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_253",
+        "parentid": "line_251",
+        "topic": "z = [z1 ... zk]^T",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_254",
+        "parentid": "line_251",
+        "topic": "K(x,z) = exp(-1/2 ||x-z||_2)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_255",
+        "parentid": "line_254",
+        "topic": "\u8d8a\u50cfkernel\u503c\u5c31\u8d8a\u5927",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_256",
+        "parentid": "line_254",
+        "topic": "x=z",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_257",
+        "parentid": "line_256",
+        "topic": "K(x,z)=1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_258",
+        "parentid": "line_254",
+        "topic": "k\u2260z",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_259",
+        "parentid": "line_258",
+        "topic": "K(x,z)=0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_260",
+        "parentid": "line_254",
+        "topic": "exp(-1/2 ||x-z||_2) = \u03c6(x) * \u03c6(z)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_261",
+        "parentid": "line_260",
+        "topic": "\u03c6(*)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_262",
+        "parentid": "line_261",
+        "topic": "inifinite dim!!",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_263",
+        "parentid": "line_260",
+        "topic": "= exp(-1/2 ||x||_2 - 1/2 ||z||_2 + x*z)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_264",
+        "parentid": "line_260",
+        "topic": "= exp(-1/2 ||x||_2)exp(- 1/2 ||z||_2)exp(x*z)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_265",
+        "parentid": "line_260",
+        "topic": "= C_x C_z exp(x*z)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_266",
+        "parentid": "line_260",
+        "topic": "= C_x C_z \u03a3_i=0^\u221e (x*z)^i/i!",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_267",
+        "parentid": "line_260",
+        "topic": "= C_x C_z + C_x C_z(x*z) + C_x C_z1/2(x*z)^2 + ...",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_268",
+        "parentid": "line_267",
+        "topic": "C_x C_z = [Cx]*[Cz]",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_269",
+        "parentid": "line_267",
+        "topic": "C_x C_z(x*z) = [C_x*x_1 C_x*x_2 ...]^T",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_270",
+        "parentid": "line_269",
+        "topic": "* [C_z*z_1 C_z*z_2 ...]^T",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_271",
+        "parentid": "line_267",
+        "topic": "C_x C_z1/2(x*z)^2 =",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_272",
+        "parentid": "line_271",
+        "topic": "1/\u221a2 [C_x*x_1^2 \u221a2C_x*x_1*x_2 ...]^T",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_273",
+        "parentid": "line_271",
+        "topic": "* 1/\u221a2 [C_z*z_1^2 \u221a2C_z*z_1*z_2 ...]^T",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_274",
+        "parentid": "line_260",
+        "topic": "x\u7684\u90fd\u4e32\u8d77\u4f86 , z\u7684\u4e5f\u90fd\u4e32\u8d77\u4f86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_275",
+        "parentid": "line_274",
+        "topic": "\u5404\u6709\u7121\u7aae\u9577\u7684vector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_276",
+        "parentid": "line_274",
+        "topic": "inner product",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_277",
+        "parentid": "line_274",
+        "topic": "\u7121\u7aae\u591a\u7dad\u5ea6\u5bb9\u6613overrfitting",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_278",
+        "parentid": "line_277",
+        "topic": "training\u5f88\u597d",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_279",
+        "parentid": "line_277",
+        "topic": "testing\u5f88\u7cdf",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_280",
+        "parentid": "line_220",
+        "topic": "sigmoid kernel",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_281",
+        "parentid": "line_280",
+        "topic": "K(x,z) = tanh(x*z)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_282",
+        "parentid": "line_281",
+        "topic": "\u7528taylor expansion\u5c55\u958b\u4f86\u770b\u770b\u5c31\u77e5\u9053\u662f\u54ea\u5169\u500bhigh dimension inner product\u7d50\u679c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_283",
+        "parentid": "line_280",
+        "topic": "f(x) = \u03a3_n a_n * K(x^n,x)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_284",
+        "parentid": "line_283",
+        "topic": "x\u505atesting",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_285",
+        "parentid": "line_284",
+        "topic": "\u8a08\u7b97x\u8ddf\u6240\u6709training data \u88e1\u9762x^n\u7684kernel function output * alpha_n",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_286",
+        "parentid": "line_284",
+        "topic": "sigmoid kernel\u6642",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_287",
+        "parentid": "line_286",
+        "topic": "f(x) = \u03a3_n a_n * tanh((x^n,x)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_288",
+        "parentid": "line_286",
+        "topic": "when using sigmoid function, we have 1 hidden layer network.",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_289",
+        "parentid": "line_288",
+        "topic": "input x \u6703\u8ddf\u6240\u6709x_n\u505ainner product (weight sum)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_290",
+        "parentid": "line_289",
+        "topic": "\u4e4b\u5f8c\u518d\u901a\u505ahyperbolic tangent (activation function)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_291",
+        "parentid": "line_289",
+        "topic": "\u5168\u90e8\u5728\u4e58\u4e0aalpha\u7136\u5f8c\u52a0\u5728\u4e00\u8d77",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_292",
+        "parentid": "line_291",
+        "topic": "\u6700\u5f8c\u5f97\u5230f(x)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_293",
+        "parentid": "line_288",
+        "topic": "\u5f88\u50cfNN",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_294",
+        "parentid": "line_293",
+        "topic": "neural \u6578\u76ee = support vector\u6578\u91cf",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_295",
+        "parentid": "line_220",
+        "topic": "directly design K(x,z) instead of cinsidering \u03c6(x),\u03c6(z)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_296",
+        "parentid": "line_295",
+        "topic": "\u6709\u4e00\u500bkernel function \u628ax,z\u5e36\u9032\u53bb\u5c31\u597d",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_297",
+        "parentid": "line_296",
+        "topic": "\u4e0d\u7528\u5728\u610fx,z\u7684vector\u9577\u4ec0\u9ebc\u6a23\u5b50",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_298",
+        "parentid": "line_297",
+        "topic": "\u53ea\u8981\u6709inner product\u5c31\u597d\u4e86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_299",
+        "parentid": "line_296",
+        "topic": "when x is structure object like sequence",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_300",
+        "parentid": "line_299",
+        "topic": "hard to design \u03c6(x)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_301",
+        "parentid": "line_299",
+        "topic": "\u5047\u8a2d\u6bcf\u500bsequence\u9577\u5ea6\u90fd\u4e0d\u4e00\u6a23",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_302",
+        "parentid": "line_301",
+        "topic": "\u4e0d\u5bb9\u6613\u628a\u4e0d\u540c\u9577\u5ea6\u7684sequence\u8f49vector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_303",
+        "parentid": "line_302",
+        "topic": "\u4e0d\u77e5\u9053x\u9577\u4ec0\u9ebc\u6a23\u5b50",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_304",
+        "parentid": "line_303",
+        "topic": "\u66f4\u4e0d\u80fd\u77e5\u9053\u03c6(x)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_305",
+        "parentid": "line_296",
+        "topic": "K(x,z) is something like similarity",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_306",
+        "parentid": "line_305",
+        "topic": "\u6295\u5f71\u5230\u9ad8\u7dad\u5ea6\u7684inner product",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_307",
+        "parentid": "line_306",
+        "topic": "\u5982\u679c\u80fd\u5b9a\u7fa9\u4e00\u500bfunction",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_308",
+        "parentid": "line_307",
+        "topic": "\u4ed6\u662fevaluate x,z similarity",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_309",
+        "parentid": "line_307",
+        "topic": "\u5c31\u7b97z,x\u6709sturcture object",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_310",
+        "parentid": "line_309",
+        "topic": "tree structure",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_311",
+        "parentid": "line_309",
+        "topic": "sequence structure",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_312",
+        "parentid": "line_309",
+        "topic": "\u53ea\u8981\u80fd\u7b97similarity",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_313",
+        "parentid": "line_312",
+        "topic": "\u5c31\u6709\u6a5f\u6703\u7576kernel\u4f86\u7528",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_314",
+        "parentid": "line_312",
+        "topic": "\u80cc\u5f8c\u6709feature \u53ef\u4ee5support\u4ed6\u55ce",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_315",
+        "parentid": "line_312",
+        "topic": "\u80e1\u4e82\u8a02\u7684function\u53ef\u4ee5\u62c6\u6210\u5169\u500bvector inner product\u7d50\u679c\u55ce",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_316",
+        "parentid": "line_315",
+        "topic": "\u4e0d\u662f\u6240\u6709function\u90fd\u53ef\u4ee5",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_317",
+        "parentid": "line_315",
+        "topic": "\u4f46\u6709Mercer's theory\u6703\u544a\u8a34\u4f60\u54ea\u4e9bfunction\u53ef\u4ee5",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_318",
+        "parentid": "line_317",
+        "topic": "\u6aa2\u67e5\u6709\u6c92\u6709\u5169\u500bvector\u505ainner product",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_319",
+        "parentid": "line_305",
+        "topic": "\u8a9e\u97f3\u4e0a\u8981\u505a\u5206\u985e\u5c0d\u8c61",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_320",
+        "parentid": "line_319",
+        "topic": "audio segement",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_321",
+        "parentid": "line_320",
+        "topic": "vector sequence",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_322",
+        "parentid": "line_321",
+        "topic": "\u9577\u5ea6\u4e0d\u56fa\u5b9a",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_323",
+        "parentid": "line_322",
+        "topic": "\u7121\u6cd5\u7528vector\u63cf\u8ff0",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_324",
+        "parentid": "line_322",
+        "topic": "\u76f4\u63a5\u5b9a\u7fa9kernel",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_325",
+        "parentid": "line_324",
+        "topic": "function k(x,z)",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_326",
+        "parentid": "line_325",
+        "topic": "x\u662f\u8072\u97f3\u8a0a\u865f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_327",
+        "parentid": "line_325",
+        "topic": "z\u662f\u53e6\u4e00\u6bb5\u8072\u97f3\u8a0a\u865f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_328",
+        "parentid": "line_327",
+        "topic": "evaluate the similarity between sequence x,z",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_329",
+        "parentid": "line_319",
+        "topic": "\u5206\u985e\u8072\u97f3\u60c5\u7dd2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_330",
+        "parentid": "line_329",
+        "topic": "\u9ad8\u8208",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_331",
+        "parentid": "line_329",
+        "topic": "\u751f\u6c23",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_332",
+        "parentid": "line_319",
+        "topic": "\u600e\u9ebc\u5b9a\u7fa9\u5169\u500bvector\u4e4b\u9593\u7684kernel",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_333",
+        "parentid": "line_332",
+        "topic": "dynamic time-aligement kernel in support vector machine",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_334",
+        "parentid": "line_332",
+        "topic": "a kernel for time series based on global aligements",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_335",
+        "parentid": "root",
+        "topic": "SVM related methods",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_336",
+        "parentid": "line_335",
+        "topic": "support vector regression (SVR)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_337",
+        "parentid": "line_336",
+        "topic": "\u9032\u5165\u67d0\u500b\u8ddd\u96e2target, loss = 0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_338",
+        "parentid": "line_335",
+        "topic": "Ranking SVM",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_339",
+        "parentid": "line_338",
+        "topic": "\u4e00\u500b\u6392\u5e8flist",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_340",
+        "parentid": "line_338",
+        "topic": "output\u4e00\u500blist",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_341",
+        "parentid": "line_340",
+        "topic": "\u7d66element\u9ad8\u4f4e\u505aranking",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_342",
+        "parentid": "line_335",
+        "topic": "One-class SVM",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_343",
+        "parentid": "line_342",
+        "topic": "\u5c6c\u65bcpositive\u81ea\u6210\u4e00\u985e",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_344",
+        "parentid": "line_342",
+        "topic": "negative\u6563\u5e03\u5728\u5176\u4ed6\u5730\u65b9",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_345",
+        "parentid": "root",
+        "topic": "deep learning vs SVM",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_346",
+        "parentid": "line_345",
+        "topic": "deep learning",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_347",
+        "parentid": "line_346",
+        "topic": "\u524d\u5e7e\u500blayer",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_348",
+        "parentid": "line_347",
+        "topic": "feature linear transformation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_349",
+        "parentid": "line_346",
+        "topic": "\u6700\u5f8clayer",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_350",
+        "parentid": "line_349",
+        "topic": "linear classifier",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_351",
+        "parentid": "line_345",
+        "topic": "SVM",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_352",
+        "parentid": "line_351",
+        "topic": "based on kernel function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_353",
+        "parentid": "line_351",
+        "topic": "feature transoform high dimension space",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_354",
+        "parentid": "line_351",
+        "topic": "high dimension space apply linear classifer",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_355",
+        "parentid": "line_354",
+        "topic": "hinge loss",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_356",
+        "parentid": "root",
+        "topic": "SVM kernel\u662flearnable",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_357",
+        "parentid": "line_356",
+        "topic": "Multiple kernel learning",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_358",
+        "parentid": "line_356",
+        "topic": "\u6c92\u8fa6\u6cd5learn deep learning\u9019\u9ebc\u591a",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_359",
+        "parentid": "line_358",
+        "topic": "\u7528\u591a\u500bkernel combine\u4e00\u8d77",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_360",
+        "parentid": "line_359",
+        "topic": "\u4e2d\u9593weight\u53ef\u4ee5learn",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_361",
+        "parentid": "line_359",
+        "topic": "\u597d\u50cf\u67092\u500bhidden layer\u7684NN",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_362",
+        "parentid": "line_358",
+        "topic": "\u4e00\u500bkernel\u597d\u50cf\u53ea\u6709\u4e00\u500bhidden layer NN",
+        "background-color": "#0fbdff",
+        "expanded": false
     }
 ]

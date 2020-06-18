@@ -1,0 +1,1372 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Recurrent Neural Network (RNN)(Part I)"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Example Application",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "Slot Filling",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "ticket booking system",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "I would like to arrive taipei on November 2nd.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_3",
+        "topic": "slot",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_5",
+        "topic": "destination",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": "taipei",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_5",
+        "topic": "time of arrival",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "November 2nd",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_5",
+        "topic": "\u8981\u5224\u65b7\u54ea\u500b\u8a5e\u5f59\u65bcslot",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_2",
+        "topic": "Solving slot filling by feedforward network?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "input: a word",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_12",
+        "topic": "each word is represented as a vector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "\u65b9\u6cd5\u5f88\u591a",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "\u5e38\u7528",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "1-of-N encoding",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_15",
+        "topic": "beyond 1-of-N encoding",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "\u5f88\u591a\u8fad\u5f59\u4f60\u53ef\u80fd\u5f9e\u4f86\u90fd\u6c92\u898b\u904e",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "\u591a\u4e00\u500b\"other\"",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_18",
+        "topic": "\u628a\u4e0d\u5728\u8fad\u5178\u88e1\u9762\u7684\u6240\u6709\u8a5e\u5f59\u90fd\u6b78\u985e\u5230other",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_15",
+        "topic": "word hashing",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "\u7528\u5b57\u6bcd\u8868\u793a\u8a5e\u532f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "\u5c31\u4e0d\u6703\u6709\u8a5e\u5f59\u4e0d\u5728\u5b57\u5178\u7684\u554f\u984c",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_22",
+        "topic": "26x26x26",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_22",
+        "topic": "a-a-a",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_22",
+        "topic": "a-a-b",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_22",
+        "topic": "...",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_22",
+        "topic": "a-p-p",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_22",
+        "topic": "...",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_22",
+        "topic": "p-l-e",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_22",
+        "topic": "word : apple",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "a-p-p : 1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_31",
+        "topic": "p-p-l : 1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_31",
+        "topic": "p-l-e : 1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_11",
+        "topic": "output:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "probability distribution that the input word beloging to the slots",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_2",
+        "topic": "\u76ee\u524d\u7121\u6cd5solove problem",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "\u53e51.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_38",
+        "topic": "arrive",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "other",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_38",
+        "topic": "Taipei",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_41",
+        "topic": "dest",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_38",
+        "topic": "on",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "other",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_38",
+        "topic": "November",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "time",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_38",
+        "topic": "2nd",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "time",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_37",
+        "topic": "\u53e52.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "leave",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "other",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_49",
+        "topic": "Taipei",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "place of departure",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_49",
+        "topic": "on",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "other",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_49",
+        "topic": "November",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_56",
+        "topic": "time",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_49",
+        "topic": "2nd",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "time",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_37",
+        "topic": "input\u4e00\u6a23\u7684\u6771\u897ftaipei",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_60",
+        "topic": "output\u61c9\u8a72\u662f\u4e00\u6a23\u7684\u6771\u897f",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_61",
+        "topic": "\u6c92\u8fa6\u6cd5\u5206\u8fa8\u6a5f\u7387",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_60",
+        "topic": "NN needs memory",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "\u4ed6\u770b\u904e\u524d\u4e00\u500b\u5b57",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "arrive",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_64",
+        "topic": "leave",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_64",
+        "topic": "\u5229\u7528\u4e0a\u4e0b\u6587\u7522\u751f\u4e0d\u540coutput",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_63",
+        "topic": "RNN : Recurrent Nerual Network",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "The output of hidden layer are stored in the memory",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_68",
+        "topic": "Memory can be considered as another input",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_68",
+        "topic": "example:",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "All the weight are '1', no bias",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_71",
+        "topic": "All activation functions are linear",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_71",
+        "topic": "input sequence:",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_74",
+        "topic": "[1 1]^T [1 1]^T [2 2]^T ...",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_71",
+        "topic": "memory : given initial values 0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_71",
+        "topic": "intput [1 1]^T",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_77",
+        "topic": "NN output: [2 2]^T",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_77",
+        "topic": "Memory: [0 0]^T",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_77",
+        "topic": "Final Output = [4 4]^T",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_71",
+        "topic": "input [1 1]^T \u7b2c\u4e8c\u6b21\u8f38\u5165",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_81",
+        "topic": "NN Output: [6 6]^T",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_81",
+        "topic": "Memory: [2 2]^T -> [6 6]^T",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_81",
+        "topic": "Final Output = [12 12]^T",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_81",
+        "topic": "\u8f38\u5165\u4e00\u6a23\u7684\u6771\u897f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_85",
+        "topic": "output\u662f\u6709\u53ef\u80fd\u4e0d\u540c\u7684",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_86",
+        "topic": "\u770bmemory\u5132\u5b58\u7684\u503c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_71",
+        "topic": "input [2 2]^T",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_88",
+        "topic": "NN Output: [16 16]^T",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_88",
+        "topic": "Final Output: [32 32]^T",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_88",
+        "topic": "Memory: [16 16]^T",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_71",
+        "topic": "changing input sequence order will change the output",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_2",
+        "topic": "RNN\u89e3\u6c7a\u554fdest/place of departure\u554f\u984c",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_93",
+        "topic": "arrive Taipei on November 2nd",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_94",
+        "topic": "\u4e00\u500b\u4e00\u500bvector\u4e1f\u9032\u53bb",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_94",
+        "topic": "inptut: x1(arrive)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_96",
+        "topic": "NN output: a1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_97",
+        "topic": "cache a1 to memory",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_98",
+        "topic": "final output: y1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_94",
+        "topic": "input: x2(taipei)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_100",
+        "topic": "NN input: x2 + a1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_101",
+        "topic": "NN output: a2",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_102",
+        "topic": "cache a2 to memory",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_103",
+        "topic": "final output: y2",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_93",
+        "topic": "The values stored in the memory is differenct",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_105",
+        "topic": "leave/arrive",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_106",
+        "topic": "taipei",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "root",
+        "topic": "Of courrse it can be deep",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_108",
+        "topic": "input",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_109",
+        "topic": "RNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_110",
+        "topic": "RNN",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_111",
+        "topic": "... output",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "root",
+        "topic": "Elman Network",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_113",
+        "topic": "Hidden layer\u503c\u5b58\u8d77\u4f86\u4e0b\u4e00\u500b\u6642\u9593\u9ede\u8b80\u51fa\u4f86",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "root",
+        "topic": "Jordan Network",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_115",
+        "topic": "Output layer\u503c\u5b58\u8d77\u4f86\u4e0b\u4e00\u500b\u6642\u9593\u9ede\u8b80\u9032\u4f86",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_115",
+        "topic": "\u50b3\u8aaa\u53ef\u4ee5\u5f97\u5230\u6bd4\u8f03\u597d\u7684performance",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_117",
+        "topic": "y target\u662f\u63a7\u5236\u7684",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_118",
+        "topic": "\u6bd4\u8f03\u6e05\u695a\u653ememory\u88e1\u9762\u662f\u4ec0\u9ebc",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "root",
+        "topic": "Bidirectional RNN",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_120",
+        "topic": "sequence\u53e5\u9996\u5230\u53e5\u5c3e",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_121",
+        "topic": "x^t,x^t+1,x^t+2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_120",
+        "topic": "\u4e5f\u53ef\u4ee5\u662f\u53cd\u904e\u4f86",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_123",
+        "topic": "x^t+2,x^t+1,x^t",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_120",
+        "topic": "\u540c\u6642train\u6b63\u53cd\u5411",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_125",
+        "topic": "\u7136\u5f8chidden layer\u62ff\u51fa\u4f86\u63a5\u7d66output layer",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_126",
+        "topic": "\u6b63\u5411x^t\u8ddf\u8ca0\u5411x^t\u90fd\u4e1f\u7d66output",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_127",
+        "topic": "\u5f97\u5230y^t",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_120",
+        "topic": "\u597d\u8655\u662f\u7522\u751foutput\u524d\u770b\u7684\u7bc4\u570d\u6bd4\u8f03\u5ee3",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_129",
+        "topic": "\u53ef\u80fd\u770b\u4e86\u6574\u500binput sentence\u4e4b\u5f8c\u624d\u6c7a\u5b9a\u8a5e\u5f59\u7684slot",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_129",
+        "topic": "\u6bd4\u770b\u4e00\u534a\u53e5\u5b50\u5f97\u5230\u66f4\u597d\u7684performance",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "root",
+        "topic": "Long Short-term Memory (LSTM)",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_132",
+        "topic": "\u6bd4\u8f03\u8907\u96dc\u7684memory",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_133",
+        "topic": "\u67093\u500bgate",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_134",
+        "topic": "input gate",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_135",
+        "topic": "signal control the input gate",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_135",
+        "topic": "\u6253\u958b\u6642\u5019\u624d\u80fd\u5beb\u5165memory cell",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_135",
+        "topic": "\u958b\u95dc\u662fNN\u81ea\u5df1\u5b78",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_134",
+        "topic": "output gate",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_139",
+        "topic": "signal control the output gate",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_139",
+        "topic": "\u5916\u754c\u80fd\u4e0d\u80fd\u5f9e\u9019\u88e1\u62ffmemory\u503c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_139",
+        "topic": "\u958b\u95dc\u662fNN\u81ea\u5df1\u5b78",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_134",
+        "topic": "forget gate",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_143",
+        "topic": "signal control the forget gate",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_143",
+        "topic": "\u6c7a\u5b9a\u4ec0\u9ebc\u6642\u5019format memory\u8cc7\u6599",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_143",
+        "topic": "\u7531NN\u6c7a\u5b9a\u4ec0\u9ebc\u6642\u5019format\u6389",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_132",
+        "topic": "4 input 1 output",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_147",
+        "topic": "1 save memory",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_148",
+        "topic": "input z",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_148",
+        "topic": "g(z)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_147",
+        "topic": "3 gate input",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_151",
+        "topic": "zi input gate",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_152",
+        "topic": "f(zi)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_152",
+        "topic": "sigmoid",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_154",
+        "topic": "\u6253\u958b\u7684\u7a0b\u5ea60~1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_151",
+        "topic": "zf forget gate",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_156",
+        "topic": "f(zf)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_156",
+        "topic": "sigmoid",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_158",
+        "topic": "\u6253\u958b\u7684\u7a0b\u5ea60~1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_156",
+        "topic": "\u6253\u958b\u662f1 \u8a18\u5f97",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_156",
+        "topic": "\u95dc\u6389\u662f0 \u5fd8\u8a18",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_156",
+        "topic": "forget gate\u540d\u7a31\u6709\u9ede\u602a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_151",
+        "topic": "zo output gate",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_163",
+        "topic": "f(zo)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_147",
+        "topic": "in memory data",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_165",
+        "topic": "c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_165",
+        "topic": "c*f(zf)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_147",
+        "topic": "1 load memory",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_168",
+        "topic": "output a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_147",
+        "topic": "input g(z)*f(zi)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_170",
+        "topic": "c' = g(z)*f(zi)+cf(zf)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_147",
+        "topic": "output",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_172",
+        "topic": "a= h(c')*f(zo)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_132",
+        "topic": "LSTM\u7684memory cell\u60f3\u6210\u662fNeuron",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_174",
+        "topic": "\u5c31\u6703\u50cf\u662fNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_175",
+        "topic": "\u5dee\u5225\u662f4\u500binput\u624d\u80fd\u7522\u751foutput",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_176",
+        "topic": "\u540c\u6a23\u6578\u91cfneuron",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_177",
+        "topic": "\u53c3\u6578\u91cf\u89814\u500d",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_132",
+        "topic": "\u6b63\u5f0f\u7528\u6cd5\u4e0a\u4e00\u500b\u6642\u9593\u9ede\u7684hidden layer\u8f38\u51fa\u6703\u63a5\u7d66\u4e0b\u4e00\u500bx^t\u7684input\u63a7\u5236gate",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_132",
+        "topic": "\u7136\u5f8c\u518d\u52a0\u4e00\u500b",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_180",
+        "topic": "extension: peephole",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_181",
+        "topic": "\u628amemory cell\u7684\u503c\u4e5f\u62c9\u5230\u4e0b\u4e00\u500binput\u63a7\u5236gate",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_181",
+        "topic": "\u64cd\u4f5cgate\u540c\u662f\u8003\u616e input x, h , c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_183",
+        "topic": "\u4e26\u5728\u4e00\u8d77transform\u6210\u56db\u500b\u4e0d\u540cvector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_184",
+        "topic": "\u64cd\u63a7LSTM",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_132",
+        "topic": "Multiple-layer LSTM\u5716\u975e\u5e38\u8907\u96dc",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_186",
+        "topic": "This is quite standard now",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "root",
+        "topic": "Keras\u652f\u63f4\u4e09\u7a2erecurent network",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_188",
+        "topic": "LSTM",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_188",
+        "topic": "GRU",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_191",
+        "parentid": "line_190",
+        "topic": "LSTM\u7c21\u5316\u7248\u672c",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_191",
+        "topic": "\u53ea\u67092\u500bgate",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_192",
+        "topic": "performance\u8ddfLSTM\u5dee\u4e0d\u591a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "line_192",
+        "topic": "\u5c11\u4e861/3\u53c3\u6578",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_188",
+        "topic": "SimpleRNN",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_195",
+        "topic": "\u6700\u7c21\u55aeRNN\u7248\u672c",
+        "background-color": "#0fbdff",
+        "expanded": false
+    }
+]

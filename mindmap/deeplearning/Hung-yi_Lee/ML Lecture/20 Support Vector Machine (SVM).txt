@@ -162,3 +162,203 @@ Support Vector Machine (SVM)
                         Quadratic Programming (QP) problem
                             用Quadratic Programming solver把它解出來
                             或者graident descent
+    Kernel Method
+        Dual Representation
+            minimum找出來的weight
+                w^* = Σ_n a^*_n x^n
+                    data point的linear combination
+                    lagrange multipler解式子說服真的是linear combination
+                另一種說法
+                    wi <- wi - η Σ_n c^n(w)x^n_i
+                        k的維度資料
+                        形成矩陣
+                            w <- w - η Σ_n c^n(w)x^n
+                            假設initialized w是zero vector
+                                都是加上 linear points的data combination
+                                    得到的結果就是w的linear combination
+                                        c^n(w) 
+                                            = ∂l(f(x^n),y^^n) / ∂f(x^n)
+                                            hinge loss來看0位置的結果是0
+                                                不是所有的x^n都會被加到w裡面去
+                                                    最後解出的w* linear combination weight可能會是sparse的
+                                                        很多data point a*的值=0
+                                                            不是support vector remove也不會有影響
+                                                            其他logistic regression每一個data都有count
+                                                                都會造成影響
+                                                        其他a*不等於0的x^n就是support vector
+                                                            所以稱之為support vector machine
+                                                                不是每個點都會被選作suport Vector
+                                                                    只有少數點會被選出來
+                                                                        SVM相較於其他方法比較可能比較robust
+                                                                            其他activation function就不會有0的情況
+                                                                                解出來就不會是sparse的
+            w = Σ_n a_n x^n
+                linear combination好處可以用kernel trick
+                = X a
+                    X = martrix [x1 x2...xn]
+                    a = [a1 a2 ...a_n]^T
+                step1:
+                    f(x) = w^T*x => 
+                        f(x) = a^T*X^T*x
+                            [a1 a2 .. a_n] * [x^1*x x^2*x ... x^n*x]^T
+                        f(x) = Σ_n a_n(x^n*x)
+                            hinge loss 是sparse
+                                只考慮非0的vector就還好
+                            =  Σ_n a_n*K(x^n,x)
+                                K(x^n,x) = x^n*x
+                                    K = kernel function
+                step2,3:
+                    inner product的K內容已經知道
+                        不知道的東西剩下a^n
+                    find{a^*_1 a^*_2 a^*_3...a^*_N}
+                        最好的a讓total lose最好
+                    L(f) = Σ_n l(f(x^n),y^^n)
+                        = Σ_n (Σ_n' a_n' K(x^n',x^n),y^^n)
+                        we don't really need to know vector x
+                        we only need to know the inner project between a pair of vectors x and z 
+                            K(x,z)
+                            kernel tricks
+    Kernel Trick
+        kernel trick is useful when we transform all x to φ(x)
+            x = [x1 x2]^T
+                先做feature transofrom
+                之後apply linear SVM Model
+            feature transform結果假設是
+                φ(x) = [ x_1^2 √(2)*x^1*x^2 x^2_2]^T
+                    feature跟feature之間的關係
+            k(x,z) =  φ(x) * φ(z)
+                = [ x_1^2 √(2)*x^1*x^2 x^2_2]^T
+                * [ z_1^2 √(2)*z^1*z^2 z^2_2]^T
+                    = x_1^2*z_1^2 
+                    + 2*x^1*x^2*z^1*z^2
+                    + x^2_2*z^2_2
+                        = (x_1z_1+x_2z_2)^2
+                        = ( [x_1 x_2]^T [z_1 z_2]^T )^2
+                        = (x*z)^2
+                        結果kernal function可以變成直接inner product開平方就好
+                            這招好處就是直接計算結果
+                            directly computing K(x,z) can be faster than "feature transformation + inner product" sometimes...
+        high dimension example
+            x = [x1 ... xk]^T
+            z = [z1 ... zk]^T
+            φ(x) = [ x_1^2 .. x_k^2 √(2)*x^1*x^2 √(2)*x^1*x^3 ...]^T
+                考慮所有feature兩兩之間的關係
+                kernel tricks
+                    k(x,z) =  φ(x) * φ(z)
+                        = (x*z)^2
+                        如果先transformer成更高維度在inner product運算大很多
+                         = (x1z1+x2z2+...+xkzk)^2
+                         = φ(x) * φ(z)
+        radial basis function kernel (RBF kernel)
+            x = [x1 ... xk]^T
+            z = [z1 ... zk]^T
+            K(x,z) = exp(-1/2 ||x-z||_2)
+                越像kernel值就越大
+                x=z
+                    K(x,z)=1
+                k≠z
+                    K(x,z)=0
+                exp(-1/2 ||x-z||_2) = φ(x) * φ(z)
+                    φ(*)
+                        inifinite dim!!
+                    = exp(-1/2 ||x||_2 - 1/2 ||z||_2 + x*z)
+                    = exp(-1/2 ||x||_2)exp(- 1/2 ||z||_2)exp(x*z)
+                    = C_x C_z exp(x*z)
+                    = C_x C_z Σ_i=0^∞ (x*z)^i/i!
+                    = C_x C_z + C_x C_z(x*z) + C_x C_z1/2(x*z)^2 + ...
+                        C_x C_z = [Cx]*[Cz]
+                        C_x C_z(x*z) = [C_x*x_1 C_x*x_2 ...]^T
+                            * [C_z*z_1 C_z*z_2 ...]^T
+                        C_x C_z1/2(x*z)^2 = 
+                            1/√2 [C_x*x_1^2 √2C_x*x_1*x_2 ...]^T
+                            * 1/√2 [C_z*z_1^2 √2C_z*z_1*z_2 ...]^T
+                    x的都串起來 , z的也都串起來
+                        各有無窮長的vector
+                        inner product
+                        無窮多維度容易overrfitting
+                            training很好
+                            testing很糟
+        sigmoid kernel
+            K(x,z) = tanh(x*z)
+                用taylor expansion展開來看看就知道是哪兩個high dimension inner product結果
+            f(x) = Σ_n a_n * K(x^n,x)
+                x做testing
+                    計算x跟所有training data 裡面x^n的kernel function output * alpha_n
+                    sigmoid kernel時
+                        f(x) = Σ_n a_n * tanh((x^n,x)
+                        when using sigmoid function, we have 1 hidden layer network.
+                            input x 會跟所有x_n做inner product (weight sum)
+                                之後再通做hyperbolic tangent (activation function)
+                                全部在乘上alpha然後加在一起
+                                    最後得到f(x)
+                            很像NN
+                                neural 數目 = support vector數量
+        directly design K(x,z) instead of cinsidering φ(x),φ(z)
+            有一個kernel function 把x,z帶進去就好
+                不用在意x,z的vector長什麼樣子
+                    只要有inner product就好了
+                when x is structure object like sequence
+                    hard to design φ(x)
+                    假設每個sequence長度都不一樣
+                        不容易把不同長度的sequence轉vector
+                            不知道x長什麼樣子
+                                更不能知道φ(x)
+                K(x,z) is something like similarity                    
+                    投影到高維度的inner product
+                        如果能定義一個function
+                            他是evaluate x,z similarity
+                            就算z,x有sturcture object
+                                tree structure
+                                sequence structure
+                                只要能算similarity
+                                    就有機會當kernel來用
+                                    背後有feature 可以support他嗎
+                                    胡亂訂的function可以拆成兩個vector inner product結果嗎
+                                        不是所有function都可以
+                                        但有Mercer's theory會告訴你哪些function可以
+                                            檢查有沒有兩個vector做inner product
+                    語音上要做分類對象
+                        audio segement
+                            vector sequence
+                                長度不固定
+                                    無法用vector描述
+                                    直接定義kernel
+                                        function k(x,z)
+                                            x是聲音訊號
+                                            z是另一段聲音訊號
+                                                evaluate the similarity between sequence x,z
+                        分類聲音情緒
+                            高興
+                            生氣
+                        怎麼定義兩個vector之間的kernel
+                            dynamic time-aligement kernel in support vector machine
+                            a kernel for time series based on global aligements
+    SVM related methods
+        support vector regression (SVR)
+            進入某個距離target, loss = 0
+        Ranking SVM
+            一個排序list
+            output一個list
+                給element高低做ranking                
+        One-class SVM
+            屬於positive自成一類
+            negative散布在其他地方
+    deep learning vs SVM
+        deep learning
+            前幾個layer
+                feature linear transformation
+            最後layer
+                linear classifier
+        SVM
+            based on kernel function
+            feature transoform high dimension space
+            high dimension space apply linear classifer
+                hinge loss
+    SVM kernel是learnable
+        Multiple kernel learning
+        沒辦法learn deep learning這麼多
+            用多個kernel combine一起
+                中間weight可以learn
+                好像有2個hidden layer的NN
+            一個kernel好像只有一個hidden layer NN
+
