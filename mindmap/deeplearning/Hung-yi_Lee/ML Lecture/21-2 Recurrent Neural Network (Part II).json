@@ -1,0 +1,3599 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Recurrent Neural Network (Part II)"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "how to learning?",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "loss function",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_2",
+        "topic": "example slot:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "taipei = dest slot",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_3",
+        "topic": "November 2nd = dest time slot",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_3",
+        "topic": "...  = other",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_3",
+        "topic": "x -> NN -> y",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "y:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "slot number + 1(other)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_9",
+        "topic": "input arrive",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "other",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "[0 0 .. 1]",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_9",
+        "topic": "input taipei",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "dest",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "[1 0 .. 0]",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_13",
+        "topic": "loss function!",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_3",
+        "topic": "word sequence",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "\u6574\u9ad4\u4f86\u770b\u4e0d\u80fd\u6253\u6563",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_3",
+        "topic": "w = w - \u03b7\u2202L/\u2202w",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_3",
+        "topic": "backprobagation through time (BBTT)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "gradient descent\u4e5f\u53ef\u4ee5",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_20",
+        "topic": "\u4f46\u91dd\u5c0dRNN\u6709\u4e00\u500b\u9032\u968e\u7248\u8a08\u7b97\u65b9\u5f0f",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "root",
+        "topic": "unfortunately",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "RNN-based network is not always easy to learn",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "learning curve \u6703\u5e0c\u671b\u9010\u6f38\u4e0b\u964d",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_24",
+        "topic": "\u5be6\u969b\u4e0a",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "\u6703\u66b4\u8d77\u66b4\u843d",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_27",
+        "topic": "\u53ef\u80fd\u4ee5\u70ba\u662f\u7a0b\u5f0f\u6709bug",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "\u4f46\u6709\u6642\u5019\u5c31\u5982\u6b64",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_26",
+        "topic": "the error surface is rough.",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "very flat",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_30",
+        "topic": "or veray steep",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_30",
+        "topic": "\u6703\u9020\u6210\u554f\u984c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "\u5f80\u4e0b\u8d70\u7684\u8def\u53ef\u80fd\u53bb\u9661\u5ced\u5340\u5674\u4e0a\u53bb",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_33",
+        "topic": "\u525b\u597d\u8e29\u5230\u61f8\u5d16\u4e0a\u6700\u6158",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "gradient\u6703\u5674",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_36",
+        "topic": "nan",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_33",
+        "topic": "\u5de5\u7a0b\u5e2b\u624b\u6cd5",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_38",
+        "topic": "clipping",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "\u7576gradient\u5927\u65bc\u67d0\u500bthreshold\u6642",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "\u5c31\u4e0d\u8981\u8b93\u4ed6\u8d85\u904e\u90a3\u500bthreshold",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_40",
+        "topic": "gradient>15",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "\u5c31\u7b49\u65bc15",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_42",
+        "topic": "\u7576\u8e29\u5230\u61f8\u5d16\u4e5f\u53ea\u662f\u8dd1\u9060\u9ede\u4e0d\u6703\u5674\u51fa\u53bb",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_44",
+        "topic": "\u53ef\u4ee5\u7e7c\u7e8ctrainning",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_30",
+        "topic": "why RNN\u6709\u9019\u500b\u5947\u7279\u7279\u6027",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_46",
+        "topic": "\u4ee5\u524d\u662f\u56e0\u70basigmoid\u9020\u6210\u7684",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "graident vanishing",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_48",
+        "topic": "\u63dbReLU\u5c31\u597d\u4e86",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_48",
+        "topic": "\u9019\u62dbRNN\u4e0d\u884c",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_47",
+        "topic": "\u4f46\u5728RNN\u628asigmoid\u63dbRelu performance\u6703\u8b8a\u5dee",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "activation function\u4e0d\u662f\u9019\u554f\u984c\u7684\u95dc\u9375\u9ede",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_47",
+        "topic": "BBTT\u6578\u5b78\u88e1\u9762\u6709\u8a0e\u8ad6\u5230",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_46",
+        "topic": "input\u5c0f\u5c0f\u8b8a\u5316\u770boutput\u8b8a\u5316",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "w = 1",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_55",
+        "topic": "\u6bcf\u6b21*w\u7684RNN",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_55",
+        "topic": "y^1000 = w^999 = 1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_55",
+        "topic": "w = 1.01",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_58",
+        "topic": "y^1000 = w^999 \u2248 20000",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_59",
+        "topic": "w\u4e00\u9ede\u9ede\u8b8a\u5316\u5f71\u97ff\u8d85\u5927",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_60",
+        "topic": "w\u6709\u5f88\u5927\u7684gradient",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_54",
+        "topic": "learning rate\u8a2d\u5b9a\u5c0f\u4e00\u9ede\u5c31\u597d\u55ce?",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "w = 0.99",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "y^1000 \u2248 0",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_62",
+        "topic": "w = 0.01",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_65",
+        "topic": "y^1000 \u2248 0",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_62",
+        "topic": "\u5728w = 1\u9644\u8fd1gradient\u5f88\u5927",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_67",
+        "topic": "LR\u9700\u8981\u5f88\u5c0f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_62",
+        "topic": "\u4f46w=0.99\u4ee5\u4e0b gradient\u975e\u5e38\u5c0f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_69",
+        "topic": "LR\u9700\u8981\u5f88\u5927",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_62",
+        "topic": "\u9020\u6210error surface\u5f88\u5d0e\u5d87",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_62",
+        "topic": "gradient\u5728\u5f88\u5c0f\u7684\u5730\u5340\u6642\u5927\u6642\u5c0f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_62",
+        "topic": "RNN\u628a\u540c\u6a23\u6771\u897f\u5728\u6642\u9593\u8f49\u63db\u4e0b\u53cd\u8986\u4f7f\u7528",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_73",
+        "topic": "memory\u88e1\u9762\u7684\u8b8a\u5316\u53ef\u80fd\u6c92\u9020\u6210\u5f71\u97ff",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_74",
+        "topic": "\u4e5f\u6709\u53ef\u80fd\u5929\u5d29\u5730\u88c2\u7684\u5f71\u97ff",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_54",
+        "topic": "\u4e0d\u597d\u8a13\u7df4\u7684\u539f\u56e0",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_76",
+        "topic": "\u56e0\u70ba\u6709time sequence,\u540c\u6a23weight\u5728\u4e0d\u540c\u6642\u9593\u9ede\u6703\u88ab\u53cd\u8986\u4f7f\u7528\u7684",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "root",
+        "topic": "helpful techniques",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_78",
+        "topic": "Long Short-Term Memory (LSTM)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_79",
+        "topic": "can deal with gradient vanishing (not gradient explode)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_80",
+        "topic": "\u89e3\u6c7a\u5e73\u5766\u554f\u984c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_80",
+        "topic": "\u5d0e\u5d87\u554f\u984c\u6c92\u8fa6\u6cd5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_80",
+        "topic": "Learning Rate\u53ef\u4ee5\u8a2d\u5b9a\u5c0f\u4e00\u9ede",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_80",
+        "topic": "RNN\u6bcf\u4e00\u500b\u6642\u9593\u9edememory\u8cc7\u6599\u90fd\u6703\u88ab\u6d17\u6389\u91cd\u653e",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_84",
+        "topic": "RNN\u88abformat\u6389\u5f71\u97ff\u5c31\u6d88\u5931",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_80",
+        "topic": "LSTM\u6bcf\u6b21memory\u503c*weight\u5728\u52a0\u5165input\u7136\u5f8c\u5b58\u8d77\u4f86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_86",
+        "topic": "memory\u8ddfinput\u662f\u76f8\u52a0\u7684",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_86",
+        "topic": "\u7576weight\u5f71\u97ff\u5230memory\u6703\u4e00\u76f4\u5b58\u5728",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_86",
+        "topic": "forget gate\u4e0d\u662f\u6703\u6d17\u6389",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_89",
+        "topic": "LSTM\u4e00\u958b\u59cb\u5c31\u662f\u70ba\u4e86\u89e3\u6c7agradient vanishing\u554f\u984c",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "\u6240\u4ee5\u7b2c\u4e00\u500b\u7248\u672c\u662f\u6c92\u6709forget gate\u7684",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_90",
+        "topic": "\u5f8c\u4f86\u624d\u52a0\u5165forget gate",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_90",
+        "topic": "\u73fe\u5728forget gate\u5728training\u6642",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_93",
+        "topic": "\u8981\u78ba\u4fdd\u4e0d\u7d66\u592a\u5927\u7684bias",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_94",
+        "topic": "\u8b93gate\u5927\u591a\u6578\u6642\u5019\u662fopen\u7684",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_95",
+        "topic": "open=\u4e0d\u907a\u5fd8",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_94",
+        "topic": "\u5c11\u6578\u60c5\u6cc1\u4e0b\u624dformat",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_78",
+        "topic": "Gated Recurrent Unit(GRU)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_98",
+        "topic": "simpler than LSTM",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_98",
+        "topic": "\u53ea\u67092\u500bgate",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_100",
+        "topic": "input/output gate",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_98",
+        "topic": "\u53c3\u6578\u91cf\u6bd4\u8f03\u5c11",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_102",
+        "topic": "training\u6bd4\u8f03robust",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_98",
+        "topic": "LSTM training overfitting\u592a\u56b4\u91cd",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_104",
+        "topic": "\u6539\u7528GRU",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_98",
+        "topic": "\u539f\u7406",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_106",
+        "topic": "\u820a\u7684\u4e0d\u53bb\u65b0\u7684\u4e0d\u4f86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_106",
+        "topic": "input gate\u8ddfforget gate\u9023\u52d5\u8d77\u4f86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_106",
+        "topic": "\u7576input gate\u6253\u958b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_109",
+        "topic": "forget gate\u5c31\u6d17\u6389",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_78",
+        "topic": "Clockwise RNN",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_78",
+        "topic": "Structurally Constrained Recurrent Network(SCRN)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_78",
+        "topic": "Hinton Proposed",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_113",
+        "topic": "Vanilla RNN initialized with identify martrix + ReLU activation",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_114",
+        "topic": "Outperform or be comparable with LSTM in 4 different tasks",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_114",
+        "topic": "\u7528\u9019\u62db\u53ea\u7528RNN\u5c31\u53ef\u4ee5\u5c4c\u6253LSTM",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "root",
+        "topic": "More Application",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_117",
+        "topic": "slot filling",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_118",
+        "topic": "input\u6578\u91cf\u7b49\u65bcoutput\u6578\u91cf",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_119",
+        "topic": "\u5e7e\u500bword\u5c31\u6709\u5e7e\u500bslot",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_117",
+        "topic": "RNN\u53ef\u4ee5\u505a\u66f4\u8907\u96dc",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_117",
+        "topic": "many to one",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_122",
+        "topic": "input a vector sequence",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_123",
+        "topic": "output only one vector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_122",
+        "topic": "sentiment analysis",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_125",
+        "topic": "\u96fb\u5f71\u8a55\u50f9 / \u7db2\u8def\u8a55\u50f9",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_126",
+        "topic": "learn\u4e00\u500bclassifier\u53bb\u8a55\u4f30\u6b63\u5411\u8ca0\u5411",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_126",
+        "topic": "input:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_128",
+        "topic": "character sequence",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_126",
+        "topic": "output:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_130",
+        "topic": "\u6700\u5f8c\u4e00\u500b\u6642\u9593\u9ede\u628ahidden layer\u62ff\u51fa\u4f86",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_131",
+        "topic": "\u901a\u904e\u5e7e\u500btransform",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_132",
+        "topic": "\u5728\u505asentiment classifier predict",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_122",
+        "topic": "key terms extraction:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_134",
+        "topic": "input:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_135",
+        "topic": "a document",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_134",
+        "topic": "RNN->",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_137",
+        "topic": "attension",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_138",
+        "topic": "\u628a\u91cd\u8981\u6771\u897finformation\u62bd\u51fa\u4f86",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_139",
+        "topic": "\u4e1f\u5230feed forward network\u88e1\u9762\u53bb",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_134",
+        "topic": "output:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_141",
+        "topic": "keyword",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_117",
+        "topic": "many to many",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_143",
+        "topic": "sequence to sequence",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_144",
+        "topic": "input",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_145",
+        "topic": "sequence",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_144",
+        "topic": "output",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_147",
+        "topic": "sequence",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_148",
+        "topic": "shorter than input",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_144",
+        "topic": "example:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_150",
+        "topic": "\u8a9e\u97f3\u8fa8\u8b58",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_151",
+        "topic": "inpjut \u4e00\u5c0f\u6bb5\u6642\u9593\u5c31\u751f\u6210\u4e00\u500bvector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_152",
+        "topic": "\u53ef\u80fd0.01s",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_151",
+        "topic": "output",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_154",
+        "topic": "character sequence",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_151",
+        "topic": "\u7528\u539f\u672cslot RNN\u65b9\u5f0f\u9802\u591a\u662f\u4e00\u500bvector\u5c0d\u61c9\u4e00\u500b\u5b57",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_156",
+        "topic": "\u4f460.01s\u53ef\u80fd\u597d\u591a\u500bvector\u5c0d\u61c9\u5230\u540c\u4e00\u500bcharacter",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_157",
+        "topic": "\u597d\u597d\u597d\u68d2\u68d2\u68d2\u68d2",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_156",
+        "topic": "\u9019\u6642\u5019\u7528\u4e00\u62dbtrimming",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_159",
+        "topic": "\u53bb\u91cd\u8907",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_160",
+        "topic": "\u597d\u68d2",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_159",
+        "topic": "\u4f46\u662f\u76f8\u5c0d\u7121\u6cd5\u8fa8\u8b58",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_162",
+        "topic": "\u597d\u68d2\u68d2(\u8ca0\u9762)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_162",
+        "topic": "\u5982\u4f55\u5206\u958b",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_164",
+        "topic": "connection temporal classification (CTC)",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_165",
+        "topic": "output\u4e0d\u8981\u53ea\u6709character",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_166",
+        "topic": "\u9084output\u4e00\u500b\u7b26\u865f\u03a6\u53ebnull",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_167",
+        "topic": "\u6c92\u6709\u4efb\u4f55\u6771\u897f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_167",
+        "topic": "\u597d\u03a6\u03a6\u03a6\u68d2\u03a6\u03a6\u03a6\u03a6",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_169",
+        "topic": "\u5c31\u6703\u8b8a\u6210",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_170",
+        "topic": "\u597d\u68d2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_167",
+        "topic": "\u597d\u03a6\u03a6\u68d2\u03a6\u03a6\u03a6\u68d2\u03a6\u03a6\u03a6",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_172",
+        "topic": "\u597d\u68d2\u68d2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_165",
+        "topic": "training",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_174",
+        "topic": "acousitc features",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_175",
+        "topic": "[][][][][][]",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_174",
+        "topic": "labels",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_177",
+        "topic": "\u597d\u68d2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_177",
+        "topic": "\u5c0d\u61c9frame\u4f4d\u7f6e\u4e0d\u77e5\u9053",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_177",
+        "topic": "\u7aae\u8209\u6240\u6709\u53ef\u80fd\u7684\u4f4d\u7f6e",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_180",
+        "topic": "\u5047\u8a2d\u5168\u90e8\u90fd\u662f\u5c0d\u7684\u53bbtraining",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_181",
+        "topic": "\u6709\u9ede\u592a\u591a\u4e86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_181",
+        "topic": "\u6709\u5de7\u5999\u6f14\u7b97\u6cd5\u89e3\u6c7a\u9019\u554f\u984c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_180",
+        "topic": "\u597d\u03a6\u03a6\u68d2\u03a6\u03a6",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_180",
+        "topic": "\u597d\u03a6\u68d2\u03a6\u03a6\u03a6",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_180",
+        "topic": "\u597d\u03a6\u03a6\u03a6\u68d2\u03a6",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_180",
+        "topic": "...",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_180",
+        "topic": "\u53bbaligement",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_165",
+        "topic": "google\u8a9e\u97f3\u8fa8\u8b58\u90fd\u63db\u6210CTC",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_189",
+        "topic": "\u5f9e\u4f86\u6c92\u6709\u51fa\u73fe\u65bctraining data\u7684\u8a5e\u5f59",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_191",
+        "parentid": "line_190",
+        "topic": "\u4eba\u540d",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_191",
+        "topic": "\u4e5f\u6709\u6a5f\u6703\u8fa8\u8b58\u51fa\u4f86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_143",
+        "topic": "sequence to sequence learning",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "line_193",
+        "topic": "input output difference length",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_194",
+        "topic": "machine translation",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_195",
+        "topic": "\u7121\u6cd5\u5f97\u77e5input\u9577\u9084\u662foutput\u9577",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_197",
+        "parentid": "line_195",
+        "topic": "input :",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_198",
+        "parentid": "line_197",
+        "topic": "machine learning",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_199",
+        "parentid": "line_195",
+        "topic": "RNN:",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_200",
+        "parentid": "line_199",
+        "topic": "\u8b80\u904e\u53bb",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_201",
+        "parentid": "line_199",
+        "topic": "\u6700\u5f8c\u6642\u9593\u9ede\u5f97\u5230\u6240\u6709input\u7684\u6574\u500bsequence information",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_202",
+        "parentid": "line_201",
+        "topic": "machine\u5410\u4e00\u500bcharactor",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_203",
+        "parentid": "line_202",
+        "topic": "\u6a5f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_204",
+        "parentid": "line_203",
+        "topic": "\u628a\u4e4b\u524dinput\u7684character\u518d\u8f38\u5165",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_205",
+        "parentid": "line_204",
+        "topic": "\u8b93\u4ed6\u5410\u4e0b\u4e00\u500bcharactor",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_206",
+        "parentid": "line_205",
+        "topic": "\u5668",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_207",
+        "parentid": "line_206",
+        "topic": "\u9019\u90e8\u5206\u975e\u5e38\u8907\u96dc\u7684\u7d30\u7bc0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_208",
+        "parentid": "line_207",
+        "topic": "MLTS\u8b1b",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_209",
+        "parentid": "line_208",
+        "topic": "\u5f88\u591a\u5206\u679d\u8b8a\u5f62",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_210",
+        "parentid": "line_207",
+        "topic": "\u5b78",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_211",
+        "parentid": "line_210",
+        "topic": "\u7fd2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_212",
+        "parentid": "line_211",
+        "topic": "\u6163",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_213",
+        "parentid": "line_212",
+        "topic": "\u6027",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_214",
+        "parentid": "line_213",
+        "topic": "\u4e0d\u77e5\u9053\u4ec0\u9ebc\u6642\u5019\u505c\u6b62",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_215",
+        "parentid": "line_214",
+        "topic": "\u591a\u52a0\u4e00\u500bsymbol",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_216",
+        "parentid": "line_215",
+        "topic": "=== \u65b7\u958b/\u7d50\u675f",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_217",
+        "parentid": "line_215",
+        "topic": "machine\u8981\u5b78\u7fd2\u4ec0\u9ebc\u6642\u5019\u65b7\u958b",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_218",
+        "parentid": "line_217",
+        "topic": "\u771f\u7684\u6709\u7528",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_219",
+        "parentid": "line_195",
+        "topic": "output :",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_220",
+        "parentid": "line_219",
+        "topic": "\u6a5f\u5668\u5b78\u7fd2===",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_221",
+        "parentid": "line_195",
+        "topic": "===\u65b7\u529f\u80fd\u4e5f\u6709\u88ab\u7528\u5230\u8a9e\u97f3\u8fa8\u8b58\u4e0a",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_222",
+        "parentid": "line_221",
+        "topic": "input",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_223",
+        "parentid": "line_222",
+        "topic": "activation features sequence",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_224",
+        "parentid": "line_221",
+        "topic": "output",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_225",
+        "parentid": "line_224",
+        "topic": "character sequence",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_226",
+        "parentid": "line_224",
+        "topic": "\u9019\u65b9\u6cd5\u6c92\u6709CTC\u5f37",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_227",
+        "parentid": "line_226",
+        "topic": "\u4e0d\u662fSOTA\u7684\u7d50\u679c",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_228",
+        "parentid": "line_226",
+        "topic": "\u4ee4\u4eba\u8a1d\u7570\u7684\u662f\u9019\u6a23\u884c\u5f97\u901a\u4e0d\u6703\u58de\u6389",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_229",
+        "parentid": "line_224",
+        "topic": "\u7ffb\u8b6f\u4e0a\u4f3c\u4e4e\u5df2\u7d93\u5230SOTA\u7684\u7d50\u679c",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_230",
+        "parentid": "line_143",
+        "topic": "sequence to sequence",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_231",
+        "parentid": "line_230",
+        "topic": "input A\u8a9e\u8a00\u8072\u97f3",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_232",
+        "parentid": "line_230",
+        "topic": "output B\u8a9e\u8a00\u6587\u5b57",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_233",
+        "parentid": "line_230",
+        "topic": "\u884c\u5f97\u901a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_234",
+        "parentid": "line_230",
+        "topic": "\u597d\u8655",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_235",
+        "parentid": "line_234",
+        "topic": "collection translation data",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_236",
+        "parentid": "line_235",
+        "topic": "\u6703\u66f4\u5bb9\u6613",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_237",
+        "parentid": "line_235",
+        "topic": "\u4f8b\u5982\u53f0\u8a9e\u8f49\u82f1\u6587",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_238",
+        "parentid": "line_237",
+        "topic": "\u56e0\u70ba\u53f0\u8a9e\u8981label\u4e0d\u5bb9\u6613",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_239",
+        "parentid": "line_238",
+        "topic": "\u6c92\u6709standard\u6587\u5b57\u7cfb\u7d71",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_240",
+        "parentid": "line_238",
+        "topic": "\u76f4\u63a5label\u82f1\u6587\u7ffb\u8b6f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_241",
+        "parentid": "line_117",
+        "topic": "beyond sequence",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_242",
+        "parentid": "line_241",
+        "topic": "syntactic parsing",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_243",
+        "parentid": "line_242",
+        "topic": "\u7522\u751fsyntactic parsing tree",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_244",
+        "parentid": "line_243",
+        "topic": "John has a dog",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_245",
+        "parentid": "line_244",
+        "topic": "S",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_246",
+        "parentid": "line_245",
+        "topic": "NP",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_247",
+        "parentid": "line_246",
+        "topic": "NNP",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_248",
+        "parentid": "line_247",
+        "topic": "John",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_249",
+        "parentid": "line_245",
+        "topic": "VP",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_250",
+        "parentid": "line_249",
+        "topic": "VBZ",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_251",
+        "parentid": "line_250",
+        "topic": "has",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_252",
+        "parentid": "line_249",
+        "topic": "NP",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_253",
+        "parentid": "line_252",
+        "topic": "DT",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_254",
+        "parentid": "line_253",
+        "topic": "a",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_255",
+        "parentid": "line_252",
+        "topic": "NN",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_256",
+        "parentid": "line_255",
+        "topic": "dog",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_257",
+        "parentid": "line_243",
+        "topic": "\u5f97\u5230\u6587\u6cd5\u7d50\u69cb\u6a39",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_258",
+        "parentid": "line_257",
+        "topic": "\u904e\u53bb\u7528structure learning\u89e3\u9019\u554f\u984c",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_259",
+        "parentid": "line_257",
+        "topic": "(S(NP NNP)NP(VP VBZ(NP DT NN)NP)VP)S",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_260",
+        "parentid": "line_257",
+        "topic": "\u53ef\u4ee5training\u8d77\u4f86",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_261",
+        "parentid": "line_117",
+        "topic": "sequence-to-sequence auto-encoder - Text",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_262",
+        "parentid": "line_261",
+        "topic": "to understand the meaning of a word sequence the order of the words can not be igored",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_263",
+        "parentid": "line_262",
+        "topic": "white blood cells destorying an infection",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_264",
+        "parentid": "line_262",
+        "topic": "exactly the same bag-of-word",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_265",
+        "parentid": "line_262",
+        "topic": "an infection destorying white blood cells",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_266",
+        "parentid": "line_261",
+        "topic": "input",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_267",
+        "parentid": "line_266",
+        "topic": "word sequence",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_268",
+        "parentid": "line_267",
+        "topic": "RNN",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_269",
+        "parentid": "line_268",
+        "topic": "embedding vector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_270",
+        "parentid": "line_269",
+        "topic": "encoder",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_271",
+        "parentid": "line_270",
+        "topic": "decoder",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_272",
+        "parentid": "line_271",
+        "topic": "embedding vector",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_273",
+        "parentid": "line_261",
+        "topic": "\u53e6\u4e00\u500b\u7248\u672c",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_274",
+        "parentid": "line_273",
+        "topic": "skip-thought",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_275",
+        "parentid": "line_274",
+        "topic": "output\u662f\u4e0b\u4e00\u500b\u53e5\u5b50",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_276",
+        "parentid": "line_275",
+        "topic": "\u6bd4\u8f03\u80fd\u8868\u9054\u8a9e\u610f\u7684\u610f\u601d",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_277",
+        "parentid": "line_274",
+        "topic": "seq2seq auto encoder",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_278",
+        "parentid": "line_277",
+        "topic": "\u6bd4\u8f03\u80fd\u8868\u9054\u6587\u6cd5\u610f\u601d",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_279",
+        "parentid": "line_261",
+        "topic": "\u53ef\u4ee5hierarchy\u7684\u65b9\u5f0f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_280",
+        "parentid": "line_279",
+        "topic": "\u628a\u6bcf\u500bsentment vector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_281",
+        "parentid": "line_280",
+        "topic": "\u52a0\u8d77\u4f86\u6210\u70ba\u4e00\u500bdocument high level vector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_282",
+        "parentid": "line_280",
+        "topic": "\u7528document vector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_283",
+        "parentid": "line_282",
+        "topic": "\u53bb\u7522\u751f\u4e00\u4e32setence vector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_284",
+        "parentid": "line_283",
+        "topic": "\u6839\u64da\u6bcf\u500bsetence vector\u5728\u89e3\u56de",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_285",
+        "parentid": "line_284",
+        "topic": "word sequence",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_286",
+        "parentid": "line_285",
+        "topic": "\u56db\u5c64LSTM",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_287",
+        "parentid": "line_117",
+        "topic": "sequence-to-sequence auto-encoder - Speech",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_288",
+        "parentid": "line_287",
+        "topic": "audio segement\u8b8a\u6210fixed length vector",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_289",
+        "parentid": "line_288",
+        "topic": "audio word to vector",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_290",
+        "parentid": "line_288",
+        "topic": "dog voice",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_291",
+        "parentid": "line_290",
+        "topic": "fixed length vector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_292",
+        "parentid": "line_288",
+        "topic": "dogs voice",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_293",
+        "parentid": "line_292",
+        "topic": "fixed length vector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_294",
+        "parentid": "line_293",
+        "topic": "\u8ddfdog\u5f88\u63a5\u8fd1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_295",
+        "parentid": "line_288",
+        "topic": "audio segement",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_296",
+        "parentid": "line_295",
+        "topic": "\u62bd\u6210 activation features sequence",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_297",
+        "parentid": "line_296",
+        "topic": "\u4e1f\u5230 RNN",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_298",
+        "parentid": "line_297",
+        "topic": "RNN\u6b64\u6642\u662fencoder",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_299",
+        "parentid": "line_298",
+        "topic": "\u6700\u5f8c\u5b58\u5728memory\u7684\u503c\u4ee3\u8868\u6574\u500binput\u7684information",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_300",
+        "parentid": "line_299",
+        "topic": "\u7b49\u65bc\u8868\u793a\u6574\u6bb5\u8072\u97f3\u8a0a\u865f\u7684vector",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_301",
+        "parentid": "line_298",
+        "topic": "\u55ae\u7368\u7121\u6cd5trian",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_302",
+        "parentid": "line_301",
+        "topic": "\u6240\u4ee5\u518d\u52a0\u4e00\u500bRNN decoder",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_303",
+        "parentid": "line_302",
+        "topic": "\u628aencoder\u503c\u7576input",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_304",
+        "parentid": "line_303",
+        "topic": "\u7522\u751f\u4e00\u500b y = acousitc features sequence",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_305",
+        "parentid": "line_303",
+        "topic": "y\u8981\u8207input x\u8d8a\u63a5\u8fd1\u8d8a\u597d",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_306",
+        "parentid": "line_305",
+        "topic": "input x1,x2,x3,x4 sequence",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_307",
+        "parentid": "line_305",
+        "topic": "output y1,y2,y3,y4 sequence",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_308",
+        "parentid": "line_301",
+        "topic": "\u4e00\u8d77train",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_309",
+        "parentid": "line_287",
+        "topic": "\u8a9e\u97f3\u641c\u5c0b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_310",
+        "parentid": "line_309",
+        "topic": "audio database",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_311",
+        "parentid": "line_310",
+        "topic": "\u8072\u97f3\u8a0a\u865f\u5207\u6210segmentation",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_312",
+        "parentid": "line_311",
+        "topic": "audio segement to vector\u6280\u8853\u901a\u901a\u8f49vector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_313",
+        "parentid": "line_309",
+        "topic": "audio query",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_314",
+        "parentid": "line_313",
+        "topic": "audio segement to vector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_315",
+        "parentid": "line_314",
+        "topic": "\u8a08\u7b97\u76f8\u4f3c\u5ea6",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_316",
+        "parentid": "line_315",
+        "topic": "\u627e\u5230\u641c\u5c0b\u7d50\u679c",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_317",
+        "parentid": "line_309",
+        "topic": "vector\u89c0\u5bdf",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_318",
+        "parentid": "line_317",
+        "topic": "2d dims\u4e0a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_319",
+        "parentid": "line_318",
+        "topic": "fear <-> near",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_320",
+        "parentid": "line_318",
+        "topic": "fame <-> name",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_321",
+        "parentid": "line_318",
+        "topic": "\u6709\u76f8\u4f3c\u7684vector\u65b9\u5411\u7dda\u689d(\u8ddd\u96e2\u4e0d\u540c)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_322",
+        "parentid": "line_318",
+        "topic": "\u4f46\u662f\u9084\u6c92\u6709 Semantic\u8a9e\u610f\u7684informations",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_323",
+        "parentid": "line_309",
+        "topic": "\u4e0b\u4e00\u6b65\u8003\u616esemtatic\u8a9e\u610f\u7684information",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_324",
+        "parentid": "line_117",
+        "topic": "sequence-to-sequence auto-encoder demo: chat-bot",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_325",
+        "parentid": "line_324",
+        "topic": "\u6536\u96c6\u4e00\u5806\u5c0d\u8a71\u53f0\u8a5e",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_326",
+        "parentid": "line_325",
+        "topic": "how are you",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_327",
+        "parentid": "line_326",
+        "topic": "I'm fine",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_328",
+        "parentid": "line_325",
+        "topic": "data:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_329",
+        "parentid": "line_328",
+        "topic": "\u96fb\u5f71\u5f71\u96c6",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_330",
+        "parentid": "line_329",
+        "topic": "4w+",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_331",
+        "parentid": "line_328",
+        "topic": "\u7f8e\u570b\u7e3d\u7d71\u5927\u9078\u8faf\u8ad6\u53e5\u5b50",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_332",
+        "parentid": "line_325",
+        "topic": "train\u9019\u4e9bdata",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_333",
+        "parentid": "line_117",
+        "topic": "\u53e6\u4e00\u7a2ememory network",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_334",
+        "parentid": "line_117",
+        "topic": "attention-based model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_335",
+        "parentid": "line_334",
+        "topic": "RNN\u9032\u968e\u7248\u672c",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_336",
+        "parentid": "line_334",
+        "topic": "machine's memory",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_337",
+        "parentid": "line_336",
+        "topic": "database",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_338",
+        "parentid": "line_337",
+        "topic": "\u67d0\u7a2einformation vector",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_339",
+        "parentid": "line_334",
+        "topic": "input -> DNN/RNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_340",
+        "parentid": "line_339",
+        "topic": "reading head controller",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_341",
+        "parentid": "line_340",
+        "topic": "reading head\u8b80\u53d6information",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_342",
+        "parentid": "line_117",
+        "topic": "attension-based model v2",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_343",
+        "parentid": "line_342",
+        "topic": "DNN/RNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_344",
+        "parentid": "line_343",
+        "topic": "writing head controller",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_345",
+        "parentid": "line_344",
+        "topic": "writing head\u5beb\u9032information",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_346",
+        "parentid": "line_342",
+        "topic": "nerual turing machine",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_347",
+        "parentid": "line_346",
+        "topic": "\u7528\u5728reading comprehension",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_348",
+        "parentid": "line_347",
+        "topic": "\u8b93machine\u8b80\u4e00\u5806document",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_349",
+        "parentid": "line_348",
+        "topic": "\u628adocument\u5167\u5bb9\u6bcf\u4e00\u53e5\u8a71\u90fd\u8b8a\u6210vector\u5b58\u8d77\u4f86",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_350",
+        "parentid": "line_349",
+        "topic": "\u6bcf\u4e00\u53e5\u8a71 Semantic",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_351",
+        "parentid": "line_346",
+        "topic": "\u554fmachine\u554f\u984c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_352",
+        "parentid": "line_351",
+        "topic": "\u7531\u4e2d\u592e\u8655\u7406\u5668\u63a7\u5236reading head controller",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_353",
+        "parentid": "line_352",
+        "topic": "\u54ea\u4e9b\u53e5\u5b50\u8ddf\u4e2d\u592e\u8655\u7406\u5668\u6709\u95dc\u7684",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_354",
+        "parentid": "line_353",
+        "topic": "reading head\u653e\u9019\u908a",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_355",
+        "parentid": "line_354",
+        "topic": "\u8b80\u53d6\u53ef\u4ee5\u662fiterative",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_356",
+        "parentid": "line_355",
+        "topic": "\u91cd\u8907\u6578\u6b21",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_357",
+        "parentid": "line_356",
+        "topic": "\u4e0d\u6703\u53ea\u5f9e\u4e00\u500b\u5730\u65b9\u8b80\u53d6information",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_358",
+        "parentid": "line_355",
+        "topic": "collect\u8d77\u4f86",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_359",
+        "parentid": "line_358",
+        "topic": "\u7d66\u4e88\u6700\u7d42\u7b54\u6848",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_360",
+        "parentid": "line_346",
+        "topic": "https://github.com/keras-team/keras/blob/master/examples/babi_memnn.py",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_361",
+        "parentid": "line_346",
+        "topic": "QA answer\u7684test",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_362",
+        "parentid": "line_346",
+        "topic": "NN\u81ea\u5df1attend\u51fa\u898f\u5247",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_363",
+        "parentid": "line_362",
+        "topic": "\u7531\u53e5\u5b50\u4e2d\u81ea\u5df1\u5b78\u51fa\u4f86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_364",
+        "parentid": "line_342",
+        "topic": "Visual Question Answering",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_365",
+        "parentid": "line_364",
+        "topic": "what is the mustache make of ?",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_366",
+        "parentid": "line_365",
+        "topic": "AI system",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_367",
+        "parentid": "line_366",
+        "topic": "bananas",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_368",
+        "parentid": "line_364",
+        "topic": "http://visualqa.org",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_369",
+        "parentid": "line_364",
+        "topic": "input",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_370",
+        "parentid": "line_369",
+        "topic": "image",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_371",
+        "parentid": "line_369",
+        "topic": "NN(CNN): a vector for each region",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_372",
+        "parentid": "line_364",
+        "topic": "query",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_373",
+        "parentid": "line_372",
+        "topic": "DNN/RNN",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_374",
+        "parentid": "line_372",
+        "topic": "Reading head controller",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_375",
+        "parentid": "line_374",
+        "topic": "\u6c7a\u5b9a\u8b80\u53d6\u8cc7\u8a0a\u7684\u4f4d\u7f6e",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_376",
+        "parentid": "line_375",
+        "topic": "\u5716\u7247\u54ea\u500bfeature\u8ddf\u8f38\u5165\u554f\u984c\u6709\u95dc\u4fc2",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_377",
+        "parentid": "line_364",
+        "topic": "output",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_378",
+        "parentid": "line_377",
+        "topic": "answer",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_379",
+        "parentid": "line_342",
+        "topic": "Speech Question Answering",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_380",
+        "parentid": "line_379",
+        "topic": "TOFEL Listening Comprehension Test by Machine",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_381",
+        "parentid": "line_379",
+        "topic": "Example",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_382",
+        "parentid": "line_381",
+        "topic": "Audio Story: 5min",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_383",
+        "parentid": "line_381",
+        "topic": "Question",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_384",
+        "parentid": "line_381",
+        "topic": "Choices",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_385",
+        "parentid": "line_381",
+        "topic": "\u8ddf\u4eba\u985e\u8003\u751f\u505a\u7684\u4e8b\u60c5\u76f8\u540c",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_386",
+        "parentid": "line_379",
+        "topic": "Model:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_387",
+        "parentid": "line_386",
+        "topic": "Question",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_388",
+        "parentid": "line_387",
+        "topic": "Semantic Analysis",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_389",
+        "parentid": "line_387",
+        "topic": "\u8a9e\u610f\u5206\u6790 vector",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_390",
+        "parentid": "line_386",
+        "topic": "Audio Story",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_391",
+        "parentid": "line_390",
+        "topic": "Speech Recognition",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_392",
+        "parentid": "line_390",
+        "topic": "Semanntic Analysis",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_393",
+        "parentid": "line_390",
+        "topic": "Attention",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_394",
+        "parentid": "line_393",
+        "topic": "Question\u8a9e\u610f",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_395",
+        "parentid": "line_393",
+        "topic": "Story\u8a9e\u610f",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_396",
+        "parentid": "line_395",
+        "topic": "\u756b\u91cd\u9ede",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_397",
+        "parentid": "line_390",
+        "topic": "Output Answer",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_398",
+        "parentid": "line_397",
+        "topic": "\u4e5f\u53ef\u4ee5\u56de\u982d\u4fee\u6b63\u7b54\u6848",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_399",
+        "parentid": "line_397",
+        "topic": "\u7b54\u6848\u8ddf\u9078\u9805\u7b97\u76f8\u4f3c\u5ea6",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_400",
+        "parentid": "root",
+        "topic": "To learn More...",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_401",
+        "parentid": "line_400",
+        "topic": "The Unreasonable Effectiveness of Recurrent Nerual Networks",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_402",
+        "parentid": "line_400",
+        "topic": "Understanding LSTM Networks",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_403",
+        "parentid": "root",
+        "topic": "Deep Learning & Structure Learning",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_404",
+        "parentid": "line_403",
+        "topic": "Deep",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_405",
+        "parentid": "line_404",
+        "topic": "RNN,LSTM",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_406",
+        "parentid": "line_403",
+        "topic": "Structure",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_407",
+        "parentid": "line_406",
+        "topic": "HMM,CRF,Structured Perceptron/SVM",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_408",
+        "parentid": "line_406",
+        "topic": "pos taking",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_409",
+        "parentid": "line_408",
+        "topic": "input sequence",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_410",
+        "parentid": "line_408",
+        "topic": "output sequence",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_411",
+        "parentid": "line_403",
+        "topic": "difference?",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_412",
+        "parentid": "line_411",
+        "topic": "Deep",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_413",
+        "parentid": "line_412",
+        "topic": "unidirectional RNN does not consider the whole sequence",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_414",
+        "parentid": "line_413",
+        "topic": "\u53ea\u770b\u4e00\u534a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_415",
+        "parentid": "line_413",
+        "topic": "how about bidirectional RNN",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_416",
+        "parentid": "line_411",
+        "topic": "structured",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_417",
+        "parentid": "line_416",
+        "topic": "using Viterbi, so consider the whole sequence",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_418",
+        "parentid": "line_417",
+        "topic": "\u6574\u500b\u53e5\u5b50",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_419",
+        "parentid": "line_418",
+        "topic": "\u512a\u52e2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_420",
+        "parentid": "line_411",
+        "topic": "structured",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_421",
+        "parentid": "line_420",
+        "topic": "can explicitly consider the label dependently",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_422",
+        "parentid": "line_421",
+        "topic": "inference",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_423",
+        "parentid": "line_422",
+        "topic": "constrained\u53ef\u4ee5\u53ef\u4ee5\u5beb\u5230Viterbi algorithm\u88e1\u9762",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_424",
+        "parentid": "line_423",
+        "topic": "\u5982\u679clabel\u51fa\u73fe\u5c31\u8981\u9023\u7e8c\u51fa\u73fe5\u6b21",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_425",
+        "parentid": "line_423",
+        "topic": "\u6392\u9664\u4e0d\u7b26\u5408constrained\u7d50\u679c",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_426",
+        "parentid": "line_422",
+        "topic": "\u76f4\u63a5\u544a\u8a34machine\u8981\u505a\u4ec0\u9ebc",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_427",
+        "parentid": "line_422",
+        "topic": "deep\u96e3\u9019\u9ebc\u505a",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_428",
+        "parentid": "line_411",
+        "topic": "deep",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_429",
+        "parentid": "line_428",
+        "topic": "cost and error not always related",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_430",
+        "parentid": "line_411",
+        "topic": "structured",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_431",
+        "parentid": "line_430",
+        "topic": "cost is the upper bound of error",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_432",
+        "parentid": "line_411",
+        "topic": "deep",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_433",
+        "parentid": "line_432",
+        "topic": "can deep",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_434",
+        "parentid": "line_433",
+        "topic": "\u5f88\u5f37\u512a\u52e2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_435",
+        "parentid": "line_432",
+        "topic": "structured\u5f88\u96e3deep",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_436",
+        "parentid": "line_435",
+        "topic": "\u901a\u5e38\u53ea\u505alinear",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_437",
+        "parentid": "line_435",
+        "topic": "\u4e0d\u7136\u5f88\u96e3train",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_438",
+        "parentid": "line_411",
+        "topic": "\u8981\u5f97\u5230state of the art\u7684\u7d50\u679c",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_439",
+        "parentid": "line_438",
+        "topic": "RNN/SLTM\u4e0d\u53ef\u6216\u7f3a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_440",
+        "parentid": "line_438",
+        "topic": "sequence labeling task\u8868\u73fe\u5176\u5be6\u6bd4\u8f03\u597d\u7684",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_441",
+        "parentid": "line_440",
+        "topic": "deep\u9019\u90e8\u5206\u5f88\u91cd\u8981",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_442",
+        "parentid": "line_411",
+        "topic": "integrated together",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_443",
+        "parentid": "line_442",
+        "topic": "\u5f88\u591a\u5148\u4f8b\u7d50\u5408",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_444",
+        "parentid": "line_443",
+        "topic": "input \u5148\u900f\u904eRNN/LSTM",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_445",
+        "parentid": "line_443",
+        "topic": "output \u5728\u505aHMM/CRF",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_446",
+        "parentid": "line_443",
+        "topic": "\u7528RNN/LSTM\u7684output\u5b9a\u7fa9HMM/CRF\u7684evaluation function",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_447",
+        "parentid": "line_442",
+        "topic": "\u540c\u6642\u4eab\u53d7\u5169\u908a\u7684\u597d\u8655",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_448",
+        "parentid": "line_447",
+        "topic": "\u90fd\u53ef\u4ee5\u7528graident descent training",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_449",
+        "parentid": "line_442",
+        "topic": "speech Recognition:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_450",
+        "parentid": "line_449",
+        "topic": "CNN/LSTM/DNN+HMM",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_451",
+        "parentid": "line_450",
+        "topic": "P(x,y) = P(y_1|start)\u03c0_l=1^L-1(P(y_l+1|y_l)P(end|y_L))\u03c0_l=1^L(P(x_l|y_l))",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_452",
+        "parentid": "line_451",
+        "topic": "x",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_453",
+        "parentid": "line_452",
+        "topic": "\u8a9e\u97f3\u8a0a\u865f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_454",
+        "parentid": "line_451",
+        "topic": "y",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_455",
+        "parentid": "line_454",
+        "topic": "\u8a9e\u97f3\u8fa8\u8b58\u7d50\u679c",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_456",
+        "parentid": "line_451",
+        "topic": "HMM",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_457",
+        "parentid": "line_456",
+        "topic": "trnasition",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_458",
+        "parentid": "line_457",
+        "topic": "RNN\u9810\u6e2c\u5e38\u5e38\u6703\u6b6a\u6389\u518d\u56de\u4f86",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_459",
+        "parentid": "line_458",
+        "topic": "\u6240\u4ee5\u9019\u90e8\u5206\u4e0d\u7528RNN",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_460",
+        "parentid": "line_458",
+        "topic": "HMM\u53ef\u4ee5\u81ea\u52d5\u4fee\u6389",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_461",
+        "parentid": "line_456",
+        "topic": "emission",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_462",
+        "parentid": "line_461",
+        "topic": "DNN\u53d6\u4ee3emission",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_463",
+        "parentid": "line_462",
+        "topic": "Gaussian mixture model",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_464",
+        "parentid": "line_463",
+        "topic": "\u6539\u6210DNN",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_465",
+        "parentid": "line_464",
+        "topic": "\u5f88\u597d\u7684\u6548\u679c",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_466",
+        "parentid": "line_442",
+        "topic": "slot filling:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_467",
+        "parentid": "line_466",
+        "topic": "Semantic Tagging: bidirectional LSTM + CRF/Structured SVM",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_468",
+        "parentid": "line_467",
+        "topic": "bidirectional LSTM",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_469",
+        "parentid": "line_468",
+        "topic": "\u62bdfeatures",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_470",
+        "parentid": "line_467",
+        "topic": "CRF/Structured SVM",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_471",
+        "parentid": "line_470",
+        "topic": "\u62fffeature\u4f86learn W",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_472",
+        "parentid": "line_467",
+        "topic": "Testing",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_473",
+        "parentid": "line_472",
+        "topic": "y^ = arg max_y\u2286Y (w*\u03a6(x,y))",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_474",
+        "parentid": "line_472",
+        "topic": "structured learning",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_475",
+        "parentid": "line_474",
+        "topic": "inference\u554f\u984c\u6700\u5927",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_476",
+        "parentid": "line_475",
+        "topic": "\u89e3\u4e00\u500boptiminzation problem",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_477",
+        "parentid": "line_475",
+        "topic": "\u5927\u90e8\u5206\u6c92\u597dsolution",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_478",
+        "parentid": "line_475",
+        "topic": "sequence labeling\u662f\u5c11\u6578\u6709\u597dsolution",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_479",
+        "parentid": "line_475",
+        "topic": "GAN\u5c31\u5f88\u50cfstructured learning",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_480",
+        "parentid": "line_479",
+        "topic": "discriminator",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_481",
+        "parentid": "line_480",
+        "topic": "\u770b\u6210evaluation function",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_482",
+        "parentid": "line_480",
+        "topic": "problem 1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_483",
+        "parentid": "line_479",
+        "topic": "generator",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_484",
+        "parentid": "line_483",
+        "topic": "inference",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_485",
+        "parentid": "line_484",
+        "topic": "x = arg max_x F(x)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_486",
+        "parentid": "line_484",
+        "topic": "problem 2",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_487",
+        "parentid": "line_479",
+        "topic": "problem 3",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_488",
+        "parentid": "line_487",
+        "topic": "you know how to learn F(x)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_489",
+        "parentid": "line_479",
+        "topic": "conditional GAN",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_490",
+        "parentid": "line_489",
+        "topic": "generator",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_491",
+        "parentid": "line_490",
+        "topic": "input",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_492",
+        "parentid": "line_491",
+        "topic": "x",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_493",
+        "parentid": "line_490",
+        "topic": "output",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_494",
+        "parentid": "line_493",
+        "topic": "y",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_495",
+        "parentid": "line_489",
+        "topic": "discriminator",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_496",
+        "parentid": "line_495",
+        "topic": "real input",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_497",
+        "parentid": "line_496",
+        "topic": "x",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_498",
+        "parentid": "line_495",
+        "topic": "output",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_499",
+        "parentid": "line_498",
+        "topic": "y",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_500",
+        "parentid": "line_495",
+        "topic": "g input",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_501",
+        "parentid": "line_500",
+        "topic": "x",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_502",
+        "parentid": "line_495",
+        "topic": "output",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_503",
+        "parentid": "line_502",
+        "topic": "y",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_504",
+        "parentid": "line_479",
+        "topic": "GAN\u5c31\u662ftrain structured learning\u7684\u4e00\u7a2e\u65b9\u6cd5",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_505",
+        "parentid": "line_504",
+        "topic": "Connect Energy-based model with GAN",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_506",
+        "parentid": "line_505",
+        "topic": "A Connection between Generative Adversarial network,Inverse Reinforcement Learning,and Energy-based Models",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_507",
+        "parentid": "line_505",
+        "topic": "Deep Directed Generative Models with Energy-Based Probability Estimation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_508",
+        "parentid": "line_505",
+        "topic": "ENGERY-BASED GENERATIVE ADVERSARIAL NETWORKS",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_509",
+        "parentid": "line_504",
+        "topic": "Deep learning model for inference",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_510",
+        "parentid": "line_509",
+        "topic": "Deep Unfolding: model-based inspiration of novel deep architecture",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_511",
+        "parentid": "line_509",
+        "topic": "conditional Random Fields as Recurrent Neruals Network",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_512",
+        "parentid": "line_479",
+        "topic": "\u53e6\u4e00\u9580\u8ab2",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_513",
+        "parentid": "line_512",
+        "topic": "MLDS",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_514",
+        "parentid": "line_513",
+        "topic": "Machine Learning and having it deep and structured",
+        "background-color": "#e82ad2",
+        "expanded": false
+    }
+]
