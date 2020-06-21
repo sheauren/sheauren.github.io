@@ -1,0 +1,479 @@
+Ensemble
+    Framework of Ensemble
+        團隊合作
+        Get a set of classifiers
+            f1(x)/f2(x)/f3(x)
+                集合起來發揮個別沒辦法做到更強大的屬性
+                They should be diverse
+                    每一個classifier有不同的屬性
+        Aggregate the classifiers (properly)
+            大招improve performance
+            kaggle比賽要冠軍都要ensemble
+    Ensemble: Bagging
+        用在很強的model
+        Bias vs Variance
+            complex model:
+                small bias, large variance
+            simple model:
+                large bias, small variance
+        各世界預測寶可夢
+            都用小模型
+                small variacne, large bias
+            把不同模型集合起來
+                平均模型output得到一個接近正確答案的結果
+                bagging
+                    創造不同的dataset
+                        獨自訓練model
+                            variance可能很大的model集合起來
+                                variance就不會那麼大了
+                                bias會是小
+                        如何製造data
+                            N筆training data
+                                sampleing N' examples with replacement
+                                    組成新的dataset
+                                    抽出之後 會再放回去
+                                        N'可能等於N
+                                            但是可能會反覆抽到同一個example
+                                                所以還是會不一樣
+                                    建出好幾個dataset: 4
+                                        N'筆
+                                        用複雜的模型對每一個dataset做learning
+                                            找出4個function
+                                    Testing時
+                                        testing data丟到四個function
+                                            輸出做 average/voting
+                                                通常比一個function時候好
+                                            robust 
+                                                比較不會overfitting
+                                            regression
+                                                average
+                                            classifiers
+                                                voting
+                    當你model很複雜時
+                        擔心他overfiiting的時候
+                            哪些model容易overffit
+                                NN容易overfit?
+                                    NN沒那麼容易overfit
+                                    參數多也不會容易overfit
+                                    常見是不容易在training set overfit
+                                        而不是非常容易overfit
+                                decision tree
+                                    非常容易overfit
+                                    tree夠深就能100%正確率
+                                        只要想他就可以拿100%正確率
+                                            overfitting
+                                    非常需要bagging
+                                        random forest就是decision tree bagging版本
+                                    概念
+                                        assume each object x is represented by a 2-dim vector [x1,x2]
+                                        根據training data建立一棵樹
+                                            根據
+                                                x1<0.5
+                                                    x2<0.3
+                                                        yes
+                                                            Class1
+                                                        no
+                                                            Class2
+                                                x1>=0.5
+                                                    x2>=0.7
+                                                        yes
+                                                            Class2
+                                                        no
+                                                            Class1
+                                        the question of training
+                                            number of branches
+                                            branching criteria
+                                            termination criteria
+                                            base hypo...
+                                        experiment: function of Miku
+                                            class1是初音形狀
+                                            class2是其他地方
+                                            depth = 5
+                                                方框而已
+                                            depth = 10 
+                                                minecraft的初音
+                                            depth = 15
+                                                看起來還不錯了
+                                                少數地方凸起來
+                                            depth = 20
+                                                完美class1
+                                                error rate 0
+                                random forest
+                                    bagging of decision tree
+                                        resampling training data is not sufficient
+                                            每顆tree都差太多
+                                            光用sample方法不大夠
+                                        randomly restrict the features/questions used in each split
+                                            random決定哪些feature/question不用
+                                    out-of-bag validation for bagging
+                                        傳統都切成兩塊
+                                            train/validation
+                                        bagging
+                                            不用切train/validation但一樣有validation效果
+                                            train model都只用部分data
+                                                有些data在training時候沒用到
+                                                    用沒train bagging結果去test該x performance  
+                                                        因為該x是由其他function train的
+                                                    using RF = f2+f4 to test x^1
+                                                    最後平均出來 Out-of-bag (OOB) error
+                                    experiment:
+                                        function of Miku
+                                        Random Forest (100 trees)
+                                            bagging不會讓model更fit data
+                                                沒fit的還是沒fit
+                                                depth同水平下的情況
+                                                    平均起來比較平滑而已                                                    
+                        才做bagging
+                        減低variance
+    Ensemble: Boosting
+        用在弱的model
+            improving weak classifiers
+        弱的model無法fit data時
+        Guarantee
+            if your ML algorithm can produce classifier with error rate smaller than 50% on training data
+            you can obtain 0% error rate classifier after boosting
+        Framework of boosting
+            Obtain the first classifier f1(x)
+            Find another function f2(x) to help f1(x)
+                However, if f2(x) is similar to f1(x), it will not help a lot
+                f2做f1做不到的事情
+            Obtain the second classifer f2(x)
+            f3(x)f4(x)...
+            ... finally, combining all the classifiers
+            得到很低的error rate
+            The classifiers are learnined sequentially
+                training是sequential
+                    找出f1才找得出f2,f3...
+                bagging沒順序boosting有
+            training data:
+                {(x^1,y^^1),...(x^n1,y^^n)...(x^N,y^^N)}
+                y^ ± 1 (binary classification)
+        How to obtain different classifiers?
+            Training on different training data sets
+            How to have different training data sets
+                Re-sampling your training data to from a new set
+                    也可以想像是改weight
+                        sample 2 weight=2
+                            只是weight只能是整數
+                Re-weighting your training data to from a new set
+                    u is weight
+                    (x^1,y^1,u^1) u^1= 1=> 0.4
+                    (x^2,y^2,u^2) u^2= 1=> 2.1
+                    (x^3,y^3,u^3) u^3= 1=> 0.7
+                    In real implementation, you only have to change the cost/objective function
+                        L(f) = Σ_n l(f(x^n),y^^n)
+                            加入u的權重到l前面
+                            L(f) = Σ_n u*l(f(x^n),y^^n)
+        Idea of Adaboost
+            Idea: training f2(x) on the new training set that fails f1(x)
+                讓f1(x)在這組新的training set會 fails,ex:50%
+                在讓f2在這組training set上training
+            How to find a new training set that fails f1(x)?
+                ε_1 : the error rate of f1(x) on its training data
+                    ε1 = Σ_n (u1^n ∂(f1(x^n≠y^^n))) / Z_1
+                        計算每一筆training example的結果是不是對的
+                            對的話
+                                0 
+                            錯的話
+                                1
+                            weight
+                                u^n
+                            Z_1
+                                normalization
+                                Z1 = Σ_n u_1^n
+                            ε1 < 0.5
+                                error rate是還可以的
+                                    所以應該要<0.5
+                changing the example weights from u1^n to u2^n such that
+                    Σ_n (u2^n ∂(f1(x^n≠y^^n))) / Z_2 = 0.5
+                    the performance of f1 for new weights would be random
+                    training f2(x) based on the new weights u_2^n
+                        這樣f2(x)跟f1(x)就會是互補的
+                example:
+                    training data:
+                        (x^1,y^^1,u^1)
+                            u^1=1
+                                (f1答對)
+                        (x^2,y^^2,u^2)
+                            u^2=1
+                                (f1答錯)
+                        (x^3,y^^3,u^3)
+                            u^3=1
+                                (f1答對)
+                        (x^4,y^^4,u^4)
+                            u^4=1
+                                (f1答對)
+                    model:
+                        f1(x)
+                            只分三筆成功一筆失敗
+                                ε1 = 0.25
+                            改變u讓error變成0.5
+                                很多改法
+                                    答對的那幾題配分就變小
+                                    答錯的那幾題配分就變大
+                                    假設
+                                        u^1 = 1/√3
+                                        u^2 = √3
+                                        u^3 = 1/√3
+                                        u^4 = 1/√3
+                                        f1(x)在這個權重下
+                                            error 0.5  
+                                            變得很差 
+                        f2(x)
+                            training 用上面讓f1(x)很差的training set
+                                ε2 < 0.5
+                                所以f1(x)跟f2(x)會是互補的
+                design:
+                    if x^n misclassified by f1(f1(x^n)≠y^^n)
+                        u_2^n <- u_1^n multiplying d_1
+                            d_1 > 1
+                            increase weight
+                    if x^n correctly classified by f1(f1(x^n)=y^n)
+                        u_2^n <- u1^n divided by d_1
+                            decrease weight
+                    f2 will be learned based on example weights u_2^n
+                    what is the value of d_1
+                        ε1 = Σ_n (u1^n ∂(f1(x^n≠y^^n))) / Z_1
+                        Z1 = Σ_n u_1^n
+                        Σ_n (u2^n ∂(f1(x^n≠y^^n))) / Z_2 = 0.5
+                            f1(x^n≠y^^n)
+                                u_2^n <- u_1^n multiplying d_1
+                            Σ_n (u2^n ∂(f1(x^n≠y^^n)))
+                                簡化
+                                    Σ_f1(x^n≠y^^n) u_1^n*d_1
+                            Z_2
+                                Σ_n u_2^n
+                                    = 
+                                        Σ_f1(x^n≠y^^n) u_2^n
+                                        + Σ_f1(x^n=y^^n) u_2^n
+                                            =
+                                                Σ_f1(x^n≠y^^n) u_1^n*d_1
+                                                + Σ_f1(x^n=y^^n) u_1^n/d_1
+                            =>
+                                Σ_f1(x^n≠y^^n) u_1^n*d_1 / ( Σ_f1(x^n≠y^^n) u_1^n*d_1+ Σ_f1(x^n=y^^n) u_1^n/d_1 ) = 0.5
+                                    倒過來
+                                    ( Σ_f1(x^n≠y^^n) u_1^n*d_1+ Σ_f1(x^n=y^^n) u_1^n/d_1 ) / Σ_f1(x^n≠y^^n) u_1^n*d_1 = 2
+                                        共有    ( Σ_f1(x^n≠y^^n) u_1^n*d_1 / ( Σ_f1(x^n≠y^^n) u_1^n*d_ = 1
+                                        所以 
+                                            Σ_f1(x^n=y^^n) u_1^n/d_1 ) / Σ_f1(x^n≠y^^n) u_1^n*d_1
+                                            答對除d_1的總和=答錯乘d_1乘的總和
+                                                因為 ε1 = Σ_f1(x^n≠y^^n) u_1^n / Z_1
+                                                    final
+                                                        d_1 = √(1-ε_1)/ε_1
+                                                            一定>1
+                d_1 = √(1-ε_1)/ε_1
+            Algorithm for AdaBoost
+                Giving training data:
+                    (x^1,y^^1,u_1^1),...(x^n,y^^n,u_1^n),...,(x^N,y^^N,u_1^N),
+                        y^^= ± (Binary classification) , u_1^n = 1 (equal weights)
+                For t = 1,...,T:
+                    training weak cclassifier f_t(x) with weights {u_t^1,...u_t^N}
+                    ε_t is the error rate of f_x(x) with weights {u_t^1,...u_t^N}
+                    For n = 1,...,N:
+                        if x^n is misclassified by f_t(x):
+                            u_t+1^n = u_t^n * d_t
+                        else:
+                            u_t+1^n = u_t^n / d_t
+                        d_t = √(1-ε_t)/ε_t
+                        α_t = ln √(1-ε_t)/ε_t
+                            u_t+1^n = u_t^n * exp(α_t)
+                            u_t+1^n = u_t^n * exp(-α_t)
+                            本來有乘有除
+                                變成正負號
+                                    簡化公式
+                                        u_t+1^n = u_t^n * exp(-y^n*f_t(x^n)*α_t)
+                                        misclassified
+                                            y^n ≠ f_t(x^n )
+                                                -1 * -1
+                                        classified
+                                            y^n = f_t(x^n )
+                                                -1 *  1
+                We obtain a set of functions: f_1(x)...f_t(x)...f_T(x)
+                How to aggregate them?
+                    Uniform weight:
+                        H(x) = sign(Σ_t=1^T(f_t(x )))
+                            加起來看正負號決定classifier
+                                可以但不是很好的方法
+                        weight有好有壞應該給不同權重
+                            H(x) = sign(Σ_t=1^T(α_t*f_t(x )))
+                                α_t 權重
+                                    α_t = ln √(1-ε_t)/ε_t
+                                        ε = 0.1
+                                            好weight
+                                            α_t = 1.10
+                                                高權重
+                                        ε = 0.4
+                                            爛weight
+                                            α_t = 0.2
+                                                低權重
+                                weight sum看權重加起來在看正負號
+    Toy Example:
+        T = 3,weak classifier = decision stump
+        decision stump
+            feature分布在二維平面上
+                選一個dimension切一刀
+                    一邊當class1
+                    另一邊當class2
+                        結束
+            boosting要找weak的classifier
+                decision stump夠weak所以用在這邊
+        t = 1
+            所有training data weight = 1.0
+            f1(x)切第一刀
+                positive region 
+                    +
+                negative region
+                    -
+                misclassified
+                    3筆/10筆
+                    error rate
+                        ε_1 = 0.3
+                        d_1 = 1.53
+                        α_2 = 0.42
+                        改變training data weight
+                            分類正確的/1.53 = 0.65
+                            分類錯誤的*1.53 = 1.53
+        t = 2
+            所有training data weight 
+                1.53 or 0.65
+            f2(x)切一刀
+                又有三筆data分類是錯的
+                    error date
+                        ε_2 = 0.21
+                        d_2 = 1.94
+                        α_2 = 0.66
+                        改變training data weight                            
+                            分類正確的/1.94
+                                0.65/1.94=0.33
+                                1.53/1.94=0.78
+                            分類錯誤的*1.94 = 
+                                0.65*1.94 = 1.26
+        t = 3
+            所有train data weight
+                0.33 0.78 1.26
+            f3(x)切一刀
+                又有三筆data分類錯誤
+                    ε_3 = 0.13
+                        d_2 = 2.59
+                        α_2 = 0.95
+        final classifer:
+            H(x) = sign(Σ_t=1^T(f_t(x )))
+                sign(0.42*f_1(x) + 0.66*f_2(x) + 0.95*f_3(x))
+                3個classifier切成六塊(兩縱刀,一橫刀)
+                    權重會影響到每一區的sign
+                        positive
+                        negative                    
+            3個weak classifier會得到100%正確率
+        Warning of Math
+            H(x) = sign(Σ_t=1^T(f_t(x )))
+            α_t = ln √(1-ε_t)/ε_t
+            As we have more and more f_t(T increases) , H(x) archieves smalller and smaller error rate on trainig data.
+            time 52:00~1:18:13
+                先跳過
+        Experiment: Function of Miku
+            Adaboost + Dicision Tree
+                Depth = 5
+                T = 10
+                    互補出minecraft等級
+                        角歪了 頭髮跟身體沒分開
+                T = 20
+                    腳直了
+                    頭髮身體稍微分開
+                T = 50
+                    幾乎外型都出來
+                    少許細節還沒成功
+                T = 100
+                    完美fit
+    Gradient Boosting
+        General Formulation of Boosting
+            Initial function g_0(x) = 0
+            For t=1 to T:
+                Find a function t_f(x) and α_t to improve g_t-1(x)
+                    g_t-1(x) = Σ_i=1^t-1 α_i*f_i(x)
+                g_t(x) = g_t-1(x)+ α_t*f_t(x)
+            Output: H(x) = sign(g_t(x))
+        What is the learning target of g(x)?
+            L(g) = Σ_i=1 l (y^^n,g(x^n))
+                loss y^^n,g(x^n)
+                    Cross Entropy
+                    Mean Square Error
+                L(g) = Σ_i=1 exp(-y^^ * g(x))
+        Find g(x), mimimize L(g) = Σ_n exp(-y^^ * g(x))
+            if we already have g(x) = g_t-1 (x), how to update g(x)?
+        Gradient Descent:
+            g_t = g_t-1 - η ΔL(g)/Δg | g = g_t-1
+            boosting
+            g_t(x) = g_t-1(x)+ α_t*f_t(x)
+            α_t*f_t(x) 與 - η ΔL(g)/Δg | g = g_t-1
+                方向是一樣
+                    Σ_n exp(-y^^ * g_t(x^n))(y^^n)
+                        f_t(x)
+                            same direction
+                            無限多維度可能
+                            training data限制了維度
+                            Σ_n exp(-y^^ * g_t-1(x^n))(y^^n)f_t(x^n)
+                                (-y^^n)f_t(x^n)跟f_t(x^n)
+                                    same sign
+                                weight u_t^n
+                                    exp(-y^^ * g_t-1(x^n))
+                                = Π_i=1^t-1 exp(-y^^n α_i*f_i*(x^n))
+                                    exactly the weights we obtain in Adaboost
+            find α_t f_t(x) 
+                α_t好像learning rate
+                g_t(x) = g_t-1(x)+ α_t*f_t(x)
+                find α_t minimzing L(g)
+                    算參數的graident比較快
+                    可能不會稀罕說LR設的好不好
+                        太小多算幾次
+                    在gradient boost的方法裡面
+                        f_t是classifier
+                            在找f_t的過程中運算量是很大的
+                                如果f_t是NN
+                                    要找出來本身就需要多次的gradient descent的iteration
+                            找出f_t要好好珍惜他
+                                把他利用價值最大化
+                                    既然找出來就固定住
+                                        去調一個最好的learning rate
+                                            α_t
+                    L(g) = 
+                        Σ_n exp(-y^^ * g_t-1(x^n))exp(-y^^n*α_t*f_t(x^n))
+                find α such that
+                    ∂L(g)/∂α_t =0
+                        把極值找出
+                    α_t = ln √(1-ε_t)/ε_t
+                Adaboost整件事情就想像也在做graident descent
+                    只是graident是一個function
+                    Learning rate有一個很好的方法決定learning rate
+                    可以任意更改你的objective function
+                        exp(-y^^ * g(x))
+                            也可以改其他的
+                            創造不一樣的新方法
+    Ensemble: Stacking
+        Voting
+            四個人都弄了自己的model
+                小明's system
+                老王's system
+                老李's system
+                小毛's system
+            input data x丟到這四個model
+                每個model都有output
+                    把output合併起來得到答案
+                    假設分類問題可以用 majority vote
+                        最多系統選擇哪個class
+                            他就是正確答案
+            並不是所有model都是好的
+                可能小毛的系統特別弱
+                    如果直接調低他的權重會傷了他的自尊心
+                    在learning一個classifier
+                        他把前面4個system output當input
+                            再來決定最終結果是什麼
+                            最後classifier不用太複雜
+                                可能只要logisic regression就行了
+            正常資料分training set/ validation set
+                在stacking要把training set在分成兩部分
+                    一部分training set拿來learn這些classifier
+                    一部分training set拿來learn final classifier
+                    有的classifier可能只是fit training data
+                        很異常的overfit
+                    需要另一批training data來train final classifier
+                        不能用前面classifier training data

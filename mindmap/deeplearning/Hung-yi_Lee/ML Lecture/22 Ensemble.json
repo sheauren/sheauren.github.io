@@ -1,0 +1,3347 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Ensemble"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Framework of Ensemble",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u5718\u968a\u5408\u4f5c",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "Get a set of classifiers",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "f1(x)/f2(x)/f3(x)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_4",
+        "topic": "\u96c6\u5408\u8d77\u4f86\u767c\u63ee\u500b\u5225\u6c92\u8fa6\u6cd5\u505a\u5230\u66f4\u5f37\u5927\u7684\u5c6c\u6027",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_4",
+        "topic": "They should be diverse",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_6",
+        "topic": "\u6bcf\u4e00\u500bclassifier\u6709\u4e0d\u540c\u7684\u5c6c\u6027",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_1",
+        "topic": "Aggregate the classifiers (properly)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "\u5927\u62dbimprove performance",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "line_8",
+        "topic": "kaggle\u6bd4\u8cfd\u8981\u51a0\u8ecd\u90fd\u8981ensemble",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_11",
+        "parentid": "root",
+        "topic": "Ensemble: Bagging",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "\u7528\u5728\u5f88\u5f37\u7684model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "line_11",
+        "topic": "Bias vs Variance",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "complex model:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "small bias, large variance",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_13",
+        "topic": "simple model:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "large bias, small variance",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_11",
+        "topic": "\u5404\u4e16\u754c\u9810\u6e2c\u5bf6\u53ef\u5922",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "\u90fd\u7528\u5c0f\u6a21\u578b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "small variacne, large bias",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_18",
+        "topic": "\u628a\u4e0d\u540c\u6a21\u578b\u96c6\u5408\u8d77\u4f86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "line_21",
+        "topic": "\u5e73\u5747\u6a21\u578boutput\u5f97\u5230\u4e00\u500b\u63a5\u8fd1\u6b63\u78ba\u7b54\u6848\u7684\u7d50\u679c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_21",
+        "topic": "bagging",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_23",
+        "topic": "\u5275\u9020\u4e0d\u540c\u7684dataset",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "\u7368\u81ea\u8a13\u7df4model",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_25",
+        "topic": "variance\u53ef\u80fd\u5f88\u5927\u7684model\u96c6\u5408\u8d77\u4f86",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_26",
+        "topic": "variance\u5c31\u4e0d\u6703\u90a3\u9ebc\u5927\u4e86",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_26",
+        "topic": "bias\u6703\u662f\u5c0f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_24",
+        "topic": "\u5982\u4f55\u88fd\u9020data",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_29",
+        "topic": "N\u7b46training data",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "sampleing N' examples with replacement",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_31",
+        "topic": "\u7d44\u6210\u65b0\u7684dataset",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_33",
+        "parentid": "line_31",
+        "topic": "\u62bd\u51fa\u4e4b\u5f8c \u6703\u518d\u653e\u56de\u53bb",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "line_33",
+        "topic": "N'\u53ef\u80fd\u7b49\u65bcN",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "\u4f46\u662f\u53ef\u80fd\u6703\u53cd\u8986\u62bd\u5230\u540c\u4e00\u500bexample",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "\u6240\u4ee5\u9084\u662f\u6703\u4e0d\u4e00\u6a23",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_31",
+        "topic": "\u5efa\u51fa\u597d\u5e7e\u500bdataset: 4",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "N'\u7b46",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_37",
+        "topic": "\u7528\u8907\u96dc\u7684\u6a21\u578b\u5c0d\u6bcf\u4e00\u500bdataset\u505alearning",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "\u627e\u51fa4\u500bfunction",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_31",
+        "topic": "Testing\u6642",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_41",
+        "topic": "testing data\u4e1f\u5230\u56db\u500bfunction",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_42",
+        "topic": "\u8f38\u51fa\u505a average/voting",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_43",
+        "topic": "\u901a\u5e38\u6bd4\u4e00\u500bfunction\u6642\u5019\u597d",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_42",
+        "topic": "robust",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_45",
+        "topic": "\u6bd4\u8f03\u4e0d\u6703overfitting",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_42",
+        "topic": "regression",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "average",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "line_42",
+        "topic": "classifiers",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "voting",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_23",
+        "topic": "\u7576\u4f60model\u5f88\u8907\u96dc\u6642",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_51",
+        "topic": "\u64d4\u5fc3\u4ed6overfiiting\u7684\u6642\u5019",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_52",
+        "topic": "\u54ea\u4e9bmodel\u5bb9\u6613overffit",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "NN\u5bb9\u6613overfit?",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_54",
+        "topic": "NN\u6c92\u90a3\u9ebc\u5bb9\u6613overfit",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_54",
+        "topic": "\u53c3\u6578\u591a\u4e5f\u4e0d\u6703\u5bb9\u6613overfit",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_54",
+        "topic": "\u5e38\u898b\u662f\u4e0d\u5bb9\u6613\u5728training set overfit",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_57",
+        "topic": "\u800c\u4e0d\u662f\u975e\u5e38\u5bb9\u6613overfit",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_53",
+        "topic": "decision tree",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_59",
+        "topic": "\u975e\u5e38\u5bb9\u6613overfit",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_59",
+        "topic": "tree\u5920\u6df1\u5c31\u80fd100%\u6b63\u78ba\u7387",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_61",
+        "topic": "\u53ea\u8981\u60f3\u4ed6\u5c31\u53ef\u4ee5\u62ff100%\u6b63\u78ba\u7387",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "overfitting",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_59",
+        "topic": "\u975e\u5e38\u9700\u8981bagging",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_64",
+        "topic": "random forest\u5c31\u662fdecision tree bagging\u7248\u672c",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_59",
+        "topic": "\u6982\u5ff5",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "assume each object x is represented by a 2-dim vector [x1,x2]",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_66",
+        "topic": "\u6839\u64datraining data\u5efa\u7acb\u4e00\u68f5\u6a39",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "\u6839\u64da",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_69",
+        "topic": "x1<0.5",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_70",
+        "topic": "x2<0.3",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_71",
+        "topic": "yes",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_72",
+        "topic": "Class1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_71",
+        "topic": "no",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_74",
+        "topic": "Class2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_69",
+        "topic": "x1>=0.5",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_76",
+        "topic": "x2>=0.7",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_77",
+        "topic": "yes",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_78",
+        "topic": "Class2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "line_77",
+        "topic": "no",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_80",
+        "topic": "Class1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_66",
+        "topic": "the question of training",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_82",
+        "topic": "number of branches",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_82",
+        "topic": "branching criteria",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_82",
+        "topic": "termination criteria",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_82",
+        "topic": "base hypo...",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_66",
+        "topic": "experiment: function of Miku",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_87",
+        "topic": "class1\u662f\u521d\u97f3\u5f62\u72c0",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_87",
+        "topic": "class2\u662f\u5176\u4ed6\u5730\u65b9",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_87",
+        "topic": "depth = 5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "\u65b9\u6846\u800c\u5df2",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_87",
+        "topic": "depth = 10",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_92",
+        "topic": "minecraft\u7684\u521d\u97f3",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_87",
+        "topic": "depth = 15",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_94",
+        "topic": "\u770b\u8d77\u4f86\u9084\u4e0d\u932f\u4e86",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_94",
+        "topic": "\u5c11\u6578\u5730\u65b9\u51f8\u8d77\u4f86",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_87",
+        "topic": "depth = 20",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_97",
+        "topic": "\u5b8c\u7f8eclass1",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_97",
+        "topic": "error rate 0",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_53",
+        "topic": "random forest",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_100",
+        "topic": "bagging of decision tree",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_101",
+        "topic": "resampling training data is not sufficient",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_102",
+        "topic": "\u6bcf\u9846tree\u90fd\u5dee\u592a\u591a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_102",
+        "topic": "\u5149\u7528sample\u65b9\u6cd5\u4e0d\u5927\u5920",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_101",
+        "topic": "randomly restrict the features/questions used in each split",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_105",
+        "topic": "random\u6c7a\u5b9a\u54ea\u4e9bfeature/question\u4e0d\u7528",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_100",
+        "topic": "out-of-bag validation for bagging",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_107",
+        "topic": "\u50b3\u7d71\u90fd\u5207\u6210\u5169\u584a",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_108",
+        "topic": "train/validation",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_107",
+        "topic": "bagging",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_110",
+        "topic": "\u4e0d\u7528\u5207train/validation\u4f46\u4e00\u6a23\u6709validation\u6548\u679c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_110",
+        "topic": "train model\u90fd\u53ea\u7528\u90e8\u5206data",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "line_112",
+        "topic": "\u6709\u4e9bdata\u5728training\u6642\u5019\u6c92\u7528\u5230",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_113",
+        "topic": "\u7528\u6c92train bagging\u7d50\u679c\u53bbtest\u8a72x performance",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_114",
+        "topic": "\u56e0\u70ba\u8a72x\u662f\u7531\u5176\u4ed6function train\u7684",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_113",
+        "topic": "using RF = f2+f4 to test x^1",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_113",
+        "topic": "\u6700\u5f8c\u5e73\u5747\u51fa\u4f86 Out-of-bag (OOB) error",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_100",
+        "topic": "experiment:",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_118",
+        "topic": "function of Miku",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_118",
+        "topic": "Random Forest (100 trees)",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_120",
+        "topic": "bagging\u4e0d\u6703\u8b93model\u66f4fit data",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_121",
+        "topic": "\u6c92fit\u7684\u9084\u662f\u6c92fit",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_121",
+        "topic": "depth\u540c\u6c34\u5e73\u4e0b\u7684\u60c5\u6cc1",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_123",
+        "topic": "\u5e73\u5747\u8d77\u4f86\u6bd4\u8f03\u5e73\u6ed1\u800c\u5df2",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_51",
+        "topic": "\u624d\u505abagging",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_51",
+        "topic": "\u6e1b\u4f4evariance",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "root",
+        "topic": "Ensemble: Boosting",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_127",
+        "topic": "\u7528\u5728\u5f31\u7684model",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_128",
+        "topic": "improving weak classifiers",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_127",
+        "topic": "\u5f31\u7684model\u7121\u6cd5fit data\u6642",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_127",
+        "topic": "Guarantee",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_131",
+        "topic": "if your ML algorithm can produce classifier with error rate smaller than 50% on training data",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_131",
+        "topic": "you can obtain 0% error rate classifier after boosting",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_127",
+        "topic": "Framework of boosting",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_134",
+        "topic": "Obtain the first classifier f1(x)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_134",
+        "topic": "Find another function f2(x) to help f1(x)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_136",
+        "topic": "However, if f2(x) is similar to f1(x), it will not help a lot",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_136",
+        "topic": "f2\u505af1\u505a\u4e0d\u5230\u7684\u4e8b\u60c5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_134",
+        "topic": "Obtain the second classifer f2(x)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_134",
+        "topic": "f3(x)f4(x)...",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_134",
+        "topic": "... finally, combining all the classifiers",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_134",
+        "topic": "\u5f97\u5230\u5f88\u4f4e\u7684error rate",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_134",
+        "topic": "The classifiers are learnined sequentially",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_143",
+        "topic": "training\u662fsequential",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_144",
+        "topic": "\u627e\u51faf1\u624d\u627e\u5f97\u51faf2,f3...",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_143",
+        "topic": "bagging\u6c92\u9806\u5e8fboosting\u6709",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_134",
+        "topic": "training data:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_147",
+        "topic": "{(x^1,y^^1),...(x^n1,y^^n)...(x^N,y^^N)}",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_147",
+        "topic": "y^ \u00b1 1 (binary classification)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_127",
+        "topic": "How to obtain different classifiers?",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_150",
+        "topic": "Training on different training data sets",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_150",
+        "topic": "How to have different training data sets",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_152",
+        "topic": "Re-sampling your training data to from a new set",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_153",
+        "topic": "\u4e5f\u53ef\u4ee5\u60f3\u50cf\u662f\u6539weight",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_154",
+        "topic": "sample 2 weight=2",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_155",
+        "topic": "\u53ea\u662fweight\u53ea\u80fd\u662f\u6574\u6578",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_152",
+        "topic": "Re-weighting your training data to from a new set",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_157",
+        "topic": "u is weight",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_157",
+        "topic": "(x^1,y^1,u^1) u^1= 1=> 0.4",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_157",
+        "topic": "(x^2,y^2,u^2) u^2= 1=> 2.1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_157",
+        "topic": "(x^3,y^3,u^3) u^3= 1=> 0.7",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_157",
+        "topic": "In real implementation, you only have to change the cost/objective function",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_162",
+        "topic": "L(f) = \u03a3_n l(f(x^n),y^^n)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_163",
+        "topic": "\u52a0\u5165u\u7684\u6b0a\u91cd\u5230l\u524d\u9762",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_163",
+        "topic": "L(f) = \u03a3_n u*l(f(x^n),y^^n)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_127",
+        "topic": "Idea of Adaboost",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_166",
+        "topic": "Idea: training f2(x) on the new training set that fails f1(x)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_167",
+        "topic": "\u8b93f1(x)\u5728\u9019\u7d44\u65b0\u7684training set\u6703 fails,ex:50%",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_167",
+        "topic": "\u5728\u8b93f2\u5728\u9019\u7d44training set\u4e0atraining",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_166",
+        "topic": "How to find a new training set that fails f1(x)?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_170",
+        "topic": "\u03b5_1 : the error rate of f1(x) on its training data",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_171",
+        "topic": "\u03b51 = \u03a3_n (u1^n \u2202(f1(x^n\u2260y^^n))) / Z_1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_172",
+        "topic": "\u8a08\u7b97\u6bcf\u4e00\u7b46training example\u7684\u7d50\u679c\u662f\u4e0d\u662f\u5c0d\u7684",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_173",
+        "topic": "\u5c0d\u7684\u8a71",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_174",
+        "topic": "0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_173",
+        "topic": "\u932f\u7684\u8a71",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_176",
+        "topic": "1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_173",
+        "topic": "weight",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_178",
+        "topic": "u^n",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_173",
+        "topic": "Z_1",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_180",
+        "topic": "normalization",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_180",
+        "topic": "Z1 = \u03a3_n u_1^n",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_173",
+        "topic": "\u03b51 < 0.5",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_183",
+        "topic": "error rate\u662f\u9084\u53ef\u4ee5\u7684",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_184",
+        "topic": "\u6240\u4ee5\u61c9\u8a72\u8981<0.5",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_170",
+        "topic": "changing the example weights from u1^n to u2^n such that",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_186",
+        "topic": "\u03a3_n (u2^n \u2202(f1(x^n\u2260y^^n))) / Z_2 = 0.5",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_186",
+        "topic": "the performance of f1 for new weights would be random",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_186",
+        "topic": "training f2(x) based on the new weights u_2^n",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "line_189",
+        "topic": "\u9019\u6a23f2(x)\u8ddff1(x)\u5c31\u6703\u662f\u4e92\u88dc\u7684",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_191",
+        "parentid": "line_170",
+        "topic": "example:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_191",
+        "topic": "training data:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_192",
+        "topic": "(x^1,y^^1,u^1)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "line_193",
+        "topic": "u^1=1",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_194",
+        "topic": "(f1\u7b54\u5c0d)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_192",
+        "topic": "(x^2,y^^2,u^2)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_197",
+        "parentid": "line_196",
+        "topic": "u^2=1",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_198",
+        "parentid": "line_197",
+        "topic": "(f1\u7b54\u932f)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_199",
+        "parentid": "line_192",
+        "topic": "(x^3,y^^3,u^3)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_200",
+        "parentid": "line_199",
+        "topic": "u^3=1",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_201",
+        "parentid": "line_200",
+        "topic": "(f1\u7b54\u5c0d)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_202",
+        "parentid": "line_192",
+        "topic": "(x^4,y^^4,u^4)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_203",
+        "parentid": "line_202",
+        "topic": "u^4=1",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_204",
+        "parentid": "line_203",
+        "topic": "(f1\u7b54\u5c0d)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_205",
+        "parentid": "line_191",
+        "topic": "model:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_206",
+        "parentid": "line_205",
+        "topic": "f1(x)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_207",
+        "parentid": "line_206",
+        "topic": "\u53ea\u5206\u4e09\u7b46\u6210\u529f\u4e00\u7b46\u5931\u6557",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_208",
+        "parentid": "line_207",
+        "topic": "\u03b51 = 0.25",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_209",
+        "parentid": "line_206",
+        "topic": "\u6539\u8b8au\u8b93error\u8b8a\u62100.5",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_210",
+        "parentid": "line_209",
+        "topic": "\u5f88\u591a\u6539\u6cd5",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_211",
+        "parentid": "line_210",
+        "topic": "\u7b54\u5c0d\u7684\u90a3\u5e7e\u984c\u914d\u5206\u5c31\u8b8a\u5c0f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_212",
+        "parentid": "line_210",
+        "topic": "\u7b54\u932f\u7684\u90a3\u5e7e\u984c\u914d\u5206\u5c31\u8b8a\u5927",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_213",
+        "parentid": "line_210",
+        "topic": "\u5047\u8a2d",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_214",
+        "parentid": "line_213",
+        "topic": "u^1 = 1/\u221a3",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_215",
+        "parentid": "line_213",
+        "topic": "u^2 = \u221a3",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_216",
+        "parentid": "line_213",
+        "topic": "u^3 = 1/\u221a3",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_217",
+        "parentid": "line_213",
+        "topic": "u^4 = 1/\u221a3",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_218",
+        "parentid": "line_213",
+        "topic": "f1(x)\u5728\u9019\u500b\u6b0a\u91cd\u4e0b",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_219",
+        "parentid": "line_218",
+        "topic": "error 0.5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_220",
+        "parentid": "line_218",
+        "topic": "\u8b8a\u5f97\u5f88\u5dee",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_221",
+        "parentid": "line_205",
+        "topic": "f2(x)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_222",
+        "parentid": "line_221",
+        "topic": "training \u7528\u4e0a\u9762\u8b93f1(x)\u5f88\u5dee\u7684training set",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_223",
+        "parentid": "line_222",
+        "topic": "\u03b52 < 0.5",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_224",
+        "parentid": "line_222",
+        "topic": "\u6240\u4ee5f1(x)\u8ddff2(x)\u6703\u662f\u4e92\u88dc\u7684",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_225",
+        "parentid": "line_170",
+        "topic": "design:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_226",
+        "parentid": "line_225",
+        "topic": "if x^n misclassified by f1(f1(x^n)\u2260y^^n)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_227",
+        "parentid": "line_226",
+        "topic": "u_2^n <- u_1^n multiplying d_1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_228",
+        "parentid": "line_227",
+        "topic": "d_1 > 1",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_229",
+        "parentid": "line_227",
+        "topic": "increase weight",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_230",
+        "parentid": "line_225",
+        "topic": "if x^n correctly classified by f1(f1(x^n)=y^n)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_231",
+        "parentid": "line_230",
+        "topic": "u_2^n <- u1^n divided by d_1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_232",
+        "parentid": "line_231",
+        "topic": "decrease weight",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_233",
+        "parentid": "line_225",
+        "topic": "f2 will be learned based on example weights u_2^n",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_234",
+        "parentid": "line_225",
+        "topic": "what is the value of d_1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_235",
+        "parentid": "line_234",
+        "topic": "\u03b51 = \u03a3_n (u1^n \u2202(f1(x^n\u2260y^^n))) / Z_1",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_236",
+        "parentid": "line_234",
+        "topic": "Z1 = \u03a3_n u_1^n",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_237",
+        "parentid": "line_234",
+        "topic": "\u03a3_n (u2^n \u2202(f1(x^n\u2260y^^n))) / Z_2 = 0.5",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_238",
+        "parentid": "line_237",
+        "topic": "f1(x^n\u2260y^^n)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_239",
+        "parentid": "line_238",
+        "topic": "u_2^n <- u_1^n multiplying d_1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_240",
+        "parentid": "line_237",
+        "topic": "\u03a3_n (u2^n \u2202(f1(x^n\u2260y^^n)))",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_241",
+        "parentid": "line_240",
+        "topic": "\u7c21\u5316",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_242",
+        "parentid": "line_241",
+        "topic": "\u03a3_f1(x^n\u2260y^^n) u_1^n*d_1",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_243",
+        "parentid": "line_237",
+        "topic": "Z_2",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_244",
+        "parentid": "line_243",
+        "topic": "\u03a3_n u_2^n",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_245",
+        "parentid": "line_244",
+        "topic": "=",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_246",
+        "parentid": "line_245",
+        "topic": "\u03a3_f1(x^n\u2260y^^n) u_2^n",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_247",
+        "parentid": "line_245",
+        "topic": "+ \u03a3_f1(x^n=y^^n) u_2^n",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_248",
+        "parentid": "line_247",
+        "topic": "=",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_249",
+        "parentid": "line_248",
+        "topic": "\u03a3_f1(x^n\u2260y^^n) u_1^n*d_1",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_250",
+        "parentid": "line_248",
+        "topic": "+ \u03a3_f1(x^n=y^^n) u_1^n/d_1",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_251",
+        "parentid": "line_237",
+        "topic": "=>",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_252",
+        "parentid": "line_251",
+        "topic": "\u03a3_f1(x^n\u2260y^^n) u_1^n*d_1 / ( \u03a3_f1(x^n\u2260y^^n) u_1^n*d_1+ \u03a3_f1(x^n=y^^n) u_1^n/d_1 ) = 0.5",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_253",
+        "parentid": "line_252",
+        "topic": "\u5012\u904e\u4f86",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_254",
+        "parentid": "line_252",
+        "topic": "( \u03a3_f1(x^n\u2260y^^n) u_1^n*d_1+ \u03a3_f1(x^n=y^^n) u_1^n/d_1 ) / \u03a3_f1(x^n\u2260y^^n) u_1^n*d_1 = 2",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_255",
+        "parentid": "line_247",
+        "topic": "\u5171\u6709\t( \u03a3_f1(x^n\u2260y^^n) u_1^n*d_1 / ( \u03a3_f1(x^n\u2260y^^n) u_1^n*d_ = 1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_256",
+        "parentid": "line_254",
+        "topic": "\u6240\u4ee5",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_257",
+        "parentid": "line_256",
+        "topic": "\u03a3_f1(x^n=y^^n) u_1^n/d_1 ) / \u03a3_f1(x^n\u2260y^^n) u_1^n*d_1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_258",
+        "parentid": "line_256",
+        "topic": "\u7b54\u5c0d\u9664d_1\u7684\u7e3d\u548c=\u7b54\u932f\u4e58d_1\u4e58\u7684\u7e3d\u548c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_259",
+        "parentid": "line_258",
+        "topic": "\u56e0\u70ba \u03b51 = \u03a3_f1(x^n\u2260y^^n) u_1^n / Z_1",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_260",
+        "parentid": "line_259",
+        "topic": "final",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_261",
+        "parentid": "line_260",
+        "topic": "d_1 = \u221a(1-\u03b5_1)/\u03b5_1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_262",
+        "parentid": "line_261",
+        "topic": "\u4e00\u5b9a>1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_263",
+        "parentid": "line_170",
+        "topic": "d_1 = \u221a(1-\u03b5_1)/\u03b5_1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_264",
+        "parentid": "line_166",
+        "topic": "Algorithm for AdaBoost",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_265",
+        "parentid": "line_264",
+        "topic": "Giving training data:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_266",
+        "parentid": "line_265",
+        "topic": "(x^1,y^^1,u_1^1),...(x^n,y^^n,u_1^n),...,(x^N,y^^N,u_1^N),",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_267",
+        "parentid": "line_266",
+        "topic": "y^^= \u00b1 (Binary classification) , u_1^n = 1 (equal weights)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_268",
+        "parentid": "line_264",
+        "topic": "For t = 1,...,T:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_269",
+        "parentid": "line_268",
+        "topic": "training weak cclassifier f_t(x) with weights {u_t^1,...u_t^N}",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_270",
+        "parentid": "line_268",
+        "topic": "\u03b5_t is the error rate of f_x(x) with weights {u_t^1,...u_t^N}",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_271",
+        "parentid": "line_268",
+        "topic": "For n = 1,...,N:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_272",
+        "parentid": "line_271",
+        "topic": "if x^n is misclassified by f_t(x):",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_273",
+        "parentid": "line_272",
+        "topic": "u_t+1^n = u_t^n * d_t",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_274",
+        "parentid": "line_271",
+        "topic": "else:",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_275",
+        "parentid": "line_274",
+        "topic": "u_t+1^n = u_t^n / d_t",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_276",
+        "parentid": "line_271",
+        "topic": "d_t = \u221a(1-\u03b5_t)/\u03b5_t",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_277",
+        "parentid": "line_271",
+        "topic": "\u03b1_t = ln \u221a(1-\u03b5_t)/\u03b5_t",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_278",
+        "parentid": "line_277",
+        "topic": "u_t+1^n = u_t^n * exp(\u03b1_t)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_279",
+        "parentid": "line_277",
+        "topic": "u_t+1^n = u_t^n * exp(-\u03b1_t)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_280",
+        "parentid": "line_277",
+        "topic": "\u672c\u4f86\u6709\u4e58\u6709\u9664",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_281",
+        "parentid": "line_280",
+        "topic": "\u8b8a\u6210\u6b63\u8ca0\u865f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_282",
+        "parentid": "line_281",
+        "topic": "\u7c21\u5316\u516c\u5f0f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_283",
+        "parentid": "line_282",
+        "topic": "u_t+1^n = u_t^n * exp(-y^n*f_t(x^n)*\u03b1_t)",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_284",
+        "parentid": "line_282",
+        "topic": "misclassified",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_285",
+        "parentid": "line_284",
+        "topic": "y^n \u2260 f_t(x^n )",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_286",
+        "parentid": "line_285",
+        "topic": "-1 * -1",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_287",
+        "parentid": "line_282",
+        "topic": "classified",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_288",
+        "parentid": "line_287",
+        "topic": "y^n = f_t(x^n )",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_289",
+        "parentid": "line_288",
+        "topic": "-1 *  1",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_290",
+        "parentid": "line_264",
+        "topic": "We obtain a set of functions: f_1(x)...f_t(x)...f_T(x)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_291",
+        "parentid": "line_264",
+        "topic": "How to aggregate them?",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_292",
+        "parentid": "line_291",
+        "topic": "Uniform weight:",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_293",
+        "parentid": "line_292",
+        "topic": "H(x) = sign(\u03a3_t=1^T(f_t(x )))",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_294",
+        "parentid": "line_293",
+        "topic": "\u52a0\u8d77\u4f86\u770b\u6b63\u8ca0\u865f\u6c7a\u5b9aclassifier",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_295",
+        "parentid": "line_294",
+        "topic": "\u53ef\u4ee5\u4f46\u4e0d\u662f\u5f88\u597d\u7684\u65b9\u6cd5",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_296",
+        "parentid": "line_292",
+        "topic": "weight\u6709\u597d\u6709\u58de\u61c9\u8a72\u7d66\u4e0d\u540c\u6b0a\u91cd",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_297",
+        "parentid": "line_296",
+        "topic": "H(x) = sign(\u03a3_t=1^T(\u03b1_t*f_t(x )))",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_298",
+        "parentid": "line_297",
+        "topic": "\u03b1_t \u6b0a\u91cd",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_299",
+        "parentid": "line_298",
+        "topic": "\u03b1_t = ln \u221a(1-\u03b5_t)/\u03b5_t",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_300",
+        "parentid": "line_299",
+        "topic": "\u03b5 = 0.1",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_301",
+        "parentid": "line_300",
+        "topic": "\u597dweight",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_302",
+        "parentid": "line_300",
+        "topic": "\u03b1_t = 1.10",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_303",
+        "parentid": "line_302",
+        "topic": "\u9ad8\u6b0a\u91cd",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_304",
+        "parentid": "line_299",
+        "topic": "\u03b5 = 0.4",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_305",
+        "parentid": "line_304",
+        "topic": "\u721bweight",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_306",
+        "parentid": "line_304",
+        "topic": "\u03b1_t = 0.2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_307",
+        "parentid": "line_306",
+        "topic": "\u4f4e\u6b0a\u91cd",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_308",
+        "parentid": "line_297",
+        "topic": "weight sum\u770b\u6b0a\u91cd\u52a0\u8d77\u4f86\u5728\u770b\u6b63\u8ca0\u865f",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_309",
+        "parentid": "root",
+        "topic": "Toy Example:",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_310",
+        "parentid": "line_309",
+        "topic": "T = 3,weak classifier = decision stump",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_311",
+        "parentid": "line_309",
+        "topic": "decision stump",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_312",
+        "parentid": "line_311",
+        "topic": "feature\u5206\u5e03\u5728\u4e8c\u7dad\u5e73\u9762\u4e0a",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_313",
+        "parentid": "line_312",
+        "topic": "\u9078\u4e00\u500bdimension\u5207\u4e00\u5200",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_314",
+        "parentid": "line_313",
+        "topic": "\u4e00\u908a\u7576class1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_315",
+        "parentid": "line_313",
+        "topic": "\u53e6\u4e00\u908a\u7576class2",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_316",
+        "parentid": "line_315",
+        "topic": "\u7d50\u675f",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_317",
+        "parentid": "line_311",
+        "topic": "boosting\u8981\u627eweak\u7684classifier",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_318",
+        "parentid": "line_317",
+        "topic": "decision stump\u5920weak\u6240\u4ee5\u7528\u5728\u9019\u908a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_319",
+        "parentid": "line_309",
+        "topic": "t = 1",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_320",
+        "parentid": "line_319",
+        "topic": "\u6240\u6709training data weight = 1.0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_321",
+        "parentid": "line_319",
+        "topic": "f1(x)\u5207\u7b2c\u4e00\u5200",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_322",
+        "parentid": "line_321",
+        "topic": "positive region",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_323",
+        "parentid": "line_322",
+        "topic": "+",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_324",
+        "parentid": "line_321",
+        "topic": "negative region",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_325",
+        "parentid": "line_324",
+        "topic": "-",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_326",
+        "parentid": "line_321",
+        "topic": "misclassified",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_327",
+        "parentid": "line_326",
+        "topic": "3\u7b46/10\u7b46",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_328",
+        "parentid": "line_326",
+        "topic": "error rate",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_329",
+        "parentid": "line_328",
+        "topic": "\u03b5_1 = 0.3",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_330",
+        "parentid": "line_328",
+        "topic": "d_1 = 1.53",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_331",
+        "parentid": "line_328",
+        "topic": "\u03b1_2 = 0.42",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_332",
+        "parentid": "line_328",
+        "topic": "\u6539\u8b8atraining data weight",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_333",
+        "parentid": "line_332",
+        "topic": "\u5206\u985e\u6b63\u78ba\u7684/1.53 = 0.65",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_334",
+        "parentid": "line_332",
+        "topic": "\u5206\u985e\u932f\u8aa4\u7684*1.53 = 1.53",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_335",
+        "parentid": "line_309",
+        "topic": "t = 2",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_336",
+        "parentid": "line_335",
+        "topic": "\u6240\u6709training data weight",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_337",
+        "parentid": "line_336",
+        "topic": "1.53 or 0.65",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_338",
+        "parentid": "line_335",
+        "topic": "f2(x)\u5207\u4e00\u5200",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_339",
+        "parentid": "line_338",
+        "topic": "\u53c8\u6709\u4e09\u7b46data\u5206\u985e\u662f\u932f\u7684",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_340",
+        "parentid": "line_339",
+        "topic": "error date",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_341",
+        "parentid": "line_340",
+        "topic": "\u03b5_2 = 0.21",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_342",
+        "parentid": "line_340",
+        "topic": "d_2 = 1.94",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_343",
+        "parentid": "line_340",
+        "topic": "\u03b1_2 = 0.66",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_344",
+        "parentid": "line_340",
+        "topic": "\u6539\u8b8atraining data weight",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_345",
+        "parentid": "line_344",
+        "topic": "\u5206\u985e\u6b63\u78ba\u7684/1.94",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_346",
+        "parentid": "line_345",
+        "topic": "0.65/1.94=0.33",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_347",
+        "parentid": "line_345",
+        "topic": "1.53/1.94=0.78",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_348",
+        "parentid": "line_344",
+        "topic": "\u5206\u985e\u932f\u8aa4\u7684*1.94 =",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_349",
+        "parentid": "line_348",
+        "topic": "0.65*1.94 = 1.26",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_350",
+        "parentid": "line_309",
+        "topic": "t = 3",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_351",
+        "parentid": "line_350",
+        "topic": "\u6240\u6709train data weight",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_352",
+        "parentid": "line_351",
+        "topic": "0.33 0.78 1.26",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_353",
+        "parentid": "line_350",
+        "topic": "f3(x)\u5207\u4e00\u5200",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_354",
+        "parentid": "line_353",
+        "topic": "\u53c8\u6709\u4e09\u7b46data\u5206\u985e\u932f\u8aa4",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_355",
+        "parentid": "line_354",
+        "topic": "\u03b5_3 = 0.13",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_356",
+        "parentid": "line_355",
+        "topic": "d_2 = 2.59",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_357",
+        "parentid": "line_355",
+        "topic": "\u03b1_2 = 0.95",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_358",
+        "parentid": "line_309",
+        "topic": "final classifer:",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_359",
+        "parentid": "line_358",
+        "topic": "H(x) = sign(\u03a3_t=1^T(f_t(x )))",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_360",
+        "parentid": "line_359",
+        "topic": "sign(0.42*f_1(x) + 0.66*f_2(x) + 0.95*f_3(x))",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_361",
+        "parentid": "line_359",
+        "topic": "3\u500bclassifier\u5207\u6210\u516d\u584a(\u5169\u7e31\u5200,\u4e00\u6a6b\u5200)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_362",
+        "parentid": "line_361",
+        "topic": "\u6b0a\u91cd\u6703\u5f71\u97ff\u5230\u6bcf\u4e00\u5340\u7684sign",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_363",
+        "parentid": "line_362",
+        "topic": "positive",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_364",
+        "parentid": "line_362",
+        "topic": "negative",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_365",
+        "parentid": "line_358",
+        "topic": "3\u500bweak classifier\u6703\u5f97\u5230100%\u6b63\u78ba\u7387",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_366",
+        "parentid": "line_309",
+        "topic": "Warning of Math",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_367",
+        "parentid": "line_366",
+        "topic": "H(x) = sign(\u03a3_t=1^T(f_t(x )))",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_368",
+        "parentid": "line_366",
+        "topic": "\u03b1_t = ln \u221a(1-\u03b5_t)/\u03b5_t",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_369",
+        "parentid": "line_366",
+        "topic": "As we have more and more f_t(T increases) , H(x) archieves smalller and smaller error rate on trainig data.",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_370",
+        "parentid": "line_366",
+        "topic": "time 52:00~1:18:13",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_371",
+        "parentid": "line_370",
+        "topic": "\u5148\u8df3\u904e",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_372",
+        "parentid": "line_309",
+        "topic": "Experiment: Function of Miku",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_373",
+        "parentid": "line_372",
+        "topic": "Adaboost + Dicision Tree",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_374",
+        "parentid": "line_373",
+        "topic": "Depth = 5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_375",
+        "parentid": "line_373",
+        "topic": "T = 10",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_376",
+        "parentid": "line_375",
+        "topic": "\u4e92\u88dc\u51faminecraft\u7b49\u7d1a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_377",
+        "parentid": "line_376",
+        "topic": "\u89d2\u6b6a\u4e86 \u982d\u9aee\u8ddf\u8eab\u9ad4\u6c92\u5206\u958b",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_378",
+        "parentid": "line_373",
+        "topic": "T = 20",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_379",
+        "parentid": "line_378",
+        "topic": "\u8173\u76f4\u4e86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_380",
+        "parentid": "line_378",
+        "topic": "\u982d\u9aee\u8eab\u9ad4\u7a0d\u5fae\u5206\u958b",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_381",
+        "parentid": "line_373",
+        "topic": "T = 50",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_382",
+        "parentid": "line_381",
+        "topic": "\u5e7e\u4e4e\u5916\u578b\u90fd\u51fa\u4f86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_383",
+        "parentid": "line_381",
+        "topic": "\u5c11\u8a31\u7d30\u7bc0\u9084\u6c92\u6210\u529f",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_384",
+        "parentid": "line_373",
+        "topic": "T = 100",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_385",
+        "parentid": "line_384",
+        "topic": "\u5b8c\u7f8efit",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_386",
+        "parentid": "root",
+        "topic": "Gradient Boosting",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_387",
+        "parentid": "line_386",
+        "topic": "General Formulation of Boosting",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_388",
+        "parentid": "line_387",
+        "topic": "Initial function g_0(x) = 0",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_389",
+        "parentid": "line_387",
+        "topic": "For t=1 to T:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_390",
+        "parentid": "line_389",
+        "topic": "Find a function t_f(x) and \u03b1_t to improve g_t-1(x)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_391",
+        "parentid": "line_390",
+        "topic": "g_t-1(x) = \u03a3_i=1^t-1 \u03b1_i*f_i(x)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_392",
+        "parentid": "line_389",
+        "topic": "g_t(x) = g_t-1(x)+ \u03b1_t*f_t(x)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_393",
+        "parentid": "line_387",
+        "topic": "Output: H(x) = sign(g_t(x))",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_394",
+        "parentid": "line_386",
+        "topic": "What is the learning target of g(x)?",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_395",
+        "parentid": "line_394",
+        "topic": "L(g) = \u03a3_i=1 l (y^^n,g(x^n))",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_396",
+        "parentid": "line_395",
+        "topic": "loss y^^n,g(x^n)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_397",
+        "parentid": "line_396",
+        "topic": "Cross Entropy",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_398",
+        "parentid": "line_396",
+        "topic": "Mean Square Error",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_399",
+        "parentid": "line_395",
+        "topic": "L(g) = \u03a3_i=1 exp(-y^^ * g(x))",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_400",
+        "parentid": "line_386",
+        "topic": "Find g(x), mimimize L(g) = \u03a3_n exp(-y^^ * g(x))",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_401",
+        "parentid": "line_400",
+        "topic": "if we already have g(x) = g_t-1 (x), how to update g(x)?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_402",
+        "parentid": "line_386",
+        "topic": "Gradient Descent:",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_403",
+        "parentid": "line_402",
+        "topic": "g_t = g_t-1 - \u03b7 \u0394L(g)/\u0394g | g = g_t-1",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_404",
+        "parentid": "line_402",
+        "topic": "boosting",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_405",
+        "parentid": "line_402",
+        "topic": "g_t(x) = g_t-1(x)+ \u03b1_t*f_t(x)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_406",
+        "parentid": "line_402",
+        "topic": "\u03b1_t*f_t(x) \u8207 - \u03b7 \u0394L(g)/\u0394g | g = g_t-1",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_407",
+        "parentid": "line_406",
+        "topic": "\u65b9\u5411\u662f\u4e00\u6a23",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_408",
+        "parentid": "line_407",
+        "topic": "\u03a3_n exp(-y^^ * g_t(x^n))(y^^n)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_409",
+        "parentid": "line_408",
+        "topic": "f_t(x)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_410",
+        "parentid": "line_409",
+        "topic": "same direction",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_411",
+        "parentid": "line_409",
+        "topic": "\u7121\u9650\u591a\u7dad\u5ea6\u53ef\u80fd",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_412",
+        "parentid": "line_409",
+        "topic": "training data\u9650\u5236\u4e86\u7dad\u5ea6",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_413",
+        "parentid": "line_409",
+        "topic": "\u03a3_n exp(-y^^ * g_t-1(x^n))(y^^n)f_t(x^n)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_414",
+        "parentid": "line_413",
+        "topic": "(-y^^n)f_t(x^n)\u8ddff_t(x^n)",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_415",
+        "parentid": "line_414",
+        "topic": "same sign",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_416",
+        "parentid": "line_413",
+        "topic": "weight u_t^n",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_417",
+        "parentid": "line_416",
+        "topic": "exp(-y^^ * g_t-1(x^n))",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_418",
+        "parentid": "line_413",
+        "topic": "= \u03a0_i=1^t-1 exp(-y^^n \u03b1_i*f_i*(x^n))",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_419",
+        "parentid": "line_418",
+        "topic": "exactly the weights we obtain in Adaboost",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_420",
+        "parentid": "line_402",
+        "topic": "find \u03b1_t f_t(x)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_421",
+        "parentid": "line_420",
+        "topic": "\u03b1_t\u597d\u50cflearning rate",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_422",
+        "parentid": "line_420",
+        "topic": "g_t(x) = g_t-1(x)+ \u03b1_t*f_t(x)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_423",
+        "parentid": "line_420",
+        "topic": "find \u03b1_t minimzing L(g)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_424",
+        "parentid": "line_423",
+        "topic": "\u7b97\u53c3\u6578\u7684graident\u6bd4\u8f03\u5feb",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_425",
+        "parentid": "line_423",
+        "topic": "\u53ef\u80fd\u4e0d\u6703\u7a00\u7f55\u8aaaLR\u8a2d\u7684\u597d\u4e0d\u597d",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_426",
+        "parentid": "line_425",
+        "topic": "\u592a\u5c0f\u591a\u7b97\u5e7e\u6b21",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_427",
+        "parentid": "line_423",
+        "topic": "\u5728gradient boost\u7684\u65b9\u6cd5\u88e1\u9762",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_428",
+        "parentid": "line_427",
+        "topic": "f_t\u662fclassifier",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_429",
+        "parentid": "line_428",
+        "topic": "\u5728\u627ef_t\u7684\u904e\u7a0b\u4e2d\u904b\u7b97\u91cf\u662f\u5f88\u5927\u7684",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_430",
+        "parentid": "line_429",
+        "topic": "\u5982\u679cf_t\u662fNN",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_431",
+        "parentid": "line_430",
+        "topic": "\u8981\u627e\u51fa\u4f86\u672c\u8eab\u5c31\u9700\u8981\u591a\u6b21\u7684gradient descent\u7684iteration",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_432",
+        "parentid": "line_428",
+        "topic": "\u627e\u51faf_t\u8981\u597d\u597d\u73cd\u60dc\u4ed6",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_433",
+        "parentid": "line_432",
+        "topic": "\u628a\u4ed6\u5229\u7528\u50f9\u503c\u6700\u5927\u5316",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_434",
+        "parentid": "line_433",
+        "topic": "\u65e2\u7136\u627e\u51fa\u4f86\u5c31\u56fa\u5b9a\u4f4f",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_435",
+        "parentid": "line_434",
+        "topic": "\u53bb\u8abf\u4e00\u500b\u6700\u597d\u7684learning rate",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_436",
+        "parentid": "line_435",
+        "topic": "\u03b1_t",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_437",
+        "parentid": "line_423",
+        "topic": "L(g) =",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_438",
+        "parentid": "line_437",
+        "topic": "\u03a3_n exp(-y^^ * g_t-1(x^n))exp(-y^^n*\u03b1_t*f_t(x^n))",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_439",
+        "parentid": "line_420",
+        "topic": "find \u03b1 such that",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_440",
+        "parentid": "line_439",
+        "topic": "\u2202L(g)/\u2202\u03b1_t =0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_441",
+        "parentid": "line_440",
+        "topic": "\u628a\u6975\u503c\u627e\u51fa",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_442",
+        "parentid": "line_439",
+        "topic": "\u03b1_t = ln \u221a(1-\u03b5_t)/\u03b5_t",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_443",
+        "parentid": "line_420",
+        "topic": "Adaboost\u6574\u4ef6\u4e8b\u60c5\u5c31\u60f3\u50cf\u4e5f\u5728\u505agraident descent",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_444",
+        "parentid": "line_443",
+        "topic": "\u53ea\u662fgraident\u662f\u4e00\u500bfunction",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_445",
+        "parentid": "line_443",
+        "topic": "Learning rate\u6709\u4e00\u500b\u5f88\u597d\u7684\u65b9\u6cd5\u6c7a\u5b9alearning rate",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_446",
+        "parentid": "line_443",
+        "topic": "\u53ef\u4ee5\u4efb\u610f\u66f4\u6539\u4f60\u7684objective function",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_447",
+        "parentid": "line_446",
+        "topic": "exp(-y^^ * g(x))",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_448",
+        "parentid": "line_447",
+        "topic": "\u4e5f\u53ef\u4ee5\u6539\u5176\u4ed6\u7684",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_449",
+        "parentid": "line_447",
+        "topic": "\u5275\u9020\u4e0d\u4e00\u6a23\u7684\u65b0\u65b9\u6cd5",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_450",
+        "parentid": "root",
+        "topic": "Ensemble: Stacking",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_451",
+        "parentid": "line_450",
+        "topic": "Voting",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_452",
+        "parentid": "line_451",
+        "topic": "\u56db\u500b\u4eba\u90fd\u5f04\u4e86\u81ea\u5df1\u7684model",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_453",
+        "parentid": "line_452",
+        "topic": "\u5c0f\u660e's system",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_454",
+        "parentid": "line_452",
+        "topic": "\u8001\u738b's system",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_455",
+        "parentid": "line_452",
+        "topic": "\u8001\u674e's system",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_456",
+        "parentid": "line_452",
+        "topic": "\u5c0f\u6bdb's system",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_457",
+        "parentid": "line_451",
+        "topic": "input data x\u4e1f\u5230\u9019\u56db\u500bmodel",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_458",
+        "parentid": "line_457",
+        "topic": "\u6bcf\u500bmodel\u90fd\u6709output",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_459",
+        "parentid": "line_458",
+        "topic": "\u628aoutput\u5408\u4f75\u8d77\u4f86\u5f97\u5230\u7b54\u6848",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_460",
+        "parentid": "line_458",
+        "topic": "\u5047\u8a2d\u5206\u985e\u554f\u984c\u53ef\u4ee5\u7528 majority vote",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_461",
+        "parentid": "line_460",
+        "topic": "\u6700\u591a\u7cfb\u7d71\u9078\u64c7\u54ea\u500bclass",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_462",
+        "parentid": "line_461",
+        "topic": "\u4ed6\u5c31\u662f\u6b63\u78ba\u7b54\u6848",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_463",
+        "parentid": "line_451",
+        "topic": "\u4e26\u4e0d\u662f\u6240\u6709model\u90fd\u662f\u597d\u7684",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_464",
+        "parentid": "line_463",
+        "topic": "\u53ef\u80fd\u5c0f\u6bdb\u7684\u7cfb\u7d71\u7279\u5225\u5f31",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_465",
+        "parentid": "line_464",
+        "topic": "\u5982\u679c\u76f4\u63a5\u8abf\u4f4e\u4ed6\u7684\u6b0a\u91cd\u6703\u50b7\u4e86\u4ed6\u7684\u81ea\u5c0a\u5fc3",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_466",
+        "parentid": "line_464",
+        "topic": "\u5728learning\u4e00\u500bclassifier",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_467",
+        "parentid": "line_466",
+        "topic": "\u4ed6\u628a\u524d\u97624\u500bsystem output\u7576input",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_468",
+        "parentid": "line_467",
+        "topic": "\u518d\u4f86\u6c7a\u5b9a\u6700\u7d42\u7d50\u679c\u662f\u4ec0\u9ebc",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_469",
+        "parentid": "line_467",
+        "topic": "\u6700\u5f8cclassifier\u4e0d\u7528\u592a\u8907\u96dc",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_470",
+        "parentid": "line_469",
+        "topic": "\u53ef\u80fd\u53ea\u8981logisic regression\u5c31\u884c\u4e86",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_471",
+        "parentid": "line_451",
+        "topic": "\u6b63\u5e38\u8cc7\u6599\u5206training set/ validation set",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_472",
+        "parentid": "line_471",
+        "topic": "\u5728stacking\u8981\u628atraining set\u5728\u5206\u6210\u5169\u90e8\u5206",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_473",
+        "parentid": "line_472",
+        "topic": "\u4e00\u90e8\u5206training set\u62ff\u4f86learn\u9019\u4e9bclassifier",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_474",
+        "parentid": "line_472",
+        "topic": "\u4e00\u90e8\u5206training set\u62ff\u4f86learn final classifier",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_475",
+        "parentid": "line_472",
+        "topic": "\u6709\u7684classifier\u53ef\u80fd\u53ea\u662ffit training data",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_476",
+        "parentid": "line_475",
+        "topic": "\u5f88\u7570\u5e38\u7684overfit",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_477",
+        "parentid": "line_472",
+        "topic": "\u9700\u8981\u53e6\u4e00\u6279training data\u4f86train final classifier",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_478",
+        "parentid": "line_477",
+        "topic": "\u4e0d\u80fd\u7528\u524d\u9762classifier training data",
+        "background-color": "#01a6d5",
+        "expanded": false
+    }
+]

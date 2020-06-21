@@ -2,480 +2,481 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>sheauren's mindmap index page</title>
-    <style>
-        .mindmap-menu {
-            width: 200px;
-        }
-        
-        .mindmap-menu div {
-            width: 200px;
-            overflow: auto;
-        }
-        
-        .mindmap-title {
-            text-align: center;
-            vertical-align: top;
-            height: 20px;
-            font-size: larger;
-            font-weight: bold;
-        }
-        
-        .list-style {
-            width: 100%;
-            overflow: auto;
-            border: 2px solid #666666;
-            border-radius: 5px;
-            vertical-align: top;
-            background-color: #333333;
-            color: white;
-            font-size: smaller
-        }
-        
-        a {
-            color: white;
-        }
-        
-        ul,
-        .main-group {
-            list-style-type: none;
-        }
-        
-        .main-group {
-            margin: 0;
-            padding: 0;
-        }
-        
-        ul,
-        li {
-            padding-left: 10px;
-        }
-        
-        a {
-            white-space: nowrap
-        }
-        
-        .caret {
-            cursor: pointer;
-            -webkit-user-select: none;
-            /* Safari 3.1+ */
-            -moz-user-select: none;
-            /* Firefox 2+ */
-            -ms-user-select: none;
-            /* IE 10+ */
-            user-select: none;
-        }
-        
-        .caret::before {
-            content: "\25B6";
-            color: white;
-            display: inline-block;
-            margin-right: 6px;
-        }
-        
-        .caret-down::before {
-            margin-right: 6px;
-            -ms-transform: rotate(90deg);
-            /* IE 9 */
-            -webkit-transform: rotate(90deg);
-            /* Safari */
-            transform: rotate(90deg);
-        }
-        
-        .nested {
-            display: none;
-        }
-        
-        .active {
-            display: block;
-        }
-    </style>
-    <script type='text/javascript' src='https://code.jquery.com/jquery-3.5.0.slim.min.js'></script>
-    <script type="text/javascript">
-        $(() => {
-            var height = document.documentElement.clientHeight
-            $("#container").height(height - 10);
-            $('#list').height(height - 50);
+  <meta charset="utf-8">
+  <title>sheauren's mindmap index page</title>
+  <style>
+    .mindmap-menu {
+      width: 200px;
+    }
+    
+    .mindmap-menu div {
+      width: 200px;
+      overflow: auto;
+    }
+    
+    .mindmap-title {
+      text-align: center;
+      vertical-align: top;
+      height: 20px;
+      font-size: larger;
+      font-weight: bold;
+    }
+    
+    .list-style {
+      width: 100%;
+      overflow: auto;
+      border: 2px solid #666666;
+      border-radius: 5px;
+      vertical-align: top;
+      background-color: #333333;
+      color: white;
+      font-size: smaller
+    }
+    
+    a {
+      color: white;
+    }
+    
+    ul,
+    .main-group {
+      list-style-type: none;
+    }
+    
+    .main-group {
+      margin: 0;
+      padding: 0;
+    }
+    
+    ul,
+    li {
+      padding-left: 10px;
+    }
+    
+    a {
+      white-space: nowrap
+    }
+    
+    .caret {
+      cursor: pointer;
+      -webkit-user-select: none;
+      /* Safari 3.1+ */
+      -moz-user-select: none;
+      /* Firefox 2+ */
+      -ms-user-select: none;
+      /* IE 10+ */
+      user-select: none;
+    }
+    
+    .caret::before {
+      content: "\25B6";
+      color: white;
+      display: inline-block;
+      margin-right: 6px;
+    }
+    
+    .caret-down::before {
+      margin-right: 6px;
+      -ms-transform: rotate(90deg);
+      /* IE 9 */
+      -webkit-transform: rotate(90deg);
+      /* Safari */
+      transform: rotate(90deg);
+    }
+    
+    .nested {
+      display: none;
+    }
+    
+    .active {
+      display: block;
+    }
+  </style>
+  <script type='text/javascript' src='https://code.jquery.com/jquery-3.5.0.slim.min.js'></script>
+  <script type="text/javascript">
+    $(() => {
+      var height = document.documentElement.clientHeight
+      $("#container").height(height - 10);
+      $('#list').height(height - 50);
 
-            var toggler = document.getElementsByClassName("caret");
-            var i;
+      var toggler = document.getElementsByClassName("caret");
+      var i;
 
-            for (i = 0; i < toggler.length; i++) {
-                toggler[i].addEventListener("click", function() {
-                    this.parentElement.querySelector(".nested").classList.toggle("active");
-                    this.classList.toggle("caret-down");
-                });
-            }
+      for (i = 0; i < toggler.length; i++) {
+        toggler[i].addEventListener("click", function() {
+          this.parentElement.querySelector(".nested").classList.toggle("active");
+          this.classList.toggle("caret-down");
+        });
+      }
 
-        })
+    })
 
-        function load_jsmind(url) {
-            //alert('load_jsmind:'+url)
-            $("#container").attr('src', './show_mindmap.html?json=' + url)
-        }
+    function load_jsmind(url) {
+      //alert('load_jsmind:'+url)
+      $("#container").attr('src', './show_mindmap.html?json=' + url)
+    }
 
-        function load_url(url) {
-            $("#container").attr('src', url)
-        }
-    </script>
+    function load_url(url) {
+      $("#container").attr('src', url)
+    }
+  </script>
 </head>
 
 <body style='overflow:hidden'>
-    <table style='width:100%;'>
-        <tr>
-            <td class='mindmap-menu mindmap-title'>
-                <div>Mindmap List</div>
-            </td>
-            <td rowspan="2">
-                <iframe frameBorder='0' id='container' style='overflow:hidden;width:100%'>
+  <table style='width:100%;'>
+    <tr>
+      <td class='mindmap-menu mindmap-title'>
+        <div>Mindmap List</div>
+      </td>
+      <td rowspan="2">
+        <iframe frameBorder='0' id='container' style='overflow:hidden;width:100%'>
                                 </iframe>
-            </td>
-        </tr>
-        <tr>
-            <td style='vertical-align: top;' class='mindmap-menu'>
-                <div id='list' class='list-style'>
-                    <ul class='main-group'>
-                        <li><span class="caret caret-down">Machine Learning</span>
-                            <ul class="nested active">
-                                <li>
-                                    <span class="caret caret-down"> Hung-yi Lee - ML Lecture</span>
-                                    <ul class="nested active">
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/0-1 Introduction of Machine Learning.json')">0-1 Introduction of Machine Learning(2020/05/25)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/0-2 Why we need to learn machine learning.json')">0-2 Why we need to learn machine learning(2020/05/25)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/1 Regression - Case Study.json')">1 Regression - Case Study(2020/05/26)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/2 Where does the error come from.json')">2 Where does the error come from(2020/05/28)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/3-1 Gradient Descent.json')">3-1 Gradient Descent(2020/05/30)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/4 Classification.json')">4 Classification Descent(2020/05/30)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/5 Logistic Regression.json')">5 Logistic Regression(2020/05/31)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/6 Brief Introduction of Deep Learning.json')">6 Brief Introduction of Deep Learning(2020/05/31)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/7 Backpropagation.json')">7 Backpropagation(2020/06/01)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/8-1 Hello world of deep learning.json')">8-1 Hello world of deep learning(2020/06/01)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/8-2 Keras 2.0.json')">8-2 Keras 2.0(2020/06/03)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/9-1 Tips for Training DNN.json')">9-1 Tips for Training DNN(2020/06/04)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/10 Convolutional Neural Network.json')">10 Convolutional Neural Network(2020/06/06)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/11 Why Deep.json')">11 Why Deep(2020/06/06)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/12 Semi-supervised.json')">12 Semi-supervised(2020/06/07)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/13 Unsupervised Learning - Linear Methods.json')">13 Unsupervised Learning - Linear Methods(2020/06/07)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/14 Unsupervised Learning - Word Embedding.json')">14 Unsupervised Learning - Word Embedding(2020/06/10)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/15 Unsupervised Learning - Neighbor Embedding.json')">15 Unsupervised Learning - Neighbor Embedding(2020/06/11)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/16 Unsupervised Learning - Auto-encoder.json')">16 Unsupervised Learning - Auto-encoder(2020/06/14)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/17 Unsupervised Learning - Deep Generative Model (Part I).json')">17 Unsupervised Learning - Deep Generative Model (Part I)(2020/06/14)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/18 Unsupervised Learning - Deep Generative Model (Part II).json')">18 Unsupervised Learning - Deep Generative Model (Part II)(2020/06/15)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/19 Transfer Learning.json')">19 Transfer Learning(2020/06/16)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/20 Support Vector Machine (SVM).json')">20 Support Vector Machine (SVM)(2020/06/17)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/21-1 Recurrent Neural Network (Part I).json')">21-1 Recurrent Neural Network (Part I)(2020/06/18)</a>
-                                        </li>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/21-2 Recurrent Neural Network (Part II).json')">21-2 Recurrent Neural Network (Part II)(2020/06/20)</a>
-                                        </li>
+      </td>
+    </tr>
+    <tr>
+      <td style='vertical-align: top;' class='mindmap-menu'>
+        <div id='list' class='list-style'>
+          <ul class='main-group'>
+            <li><span class="caret caret-down">Machine Learning</span>
+              <ul class="nested active">
+                <li>
+                  <span class="caret caret-down"> Hung-yi Lee - ML Lecture</span>
+                  <ul class="nested active">
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/0-1 Introduction of Machine Learning.json')">0-1 Introduction of Machine Learning(2020/05/25)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/0-2 Why we need to learn machine learning.json')">0-2 Why we need to learn machine learning(2020/05/25)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/1 Regression - Case Study.json')">1 Regression - Case Study(2020/05/26)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/2 Where does the error come from.json')">2 Where does the error come from(2020/05/28)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/3-1 Gradient Descent.json')">3-1 Gradient Descent(2020/05/30)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/4 Classification.json')">4 Classification Descent(2020/05/30)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/5 Logistic Regression.json')">5 Logistic Regression(2020/05/31)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/6 Brief Introduction of Deep Learning.json')">6 Brief Introduction of Deep Learning(2020/05/31)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/7 Backpropagation.json')">7 Backpropagation(2020/06/01)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/8-1 Hello world of deep learning.json')">8-1 Hello world of deep learning(2020/06/01)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/8-2 Keras 2.0.json')">8-2 Keras 2.0(2020/06/03)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/9-1 Tips for Training DNN.json')">9-1 Tips for Training DNN(2020/06/04)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/10 Convolutional Neural Network.json')">10 Convolutional Neural Network(2020/06/06)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/11 Why Deep.json')">11 Why Deep(2020/06/06)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/12 Semi-supervised.json')">12 Semi-supervised(2020/06/07)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/13 Unsupervised Learning - Linear Methods.json')">13 Unsupervised Learning - Linear Methods(2020/06/07)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/14 Unsupervised Learning - Word Embedding.json')">14 Unsupervised Learning - Word Embedding(2020/06/10)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/15 Unsupervised Learning - Neighbor Embedding.json')">15 Unsupervised Learning - Neighbor Embedding(2020/06/11)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/16 Unsupervised Learning - Auto-encoder.json')">16 Unsupervised Learning - Auto-encoder(2020/06/14)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/17 Unsupervised Learning - Deep Generative Model (Part I).json')">17 Unsupervised Learning - Deep Generative Model (Part I)(2020/06/14)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/18 Unsupervised Learning - Deep Generative Model (Part II).json')">18 Unsupervised Learning - Deep Generative Model (Part II)(2020/06/15)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/19 Transfer Learning.json')">19 Transfer Learning(2020/06/16)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/20 Support Vector Machine (SVM).json')">20 Support Vector Machine (SVM)(2020/06/17)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/21-1 Recurrent Neural Network (Part I).json')">21-1 Recurrent Neural Network (Part I)(2020/06/18)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/21-2 Recurrent Neural Network (Part II).json')">21-2 Recurrent Neural Network (Part II)(2020/06/20)</a>
+                    </li>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/ML Lecture/22 Ensemble.json')">22 Ensemble(2020/06/21)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret caret-down"> Hung-yi Lee - Machine Learning 2020</span>
+                  <ul class="nested active">
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/Linear Algebra 2019/1 What are we going to learn.json')">Course Introduction(2020/06/09)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="caret caret-down">Hung-yi Lee - Linear Algebra (2019)</span>
+                  <ul class="nested active">
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/Machine Learning 2020/Course Introduction.json')">Course Introduction(2020/06/03)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Probability_Statistics.json')">Probability&Statistics(2020/04/26)</a>
+                </li>
+                <li>
+                  <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/machine_learning.json')">Machine Learning(2020/05/07)</a>
+                </li>
+                <li>
+                  <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/nlp.json')">NLP(2020/05/07)</a>
+                </li>
+                <li>
+                  <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/tensorflow.json')">Tensorflow(2020/05/02)</a>
+                </li>
+                <li>
+                  <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/overfitting.json')">Overfit(2020/05/01)</a>
+                </li>
+                <li><span class="caret">Example</span>
+                  <ul class="nested">
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/example/image_classification.json')">Image Classification(2020/05/01)</a>
 
-                                    </ul>
-                                </li>
-                                <li>
-                                    <span class="caret caret-down"> Hung-yi Lee - Machine Learning 2020</span>
-                                    <ul class="nested active">
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/Linear Algebra 2019/1 What are we going to learn.json')">Course Introduction(2020/06/09)</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <span class="caret caret-down">Hung-yi Lee - Linear Algebra (2019)</span>
-                                    <ul class="nested active">
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Hung-yi_Lee/Machine Learning 2020/Course Introduction.json')">Course Introduction(2020/06/03)</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/Probability_Statistics.json')">Probability&Statistics(2020/04/26)</a>
-                                </li>
-                                <li>
-                                    <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/machine_learning.json')">Machine Learning(2020/05/07)</a>
-                                </li>
-                                <li>
-                                    <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/nlp.json')">NLP(2020/05/07)</a>
-                                </li>
-                                <li>
-                                    <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/tensorflow.json')">Tensorflow(2020/05/02)</a>
-                                </li>
-                                <li>
-                                    <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/overfitting.json')">Overfit(2020/05/01)</a>
-                                </li>
-                                <li><span class="caret">Example</span>
-                                    <ul class="nested">
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/example/image_classification.json')">Image Classification(2020/05/01)</a>
+                    </li>
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/example/text_classification.json')">Text Classification(2020/05/01)</a>
 
-                                        </li>
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/example/text_classification.json')">Text Classification(2020/05/01)</a>
-
-                                        </li>
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/example/regression.json')">Regression(2020/05/01)</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                    </li>
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/deeplearning/example/regression.json')">Regression(2020/05/01)</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><span class="caret caret-down">Paper</span>
+              <ul class="nested">
+                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/paper/Object Detection in 20 Years A Survey.json')">Object Detection in 20 Years A Survey(2020/05/21)</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class='main-group'>
+            <li><span class="caret caret-down">Program Language</span>
+              <ul class="nested  active">
+                <li><span class='caret'>Nodejs</span>
+                  <ul class='nested'>
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/it/nodejs.json')">Node.js(2020/05/01)</a>
+                    </li>
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/it/esLint.json')">ESLint - Pluggable JavaScript linter(2020/05/01)</a>
+                    </li>
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/it/glup.json')">glup - automate and enhance your workflow(2020/05/03)</a>
+                    </li>
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/it/webpack.json')">webpack - module bounder(2020/05/03)</a>
+                    </li>
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/it/chai.json')">chai - Chai is a BDD / TDD assertion library for [node](2020/05/04)</a>
+                    </li>
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/it/mocha.json')">mocha - Mocha is a feature-rich JavaScript test framework(2020/05/04)</a>
+                    </li>
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/it/istanbul.json')">istanbul, a JavaScript test coverage tool.(2020/05/04)</a>
+                    </li>
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/it/travis.json')">travis CI - Test and Deploy with Confidence (2020/05/05)</a>
+                    </li>
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/it/benchmark.json')">benchmark.js (2020/05/05)</a>
+                    </li>
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/it/jest.json')">jest - Delightful Javascript Testing (2020/05/07)</a>
+                    </li>
+                    <li>
+                      <a href='#' onclick="javascript:load_jsmind('mindmap/it/webdriver.json')">webdriver - a browser automation library (2020/05/07)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class='caret'>Other</span>
+                  <ul class='nested '>
+                    <li><a href='#' onclick="javascript:load_jsmind('mindmap/it/golang.json')">golang(2020/04/29)</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class='main-group'>
+            <li><span class="caret caret-down">Language</span>
+              <ul class="nested  active">
+                <li><span class="caret">English</span>
+                  <ul class="nested">
+                    <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/賴世雄.json')">賴世雄-我如何學英文(2020/05/06)</a>
+                    </li>
+                    <li><span class="caret">龍飛虎 69堂課</span>
+                      <ul class="nested">
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/01-學英語的前題.json')">01-學英語的前題(2020/05/07)</a>
                         </li>
-                        <li><span class="caret caret-down">Paper</span>
-                            <ul class="nested">
-                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/paper/Object Detection in 20 Years A Survey.json')">Object Detection in 20 Years A Survey(2020/05/21)</a>
-                                </li>
-                            </ul>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/02-意識腦vs下意識.json')">02-意識腦vs下意識(2020/05/08)</a>
                         </li>
-                    </ul>
-                    <ul class='main-group'>
-                        <li><span class="caret caret-down">Program Language</span>
-                            <ul class="nested  active">
-                                <li><span class='caret'>Nodejs</span>
-                                    <ul class='nested'>
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/nodejs.json')">Node.js(2020/05/01)</a>
-                                        </li>
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/esLint.json')">ESLint - Pluggable JavaScript linter(2020/05/01)</a>
-                                        </li>
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/glup.json')">glup - automate and enhance your workflow(2020/05/03)</a>
-                                        </li>
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/webpack.json')">webpack - module bounder(2020/05/03)</a>
-                                        </li>
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/chai.json')">chai - Chai is a BDD / TDD assertion library for [node](2020/05/04)</a>
-                                        </li>
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/mocha.json')">mocha - Mocha is a feature-rich JavaScript test framework(2020/05/04)</a>
-                                        </li>
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/istanbul.json')">istanbul, a JavaScript test coverage tool.(2020/05/04)</a>
-                                        </li>
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/travis.json')">travis CI - Test and Deploy with Confidence (2020/05/05)</a>
-                                        </li>
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/benchmark.json')">benchmark.js (2020/05/05)</a>
-                                        </li>
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/jest.json')">jest - Delightful Javascript Testing (2020/05/07)</a>
-                                        </li>
-                                        <li>
-                                            <a href='#' onclick="javascript:load_jsmind('mindmap/it/webdriver.json')">webdriver - a browser automation library (2020/05/07)</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <span class='caret'>Other</span>
-                                    <ul class='nested '>
-                                        <li><a href='#' onclick="javascript:load_jsmind('mindmap/it/golang.json')">golang(2020/04/29)</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/03-核心圈.json')">03-核心圈(2020/05/09)</a>
                         </li>
-                    </ul>
-                    <ul class='main-group'>
-                        <li><span class="caret caret-down">Language</span>
-                            <ul class="nested  active">
-                                <li><span class="caret">English</span>
-                                    <ul class="nested">
-                                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/賴世雄.json')">賴世雄-我如何學英文(2020/05/06)</a>
-                                        </li>
-                                        <li><span class="caret">龍飛虎 69堂課</span>
-                                            <ul class="nested">
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/01-學英語的前題.json')">01-學英語的前題(2020/05/07)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/02-意識腦vs下意識.json')">02-意識腦vs下意識(2020/05/08)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/03-核心圈.json')">03-核心圈(2020/05/09)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/04-明確英文目標.json')">04-明確英文目標(2020/05/09)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/05-成年人的優勢.json')">05-成年人的優勢(2020/05/09)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/06-如何更好更快的學好英文.json')">06-如何更好更快的學好英文(2020/05/10)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/07-堅持學英文的秘訣.json')">07-堅持學英文的秘訣(2020/05/10)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/08-你必須得建立的第一個習慣.json')">08-你必須得建立的第一個習慣(2020/05/10)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/09-習慣2建立英文思維.json')">09-習慣2建立英文思維(2020/05/10)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/10-習慣3對自己聽力與發音的提升.json')">10-習慣3對自己聽力與發音的提升(2020/05/10)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/11-習慣4一個盒子兩條路.json')">11-習慣4一個盒子兩條路(2020/05/10)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/12-習慣5每天自言自語說英語.json')">12-習慣5每天自言自語說英語(2020/05/10)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/13-習慣6玩詞.json')">13-習慣6玩詞(2020/05/10)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/14-習慣7每天開口真實溝通.json')">14-習慣7每天開口真實溝通(2020/05/10)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/15-習慣8一天練好一個發音.json')">15-習慣8一天練好一個發音(2020/05/10)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/16-習慣9每天用英語寫作跟別人進行真實溝通.json')">16-習慣9每天用英語寫作跟別人進行真實溝通(2020/05/10)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/17-習慣10內心雙語錄音.json')">17-習慣10內心雙語錄音(2020/05/11)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/18-萬能鑰匙.json')">18-萬能鑰匙(2020/05/11)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/19-萬能鑰匙-2.json')">19-萬能鑰匙-2(2020/05/11)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/20-一個盒子兩條路.json')">20-一個盒子兩條路(2020/05/11)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/21-為什麼英語要從聽開始.json')">21-為什麼英語要從聽開始(2020/05/12)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/22-如何利用可學習輸入學英語.json')">22-如何利用可學習輸入學英語(2020/05/13)</a>
-                                                </li>
-
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/23-片語比單字還重要.json')">23-片語比單字還重要(2020/05/14)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/24-認識和運用自己的記憶力.json')">24-認識和運用自己的記憶力(2020/05/14)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/25-語文的本質.json')">25-語文的本質(2020/05/14)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/26-文法的快速學習.json')">26-文法的快速學習(2020/05/14)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/27-用一個盒子兩條路解決文法問題.json')">27-用一個盒子兩條路解決文法問題(2020/05/15)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/28-英語裡面高頻詞粒子.json')">28-英語裡面高頻詞粒子(2020/05/16)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/29-英文裡面高頻詞粒子-2.json')">29-英文裡面高頻詞粒子-2(2020/05/16)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/30-英文裡面高頻詞粒子-3.json')">30-英文裡面高頻詞粒子-3(2020/05/16)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/31-英文裡面高頻詞粒子-4.json')">31-英文裡面高頻詞粒子-4(2020/05/16)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/32-英文裡面高頻變形詞-1.json')">32-英文裡面高頻變形詞-1(2020/05/16)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/33-英文裡面高頻變形詞-2.json')">33-英文裡面高頻變形詞-2(2020/05/16)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/34-英文裡面高頻變形詞-3.json')">34-英文裡面高頻變形詞-3(2020/05/17)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/35-英文裡面高頻變形詞-4.json')">35-英文裡面高頻變形詞-4(2020/05/17)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/36-英文時態的道理和用法-1.json')">36-英文時態的道理和用法-1(2020/05/17)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/37-英文時態的道理和用法-2.json')">37-英文時態的道理和用法-2(2020/05/17)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/38-英語特點-1-單數詞與複數詞.json')">38-英語特點-1-單數詞與複數詞(2020/05/18)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/39-英語特點-2-單字的融會.json')">39-英語特點-2-單字的融會(2020/05/18)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/40-思維扭轉用比喻的方式去看句子.json')">40-思維扭轉用比喻的方式去看句子(2020/05/18)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/41-自如使用長句的6個步驟.json')">41-自如使用長句的6個步驟(2020/05/18)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/42-英語口語的秘訣.json')">42-英語口語的秘訣(2020/05/19)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/43-如何練好發音.json')">43-如何練好發音(2020/05/19)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/44-發音準練得快的方法.json')">44-發音準練得快的方法(2020/05/19)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/45-英語肌肉玩法.json')">45-英語肌肉玩法(2020/05/21)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/46-如何練好英語口語.json')">46-如何練好英語口語(2020/05/21)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/47-如何建立英語口語的條件反射.json')">47-如何建立英語口語的條件反射(2020/05/21)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/48-一個概念可以很多表達方式.json')">48-一個概念可以很多表達方式(2020/05/21)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/49-聽力問題背後的真理.json')">49-聽力問題背後的真理(2020/05/22)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/50-長好英語dna祕訣之泡腦子.json')">50-長好英語dna祕訣之泡腦子(2020/05/23)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/51-如何泡腦子.json')">51-如何泡腦子(2020/05/23)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/52-英語聽力六階段.json')">52-英語聽力六階段(2020/05/23)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/53-商務英語是日常英語++.json')">53-商務英語是日常英語++(2020/05/23)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/54-商務英語的比喻.json')">54-商務英語的比喻(2020/05/23)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/55-商務片語.json')">55-商務片語(2020/05/23)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/56-修練英語真本事.json')">56-修練英語真本事(2020/05/23)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/57-學習狀態管理方式.json')">57-學習狀態管理方式(2020/05/23)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/58-合適的標準.json')">58-合適的標準(2020/05/24)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/59-這樣說對嗎.json')">59-這樣說對嗎(2020/05/24)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/60-苛刻的破壞性.json')">60-苛刻的破壞性(2020/05/24)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/61-信心和恐懼.json')">61-信心和恐懼(2020/05/24)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/62-注意力管理.json')">62-注意力管理(2020/05/24)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/63-怎麼用心理的工具來清除恐懼.json')">63-怎麼用心理的工具來清除恐懼(2020/05/24)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/64-溝通遇到障礙該怎麼做.json')">64-溝通遇到障礙該怎麼做(2020/05/24)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/65-如何記住英語單字5階段.json')">65-如何記住英語單字5階段(2020/05/24)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/66-用強度表記住不同系列的單字.json')">66-用強度表記住不同系列的單字(2020/05/24)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/67-英語閱讀必須掌握的基本功.json')">67-英語閱讀必須掌握的基本功(2020/05/24)</a>
-                                                </li>
-                                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/68-英語寫作四個重要原則.json')">68-英語寫作四個重要原則(2020/05/24)</a>
-                                                </li>
-                                            </ul>
-
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><span class="caret">Japanese</span>
-                                    <ul class="nested">
-                                    </ul>
-                                </li>
-                            </ul>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/04-明確英文目標.json')">04-明確英文目標(2020/05/09)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/05-成年人的優勢.json')">05-成年人的優勢(2020/05/09)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/06-如何更好更快的學好英文.json')">06-如何更好更快的學好英文(2020/05/10)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/07-堅持學英文的秘訣.json')">07-堅持學英文的秘訣(2020/05/10)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/08-你必須得建立的第一個習慣.json')">08-你必須得建立的第一個習慣(2020/05/10)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/09-習慣2建立英文思維.json')">09-習慣2建立英文思維(2020/05/10)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/10-習慣3對自己聽力與發音的提升.json')">10-習慣3對自己聽力與發音的提升(2020/05/10)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/11-習慣4一個盒子兩條路.json')">11-習慣4一個盒子兩條路(2020/05/10)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/12-習慣5每天自言自語說英語.json')">12-習慣5每天自言自語說英語(2020/05/10)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/13-習慣6玩詞.json')">13-習慣6玩詞(2020/05/10)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/14-習慣7每天開口真實溝通.json')">14-習慣7每天開口真實溝通(2020/05/10)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/15-習慣8一天練好一個發音.json')">15-習慣8一天練好一個發音(2020/05/10)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/16-習慣9每天用英語寫作跟別人進行真實溝通.json')">16-習慣9每天用英語寫作跟別人進行真實溝通(2020/05/10)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/17-習慣10內心雙語錄音.json')">17-習慣10內心雙語錄音(2020/05/11)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/18-萬能鑰匙.json')">18-萬能鑰匙(2020/05/11)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/19-萬能鑰匙-2.json')">19-萬能鑰匙-2(2020/05/11)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/20-一個盒子兩條路.json')">20-一個盒子兩條路(2020/05/11)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/21-為什麼英語要從聽開始.json')">21-為什麼英語要從聽開始(2020/05/12)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/22-如何利用可學習輸入學英語.json')">22-如何利用可學習輸入學英語(2020/05/13)</a>
                         </li>
 
-                    </ul>
-                    <ul class='main-group'>
-                        <li><span class="caret caret-down">Other</span>
-                            <ul class="nested  active">
-                                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/王學賢全腦速讀學習法.json')">王學賢全腦速讀學習法(2020/05/06)</a>
-                                </li>
-                            </ul>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/23-片語比單字還重要.json')">23-片語比單字還重要(2020/05/14)</a>
                         </li>
-                    </ul>
-                    <ul class='main-group'>
-                        <li><span class="caret caret-down">Tool</span>
-                            <ul class="nested  active">
-                                <li>
-                                    <a a href='#' onclick="javascript:load_url('random_color_generate.html')">Random Color Generate</a></li>
-                            </ul>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/24-認識和運用自己的記憶力.json')">24-認識和運用自己的記憶力(2020/05/14)</a>
                         </li>
-                    </ul>
-                </div>
-            </td>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/25-語文的本質.json')">25-語文的本質(2020/05/14)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/26-文法的快速學習.json')">26-文法的快速學習(2020/05/14)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/27-用一個盒子兩條路解決文法問題.json')">27-用一個盒子兩條路解決文法問題(2020/05/15)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/28-英語裡面高頻詞粒子.json')">28-英語裡面高頻詞粒子(2020/05/16)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/29-英文裡面高頻詞粒子-2.json')">29-英文裡面高頻詞粒子-2(2020/05/16)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/30-英文裡面高頻詞粒子-3.json')">30-英文裡面高頻詞粒子-3(2020/05/16)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/31-英文裡面高頻詞粒子-4.json')">31-英文裡面高頻詞粒子-4(2020/05/16)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/32-英文裡面高頻變形詞-1.json')">32-英文裡面高頻變形詞-1(2020/05/16)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/33-英文裡面高頻變形詞-2.json')">33-英文裡面高頻變形詞-2(2020/05/16)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/34-英文裡面高頻變形詞-3.json')">34-英文裡面高頻變形詞-3(2020/05/17)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/35-英文裡面高頻變形詞-4.json')">35-英文裡面高頻變形詞-4(2020/05/17)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/36-英文時態的道理和用法-1.json')">36-英文時態的道理和用法-1(2020/05/17)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/37-英文時態的道理和用法-2.json')">37-英文時態的道理和用法-2(2020/05/17)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/38-英語特點-1-單數詞與複數詞.json')">38-英語特點-1-單數詞與複數詞(2020/05/18)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/39-英語特點-2-單字的融會.json')">39-英語特點-2-單字的融會(2020/05/18)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/40-思維扭轉用比喻的方式去看句子.json')">40-思維扭轉用比喻的方式去看句子(2020/05/18)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/41-自如使用長句的6個步驟.json')">41-自如使用長句的6個步驟(2020/05/18)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/42-英語口語的秘訣.json')">42-英語口語的秘訣(2020/05/19)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/43-如何練好發音.json')">43-如何練好發音(2020/05/19)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/44-發音準練得快的方法.json')">44-發音準練得快的方法(2020/05/19)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/45-英語肌肉玩法.json')">45-英語肌肉玩法(2020/05/21)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/46-如何練好英語口語.json')">46-如何練好英語口語(2020/05/21)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/47-如何建立英語口語的條件反射.json')">47-如何建立英語口語的條件反射(2020/05/21)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/48-一個概念可以很多表達方式.json')">48-一個概念可以很多表達方式(2020/05/21)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/49-聽力問題背後的真理.json')">49-聽力問題背後的真理(2020/05/22)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/50-長好英語dna祕訣之泡腦子.json')">50-長好英語dna祕訣之泡腦子(2020/05/23)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/51-如何泡腦子.json')">51-如何泡腦子(2020/05/23)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/52-英語聽力六階段.json')">52-英語聽力六階段(2020/05/23)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/53-商務英語是日常英語++.json')">53-商務英語是日常英語++(2020/05/23)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/54-商務英語的比喻.json')">54-商務英語的比喻(2020/05/23)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/55-商務片語.json')">55-商務片語(2020/05/23)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/56-修練英語真本事.json')">56-修練英語真本事(2020/05/23)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/57-學習狀態管理方式.json')">57-學習狀態管理方式(2020/05/23)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/58-合適的標準.json')">58-合適的標準(2020/05/24)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/59-這樣說對嗎.json')">59-這樣說對嗎(2020/05/24)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/60-苛刻的破壞性.json')">60-苛刻的破壞性(2020/05/24)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/61-信心和恐懼.json')">61-信心和恐懼(2020/05/24)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/62-注意力管理.json')">62-注意力管理(2020/05/24)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/63-怎麼用心理的工具來清除恐懼.json')">63-怎麼用心理的工具來清除恐懼(2020/05/24)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/64-溝通遇到障礙該怎麼做.json')">64-溝通遇到障礙該怎麼做(2020/05/24)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/65-如何記住英語單字5階段.json')">65-如何記住英語單字5階段(2020/05/24)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/66-用強度表記住不同系列的單字.json')">66-用強度表記住不同系列的單字(2020/05/24)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/67-英語閱讀必須掌握的基本功.json')">67-英語閱讀必須掌握的基本功(2020/05/24)</a>
+                        </li>
+                        <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/龍飛虎/68-英語寫作四個重要原則.json')">68-英語寫作四個重要原則(2020/05/24)</a>
+                        </li>
+                      </ul>
 
-        </tr>
-    </table>
+                    </li>
+                  </ul>
+                </li>
+                <li><span class="caret">Japanese</span>
+                  <ul class="nested">
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+          <ul class='main-group'>
+            <li><span class="caret caret-down">Other</span>
+              <ul class="nested  active">
+                <li> <a href='#' onclick="javascript:load_jsmind('mindmap/english/王學賢全腦速讀學習法.json')">王學賢全腦速讀學習法(2020/05/06)</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class='main-group'>
+            <li><span class="caret caret-down">Tool</span>
+              <ul class="nested  active">
+                <li>
+                  <a a href='#' onclick="javascript:load_url('random_color_generate.html')">Random Color Generate</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </td>
+
+    </tr>
+  </table>
 </body>
 
 </html>
