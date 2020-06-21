@@ -137,7 +137,7 @@ Regression
             四次方形成的function space包含三次方(w4=0等同三次方)
             五次方形成的function space包含四次方(w5=0等同四次方)
             理論上計算越複雜可以找的好的function error rate最低的機會應該越高
-                前提graident descent可以幫你找出best Function
+                前提Gradient descent可以幫你找出best Function
                 但是在testing data上看起來不一樣
                     model越來越複雜training結果越來越好
                     testing data結果確不一定比較好

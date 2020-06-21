@@ -272,7 +272,7 @@ Unsupervised Learning - Linear Methods
                                                             但不會比PCA找出來的error小
                                                                 linear時候直接PCA比較快
                                                                 nerual network好處可以deep
-                                                graident descent
+                                                Gradient descent
                                 weakness of PCA
                                     Unsupervised
                                         dimension reduction到分最開的vector
@@ -409,7 +409,7 @@ Unsupervised Learning - Linear Methods
                                     ba: otakus A likes to buy figures                                        
                                     b1: how popular character 1 is
                                 L = Σ_(i,j) (r^i*r^j - n_ij +b_i+b_j)^2
-                                graident descent硬解
+                                Gradient descent硬解
                                     r^i,r^j,b_i,b_j
                                     也可以加regularization                                    
                     ref:

@@ -60,7 +60,7 @@ Support Vector Machine (SVM)
                                             雖然不能minimum ideal loss
                                             但是我們minimum 他的upper bound
                                 sigmoid+crossentropy的負值很大的時候曲線很大
-                                    可以很快graident回來
+                                    可以很快Gradient回來
                                         努力會有回報
                                             比較好training
                                 sigmoid+square loss的負值比較平緩
@@ -161,7 +161,7 @@ Support Vector Machine (SVM)
                                                 回到SVM算法
                         Quadratic Programming (QP) problem
                             用Quadratic Programming solver把它解出來
-                            或者graident descent
+                            或者Gradient descent
     Kernel Method
         Dual Representation
             minimum找出來的weight

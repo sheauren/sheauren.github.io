@@ -2963,7 +2963,7 @@
     {
         "id": "line_424",
         "parentid": "line_423",
-        "topic": "\u7b97\u53c3\u6578\u7684graident\u6bd4\u8f03\u5feb",
+        "topic": "\u7b97\u53c3\u6578\u7684Gradient\u6bd4\u8f03\u5feb",
         "background-color": "#d41dea",
         "expanded": false
     },
@@ -3096,14 +3096,14 @@
     {
         "id": "line_443",
         "parentid": "line_420",
-        "topic": "Adaboost\u6574\u4ef6\u4e8b\u60c5\u5c31\u60f3\u50cf\u4e5f\u5728\u505agraident descent",
+        "topic": "Adaboost\u6574\u4ef6\u4e8b\u60c5\u5c31\u60f3\u50cf\u4e5f\u5728\u505aGradient descent",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_444",
         "parentid": "line_443",
-        "topic": "\u53ea\u662fgraident\u662f\u4e00\u500bfunction",
+        "topic": "\u53ea\u662fGradient\u662f\u4e00\u500bfunction",
         "background-color": "#d41dea",
         "expanded": false
     },

@@ -46,7 +46,7 @@ Recurrent Neural Network (Part II)
                                             可以繼續trainning
                     why RNN有這個奇特特性
                         以前是因為sigmoid造成的
-                            graident vanishing
+                            Gradient vanishing
                                 換ReLU就好了
                                 這招RNN不行
                             但在RNN把sigmoid換Relu performance會變差
@@ -446,7 +446,7 @@ Recurrent Neural Network (Part II)
                     output 在做HMM/CRF
                     用RNN/LSTM的output定義HMM/CRF的evaluation function
                 同時享受兩邊的好處
-                    都可以用graident descent training
+                    都可以用Gradient descent training
                 speech Recognition:
                     CNN/LSTM/DNN+HMM
                         P(x,y) = P(y_1|start)π_l=1^L-1(P(y_l+1|y_l)P(end|y_L))π_l=1^L(P(x_l|y_l))

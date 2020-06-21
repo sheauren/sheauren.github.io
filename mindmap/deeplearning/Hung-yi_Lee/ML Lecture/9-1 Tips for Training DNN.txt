@@ -358,7 +358,7 @@ Tips for Training DNN
                             how about put this phenomenon in gradients descent
                             how to use?
                                 movement of last step minus gradient at present
-                                    這次的graident+前次的方向
+                                    這次的Gradient+前次的方向
                                 start point
                                     θ^0
                                 movement

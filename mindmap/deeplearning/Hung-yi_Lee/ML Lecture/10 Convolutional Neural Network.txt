@@ -318,7 +318,7 @@ Convolutional Neural Network
                                     content像input image的content
                                     他的correlation像style image的filter output之間的correlation
                                     同時滿足的就會轉換風格
-                                        用graident decsent的方法
+                                        用Gradient decsent的方法
     More Application: Playing Go
         一般typical Network也能做這事情不一定要CNN
             只要learn一個network找到function

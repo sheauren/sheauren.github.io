@@ -422,7 +422,7 @@ Ensemble
                 α_t好像learning rate
                 g_t(x) = g_t-1(x)+ α_t*f_t(x)
                 find α_t minimzing L(g)
-                    算參數的graident比較快
+                    算參數的Gradient比較快
                     可能不會稀罕說LR設的好不好
                         太小多算幾次
                     在gradient boost的方法裡面
@@ -441,8 +441,8 @@ Ensemble
                     ∂L(g)/∂α_t =0
                         把極值找出
                     α_t = ln √(1-ε_t)/ε_t
-                Adaboost整件事情就想像也在做graident descent
-                    只是graident是一個function
+                Adaboost整件事情就想像也在做Gradient descent
+                    只是Gradient是一個function
                     Learning rate有一個很好的方法決定learning rate
                     可以任意更改你的objective function
                         exp(-y^^ * g(x))
