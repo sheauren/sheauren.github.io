@@ -1,0 +1,1773 @@
+[
+    {
+        "id": "root",
+        "isroot": true,
+        "topic": "Reinforcement Learning (including Q-learning)"
+    },
+    {
+        "id": "line_1",
+        "parentid": "root",
+        "topic": "Learning to interact with Environments",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_2",
+        "parentid": "line_1",
+        "topic": "\u6a5f\u5668\u63a1\u53d6\u884c\u70ba\u6703\u5f71\u97ff\u672a\u4f86\u7d50\u679c",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_3",
+        "parentid": "line_1",
+        "topic": "\u6c7a\u7b56\u6703\u5f71\u97ff\u770b\u5230\u7684data",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_4",
+        "parentid": "line_3",
+        "topic": "\u5de6\u8f49\u770b\u5230\u5de6\u8f49\u5f8c\u7684\u756b\u9762",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_5",
+        "parentid": "line_3",
+        "topic": "\u8ddf\u4e00\u822clearn problem\u4e0d\u540c",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_6",
+        "parentid": "line_3",
+        "topic": "\u6a5f\u5668\u4e92\u52d5\u6703\u5f71\u97ff\u74b0\u5883\u8ddf\u63a5\u4e0b\u4f86\u7684Input",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_7",
+        "parentid": "line_1",
+        "topic": "e.g.",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_8",
+        "parentid": "line_7",
+        "topic": "Go Playing",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_9",
+        "parentid": "line_8",
+        "topic": "Target Win",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_10",
+        "parentid": "root",
+        "topic": "Environment ->",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_11",
+        "parentid": "line_10",
+        "topic": "State(Observation) ->",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_12",
+        "parentid": "line_11",
+        "topic": "Actor",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_13",
+        "parentid": "root",
+        "topic": "E.g",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_14",
+        "parentid": "line_13",
+        "topic": "Dialogue System",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_15",
+        "parentid": "line_14",
+        "topic": "\u6211\u60f311/5\u5230\u53f0\u5317\u7684\u6a5f\u7968->",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_16",
+        "parentid": "line_15",
+        "topic": "NN->",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_17",
+        "parentid": "line_16",
+        "topic": "\u62b5\u9054\u6642\u959311/5\u76ee\u7684\u5730\u65b9\u53f0\u5317 ->",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_18",
+        "parentid": "line_17",
+        "topic": "Decision Making->",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_19",
+        "parentid": "line_18",
+        "topic": "\u554f\u51fa\u767c\u5730\u9ede->",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_20",
+        "parentid": "line_19",
+        "topic": "NN Generation->",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_21",
+        "parentid": "line_20",
+        "topic": "\u8acb\u554f\u4f60\u5f9e\u54ea\u51fa\u767c",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_22",
+        "parentid": "root",
+        "topic": "How to solve this problem?",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_23",
+        "parentid": "line_22",
+        "topic": "Network as a function",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_24",
+        "parentid": "line_22",
+        "topic": "Learn as typical Supervised Tasks",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_25",
+        "parentid": "line_24",
+        "topic": "\u68cb\u76e4 -> NN -> Target (3,3)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_26",
+        "parentid": "line_24",
+        "topic": "\u7d05\u71c8 -> NN -> Target (Stop)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_27",
+        "parentid": "line_24",
+        "topic": "Collect Data",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_28",
+        "parentid": "line_22",
+        "topic": "Behavior Cloning",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_29",
+        "parentid": "line_28",
+        "topic": "\u8907\u88fd\u884c\u70ba,\u8907\u88fdexpert",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_30",
+        "parentid": "line_28",
+        "topic": "\u6a5f\u5668\u7121\u6cd5\u5b8c\u7f8e\u6a21\u4eff\u5979\u7684\u8001\u5e2b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_31",
+        "parentid": "line_30",
+        "topic": "\u4e0d\u5f97\u4e0d\u6709\u6240\u53d6\u6368",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_32",
+        "parentid": "line_30",
+        "topic": "\u90a3\u8a72\u5b78\u4e0d\u8a72\u5b78\u600e\u9ebc\u5206",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_34",
+        "parentid": "root",
+        "topic": "Characteristics of interaction",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_35",
+        "parentid": "line_34",
+        "topic": "What do we miss?",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_36",
+        "parentid": "line_35",
+        "topic": "machine does not know the influence of each action",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_37",
+        "parentid": "line_34",
+        "topic": "Agent's action affect the sequence data in recevies",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_38",
+        "parentid": "line_37",
+        "topic": "\u6709\u4e9b\u884c\u70ba\u975e\u5e38\u95dc\u9375,\u6709\u4e9b\u884c\u70ba\u7121\u95dc",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_39",
+        "parentid": "line_34",
+        "topic": "Better Way",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_40",
+        "parentid": "line_39",
+        "topic": "\u628a\u6240\u6709action\u7576\u505a\u6574\u9ad4\u4f86\u770b\u5f85",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_41",
+        "parentid": "line_40",
+        "topic": "Reinforcement Learning (Reward)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_42",
+        "parentid": "line_41",
+        "topic": "Training an Actor",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_43",
+        "parentid": "line_41",
+        "topic": "Training an Critic",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_44",
+        "parentid": "line_41",
+        "topic": "Actor + Critic",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_45",
+        "parentid": "line_41",
+        "topic": "Invese Reinforcement learning",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_46",
+        "parentid": "line_40",
+        "topic": "Learning by demonstration",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_47",
+        "parentid": "line_46",
+        "topic": "Limitation learning",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_48",
+        "parentid": "line_47",
+        "topic": "an expert demonstrates how to solve the task and machine learns from the demonstrates",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_49",
+        "parentid": "root",
+        "topic": "Reinforcement Learning",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_50",
+        "parentid": "line_49",
+        "topic": "Actor",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_51",
+        "parentid": "line_50",
+        "topic": "\u6416\u687f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_52",
+        "parentid": "line_50",
+        "topic": "\u843d\u5b50",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_53",
+        "parentid": "line_49",
+        "topic": "Environment",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_54",
+        "parentid": "line_53",
+        "topic": "(you can't control)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_55",
+        "parentid": "line_53",
+        "topic": "\u4e3b\u6a5f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_56",
+        "parentid": "line_53",
+        "topic": "\u5c0d\u624b",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_57",
+        "parentid": "line_49",
+        "topic": "Reward Funciton",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_58",
+        "parentid": "line_57",
+        "topic": "(you can't control)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_59",
+        "parentid": "line_57",
+        "topic": "\u6bba\u602a\u5f97\u5206",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_60",
+        "parentid": "line_57",
+        "topic": "\u570d\u68cb\u898f\u5247",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_61",
+        "parentid": "line_49",
+        "topic": "example:",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_62",
+        "parentid": "line_61",
+        "topic": "play video game",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_63",
+        "parentid": "line_62",
+        "topic": "start observation s1",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_64",
+        "parentid": "line_63",
+        "topic": "\u904a\u6232\u756b\u9762",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_65",
+        "parentid": "line_62",
+        "topic": "actor -> a1='right'",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_66",
+        "parentid": "line_65",
+        "topic": "obtatin reward",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_67",
+        "parentid": "line_66",
+        "topic": "r1=0",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_68",
+        "parentid": "line_62",
+        "topic": "new observation s2",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_69",
+        "parentid": "line_68",
+        "topic": "actor -> a2='fire'",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_70",
+        "parentid": "line_69",
+        "topic": "obtain reward",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_71",
+        "parentid": "line_70",
+        "topic": "r2=5(\u6bba\u5230\u4e00\u96bb\u602a)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_72",
+        "parentid": "line_62",
+        "topic": "...many times",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_73",
+        "parentid": "line_72",
+        "topic": "obtain reward",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_74",
+        "parentid": "line_73",
+        "topic": "r^T",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_75",
+        "parentid": "line_62",
+        "topic": "This is an episode",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_76",
+        "parentid": "line_75",
+        "topic": "Total Reward R(\u03c4) = \u03a3_t=1^T Yt",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_77",
+        "parentid": "line_75",
+        "topic": "R\u5728\u4e92\u52d5\u904e\u7a0b\u4e2d\u8d8a\u5927\u8d8a\u597d",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_78",
+        "parentid": "line_62",
+        "topic": "Trajectonry \u03c4 =",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_79",
+        "parentid": "line_78",
+        "topic": "{s1 a1 r1 .. sT aT rT}",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_80",
+        "parentid": "root",
+        "topic": "Neural Network as Actor",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_81",
+        "parentid": "line_80",
+        "topic": "\u4ee5\u524d\u5c31\u6709 in Reinforcement network",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_82",
+        "parentid": "line_81",
+        "topic": "80\u5e74\u4ee3",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_83",
+        "parentid": "line_81",
+        "topic": "\u4ee5\u524d\u7528\u67e5\u8868\u683c\u65b9\u5f0f\u73fe\u5728\u7528NN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_84",
+        "parentid": "line_83",
+        "topic": "\u8868\u683c\u7121\u6cd5\u7aae\u8209\u6240\u6709\u756b\u9762",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_85",
+        "parentid": "line_83",
+        "topic": "\u4ee5\u524d\u8a8d\u70baActor\u63db\u4e00\u500bnon-linear Network\u6642",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_86",
+        "parentid": "line_85",
+        "topic": "\u7121\u6cd5Training",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_87",
+        "parentid": "line_85",
+        "topic": "\u7121\u6cd5\u6536\u6582",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_88",
+        "parentid": "line_81",
+        "topic": "Pixel -> NN ->",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_89",
+        "parentid": "line_88",
+        "topic": "left/right/fire",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_90",
+        "parentid": "line_89",
+        "topic": "0.7/0.2/0.1",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_91",
+        "parentid": "line_90",
+        "topic": "Probability distribution",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_92",
+        "parentid": "line_89",
+        "topic": "Take the action based on the probability stochastic",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_93",
+        "parentid": "line_92",
+        "topic": "\u6bcf\u6b21\u90fd\u4e0d\u540c\u907f\u514d\u88ab\u8b58\u7834",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_94",
+        "parentid": "line_80",
+        "topic": "\u5047\u8a2dreward\u662fNN,env\u4e5f\u662fNN",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_95",
+        "parentid": "line_94",
+        "topic": "\u6574\u500b\u5c31\u662f\u5927\u578bNN",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_96",
+        "parentid": "line_94",
+        "topic": "Input",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_97",
+        "parentid": "line_96",
+        "topic": "Random",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_98",
+        "parentid": "line_94",
+        "topic": "Output",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_99",
+        "parentid": "line_98",
+        "topic": "R(\u03c4) = \u03a3_t=1^\u03c4 \u03c4t",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_100",
+        "parentid": "line_99",
+        "topic": "\u6700\u5927\u5316",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_101",
+        "parentid": "line_100",
+        "topic": "\u53ea\u6709Actor\u53ef\u4ee5\u8abf\u6574",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_102",
+        "parentid": "line_99",
+        "topic": "Graident Ascent",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_103",
+        "parentid": "line_99",
+        "topic": "\u6709\u985e\u662fGAN\u7684\u7d50\u69cb",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_104",
+        "parentid": "line_94",
+        "topic": "Reward&Env\u53c3\u6578\u6211\u5011\u4e0d\u77e5\u9053",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_105",
+        "parentid": "line_104",
+        "topic": "optimal funciton\u4e0d\u53ef\u5fae\u5206",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_106",
+        "parentid": "line_105",
+        "topic": "\u53e3\u6c7a\uff1a\u7528policy gradient\u786ctrain",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_107",
+        "parentid": "line_104",
+        "topic": "Reinforcement Learning\u7528policy gradient\u8abfactor",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_108",
+        "parentid": "line_107",
+        "topic": "\u591a\u6b21\u6700\u7d42\u53ef\u4ee5output R",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_109",
+        "parentid": "line_108",
+        "topic": "\u5c31\u7d50\u675f\u4e86",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_110",
+        "parentid": "line_107",
+        "topic": "\u624b\u6cd5",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_111",
+        "parentid": "line_110",
+        "topic": "Markov Pecision Process",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_112",
+        "parentid": "line_104",
+        "topic": "Policy Graident\u53ef\u4ee5\u5e6b\u4f60optimal \u4e0d\u53ef\u4ee5\u5fae\u5206\u7684\u6771\u897f",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_113",
+        "parentid": "root",
+        "topic": "Critic",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_114",
+        "parentid": "line_113",
+        "topic": "\u4e0d\u6c7a\u5b9a\u63a1\u7528\u54ea\u500baction",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_115",
+        "parentid": "line_113",
+        "topic": "input actor \u03c0",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_116",
+        "parentid": "line_115",
+        "topic": "\u544a\u8a34\u4f60\u4ed6\u6709\u591a\u597d",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_117",
+        "parentid": "line_113",
+        "topic": "State value function",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_118",
+        "parentid": "line_117",
+        "topic": "V^\u03c0(S)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_119",
+        "parentid": "line_117",
+        "topic": "when using actor \u03c0, the accumulated reward experts to be obtained after seeing observation(state) S1",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_120",
+        "parentid": "line_119",
+        "topic": "\u671f\u671b\u503c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_121",
+        "parentid": "line_120",
+        "topic": "\u6240\u6709 accumulated\u7684reward",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_122",
+        "parentid": "line_121",
+        "topic": "\u4e0b\u570d\u68cb",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_123",
+        "parentid": "line_122",
+        "topic": "agent: \u03c0 observation State",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_124",
+        "parentid": "line_122",
+        "topic": "\u51fa\u9019\u624b\u7372\u52dd\u6a5f\u7387 V^\u03c0(S)",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_125",
+        "parentid": "line_121",
+        "topic": "\u5927\u871c\u8702",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_126",
+        "parentid": "line_125",
+        "topic": "\u602a\u591a\u53ef\u4ee5\u7372\u5f97score\u591a",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_127",
+        "parentid": "line_126",
+        "topic": "V^\u03c0(S) is larger",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_128",
+        "parentid": "line_125",
+        "topic": "\u602a\u624b\u53ef\u4ee5\u7372\u5f97score\u5c11",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_129",
+        "parentid": "line_128",
+        "topic": "V^\u03c0(S) is smaller",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_130",
+        "parentid": "line_113",
+        "topic": "Critic dependent on actor",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_131",
+        "parentid": "line_130",
+        "topic": "\u4e0d\u7528actor\u540c\u6a23state output\u4e0d\u540c",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_132",
+        "parentid": "line_113",
+        "topic": "Critic\u8861\u91cfactor\u597d\u4e0d\u597d",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_133",
+        "parentid": "line_132",
+        "topic": "V^\u4ee5\u524d\u963f\u5149(\u5927\u99ac\u6b65\u98db) = Bad",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_134",
+        "parentid": "line_132",
+        "topic": "V^\u8b8a\u5f37\u963f\u5149(\u5927\u99ac\u6b65\u98db) = Good",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_135",
+        "parentid": "line_132",
+        "topic": "\u6703\u966a\u8457actor\u4e0d\u540c\u5f97\u5230\u4e0d\u540c\u5206\u6578",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_136",
+        "parentid": "line_113",
+        "topic": "How to estimate V^\u03c0(S)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_137",
+        "parentid": "line_136",
+        "topic": "1. Monte-carlo based approach",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_138",
+        "parentid": "line_137",
+        "topic": "\u770bactor\u73a9\u904a\u6232",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_139",
+        "parentid": "line_138",
+        "topic": "\u770b\u73a9\u7684\u5982\u4f55",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_140",
+        "parentid": "line_137",
+        "topic": "actor\u03c0\u5728\u7d93\u904estate s_a\u4e4b\u5f8c",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_141",
+        "parentid": "line_140",
+        "topic": "\u5f97\u5230Reward G_a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_142",
+        "parentid": "line_137",
+        "topic": "input",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_143",
+        "parentid": "line_142",
+        "topic": "s_a",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_144",
+        "parentid": "line_137",
+        "topic": "Output",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_145",
+        "parentid": "line_144",
+        "topic": "G_a\u8d8a\u8fd1\u8d8a\u597d",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_146",
+        "parentid": "line_145",
+        "topic": "regerssion",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_147",
+        "parentid": "line_146",
+        "topic": "V^\u03c0(S_a) <-> G_a",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_148",
+        "parentid": "line_146",
+        "topic": "V^\u03c0(S_b) <-> G_b",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_149",
+        "parentid": "line_136",
+        "topic": "2. Temporal-difference",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_150",
+        "parentid": "line_149",
+        "topic": "Actor\u5728state\u63a1\u53d6\u67d0\u500b\u884c\u70ba",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_151",
+        "parentid": "line_150",
+        "topic": "critic\u5c31\u53ef\u4ee5\u5b78\u4e86",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_152",
+        "parentid": "line_150",
+        "topic": "V^\u03c0(s_t) <-> V^\u03c0(s_t+1) + \u03c4_t",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_153",
+        "parentid": "line_150",
+        "topic": "s_t => V^\u03c0 => V^\u03c0(s_t)",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_154",
+        "parentid": "line_153",
+        "topic": "- s_t+1 => V^\u03c0 => V^\u03c0(s_t+1)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_155",
+        "parentid": "line_154",
+        "topic": "V^\u03c0(s_t) - V^\u03c0(s_t+1) <=> Y_t",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_156",
+        "parentid": "line_155",
+        "topic": "\u627e\u63a5\u8fd1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_157",
+        "parentid": "line_149",
+        "topic": "\u904a\u6232\u9084\u6c92\u7d50\u675f\u5c31\u80fd\u958b\u59cbupdate\u4f60\u7684network",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_158",
+        "parentid": "line_149",
+        "topic": "Another Critic",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_159",
+        "parentid": "line_158",
+        "topic": "State-action value function",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_160",
+        "parentid": "line_159",
+        "topic": "Q^\u03c0(s,a)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_161",
+        "parentid": "line_159",
+        "topic": "when using actor \u03c0 the cumulated reward expect to be obtained after seeing observatoin and taking a",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_162",
+        "parentid": "line_149",
+        "topic": "Q function",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_163",
+        "parentid": "line_162",
+        "topic": "s\u63a1\u7528a\u53ef\u4ee5\u5f97\u5230\u591a\u5c11reward",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_164",
+        "parentid": "line_163",
+        "topic": "s,a -> Q^\u03c0 -> Q^\u03c0(s,a)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_165",
+        "parentid": "line_163",
+        "topic": "\u6539\u5bebQ function",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_166",
+        "parentid": "line_165",
+        "topic": "\u7aae\u8209\u6240\u6709a",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_167",
+        "parentid": "line_166",
+        "topic": "S->Q^\u03c0",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_168",
+        "parentid": "line_167",
+        "topic": "Q^\u03c0(s,a=left)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_169",
+        "parentid": "line_167",
+        "topic": "Q^\u03c0(s,a=right)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_170",
+        "parentid": "line_167",
+        "topic": "Q^\u03c0(s,a=fire)",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_171",
+        "parentid": "line_166",
+        "topic": "for discrete action function",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_172",
+        "parentid": "line_165",
+        "topic": "\u627e\u51fa\u6700\u597d\u7684action",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_173",
+        "parentid": "line_163",
+        "topic": "\u9019\u62db\u5c31\u53eb\u505a Q-learning",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_174",
+        "parentid": "line_162",
+        "topic": "\u9019\u4e09\u9805\u5faa\u74b0",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_175",
+        "parentid": "line_174",
+        "topic": "\u03c0 interacts with the environment",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_176",
+        "parentid": "line_174",
+        "topic": "Find a new actor \u03c0' better than \u03c0",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_177",
+        "parentid": "line_176",
+        "topic": "'better' V^\u03c0'(s) >= V^\u03c0(s) for all state s",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_178",
+        "parentid": "line_174",
+        "topic": "learning Q^\u03c0(s,a)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_179",
+        "parentid": "line_162",
+        "topic": "notice",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_180",
+        "parentid": "line_179",
+        "topic": "\u03c0' does not have extra parameter, it depends on Q",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_181",
+        "parentid": "line_179",
+        "topic": "not suitable for continuous action (slove later)",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_182",
+        "parentid": "line_162",
+        "topic": "Estimate",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_183",
+        "parentid": "line_182",
+        "topic": "Q^\u03c0(s,a) by TD",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_184",
+        "parentid": "line_162",
+        "topic": "Reference",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_185",
+        "parentid": "line_184",
+        "topic": "Double DQN",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_186",
+        "parentid": "line_185",
+        "topic": "where is usually over estimate",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_187",
+        "parentid": "line_186",
+        "topic": "Google rainbow paper",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_188",
+        "parentid": "line_187",
+        "topic": "7\u7a2e\u4e0d\u540c\u7684DQN tip",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_189",
+        "parentid": "line_184",
+        "topic": "Pueling DQN",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_190",
+        "parentid": "root",
+        "topic": "Actor+Critic",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_191",
+        "parentid": "line_190",
+        "topic": "\u6700\u77e5\u540d\u662fA3C",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_192",
+        "parentid": "line_190",
+        "topic": "learn actor\u770breward function obtain update\u4e58\u6700\u597d\u7684reward",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_193",
+        "parentid": "line_192",
+        "topic": "actor\u4e0d\u518d\u770benv\u7684reward\u6539\u770bcritic\u5b78",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_194",
+        "parentid": "line_190",
+        "topic": "Asynchronous Advantage Actor-Critic(A3C)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_195",
+        "parentid": "line_194",
+        "topic": "\u4f60\u6709Global Actor-Critic",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_196",
+        "parentid": "line_195",
+        "topic": "copy\u904e\u4f86\u8ddf\u74b0\u5883\u4e92\u52d5",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_197",
+        "parentid": "line_195",
+        "topic": "cirtic\u77e5\u9053\u5982\u4f55update\u53c3\u6578",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_198",
+        "parentid": "line_195",
+        "topic": "\u50b3\u56deglobal network",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_199",
+        "parentid": "line_195",
+        "topic": "\u6bcf\u500b\u5206\u8eab\u56de\u50b3\u56de\u53bb\u4e00\u8d77update",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_200",
+        "parentid": "line_195",
+        "topic": "\u5e73\u884c\u904b\u7b97\u50cf\u5f71\u5206\u8eab\u4e00\u6a23",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_201",
+        "parentid": "root",
+        "topic": "Pathwise Derivative Policy Gradient",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_202",
+        "parentid": "line_201",
+        "topic": "Actor-Critic\u8b8a\u5f62",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_203",
+        "parentid": "line_201",
+        "topic": "\u8457\u540d\u624b\u6cd5: DDPG",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_204",
+        "parentid": "line_201",
+        "topic": "\u975e\u5e38\u50cfGANS",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_205",
+        "parentid": "line_201",
+        "topic": "\u03c0'(s) = arg max_a^\u03c0(s,a)",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_206",
+        "parentid": "line_205",
+        "topic": "\u7121\u6cd5\u7aae\u8209\u6240\u6709a",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_207",
+        "parentid": "line_206",
+        "topic": "\u5982\u679ca\u662fcontinuous vector \u4f8b\u5982\u6a5f\u5668\u624b\u63a7\u5236\u95dc\u7bc0",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_208",
+        "parentid": "line_201",
+        "topic": "\u4e00\u822cQ learning\u53ea\u80fd\u8655\u7406discreate\u7684case",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_209",
+        "parentid": "line_201",
+        "topic": "\u8981\u8655\u7406continuous\u6642",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_210",
+        "parentid": "line_209",
+        "topic": "Learn\u4e00\u500bvector (Generator)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_211",
+        "parentid": "line_210",
+        "topic": "s->NN->a",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_212",
+        "parentid": "line_211",
+        "topic": "a\u8b93Q function\u503c\u6700\u5927\u90a3\u500b",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_213",
+        "parentid": "root",
+        "topic": "Inverse Reinforcement Learning",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_214",
+        "parentid": "line_213",
+        "topic": "Limitation learning\u4e00\u7a2e",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_215",
+        "parentid": "line_214",
+        "topic": "\u53ea\u6709Env\u8ddfActor\u6c92\u6709reward function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_216",
+        "parentid": "line_213",
+        "topic": "env->",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_217",
+        "parentid": "line_216",
+        "topic": "s1->",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_218",
+        "parentid": "line_217",
+        "topic": "actor->",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_219",
+        "parentid": "line_218",
+        "topic": "a1->",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_220",
+        "parentid": "line_219",
+        "topic": "env->",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_221",
+        "parentid": "line_220",
+        "topic": "s2->",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_222",
+        "parentid": "line_221",
+        "topic": "actor->",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_223",
+        "parentid": "line_222",
+        "topic": "a2",
+        "background-color": "#412ffc",
+        "expanded": false
+    },
+    {
+        "id": "line_224",
+        "parentid": "line_223",
+        "topic": "...",
+        "background-color": "#fff",
+        "expanded": false
+    },
+    {
+        "id": "line_225",
+        "parentid": "line_213",
+        "topic": "we have demonstration of the expert",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_226",
+        "parentid": "line_225",
+        "topic": "(f1,..,fn)",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_227",
+        "parentid": "line_226",
+        "topic": "each f is trajectory of expert",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_228",
+        "parentid": "line_213",
+        "topic": "\u73fe\u5be6\u4e2d\u7684case\u90fd\u6c92\u6709reward function",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_229",
+        "parentid": "line_228",
+        "topic": "\u570d\u68cb\u96d6\u7136\u6709\u8f38\u8d0f",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_230",
+        "parentid": "line_228",
+        "topic": "\u6bba\u602a\u6709\u5e7e\u5f97\u5206",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_231",
+        "parentid": "line_228",
+        "topic": "\u81ea\u99d5\u8eca?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_232",
+        "parentid": "line_228",
+        "topic": "chatbox?",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_233",
+        "parentid": "line_213",
+        "topic": "Motivation",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_234",
+        "parentid": "line_233",
+        "topic": "It is hard to define reward in some Tasks",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_235",
+        "parentid": "line_234",
+        "topic": "hand-crafted reward can lead to uncontrolled Behavior",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_236",
+        "parentid": "line_234",
+        "topic": "\u6a5f\u5668\u516c\u6575:\u4fdd\u8b77\u4eba\u985e->\u95dc\u8d77\u4f86",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_237",
+        "parentid": "line_213",
+        "topic": "Inverse Reinforcement Learning",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_238",
+        "parentid": "line_237",
+        "topic": "\u53cd\u904e\u4f86",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_239",
+        "parentid": "line_237",
+        "topic": "Env/Expert->",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_240",
+        "parentid": "line_239",
+        "topic": "Reinforcement learning->",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_241",
+        "parentid": "line_240",
+        "topic": "Reward function->",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_242",
+        "parentid": "line_241",
+        "topic": "using the reward function to find the optimal actor",
+        "background-color": "#01a6d5",
+        "expanded": false
+    },
+    {
+        "id": "line_243",
+        "parentid": "line_213",
+        "topic": "Principle: The teacher is always the best",
+        "background-color": "#e82ad2",
+        "expanded": false
+    },
+    {
+        "id": "line_244",
+        "parentid": "line_243",
+        "topic": "Basic ideal:",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_245",
+        "parentid": "line_244",
+        "topic": "Init actor",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_246",
+        "parentid": "line_244",
+        "topic": "In each iteration:",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_247",
+        "parentid": "line_246",
+        "topic": "The actor interacts with environment to obtain some trajectory",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_248",
+        "parentid": "line_246",
+        "topic": "define a reward function with makes the trajectorys of teacher better than actor",
+        "background-color": "#d41dea",
+        "expanded": false
+    },
+    {
+        "id": "line_249",
+        "parentid": "line_244",
+        "topic": "Output the reward function and the actor learned from the reward function",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_250",
+        "parentid": "line_243",
+        "topic": "\u898f\u5247\u6703\u4f9d\u503c\u6539\u8001\u5e2b\u5206\u6578\u6c38\u9060\u6bd4\u8f03\u9ad8\u8b93reward function\u4e00\u503c\u5b78\u4e0a\u53bb",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_251",
+        "parentid": "line_250",
+        "topic": "\u03a3_n=1^N R(fn) > \u03a3_n=1^N R(\u03c4)",
+        "background-color": "#e3aba7",
+        "expanded": false
+    },
+    {
+        "id": "line_252",
+        "parentid": "line_243",
+        "topic": "Generator -> Actor",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_253",
+        "parentid": "line_243",
+        "topic": "Discriminator -> Reward function",
+        "background-color": "#0fbdff",
+        "expanded": false
+    },
+    {
+        "id": "line_254",
+        "parentid": "root",
+        "topic": "Robot berkeley",
+        "background-color": "#e3aba7"
+    },
+    {
+        "id": "line_255",
+        "parentid": "line_254",
+        "topic": "http://rrl.berkeley.edu",
+        "background-color": "#e82ad2",
+        "expanded": false
+    }
+]
