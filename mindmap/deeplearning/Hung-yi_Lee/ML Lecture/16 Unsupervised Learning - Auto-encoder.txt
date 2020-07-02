@@ -88,8 +88,8 @@ Unsupervised Learning - Auto-encoder
                         add output layer 1000 dense
                         形成
                             input(784) -> 1000 dense -> 1000 dense -> output(1000)
-                                一個一個w traing下去
-                                    traing完就fix
+                                一個一個w training下去
+                                    training完就fix
                     最後把正確的output(10)串上去
                         而前面已經train好的weight就是你的initialization
                             w1,w2,w3

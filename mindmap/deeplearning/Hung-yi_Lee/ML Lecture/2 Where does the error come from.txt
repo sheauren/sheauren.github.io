@@ -12,7 +12,7 @@ Where does the error come from
         f* 與 f^之間的差距來自於
             bias
             variance
-    機率方式估算
+    Bais and vaiance of Estimator
         Estimate the mean of a variable x
             assume the mean of x is μ
             assume the variance of x is σ^2
@@ -20,11 +20,12 @@ Where does the error come from
             Simple N point: {x^1,x^2,... x^n}
             m = 1/N*∑_n x^n != μ
                 除非n有無限多個點
-        Estimator
+        Estimator of variance σ^2
             Var[m] = σ^2 / N
-            Variance depends on the number of samples
-            s^2 = 1/N*∑_n(x^n-m)^2
-            E[s^2] = (N-1)/N * σ^2
+                Variance depends on the number of samples
+                s^2 = 1/N*∑_n(x^n-m)^2 ≈ σ^2
+                m = 1/N*∑_n(x^n)
+                E[s^2] = (N-1)/N * σ^2  ≠ σ^2
         Estimator
             f^
                 把中心
@@ -46,10 +47,10 @@ Where does the error come from
         bias
             if we average all the f*, is it close to f^
             Large bias
-                整體偏贏
+                整體偏移
             Small bias
                 核心與靶心接近
-            5000條平均
+            5000 f*平均
                 1次方
                     與f^有差距
                     較大的bias
@@ -73,40 +74,40 @@ Where does the error come from
                         大的model範圍更大
                             可能有涵蓋到目標
                             只是沒有辦法找出target在哪裏
-                            因為traing data不夠
+                                因為training data不夠
                             Small bias
                             Larger variance
                 error bias依照複雜度越來越少
                 error variance依照複雜度越來越大
-                    error observed在bias縮小variancec還受控制的時候
-                        產生最佳點
-                        當error variance
+                最佳點
+                    bias縮variance還受控制的時候
+                        因variance造成error
                             overfitting
-                        當error bias很大
+                        bias很大造成error
                             underfitting
             what to do with large bias?
-                diagnosis:
-                    if your model cannot even fit the training,example: then you have large bais
-                        bias大
-                        underfitting
-                    if your model fit the training,but large error on testing data, then you probably have large variance
-                        variance大
-                        overrfiting 
-                    for bias
-                        redesign your model
-                            add more feature as input
-                            a more complex model
-                    for variance
-                        more data
-                            very effective but no always practical
-                            collect more data
-                            data augemtation
-                        regularization λ
-                            add λ smooth f*曲線
-                            依據λ決定平滑程度
-                            但是可能會傷害bias
+                model cannot even fit the training data
+                    then you have large bias
+                    bias大
+                    underfitting
+                model fit the training,but large error on testing data, then you probably have large variance
+                    variance大
+                    overrfiting 
+                for bias
+                    redesign your model
+                        add more feature as input
+                        a more complex model
+                for variance
+                    more data
+                        very effective but no always practical
+                        collect more data
+                        data augmentation
+                    regularization λ
+                        add λ smooth f*曲線
+                        依據λ決定平滑程度
+                        但是可能會傷害bias
     Model Selection
-        There is usually a trade-off between bias and variance
+        a trade-off between bias and variance
         Select a model that balance two kinds of error to minimize total error
         what you should NOT do:
             training set/testing set/real testing set1
@@ -118,27 +119,25 @@ Where does the error come from
                     拿testing set來選最好的model
                         於real testing通常不是最好的model
         Cross validation
-            training set
-                split
-                    training set
-                    validation set
-                    用這資料來選model(traing by training set)
-                        model1
-                            validation Err=0.9
-                        model2
-                            validation Err=0.7
-                        model3            
-                            validation Err=0.5
-                            best f*
-                    決定model再用全部的data在training一次
-                        再去public Testing Set測試
-                            可能會得到 Err > 0.5
-                                private Testing Set
-                                    Err > 0.5
-                            表面上看起來比較大
-                            但是才能真的反應Error
-                            不推薦如果測試結果不好再回去重測
-                                因為model裡面已經有public dataset的bias
+            split training set
+                training set
+                validation set
+                用這資料來選model(training by training set)
+                    model1
+                        validation Err=0.9
+                    model2
+                        validation Err=0.7
+                    model3            
+                        validation Err=0.5
+                        best f*
+                決定model再用全部的data在training
+                    再去public Testing Set測試
+                        可能會得到 Err > 0.5
+                            private Testing Set
+                                Err > 0.5
+                        表面上看起來比較大但是才能真的反應Error
+                        不推薦如果測試結果不好再回去重測
+                            因為model裡面已經有public dataset的bias
             怕validation分壞了
             N-fold Cross validation
                 不相信某一次分的validation
@@ -152,7 +151,7 @@ Where does the error come from
                         model3 Error 0.4,0.5,0.3
                         看avg error誰最好
                             model1 avg error=0.3
-                model 1在traing完整training set
+                model 1在training完整training set
                 少用public testing調整model
                 在private testing的結果才會比較好
                     與public testing差距會比較小

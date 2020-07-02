@@ -28,11 +28,9 @@ Introduction of Machine Learning
                     prepare
                         A set of function (model)
                             f1
-                                f1(貓圖) = "cat"
-                                f1(狗圖) = "dog"
+                                f1(貓圖) = "cat" / f1(狗圖) = "dog"
                             f2
-                                f1(貓圖) = "money"
-                                f1(狗圖) = "snake"
+                                f1(貓圖) = "money" / f1(狗圖) = "snake"
                             成千上萬的fn
                     training data
                         好的function輸入輸出應該如何
@@ -81,12 +79,12 @@ Introduction of Machine Learning
                     09/13上午PM2.5=25
                     output:
                         09/14上午PM2.5=20
-        classfication[task]
-            binary classfication
+        classification[task]
+            binary classification
                 f(x)=yes/no
                 ex: spam filtering
                     f(email)=Yes/No spam
-            multi-class classfication
+            multi-class classification
                 f(x)=class1,class2,class2,...,classN
                 ex: document classification
                     f(doc)= 政治/經濟/體育...
@@ -95,8 +93,8 @@ Introduction of Machine Learning
             deep learning
                 image recognition
                     hierachical structure
-                    f(pix)=>classfication
-                    traning data:
+                    f(pixel)=>classification
+                    training data:
                         image=>label
                         image=>label
                 playing GO
@@ -113,9 +111,9 @@ Introduction of Machine Learning
                         input
                             黑:5之5 -> 白:天元
                             output:
-                                黑:5之5
+                                黑:5之5
             SVM
-            dicision tree
+            decision  tree
             K-NN
         supervised learning[scenario]
             需要大量training data
@@ -126,11 +124,9 @@ Introduction of Machine Learning
                 hard to collect a large amount of labeled data
                 for example, recognition cats and dogs
                 labeled data
-                    dog...
-                    cat...
-                large unlabel;led data
-                    dog...
-                    cat...
+                    dog... / cat...
+                large unlabeled data
+                    dog.../cat...
             transfer learning[scenario]
                 只有少量label
                     dog...
@@ -151,8 +147,8 @@ Introduction of Machine Learning
                     training data is a lot of images
             structured learning[task]
                 有結果性的結果
-                beyond classfication
-                    speech recogntion
+                beyond classification
+                    speech recognition
                         f(voice)->"大家好歡迎修機器學習"
                     machine translation
                         f(中文)->英文

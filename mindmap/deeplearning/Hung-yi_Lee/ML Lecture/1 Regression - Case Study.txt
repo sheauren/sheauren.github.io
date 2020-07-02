@@ -1,6 +1,6 @@
 Regression
     Application
-        Stock Market Forcast
+        Stock Market Forecast
             f(指數)=>明天漲跌
         self-driven Car
             f(Sensor)=>方向盤角度
@@ -44,7 +44,7 @@ Regression
             step3. best function
                 best function f*
                     f* = argmin L(f)
-                    w*,b* = argmin_wb L(w,b)
+                    w*,b* = argmin_w,b L(w,b)
                 Gradient Descent - one parameter
                     consider loss function L(w) with one parameter w:
                         窮舉法把所有w可能性找出最小L(w)
@@ -62,7 +62,7 @@ Regression
                                 看斜率(dL/dw)
                                 看learning rate:η
                                     是先定好的數值
-                        w^1 = w^0 -  η(dL/dw)|w = w^0
+                        w^1 = w^0 -  η(dL/dw)|w = w^0
                         重複步驟
                         w^2 = w^1 -  η(dL/dw)|w = w^1
                         執行非常多次更新後
@@ -144,7 +144,7 @@ Regression
                         overfitting
         let's collect more data
             there is some hidden factor not considered in the previous model...
-                物種
+                物種/Species 
             redesign the model
                 x_s = species of x
                 if x_s == Pidgey:
@@ -169,11 +169,10 @@ Regression
                 δ(x_s ==Pidgey)
                     = 1 if x_s==Pidgey
                     = 0 otherwise
-                y = 
-                    b + ∑w_i*x_i
-                        x_i
-                            δ(x_s ==Pidgey) 
-                            δ(x_s ==Pidgey)*x_cp
+                y =  b + ∑w_i*x_i
+                    x_i
+                        δ(x_s ==Pidgey) 
+                        δ(x_s ==Pidgey)*x_cp
                 average error on Training data
                     3.8
                 average error on Testing data
@@ -215,10 +214,9 @@ Regression
                         所有的w算一下平方加起來
                             w_i參數值越小越好
                             接近0參數
-                            why smooth function are perferred?
+                            why smooth function are preferred?
                                 output對input的變化是比較不敏感的
-                                輸入被雜訊干擾時
-                                    受到比較少的影響
+                                輸入被雜訊干擾時受到比較少的影響
                     λ:
                         0
                             Training

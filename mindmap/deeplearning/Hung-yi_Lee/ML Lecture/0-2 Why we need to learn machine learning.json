@@ -19,13 +19,13 @@
     {
         "id": "line_3",
         "parentid": "line_2",
-        "topic": "\u8ca0\u8cac\u6311\u9078model/lose function",
+        "topic": "\u8ca0\u8cac\u6311\u9078model/loss function",
         "background-color": "#0fbdff"
     },
     {
         "id": "line_4",
         "parentid": "line_2",
-        "topic": "\u4e0d\u540c\u7684\u554f\u984c\u9069\u5408\u4e0d\u540c\u7684model/lose function",
+        "topic": "\u4e0d\u540c\u7684\u554f\u984c\u9069\u5408\u4e0d\u540c\u7684model/loss function",
         "background-color": "#0fbdff"
     },
     {
@@ -42,8 +42,8 @@
     },
     {
         "id": "line_7",
-        "parentid": "line_2",
+        "parentid": "line_5",
         "topic": "\u9700\u8981\u6709\u7d93\u9a57\u7684AI\u8a13\u7df4\u5e2b",
-        "background-color": "#0fbdff"
+        "background-color": "#e3aba7"
     }
 ]

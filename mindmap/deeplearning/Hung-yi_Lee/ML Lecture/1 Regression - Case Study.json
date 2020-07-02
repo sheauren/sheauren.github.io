@@ -13,7 +13,7 @@
     {
         "id": "line_2",
         "parentid": "line_1",
-        "topic": "Stock Market Forcast",
+        "topic": "Stock Market Forecast",
         "background-color": "#e82ad2",
         "expanded": false
     },
@@ -320,7 +320,7 @@
     {
         "id": "line_46",
         "parentid": "line_44",
-        "topic": "w*,b* = argmin_wb L(w,b)",
+        "topic": "w*,b* = argmin_w,b L(w,b)",
         "background-color": "#d41dea",
         "expanded": false
     },
@@ -446,7 +446,7 @@
     {
         "id": "line_64",
         "parentid": "line_54",
-        "topic": "\bw^1 = w^0 -  \u03b7(dL/dw)|w = w^0",
+        "topic": "w^1 = w^0 -  \u03b7(dL/dw)|w = w^0",
         "background-color": "#01a6d5",
         "expanded": false
     },
@@ -1020,7 +1020,7 @@
     {
         "id": "line_146",
         "parentid": "line_145",
-        "topic": "\u7269\u7a2e",
+        "topic": "\u7269\u7a2e/Species",
         "background-color": "#e3aba7",
         "expanded": false
     },
@@ -1195,732 +1195,718 @@
     {
         "id": "line_171",
         "parentid": "line_147",
-        "topic": "y =",
+        "topic": "y =  b + \u2211w_i*x_i",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
         "id": "line_172",
         "parentid": "line_171",
-        "topic": "b + \u2211w_i*x_i",
+        "topic": "x_i",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
         "id": "line_173",
         "parentid": "line_172",
-        "topic": "x_i",
+        "topic": "\u03b4(x_s ==Pidgey)",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_174",
-        "parentid": "line_173",
-        "topic": "\u03b4(x_s ==Pidgey)",
-        "background-color": "#97d9c7",
+        "parentid": "line_172",
+        "topic": "\u03b4(x_s ==Pidgey)*x_cp",
+        "background-color": "#01a6d5",
         "expanded": false
     },
     {
         "id": "line_175",
-        "parentid": "line_173",
-        "topic": "\u03b4(x_s ==Pidgey)*x_cp",
-        "background-color": "#97d9c7",
-        "expanded": false
-    },
-    {
-        "id": "line_176",
         "parentid": "line_147",
         "topic": "average error on Training data",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_177",
-        "parentid": "line_176",
+        "id": "line_176",
+        "parentid": "line_175",
         "topic": "3.8",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_178",
+        "id": "line_177",
         "parentid": "line_147",
         "topic": "average error on Testing data",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_179",
-        "parentid": "line_178",
+        "id": "line_178",
+        "parentid": "line_177",
         "topic": "14.3",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_180",
+        "id": "line_179",
         "parentid": "line_8",
         "topic": "\u9084\u6709\u6539\u5584\u7a7a\u9593",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_181",
-        "parentid": "line_180",
+        "id": "line_180",
+        "parentid": "line_179",
         "topic": "\u9032\u5316\u65b9\u5411\u4e0d\u540c\u7684\u53c3\u6578\u6c92\u9032\u4f86",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_182",
-        "parentid": "line_180",
+        "id": "line_181",
+        "parentid": "line_179",
         "topic": "\u6bcf\u6b21\u9032\u5316\u53ef\u80fd\u6709\u4e00\u500brandom\u7684\u8b8a\u6578\u5728\u88e1\u9762",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_183",
-        "parentid": "line_180",
+        "id": "line_182",
+        "parentid": "line_179",
         "topic": "\u9084\u6709\u5176\u4ed6\u7684\u53c3\u6578\u53ef\u80fd\u5f71\u97ff\u9032\u5316cp\u503c",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_184",
-        "parentid": "line_183",
+        "id": "line_183",
+        "parentid": "line_182",
         "topic": "weight",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_185",
-        "parentid": "line_183",
+        "id": "line_184",
+        "parentid": "line_182",
         "topic": "height",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_186",
-        "parentid": "line_183",
+        "id": "line_185",
+        "parentid": "line_182",
         "topic": "HP",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_187",
-        "parentid": "line_180",
+        "id": "line_186",
+        "parentid": "line_179",
         "topic": "back to step1 redesign model",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_188",
-        "parentid": "line_187",
+        "id": "line_187",
+        "parentid": "line_186",
         "topic": "if x_s ==Pidgey",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_189",
-        "parentid": "line_188",
+        "id": "line_188",
+        "parentid": "line_187",
         "topic": "y' = b_1 + w_1 * x_cp + w_5*(x_cp)^2",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_190",
-        "parentid": "line_187",
+        "id": "line_189",
+        "parentid": "line_186",
         "topic": "if x_s ==Weedle",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_191",
-        "parentid": "line_190",
+        "id": "line_190",
+        "parentid": "line_189",
         "topic": "y' = b_1 + w_2 * x_cp + w_6*(x_cp)^2",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_192",
-        "parentid": "line_187",
+        "id": "line_191",
+        "parentid": "line_186",
         "topic": "if x_s ==Caterpie",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_193",
-        "parentid": "line_192",
+        "id": "line_192",
+        "parentid": "line_191",
         "topic": "y' = b_1 + w_3 * x_cp + w_7*(x_cp)^2",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_194",
-        "parentid": "line_187",
+        "id": "line_193",
+        "parentid": "line_186",
         "topic": "if x_s ==Eevee",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_195",
-        "parentid": "line_194",
+        "id": "line_194",
+        "parentid": "line_193",
         "topic": "y' = b_1 + w_4 * x_cp + w_8*(x_cp)^2",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_196",
-        "parentid": "line_187",
+        "id": "line_195",
+        "parentid": "line_186",
         "topic": "y =",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_197",
-        "parentid": "line_196",
+        "id": "line_196",
+        "parentid": "line_195",
         "topic": "y'",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_198",
-        "parentid": "line_196",
+        "id": "line_197",
+        "parentid": "line_195",
         "topic": "+ w_9*x_hp + w_10*(x_hp)^2",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_199",
-        "parentid": "line_196",
+        "id": "line_198",
+        "parentid": "line_195",
         "topic": "+ w_11*x_h + w_12*(x_h)^2",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_200",
-        "parentid": "line_196",
+        "id": "line_199",
+        "parentid": "line_195",
         "topic": "+ w_13*x_w + w_14*(x_w)^2",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_201",
-        "parentid": "line_187",
+        "id": "line_200",
+        "parentid": "line_186",
         "topic": "average error on Training data",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_202",
-        "parentid": "line_201",
+        "id": "line_201",
+        "parentid": "line_200",
         "topic": "1.9",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_203",
-        "parentid": "line_187",
+        "id": "line_202",
+        "parentid": "line_186",
         "topic": "average error on Testing data",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_204",
-        "parentid": "line_203",
+        "id": "line_203",
+        "parentid": "line_202",
         "topic": "102.3",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_205",
-        "parentid": "line_203",
+        "id": "line_204",
+        "parentid": "line_202",
         "topic": "overfitting!!",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_206",
-        "parentid": "line_180",
+        "id": "line_205",
+        "parentid": "line_179",
         "topic": "back to step2: regularization",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_207",
-        "parentid": "line_206",
+        "id": "line_206",
+        "parentid": "line_205",
         "topic": "redesign loss funciton",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_208",
-        "parentid": "line_207",
+        "id": "line_207",
+        "parentid": "line_206",
         "topic": "y = b+\u2211w_i*x_i",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_209",
-        "parentid": "line_207",
+        "id": "line_208",
+        "parentid": "line_206",
         "topic": "L = \u2211n(y^n-(b+\u2211w_i*x_i^n))^2",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_210",
-        "parentid": "line_209",
+        "id": "line_209",
+        "parentid": "line_208",
         "topic": "+ regularization",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
-        "id": "line_211",
-        "parentid": "line_210",
+        "id": "line_210",
+        "parentid": "line_209",
         "topic": "\u03bb*\u2211(w_i)^2",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
-        "id": "line_212",
-        "parentid": "line_210",
+        "id": "line_211",
+        "parentid": "line_209",
         "topic": "b\u4e0d\u9700\u8981\u52a0\u5165\u56e0\u70ba\u4ed6\u662f\u6574\u9ad4\u504f\u79fb\u8ddf\u5e73\u6ed1\u7121\u95dc",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
-        "id": "line_213",
-        "parentid": "line_209",
+        "id": "line_212",
+        "parentid": "line_208",
         "topic": "\u03bb\u662f\u4e00\u500b\u5e38\u6578",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
-        "id": "line_214",
-        "parentid": "line_209",
+        "id": "line_213",
+        "parentid": "line_208",
         "topic": "\u6240\u6709\u7684w\u7b97\u4e00\u4e0b\u5e73\u65b9\u52a0\u8d77\u4f86",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
-        "id": "line_215",
-        "parentid": "line_214",
+        "id": "line_214",
+        "parentid": "line_213",
         "topic": "w_i\u53c3\u6578\u503c\u8d8a\u5c0f\u8d8a\u597d",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
-        "id": "line_216",
-        "parentid": "line_214",
+        "id": "line_215",
+        "parentid": "line_213",
         "topic": "\u63a5\u8fd10\u53c3\u6578",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
-        "id": "line_217",
-        "parentid": "line_214",
-        "topic": "why smooth function are perferred?",
+        "id": "line_216",
+        "parentid": "line_213",
+        "topic": "why smooth function are preferred?",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
-        "id": "line_218",
-        "parentid": "line_217",
+        "id": "line_217",
+        "parentid": "line_216",
         "topic": "output\u5c0dinput\u7684\u8b8a\u5316\u662f\u6bd4\u8f03\u4e0d\u654f\u611f\u7684",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
-        "id": "line_219",
-        "parentid": "line_217",
-        "topic": "\u8f38\u5165\u88ab\u96dc\u8a0a\u5e72\u64fe\u6642",
+        "id": "line_218",
+        "parentid": "line_216",
+        "topic": "\u8f38\u5165\u88ab\u96dc\u8a0a\u5e72\u64fe\u6642\u53d7\u5230\u6bd4\u8f03\u5c11\u7684\u5f71\u97ff",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
-        "id": "line_220",
-        "parentid": "line_219",
-        "topic": "\u53d7\u5230\u6bd4\u8f03\u5c11\u7684\u5f71\u97ff",
-        "background-color": "#412ffc",
-        "expanded": false
-    },
-    {
-        "id": "line_221",
-        "parentid": "line_207",
+        "id": "line_219",
+        "parentid": "line_206",
         "topic": "\u03bb:",
         "background-color": "#d41dea",
         "expanded": false
     },
     {
-        "id": "line_222",
-        "parentid": "line_221",
+        "id": "line_220",
+        "parentid": "line_219",
         "topic": "0",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
-        "id": "line_223",
-        "parentid": "line_222",
+        "id": "line_221",
+        "parentid": "line_220",
         "topic": "Training",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_222",
+        "parentid": "line_221",
+        "topic": "1.9",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_223",
+        "parentid": "line_220",
+        "topic": "Testing",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_224",
         "parentid": "line_223",
-        "topic": "1.9",
-        "background-color": "#eb6a68",
-        "expanded": false
-    },
-    {
-        "id": "line_225",
-        "parentid": "line_222",
-        "topic": "Testing",
-        "background-color": "#97d9c7",
-        "expanded": false
-    },
-    {
-        "id": "line_226",
-        "parentid": "line_225",
         "topic": "102.3",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
-        "id": "line_227",
-        "parentid": "line_221",
+        "id": "line_225",
+        "parentid": "line_219",
         "topic": "1",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
-        "id": "line_228",
-        "parentid": "line_227",
+        "id": "line_226",
+        "parentid": "line_225",
         "topic": "Training",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_227",
+        "parentid": "line_226",
+        "topic": "2.3",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_228",
+        "parentid": "line_225",
+        "topic": "Testing",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_229",
         "parentid": "line_228",
-        "topic": "2.3",
-        "background-color": "#eb6a68",
-        "expanded": false
-    },
-    {
-        "id": "line_230",
-        "parentid": "line_227",
-        "topic": "Testing",
-        "background-color": "#97d9c7",
-        "expanded": false
-    },
-    {
-        "id": "line_231",
-        "parentid": "line_230",
         "topic": "68.7",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
-        "id": "line_232",
-        "parentid": "line_221",
+        "id": "line_230",
+        "parentid": "line_219",
         "topic": "10",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
-        "id": "line_233",
-        "parentid": "line_232",
+        "id": "line_231",
+        "parentid": "line_230",
         "topic": "Training",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_232",
+        "parentid": "line_231",
+        "topic": "3.5",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_233",
+        "parentid": "line_230",
+        "topic": "Testing",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_234",
         "parentid": "line_233",
-        "topic": "3.5",
-        "background-color": "#eb6a68",
-        "expanded": false
-    },
-    {
-        "id": "line_235",
-        "parentid": "line_232",
-        "topic": "Testing",
-        "background-color": "#97d9c7",
-        "expanded": false
-    },
-    {
-        "id": "line_236",
-        "parentid": "line_235",
         "topic": "25.7",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
-        "id": "line_237",
-        "parentid": "line_221",
+        "id": "line_235",
+        "parentid": "line_219",
         "topic": "100",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
-        "id": "line_238",
-        "parentid": "line_237",
+        "id": "line_236",
+        "parentid": "line_235",
         "topic": "Training",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_237",
+        "parentid": "line_236",
+        "topic": "4.1",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_238",
+        "parentid": "line_235",
+        "topic": "Testing",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_239",
         "parentid": "line_238",
-        "topic": "4.1",
-        "background-color": "#eb6a68",
-        "expanded": false
-    },
-    {
-        "id": "line_240",
-        "parentid": "line_237",
-        "topic": "Testing",
-        "background-color": "#97d9c7",
-        "expanded": false
-    },
-    {
-        "id": "line_241",
-        "parentid": "line_240",
         "topic": "11.1",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
-        "id": "line_242",
-        "parentid": "line_221",
+        "id": "line_240",
+        "parentid": "line_219",
         "topic": "1000",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
-        "id": "line_243",
-        "parentid": "line_242",
+        "id": "line_241",
+        "parentid": "line_240",
         "topic": "Training",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_242",
+        "parentid": "line_241",
+        "topic": "5.6",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_243",
+        "parentid": "line_240",
+        "topic": "Testing",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_244",
         "parentid": "line_243",
-        "topic": "5.6",
-        "background-color": "#eb6a68",
-        "expanded": false
-    },
-    {
-        "id": "line_245",
-        "parentid": "line_242",
-        "topic": "Testing",
-        "background-color": "#97d9c7",
-        "expanded": false
-    },
-    {
-        "id": "line_246",
-        "parentid": "line_245",
         "topic": "12.8",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
-        "id": "line_247",
-        "parentid": "line_221",
+        "id": "line_245",
+        "parentid": "line_219",
         "topic": "10000",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
-        "id": "line_248",
-        "parentid": "line_247",
+        "id": "line_246",
+        "parentid": "line_245",
         "topic": "Training",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_247",
+        "parentid": "line_246",
+        "topic": "6.3",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_248",
+        "parentid": "line_245",
+        "topic": "Testing",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_249",
         "parentid": "line_248",
-        "topic": "6.3",
-        "background-color": "#eb6a68",
-        "expanded": false
-    },
-    {
-        "id": "line_250",
-        "parentid": "line_247",
-        "topic": "Testing",
-        "background-color": "#97d9c7",
-        "expanded": false
-    },
-    {
-        "id": "line_251",
-        "parentid": "line_250",
         "topic": "18.7",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
-        "id": "line_252",
-        "parentid": "line_221",
+        "id": "line_250",
+        "parentid": "line_219",
         "topic": "100000",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
-        "id": "line_253",
-        "parentid": "line_252",
+        "id": "line_251",
+        "parentid": "line_250",
         "topic": "Training",
+        "background-color": "#97d9c7",
+        "expanded": false
+    },
+    {
+        "id": "line_252",
+        "parentid": "line_251",
+        "topic": "8.5",
+        "background-color": "#eb6a68",
+        "expanded": false
+    },
+    {
+        "id": "line_253",
+        "parentid": "line_250",
+        "topic": "Testing",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
         "id": "line_254",
         "parentid": "line_253",
-        "topic": "8.5",
-        "background-color": "#eb6a68",
-        "expanded": false
-    },
-    {
-        "id": "line_255",
-        "parentid": "line_252",
-        "topic": "Testing",
-        "background-color": "#97d9c7",
-        "expanded": false
-    },
-    {
-        "id": "line_256",
-        "parentid": "line_255",
         "topic": "26.8",
         "background-color": "#eb6a68",
         "expanded": false
     },
     {
-        "id": "line_257",
-        "parentid": "line_221",
+        "id": "line_255",
+        "parentid": "line_219",
         "topic": "\u03bb\u8d8a\u5927\u8d8asmooth \u53cd\u800ctraining\u7d50\u679closs\u8d8a\u5927",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
-        "id": "line_258",
-        "parentid": "line_221",
+        "id": "line_256",
+        "parentid": "line_219",
         "topic": "\u03bb\u8d8a\u5927\u53ef\u80fdtesting\u7d50\u679c\u53cd\u800c\u6bd4\u8f03\u597d",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
-        "id": "line_259",
-        "parentid": "line_258",
+        "id": "line_257",
+        "parentid": "line_256",
         "topic": "\u03bb\u592a\u5927\u592a\u5e73\u6ed1\u5565\u4e8b\u90fd\u4e0d\u5e79\u4e0d\u4e86",
         "background-color": "#97d9c7",
         "expanded": false
     },
     {
-        "id": "line_260",
-        "parentid": "line_221",
+        "id": "line_258",
+        "parentid": "line_219",
         "topic": "\u5e0c\u671b\u591asmooth\u8981\u8abf\u6574\u03bb\u503c",
         "background-color": "#01a6d5",
         "expanded": false
     },
     {
-        "id": "line_261",
+        "id": "line_259",
         "parentid": "root",
         "topic": "conclusion & follow lectures",
         "background-color": "#e3aba7"
     },
     {
-        "id": "line_262",
-        "parentid": "line_261",
+        "id": "line_260",
+        "parentid": "line_259",
         "topic": "pokemon",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_263",
-        "parentid": "line_262",
+        "id": "line_261",
+        "parentid": "line_260",
         "topic": "\u539f\u59cbCP\u8207\u7269\u7a2e\u5e7e\u4e4e\u6c7a\u5b9a\u4e86\u9032\u5316CP\u503c",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_264",
-        "parentid": "line_262",
+        "id": "line_262",
+        "parentid": "line_260",
         "topic": "\u4f46\u53ef\u80fd\u9084\u6709\u96b1\u85cf\u53c3\u6578\u6c7a\u5b9a",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_265",
-        "parentid": "line_261",
+        "id": "line_263",
+        "parentid": "line_259",
         "topic": "gradient descent",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_266",
-        "parentid": "line_265",
+        "id": "line_264",
+        "parentid": "line_263",
         "topic": "following lectures:",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_267",
-        "parentid": "line_266",
+        "id": "line_265",
+        "parentid": "line_264",
         "topic": "theory and tips",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_268",
-        "parentid": "line_261",
+        "id": "line_266",
+        "parentid": "line_259",
         "topic": "overfitting and regularization",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_269",
-        "parentid": "line_268",
+        "id": "line_267",
+        "parentid": "line_266",
         "topic": "following lectures:",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_270",
-        "parentid": "line_269",
+        "id": "line_268",
+        "parentid": "line_267",
         "topic": "more theory behind these",
         "background-color": "#e3aba7",
         "expanded": false
     },
     {
-        "id": "line_271",
+        "id": "line_269",
         "parentid": "root",
         "topic": "we finally get average error = 11.1 on the testing data",
         "background-color": "#e3aba7"
     },
     {
-        "id": "line_272",
-        "parentid": "line_271",
+        "id": "line_270",
+        "parentid": "line_269",
         "topic": "how about another set of new data?",
         "background-color": "#e82ad2",
         "expanded": false
     },
     {
-        "id": "line_273",
-        "parentid": "line_272",
+        "id": "line_271",
+        "parentid": "line_270",
         "topic": "underestimate?",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_274",
-        "parentid": "line_272",
+        "id": "line_272",
+        "parentid": "line_270",
         "topic": "overestimate?",
         "background-color": "#0fbdff",
         "expanded": false
     },
     {
-        "id": "line_275",
-        "parentid": "line_271",
+        "id": "line_273",
+        "parentid": "line_269",
         "topic": "following lectures: validation",
         "background-color": "#e82ad2",
         "expanded": false
