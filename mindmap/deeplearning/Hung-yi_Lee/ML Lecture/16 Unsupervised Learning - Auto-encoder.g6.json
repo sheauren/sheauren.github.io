@@ -1,0 +1,1032 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "16 Unsupervised Learning - Auto-encoder",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "Unsupervised Learning - Auto-encoder",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "Auto-encoder",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "input(28x28) -> NN Encoder -> Code(<28x28)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_3",
+                                    "title": "Compat representation of the input object",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_4",
+                            "title": "code -> NN Decoer -> output(28x2x)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_5",
+                                    "title": "Can reconstruct the orginal object",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "Learn together",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_7",
+                    "title": "starting from PCA",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_8",
+                            "title": "input image(x)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_9",
+                            "title": "x*w = component weight c",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_10",
+                                    "title": "encode",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_11",
+                            "title": "c*w^T = x^ (reconstruct)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_12",
+                                    "title": "decode",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_13",
+                            "title": "minimize(x-x^)^2 as close as possible",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_14",
+                            "title": "look like NN",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_15",
+                                    "title": "c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_16",
+                                            "title": "code",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_17",
+                                            "title": "the hidden layer",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_18",
+                                            "title": "bottlenect layer",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_19",
+                                                    "title": "dimenstion reduction component's number",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_20",
+                    "title": "Deep Auto-encoder",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_21",
+                            "title": "of course, the auto-encoder can be deep",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_22",
+                    "title": "reference:",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_23",
+                            "title": "Hinton 2006",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_24",
+                                    "title": "Reducing the dimensionality of data with neural networks",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_25",
+                                            "title": "RBM layer-wise initialize",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_26",
+                                                    "title": "W1\u8ddfW1^T tight\u5728\u4e00\u8d77train\u4e00\u6a23\u7684",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_27",
+                                                            "title": "\u53c3\u6578\u6703\u5c11\u4e00\u534a\u6bd4\u8f03\u4e0d\u6703\u6709overfiting\u7684\u554f\u984c",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_28",
+                                                            "title": "\u4f46\u4e0d\u662f\u5fc5\u8981\u7684",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_29",
+                                                            "title": "\u5e38\u898b\u505a\u6cd5\u5c31\u662f\u515c\u6574\u500bNN\u76f4\u63a5train",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_30",
+                    "title": "dimension reduction\u52302 dims\u6642",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_31",
+                            "title": "visualization",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_32",
+                                    "title": "PCA",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_33",
+                                            "title": "\u6240\u6709digits\u6703\u6df7\u5728\u4e00\u8d77",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_34",
+                                    "title": "Deep Auto Encoder",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_35",
+                                            "title": "\u6240\u6709Digits\u6703\u5206\u958b\u5f62\u6210\u4e00\u7fa4",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_36",
+                    "title": "Auto-encoder - Text Retrieval",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_37",
+                            "title": "\u4e00\u7bc7\u6587\u7ae0\u58d3\u6210\u4e00\u500bvector",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_38",
+                            "title": "\u6587\u5b57\u641c\u5c0b",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_39",
+                                    "title": "Vector Space Model",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_40",
+                                            "title": "Document -> Vector",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_41",
+                                            "title": "Query -> Vector",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_42",
+                                                    "title": "Query Vector\u8207\u5404Document Vector\u8a08\u7b97",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_43",
+                                                            "title": "inner product",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_44",
+                                                            "title": "\u6216cosine similarity",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_45",
+                                                                    "title": "\u6548\u679c\u6bd4\u8f03\u597d",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_46",
+                                                                    "title": "\u8ddd\u96e2\u8d8a\u8fd1\u503c\u8d8a\u5927",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_47",
+                                                                            "title": "retrieve\u5920\u5927\u7684document",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_48",
+                                            "title": "\u6210\u6557\u6c7a\u5b9a\u65bc",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_49",
+                                                    "title": "Document-> Vector\u7684\u6548\u679c",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_50",
+                                                            "title": "Bag-of-word",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_51",
+                                                                    "title": "\u6709\u5341\u842c\u7684\u5b57\u5f59\u5c31\u662f10w\u7684dims",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_52",
+                                                                    "title": "word string:\"this is an apple\"",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_53",
+                                                                            "title": "\u65bc [this,is,an,apple]\u7684dims\u90fd\u8a2d\u5b9a\u70ba1",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_54",
+                                                                    "title": "\u6700\u597d\u4e00\u9ede\u4e58\u4e0a",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_55",
+                                                                            "title": "inverse document frequency",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_56",
+                                                                    "title": "semnatic are not considered",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_57",
+                                                                            "title": "word are all independent",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_58",
+                            "title": "\u8b93\u8a9e\u610f\u88ab\u8003\u616e\u9032\u4f86",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_59",
+                                    "title": "The documents talking about the same thing will have close code",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_60",
+                                    "title": "auto-encoder\u5728\u9019\u985e\u61c9\u7528\u7d50\u679c\u5f88\u597d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_61",
+                                            "title": "\u540c\u985e\u57282-dims\u4e0a\u6709\u805a\u96c6\u6548\u679c",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_62",
+                                    "title": "LSA: project documents to 2 latent topics",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_63",
+                                            "title": "\u5c31\u6c92\u6709\u62c6\u958b\u7684\u6548\u679c",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_64",
+                    "title": "Auto-encoder - Slimilar Image Search",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_65",
+                            "title": "Retrieved using Euclidean distance in pixel intensity space",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_66",
+                            "title": "Deep Auto-encoder\u628aimage\u8b8a\u6210code",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_67",
+                                    "title": "\u5728code\u4e0a\u9762\u53bb\u641c\u5c0b",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_68",
+                                            "title": "\u8f49\u63db\u5f8c\u76f8\u4f3c\u5ea6\u4e0d\u932f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_69",
+                    "title": "Auto-encoder - Pretraining DNN",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_70",
+                            "title": "auto-encoder initialize\u5f88\u96e3",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_71",
+                                    "title": "\u6709\u6c92\u6709\u597d\u7684\u65b9\u6cd5\u627e\u5230\u4e00\u7d44initialization",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_72",
+                                            "title": "pre-training",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_73",
+                            "title": "Greedy layer-wise pretraining again",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_74",
+                                    "title": "target",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_75",
+                                            "title": "input(784) -> 1000 dense -> 1000 dense -> 500 dense -> output(10)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_76",
+                                    "title": "\u5148\u505a\u4e00\u500b",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_77",
+                                            "title": "input(784) -> 1000 dense -> output(784)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_78",
+                                            "title": "\u5c0f\u5fc3\u4ed6\u76f4\u63a5\u8f38\u51fa\u4e0dlearn\u4e86",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_79",
+                                            "title": "\u9019\u6642\u5019\u8981\u52a0\u4e00\u500b\u5f88\u5f37\u7684regularization",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_80",
+                                                    "title": "L1 regulariztaion",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_81",
+                                                            "title": "1000 dims\u5e0c\u671b\u662fsparse",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_82",
+                                            "title": "training\u597d\u4e4b\u5f8c\u4fdd\u7559",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_83",
+                                                    "title": "input(784)->1000 dense",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_84",
+                                                            "title": "fix input->1000 dense",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_85",
+                                                                    "title": "fix w1",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_86",
+                                                            "title": "add layer 1000 dense",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_87",
+                                                            "title": "add output layer 1000 dense",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_88",
+                                                            "title": "\u5f62\u6210",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_89",
+                                                                    "title": "input(784) -> 1000 dense -> 1000 dense -> output(1000)",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_90",
+                                                                            "title": "\u4e00\u500b\u4e00\u500bw training\u4e0b\u53bb",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_91",
+                                                                                    "title": "training\u5b8c\u5c31fix",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_92",
+                                                    "title": "\u6700\u5f8c\u628a\u6b63\u78ba\u7684output(10)\u4e32\u4e0a\u53bb",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_93",
+                                                            "title": "\u800c\u524d\u9762\u5df2\u7d93train\u597d\u7684weight\u5c31\u662f\u4f60\u7684initialization",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_94",
+                                                                    "title": "w1,w2,w3",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_95",
+                                                            "title": "\u7528fine tune\u65b9\u5f0f",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_96",
+                                                                    "title": "\u628a500 dense->output(10)\u7684weight\u53bb\u8abf\u6574",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_97",
+                                                                            "title": "fine-tune by backpropagation",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_98",
+                                    "title": "\u4ee5\u524ddeep\u90fd\u8981\u5982\u6b64\u624dtraining\u7684\u8d77\u4f86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_99",
+                                            "title": "\u73fe\u5728training\u6280\u8853\u9032\u6b65\u4e4b\u5f8c\u4e0d\u7528pre-training\u4e5ftrain\u7684\u8d77\u4f86",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_100",
+                                            "title": "\u5982\u679c\u6709\u5927\u91cfunlabeled data",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_101",
+                                                    "title": "\u53ef\u4f9d\u8cf4unlabeled data\u628aw1,w2,w3\u5148learn\u597d",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_102",
+                                                            "title": "\u5728\u7528labled data\u505afine tune weight",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_103",
+                    "title": "De-nosing auto-encoder",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_104",
+                            "title": "input x + add noise = x'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_105",
+                            "title": "x' -> encode -> c",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_106",
+                            "title": "c-> deoce -> y",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_107",
+                            "title": "as close as possible x , y",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_108",
+                                    "title": "robust\u6703\u6bd4\u8f03\u597d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_109",
+                                    "title": "\u5b78\u53bb\u9664\u96dc\u8a0a",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_110",
+                    "title": "Contractive auto-encoder",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_111",
+                            "title": "constraint",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_112",
+                                    "title": "input\u8b8a\u5316\u5c0dc\u7684\u8b8a\u5316minimize",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_113",
+                                    "title": "\u8ddfde-nosing\u5f88\u50cf\u53ea\u662f\u89d2\u5ea6\u4e0d\u5927\u540c\u800c\u5df2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_114",
+                                            "title": "\u4e00\u500b\u770b\u982d\u5c3e\u6c92\u88abnoise\u5f71\u97ff",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_115",
+                                            "title": "\u4e00\u500b\u770b\u982d\u52a0\u4e86noise\u800cc\u9084\u662f\u4e0d\u8b8a",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_116",
+                    "title": "Restricted Boltzmann machine",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_117",
+                            "title": "\u4e0d\u662fNerual network",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_118",
+                            "title": "graph co-model",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_119",
+                    "title": "Deep Belief network",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_120",
+                            "title": "graph co-model",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_121",
+                    "title": "Auto-encoder for CNN",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_122",
+                            "title": "convolution vs deconvoluion",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_123",
+                            "title": "pooling vs unpooling",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_124",
+                            "title": "unpooling",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_125",
+                                    "title": "\u505a\u6cd5\u4e00",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_126",
+                                            "title": "\u8981\u5148\u8a18maxpooling\u5f97\u5f9e\u54ea\u4e00\u500b\u53d6\u503c",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_127",
+                                            "title": "\u64f4\u5927\u539f\u672cpooling\u9020\u6210\u7e2e\u5c0f\u7684matrix",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_128",
+                                            "title": "pooling\u8a18\u5f97\u7684\u4f4d\u7f6e\u5c31\u6d3e\u4e0a\u7528\u5834",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_129",
+                                                    "title": "\u653e\u5230\u8a72\u4f4d\u7f6e",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_130",
+                                                    "title": "\u5176\u4ed6\u4f4d\u7f6e\u88dc0",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_131",
+                                                    "title": "\u9019\u662f\u5176\u4e2d\u4e00\u7a2e\u65b9\u6cd5",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_132",
+                                    "title": "keras\u4f5c\u6cd5",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_133",
+                                            "title": "\u76f4\u63a5repeat\u6240\u6709\u503c",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_134",
+                                            "title": "\u64f4\u5927\u539f\u672cpooling\u9020\u6210\u7e2e\u5c0f\u7684matrix",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_135",
+                                            "title": "\u628amaxpooling\u7684\u503c\u5168\u90e8\u586b\u4e0a",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_136",
+                            "title": "deconvoluion",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_137",
+                                    "title": "\u5176\u5be6\u5c31\u662fconvolution",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_138",
+                                            "title": "\u5148padding\u5728convolution\u5c31\u662f\u53cd\u904e\u4f86\u7684\u6548\u679c",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_139",
+                                    "title": "\u539f\u672c\u900f\u904efilter\u5408\u4f75weight\u503c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_140",
+                                            "title": "\u53cd\u904e\u4f86\u61c9\u8a72\u662f\u5c07\u5408\u4f75\u7684\u62c6\u51fa\u4f86",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_141",
+                                                    "title": "deconvoluion\u5148padding\u5728\u505aconvolution\u6548\u679c\u76f8\u540c",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_142",
+                    "title": "Sequence-to-sequence Auto-encoder",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_143",
+                            "title": "Dimension reduction for a sequence with varible length",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_144",
+                    "title": "Can web decoder to generate something?",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        }
+    ]
+}

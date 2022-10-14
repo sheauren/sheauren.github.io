@@ -1,0 +1,194 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "12-\u7fd2\u61635\u6bcf\u5929\u81ea\u8a00\u81ea\u8a9e\u8aaa\u82f1\u8a9e",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u7b2c5\u500b\u7fd2\u6163\u6bcf\u5929\u81ea\u8a00\u81ea\u8a9e\u8aaa\u82f1\u8a9e",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "\u5f9e\u55ae\u5b57\u5230\u77ed\u53e5,\u518d\u5230\u5b8c\u6574\u53e5\u5b50\u63cf\u8ff0",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_3",
+                            "title": "\u4f60\u5468\u570d\u74b0\u5883,\u5728\u9019\u57fa\u790e\u4e0a\u505a\u5834\u666f\u5c0d\u8a71",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_4",
+                    "title": "\u7368\u751f\u5b50\u600e\u9ebc\u5b78\u8a9e\u8a00",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_5",
+                            "title": "\u61c2\u5f97\u81ea\u5df1\u8ddf\u81ea\u5df1\u8aaa\u8a71",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_6",
+                                    "title": "\u6211\u6b63\u5728\u756b\u756b",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_7",
+                                    "title": "\u81ea\u8a00\u81ea\u8a9e",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_8",
+                    "title": "\u5468\u570d\u6c92\u6709\u5916\u570b\u4eba",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_9",
+                            "title": "\u4f46\u53ef\u4ee5\u7df4\u5230\u8ddf\u82f1\u6587\u6bcd\u8a9e\u8005\u76f8\u540c",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_10",
+                            "title": "\u5230\u8655\u81ea\u8a00\u81ea\u8a9e",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_11",
+                    "title": "\u5982\u4f55\u81ea\u8a00\u81ea\u8a9e\u8a13\u7df4",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_12",
+                            "title": "\u5f9e\u55ae\u5b57\u958b\u59cb",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_13",
+                            "title": "\u5230\u8655\u8cbc\u6a19\u7c64",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_14",
+                                    "title": "\u770b\u5230\u6a19\u7c64\u8b80\u4e00\u8b80",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_15",
+                                    "title": "\u719f\u7df4\u4e4b\u5f8c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_16",
+                                            "title": "\u770b\u5230\u6771\u897f\u5c31\u80fd\u8b1b",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_17",
+                                                    "title": "\u9019\u5c31\u662f\u74b0\u5883",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_18",
+                                            "title": "\u958b\u59cb\u9020\u5c0f\u77ed\u53e5",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_19",
+                                                    "title": "\u7fd2\u6163\u4e4b\u5f8c",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_20",
+                                            "title": "\u9020\u5b8c\u6574\u53e5\u5b50",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_21",
+                                            "title": "\u81ea\u5df1\u627e\u984c\u76ee\u4e92\u76f8\u5c0d\u7b54",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_22",
+                                                    "title": "\u7c21\u55ae\u65e5\u5e38\u5834\u666f",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_23",
+                                                    "title": "\u5230\u771f\u5be6\u7684\u5834\u666f\u4f60\u4e5f\u5f88\u81ea\u7136",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_24",
+                                                    "title": "\u50cf\u4e00\u500b\u8a18\u8005\u63cf\u8ff0\u6574\u500b\u5834\u666f",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_25",
+                                                            "title": "\u5728\u81ea\u5df1\u8166\u529b\u63cf\u8ff0",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_26",
+                                                            "title": "\u5728\u81ea\u5df1\u5634\u88e1\u63cf\u8ff0",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

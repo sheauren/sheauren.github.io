@@ -1,0 +1,298 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "28-\u82f1\u8a9e\u88e1\u9762\u9ad8\u983b\u8a5e\u7c92\u5b50",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u82f1\u8a9e\u88e1\u9762\u9ad8\u983b\u8a5e\u7c92\u5b50",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "-ing",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_3",
+                                    "title": "\u6b63\u5728",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_4",
+                            "title": "-ed",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_5",
+                                    "title": "\u4e86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "-er",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_7",
+                                    "title": "\u66f4",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_8",
+                            "title": "-est",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_9",
+                                    "title": "\u6700",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_10",
+                    "title": "\u9ad8\u983b\u8a5e\u7c92\u5b50",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_11",
+                            "title": "\u56fa\u5b9a\u7528\u6cd5\u4ee3\u8868\u7279\u5b9a\u542b\u7fa9",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_12",
+                            "title": "-ing",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_13",
+                                    "title": "\u6b63\u5728",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_14",
+                                    "title": "eating",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_15",
+                                    "title": "playing",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_16",
+                                    "title": "going",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_17",
+                            "title": "-ed",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_18",
+                                    "title": "\u4e86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_19",
+                                    "title": "played",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_20",
+                                    "title": "worked",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_21",
+                                    "title": "finished",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_22",
+                                    "title": "\u76e1\u91cf\u7528\u756b\u9762\u53bb\u611f\u89ba",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_23",
+                                            "title": "\u807d\u5230\u5c31\u6709\u756b\u9762",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_24",
+                                            "title": "\u5c31\u4e0d\u7528\u7ffb\u8b6f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_25",
+                            "title": "-er",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_26",
+                                    "title": "\u66f4",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_27",
+                                    "title": "Richer",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_28",
+                                    "title": "Faster",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_29",
+                                    "title": "Slower",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_30",
+                                    "title": "Poorer",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_31",
+                                    "title": "\u5e38\u5728\u7247\u8a9e\u4f7f\u7528",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_32",
+                                            "title": "-er than",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_33",
+                                            "title": "\u6bd4...\u66f4",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_34",
+                                            "title": "richer than",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_35",
+                                            "title": "faster than",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_36",
+                                            "title": "slower than",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_37",
+                                            "title": "poorer than",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_38",
+                            "title": "-est",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_39",
+                                    "title": "\u6700",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_40",
+                                    "title": "richest",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_41",
+                                    "title": "fastest",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_42",
+                                    "title": "slowest",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_43",
+                                    "title": "poorest",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1808 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "23-3 Reinforcement Learning (including Q-learning)",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "Reinforcement Learning (including Q-learning)",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "Learning to interact with Environments",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "\u6a5f\u5668\u63a1\u53d6\u884c\u70ba\u6703\u5f71\u97ff\u672a\u4f86\u7d50\u679c",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_3",
+                            "title": "\u6c7a\u7b56\u6703\u5f71\u97ff\u770b\u5230\u7684data",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_4",
+                                    "title": "\u5de6\u8f49\u770b\u5230\u5de6\u8f49\u5f8c\u7684\u756b\u9762",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_5",
+                                    "title": "\u8ddf\u4e00\u822clearn problem\u4e0d\u540c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_6",
+                                    "title": "\u6a5f\u5668\u4e92\u52d5\u6703\u5f71\u97ff\u74b0\u5883\u8ddf\u63a5\u4e0b\u4f86\u7684Input",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_7",
+                            "title": "e.g.",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_8",
+                                    "title": "Go Playing",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_9",
+                                            "title": "Target Win",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_10",
+                    "title": "Environment ->",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_11",
+                            "title": "State(Observation) ->",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_12",
+                                    "title": "Actor",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_13",
+                    "title": "E.g",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_14",
+                            "title": "Dialogue System",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_15",
+                                    "title": "\u6211\u60f311/5\u5230\u53f0\u5317\u7684\u6a5f\u7968->",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_16",
+                                            "title": "NN->",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_17",
+                                                    "title": "\u62b5\u9054\u6642\u959311/5\u76ee\u7684\u5730\u65b9\u53f0\u5317 ->",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_18",
+                                                            "title": "Decision Making->",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_19",
+                                                                    "title": "\u554f\u51fa\u767c\u5730\u9ede->",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_20",
+                                                                            "title": "NN Generation->",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_21",
+                                                                                    "title": "\u8acb\u554f\u4f60\u5f9e\u54ea\u51fa\u767c",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_22",
+                    "title": "How to solve this problem?",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_23",
+                            "title": "Network as a function",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_24",
+                            "title": "Learn as typical Supervised Tasks",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_25",
+                                    "title": "\u68cb\u76e4 -> NN -> Target (3,3)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_26",
+                                    "title": "\u7d05\u71c8 -> NN -> Target (Stop)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_27",
+                                    "title": "Collect Data",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_28",
+                            "title": "Behavior Cloning",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_29",
+                                    "title": "\u8907\u88fd\u884c\u70ba,\u8907\u88fdexpert",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_30",
+                                    "title": "\u6a5f\u5668\u7121\u6cd5\u5b8c\u7f8e\u6a21\u4eff\u5979\u7684\u8001\u5e2b",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_31",
+                                            "title": "\u4e0d\u5f97\u4e0d\u6709\u6240\u53d6\u6368",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_32",
+                                            "title": "\u90a3\u8a72\u5b78\u4e0d\u8a72\u5b78\u600e\u9ebc\u5206",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_34",
+                    "title": "Characteristics of interaction",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_35",
+                            "title": "What do we miss?",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_36",
+                                    "title": "machine does not know the influence of each action",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_37",
+                            "title": "Agent's action affect the sequence data in recevies",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_38",
+                                    "title": "\u6709\u4e9b\u884c\u70ba\u975e\u5e38\u95dc\u9375,\u6709\u4e9b\u884c\u70ba\u7121\u95dc",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_39",
+                            "title": "Better Way",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_40",
+                                    "title": "\u628a\u6240\u6709action\u7576\u505a\u6574\u9ad4\u4f86\u770b\u5f85",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_41",
+                                            "title": "Reinforcement Learning (Reward)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_42",
+                                                    "title": "Training an Actor",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_43",
+                                                    "title": "Training an Critic",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_44",
+                                                    "title": "Actor + Critic",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_45",
+                                                    "title": "Invese Reinforcement learning",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_46",
+                                            "title": "Learning by demonstration",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_47",
+                                                    "title": "Limitation learning",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_48",
+                                                            "title": "an expert demonstrates how to solve the task and machine learns from the demonstrates",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_49",
+                    "title": "Reinforcement Learning",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_50",
+                            "title": "Actor",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_51",
+                                    "title": "\u6416\u687f",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_52",
+                                    "title": "\u843d\u5b50",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_53",
+                            "title": "Environment",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_54",
+                                    "title": "(you can't control)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_55",
+                                    "title": "\u4e3b\u6a5f",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_56",
+                                    "title": "\u5c0d\u624b",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_57",
+                            "title": "Reward Funciton",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_58",
+                                    "title": "(you can't control)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_59",
+                                    "title": "\u6bba\u602a\u5f97\u5206",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_60",
+                                    "title": "\u570d\u68cb\u898f\u5247",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_61",
+                            "title": "example:",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_62",
+                                    "title": "play video game",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_63",
+                                            "title": "start observation s1",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_64",
+                                                    "title": "\u904a\u6232\u756b\u9762",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_65",
+                                            "title": "actor -> a1='right'",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_66",
+                                                    "title": "obtatin reward",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_67",
+                                                            "title": "r1=0",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_68",
+                                            "title": "new observation s2",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_69",
+                                                    "title": "actor -> a2='fire'",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_70",
+                                                            "title": "obtain reward",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_71",
+                                                                    "title": "r2=5(\u6bba\u5230\u4e00\u96bb\u602a)",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_72",
+                                            "title": "...many times",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_73",
+                                                    "title": "obtain reward",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_74",
+                                                            "title": "r^T",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_75",
+                                            "title": "This is an episode",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_76",
+                                                    "title": "Total Reward R(\u03c4) = \u03a3_t=1^T Yt",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_77",
+                                                    "title": "R\u5728\u4e92\u52d5\u904e\u7a0b\u4e2d\u8d8a\u5927\u8d8a\u597d",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_78",
+                                            "title": "Trajectonry \u03c4 =",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_79",
+                                                    "title": "{s1 a1 r1 .. sT aT rT}",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_80",
+                    "title": "Neural Network as Actor",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_81",
+                            "title": "\u4ee5\u524d\u5c31\u6709 in Reinforcement network",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_82",
+                                    "title": "80\u5e74\u4ee3",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_83",
+                                    "title": "\u4ee5\u524d\u7528\u67e5\u8868\u683c\u65b9\u5f0f\u73fe\u5728\u7528NN",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_84",
+                                            "title": "\u8868\u683c\u7121\u6cd5\u7aae\u8209\u6240\u6709\u756b\u9762",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_85",
+                                            "title": "\u4ee5\u524d\u8a8d\u70baActor\u63db\u4e00\u500bnon-linear Network\u6642",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_86",
+                                                    "title": "\u7121\u6cd5Training",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_87",
+                                                    "title": "\u7121\u6cd5\u6536\u6582",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_88",
+                                    "title": "Pixel -> NN ->",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_89",
+                                            "title": "left/right/fire",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_90",
+                                                    "title": "0.7/0.2/0.1",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_91",
+                                                            "title": "Probability distribution",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_92",
+                                                    "title": "Take the action based on the probability stochastic",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_93",
+                                                            "title": "\u6bcf\u6b21\u90fd\u4e0d\u540c\u907f\u514d\u88ab\u8b58\u7834",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_94",
+                            "title": "\u5047\u8a2dreward\u662fNN,env\u4e5f\u662fNN",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_95",
+                                    "title": "\u6574\u500b\u5c31\u662f\u5927\u578bNN",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_96",
+                                    "title": "Input",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_97",
+                                            "title": "Random",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_98",
+                                    "title": "Output",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_99",
+                                            "title": "R(\u03c4) = \u03a3_t=1^\u03c4 \u03c4t",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_100",
+                                                    "title": "\u6700\u5927\u5316",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_101",
+                                                            "title": "\u53ea\u6709Actor\u53ef\u4ee5\u8abf\u6574",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_102",
+                                                    "title": "Graident Ascent",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_103",
+                                                    "title": "\u6709\u985e\u662fGAN\u7684\u7d50\u69cb",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_104",
+                                    "title": "Reward&Env\u53c3\u6578\u6211\u5011\u4e0d\u77e5\u9053",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_105",
+                                            "title": "optimal funciton\u4e0d\u53ef\u5fae\u5206",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_106",
+                                                    "title": "\u53e3\u6c7a\uff1a\u7528policy gradient\u786ctrain",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_107",
+                                            "title": "Reinforcement Learning\u7528policy gradient\u8abfactor",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_108",
+                                                    "title": "\u591a\u6b21\u6700\u7d42\u53ef\u4ee5output R",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_109",
+                                                            "title": "\u5c31\u7d50\u675f\u4e86",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_110",
+                                                    "title": "\u624b\u6cd5",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_111",
+                                                            "title": "Markov Pecision Process",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_112",
+                                            "title": "Policy Graident\u53ef\u4ee5\u5e6b\u4f60optimal \u4e0d\u53ef\u4ee5\u5fae\u5206\u7684\u6771\u897f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_113",
+                    "title": "Critic",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_114",
+                            "title": "\u4e0d\u6c7a\u5b9a\u63a1\u7528\u54ea\u500baction",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_115",
+                            "title": "input actor \u03c0",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_116",
+                                    "title": "\u544a\u8a34\u4f60\u4ed6\u6709\u591a\u597d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_117",
+                            "title": "State value function",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_118",
+                                    "title": "V^\u03c0(S)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_119",
+                                    "title": "when using actor \u03c0, the accumulated reward experts to be obtained after seeing observation(state) S1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_120",
+                                            "title": "\u671f\u671b\u503c",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_121",
+                                                    "title": "\u6240\u6709 accumulated\u7684reward",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_122",
+                                                            "title": "\u4e0b\u570d\u68cb",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_123",
+                                                                    "title": "agent: \u03c0 observation State",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_124",
+                                                                    "title": "\u51fa\u9019\u624b\u7372\u52dd\u6a5f\u7387 V^\u03c0(S)",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_125",
+                                                            "title": "\u5927\u871c\u8702",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_126",
+                                                                    "title": "\u602a\u591a\u53ef\u4ee5\u7372\u5f97score\u591a",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_127",
+                                                                            "title": "V^\u03c0(S) is larger",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_128",
+                                                                    "title": "\u602a\u624b\u53ef\u4ee5\u7372\u5f97score\u5c11",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_129",
+                                                                            "title": "V^\u03c0(S) is smaller",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_130",
+                            "title": "Critic dependent on actor",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_131",
+                                    "title": "\u4e0d\u7528actor\u540c\u6a23state output\u4e0d\u540c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_132",
+                            "title": "Critic\u8861\u91cfactor\u597d\u4e0d\u597d",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_133",
+                                    "title": "V^\u4ee5\u524d\u963f\u5149(\u5927\u99ac\u6b65\u98db) = Bad",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_134",
+                                    "title": "V^\u8b8a\u5f37\u963f\u5149(\u5927\u99ac\u6b65\u98db) = Good",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_135",
+                                    "title": "\u6703\u966a\u8457actor\u4e0d\u540c\u5f97\u5230\u4e0d\u540c\u5206\u6578",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_136",
+                            "title": "How to estimate V^\u03c0(S)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_137",
+                                    "title": "1. Monte-carlo based approach",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_138",
+                                            "title": "\u770bactor\u73a9\u904a\u6232",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_139",
+                                                    "title": "\u770b\u73a9\u7684\u5982\u4f55",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_140",
+                                            "title": "actor\u03c0\u5728\u7d93\u904estate s_a\u4e4b\u5f8c",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_141",
+                                                    "title": "\u5f97\u5230Reward G_a",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_142",
+                                            "title": "input",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_143",
+                                                    "title": "s_a",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_144",
+                                            "title": "Output",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_145",
+                                                    "title": "G_a\u8d8a\u8fd1\u8d8a\u597d",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_146",
+                                                            "title": "regerssion",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_147",
+                                                                    "title": "V^\u03c0(S_a) <-> G_a",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_148",
+                                                                    "title": "V^\u03c0(S_b) <-> G_b",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_149",
+                                    "title": "2. Temporal-difference",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_150",
+                                            "title": "Actor\u5728state\u63a1\u53d6\u67d0\u500b\u884c\u70ba",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_151",
+                                                    "title": "critic\u5c31\u53ef\u4ee5\u5b78\u4e86",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_152",
+                                                    "title": "V^\u03c0(s_t) <-> V^\u03c0(s_t+1) + \u03c4_t",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_153",
+                                                    "title": "s_t => V^\u03c0 => V^\u03c0(s_t)",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_154",
+                                                            "title": "- s_t+1 => V^\u03c0 => V^\u03c0(s_t+1)",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_155",
+                                                                    "title": "V^\u03c0(s_t) - V^\u03c0(s_t+1) <=> Y_t",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_156",
+                                                                            "title": "\u627e\u63a5\u8fd1",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_157",
+                                            "title": "\u904a\u6232\u9084\u6c92\u7d50\u675f\u5c31\u80fd\u958b\u59cbupdate\u4f60\u7684network",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_158",
+                                            "title": "Another Critic",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_159",
+                                                    "title": "State-action value function",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_160",
+                                                            "title": "Q^\u03c0(s,a)",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_161",
+                                                            "title": "when using actor \u03c0 the cumulated reward expect to be obtained after seeing observatoin and taking a",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_162",
+                                            "title": "Q function",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_163",
+                                                    "title": "s\u63a1\u7528a\u53ef\u4ee5\u5f97\u5230\u591a\u5c11reward",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_164",
+                                                            "title": "s,a -> Q^\u03c0 -> Q^\u03c0(s,a)",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_165",
+                                                            "title": "\u6539\u5bebQ function",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_166",
+                                                                    "title": "\u7aae\u8209\u6240\u6709a",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_167",
+                                                                            "title": "S->Q^\u03c0",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_168",
+                                                                                    "title": "Q^\u03c0(s,a=left)",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_169",
+                                                                                    "title": "Q^\u03c0(s,a=right)",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_170",
+                                                                                    "title": "Q^\u03c0(s,a=fire)",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "line_171",
+                                                                            "title": "for discrete action function",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_172",
+                                                                    "title": "\u627e\u51fa\u6700\u597d\u7684action",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_173",
+                                                            "title": "\u9019\u62db\u5c31\u53eb\u505a Q-learning",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_174",
+                                                    "title": "\u9019\u4e09\u9805\u5faa\u74b0",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_175",
+                                                            "title": "\u03c0 interacts with the environment",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_176",
+                                                            "title": "Find a new actor \u03c0' better than \u03c0",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_177",
+                                                                    "title": "'better' V^\u03c0'(s) >= V^\u03c0(s) for all state s",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_178",
+                                                            "title": "learning Q^\u03c0(s,a)",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_179",
+                                                    "title": "notice",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_180",
+                                                            "title": "\u03c0' does not have extra parameter, it depends on Q",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_181",
+                                                            "title": "not suitable for continuous action (slove later)",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_182",
+                                                    "title": "Estimate",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_183",
+                                                            "title": "Q^\u03c0(s,a) by TD",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_184",
+                                                    "title": "Reference",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_185",
+                                                            "title": "Double DQN",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_186",
+                                                                    "title": "where is usually over estimate",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_187",
+                                                                            "title": "Google rainbow paper",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_188",
+                                                                                    "title": "7\u7a2e\u4e0d\u540c\u7684DQN tip",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_189",
+                                                            "title": "Pueling DQN",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_190",
+                    "title": "Actor+Critic",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_191",
+                            "title": "\u6700\u77e5\u540d\u662fA3C",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_192",
+                            "title": "learn actor\u770breward function obtain update\u4e58\u6700\u597d\u7684reward",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_193",
+                                    "title": "actor\u4e0d\u518d\u770benv\u7684reward\u6539\u770bcritic\u5b78",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_194",
+                            "title": "Asynchronous Advantage Actor-Critic(A3C)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_195",
+                                    "title": "\u4f60\u6709Global Actor-Critic",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_196",
+                                            "title": "copy\u904e\u4f86\u8ddf\u74b0\u5883\u4e92\u52d5",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_197",
+                                            "title": "cirtic\u77e5\u9053\u5982\u4f55update\u53c3\u6578",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_198",
+                                            "title": "\u50b3\u56deglobal network",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_199",
+                                            "title": "\u6bcf\u500b\u5206\u8eab\u56de\u50b3\u56de\u53bb\u4e00\u8d77update",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_200",
+                                            "title": "\u5e73\u884c\u904b\u7b97\u50cf\u5f71\u5206\u8eab\u4e00\u6a23",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_201",
+                    "title": "Pathwise Derivative Policy Gradient",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_202",
+                            "title": "Actor-Critic\u8b8a\u5f62",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_203",
+                            "title": "\u8457\u540d\u624b\u6cd5: DDPG",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_204",
+                            "title": "\u975e\u5e38\u50cfGANS",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_205",
+                            "title": "\u03c0'(s) = arg max_a^\u03c0(s,a)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_206",
+                                    "title": "\u7121\u6cd5\u7aae\u8209\u6240\u6709a",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_207",
+                                            "title": "\u5982\u679ca\u662fcontinuous vector \u4f8b\u5982\u6a5f\u5668\u624b\u63a7\u5236\u95dc\u7bc0",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_208",
+                            "title": "\u4e00\u822cQ learning\u53ea\u80fd\u8655\u7406discreate\u7684case",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_209",
+                            "title": "\u8981\u8655\u7406continuous\u6642",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_210",
+                                    "title": "Learn\u4e00\u500bvector (Generator)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_211",
+                                            "title": "s->NN->a",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_212",
+                                                    "title": "a\u8b93Q function\u503c\u6700\u5927\u90a3\u500b",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_213",
+                    "title": "Inverse Reinforcement Learning",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_214",
+                            "title": "Limitation learning\u4e00\u7a2e",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_215",
+                                    "title": "\u53ea\u6709Env\u8ddfActor\u6c92\u6709reward function",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_216",
+                            "title": "env->",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_217",
+                                    "title": "s1->",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_218",
+                                            "title": "actor->",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_219",
+                                                    "title": "a1->",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_220",
+                                                            "title": "env->",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_221",
+                                                                    "title": "s2->",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_222",
+                                                                            "title": "actor->",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_223",
+                                                                                    "title": "a2",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "line_224",
+                                                                                            "title": "...",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_225",
+                            "title": "we have demonstration of the expert",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_226",
+                                    "title": "(f1,..,fn)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_227",
+                                            "title": "each f is trajectory of expert",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_228",
+                            "title": "\u73fe\u5be6\u4e2d\u7684case\u90fd\u6c92\u6709reward function",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_229",
+                                    "title": "\u570d\u68cb\u96d6\u7136\u6709\u8f38\u8d0f",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_230",
+                                    "title": "\u6bba\u602a\u6709\u5e7e\u5f97\u5206",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_231",
+                                    "title": "\u81ea\u99d5\u8eca?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_232",
+                                    "title": "chatbox?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_233",
+                            "title": "Motivation",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_234",
+                                    "title": "It is hard to define reward in some Tasks",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_235",
+                                            "title": "hand-crafted reward can lead to uncontrolled Behavior",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_236",
+                                            "title": "\u6a5f\u5668\u516c\u6575:\u4fdd\u8b77\u4eba\u985e->\u95dc\u8d77\u4f86",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_237",
+                            "title": "Inverse Reinforcement Learning",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_238",
+                                    "title": "\u53cd\u904e\u4f86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_239",
+                                    "title": "Env/Expert->",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_240",
+                                            "title": "Reinforcement learning->",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_241",
+                                                    "title": "Reward function->",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_242",
+                                                            "title": "using the reward function to find the optimal actor",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_243",
+                            "title": "Principle: The teacher is always the best",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_244",
+                                    "title": "Basic ideal:",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_245",
+                                            "title": "Init actor",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_246",
+                                            "title": "In each iteration:",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_247",
+                                                    "title": "The actor interacts with environment to obtain some trajectory",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_248",
+                                                    "title": "define a reward function with makes the trajectorys of teacher better than actor",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_249",
+                                            "title": "Output the reward function and the actor learned from the reward function",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_250",
+                                    "title": "\u898f\u5247\u6703\u4f9d\u503c\u6539\u8001\u5e2b\u5206\u6578\u6c38\u9060\u6bd4\u8f03\u9ad8\u8b93reward function\u4e00\u503c\u5b78\u4e0a\u53bb",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_251",
+                                            "title": "\u03a3_n=1^N R(fn) > \u03a3_n=1^N R(\u03c4)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_252",
+                                    "title": "Generator -> Actor",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_253",
+                                    "title": "Discriminator -> Reward function",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_254",
+                    "title": "Robot berkeley",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_255",
+                            "title": "http://rrl.berkeley.edu",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,324 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "benchmark",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "Banchmark",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "install",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "npm -i --save benchmark",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_3",
+                            "title": "npm -i --save microtime",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_4",
+                            "title": "Banchmark.js",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_5",
+                    "title": "usage",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_6",
+                            "title": "var suite = require('benchmark')",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_7",
+                            "title": "var suite = new Banchmark.suite",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_8",
+                    "title": "example 1",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_9",
+                            "title": "suite.add('RegExp#test',()=>{",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_10",
+                                    "title": "/o/.test('hello world')",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_11",
+                            "title": "})",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_12",
+                            "title": ".add('String#indexOf',()=>{",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_13",
+                                    "title": "'Hello world'.indexOf('o')>-1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_14",
+                            "title": "})",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_15",
+                            "title": ".add('String#match',()=>{",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_16",
+                                    "title": "'Hello world'.match(/o/)>-1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_17",
+                            "title": "})",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_18",
+                            "title": ".on('cycle',(event)=>{",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_19",
+                                    "title": "console.log(String(event.target))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_20",
+                            "title": "})",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_21",
+                            "title": ".on('complete',()=>{",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_22",
+                                    "title": "console.log('Fastest is'+this.filter('fastest')).map('name'))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_23",
+                            "title": "})",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_24",
+                            "title": ".run({async:true})",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_25",
+                            "title": "run:",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_26",
+                                    "title": "node test/benchmark.js",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_28",
+                    "title": "example 2",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_29",
+                            "title": "suite.add('parseInt',()=>{",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_30",
+                                    "title": "num1('123456')",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_31",
+                            "title": "})",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_32",
+                            "title": ".add('Number',()=>{",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_33",
+                                    "title": "num2('123456')",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_34",
+                            "title": "})",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_35",
+                            "title": ".on('cycle',(event)=>{",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_36",
+                                    "title": "console.log(String(event.target))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_37",
+                            "title": "})",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_38",
+                            "title": ".on('complete',()=>{",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_39",
+                                    "title": "console.log('Fastest is'+this.filter('fastest')).map('name'))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_40",
+                            "title": "})",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_41",
+                            "title": ".run({async:true})",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_42",
+                            "title": "run:",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_43",
+                                    "title": "node test/benchmark.js",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_44",
+                    "title": "jsPerf",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_45",
+                            "title": "jsPerf.com",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_46",
+                            "title": "javascript performance background",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_47",
+                            "title": "test case in web",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

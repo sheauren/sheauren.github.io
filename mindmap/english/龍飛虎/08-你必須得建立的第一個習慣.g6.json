@@ -1,0 +1,154 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "08-\u4f60\u5fc5\u9808\u5f97\u5efa\u7acb\u7684\u7b2c\u4e00\u500b\u7fd2\u6163",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u4f60\u5fc5\u9808\u5f97\u5efa\u7acb\u7684\u7b2c\u4e00\u500b\u7fd2\u6163",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "\u9032\u5165\u82f1\u6587\u983b\u9053",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_3",
+                            "title": "\u6bcf\u5929\u807d\u82f1\u6587",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_4",
+                            "title": "\u57f9\u990a\u8a9e\u611f",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_5",
+                            "title": "\u5efa\u7acb\u807d\u82f1\u6587\u7684\u7fd2\u6163",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_6",
+                    "title": "\u7b2c\u4e00\u500b\u7fd2\u6163",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_7",
+                            "title": "\u4f60\u807d\u82f1\u6587\u7684\u6642\u5019\u8212\u670d\u55ce",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_8",
+                                    "title": "\u6709\u9ede\u5947\u602a,\u6709\u9ede\u4e0d\u5927\u8212\u670d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_9",
+                                            "title": "\u807d\u82f1\u8a9e\u4e0d\u662f\u4f60\u7684\u7fd2\u6163",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_10",
+                                                    "title": "\u6c92\u6709\u82f1\u6587\u7684\u983b\u9053",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_11",
+                            "title": "\u5efa\u7acb\u82f1\u8a9e\u983b\u9053",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_12",
+                                    "title": "\u600e\u9ebc\u505a",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_13",
+                                            "title": "\u6bcf\u5929\u807d\u4e00\u4e9b\u82f1\u8a9e",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_14",
+                                                    "title": "\u653e\u82f1\u6587\u6b4c",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_15",
+                                                    "title": "\u807d\u82f1\u6587\u5ee3\u64ad",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_16",
+                                                    "title": "\u807d\u4e00\u6b213-5\u5206\u9418 \u807dn\u6b21",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_17",
+                            "title": "\u5982\u4f55\u5224\u65b7\u82f1\u8a9e\u983b\u9053\u5efa\u7acb",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_18",
+                                    "title": "\u4e0d\u807d\u6703\u4e0d\u8212\u670d\u7684\u6642\u5019\u5c31\u6210\u529f\u4e86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_19",
+                                    "title": "\u4e0d\u807d\u82f1\u6587\u6703\u89ba\u5f97\u5947\u602a",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_20",
+                                    "title": "\u9019\u5c31\u6709\u975e\u5e38\u597d\u7684\u57fa\u790e",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

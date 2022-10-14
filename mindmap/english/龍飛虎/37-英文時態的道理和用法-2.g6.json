@@ -1,0 +1,1020 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "37-\u82f1\u6587\u6642\u614b\u7684\u9053\u7406\u548c\u7528\u6cd5-2",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u82f1\u6587\u6642\u614b\u7684\u9053\u7406\u548c\u7528\u6cd5-2",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "\u756b\u9762\u914d\u5408\u611f\u89ba\u8a8d\u8b58\u6642\u614b",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_3",
+                            "title": "\u66f4\u597d\u66f4\u5feb\u901f\u7684\u638c\u63e1\u82f1\u6587\u6642\u614b",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_4",
+                    "title": "\u5982\u4f55\u8a18\u4f4f",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_5",
+                            "title": "\u7528\u8868\u683c\u7d66\u81ea\u5df1\u5b8f\u89c0\u7684\u8a8d\u8b58",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "\u7528\u756b\u9762\u548c\u611f\u89ba\u5efa\u7acb\u82f1\u6587\u601d\u7dad",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_7",
+                            "title": "\u6642\u614b\u7684\u7b2c\u4e00\u5ea6",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_8",
+                                    "title": "\u904e\u53bb-ed",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_9",
+                                    "title": "\u73fe\u5728-ing",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_10",
+                                    "title": "\u672a\u4f86will",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_11",
+                                            "title": "\u6642\u614b\u7b2c\u4e8c\u5ea6",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_12",
+                                                    "title": "\u7c21\u55ae",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_13",
+                                                    "title": "\u5b8c\u6210",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_14",
+                                                    "title": "\u9032\u884c",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_15",
+                                                    "title": "\u9032\u884c+\u5b8c\u6210",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_16",
+                            "title": "\u7b2c\u4e00\u5ea6*\u7b2c\u4e8c\u5ea6",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_17",
+                                    "title": "12\u500b\u4e0d\u540c\u7684\u6642\u614b",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_18",
+                                    "title": "\u7528\u8b8a\u5f62\u8a5e,\u8a5e\u7c92\u5b50\u548c\u7247\u8a9e\u4f86\u89e3\u6c7a",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_19",
+                                            "title": "-ing,-ed",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_20",
+                                            "title": "am,is,are,was",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_21",
+                                            "title": "were,will,be,been",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_22",
+                                            "title": "have,has,had",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_23",
+                                    "title": "\u7c21\u55ae",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_24",
+                                            "title": "\u6b63\u5728",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_25",
+                                                    "title": "word",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_26",
+                                            "title": "\u904e\u53bb",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_27",
+                                                    "title": "word+ed",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_28",
+                                            "title": "\u672a\u4f86",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_29",
+                                                    "title": "will + word",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_30",
+                                    "title": "\u73fe\u884c-ing",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_31",
+                                            "title": "\u6b63\u5728",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_32",
+                                                    "title": "am/is/are word + ing",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_33",
+                                            "title": "\u904e\u53bb",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_34",
+                                                    "title": "was/were word + ing",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_35",
+                                            "title": "\u672a\u4f86",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_36",
+                                                    "title": "will be word + ing",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_37",
+                                    "title": "\u5b8c\u6210",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_38",
+                                            "title": "\u73fe\u5728",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_39",
+                                                    "title": "have/has word+ed",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_40",
+                                            "title": "\u904e\u53bb",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_41",
+                                                    "title": "has word+ed",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_42",
+                                            "title": "\u672a\u4f86",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_43",
+                                                    "title": "will have word+ed",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_44",
+                                    "title": "\u5b8c\u6210+\u9032\u884c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_45",
+                                            "title": "\u73fe\u5728",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_46",
+                                                    "title": "have/had been word+ing",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_47",
+                                            "title": "\u904e\u53bb",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_48",
+                                                    "title": "had been word+ing",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_49",
+                                            "title": "\u672a\u4f86",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_50",
+                                                    "title": "will have been word+ing",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_51",
+                            "title": "\u4e00\u500b\u76d2\u5b50\u5169\u689d\u8def",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_52",
+                                    "title": "learn English",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_53",
+                                            "title": "\u7528\u7a7a\u9593\u8a8d\u8b58\u6642\u9593",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_54",
+                                                    "title": "\u8166\u5b50\u7684\u6bd4\u55bb",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_55",
+                                                    "title": "\u904e\u53bb",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_56",
+                                                            "title": "\u5f8c\u9762",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_57",
+                                                    "title": "\u73fe\u5728",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_58",
+                                                    "title": "\u672a\u4f86",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_59",
+                                                            "title": "\u524d\u9762",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_60",
+                                                    "title": "learn",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_61",
+                                                            "title": "\u7c21\u55ae",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_62",
+                                                                    "title": "\u73fe\u5728",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_63",
+                                                                            "title": "I learn English",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_64",
+                                                                                    "title": "\u6c92\u6709\u6642\u9593",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_65",
+                                                                    "title": "\u904e\u53bb",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_66",
+                                                                            "title": "I learned English",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_67",
+                                                                                    "title": "\u904e\u53bb\u7684\u4e00\u500b\u9ede,\u4e86",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_68",
+                                                                                    "title": "I learned English",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_69",
+                                                                                    "title": "I learned English at school last year",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_70",
+                                                                                    "title": "I learned English in my spare time",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_71",
+                                                                                    "title": "I learned English as a child",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_72",
+                                                                                    "title": "I learned English when i was studying in Britain",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_73",
+                                                                    "title": "\u672a\u4f86",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_74",
+                                                                            "title": "I will learn English",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_75",
+                                                                                    "title": "\u5c07\u4f86\u7684\u4e00\u500b\u9ede",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_76",
+                                                                                    "title": "\u807d\u5230will\u5c31\u662f\u524d\u9762\u7684\u4e00\u500b\u9ede\u5b50",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_77",
+                                                                                    "title": "I will learn English",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_78",
+                                                                                    "title": "I will learn English at school next year",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_79",
+                                                                                    "title": "I will learn English someday",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_80",
+                                                                                    "title": "I will learn English when I have more time",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_81",
+                                                                                    "title": "I will learn English after I go to Ameraica",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_82",
+                                                                                    "title": "I will learn English before I go to University",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_83",
+                                                            "title": "\u9032\u884c",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_84",
+                                                                    "title": "\u73fe\u5728",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_85",
+                                                                            "title": "I am learning English",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_86",
+                                                                                    "title": "\u6709\u4e00\u500b\u9032\u884c\u904e\u7a0b\u6b63\u5728\u767c\u751f",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_87",
+                                                                                    "title": "\u6211\u5728\u904e\u7a0b\u7684\u4e2d\u9593",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_88",
+                                                                                    "title": "I am learning English at school this year",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_89",
+                                                                                    "title": "I am learning English right now",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_90",
+                                                                                    "title": "I am learning English for my job",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_91",
+                                                                    "title": "\u904e\u53bb",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_92",
+                                                                            "title": "I was learning English",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_93",
+                                                                                    "title": "\u6709\u4e00\u500b\u9032\u884c\u904e\u7a0b\u767c\u751f\u5728\u904e\u53bb",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_94",
+                                                                                    "title": "\u662f\u904e\u53bb\u7684\u4e00\u500b\u904e\u7a0b",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_95",
+                                                                                    "title": "\u8a72\u904e\u7a0b\u5df2\u7d93\u5b8c\u7562\u4e86",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_96",
+                                                                                    "title": "I was learning English at school last year",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_97",
+                                                                                    "title": "I was learning English when my brother graduated",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_98",
+                                                                                    "title": "I was learning English for some time when I lived in Britain",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_99",
+                                                                    "title": "\u672a\u4f86",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_100",
+                                                                            "title": "I will be learning English",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_101",
+                                                                                    "title": "\u6709\u4e00\u500b\u9032\u884c\u904e\u7a0b\u767c\u751f\u5728\u672a\u4f86",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_102",
+                                                                                    "title": "I will be learning English at school next year",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_103",
+                                                                                    "title": "I will be learning English during my summer break",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_104",
+                                                                                    "title": "I will be learning English for six months after I arrive in Australia",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_105",
+                                                            "title": "\u5b8c\u6210",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_106",
+                                                                    "title": "\u73fe\u5728",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_107",
+                                                                            "title": "I have learned English",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_108",
+                                                                            "title": "\u6709\u4e00\u500b\u9032\u884c\u904e\u7a0b\u7684\u5b8c\u6210\u9ede",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_109",
+                                                                                    "title": "I have learned English to fluency",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_110",
+                                                                                    "title": "I have learned English for six months already",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_111",
+                                                                                    "title": "I have learned English on-and-off for many years",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_112",
+                                                                                    "title": "I have learned English quite well",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_113",
+                                                                    "title": "\u904e\u53bb",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_114",
+                                                                            "title": "I had learned English",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_115",
+                                                                            "title": "\u6709\u4e00\u500b\u9032\u884c\u904e\u7a0b\u7684\u5b8c\u6210\u9ede\u632a\u5230\u904e\u53bb",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_116",
+                                                                                    "title": "I had learned English for six months before I went to the UK",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_117",
+                                                                                    "title": "Before I was 12 years old, I had learned English",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_118",
+                                                                                    "title": "I had learned English up to native level by the time I was 20 years old",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_119",
+                                                                    "title": "\u672a\u4f86",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_120",
+                                                                            "title": "I will have learned English",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_121",
+                                                                            "title": "\u6709\u4e00\u500b\u9032\u884c\u904e\u7a0b\u7684\u5b8c\u6210\u9ede\u632a\u5230\u672a\u4f86",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_122",
+                                                                                    "title": "\u5f9e\u4ec0\u9ebc\u6642\u5019\u958b\u59cb\u5f88\u96e3\u8aaa",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "line_123",
+                                                                                            "title": "\u53ef\u80fd\u672a\u4f86\u624d\u958b\u59cb",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_124",
+                                                                                            "title": "\u53ef\u80fd\u73fe\u5728\u958b\u59cb",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_125",
+                                                                                            "title": "\u53ef\u80fd\u904e\u53bb\u5c31\u958b\u59cb",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_126",
+                                                                                            "title": "\u518d\u8aaa\u7684\u6642\u9593\u9ede\u662f\u5b8c\u6210\u4e86",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_127",
+                                                                                    "title": "I will have learned English for six years by the time I immigrate to Canada",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_128",
+                                                                                    "title": "At my next birthday, I will have learned English for half of my life already",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_129",
+                                                                                    "title": "I will have learned English to fluency by this time next year",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_130",
+                                                            "title": "\u5b8c\u6210\u9032\u884c",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_131",
+                                                                    "title": "\u73fe\u5728",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_132",
+                                                                            "title": "I have been learning English",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_133",
+                                                                            "title": "\u4ee5\u524d\u5230\u73fe\u5728\u6211\u6b63\u5728\u9032\u884c\u7684\u904e\u7a0b\u9084\u672a\u7d50\u675f",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_134",
+                                                                                    "title": "I have been learning English for about three months",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_135",
+                                                                                    "title": "I have been learning English since I arrived",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_136",
+                                                                                    "title": "I have been learning English since starting my new job",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_137",
+                                                                                    "title": "I have been learning English, but I think I'll change to learning French",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_138",
+                                                                    "title": "\u904e\u53bb",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_139",
+                                                                            "title": "I had been learning English",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_140",
+                                                                            "title": "\u4ee5\u524d\u9084\u5728\u9032\u884c\u7684\u904e\u7a0b\u00b7\u4e26\u65bc\u8aaa\u8a71\u8005\u60f3\u50cf\u7684\u6642\u9593\u9ede\u8a72\u9032\u884c\u9084\u672a\u7d50\u675f",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_141",
+                                                                                    "title": "I had been learning English for about three months before the earthquake",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_142",
+                                                                                    "title": "I had been learning English, but couldn't keep going because of family reason",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_143",
+                                                                                    "title": "I had been learning English, but the financial panic of 2008 changed everything. I had to get a job",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_144",
+                                                                    "title": "\u672a\u4f86",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_145",
+                                                                            "title": "I will have been learning English",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_146",
+                                                                            "title": "\u672a\u4f86\u9084\u5728\u9032\u884c\u7684\u904e\u7a0b\u00b7\u4e26\u65bc\u8aaa\u8a71\u8005\u60f3\u50cf\u7684\u6642\u9593\u9ede\u8a72\u9032\u884c\u9084\u672a\u7d50\u675f",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_147",
+                                                                                    "title": "Before the time I'm 20,I will have been learning English for 17 years",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_148",
+                                                                                    "title": "I will have been learning English full-time for three years by the time I graduate",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

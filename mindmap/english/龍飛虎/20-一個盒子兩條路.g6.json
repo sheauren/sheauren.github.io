@@ -1,0 +1,398 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "20-\u4e00\u500b\u76d2\u5b50\u5169\u689d\u8def",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u4e00\u500b\u76d2\u5b50\u5169\u689d\u8def",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "\u4f7f\u8a9e\u6cd5\u4fe1\u606f\u8b8a\u6210\u756b\u9762\u548c\u611f\u89ba",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_3",
+                            "title": "\u9748\u6d3b\u904b\u52d5\u8a9e\u8a00\u6e9d\u901a\u5b78\u7fd2\"\u4e00\u500b\u76d2\u5b50\u5169\u689d\u8def\"\u7684\u65b9\u6cd5",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_4",
+                    "title": "\u807d\u5230\u8a5e\u6709\u4ec0\u9ebc\u53cd\u61c9",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_5",
+                            "title": "\u6c34",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "\u5abd\u5abd",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_7",
+                            "title": "\u8eca",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_8",
+                            "title": "\u8003\u8a66",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_9",
+                            "title": "\u706b",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_10",
+                            "title": "\u8001\u5a46",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_11",
+                            "title": "\u6bcf\u500b\u4eba\u5fc3\u88e1\u90fd\u6709\u4e0d\u4e00\u5b9a\u76f8\u540c\u7684\u53cd\u61c9",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_12",
+                    "title": "\u8a9e\u8a00\u662f\u6e9d\u901a\u4ea4\u6d41\u7684\u95dc\u9375",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_13",
+                    "title": "\u6e9d\u901a\u7684\u904e\u7a0b",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_14",
+                            "title": "\u7d44\u7e54\u6210\u8072\u97f3\u50b3\u51fa\u53bb",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_15",
+                            "title": "\u807d\u5230\u8072\u97f3\u65bc\u5fc3\u76ee\u4e2d\u88fd\u9020\u756b\u9762",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_16",
+                            "title": "\u8166\u5b50\u88e1\u51fa\u73fe\u7684\u756b\u9762\u4e0d\u4e00\u5b9a\u662f\u4f60\u60f3\u50cf\u7684\u756b\u9762",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_17",
+                            "title": "\u4e0d\u540c\u6587\u5316\u76f8\u5dee\u6703\u66f4\u5927",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_18",
+                    "title": "same box different path",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_19",
+                            "title": "\u756b\u9762\u9023\u7d50\u5230\u4e2d\u6587",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_20",
+                            "title": "\u756b\u9762\u9023\u7d50\u5230\u82f1\u6587",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_21",
+                            "title": "\u4e0d\u662f\u82f1\u6587\u9023\u7d50\u5230\u4e2d\u6587",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_22",
+                    "title": "\u600e\u9ebc\u5b78\u7fd2",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_23",
+                            "title": "\u5148\u5b78\u5177\u9ad4\u7684\u540d\u8a5e\u52d5\u8a5e\u958b\u59cb",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_24",
+                                    "title": "\u770b\u5230\u7269\u9ad4\u7528\u82f1\u8a9e\u7684\u8072\u97f3\u6a19\u7c64",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_25",
+                                    "title": "\u628a\u756b\u9762\u8ddf\u8072\u97f3\u4e32\u8d77\u4f86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_26",
+                                    "title": "\u628a\u52d5\u4f5c\u8ddf\u8072\u97f3\u4e32\u8d77\u4f86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_27",
+                                    "title": "\u628a\u984f\u8272\u8ddf\u8072\u97f3\u4e32\u8d77\u4f86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_28",
+                            "title": "\u7247\u8a9e\u8b8a\u6210\u756b\u9762",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_29",
+                                    "title": "where is...?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_30",
+                                            "title": "\u60f3\u50cf\u68ee\u6797\u88e1\u9762\u627e\u4e0d\u627e\u8def",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_31",
+                                    "title": "how do you...?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_32",
+                                            "title": "\u5275\u9020\u756b\u9762\u4ee3\u8868\u9019\u500b\u610f\u601d",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_33",
+                                    "title": "\u628a\u756b\u9762\u8ddf\u7247\u8a9e\u653e\u5728\u4e00\u8d77",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_34",
+                            "title": "\u8a9e\u6cd5\u4fe1\u606f\u4e5f\u53ef\u4ee5\u8b8a\u6210\u756b\u9762\u548c\u611f\u89ba",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_35",
+                                    "title": "A",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_36",
+                                            "title": "\u591a\u500b\u4eba\u4e2d\u9078\u4e00\u500b",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_37",
+                                    "title": "The",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_38",
+                                            "title": "\u591a\u500b\u4eba\u4e2d\u6307\u5b9a\u4e00\u500b",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_39",
+                            "title": "\u589e\u52a0\u6bd4\u55bb",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_40",
+                            "title": "\u7528\u756b\u9762\u8ddf\u611f\u89ba\u89e3\u6c7a\u9577\u53e5\u5b50",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_41",
+                                    "title": "The woman who is standing by the door is our english teacher.",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_42",
+                                    "title": "\u756b\u9762\u51fa\u73fe",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_43",
+                                            "title": "woman",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_44",
+                                            "title": "standing",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_45",
+                                            "title": "door",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_46",
+                                            "title": "english teacher",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_47",
+                                    "title": "\u5728\u958b\u59cb\u7d44\u5408\u8d77\u4f86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_48",
+                            "title": "\u5408\u9069\u7684\u6559\u6750",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_49",
+                                    "title": "\u4e2d\u82f1\u7247\u8a9e\u5c0d\u7167",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_50",
+                                            "title": "\u60f3\u8981",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_51",
+                                                    "title": "Would Like",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_52",
+                                            "title": "\u6211\u60f3\u8981",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_53",
+                                                    "title": "I Would Like",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_54",
+                                            "title": "\u5496\u5561",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_55",
+                                                    "title": "Coffee",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_56",
+                                            "title": "\u6211\u60f3\u8981\u958b\u767c",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_57",
+                                                    "title": "I Would Like Coffee",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

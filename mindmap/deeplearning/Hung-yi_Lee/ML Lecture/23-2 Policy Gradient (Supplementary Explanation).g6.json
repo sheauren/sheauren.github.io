@@ -1,0 +1,346 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "23-2 Policy Gradient (Supplementary Explanation)",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "Policy Gradient (Supplementary Explanation)",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "Given actor parameter \u03b8",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_2",
+                    "title": "\u03c4^1:",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_3",
+                            "title": "(s_1^1,a_1^1) R(\u03c4^1)",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_4",
+                            "title": "(s_2^1,a_2^1) R(\u03c4^1)",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_5",
+                            "title": "...",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_6",
+                    "title": "\u03c4^2:",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_7",
+                            "title": "(s_1^2,a_1^1) R(\u03c4^2)",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_8",
+                            "title": "(s_2^2,a_2^2) R(\u03c4^2)",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_9",
+                            "title": "...",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_10",
+                    "title": "\u62ff\u4e0a\u9762\u7684Data collection",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_11",
+                            "title": "update \u53c3\u6578 \u03b8",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_12",
+                            "title": "\u03b8 <- \u03b8 + \u03b7\u2207R_\u03b8^T",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_13",
+                            "title": "\u2207R_\u03b8^- = 1/N \u03a3_n=1^N \u03a3_t=1^Tn R(\u03c4^n)\u2207logp(a_t^n|s_t^n,\u03b8)",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_14",
+                                    "title": "R(\u03c4^n)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_15",
+                                            "title": "\u5148\u62ff\u6389\u7576\u4f5c\u7b49\u65bc1",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_16",
+                                    "title": "\u2207logp(a_t^n|s_t^n,\u03b8)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_17",
+                                            "title": "input s_1^1",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_18",
+                                                    "title": "NN",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_19",
+                                                            "title": "output",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_20",
+                                                                    "title": "a_1^1 = left",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_21",
+                                                                            "title": "target",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_22",
+                                                                                    "title": "1 0 0",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_23",
+                                            "title": "input s_1^2",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_24",
+                                                    "title": "NN",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_25",
+                                                            "title": "output",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_26",
+                                                                    "title": "a_1^2 = fire",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_27",
+                                                                            "title": "target",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_28",
+                                                                                    "title": "0 0 1",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_29",
+                                            "title": "\u5f88\u50cf\u5206\u985e\u554f\u984c",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_30",
+                                                    "title": "\u591a\u4e86reward\u734e\u52f5R(\u03c4^n)\u7d66training example weight",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_31",
+                                                    "title": "\u5047\u5982R(\u03c4^i)=2\u5c31\u662f\u8907\u88fdi\u5169\u6b21\u53bbtrain",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_35",
+                    "title": "\u4e0a\u9762\u91cd\u8907\u5faa\u74b0",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_37",
+                    "title": "Considered as Classification Problem",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_38",
+                            "title": "s -> NN -> classifier[left/right/fire]",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_39",
+                                    "title": "[lef/right/fire] = y_i",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_40",
+                                    "title": "target 1,0,0 = y_i^^",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_41",
+                                    "title": "minimum: (crossentropy)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_42",
+                                            "title": "- \u03a3_i=1^3 y_i^^ log y_i",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_43",
+                                                    "title": "\u591a\u6578y^_i\u90fd\u662f0",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_44",
+                                                            "title": "Maximize: logyi = logP(\"left\"|s)",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_45",
+                            "title": "\u03b8 <- \u03b8 + \u03b7\u2207logP(\"left\"|s)",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_46",
+                                    "title": "\u7576\u5f0f\u5b50\u6709\u03b7\u2207logP(\"left\"|s)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_47",
+                                            "title": "\u6211\u5011\u5e0c\u671bobjective function\u8d8a\u5927\u8d8a\u597d",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_48",
+                                                    "title": "\u662f\u5728\u89e3\u5206\u985e\u554f\u984c",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_49",
+                                                            "title": "network output",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_50",
+                                                                    "title": "\u8ddftarget\u6b63\u78ba\u985e\u5225\u8d8a\u63a5\u8fd1\u8d8a\u597d",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

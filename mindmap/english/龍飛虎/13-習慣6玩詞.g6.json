@@ -1,0 +1,116 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "13-\u7fd2\u61636\u73a9\u8a5e",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u7b2c6\u500b\u7fd2\u6163\u73a9\u8a5e",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_2",
+                    "title": "\u65bc\u81ea\u8a00\u81ea\u8a9e\u8aaa\u82f1\u6587\u4e0a\u52a0\u5165",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_3",
+                            "title": "\u73a9\u8a5e",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_4",
+                                    "title": "ex:",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_5",
+                                            "title": "man,car,cup",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_6",
+                                                    "title": "the man in the car",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_7",
+                                                    "title": "the man in the cup",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_8",
+                                                    "title": "the man in the cpu left the car",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_9",
+                                            "title": "\u628a\u4f60\u6703\u7684\u8a5e\u7528\u4e0d\u540c\u7684\u7d44\u6210\u65b9\u5f0f\u9020\u53e5",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_10",
+                                    "title": "\u63d0\u5347\u4f60\u7684\u8a0a\u606f\u7db2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_11",
+                                    "title": "\u7528\u4f60\u7684\u5275\u610f\u7522\u751f\u53e5\u5b50",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_12",
+                                    "title": "\u638c\u63e1\u82f1\u6587\u8a9e\u611f\u8207\u898f\u5f8b",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_13",
+                            "title": "\u4e94\u5206\u9418\u6642\u9593\u73a9\u4e00\u4e0b\u8a5e",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_14",
+                                    "title": "\u7fd2\u6163\u82f1\u8a9e\u8a9e\u6cd5",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_15",
+                                    "title": "\u7fd2\u6163\u82f1\u8a9e\u8a9e\u611f",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

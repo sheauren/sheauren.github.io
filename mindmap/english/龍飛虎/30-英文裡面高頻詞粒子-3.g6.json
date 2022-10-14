@@ -1,0 +1,240 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "30-\u82f1\u6587\u88e1\u9762\u9ad8\u983b\u8a5e\u7c92\u5b50-3",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u82f1\u6587\u88e1\u9762\u9ad8\u983b\u8a5e\u7c92\u5b50-3",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "ness\u5f8c\u7db4\u662f\u5c07\u82f1\u6587\u7684\u5f62\u5bb9\u8a5e\u8b8a\u540d\u8a5e",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_3",
+                            "title": "ly\u5f8c\u7db4\u52e2\u5c07\u540d\u8a5e\u8b8a\u6210\u5f62\u5bb9\u8a5e,\u7b49\u65bc\u5730",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_4",
+                    "title": "\u9ad8\u983b\u8a5e\u7c92\u5b50",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_5",
+                            "title": "-ness",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_6",
+                                    "title": "\u5f62\u5bb9\u8a5e\u8b8a\u6210\u540d\u8a5e",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_7",
+                                    "title": "happyiness",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_8",
+                                            "title": "i am happy",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_9",
+                                                    "title": "\u6211\u5f88\u958b\u5fc3",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_10",
+                                            "title": "i am full of happiness",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_11",
+                                                    "title": "\u6211\u5145\u6eff\u958b\u5fc3\u611f",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_12",
+                                    "title": "selfishness",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_13",
+                                            "title": "He is selfishness",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_14",
+                                                    "title": "\u4ed6\u5f88\u81ea\u79c1",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_15",
+                                            "title": "His selfishness is obvious",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_16",
+                                                    "title": "\u4ed6\u81ea\u79c1\u7684\u5fc3\u5f88\u986f\u800c\u6613\u898b",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_17",
+                                    "title": "slowness",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_18",
+                                            "title": "Bikes are slow",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_19",
+                                                    "title": "\u8173\u8e0f\u8eca\u5f88\u6162",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_20",
+                                            "title": "I dislike the slowness of bikes",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_21",
+                                                    "title": "\u6211\u4e0d\u559c\u6b61\u8173\u8e0f\u8eca\u6162\u884c\u7684\u7279\u9ede",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_22",
+                                    "title": "sleeplessness",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_23",
+                                            "title": "I was sleepless last night",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_24",
+                                                    "title": "\u6211\u6628\u5929\u5931\u7720",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_25",
+                                            "title": "I suffer from sleeplessness",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_26",
+                                                    "title": "\u6211\u6709\u5931\u7720\u75c7\u72c0",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_27",
+                            "title": "-ly",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_28",
+                                    "title": "...\u5730",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_29",
+                                    "title": "happily",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_30",
+                                    "title": "friendly",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_31",
+                                    "title": "slowly",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_32",
+                                    "title": "rapidly",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

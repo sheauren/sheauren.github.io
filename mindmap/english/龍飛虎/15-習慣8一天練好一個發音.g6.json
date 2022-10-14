@@ -1,0 +1,94 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "15-\u7fd2\u61638\u4e00\u5929\u7df4\u597d\u4e00\u500b\u767c\u97f3",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u7fd2\u61638\u4e00\u5929\u7df4\u597d\u4e00\u500b\u767c\u97f3",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_2",
+                    "title": "\u82f1\u8a9e\u53ea\u670944\u500b\u8072\u97f3",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_3",
+                            "title": "\u5982\u679c\u6bcf\u5929\u641e\u5b9a\u4e00\u500b\u97f3",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_4",
+                                    "title": "\u53ea\u8981\u4e00\u500b\u534a\u6708",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_5",
+                            "title": "\u4f60\u8981\u96a8\u6642\u96a8\u5730\u7df4\u81ea\u5df1\u7684\u767c\u97f3",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_6",
+                                    "title": "\u7b49\u96fb\u68af\u7684\u6642\u9593",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_7",
+                                            "title": "\u62ff\u51fa\u7df4\u7fd2\u7d20\u6750\u4f86\u7df4\u7fd2",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_8",
+                                    "title": "\u7b49\u8eca\u7684\u6642\u9593",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_9",
+                                            "title": "\u62ff\u51fa\u7df4\u7fd2\u7d20\u6750\u4f86\u7df4\u7fd2",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_10",
+                                    "title": "30s~60s",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_11",
+                                            "title": "\u90fd\u53ef\u4ee5\u62ff\u51fa\u4f86\u7df4\u7fd2",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

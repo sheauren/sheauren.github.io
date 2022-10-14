@@ -1,0 +1,1392 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "21-1 Recurrent Neural Network (Part I)",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "Recurrent Neural Network (RNN)(Part I)",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "Example Application",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "Slot Filling",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_3",
+                                    "title": "ticket booking system",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_4",
+                                            "title": "I would like to arrive taipei on November 2nd.",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_5",
+                                            "title": "slot",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_6",
+                                                    "title": "destination",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_7",
+                                                            "title": "taipei",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_8",
+                                                    "title": "time of arrival",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_9",
+                                                            "title": "November 2nd",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_10",
+                                                    "title": "\u8981\u5224\u65b7\u54ea\u500b\u8a5e\u5f59\u65bcslot",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_11",
+                                    "title": "Solving slot filling by feedforward network?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_12",
+                                            "title": "input: a word",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_13",
+                                                    "title": "each word is represented as a vector",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_14",
+                                                            "title": "\u65b9\u6cd5\u5f88\u591a",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_15",
+                                                                    "title": "\u5e38\u7528",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_16",
+                                                                            "title": "1-of-N encoding",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_17",
+                                                                            "title": "beyond 1-of-N encoding",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_18",
+                                                                                    "title": "\u5f88\u591a\u8fad\u5f59\u4f60\u53ef\u80fd\u5f9e\u4f86\u90fd\u6c92\u898b\u904e",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "line_19",
+                                                                                            "title": "\u591a\u4e00\u500b\"other\"",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_20",
+                                                                                            "title": "\u628a\u4e0d\u5728\u8fad\u5178\u88e1\u9762\u7684\u6240\u6709\u8a5e\u5f59\u90fd\u6b78\u985e\u5230other",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "line_21",
+                                                                            "title": "word hashing",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_22",
+                                                                                    "title": "\u7528\u5b57\u6bcd\u8868\u793a\u8a5e\u532f",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "line_23",
+                                                                                            "title": "\u5c31\u4e0d\u6703\u6709\u8a5e\u5f59\u4e0d\u5728\u5b57\u5178\u7684\u554f\u984c",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_24",
+                                                                                            "title": "26x26x26",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_25",
+                                                                                            "title": "a-a-a",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_26",
+                                                                                            "title": "a-a-b",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_27",
+                                                                                            "title": "...",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_28",
+                                                                                            "title": "a-p-p",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_29",
+                                                                                            "title": "...",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_30",
+                                                                                            "title": "p-l-e",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_31",
+                                                                                            "title": "word : apple",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "line_32",
+                                                                                                    "title": "a-p-p : 1",
+                                                                                                    "background-color": "#e3aba7",
+                                                                                                    "collapsed": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "line_33",
+                                                                                                    "title": "p-p-l : 1",
+                                                                                                    "background-color": "#e3aba7",
+                                                                                                    "collapsed": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "line_34",
+                                                                                                    "title": "p-l-e : 1",
+                                                                                                    "background-color": "#e3aba7",
+                                                                                                    "collapsed": true
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_35",
+                                            "title": "output:",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_36",
+                                                    "title": "probability distribution that the input word beloging to the slots",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_37",
+                                    "title": "\u76ee\u524d\u7121\u6cd5solove problem",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_38",
+                                            "title": "\u53e51.",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_39",
+                                                    "title": "arrive",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_40",
+                                                            "title": "other",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_41",
+                                                    "title": "Taipei",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_42",
+                                                            "title": "dest",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_43",
+                                                    "title": "on",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_44",
+                                                            "title": "other",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_45",
+                                                    "title": "November",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_46",
+                                                            "title": "time",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_47",
+                                                    "title": "2nd",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_48",
+                                                            "title": "time",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_49",
+                                            "title": "\u53e52.",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_50",
+                                                    "title": "leave",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_51",
+                                                            "title": "other",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_52",
+                                                    "title": "Taipei",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_53",
+                                                            "title": "place of departure",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_54",
+                                                    "title": "on",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_55",
+                                                            "title": "other",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_56",
+                                                    "title": "November",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_57",
+                                                            "title": "time",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_58",
+                                                    "title": "2nd",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_59",
+                                                            "title": "time",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_60",
+                                            "title": "input\u4e00\u6a23\u7684\u6771\u897ftaipei",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_61",
+                                                    "title": "output\u61c9\u8a72\u662f\u4e00\u6a23\u7684\u6771\u897f",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_62",
+                                                            "title": "\u6c92\u8fa6\u6cd5\u5206\u8fa8\u6a5f\u7387",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_63",
+                                                    "title": "NN needs memory",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_64",
+                                                            "title": "\u4ed6\u770b\u904e\u524d\u4e00\u500b\u5b57",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_65",
+                                                                    "title": "arrive",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_66",
+                                                                    "title": "leave",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_67",
+                                                                    "title": "\u5229\u7528\u4e0a\u4e0b\u6587\u7522\u751f\u4e0d\u540coutput",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_68",
+                                                            "title": "RNN : Recurrent Nerual Network",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_69",
+                                                                    "title": "The output of hidden layer are stored in the memory",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_70",
+                                                                    "title": "Memory can be considered as another input",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_71",
+                                                                    "title": "example:",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_72",
+                                                                            "title": "All the weight are '1', no bias",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_73",
+                                                                            "title": "All activation functions are linear",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_74",
+                                                                            "title": "input sequence:",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_75",
+                                                                                    "title": "[1 1]^T [1 1]^T [2 2]^T ...",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "line_76",
+                                                                            "title": "memory : given initial values 0",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_77",
+                                                                            "title": "intput [1 1]^T",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_78",
+                                                                                    "title": "NN output: [2 2]^T",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_79",
+                                                                                    "title": "Memory: [0 0]^T",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_80",
+                                                                                    "title": "Final Output = [4 4]^T",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "line_81",
+                                                                            "title": "input [1 1]^T \u7b2c\u4e8c\u6b21\u8f38\u5165",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_82",
+                                                                                    "title": "NN Output: [6 6]^T",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_83",
+                                                                                    "title": "Memory: [2 2]^T -> [6 6]^T",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_84",
+                                                                                    "title": "Final Output = [12 12]^T",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_85",
+                                                                                    "title": "\u8f38\u5165\u4e00\u6a23\u7684\u6771\u897f",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "line_86",
+                                                                                            "title": "output\u662f\u6709\u53ef\u80fd\u4e0d\u540c\u7684",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "line_87",
+                                                                                                    "title": "\u770bmemory\u5132\u5b58\u7684\u503c",
+                                                                                                    "background-color": "#e3aba7",
+                                                                                                    "collapsed": true
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "line_88",
+                                                                            "title": "input [2 2]^T",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_89",
+                                                                                    "title": "NN Output: [16 16]^T",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_90",
+                                                                                    "title": "Final Output: [32 32]^T",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_91",
+                                                                                    "title": "Memory: [16 16]^T",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "line_92",
+                                                                            "title": "changing input sequence order will change the output",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_93",
+                                    "title": "RNN\u89e3\u6c7a\u554fdest/place of departure\u554f\u984c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_94",
+                                            "title": "arrive Taipei on November 2nd",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_95",
+                                                    "title": "\u4e00\u500b\u4e00\u500bvector\u4e1f\u9032\u53bb",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_96",
+                                                    "title": "inptut: x1(arrive)",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_97",
+                                                            "title": "NN output: a1",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_98",
+                                                                    "title": "cache a1 to memory",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_99",
+                                                                            "title": "final output: y1",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_100",
+                                                    "title": "input: x2(taipei)",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_101",
+                                                            "title": "NN input: x2 + a1",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_102",
+                                                                    "title": "NN output: a2",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_103",
+                                                                            "title": "cache a2 to memory",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_104",
+                                                                                    "title": "final output: y2",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_105",
+                                            "title": "The values stored in the memory is differenct",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_106",
+                                                    "title": "leave/arrive",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_107",
+                                                            "title": "taipei",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_108",
+                    "title": "Of courrse it can be deep",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_109",
+                            "title": "input",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_110",
+                                    "title": "RNN",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_111",
+                                            "title": "RNN",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_112",
+                                                    "title": "... output",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_113",
+                    "title": "Elman Network",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_114",
+                            "title": "Hidden layer\u503c\u5b58\u8d77\u4f86\u4e0b\u4e00\u500b\u6642\u9593\u9ede\u8b80\u51fa\u4f86",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_115",
+                    "title": "Jordan Network",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_116",
+                            "title": "Output layer\u503c\u5b58\u8d77\u4f86\u4e0b\u4e00\u500b\u6642\u9593\u9ede\u8b80\u9032\u4f86",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_117",
+                            "title": "\u50b3\u8aaa\u53ef\u4ee5\u5f97\u5230\u6bd4\u8f03\u597d\u7684performance",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_118",
+                                    "title": "y target\u662f\u63a7\u5236\u7684",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_119",
+                                            "title": "\u6bd4\u8f03\u6e05\u695a\u653ememory\u88e1\u9762\u662f\u4ec0\u9ebc",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_120",
+                    "title": "Bidirectional RNN",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_121",
+                            "title": "sequence\u53e5\u9996\u5230\u53e5\u5c3e",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_122",
+                                    "title": "x^t,x^t+1,x^t+2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_123",
+                            "title": "\u4e5f\u53ef\u4ee5\u662f\u53cd\u904e\u4f86",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_124",
+                                    "title": "x^t+2,x^t+1,x^t",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_125",
+                            "title": "\u540c\u6642train\u6b63\u53cd\u5411",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_126",
+                                    "title": "\u7136\u5f8chidden layer\u62ff\u51fa\u4f86\u63a5\u7d66output layer",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_127",
+                                            "title": "\u6b63\u5411x^t\u8ddf\u8ca0\u5411x^t\u90fd\u4e1f\u7d66output",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_128",
+                                                    "title": "\u5f97\u5230y^t",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_129",
+                            "title": "\u597d\u8655\u662f\u7522\u751foutput\u524d\u770b\u7684\u7bc4\u570d\u6bd4\u8f03\u5ee3",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_130",
+                                    "title": "\u53ef\u80fd\u770b\u4e86\u6574\u500binput sentence\u4e4b\u5f8c\u624d\u6c7a\u5b9a\u8a5e\u5f59\u7684slot",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_131",
+                                    "title": "\u6bd4\u770b\u4e00\u534a\u53e5\u5b50\u5f97\u5230\u66f4\u597d\u7684performance",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_132",
+                    "title": "Long Short-term Memory (LSTM)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_133",
+                            "title": "\u6bd4\u8f03\u8907\u96dc\u7684memory",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_134",
+                                    "title": "\u67093\u500bgate",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_135",
+                                            "title": "input gate",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_136",
+                                                    "title": "signal control the input gate",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_137",
+                                                    "title": "\u6253\u958b\u6642\u5019\u624d\u80fd\u5beb\u5165memory cell",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_138",
+                                                    "title": "\u958b\u95dc\u662fNN\u81ea\u5df1\u5b78",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_139",
+                                            "title": "output gate",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_140",
+                                                    "title": "signal control the output gate",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_141",
+                                                    "title": "\u5916\u754c\u80fd\u4e0d\u80fd\u5f9e\u9019\u88e1\u62ffmemory\u503c",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_142",
+                                                    "title": "\u958b\u95dc\u662fNN\u81ea\u5df1\u5b78",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_143",
+                                            "title": "forget gate",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_144",
+                                                    "title": "signal control the forget gate",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_145",
+                                                    "title": "\u6c7a\u5b9a\u4ec0\u9ebc\u6642\u5019format memory\u8cc7\u6599",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_146",
+                                                    "title": "\u7531NN\u6c7a\u5b9a\u4ec0\u9ebc\u6642\u5019format\u6389",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_147",
+                            "title": "4 input 1 output",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_148",
+                                    "title": "1 save memory",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_149",
+                                            "title": "input z",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_150",
+                                            "title": "g(z)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_151",
+                                    "title": "3 gate input",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_152",
+                                            "title": "zi input gate",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_153",
+                                                    "title": "f(zi)",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_154",
+                                                    "title": "sigmoid",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_155",
+                                                            "title": "\u6253\u958b\u7684\u7a0b\u5ea60~1",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_156",
+                                            "title": "zf forget gate",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_157",
+                                                    "title": "f(zf)",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_158",
+                                                    "title": "sigmoid",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_159",
+                                                            "title": "\u6253\u958b\u7684\u7a0b\u5ea60~1",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_160",
+                                                    "title": "\u6253\u958b\u662f1 \u8a18\u5f97",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_161",
+                                                    "title": "\u95dc\u6389\u662f0 \u5fd8\u8a18",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_162",
+                                                    "title": "forget gate\u540d\u7a31\u6709\u9ede\u602a",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_163",
+                                            "title": "zo output gate",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_164",
+                                                    "title": "f(zo)",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_165",
+                                    "title": "in memory data",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_166",
+                                            "title": "c",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_167",
+                                            "title": "c*f(zf)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_168",
+                                    "title": "1 load memory",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_169",
+                                            "title": "output a",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_170",
+                                    "title": "input g(z)*f(zi)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_171",
+                                            "title": "c' = g(z)*f(zi)+cf(zf)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_172",
+                                    "title": "output",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_173",
+                                            "title": "a= h(c')*f(zo)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_174",
+                            "title": "LSTM\u7684memory cell\u60f3\u6210\u662fNeuron",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_175",
+                                    "title": "\u5c31\u6703\u50cf\u662fNN",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_176",
+                                            "title": "\u5dee\u5225\u662f4\u500binput\u624d\u80fd\u7522\u751foutput",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_177",
+                                                    "title": "\u540c\u6a23\u6578\u91cfneuron",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_178",
+                                                            "title": "\u53c3\u6578\u91cf\u89814\u500d",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_179",
+                            "title": "\u6b63\u5f0f\u7528\u6cd5\u4e0a\u4e00\u500b\u6642\u9593\u9ede\u7684hidden layer\u8f38\u51fa\u6703\u63a5\u7d66\u4e0b\u4e00\u500bx^t\u7684input\u63a7\u5236gate",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_180",
+                            "title": "\u7136\u5f8c\u518d\u52a0\u4e00\u500b",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_181",
+                                    "title": "extension: peephole",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_182",
+                                            "title": "\u628amemory cell\u7684\u503c\u4e5f\u62c9\u5230\u4e0b\u4e00\u500binput\u63a7\u5236gate",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_183",
+                                            "title": "\u64cd\u4f5cgate\u540c\u662f\u8003\u616e input x, h , c",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_184",
+                                                    "title": "\u4e26\u5728\u4e00\u8d77transform\u6210\u56db\u500b\u4e0d\u540cvector",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_185",
+                                                            "title": "\u64cd\u63a7LSTM",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_186",
+                            "title": "Multiple-layer LSTM\u5716\u975e\u5e38\u8907\u96dc",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_187",
+                                    "title": "This is quite standard now",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_188",
+                    "title": "Keras\u652f\u63f4\u4e09\u7a2erecurent network",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_189",
+                            "title": "LSTM",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_190",
+                            "title": "GRU",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_191",
+                                    "title": "LSTM\u7c21\u5316\u7248\u672c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_192",
+                                            "title": "\u53ea\u67092\u500bgate",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_193",
+                                                    "title": "performance\u8ddfLSTM\u5dee\u4e0d\u591a",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_194",
+                                                    "title": "\u5c11\u4e861/3\u53c3\u6578",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_195",
+                            "title": "SimpleRNN",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_196",
+                                    "title": "\u6700\u7c21\u55aeRNN\u7248\u672c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

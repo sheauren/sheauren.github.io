@@ -1,0 +1,1082 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "2 Where does the error come from",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "Where does the error come from",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "error due to \"bias\"",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_2",
+                    "title": "error due to \"variance\"",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_3",
+                    "title": "a more complex model does not always lead to better performance on testing data",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_4",
+                    "title": "\u5982\u679c\u80fd\u8a3a\u65b7\u4f60\u7684error\u4f86\u6e90\u5c31\u53ef\u4ee5\u6311\u9078\u9069\u7576\u7684\u65b9\u6cd5\u4f86\u6574\u9813error",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_5",
+                    "title": "example \u627e\u5bf6\u53ef\u5922CP\u503c\u6700\u4f73function",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_6",
+                            "title": "f^ \uff1d f^(\u5bf6\u53ef\u5922)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_7",
+                                    "title": "\u6700\u4f73function",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_8",
+                            "title": "from training data",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_9",
+                                    "title": "we find f*",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_10",
+                            "title": "f* is an estimator of f^",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_11",
+                            "title": "f* \u8207 f^\u4e4b\u9593\u7684\u5dee\u8ddd\u4f86\u81ea\u65bc",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_12",
+                                    "title": "bias",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_13",
+                                    "title": "variance",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_14",
+                    "title": "Bais and vaiance of Estimator",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_15",
+                            "title": "Estimate the mean of a variable x",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_16",
+                                    "title": "assume the mean of x is \u03bc",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_17",
+                                    "title": "assume the variance of x is \u03c3^2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_18",
+                            "title": "Estimator of mean \u03bc",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_19",
+                                    "title": "Simple N point: {x^1,x^2,... x^n}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_20",
+                                    "title": "m = 1/N*\u2211_n x^n != \u03bc",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_21",
+                                            "title": "\u9664\u975en\u6709\u7121\u9650\u591a\u500b\u9ede",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_22",
+                            "title": "Estimator of variance \u03c3^2",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_23",
+                                    "title": "Var[m] = \u03c3^2 / N",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_24",
+                                            "title": "Variance depends on the number of samples",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_25",
+                                            "title": "s^2 = 1/N*\u2211_n(x^n-m)^2 \u2248 \u03c3^2",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_26",
+                                            "title": "m = 1/N*\u2211_n(x^n)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_27",
+                                            "title": "E[s^2] = (N-1)/N * \u03c3^2  \u2260 \u03c3^2",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_28",
+                            "title": "Estimator",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_29",
+                                    "title": "f^",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_30",
+                                            "title": "\u628a\u4e2d\u5fc3",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_31",
+                                    "title": "bias",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_32",
+                                            "title": "\u7784\u6e96\u4e2d\u5fc3\u662f\u5426\u504f\u79fb",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_33",
+                                    "title": "variance",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_34",
+                                            "title": "\u7784\u6e96\u4f4d\u7f6e\u504f\u79fb\u7684\u60c5\u6cc1",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_35",
+                                    "title": "\u96c6\u4e2d\u4e2d\u5fc3\u4f46\u662f\u5206\u6563",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_36",
+                                            "title": "variance\u504f\u79fb",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_37",
+                                    "title": "\u96c6\u4e2d\u9ede\u8207\u4e2d\u5fc3\u6709\u843d\u5dee\u4f46\u4e0d\u5206\u6563",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_38",
+                                            "title": "bias\u504f\u79fb",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_39",
+                            "title": "\u7528\u4e0d\u540c\u7684training data",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_40",
+                                    "title": "f*\u6703\u4e0d\u540c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_41",
+                                    "title": "\u7c21\u55ae\u7684model\u6bd4\u8f03\u96c6\u4e2d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_42",
+                                            "title": "variance\u6bd4\u8f03\u5c0f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_43",
+                                            "title": "\u6bd4\u8f03\u4e0d\u6703\u53d7\u5230\u4e0d\u540cdata\u5f71\u97ff",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_44",
+                                    "title": "\u8907\u96dc\u7684model\u6563\u4f48\u975e\u5e38\u5ee3",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_45",
+                                            "title": "variance\u8d8a\u4f86\u8d8a\u5927",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_46",
+                            "title": "bias",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_47",
+                                    "title": "if we average all the f*, is it close to f^",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_48",
+                                    "title": "Large bias",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_49",
+                                            "title": "\u6574\u9ad4\u504f\u79fb",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_50",
+                                    "title": "Small bias",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_51",
+                                            "title": "\u6838\u5fc3\u8207\u9776\u5fc3\u63a5\u8fd1",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_52",
+                                    "title": "5000 f*\u5e73\u5747",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_53",
+                                            "title": "1\u6b21\u65b9",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_54",
+                                                    "title": "\u8207f^\u6709\u5dee\u8ddd",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_55",
+                                                    "title": "\u8f03\u5927\u7684bias",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_56",
+                                                    "title": "large bias",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_57",
+                                            "title": "2\u6b21\u65b9",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_58",
+                                                    "title": "\u8cbc\u8fd1f^",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_59",
+                                                    "title": "\u8f03\u5c0f\u7684bias",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_60",
+                                            "title": "3\u6b21\u65b9",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_61",
+                                                    "title": "\u66f4\u8cbc\u8fd1f^",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_62",
+                                                    "title": "\u6bd4\u8f03\u5c0f\u7684bais",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_63",
+                                                    "title": "Small bias",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_64",
+                                    "title": "why",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_65",
+                                            "title": "model\u662f\u4e00\u500bfunction set=>\u4e00\u500b\u7bc4\u570d",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_66",
+                                                    "title": "\u5b9a\u4e00\u500bmodel\u5c31\u5df2\u7d93\u9078\u597d\u5728\u9776\u7684\u7bc4\u570d",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_67",
+                                                    "title": "\u6700\u597d\u7684function\u53ea\u80fd\u5728\u9019\u500b\u7bc4\u570d\u6311\u9078\u51fa\u4f86",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_68",
+                                                            "title": "\u5c0f\u7684model\u7bc4\u570d\u6bd4\u8f03\u5c0f",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_69",
+                                                                    "title": "\u53ef\u80fd\u6839\u672c\u6c92\u5305\u542b\u5230target",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_70",
+                                                                    "title": "\u53ea\u80fd\u5728\u63a5\u8fd1\u7684\u5730\u65b9",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_71",
+                                                                    "title": "small variance",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_72",
+                                                                    "title": "big bias",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_73",
+                                                            "title": "\u5927\u7684model\u7bc4\u570d\u66f4\u5927",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_74",
+                                                                    "title": "\u53ef\u80fd\u6709\u6db5\u84cb\u5230\u76ee\u6a19",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_75",
+                                                                    "title": "\u53ea\u662f\u6c92\u6709\u8fa6\u6cd5\u627e\u51fatarget\u5728\u54ea\u88cf",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_76",
+                                                                            "title": "\u56e0\u70batraining data\u4e0d\u5920",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_77",
+                                                                    "title": "Small bias",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_78",
+                                                                    "title": "Larger variance",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_79",
+                                            "title": "error bias\u4f9d\u7167\u8907\u96dc\u5ea6\u8d8a\u4f86\u8d8a\u5c11",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_80",
+                                            "title": "error variance\u4f9d\u7167\u8907\u96dc\u5ea6\u8d8a\u4f86\u8d8a\u5927",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_81",
+                                            "title": "\u6700\u4f73\u9ede",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_82",
+                                                    "title": "bias\u7e2evariance\u9084\u53d7\u63a7\u5236\u7684\u6642\u5019",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_83",
+                                                            "title": "\u56e0variance\u9020\u6210error",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_84",
+                                                                    "title": "overfitting",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_85",
+                                                            "title": "bias\u5f88\u5927\u9020\u6210error",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_86",
+                                                                    "title": "underfitting",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_87",
+                                    "title": "what to do with large bias?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_88",
+                                            "title": "model cannot even fit the training data",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_89",
+                                                    "title": "then you have large bias",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_90",
+                                                    "title": "bias\u5927",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_91",
+                                                    "title": "underfitting",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_92",
+                                            "title": "model fit the training,but large error on testing data, then you probably have large variance",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_93",
+                                                    "title": "variance\u5927",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_94",
+                                                    "title": "overrfiting",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_95",
+                                            "title": "for bias",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_96",
+                                                    "title": "redesign your model",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_97",
+                                                            "title": "add more feature as input",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_98",
+                                                            "title": "a more complex model",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_99",
+                                            "title": "for variance",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_100",
+                                                    "title": "more data",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_101",
+                                                            "title": "very effective but no always practical",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_102",
+                                                            "title": "collect more data",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_103",
+                                                            "title": "data augmentation",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_104",
+                                                    "title": "regularization \u03bb",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_105",
+                                                            "title": "add \u03bb smooth f*\u66f2\u7dda",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_106",
+                                                            "title": "\u4f9d\u64da\u03bb\u6c7a\u5b9a\u5e73\u6ed1\u7a0b\u5ea6",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_107",
+                                                            "title": "\u4f46\u662f\u53ef\u80fd\u6703\u50b7\u5bb3bias",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_108",
+                    "title": "Model Selection",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_109",
+                            "title": "a trade-off between bias and variance",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_110",
+                            "title": "Select a model that balance two kinds of error to minimize total error",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_111",
+                            "title": "what you should NOT do:",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_112",
+                                    "title": "training set/testing set/real testing set1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_113",
+                                            "title": "model 1 -> Err = 0.9",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_114",
+                                            "title": "model 2 -> Err = 0.7",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_115",
+                                            "title": "model 3 -> Err = 0.5(I beat baseline) => Err > 0.5 (no you don't)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_116",
+                                            "title": "best is model 3?",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_117",
+                                            "title": "testing set\u6709\u81ea\u5df1\u7684bias",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_118",
+                                                    "title": "\u62fftesting set\u4f86\u9078\u6700\u597d\u7684model",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_119",
+                                                            "title": "\u65bcreal testing\u901a\u5e38\u4e0d\u662f\u6700\u597d\u7684model",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_120",
+                            "title": "Cross validation",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_121",
+                                    "title": "split training set",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_122",
+                                            "title": "training set",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_123",
+                                            "title": "validation set",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_124",
+                                            "title": "\u7528\u9019\u8cc7\u6599\u4f86\u9078model(training by training set)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_125",
+                                                    "title": "model1",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_126",
+                                                            "title": "validation Err=0.9",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_127",
+                                                    "title": "model2",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_128",
+                                                            "title": "validation Err=0.7",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_129",
+                                                    "title": "model3",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_130",
+                                                            "title": "validation Err=0.5",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_131",
+                                                            "title": "best f*",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_132",
+                                            "title": "\u6c7a\u5b9amodel\u518d\u7528\u5168\u90e8\u7684data\u5728training",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_133",
+                                                    "title": "\u518d\u53bbpublic Testing Set\u6e2c\u8a66",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_134",
+                                                            "title": "\u53ef\u80fd\u6703\u5f97\u5230 Err > 0.5",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_135",
+                                                                    "title": "private Testing Set",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_136",
+                                                                            "title": "Err > 0.5",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_137",
+                                                            "title": "\u8868\u9762\u4e0a\u770b\u8d77\u4f86\u6bd4\u8f03\u5927\u4f46\u662f\u624d\u80fd\u771f\u7684\u53cd\u61c9Error",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_138",
+                                                            "title": "\u4e0d\u63a8\u85a6\u5982\u679c\u6e2c\u8a66\u7d50\u679c\u4e0d\u597d\u518d\u56de\u53bb\u91cd\u6e2c",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_139",
+                                                                    "title": "\u56e0\u70bamodel\u88e1\u9762\u5df2\u7d93\u6709public dataset\u7684bias",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_140",
+                                    "title": "\u6015validation\u5206\u58de\u4e86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_141",
+                                    "title": "N-fold Cross validation",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_142",
+                                            "title": "\u4e0d\u76f8\u4fe1\u67d0\u4e00\u6b21\u5206\u7684validation",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_143",
+                                            "title": "3-fold cross validation",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_144",
+                                                    "title": "[Train][Train][Valid]",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_145",
+                                                    "title": "[Train][Valid][Train]",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_146",
+                                                    "title": "[Valid][Train][Train]",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_147",
+                                                    "title": "3\u500bmodel\u4e09\u7a2e\u90fd\u8dd1\u4e00\u6b21\u770bError",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_148",
+                                                            "title": "model1 Error 0.2,0.4,0.3",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_149",
+                                                            "title": "model2 Error 0.4,0.5,0.6",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_150",
+                                                            "title": "model3 Error 0.4,0.5,0.3",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_151",
+                                                            "title": "\u770bavg error\u8ab0\u6700\u597d",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_152",
+                                                                    "title": "model1 avg error=0.3",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_153",
+                                            "title": "model 1\u5728training\u5b8c\u6574training set",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_154",
+                                            "title": "\u5c11\u7528public testing\u8abf\u6574model",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_155",
+                                            "title": "\u5728private testing\u7684\u7d50\u679c\u624d\u6703\u6bd4\u8f03\u597d",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_156",
+                                                    "title": "\u8207public testing\u5dee\u8ddd\u6703\u6bd4\u8f03\u5c0f",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

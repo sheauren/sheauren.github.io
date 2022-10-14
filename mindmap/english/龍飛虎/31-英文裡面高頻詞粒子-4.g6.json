@@ -1,0 +1,202 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "31-\u82f1\u6587\u88e1\u9762\u9ad8\u983b\u8a5e\u7c92\u5b50-4",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u82f1\u6587\u88e1\u9762\u9ad8\u983b\u8a5e\u7c92\u5b50-4",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "\u55ae\u6578\u548c\u8907\u6578\u7684\u4e0d\u540c\u7528\u9014\u5340\u9694",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_3",
+                            "title": "'S\u7684\u7528\u9014\u8981\u8a18\u4f4f",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_4",
+                    "title": "...s",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_5",
+                            "title": "\u5169\u500b\u7528\u9014",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_6",
+                                    "title": "\u7b2c\u4e00\u500b\u7528\u9014",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_7",
+                                            "title": "singular",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_8",
+                                                    "title": "\u55ae\u6578(1)",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_9",
+                                                    "title": "word",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_10",
+                                                    "title": "book",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_11",
+                                                    "title": "apple",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_12",
+                                            "title": "plural",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_13",
+                                                    "title": "\u8907\u6578(2...n)",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_14",
+                                                    "title": "words",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_15",
+                                                    "title": "books",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_16",
+                                                    "title": "apples",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_17",
+                                    "title": "\u7b2c\u4e8c\u500b\u7528\u9014",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_18",
+                                            "title": "apostrophe",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_19",
+                                            "title": "\u8072\u97f3",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_20",
+                                                    "title": "ssss",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_21",
+                                            "title": "\u66f8\u9762",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_22",
+                                                    "title": "'s",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_23",
+                                                    "title": "\u7684",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_24",
+                                            "title": "john's house",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_25",
+                                            "title": "china's policy",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_26",
+                                            "title": "lenovo's new model",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_27",
+                                            "title": "the apple's red skin",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_28",
+                    "title": "\u628a\u82f1\u6587\u8a5e\u7c92\u5b50\u7684\u5b58\u5728\u50f9\u503c\u8207\u7528\u9014\u8a18\u5728\u5fc3\u88e1",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        }
+    ]
+}

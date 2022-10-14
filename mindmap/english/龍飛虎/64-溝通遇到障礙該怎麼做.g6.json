@@ -1,0 +1,276 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "64-\u6e9d\u901a\u9047\u5230\u969c\u7919\u8a72\u600e\u9ebc\u505a",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u6e9d\u901a\u9047\u5230\u969c\u7919\u8a72\u600e\u9ebc\u505a",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "\u82f1\u8a9e\u6293\u4e0d\u4f4f\u610f\u601d\u7684\u554f\u6cd5",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_3",
+                                    "title": "I'm sorry, I don't understand",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_4",
+                                    "title": "What's that?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_5",
+                                    "title": "Could you say that again,please?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_6",
+                                    "title": "what does that mean?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_7",
+                                    "title": "You lose me there, Come again!",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_8",
+                                    "title": "Huh?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_9",
+                    "title": "\u6e9d\u901a\u9047\u5230\u969c\u7919",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_10",
+                            "title": "\u5225\u4eba\u807d\u4e0d\u61c2\u6211",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_11",
+                            "title": "\u6211\u807d\u4e0d\u61c2\u5225\u4eba",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_12",
+                            "title": "\u6211\u8a72\u600e\u9ebc\u8fa6",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_13",
+                    "title": "\u6e9d\u901a\u672c\u8eab\u5728\u6bcd\u8a9e\u88e1\u9762\u969c\u7919\u5c31\u5f88\u591a",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_14",
+                            "title": "\u807d\u4e0d\u6e05\u695a",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_15",
+                            "title": "\u6293\u4e0d\u4f4f\u6838\u5fc3\u6db5\u7fa9",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_16",
+                            "title": "\u6709\u807d\u5230\u8a5e\u4e0d\u77e5\u9053\u5728\u6e9d\u901a\u4ec0\u9ebc",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_17",
+                            "title": "\u65e5\u5e38\u6b63\u5e38\u6e9d\u901a\u5e38\u5e38\u5c31\u6703\u6293\u4e0d\u6e96\u5c0d\u65b9\u5728\u8aaa\u4ec0\u9ebc",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_18",
+                            "title": "\u4eba\u5bb6\u8aaa\u7684\u8a71\u4f60\u807d\u4e0d\u660e\u767d",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_19",
+                                    "title": "\u91cd\u65b0\u8aaa\u624d\u660e\u767d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_20",
+                            "title": "\u6bcd\u8a9e\u807d\u4e0d\u6e05\u695a",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_21",
+                                    "title": "\u4e0d\u6703\u6709\u7169\u60f1\u767c\u706b\u7684\u53cd\u61c9",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_22",
+                                    "title": "\u6211\u662f\u6c92\u7528\u7684\u53cd\u61c9",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_23",
+                            "title": "\u6b63\u5e38\u6bcd\u8a9e\u8005\u807d\u4e0d\u61c2\u7684\u53cd\u61c9\u662f",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_24",
+                                    "title": "\u554f",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_25",
+                                            "title": "\u91cd\u65b0",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_26",
+                                    "title": "\u6c92\u641e\u660e\u767d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_27",
+                                            "title": "\u518d\u554f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_28",
+                    "title": "\u82f1\u8a9e\u6e9d\u901a\u51fa\u73fe\u969c\u7919\u600e\u9ebc\u8fa6",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_29",
+                            "title": "\u554f",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_30",
+                                    "title": "\u5c31\u9019\u9ebc\u7c21\u55ae",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_31",
+                            "title": "\u6211\u4e0d\u61c2",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_32",
+                                    "title": "\u518d\u8aaa\u4e00\u904d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_33",
+                            "title": "\u82f1\u8a9e\u5f88\u591a\u77ed\u53e5\u7528\u65bc\u9019\u500b\u72c0\u614b",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_34",
+                                    "title": "I'm sorry, I don't understand",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_35",
+                                    "title": "What's that?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_36",
+                                    "title": "Could you say that again,please?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_37",
+                                    "title": "what does that mean?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_38",
+                                    "title": "You lose me there, Come again!",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_39",
+                                    "title": "Huh?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,168 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "35-\u82f1\u6587\u88e1\u9762\u9ad8\u983b\u8b8a\u5f62\u8a5e-4",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u82f1\u6587\u88e1\u9762\u9ad8\u983b\u8b8a\u5f62\u8a5e-4",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "have\u6709\u5169\u500b\u6709\u5169\u500b\u5ea6",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_3",
+                                    "title": "\u4e2d\u6587\u76f4\u8b6f\"\u64c1\u6709\"",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_4",
+                                    "title": "\u6587\u6cd5\u8a5e\u7c92\u5b50\u8868\u793a\u4e2d\u6587\"\u904e\"\u548c\"\u4e86\"\u7684\u610f\u601d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_5",
+                    "title": "Have",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_6",
+                            "title": "\u82f1\u8a9e\u6e9d\u901a\u6838\u5fc3\u5c0f\u5de5\u5177",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_7",
+                            "title": "\u6709\u56db\u500b\u8b8a\u5f62",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_8",
+                                    "title": "have",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_9",
+                                    "title": "has",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_10",
+                                    "title": "had",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_11",
+                                    "title": "will have",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_12",
+                            "title": "\u672c\u610f",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_13",
+                                    "title": "\u64c1\u6709",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_14",
+                            "title": "\u8a9e\u6cd5\u8a5e\u7c92\u5b50",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_15",
+                                    "title": "\u4e86,\u904e(\u5b8c\u6210)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_16",
+                                            "title": "have + verb",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_17",
+                                                    "title": "They have come to play",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_18",
+                                                    "title": "I have been watching you",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_19",
+                                            "title": "had + verb",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_20",
+                                                    "title": "She had been sleeping",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_21",
+                                            "title": "has + verb",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_22",
+                                                    "title": "He has been studying",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

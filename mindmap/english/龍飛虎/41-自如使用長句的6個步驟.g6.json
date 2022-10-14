@@ -1,0 +1,650 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "41-\u81ea\u5982\u4f7f\u7528\u9577\u53e5\u76846\u500b\u6b65\u9a5f",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u81ea\u5982\u4f7f\u7528\u9577\u53e5\u76846\u500b\u6b65\u9a5f",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "\u5206\u6790\u82f1\u6587\u9577\u53e56\u6b65\u9a5f",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_3",
+                                    "title": "\u9577\u53e5\u4e2d\u627e\u77ed\u53e5",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_4",
+                                    "title": "\u60f3\u50cf\u756b\u9762\u60c5\u7bc0",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_5",
+                                    "title": "\u9577\u53e5\u5206\u7368\u7acb\u6db5\u7fa9",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_6",
+                                    "title": "\u5c0b\u627e\u56fa\u5b9a\u7247\u8a9e",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_7",
+                                    "title": "\u627e\u51fa\u8a9e\u6cd5\u4fe1\u606f",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_8",
+                                    "title": "\u7528\u6bd4\u55bb\u7406\u89e3\u6db5\u7fa9",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_9",
+                    "title": "\u82f1\u6587\u9577\u53e5\u5b50\u7279\u5225\u96e3\u660e\u767d",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_10",
+                    "title": "\u53e3\u982d\u8a9e\u6c92\u6709\u9577\u53e5\u5b50",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_11",
+                            "title": "\u82f1\u6587\u4ea4\u6d41\u5e7e\u4e4e\u6c92\u6709\u9577\u53e5",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_12",
+                    "title": "\u9577\u53e5\u51fa\u73fe\u5728\u66f8\u9762\u8a9e\u5c45\u591a",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_13",
+                            "title": "It is part of the personal discipline,",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_14",
+                            "title": "no matter how formindable the re-inventorying may seem,",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_15",
+                            "title": "to commit myself to the task when inspried by intuitive glimpses",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_16",
+                            "title": "of important new relationships-inspried overpoweringly because of",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_17",
+                            "title": "the realized human potential of progressive escape from ignorance",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_18",
+                            "title": "\u6bcd\u8a9e\u8005\u807d\u4e86\u4e5f\u6703\u6688",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_19",
+                            "title": "\u9019\u7a2e\u5beb\u6cd5\u589e\u52a0\u95b1\u8b80\u7684\u96e3\u5ea6",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_20",
+                            "title": "\u7d93\u5e38\u4e0d\u9700\u8981\u9019\u7a2e\u8907\u96dc\u7d50\u69cb",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_21",
+                            "title": "\u9019\u7a2e\u5beb\u6cd5\u53cd\u61c9\u4f5c\u8005\u82f1\u6587\u6c34\u5e73\u4e0d\u9ad8",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_22",
+                    "title": "\u5beb\u82f1\u6587\u597d\u53e5\u5b50",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_23",
+                            "title": "\u8981\u7528\u7c21\u77ed\u7684\u53e5\u5b50",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_24",
+                            "title": "\u8981\u7528\u9ad8\u983b\u7684\u90a3\u4e9b\u8a5e",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_25",
+                            "title": "\u76e1\u91cf\u570d\u7e5e\u53ef\u60f3\u50cf\u7684\u8a5e",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_26",
+                                    "title": "\u4e0d\u662f\u592a\u62bd\u8c61",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_27",
+                    "title": "\u9047\u5230\u8907\u96dc\u8d85\u9577\u53e5\u5b50\u61c9\u8a72\u600e\u9ebc\u8fa6",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_28",
+                            "title": "\u8a8d\u8b58\u5230\u96e3\u5ea6\u8ddf\u4f5c\u8005\u7684\u98a8\u683c\u6709\u5f88\u5927\u95dc\u4fc2",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_29",
+                            "title": "\u5fcd\u8010\u6b67\u8b70",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_30",
+                            "title": "\u8981\u589e\u52a0\u81ea\u5df1\u7684\u4fe1\u5fc3",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_31",
+                                    "title": "\u4e00\u6b65\u4e00\u6b65\u597d\u597d\u5206\u6790\u6e05\u695a",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_32",
+                    "title": "6\u500b\u6b65\u9a5f",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_33",
+                            "title": "Clive,now a chief executive of an internet start-up company,",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_34",
+                            "title": "is one of those people who you can imagine,",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_35",
+                            "title": "as a child, would totally mess up the teacher's script.",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_36",
+                            "title": "\u4e86\u89e3\u597d\u9577\u53e5\u662f\u4e00\u7a2e\u6a21\u5f0f\u8b58\u5225\u904e\u7a0b",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_37",
+                                    "title": "1.\u9577\u53e5\u5148\u627e\u5230\u77ed\u53e5",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_38",
+                                            "title": "\u62c6\u6210\u4e09\u500b\u77ed\u53e5",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_39",
+                                                    "title": "a chief executive of an internet start-up company,",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_40",
+                                                            "title": "2.\u60f3\u50cf\u756b\u9762\u8ddf\u611f\u89ba",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_41",
+                                                                    "title": "chief executive",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_42",
+                                                                    "title": "internet",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_43",
+                                                                    "title": "company",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_44",
+                                                    "title": "is one of those people who you can imagine",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_45",
+                                                            "title": "2.\u60f3\u50cf\u756b\u9762\u8ddf\u611f\u89ba",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_46",
+                                                                    "title": "people",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_47",
+                                                                    "title": "imagine",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_48",
+                                                    "title": "as a child, would totally mess up the teacher's script.",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_49",
+                                                            "title": "2.\u60f3\u50cf\u756b\u9762\u8ddf\u611f\u89ba",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_50",
+                                                                    "title": "child",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_51",
+                                                                    "title": "teacher",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_52",
+                                                                    "title": "script",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_53",
+                                    "title": "3.\u7528\u62ec\u865f\u770b\u5177\u9ad4\u7684\u6db5\u7fa9\u55ae\u5143",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_54",
+                                            "title": "\u5728\u6578\u5b78\u88e1\u9762\u7528\u62ec\u865f\u6bd4\u8f03\u5bb9\u6613\u660e\u767d",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_55",
+                                            "title": "\u8a9e\u8a00\u4e5f\u662f\u62ec\u865f\u57fa\u790e\u4e0a\u627e\u975e\u5e38\u91cd\u8981\u6db5\u7fa9\u55ae\u5143",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_56",
+                                            "title": "4.\u627e\u51fa\u56fa\u5b9a\u7684\u7247\u8a9e\u6a21\u5f0f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_57",
+                                                    "title": "one of those people",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_58",
+                                                            "title": "\u90a3\u4e00\u985e\u4eba",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_59",
+                                                            "title": "\u90a3\u4e00\u7fa4\u4eba",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_60",
+                                                    "title": "you can imagine",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_61",
+                                                            "title": "\u60f3\u50cf\u4e00\u4ef6\u4e8b\u60c5",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_62",
+                                                    "title": "as a child",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_63",
+                                                            "title": "\u7576\u4ed6\u662f\u5c0f\u5b69\u6642",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_64",
+                                                    "title": "mess up",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_65",
+                                                            "title": "\u5f04\u4e82",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_66",
+                                    "title": "5.\u627e\u8a9e\u6cd5\u8a0a\u606f",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_67",
+                                            "title": "Clive (is) now a chief executive",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_68",
+                                            "title": "Clive is one of those people",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_69",
+                                            "title": "(who) he would totally mess up the teacher's script",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_70",
+                                    "title": "6.\u6bd4\u55bb\u5e6b\u81ea\u5df1\u7406\u89e3\u5176\u4ed6\u7684\u65b9\u6cd5",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_71",
+                                            "title": "\u7528\u6bd4\u55bb\u89e3\u6c7a\u82f1\u6587\u6587\u5316\u7684\u7406\u89e3",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_72",
+                            "title": "\u516d\u500b\u65b9\u6cd5\u8981\u540c\u6642\u9032\u884c",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_73",
+                                    "title": "\u8981\u4e0d\u65b7\u7684\u7df4\u7fd2\u7df4\u597d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_74",
+                                            "title": "\u7df4\u6210\u756b\u9762",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_75",
+                                            "title": "\u81ea\u7136\u689d\u4ef6\u53cd\u5c04",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_76",
+                                    "title": "\u8981\u7d93\u904e\u7247\u8a9e\u5c0d\u7167\u6cd5",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_77",
+                                            "title": "\u628a\u56fa\u5b9a\u548c\u534a\u56fa\u5b9a\u7684\u5c0f\u7247\u8a9e\u8b8a\u5f97\u975e\u5e38\u7684\u719f\u6089",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_78",
+                                            "title": "\u4e0d\u662f\u628a\u88e1\u9762\u7684\u55ae\u5b57\u5206\u51fa\u4f86",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_79",
+                                    "title": "\u7528\u756b\u9762\u8ddf\u611f\u89ba",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_80",
+                                            "title": "\u628a\u82f1\u6587\u6587\u6cd5\u7684\u8a0a\u606f\u8b8a\u6210\u81ea\u52d5\u5316",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_81",
+                                            "title": "\u53ea\u6709\u807d\u5230\u8ddf\u770b\u5230\u8a9e\u6cd5\u9ede\u5b50",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_82",
+                                                    "title": "\u99ac\u4e0a\u660e\u767d\u6e9d\u901a\u4ec0\u9ebc",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_83",
+                                    "title": "\u8981\u4e0d\u65b7\u7684\u6ce8\u610f\u90a3\u4e9b\u82f1\u8a9e\u7684\u77ed\u53e5",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_84",
+                                            "title": "\u56e0\u70ba\u82f1\u8a9e\u6709\u5f88\u591a\u77ed\u53e5",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_85",
+                                            "title": "\u8d8a\u80fd\u5920\u6ce8\u610f\u5468\u570d\u82f1\u8a9e\u7684\u77ed\u53e5",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_86",
+                                                    "title": "\u8d8a\u80fd\u5920\u6293\u4f4f\u9577\u53e5\u88e1\u9762\u7684\u5c0f\u6a21\u584a",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_87",
+                                    "title": "\u807d\u82f1\u8a9e\u7684\u6642\u5019\u7279\u5225\u6ce8\u610f\u7bc0\u594f\u8ddf\u65cb\u5f8b",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_88",
+                                            "title": "\u7bc0\u594f\u8ddf\u65cb\u5f8b\u662f\u5e6b\u52a9\u4f60\u505a\u62ec\u865f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_89",
+                                            "title": "\u6211\u5011\u8aaa\u8a71\u7684\u6642\u5019\u662f\u7528\u7bc0\u594f\u4f86\u62ec\u865f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_90",
+                                            "title": "\u807d\u591a\u5c31\u77e5\u9053\u62ec\u865f\u7684\u4f4d\u7f6e",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_91",
+                                            "title": "\u6e96\u78ba\u62ec\u865f\u7684\u4f4d\u7f6e",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_92",
+                                    "title": "\u628a\u9019\u4e9b\u6280\u80fd\u7df4\u5230\u689d\u4ef6\u53cd\u5c04",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_93",
+                                            "title": "\u770b\u82f1\u6587\u9577\u53e5\u554f\u984c\u5c31\u4e0d\u5927",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_94",
+                                            "title": "\u53ef\u4ee5\u8d70\u9032\u4e00\u500b\u975e\u5e38\u81ea\u4fe1\u8212\u670d\u7684\u95b1\u8b80\u904e\u7a0b",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

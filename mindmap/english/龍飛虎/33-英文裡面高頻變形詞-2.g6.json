@@ -1,0 +1,198 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "33-\u82f1\u6587\u88e1\u9762\u9ad8\u983b\u8b8a\u5f62\u8a5e-2",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u82f1\u6587\u88e1\u9762\u9ad8\u983b\u8a5e\u8b8a\u5f62\u8a5e-2",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "\u638c\u63e1\u8b8a\u5f62\u8a5e(to)be\u5169\u5ea6\u7684\u61c9\u7528\u898f\u5f8b",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_3",
+                            "title": "\u9023\u63a5\u5fc3\u4e2d\u7684\u756b\u9762\u548c\u611f\u89ba\u4f86\u5b78\u82f1\u6587",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_4",
+                    "title": "\u5b58\u5728\u72c0\u614b\u6a19\u7c64\u8a5e(to)be",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_5",
+                            "title": "\u591a\u5ea6\u542b\u7fa9\u55ae\u5143",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "\u90fd\u4ee3\u8868\"\u662f\"",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_7",
+                                    "title": "Am",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_8",
+                                    "title": "Will be",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_9",
+                                    "title": "Where",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_10",
+                                    "title": "Is",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_11",
+                                    "title": "(To)be",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_12",
+                                    "title": "Are",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_13",
+                                    "title": "Being",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_14",
+                                    "title": "Was",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_15",
+                            "title": "\u5f71\u97ff\u5f62\u5f0f",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_16",
+                                    "title": "\u6211/\u4f60/\u4ed6/\u5979/\u5b83/\u4ed6\u5011",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_17",
+                                            "title": "I/You/he/she/it/they",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_18",
+                                    "title": "\u904e\u53bb/\u73fe\u5728/\u6b63\u5728",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_19",
+                                            "title": "Was/Were/Was/Were",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_20",
+                                            "title": "Am/Are/Is/Are",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_21",
+                                    "title": "\u672a\u4f86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_22",
+                                            "title": "Will Be",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_23",
+                            "title": "\u4e00\u500b\u76d2\u5b50\u5169\u689d\u8def",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_24",
+                                    "title": "was/were",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_25",
+                                            "title": "\u6642\u9593\u5f80\u56de\u7684\u756b\u9762",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_26",
+                                    "title": "will be",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_27",
+                                            "title": "\u6642\u9593\u672a\u4f86\u7684\u756b\u9762",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

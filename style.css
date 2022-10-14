@@ -1,0 +1,98 @@
+body{
+    font-family:微軟正黑體;
+}
+.ant-layout-header{
+    background-color: #1F497D;
+}
+.ant-layout-sider{
+    background-color: #1F497D !important;    
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:20px;
+    top:32px;
+}
+.ant-tree-node-content-wrapper{
+    white-space:nowrap;
+}
+
+.ant-tree{
+    position: fixed;
+    border-radius: 8px;
+    left:8px;
+    width:180px;
+    bottom:28px;
+    top:68px;
+    background-color: white;    
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.ant-breadcrumb{
+    color:black;
+    
+}
+.detail-content{
+    position:fixed;
+    left:200px;
+    right:0px;
+    bottom:20px;
+    top:32px;
+}
+.ant-layout-footer{
+    
+    padding:0
+}
+.ant-layout-sider-trigger{
+    bottom:30px;
+}
+.ant-layout-header{
+    height:36px !important;
+    line-height:36px !important;
+    padding:0px !important;
+}
+.ant-collapse-header{
+    padding: 2px !important;
+    margin-right:6px;
+    text-align:left;
+    color:#f5f5dc !important;
+}
+.ant-collapse{
+    background-color: #FFF !important;
+}
+
+.ant-collapse-content-box{
+    padding: 0px 4px 0px 0px !important;
+    margin:0px !important;
+    text-align:center;
+}
+.ant-card-body{
+    padding:5px;
+}
+
+.ant-tree-title {
+    white-space: nowrap !important;
+}
+
+.ant-collapse-content-box {
+    text-align: left !important;
+}
+
+.ant-collapse-content {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+}
+
+.show-region{
+    background-color:white;
+    position:fixed;
+    left:200px;
+    right:0px;
+    bottom:20px;
+    top:50px;
+    /*style={{ 'width': '100%', 'height': screen.height - 80, 'backgroundColor': 'white' }}*/
+}
+.overview{
+    background-color: #1F497D;
+    color:white;
+    width:80%;
+}

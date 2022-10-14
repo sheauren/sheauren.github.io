@@ -1,0 +1,214 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "55-\u5546\u52d9\u7247\u8a9e",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u5546\u52d9\u7247\u8a9e",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "\u624e\u5be6\u7684\u65e5\u5e38\u82f1\u8a9e\u57fa\u790e\u662f\u8077\u696d\u82f1\u8a9e\u754c\u767c\u63ee\u597d\u7684\u524d\u63d0",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_3",
+                    "title": "\u5546\u52d9\u82f1\u8a9e\u7d44\u5408",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_4",
+                            "title": "\u5c08\u6709\u540d\u8a5e",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_5",
+                            "title": "\u65e5\u5e38\u6bd4\u55bb",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "\u65e5\u5e38\u82f1\u8a9e",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_7",
+                            "title": "\u5546\u52d9\u7247\u8a9e",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_8",
+                                    "title": "\u7247\u8a9e = \u55ae\u5b57+\u55ae\u5b57",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_9",
+                                    "title": "\u5546\u52d9\u7247\u8a9e = \u65e5\u5e38\u55ae\u5b57+\u65e5\u5e38\u55ae\u5b57",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_10",
+                                            "title": "ball park figure",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_11",
+                                                    "title": "ball park \u7403\u5834",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_12",
+                                                    "title": "figure \u8a08\u7b97",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_13",
+                                                    "title": "\u5927\u6982\u5831\u50f9",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_14",
+                                    "title": "\u5546\u52d9\u7247\u8a9e = \u65e5\u5e38\u55ae\u5b57+\u5546\u52d9\u55ae\u5b57",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_15",
+                                            "title": "weekly gains",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_16",
+                                                    "title": "\u6bcf\u5468\u6b63\u9762\u6210\u9577",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_17",
+                                            "title": "economic reports",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_18",
+                                                    "title": "\u7d93\u6fdf\u5831\u544a",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_19",
+                                            "title": "Employement picture",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_20",
+                                                    "title": "\u5c31\u696d\u60c5\u6cc1",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_21",
+                                            "title": "Labor market",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_22",
+                                                    "title": "\u52de\u52d5\u5e02\u5834",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_24",
+                                    "title": "\u5546\u52d9\u7247\u8a9e\u5728\u6587\u7ae0\u4e2d\u7d0410%",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_25",
+                    "title": "\u4efb\u4f55\u5c08\u696d\u82f1\u8a9e",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_26",
+                            "title": "\u90fd\u662f\u65e5\u5e38\u82f1\u8a9e++",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_27",
+                            "title": "\u4efb\u4f55\u5c08\u696d\u82f1\u8a9e\u90fd\u8981\u5148\u5b78\u61c2\u65e5\u5e38\u82f1\u8a9e",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_28",
+                                    "title": "\u5426\u5247\u6703\u5f88\u75db\u82e6",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_29",
+                                    "title": "10\u5e7420\u5e74\u90fd\u5b78\u4e0d\u6703",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_30",
+                            "title": "\u8981\u6709\u975e\u5e38\u8e0f\u5be6\u7684\u65e5\u5e38\u82f1\u8a9e",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

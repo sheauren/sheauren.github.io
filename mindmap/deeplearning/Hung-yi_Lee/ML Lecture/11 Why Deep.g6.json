@@ -1,0 +1,2228 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "11 Why Deep",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "Why Deep learning?",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "deep is better?",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "layer x size",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_3",
+                                    "title": "word error rate(%)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_4",
+                            "title": "1x2k",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_5",
+                                    "title": "24.2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "2x2k",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_7",
+                                    "title": "20.4",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_8",
+                            "title": "3x2k",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_9",
+                                    "title": "18.4",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_10",
+                            "title": "4x2k",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_11",
+                                    "title": "17.8",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_12",
+                            "title": "5x2k",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_13",
+                                    "title": "17.2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_14",
+                            "title": "7x2k",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_15",
+                                    "title": "17.1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_16",
+                            "title": "not superised,more paramters,better performance",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_17",
+                            "title": "Conversational Speech Transcription using context-dependent deep neural network",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_18",
+                                    "title": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.368.3047&rep=rep1&type=pdf",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_19",
+                            "title": "fat+short vs thin+tall",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_20",
+                                    "title": "shallow vs deep",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_21",
+                                            "title": "\u77ee\u80d6vs\u7626\u9ad8",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_22",
+                                            "title": "\u8b93\u5169\u8005\u53c3\u6578\u4e00\u6a23\u6bd4\u8f03\u6bd4\u8f03\u516c\u5e73",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_23",
+                                            "title": "which is better?",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_24",
+                                                    "title": "layer x size",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_25",
+                                                            "title": "word error rate(%)",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_26",
+                                                    "title": "1x3772",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_27",
+                                                            "title": "22.5",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_28",
+                                                            "title": "vs 5x2k",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_29",
+                                                            "title": "\u6bd4\u8f03\u5dee",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_30",
+                                                    "title": "1x6434",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_31",
+                                                            "title": "22.6",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_32",
+                                                            "title": "vs 7x2k",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_33",
+                                                            "title": "\u6bd4\u8f03\u5dee",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_34",
+                                                    "title": "1x16k",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_35",
+                                                            "title": "22.1",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_36",
+                                                            "title": "\u6975\u5927\u91cf\u53c3\u6578\u4e5f\u6c92\u597d\u591a\u5c11",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_37",
+                                                    "title": "\u53ea\u67091 layer performance\u6bd4\u8f03\u5dee\u7684",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_38",
+                                    "title": "why?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_39",
+                                            "title": "deep learning\u6709\u4eba\u8aaa\u662f\u66b4\u529b\u6cd5",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_40",
+                                            "title": "\u4f46\u5be6\u969b\u4e0a\u4e0d\u662f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_41",
+                                                    "title": "\u55ae\u7d14\u589e\u52a0\u53c3\u6578\u52a0\u5bec",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_42",
+                                                            "title": "\u5c0dperformance\u5e6b\u52a9\u6c92\u90a3\u9ebc\u597d",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_43",
+                                            "title": "deep->modularization",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_44",
+                                                    "title": "don't put everything in your main function",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_45",
+                                                            "title": "main function",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_46",
+                                                                    "title": "sub function",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_47",
+                                                                            "title": "sub function",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_48",
+                                                                                    "title": "sub function",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "line_49",
+                                                                            "title": "sub function",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_50",
+                                                                    "title": "sub function",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_51",
+                                                                            "title": "sub function",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_52",
+                                                                            "title": "sub function",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_53",
+                                                                                    "title": "sub function",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_54",
+                                                                                    "title": "sub function",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_55",
+                                                            "title": "function can sharing",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_56",
+                                                            "title": "https://rinuboney.github.io/2015/10/18/theoretical-motivations-deep-learning.html",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_57",
+                                                    "title": "modularization",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_58",
+                                                            "title": "classification",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_59",
+                                                                    "title": "detect girls with long hair",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_60",
+                                                                    "title": "detect boys with long hair",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_61",
+                                                                            "title": "little examples",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_62",
+                                                                                    "title": "weak",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_63",
+                                                                    "title": "detect girls with short hair",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_64",
+                                                                    "title": "detect boys with short hair",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_65",
+                                                                    "title": "basic classification",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_66",
+                                                                            "title": "classifiers for the attributes",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_67",
+                                                                            "title": "boys or girls",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_68",
+                                                                                    "title": "\u9577\u9aee\u7537\u5f88\u5c11\u4f46\u7537\u751fdata\u9084\u662f\u53ef\u4ee5collect\u5230\u4e0d\u5c11",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "line_69",
+                                                                            "title": "long or short",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_70",
+                                                                                    "title": "\u9577\u9aee\u7537\u5c11\u4f46\u662f\u9577\u982d\u9aeedata\u9084\u662f\u53ef\u4ee5collect\u5230\u4e0d\u5c11",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "line_71",
+                                                                            "title": "train basic classifier can have sufficient training examples",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_72",
+                                                                    "title": "classifier\u53c3\u8003basic classification output",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_73",
+                                                                            "title": "sharing by the following classifiers as module",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_74",
+                                                                            "title": "can trained by little data",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_75",
+                                                                            "title": "fine tuning",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_76",
+                                                            "title": "deep -> modularization",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_77",
+                                                                    "title": "\u4e00\u500bneron\u5c31\u662f\u4e00\u500bclassifier",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_78",
+                                                                    "title": "1st layer's neuron \u662fbasic classifier",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_79",
+                                                                    "title": "2nd layer's neuron \u662f\u6bd4\u8f03\u8907\u96dc\u7684classifier",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_80",
+                                                                    "title": "3nd layer's neuron \u662f\u66f4\u8907\u96dc\u7684clasifier",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_81",
+                                                                    "title": "...",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_82",
+                                                                    "title": "the modularization is automatically learned from data",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_83",
+                                                            "title": "modularization\u8b93\u6211\u5011\u6a21\u578b\u8b8a\u7c21\u55ae\u4e86",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_84",
+                                                                    "title": "\u7576training data\u6c92\u90a3\u9ebc\u591a\u4e5f\u80fd\u505a\u597d",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_85",
+                                                                    "title": "deep -> modularization -> less training data",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_86",
+                                                            "title": "\u5e38\u898bAI = big data + deep learning",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_87",
+                                                                    "title": "\u4e26\u4e0d\u662f\u9019\u6a23\u7684",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_88",
+                                                                    "title": "\u7576\u4f60\u6709\u8db3\u5920\u7684data\u53ea\u8981table lookup\u5c31\u4e0d\u7528training\u4e86",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_89",
+                                                                    "title": "\u5c31\u662fdata\u4e0d\u5920\u624d\u9700\u8981\u505a\u8209\u4e00\u53cd\u4e09\u7684\u80fd\u529b",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_90",
+                    "title": "modularization - Speech",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_91",
+                            "title": "the hierarchical structure of human languages",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_92",
+                            "title": "\u4eba\u985e\u8a9e\u8a00\u7684\u67b6\u69cb",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_93",
+                                    "title": "what do you think",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_94",
+                                            "title": "Phoneme:",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_95",
+                                                    "title": "hh w aa t",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_96",
+                                                    "title": "d uw",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_97",
+                                                    "title": "y uw",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_98",
+                                                    "title": "th ih ng k",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_99",
+                                            "title": "\u540c\u6a23\u7684phoneme\u53ef\u80fd\u6703\u6709\u4e0d\u540c\u7684\u767c\u97f3tri-Phone",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_100",
+                                                    "title": "tri-Phoneme:",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_101",
+                                                            "title": "\u628a\u8a72\u97f3\u524d\u5f8c\u4e5f\u52a0\u9032\u53bb",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_102",
+                                                                    "title": "\u4f86\u63cf\u8ff0\u8a72phoneme",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_103",
+                                                                    "title": "\u4e00\u500bphoneme context\u4e0d\u540c",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_104",
+                                                                            "title": "\u5c31\u7528\u4e0d\u540c\u7684model\u4f86\u6a21\u64ec\u63cf\u8ff0",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_105",
+                                                            "title": "hh w aa t",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_106",
+                                                            "title": "d uw",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_107",
+                                                                    "title": "t-d+uw",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_108",
+                                                                            "title": "\u81ea\u8a02model\u7684state,\u8981\u8a02\u5e7e\u500b\u770b\u8a2d\u8a08,\u901a\u5e38\u8a02\u62103\u500bstate",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_109",
+                                                                            "title": "t-d+uw1",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_110",
+                                                                            "title": "t-d+uw2",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_111",
+                                                                            "title": "t-d+uw3",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_112",
+                                                                    "title": "d-uw+y",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_113",
+                                                                            "title": "d-uw+y1",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_114",
+                                                                            "title": "d-uw+y2",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_115",
+                                                                            "title": "d-uw+y3",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_116",
+                                                            "title": "y uw",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_117",
+                                                                    "title": "uw-y+uw",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_118",
+                                                                    "title": "y-uw+th",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_119",
+                                                            "title": "th ih ng k",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_120",
+                            "title": "the first stage of speech recognition",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_121",
+                                    "title": "classification: input -> acoustic feature, output -> state",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_122",
+                                    "title": "input \u8072\u97f3\u8a0a\u865f wave phone",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_123",
+                                            "title": "\u5728wave phone\u53d6\u4e00\u500bwindow(ex 250ms)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_124",
+                                                    "title": "\u4e00\u500bwindow\u7528\u4e00\u500bfeature\u63cf\u8ff0\u7279\u6027",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_125",
+                                                            "title": "acoustic feature",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_126",
+                                            "title": "\u4e00\u6bb5\u8072\u97f3\u4e00\u76f4\u53d6window size\u51fa\u4f86\u7522\u751facoustic feature",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_127",
+                                                    "title": "\u5f62\u6210 acoustic feature sequence",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_128",
+                                    "title": "determine the state each acoustic feature belongs to",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_129",
+                                            "title": "acoustic feature 1",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_130",
+                                                    "title": "state a",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_131",
+                                            "title": "acoustic feature 2",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_132",
+                                                    "title": "state b",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_133",
+                                            "title": "...",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_134",
+                                            "title": "state -> phoneme -> word",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_135",
+                                            "title": "\u9084\u8981\u8003\u616e\u540c\u97f3\u7570\u5b57\u7684\u90e8\u5206",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_136",
+                                                    "title": "language model\u8003\u616e\u540c\u97f3\u7570\u5b57...",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_137",
+                            "title": "each state has a stationary distribution for acoustic features",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_138",
+                                    "title": "HMM-GMM",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_139",
+                                            "title": "GMM\u5982\u4f55\u505a",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_140",
+                                                    "title": "Gaussian Mixture Model(GMM)",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_141",
+                                                    "title": "\u5047\u8a2d\u6bcf\u4e00\u500bstate\u7684acoustic features\u5206\u5e03\u662fstationary",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_142",
+                                                            "title": "\u53ef\u4ee5\u7528\u4e00\u500bmodel\u63cf\u8ff0\u4ed6",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_143",
+                                                                    "title": "\u7b2c\u4e00\u7576\u4f5ctri-phone\u4e2d\u5fc3\u7684tri-phone\u7684\u7b2c\u4e00\u500bstate",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_144",
+                                                                            "title": "\u53ef\u4ee5\u7528GMM\u4f86\u63cf\u8ff0\u4ed6",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_145",
+                                                                                    "title": "P(x|\"t-d+uw1\")",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_146",
+                                                                    "title": "\u53e6\u4e00\u500bstate\u53ef\u7528\u53e6\u4e00\u500bGMM\u63cf\u8ff0",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_147",
+                                                                            "title": "P(x|\"d-uw+y3\")",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_148",
+                                                            "title": "\u9019\u6a23\u7d66\u4e00\u500bfeature\u5c31\u53ef\u4ee5\u7b97",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_149",
+                                                                    "title": "\u9019\u4e00\u500bacoustic features\u5f9e\u6bcf\u4e00\u500bstate\u7522\u751f\u7684\u6a5f\u7387",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_150",
+                                                    "title": "\u4f46\u9019\u62db\u4e0d\u5927work\u56e0\u70batri-phone\u7684\u6578\u76ee\u592a\u591a\u4e86",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_151",
+                                                            "title": "\u4e00\u822c\u8a9e\u8a00\u3001\u4e2d\u6587\u3001\u82f1\u6587\u90fd\u6709\u5c07\u8fd130\u5e7e\u500b40\u500bphoneme",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_152",
+                                                                    "title": "\u65bctri-phone\u5728\u6bcf\u4e00\u500bphonme\u96a8\u8457contest\u4e0d\u540c",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_153",
+                                                                            "title": "\u8981\u7528\u4e0d\u540c\u7684model",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_154",
+                                                                            "title": "\u5230\u5e95\u6709\u591a\u5c11\u500btri-phone30\u500b3\u6b21\u65b9tri-phone",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_155",
+                                                                                    "title": "27000",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "line_156",
+                                                                                            "title": "\u6bcf\u500btri-phone\u67093\u500bstate",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "line_157",
+                                                                                                    "title": "\u7522\u751f\u6578\u842c\u7684state",
+                                                                                                    "background-color": "#e3aba7",
+                                                                                                    "collapsed": true,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "id": "line_158",
+                                                                                                            "title": "\u6bcf\u500bstate\u90fd\u7528GMM\u63cf\u8ff0",
+                                                                                                            "background-color": "#e82ad2",
+                                                                                                            "collapsed": true,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "id": "line_159",
+                                                                                                                    "title": "training data\u6839\u672c\u4e0d\u5920",
+                                                                                                                    "background-color": "#0fbdff",
+                                                                                                                    "collapsed": true
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_160",
+                                            "title": "\u7121deep learning,\u50b3\u7d71\u8a2d\u8a08\u65b9\u5f0f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_161",
+                                                    "title": "\u6709\u4e9bstate\u6703\u5171\u7528\u540c\u6a23\u7684model distribution",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_162",
+                                                            "title": "Tied-State",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_163",
+                                                                    "title": "P(x|\"d-uw-y3\")",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_164",
+                                                                    "title": "P(x|\"y-uw+th3\")",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_165",
+                                                                    "title": "\u4e0d\u540cstate\u597d\u50cfpointer",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_166",
+                                                                            "title": "\u6307\u5411\u540c\u6a23\u7684distribution",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_167",
+                                                    "title": "\u6709\u4e9bstate\u5171\u7528\u6709\u4e9b\u6c92\u5171\u7528",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_168",
+                                                            "title": "\u54ea\u4e9b\u8981\u5171\u7528\u54ea\u4e9b\u4e0d\u7528\u8981\u6191\u7d93\u9a57\u3001\u8a9e\u6587\u5b78\u77e5\u8b58",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_169",
+                                                            "title": "\u5982\u4f55\u8b93\u4ed6\u90e8\u5206\u5171\u7528\u5f88\u591a\u624b\u6cd5",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_170",
+                                                                    "title": "subspace GMM",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_171",
+                                                                            "title": "\u6709modularizatiion\u7684\u5f71\u5b50",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_172",
+                                                                            "title": "\u5148\u628agaussion\u90fd\u627e\u51fa\u4f86\u5f62\u6210gaussion pool",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_173",
+                                                                                    "title": "\u6bcf\u500bstate information\u5c31\u662f\u4e00\u500bkey",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "line_174",
+                                                                                            "title": "key\u544a\u8a34\u9019\u500bstate\u8981\u5f9egaussion pool\u6311\u54ea\u4e9bgaussion\u51fa\u4f86",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_175",
+                                                                                    "title": "\u6311\u51fa\u4f86\u6709\u4e9bstate\u53ef\u4ee5share gaussion",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_176",
+                                                                                    "title": "\u6709\u4e9b\u53c8\u4e0dshare gaussion",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_177",
+                                                                                    "title": "\u8981share\u591a\u5c11gaussion\u53ef\u4ee5\u7528training data\u5b78\u51fa\u4f86",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_178",
+                                            "title": "in HMM-GMM, all phoneme are modeled independent",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_179",
+                                                    "title": "not an effective way to model human voice",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_180",
+                                                            "title": "the sound of vowel is only controlled by a few factors",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_181",
+                                                                    "title": "\u820c\u982d\u524d\u5f8c",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_182",
+                                                                    "title": "\u820c\u982d\u4e0a\u4e0b",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_183",
+                                                                    "title": "\u5634\u578b",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_184",
+                                                                    "title": "\u81ea\u5df1\u5ff5\u611f\u89ba\u4e0d\u5927\u51fa\u4f86\u820c\u982d\u4f4d\u7f6e",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_185",
+                                                                    "title": "phoneme\u662f\u6709\u95dc\u4fc2\u7684",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_186",
+                                                                            "title": "\u6bcf\u500bphoneme\u641e\u4e00\u500bmodel\u662f\u975e\u5e38\u6c92\u6548\u7387\u7684",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_187",
+                            "title": "in deep learning",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_188",
+                                    "title": "learn\u4e00\u500bdeep learning network",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_189",
+                                    "title": "input: acoustic feature",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_190",
+                                    "title": "output:",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_191",
+                                            "title": "probability of each state",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_192",
+                                            "title": "size of output layer = No. of states",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_193",
+                                    "title": "classification problem",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_194",
+                                    "title": "all the states use the same DNN",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_195",
+                                    "title": "HMM-GMM\u8ddfdeep learning\u7528\u7684\u53c3\u6578\u5dee\u4e0d\u591a",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_196",
+                                            "title": "DNN\u7528\u4e00\u500b\u5f88\u5927\u7684model",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_197",
+                                                    "title": "\u6240\u6709state\u7528\u540c\u4e00\u500bmodel\u5206\u985e",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_198",
+                                                    "title": "\u6bd4\u8f03\u6709\u6548\u7387\u7684\u505a\u6cd5",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_199",
+                                                            "title": "output of hidden layer reduce to two dimensions",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_200",
+                                                                    "title": "The lower layers detect the manner of articulation",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_201",
+                                                                            "title": "\u4e0d\u662fdetect\u54ea\u500bphome\u6216state",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_202",
+                                                                            "title": "\u800c\u662f\u89c0\u5bdf\u51fa\u820c\u982d\u4f4d\u7f6e\u5634\u578b...",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_203",
+                                                                                    "title": "\u77e5\u9053\u767c\u97f3\u65b9\u5f0f\u4e4b\u5f8c\u63a5\u4e0b\u4f86\u7684layer\u5728\u53bb\u6c7a\u5b9a\u662f\u5c6c\u65bc\u54ea\u500bstate/phome",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "line_204",
+                                                                            "title": "\u6240\u6709layer\u7528\u540c\u4e00\u7d44detect",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_205",
+                                                                                    "title": "lower detect\u767c\u97f3\u65b9\u5f0f",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_206",
+                                                                                    "title": "phome\u5075\u6e2c\u90fd\u662f\u540c\u4e00\u7d44detector",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "line_207",
+                                                                                            "title": "share\u540c\u4e00\u7d44\u53c3\u6578",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "line_208",
+                                                                                                    "title": "\u505a\u5230 modularization",
+                                                                                                    "background-color": "#e3aba7",
+                                                                                                    "collapsed": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "line_253",
+                                                                                                    "title": "GMM ->",
+                                                                                                    "background-color": "#e3aba7",
+                                                                                                    "collapsed": true,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "id": "line_254",
+                                                                                                            "title": "\"hello\"",
+                                                                                                            "background-color": "#e82ad2",
+                                                                                                            "collapsed": true
+                                                                                                        }
+                                                                                                    ]
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "line_255",
+                                                                                                    "title": "GMM\u63db\u6210DNN\u4e5f\u6703\u6709\u986f\u8457\u7684performance",
+                                                                                                    "background-color": "#e3aba7",
+                                                                                                    "collapsed": true
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_210",
+                                            "title": "HMM-GMM\u7528\u5f88\u591a\u5c0fmodel",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_211",
+                                    "title": "Universality Theorem",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_212",
+                                            "title": "Can be realized by a network with one hidden layer",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_213",
+                                            "title": "Any continue function f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_214",
+                                                    "title": "f: R^N -> R^M",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_215",
+                                            "title": "90\u5e74\u4ee3\u653e\u68c4deep learning\u7684\u539f\u56e0",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_216",
+                                                    "title": "reference for the reason",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_217",
+                                                            "title": "http://neuralnetworksanddeeplearning.com/chap4.html",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_218",
+                                            "title": "\u9019\u7406\u8ad6\u53ea\u6709\u544a\u8a34\u6211\u5011\u53ef\u80fd\u6027",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_219",
+                                                    "title": "\u8981\u505a\u5230\u9019\u4e8b\u60c5\u591a\u6709\u6548\u7387",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_220",
+                                            "title": "Yes, shallow network can represent any function",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_221",
+                                                    "title": "however,using deep structure is more effective",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_222",
+                                                            "title": "multi-layer, hierachy\u7684structure\u6bd4\u8f03\u6709\u6548\u7387",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_223",
+                    "title": "analogy",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_224",
+                            "title": "logic circuits",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_225",
+                                    "title": "logic circuits consists of gates",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_226",
+                                    "title": "a two layers of logic gates can represent any Boolean function",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_227",
+                                    "title": "using multiple layers of logic gates to build some function are more simpler",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_228",
+                                            "title": "less gates needed",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_229",
+                            "title": "neural network",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_230",
+                                    "title": "neural network consists of neurons",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_231",
+                                    "title": "a hidden layer network can represent any continuous function",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_232",
+                                    "title": "using multiple layers of neurons to represent some function are much simpler",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_233",
+                    "title": "end-to-end learning",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_234",
+                            "title": "production line",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_235",
+                                    "title": "model - hypothesis functions",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_236",
+                                            "title": "very complex function",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_237",
+                                                    "title": "simple function 1",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_238",
+                                                    "title": "simple function 2",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_239",
+                                                    "title": "simple function 3",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_240",
+                                                    "title": "simple function N",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_241",
+                            "title": "end-to-end training",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_242",
+                                    "title": "what each function should do is learned automatically",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_243",
+                                            "title": "\u758a\u4e00\u500b\u5f88\u6df1\u7684nerual network",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_244",
+                                                    "title": "\u6bcf\u4e00\u5c64\u6703\u81ea\u5df1\u5b78\u5230\u8a72\u505a\u4ec0\u9ebc",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_245",
+                            "title": "speech recognition",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_246",
+                                    "title": "shallow approach",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_247",
+                                            "title": "waveform ->",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_248",
+                                                    "title": "DFT ->",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_249",
+                                                            "title": "spectrogram ->",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_250",
+                                                                    "title": "filter bank ->",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_251",
+                                                                            "title": "log ->",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_252",
+                                                                                    "title": "DCT ->(MFCC)->",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_256",
+                                            "title": "\u53ea\u6709GMM\u7531training data\u5b78\u51fa\u4f86",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_257",
+                                            "title": "\u5176\u4ed6\u90fd\u662f\u4eba\u624b\u8a02\u7684",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_258",
+                                    "title": "deeplearning",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_259",
+                                            "title": "layer\u591a\u52a0\u5e7e\u5c64\u628aDCT\u63db\u6389",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_260",
+                                                    "title": "\u9019\u662ftypical\u505a\u6cd5\u4e86",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_261",
+                                                            "title": "\u904e\u53bbMFCC\u7684feature",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_262",
+                                                                    "title": "deep learning\u90fd\u5f9elog output\u958b\u59cb\u505a\u6703\u6709\u6bd4\u8f03\u597d\u7684\u7d50\u679c",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_263",
+                                            "title": "\u73fe\u5728\u66f4\u6709\u5f9espectrogram\u4e4b\u5f8c\u5c31\u958b\u59cb\u505adeep nerual network",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_264",
+                                                    "title": "\u4ed6\u6703\u81ea\u52d5\u5b78\u5230\u8981\u505afilter bank\u4e8b\u60c5",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_265",
+                                            "title": "\u80fd\u4e0d\u80fd\u758a\u8d85\u7d1a\u6df1\u5f9ewaveform\u4e4b\u5f8c\u5c31\u958b\u59cb\u505a",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_266",
+                                                    "title": "all functions are learned from data",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_267",
+                                                    "title": "\u9019\u6a23\u5c31\u4e0d\u7528\u5b78\u8a0a\u865f\u8207\u7cfb\u7d71",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_268",
+                                                    "title": "less engineering labor, but machine learns more",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_269",
+                                                    "title": "google\u7d50\u679c",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_270",
+                                                            "title": "\u8d85\u5927deep learning",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_271",
+                                                            "title": "\u53ea\u80fd\u505a\u5230\u8ddffeature tranform\u6253\u5e73\u800c\u5df2",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_272",
+                                                            "title": "\u76ee\u524d\u6c92\u6709\u4e0d\u505afourier transform\u505a\u5f97\u6bd4\u8f03\u597d\u7684\u4f8b\u5b50",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_273",
+                            "title": "image recognition",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_274",
+                                    "title": "shallow approach",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_275",
+                                    "title": "http://www.robots.ox.ac.uk/~vgg/research/encoding_eval/",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_276",
+                                    "title": "image->",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_277",
+                                            "title": "feature extractor->",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_278",
+                                                    "title": "encoding->",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_279",
+                                                            "title": "pooling->",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_280",
+                                                                    "title": "classification",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_281",
+                                    "title": "all function are learned from data",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_282",
+                    "title": "complex task",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_283",
+                            "title": "image",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_284",
+                                    "title": "very similar input,differenct output",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_285",
+                                            "title": "\u767d\u8272\u72d7->dog",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_286",
+                                            "title": "\u5317\u6975\u718a->bear",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_287",
+                                            "title": "\u5169\u500b\u9577\u5f97\u5f88\u50cf",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_288",
+                                                    "title": "machine\u8981\u5b78\u6703\u5340\u9694",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_289",
+                                    "title": "very differenct output,similar output",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_290",
+                                            "title": "\u50b3\u7d71\u706b\u8eca->train",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_291",
+                                            "title": "\u5b50\u5f48\u5217\u8eca->train",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_292",
+                                            "title": "\u5dee\u7570\u5f88\u5927\u5169\u500b\u662f\u540c\u6a23\u6771\u897f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_293",
+                                    "title": "layer\u53ea\u6709\u4e00\u5c64\u6642\uff0c\u5f88\u96e3\u628a\u4e0d\u4e00\u6a23\u7684\u6771\u897f\u8b8a\u5f97\u5f88\u50cf\u6216\u628a\u539f\u672c\u5f88\u50cf\u7684\u6771\u897f\u8b8a\u6210\u4e0d\u4e00\u6a23",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_294",
+                                            "title": "\u9700\u8981\u591a\u5c64\u6b21\u7684\u8f49\u63db",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_295",
+                            "title": "speech",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_296",
+                                    "title": "speech recognition: speaker normalization is automatically done in DNN",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_297",
+                                    "title": "input: acoustic feature",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_298",
+                                            "title": "\u4e0d\u540c\u80fd\u8aaa\u540c\u4e00\u500b\u53e5\u5b50\u6703\u4e0d\u4e00\u6a23",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_299",
+                                    "title": "1-st layer: \u4e0d\u540c\u4eba\u540c\u4e00\u53e5\u8a71\u770b\u8d77\u4f86\u9084\u662f\u5dee\u5f88\u591a",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_300",
+                                    "title": "8-th layer: \u4e0d\u540c\u4eba\u540c\u4e00\u500b\u53e5\u5b50\u88abalign/map\u5728\u4e00\u8d77\u4e86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_301",
+                            "title": "mnist:",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_302",
+                                    "title": "input: 28x28 pixel proejct to 2d chart",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_303",
+                                    "title": "1-st layer: \u5f7c\u6b64\u500b\u6578\u5b57\u9084\u662f\u5f88\u8fd1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_304",
+                                    "title": "2-nd layer: \u5f7c\u6b64\u6578\u5b57\u7fa4\u958b\u59cb\u5206\u958b",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_305",
+                                    "title": "3-rd layer: \u5f7c\u6b64\u6578\u5b57\u7fa4\u5206\u5f97\u66f4\u958b\u4e86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_306",
+                                    "title": "\u591a\u5c64\u6bd4\u8f03\u597d\u5206\u62c6\u5408\u4f75",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_307",
+                            "title": "paper",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_308",
+                                    "title": "do deep nets really need to be deep?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_309",
+                                    "title": "https://arxiv.org/abs/1312.6184",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_310",
+                                    "title": "\u4e00\u500bhidden layer learning\u4e0d\u8981\u7528\u771f\u6b63\u7684label",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_311",
+                                            "title": "\u75283\u5c64hidden layer\u7684output\u7576\u4f60\u7684feature",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_312",
+                                                    "title": "performance\u6703\u6bd4\u8f03\u597d \u903c\u8fd13\u5c64",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_313",
+                                                    "title": "\u7528\u4e00\u5c64hidden layer\u6a21\u64ec3\u5c64hidden layer\u7684\u884c\u70ba",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_314",
+                                    "title": "deep learning: theoretical motivations",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_315",
+                                            "title": "http://videolectures.net/deeplearning2015_bengio_theoretical_motivations/",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_316",
+                                    "title": "Connections between physics and deep learning",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_317",
+                                            "title": "https://www.youtube.com/watch?v=5MdSE-N0bxs",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_318",
+                                    "title": "why deep learning works: Perspectives from Theoretical Chemistry",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_319",
+                                            "title": "https://www.youtube.com/watch?v=kIbKHIPbxiU",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

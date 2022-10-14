@@ -1,0 +1,416 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "26-\u6587\u6cd5\u7684\u5feb\u901f\u5b78\u7fd2",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "\u6587\u6cd5\u7684\u5feb\u901f\u5b78\u7fd2",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "\u91cd\u9ede",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "\u638c\u63e1\u6587\u6cd5\u662f\u4e00\u7a2e\u6a21\u5f0f\u8b58\u5225\u904e\u7a0b",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_3",
+                            "title": "\u800c\u4e0d\u662f\u908f\u8f2f\u5206\u6790\u904e\u7a0b",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_4",
+                    "title": "\u82f1\u6587\u7684\u6587\u6cd5\u5f88\u96e3\u7406\u89e3",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_5",
+                            "title": "\u82f1\u6587\u8a9e\u6cd5\u5169\u500b\u6982\u5ff5",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_6",
+                                    "title": "\u7528\u8a5e\u9806\u5e8f",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_7",
+                                    "title": "\u591a\u5ea6\u6db5\u7fa9\u55ae\u5143(\u8a5e\u7d20)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_8",
+                            "title": "\u5982\u4f55\u5feb\u901f\u5b78\u7fd2",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_9",
+                                    "title": "\u8b8a\u6210\u81ea\u5df1\u80fd\u7528\u7684\u5c0f\u5de5\u5177",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_10",
+                                    "title": "\u5716\u6a23\u8a8d\u51fa",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_11",
+                                            "title": "pattern recognition",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_12",
+                                                    "title": "\u6a21\u5f0f\u8b58\u5225",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_13",
+                                            "title": "\u4eba\u985e\u9032\u5316\u904e\u7a0b\u7576\u4e2d",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_14",
+                                                    "title": "\u5e6b\u52a9\u751f\u5b58\u7684\u6280\u80fd",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_15",
+                                                            "title": "\u770b\u5230\u773c\u93e1\u86c7",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_16",
+                                                                    "title": "\u8df3\u958b",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_17",
+                                                                    "title": "\u5982\u679c\u6c92\u53cd\u61c9\u53ef\u80fd\u5c31\u649e\u4e0a\u4e86",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_18",
+                                                            "title": "\u53ea\u8981\u5927\u8166\u8b58\u5225\u5230\u6a21\u5f0f",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_19",
+                                                                    "title": "\u4e0b\u610f\u8b58\u5c31\u53cd\u61c9\u4e86",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_20",
+                                            "title": "\u5feb\u901f\u8b58\u5225\u6a21\u5f0f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_21",
+                                                    "title": "I will Go To Work Tomorrow",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_22",
+                                                    "title": "I Went To Work Yesterday",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_23",
+                                                    "title": "She Want to Go To Work Next Week",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_24",
+                                                    "title": "They Have to GO To Work Every Day",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_25",
+                                                    "title": "I Will Go To Lunch At Tweleve O'clock",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_26",
+                                                    "title": "I Go To School Every Tuesday",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_27",
+                                            "title": "\u589e\u5ea6\u8a5e",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_28",
+                                                    "title": "\u90fd\u6709\u51fa\u73fe\u898f\u5f8b",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_29",
+                                                    "title": "from",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_30",
+                                                    "title": "to",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_31",
+                                                    "title": "the",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_32",
+                                                    "title": "a",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_33",
+                                            "title": "\u8b8a\u5f62\u8a5e",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_34",
+                                                    "title": "I/Me/My/Mine",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_35",
+                                                    "title": "He/Him/His",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_36",
+                                                    "title": "She/Her/Hers",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_37",
+                                                    "title": "We/Us/Our/Ours",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_38",
+                                                    "title": "They/Then/Their/Theirs",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_39",
+                                                    "title": "\u540c\u4e00\u500b\u8a5e\u7684\u8b8a\u5f62\u4ee3\u8868\u65b9\u5411\u6027",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_40",
+                                                    "title": "Go/Going/Went",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_41",
+                                                    "title": "Is/Am/Are/Were/Was",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_42",
+                                                    "title": "Do/Doing/Did/Does",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_43",
+                                                    "title": "Will/Would",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_44",
+                                                    "title": "Grow/Grew/Grown",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_45",
+                                                    "title": "\u91cd\u8981\u5c0f\u55ae\u5b57\u90fd\u6709\u8b8a\u5f62",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_46",
+                                            "title": "\u908f\u8f2f\u8a5e",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_47",
+                                            "title": "\u8a5e\u7c92\u5b50",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_48",
+                                            "title": "4\u7a2e\u4ee3\u8868\u82f1\u6587\u6240\u6709\u6587\u6cd5",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_49",
+                            "title": "\u5c0b\u627e\u6a21\u5f0f",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_50",
+                                    "title": "I will Go To Work",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_51",
+                                    "title": "\u5f9e\u611f\u8208\u8da3\u5167\u5bb9\u4e2d\u5c0b\u627e\u7d93\u5e38\u51fa\u73fe\u7684\u53e5\u5b50\u6a21\u5f0f",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false,
+                                    "children": [
+                                        {
+                                            "id": "line_52",
+                                            "title": "\u5c0f\u8aaa",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_53",
+                                            "title": "\u6f2b\u756b",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_54",
+                                            "title": "\u4e2d\u82f1\u5c0d\u7167\u6cd5",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_55",
+                                                    "title": "\u81ea\u5df1\u6478\u51fa\u898f\u5f8b",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_56",
+                                                            "title": "you",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_57",
+                                                            "title": "you go",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_58",
+                                                            "title": "will you go",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_59",
+                                                            "title": "Did you go",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_60",
+                                            "title": "\u5e36\u8457\u97f3\u6a02\u5167\u5bb9",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_61",
+                                            "title": "\u8b8a\u6210\u81ea\u5df1\u61c2\u5f97\u5c0f\u6771\u897f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

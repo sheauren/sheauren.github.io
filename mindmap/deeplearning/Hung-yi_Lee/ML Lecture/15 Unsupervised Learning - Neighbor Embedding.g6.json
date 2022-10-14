@@ -1,0 +1,948 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "15 Unsupervised Learning - Neighbor Embedding",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "Unsupervised Learning - Neighbor Embedding",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "t-SNE\u7684NE",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "Neighbor Embedding",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_3",
+                    "title": "Manifold Learning",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_4",
+                            "title": "\u975e\u7dda\u6027\u964d\u7dad",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_5",
+                            "title": "\u5730\u7403\u8868\u9762\u5c31\u662f\u4e8c\u7dad\u5e73\u9762",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "\u5f88\u8fd1\u7684\u8ddd\u96e2\u4e0b\u6b50\u5f0f\u5e7e\u4f55\u624d\u6703\u6210\u7acb",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_7",
+                                    "title": "Euclidean Distance",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_8",
+                            "title": "\u5728\u591a\u7dad\u5ea6\u7a7a\u9593\u7576\u8ddd\u96e2\u592a\u9060",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_9",
+                                    "title": "\u6b50\u5f0f\u5e7e\u4f55\u5c31\u4e0dmake sense",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_10",
+                            "title": "\u628aS\u578b\u9ad8\u7dad\u7a7a\u9593\u7684\u5716\u5c55\u958b\u6524\u5e73",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_11",
+                                    "title": "\u4f4e\u5fae\u6524\u5e73\u4ee5\u5f8c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_12",
+                                            "title": "manifold\u7a7a\u9593\u5c31\u80fd\u7528euclidean distance\u4f86\u8a08\u7b97\u9ede\u8ddf\u9ede\u7684\u8ddd\u96e2",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_13",
+                                                    "title": "clustering",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_14",
+                                                    "title": "supervised",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_15",
+                                            "title": "\u985e\u4f3c\u65b9\u6cd5\u5f88\u591a",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_16",
+                    "title": "Locally Linear Embedding (LLE)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_17",
+                            "title": "\u7a7a\u9593\u7684\u9ede\u9078\u4e00\u500b\u9edex^i",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_18",
+                                    "title": "\u9078x_i\u7684neighbor",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_19",
+                                            "title": "x^j",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_20",
+                                                    "title": "\u627ex^i x^j\u7684\u95dc\u4fc2",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_21",
+                                                            "title": "w^ij",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_22",
+                                                                    "title": "\u03a3||x^i - \u03a3_j w^ij*x^j||_2",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_23",
+                                                                            "title": "linear combination\u7684weight sum",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_24",
+                                                                            "title": "\u6240\u6709neighbor x^j\u505aweight sum \u03a3_j w^ijx^j",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_25",
+                                                                            "title": "\u8d8a\u63a5\u8fd1\u8d8a\u597d",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_26",
+                                                                            "title": "two norm\u8d8a\u5c0f\u8d8a\u597d",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_27",
+                                                                            "title": "the find the dimension reduction",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_28",
+                                                                                    "title": "\u628a\u6240\u6709x^i x^j\u8f49z^i z^j",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_29",
+                                                                                    "title": "\u8f49\u63db\u5f8cw^ij\u7684\u95dc\u4fc2\u662f\u4e0d\u8b8a\u7684",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "line_30",
+                                                                            "title": "orginal space",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_31",
+                                                                                    "title": "keep w^ij unchanged",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "line_32",
+                                                                                            "title": "in new space",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "line_33",
+                                                                                                    "title": "find a set of z^i minimizing",
+                                                                                                    "background-color": "#e3aba7",
+                                                                                                    "collapsed": true,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "id": "line_34",
+                                                                                                            "title": "\u03a3_i||z^i - \u03a3_j w^ij*z^j||_2",
+                                                                                                            "background-color": "#e82ad2",
+                                                                                                            "collapsed": true
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_35",
+                            "title": "neighbor\u6578\u76ee\u7684\u9078\u64c7\u6703\u5f71\u97ff\u5230\u6709\u6c92\u6709\u597d\u7684\u7d50\u679c",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_36",
+                    "title": "Laplacian Eigenmaps",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_37",
+                            "title": "Graph-based approach",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_38",
+                                    "title": "smoothess assumption",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_39",
+                                            "title": "high desity connection",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_40",
+                                    "title": "construct the data point as a graph",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_41",
+                                            "title": "smoothess distance for graph approximate",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_42",
+                            "title": "review in semi-supervised learning: if x^1 and x^2 are close in a high density region, y^1 and y^2 are probably the same",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_43",
+                                    "title": "L =",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_44",
+                                            "title": "\u03a3_x^r C(y^r,y^^r)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_45",
+                                                    "title": "\u8207label\u6709\u95dc",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_46",
+                                            "title": "+\u03bbS",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_47",
+                                                    "title": "\u8207label\u7121\u95dc",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_48",
+                                                    "title": "as a regulariztaion term",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_49",
+                                                    "title": "S = 1/2\u03a3_i,j w_i,j(y^i-y^j)^2",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_50",
+                                                            "title": "w_ij =",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_51",
+                                                                    "title": "similarytiy",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_52",
+                                                                            "title": "if connected",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_53",
+                                                                    "title": "0",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_54",
+                                                                            "title": "otherwise",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_55",
+                                                            "title": "evaluates how smooth your label is",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_56",
+                                                            "title": "S = y^TLy",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_57",
+                                                                    "title": "L: (R+U)x(R+U) matrix",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_58",
+                                                                            "title": "L=D-W",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_59",
+                            "title": "apply unsupervised training",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_60",
+                                    "title": "Dimension Reduction:",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_61",
+                                            "title": "if x^1 and x^2 are close in a high density region",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_62",
+                                                    "title": "z^1 and z^2 are the close to each other",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_63",
+                                                            "title": "S = 1/2\u03a3_i,j w_i,j(z^i-z^j)^2",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_64",
+                                                                    "title": "Euclidean distance or two norm distance\u6bd4\u8f03\u597d",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_65",
+                                                                    "title": "any problem?",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_66",
+                                                                            "title": "z^i==z^j==0",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_67",
+                                                                            "title": "semi-supervised\u9084\u6709label data\u7d66\u4e88\u4e00\u500b\u9805\u76ee",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_68",
+                                                                                    "title": "\u6240\u4ee5\u90fd\u8a2d\u4e00\u6a23\u5728superivse\u90a3\u9805\u76eelost\u6703\u5f88\u5927",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "line_69",
+                                                                                            "title": "balance\u60c5\u6cc1\u4e0d\u53ef\u80fd\u9078\u90fd\u4e00\u6a23\u7684",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "id": "line_70",
+                                                                            "title": "\u5c11\u4e86supervised\u9078z\u90fd\u4e00\u6a23\u53cd\u800c\u6703\u8b8a\u6210\u6700\u597d\u7684solution",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        },
+                                                                        {
+                                                                            "id": "line_71",
+                                                                            "title": "\u7d66z\u4e00\u4e9bconstraint",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_72",
+                                                                                    "title": "\u964d\u7dad\u5ea6\u662fM\u7a7a\u9593",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_73",
+                                                                                    "title": "\u4e0d\u5e0c\u671b\u5206\u5e03\u6bd4M\u9084\u8981\u5c0f\u7684Dimension\u88e1\u9762",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true
+                                                                                },
+                                                                                {
+                                                                                    "id": "line_74",
+                                                                                    "title": "\u5e0c\u671b\u9ad8\u7dad\u585e\u5230\u4f4e\u7dad\u7684\u7a7a\u9593\u5c55\u958b",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "line_75",
+                                                                                            "title": "\u4e0d\u5e0c\u671b\u5c55\u958b\u7d50\u679c\u662f\u5728\u66f4\u4f4e\u7dad\u5ea6\u7a7a\u9593\u88e1\u9762",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_76",
+                                                                                            "title": "Span(z^1,z^2,...z^N) = R^M",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "line_77",
+                                                                                                    "title": "\u4ed6\u4e0d\u662f\u6d3b\u5728\u4e00\u500b\u6bd4M\u7dad\u5ea6\u66f4\u4f4e\u7684\u7a7a\u9593",
+                                                                                                    "background-color": "#e3aba7",
+                                                                                                    "collapsed": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "line_78",
+                                                                                                    "title": "\u4ed6\u6703\u5360\u64da\u6574\u500bM\u7dad\u5ea6\u7684\u7a7a\u9593",
+                                                                                                    "background-color": "#e3aba7",
+                                                                                                    "collapsed": true
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        {
+                                                                                            "id": "line_79",
+                                                                                            "title": "Spectral clustering: clustering on z",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "id": "line_80",
+                                                                                                    "title": "Graph Laplacian\u7684 eigenvector",
+                                                                                                    "background-color": "#e3aba7",
+                                                                                                    "collapsed": true,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "id": "line_81",
+                                                                                                            "title": "\u6bd4\u8f03\u5c0f\u7684eigenvalue\u7684eigenvector",
+                                                                                                            "background-color": "#e82ad2",
+                                                                                                            "collapsed": true
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_82",
+                                                    "title": "\u5148\u627ez\u5728\u505aclustering",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_83",
+                                                            "title": "k-means",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_84",
+                                                                    "title": "spectral clustering",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_85",
+                    "title": "T-distributed Stochastic Neighbor Embedding(t-SNE)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_86",
+                            "title": "Problem of the previous approaches",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_87",
+                                    "title": "Similar data are close,but different data my collapse",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_88",
+                            "title": "compute similarity between all pairs of x: S(x^i,x^j)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_89",
+                                    "title": "P(x^j|x^i) =",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_90",
+                                            "title": "S(x^i,x^j) / \u03a3_k\u2260i S(x^i,x^k)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_91",
+                                    "title": "\u03a3 P(x^j|x^i) = 1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_92",
+                            "title": "compute similarity between all pairs of z: S'(z^i,z^j)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_93",
+                                    "title": "Q(z^j|z^i) = S'(z^i,z^j) / \u03a3_k\u2260i S(z^i,z^k)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_94",
+                            "title": "find a set of z making the two distributions as close as possible",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_95",
+                                    "title": "L = \u03a3_i KL(P(*|x^i)||Q(*|z^i))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_96",
+                                            "title": "KL divergence\u8861\u91cfP Q\u76f8\u4f3c\u5ea6",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_97",
+                            "title": "t-SNE\u6703\u8a08\u7b97\u6240\u6709point\u904b\u7b97\u91cf\u6709\u9ede\u5927",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_98",
+                                    "title": "\u53ef\u4ee5\u5148\u505a\u964d\u7dad\u5ea6\u5728\u505at-SNE",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_99",
+                                            "title": "\u5982PCA\u964d\u523050\u7dad\u5728\u7528t-SNE\u964d\u52302\u7dad",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_100",
+                            "title": "\u7b97\u5b8c\u518d\u7d66\u4e00\u500b\u65b0\u7684data point\u6574\u500b\u53c8\u8981\u91cd\u8dd1",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_101",
+                                    "title": "\u6240\u4ee5t-SNE\u6bd4\u8f03\u4e0d\u9069\u5408training/testing\u9019\u7a2ebase\u7684\u505a\u6cd5",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_102",
+                                            "title": "\u901a\u5e38\u62ff\u4f86\u505avisualization",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_103",
+                                                    "title": "\u628ahigh dimensional\u7684visualize\u4e8c\u7dad\u7a7a\u9593\u5206\u5e03\u600e\u9ebc\u6a23",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_104",
+                                                            "title": "\u6700\u591a\u4eba\u9078\u64c7",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_105",
+                            "title": "similarity\u9078\u64c7\u975e\u5e38\u5947\u5999",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_106",
+                                    "title": "S(x^,x^j) = exp(-||x^i-x^j||_2)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_107",
+                                            "title": "RDF function",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_108",
+                                            "title": "evaluates similarity\u65b9\u5f0f\u7528 Euclidean Distance",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_109",
+                                                    "title": "\u53d6\u8ca0\u865f\u5728exponential",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_110",
+                                                            "title": "\u975e\u5e38\u8fd1\u624d\u6709\u503c\uff0c\u9060\u4e86\u6703\u6389\u975e\u5e38\u5feb",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_111",
+                                    "title": "t-SNE\u4e4b\u524d\u6709\u4e00\u500bSNE",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_112",
+                                            "title": "S'(x^i,x^j) = exp(-||x^i-x^j||_2)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_113",
+                                            "title": "S'(z^i,z^j) = exp(-||z^i-z^j||_2)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_114",
+                                                    "title": "\u65b0\u7684space\u8ddf\u539f\u672cspace\u90fd\u7528\u540c\u4e00\u500bmeasure",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_115",
+                                    "title": "t-SNE",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_116",
+                                            "title": "S'(x^i,x^j) = exp(-||x^i-x^j||_2)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_117",
+                                                    "title": "RBF fuction",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_118",
+                                            "title": "S'(z^i,z) = 1/1 + ||z^i-z^j||_2",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_119",
+                                                    "title": "t-distributions",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_120",
+                                                    "title": "\u65b0space\u9078\u64c7t-distribution\u7684\u4e00\u7a2e",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_121",
+                                                            "title": "\u53ef\u4ee5\u8abf\u6574\u53c3\u6578",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_122",
+                                                    "title": "why?",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_123",
+                                                            "title": "\u76f4\u89ba\u89e3\u91cb",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_124",
+                                                            "title": "\u66f2\u7dda\u8ddd\u96e2\u4e0d\u540c\u8981\u7dad\u6301\u539f\u672cy\u503c",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_125",
+                                                                    "title": "\u539f\u672c\u5c0f\u8ddd\u96e2\u5f71\u97ff\u5c0f",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_126",
+                                                                    "title": "\u539f\u672c\u8ddd\u96e2\u8f03\u9060",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_127",
+                                                                            "title": "x\u503c\u8981\u62c9\u66f4\u958b",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true,
+                                                                            "children": [
+                                                                                {
+                                                                                    "id": "line_128",
+                                                                                    "title": "\u62c9\u958b\u4e0d\u76f8\u4f3c\u7684\u503c",
+                                                                                    "background-color": "#412ffc",
+                                                                                    "collapsed": true,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "id": "line_129",
+                                                                                            "title": "\u4e00\u7fa4\u4e00\u7fa4\u5206\u958b",
+                                                                                            "background-color": "#fff",
+                                                                                            "collapsed": true
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_130",
+                                            "title": "ignore \u03c3 for simplicity",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
