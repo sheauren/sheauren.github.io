@@ -1,197 +1,196 @@
-Recurrent Neural Network (RNN)(Part I)
-    Example Application
-        Slot Filling            
-            ticket booking system
-                I would like to arrive taipei on November 2nd.
-                slot
-                    destination
-                        taipei
-                    time of arrival
-                        November 2nd
-                    要判斷哪個詞彙於slot
-            Solving slot filling by feedforward network?
-                input: a word
-                    each word is represented as a vector
-                        方法很多
-                            常用
-                                1-of-N encoding
-                                beyond 1-of-N encoding 
-                                    很多辭彙你可能從來都沒見過
-                                        多一個"other"
-                                        把不在辭典裡面的所有詞彙都歸類到other
-                                word hashing
-                                    用字母表示詞匯
-                                        就不會有詞彙不在字典的問題
-                                        26x26x26
-                                        a-a-a
-                                        a-a-b
-                                        ...
-                                        a-p-p
-                                        ...
-                                        p-l-e
-                                        word : apple
-                                            a-p-p : 1
-                                            p-p-l : 1
-                                            p-l-e : 1
-                output:
-                    probability distribution that the input word beloging to the slots                                                      
-            目前無法solove problem
-                句1.
-                    arrive
-                        other
-                    Taipei
-                        dest
-                    on
-                        other
-                    November
-                        time
-                    2nd
-                        time
-                句2.
-                    leave
-                        other
-                    Taipei
-                        place of departure                        
-                    on
-                        other
-                    November
-                        time
-                    2nd
-                        time
-                input一樣的東西taipei
-                    output應該是一樣的東西
-                        沒辦法分辨機率
-                    NN needs memory
-                        他看過前一個字
-                            arrive
-                            leave
-                            利用上下文產生不同output
-                        RNN : Recurrent Nerual Network
-                            The output of hidden layer are stored in the memory
-                            Memory can be considered as another input
-                            example:
-                                All the weight are '1', no bias
-                                All activation functions are linear
-                                input sequence: 
-                                    [1 1]^T [1 1]^T [2 2]^T ...
-                                memory : given initial values 0
-                                intput [1 1]^T
-                                    NN output: [2 2]^T
-                                    Memory: [0 0]^T
-                                    Final Output = [4 4]^T
-                                input [1 1]^T 第二次輸入
-                                    NN Output: [6 6]^T
-                                    Memory: [2 2]^T -> [6 6]^T
-                                    Final Output = [12 12]^T
-                                    輸入一樣的東西
-                                        output是有可能不同的
-                                            看memory儲存的值
-                                input [2 2]^T
-                                    NN Output: [16 16]^T
-                                    Final Output: [32 32]^T
-                                    Memory: [16 16]^T
-                                changing input sequence order will change the output
-            RNN解決問dest/place of departure問題
-                arrive Taipei on November 2nd
-                    一個一個vector丟進去              
-                    inptut: x1(arrive)
-                        NN output: a1
-                            cache a1 to memory
-                                final output: y1
-                    input: x2(taipei)
-                        NN input: x2 + a1
-                            NN output: a2
-                                cache a2 to memory
-                                    final output: y2
-                The values stored in the memory is differenct
-                    leave/arrive
-                        taipei
-    Of courrse it can be deep
-        input
+Example Application
+    Slot Filling            
+        ticket booking system
+            I would like to arrive taipei on November 2nd.
+            slot
+                destination
+                    taipei
+                time of arrival
+                    November 2nd
+                要判斷哪個詞彙於slot
+        Solving slot filling by feedforward network?
+            input: a word
+                each word is represented as a vector
+                    方法很多
+                        常用
+                            1-of-N encoding
+                            beyond 1-of-N encoding 
+                                很多辭彙你可能從來都沒見過
+                                    多一個"other"
+                                    把不在辭典裡面的所有詞彙都歸類到other
+                            word hashing
+                                用字母表示詞匯
+                                    就不會有詞彙不在字典的問題
+                                    26x26x26
+                                    a-a-a
+                                    a-a-b
+                                    ...
+                                    a-p-p
+                                    ...
+                                    p-l-e
+                                    word : apple
+                                        a-p-p : 1
+                                        p-p-l : 1
+                                        p-l-e : 1
+            output:
+                probability distribution that the input word beloging to the slots                                                      
+        目前無法solove problem
+            句1.
+                arrive
+                    other
+                Taipei
+                    dest
+                on
+                    other
+                November
+                    time
+                2nd
+                    time
+            句2.
+                leave
+                    other
+                Taipei
+                    place of departure                        
+                on
+                    other
+                November
+                    time
+                2nd
+                    time
+            input一樣的東西taipei
+                output應該是一樣的東西
+                    沒辦法分辨機率
+                NN needs memory
+                    他看過前一個字
+                        arrive
+                        leave
+                        利用上下文產生不同output
+                    RNN : Recurrent Nerual Network
+                        The output of hidden layer are stored in the memory
+                        Memory can be considered as another input
+                        example:
+                            All the weight are '1', no bias
+                            All activation functions are linear
+                            input sequence: 
+                                [1 1]^T [1 1]^T [2 2]^T ...
+                            memory : given initial values 0
+                            intput [1 1]^T
+                                NN output: [2 2]^T
+                                Memory: [0 0]^T
+                                Final Output = [4 4]^T
+                            input [1 1]^T 第二次輸入
+                                NN Output: [6 6]^T
+                                Memory: [2 2]^T -> [6 6]^T
+                                Final Output = [12 12]^T
+                                輸入一樣的東西
+                                    output是有可能不同的
+                                        看memory儲存的值
+                            input [2 2]^T
+                                NN Output: [16 16]^T
+                                Final Output: [32 32]^T
+                                Memory: [16 16]^T
+                            changing input sequence order will change the output
+        RNN解決問dest/place of departure問題
+            arrive Taipei on November 2nd
+                一個一個vector丟進去              
+                inptut: x1(arrive)
+                    NN output: a1
+                        cache a1 to memory
+                            final output: y1
+                input: x2(taipei)
+                    NN input: x2 + a1
+                        NN output: a2
+                            cache a2 to memory
+                                final output: y2
+            The values stored in the memory is differenct
+                leave/arrive
+                    taipei
+Of courrse it can be deep
+    input
+        RNN
             RNN
-                RNN
-                    ... output
-    Elman Network
-        Hidden layer值存起來下一個時間點讀出來
-    Jordan Network
-        Output layer值存起來下一個時間點讀進來
-        傳說可以得到比較好的performance
-            y target是控制的
-                比較清楚放memory裡面是什麼
-    Bidirectional RNN
-        sequence句首到句尾
-            x^t,x^t+1,x^t+2
-        也可以是反過來
-            x^t+2,x^t+1,x^t
-        同時train正反向
-            然後hidden layer拿出來接給output layer
-                正向x^t跟負向x^t都丟給output
-                    得到y^t
-        好處是產生output前看的範圍比較廣
-            可能看了整個input sentence之後才決定詞彙的slot
-            比看一半句子得到更好的performance
-    Long Short-term Memory (LSTM) 
-        比較複雜的memory
-            有3個gate
-                input gate
-                    signal control the input gate
-                    打開時候才能寫入memory cell
-                    開關是NN自己學
-                output gate
-                    signal control the output gate
-                    外界能不能從這裡拿memory值
-                    開關是NN自己學
-                forget gate
-                    signal control the forget gate
-                    決定什麼時候format memory資料
-                    由NN決定什麼時候format掉 
-        4 input 1 output
-            1 save memory
-                input z
-                g(z)
-            3 gate input
-                zi input gate
-                    f(zi)
-                    sigmoid
-                        打開的程度0~1
-                zf forget gate
-                    f(zf)
-                    sigmoid
-                        打開的程度0~1
-                    打開是1 記得
-                    關掉是0 忘記
-                    forget gate名稱有點怪                    
-                zo output gate
-                    f(zo)
-            in memory data
-                c
-                c*f(zf)
-            1 load memory
-                output a
-            input g(z)*f(zi)
-                c' = g(z)*f(zi)+cf(zf)
-            output
-                a= h(c')*f(zo)
-        LSTM的memory cell想成是Neuron
-            就會像是NN
-                差別是4個input才能產生output
-                    同樣數量neuron
-                        參數量要4倍
-        正式用法上一個時間點的hidden layer輸出會接給下一個x^t的input控制gate
-        然後再加一個
-            extension: peephole
-                把memory cell的值也拉到下一個input控制gate
-                操作gate同是考慮 input x, h , c
-                    並在一起transform成四個不同vector
-                        操控LSTM
-        Multiple-layer LSTM圖非常複雜
-            This is quite standard now
-    Keras支援三種recurent network
-        LSTM
-        GRU
-            LSTM簡化版本
-                只有2個gate
-                    performance跟LSTM差不多
-                    少了1/3參數
-        SimpleRNN
-            最簡單RNN版本
+                ... output
+Elman Network
+    Hidden layer值存起來下一個時間點讀出來
+Jordan Network
+    Output layer值存起來下一個時間點讀進來
+    傳說可以得到比較好的performance
+        y target是控制的
+            比較清楚放memory裡面是什麼
+Bidirectional RNN
+    sequence句首到句尾
+        x^t,x^t+1,x^t+2
+    也可以是反過來
+        x^t+2,x^t+1,x^t
+    同時train正反向
+        然後hidden layer拿出來接給output layer
+            正向x^t跟負向x^t都丟給output
+                得到y^t
+    好處是產生output前看的範圍比較廣
+        可能看了整個input sentence之後才決定詞彙的slot
+        比看一半句子得到更好的performance
+Long Short-term Memory (LSTM) 
+    比較複雜的memory
+        有3個gate
+            input gate
+                signal control the input gate
+                打開時候才能寫入memory cell
+                開關是NN自己學
+            output gate
+                signal control the output gate
+                外界能不能從這裡拿memory值
+                開關是NN自己學
+            forget gate
+                signal control the forget gate
+                決定什麼時候format memory資料
+                由NN決定什麼時候format掉 
+    4 input 1 output
+        1 save memory
+            input z
+            g(z)
+        3 gate input
+            zi input gate
+                f(zi)
+                sigmoid
+                    打開的程度0~1
+            zf forget gate
+                f(zf)
+                sigmoid
+                    打開的程度0~1
+                打開是1 記得
+                關掉是0 忘記
+                forget gate名稱有點怪                    
+            zo output gate
+                f(zo)
+        in memory data
+            c
+            c*f(zf)
+        1 load memory
+            output a
+        input g(z)*f(zi)
+            c' = g(z)*f(zi)+cf(zf)
+        output
+            a= h(c')*f(zo)
+    LSTM的memory cell想成是Neuron
+        就會像是NN
+            差別是4個input才能產生output
+                同樣數量neuron
+                    參數量要4倍
+    正式用法上一個時間點的hidden layer輸出會接給下一個x^t的input控制gate
+    然後再加一個
+        extension: peephole
+            把memory cell的值也拉到下一個input控制gate
+            操作gate同是考慮 input x, h , c
+                並在一起transform成四個不同vector
+                    操控LSTM
+    Multiple-layer LSTM圖非常複雜
+        This is quite standard now
+Keras支援三種recurent network
+    LSTM
+    GRU
+        LSTM簡化版本
+            只有2個gate
+                performance跟LSTM差不多
+                少了1/3參數
+    SimpleRNN
+        最簡單RNN版本

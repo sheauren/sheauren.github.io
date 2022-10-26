@@ -1,29 +1,28 @@
-webdriver
-    feature
-        a browser automation library
-    install 
-        npm install selenium-webdriver
-        browser component
-            chrome
-            firefox
-    usage
-        var webdriver = require('selenium-webdriver')
-        By = webdriver.By
-        util = webdriver.until
-        var driver = new webdriver.Builder()
-            .forBrowser('firefox')
-            .build()
-        driver.get('http://www.google.com/ncr')
-        driver.getElement(By.name('q')).sendKeys('webdriver')
-        driver.getElement(By.name('btnG')).click()
-        driver.wait(until.titleIs('webdriver - Google Search'),1000)
-        driver.quit()
+feature
+    a browser automation library
+install 
+    npm install selenium-webdriver
+    browser component
+        chrome
+        firefox
+usage
+    var webdriver = require('selenium-webdriver')
+    By = webdriver.By
+    util = webdriver.until
+    var driver = new webdriver.Builder()
+        .forBrowser('firefox')
+        .build()
+    driver.get('http://www.google.com/ncr')
+    driver.getElement(By.name('q')).sendKeys('webdriver')
+    driver.getElement(By.name('btnG')).click()
+    driver.wait(until.titleIs('webdriver - Google Search'),1000)
+    driver.quit()
 
-    use Builder API
-        var webdriver = require('selenium-webdriver')
-        var chrome  = require('selenium-webdriver/chrome')
-        var firefox  = require('selenium-webdriver/firefox')
-        var driver = new webdriver.Builder()
-            .forBrowser('firefox')
-            .build()
-        
+use Builder API
+    var webdriver = require('selenium-webdriver')
+    var chrome  = require('selenium-webdriver/chrome')
+    var firefox  = require('selenium-webdriver/firefox')
+    var driver = new webdriver.Builder()
+        .forBrowser('firefox')
+        .build()
+    

@@ -1,416 +1,415 @@
-Convolutional Neural Network
-    why CNN for image?
-        1st layer
-            the most basic classifiers
-                color
-                    綠色
-                    黑色
-                    紅色
-                line
-                    直線
-                    橫線
-                    斜線
-        2nd layer
-            use 1st layer as module to build classifiers
-                直線橫線
-                    窗框
-                棕色直條紋
-                    木紋
-                灰色斜條紋
-                    輪胎一部分...
-        3th layer
-            use 2nd layer as module...
-                看到蜂巢
-                    activate
-                看到車子
-                    activate
-                看人半身
-                    activate
-        用一般fully connected network做影像處理往往需要太多參數
-            can the network be simplified by considering the properties of images?
-            CNN簡化架構
-                某些weight用不上一開始就濾掉
-                不要用到fully connected
-        some patterns are much smaller than whole image
-            a neuron does not have to see the whole image to discover the pattern
-            bird
-                偵測鳥嘴的neuron
-                    不用看整張圖
-                    小區域就可以判斷
-                偵測翅膀的neuron
-                偵測爪子的neuron
-                偵測尾巴的neuron
-                合起來就可以偵測
-            connecting to small region with less parameters
-            the same patterns appear in differenct regions
-                我們不需要去訓練針對不同位置同樣pattern的model
-                    cost down
-                    可以共用同組參數
-                        share參數
-            Subsampling the pixes will not change get object
-                縮小一點對於人的辨識沒有影響
-                利用這個概念把image縮小
-                less parameters for the network to process the image
-    The whole CNN
-        input        
-        can repeat repeat many times
-            convolution
-            max pooling
-            convolution
-            max pooling
-        flatten
-        fully connected feedforward network
-        property1-convolution
-            some patterns are much smaller than the whole image
-        property2-convolution
-            the same patterns appear in differenct regions
-        property3-max pooling
-            Subsampling the pixels will not change the object
-    CNN-convolution
-        input 6x6 materix value:[0,1]    
-        filter(matrix) set:
-            [[1,-1,-1],[-1,1,-1],[-1,-1,1]]
-            [[-1,1,-1],[-1,1,-1],[-1,1,-1]]
-            ...
-            filter value is parameters
-                each filter like a neuron
-                like weight/bias
-                need trained
-            when filter 3x3
-                find a 3x3 pattern
-            compute
-                把filter放到圖片左上角做內積
-                挪動filter位置
-                    挪動多少可以設定
-                    stride=1 一步
-                    往右移動結束換往下一格重跑一行
-                全部都算完
-                    得到4x4 matric
-                    filter如果是左上右下111其他-1
-                        則主要偵測有沒有左上右下的橫線
-                    這部分要提供property2使用
-                        同一個pattern出現在不同位置
-                        同一個filter就可以偵測出來
-            convolution layer會有一大堆filter
-                每個filter會有不同的參數
-                    找直線
-                    找橫線
-                    找斜線
-            不同的filter結果合起來就叫做feature map
-                有多少filter就會得到多少個image
-                每一個filter size都一樣
-                    今天有同一個pattern
-                        他有不同的size
-                            大鳥嘴
-                            小鳥嘴
-                            事先知道可以用normalized
-                            事先不知道大小鳥嘴
-                                就沒辦法normalized
-                    CNN不能自動處理scale的問題
-                        不見得能夠處理
-                        deepmind有一個paper
-                            在CNN前面在接一個network
-                            這network output scalar
-                                把image裡面做旋轉,縮放
-                                在丟到CNN
-            colorful image
-                input_sizexinput_size*RGB channel
-                    立體matric
-                filter也會是立方體matric
-                    filter: 3x3x3
-                    filter跟silding window做內積
-                        並沒有把RGB channel分開算
-                            合起來算
-                            不同顏色一起看
-        convolution vs fully connected
-            convolution是一個nerual network
-                就是full connected把一些layer/weight拿掉的結果
-                filter inner product取得值
-                    等同於只取特定weight(filter)計算出的值做hidden neuron output
-                    filter weight等於neuron的weight
-                    原本fully connected可能要連36個input
-                        改成只連9個input
-                        detect一個pattern只要9個input不需要36個
-                            這樣參數就比較少了
-                        strde移動filter則會得到另一個nerual output
-                            改用另外9個input
-                    原本在fully connected neuron都有獨立weight
-                        做CNN時neuron 減少跟共用weight
-                            形成wegith sharing
-                                這樣參數量又更少
-                how to training?
-                    toolkit做好了
-                    用backpropagation一樣的做法
-                        只是有些weight都不training他
-                        share weight部分就是都graidient後平均
+why CNN for image?
+    1st layer
+        the most basic classifiers
+            color
+                綠色
+                黑色
+                紅色
+            line
+                直線
+                橫線
+                斜線
+    2nd layer
+        use 1st layer as module to build classifiers
+            直線橫線
+                窗框
+            棕色直條紋
+                木紋
+            灰色斜條紋
+                輪胎一部分...
+    3th layer
+        use 2nd layer as module...
+            看到蜂巢
+                activate
+            看到車子
+                activate
+            看人半身
+                activate
+    用一般fully connected network做影像處理往往需要太多參數
+        can the network be simplified by considering the properties of images?
+        CNN簡化架構
+            某些weight用不上一開始就濾掉
+            不要用到fully connected
+    some patterns are much smaller than whole image
+        a neuron does not have to see the whole image to discover the pattern
+        bird
+            偵測鳥嘴的neuron
+                不用看整張圖
+                小區域就可以判斷
+            偵測翅膀的neuron
+            偵測爪子的neuron
+            偵測尾巴的neuron
+            合起來就可以偵測
+        connecting to small region with less parameters
+        the same patterns appear in differenct regions
+            我們不需要去訓練針對不同位置同樣pattern的model
+                cost down
+                可以共用同組參數
+                    share參數
+        Subsampling the pixes will not change get object
+            縮小一點對於人的辨識沒有影響
+            利用這個概念把image縮小
+            less parameters for the network to process the image
+The whole CNN
+    input        
+    can repeat repeat many times
+        convolution
         max pooling
-            Subsampling
-                filter出來的結果
-                    以2x2取最大值output
-                        image縮小
-        convolution+maxpooling
-            input 6x6
-            output 2x2xfilter
-            比較深但比較小的output
-            repeat n次
-                可以得到更小更深的image
-        Q&A 如果有25 filter -> 25 feature map
-            下一次在做25filter -> 25*25 feature map?
-                NO 還是得到25個filter
-                    filter會把channel都考慮進去的
-                        filter是cube
-        flatten
-            丟到fully connected的feedforward network
-            就可以做完了
-    CNN in keras
-        只要改一下network structure跟input format
-        原本input是vector現在要考慮image幾何空間
-            從vector改成tensor
-                tensor是高維度vector
-                要給3維度的vector
-                    w*h*rgb
-        model.add(Convolution2D(25,3,3,input_shape=(1,28,28)))
-            25 filter
-                3x3 matric
-            單色28x28
-                1,28,28
-            彩色28x28
-                3,28,28
-            1x28x28
-                conv 25x3x3
-                不考慮邊邊output
-                    25x26x26
-                        參數只有9個
-                            因為3x3 matric
-                要考慮邊邊
-                    可以在旁邊補0讓他出來還是28x28            
-            25x13x13
-                conv 50x3x3
-                output 50x11x11
-                參數
-                    3*3*25
+        convolution
+        max pooling
+    flatten
+    fully connected feedforward network
+    property1-convolution
+        some patterns are much smaller than the whole image
+    property2-convolution
+        the same patterns appear in differenct regions
+    property3-max pooling
+        Subsampling the pixels will not change the object
+CNN-convolution
+    input 6x6 materix value:[0,1]    
+    filter(matrix) set:
+        [[1,-1,-1],[-1,1,-1],[-1,-1,1]]
+        [[-1,1,-1],[-1,1,-1],[-1,1,-1]]
+        ...
+        filter value is parameters
+            each filter like a neuron
+            like weight/bias
+            need trained
+        when filter 3x3
+            find a 3x3 pattern
+        compute
+            把filter放到圖片左上角做內積
+            挪動filter位置
+                挪動多少可以設定
+                stride=1 一步
+                往右移動結束換往下一格重跑一行
+            全部都算完
+                得到4x4 matric
+                filter如果是左上右下111其他-1
+                    則主要偵測有沒有左上右下的橫線
+                這部分要提供property2使用
+                    同一個pattern出現在不同位置
+                    同一個filter就可以偵測出來
+        convolution layer會有一大堆filter
+            每個filter會有不同的參數
+                找直線
+                找橫線
+                找斜線
+        不同的filter結果合起來就叫做feature map
+            有多少filter就會得到多少個image
+            每一個filter size都一樣
+                今天有同一個pattern
+                    他有不同的size
+                        大鳥嘴
+                        小鳥嘴
+                        事先知道可以用normalized
+                        事先不知道大小鳥嘴
+                            就沒辦法normalized
+                CNN不能自動處理scale的問題
+                    不見得能夠處理
+                    deepmind有一個paper
+                        在CNN前面在接一個network
+                        這network output scalar
+                            把image裡面做旋轉,縮放
+                            在丟到CNN
+        colorful image
+            input_sizexinput_size*RGB channel
+                立體matric
+            filter也會是立方體matric
+                filter: 3x3x3
+                filter跟silding window做內積
+                    並沒有把RGB channel分開算
+                        合起來算
+                        不同顏色一起看
+    convolution vs fully connected
+        convolution是一個nerual network
+            就是full connected把一些layer/weight拿掉的結果
+            filter inner product取得值
+                等同於只取特定weight(filter)計算出的值做hidden neuron output
+                filter weight等於neuron的weight
+                原本fully connected可能要連36個input
+                    改成只連9個input
+                    detect一個pattern只要9個input不需要36個
+                        這樣參數就比較少了
+                    strde移動filter則會得到另一個nerual output
+                        改用另外9個input
+                原本在fully connected neuron都有獨立weight
+                    做CNN時neuron 減少跟共用weight
+                        形成wegith sharing
+                            這樣參數量又更少
+            how to training?
+                toolkit做好了
+                用backpropagation一樣的做法
+                    只是有些weight都不training他
+                    share weight部分就是都graidient後平均
+    max pooling
+        Subsampling
+            filter出來的結果
+                以2x2取最大值output
+                    image縮小
+    convolution+maxpooling
+        input 6x6
+        output 2x2xfilter
+        比較深但比較小的output
+        repeat n次
+            可以得到更小更深的image
+    Q&A 如果有25 filter -> 25 feature map
+        下一次在做25filter -> 25*25 feature map?
+            NO 還是得到25個filter
+                filter會把channel都考慮進去的
+                    filter是cube
+    flatten
+        丟到fully connected的feedforward network
+        就可以做完了
+CNN in keras
+    只要改一下network structure跟input format
+    原本input是vector現在要考慮image幾何空間
+        從vector改成tensor
+            tensor是高維度vector
+            要給3維度的vector
+                w*h*rgb
+    model.add(Convolution2D(25,3,3,input_shape=(1,28,28)))
+        25 filter
+            3x3 matric
+        單色28x28
+            1,28,28
+        彩色28x28
+            3,28,28
+        1x28x28
+            conv 25x3x3
+            不考慮邊邊output
+                25x26x26
+                    參數只有9個
+                        因為3x3 matric
+            要考慮邊邊
+                可以在旁邊補0讓他出來還是28x28            
+        25x13x13
+            conv 50x3x3
+            output 50x11x11
+            參數
+                3*3*25
 
-        model.add(MaxPooling2D((2,2))
-            2*2->max one
-                input 25x26x26
-                    output 25x13x13
-                input 50x11x11
-                    output 50x5x5
-        flatten 50x5x5
-            1250 vector
-                fully connected 
-                    output
-    what does CNN learn?
-        deep learning是個黑盒子無法理解
-        當你能輕易理解就覺得不夠intelligent
-        非常intelligent就要你無法理解
-            才會覺得她很intelligent
-        分析CNN
-            第一層filter
-                input pixel
-                3x3 matric對映到9個pixel
-                    能知道在detect什麼東西
-            第二層filter
-                比較難想像
-                input已經不是pixel
-                    而是conv+maxpooling的結果
-                    拿weight出來也不知道在做什麼
-                    範圍也不再是3x3 他前一個input有做了conv+maxpooling
-                        因此看到範圍比3x3更大
-                    the output of the k-th filter is 11x11 matric
-                        element: a_ij^k
-                            k: k-th filter
-                            ij: in 11x11 position
-                            degree of the activation of the k-th filter:
-                                k-th有多被activate
-                                input與k-th有多相近
-                                a^k = Σ_i=1^11Σ_j=1^11 a_ij^k
-                                    被activate的程度
-                                找讓k-th filter被activate最大程度的input
-                                x* = arg max_x a^k
-                                    找x讓a^k最大
-                                        gradient descent
-                                        反向
-                                        gradient acent
-                                現在model參數固定的
-                                    是要用gradient descent/acent
-                                        來update input x
-                                        讓他activate function結果最大
-                                        這樣可以找到image x讓filter最大
-                                            image通常會具備某種texture
-                                                在圖上反覆出現
-                                                    例如斜條紋路
-                                第一層指在圖上考慮小範圍
-                                    所以這個filter就會密集被這個斜條
-                                        則這個filter degree of activation會最大
-                                    每一個filter就是detect不同角度的條紋
-            fully connected neural network
-                maxpooling -> flatten -> fully connected neural network
-                find a image maximizing the output of neuron
-                ex: j-th neuron:
-                    x* = arg max_x a^j
-                    each figure corresponds to a neuron
-                    這邊觀察到跟filter差很多
-                        filter觀察到紋路
-                        fully connected看到是整張圖
-                            完整的圖形雖然不像數字
-                            這些線條相符的就會被activate
-            can we see digits?
-                x* = arg max_x y^i
-                找一張image讓y^i產生最大值
-                    讓一張讓數字1的y^i產生最大值
-                        應該該圖會長的最像數字i ?
-                但實際得到結果都像亂碼
-                    不是想像像數字
-                    像是電視壞掉的畫面
-                Deep nerual networks are easily fooled
-                    https://www.youtube.com/watch?v=M2IebCN9Ht4
-                能不能讓他更像數字
-                    對x*做一些限制很明顯不是數字的圖片
-                        對一個digits來說塗白部分是有限的
-                            不會整當圖都是塗白的筆畫
-                                不會太多
-                            數字只有整張圖的一小部分                    
-                        x* = arg max_x (y^i - Σ_i,j|x_ij|)                        
-                            overall pixel value
-                            每個pixel用 x_ij
-                                28x28
-                            把pixel值絕對值加起來
-                                L1 regularization
-                            找到一個yi讓x*最大的同時Σx_ij越小越好
-                                大部分地方沒塗顏色的                                
-                            就會出現灰色凹槽圖
-                                比雜訊圖好一點可以看到一些線索
-                    如果再加更多的constraint可能會得到更好的結果
-                        例如相鄰的顏色要盡可能相同
-                    這些手法是deepdream
-                        given a photo, machine adds what it see...
-                        http://deepdreamgenerator.com/
-                        input a image
-                        get cnn filter
-                            gradient vector
-                                調高positive value
-                                降低negative value
-                                正的更正負的更負
-                                    原本有看到東西
-                                        現在讓他看起來更像他看到的東西
-                                    把它當作新的image的目標
-                                    找一張image是設定的target值
-                                        CNN exaggerates what it sees
-                                產生的結果會出現一堆怪獸在裡面
-                                    石頭變熊
-                                        原本形狀有點像熊的時候就變熊了
-                                    原本機器看起來有點像某東西
-                                        被強化後就真的變了
-                    deep style
-                        given a photo, make its style like famous paintings
-                        https://dreamscopeapp.com/
-                        http://arxiv.org/abs/1508.06576
-                        作法精神
-                            於來image丟給CNN
-                                得到filter output: content
-                            把style image丟給CNN
-                                得到filter ouput: style
-                                注意output跟output之間的correlation
-                                correlation代表image的style
-                            用同一個CNN
-                                找一張image
-                                    content像input image的content
-                                    他的correlation像style image的filter output之間的correlation
-                                    同時滿足的就會轉換風格
-                                        用Gradient decsent的方法
-    More Application: Playing Go
-        一般typical Network也能做這事情不一定要CNN
-            只要learn一個network找到function
-                input
-                    棋盤(19x19 vector)
-                    black:1
-                    white:-1
-                    none:0
+    model.add(MaxPooling2D((2,2))
+        2*2->max one
+            input 25x26x26
+                output 25x13x13
+            input 50x11x11
+                output 50x5x5
+    flatten 50x5x5
+        1250 vector
+            fully connected 
                 output
-                    棋盤位置(19x19 position)
-            fully connected feedforward network can be used
-            but CNN perform much better
-                把棋盤當image來看
-        training:
-            record of previous plays
-            棋盤 input -> CNN -> output 天元=1, other=0
-        why CNN for playing GO?
-            什麼時候用CNN?
-                有image該有的特性就適合
-            some pattern are much smaller the whole image
-                圍棋三個黑紫圍一白子
-                    只需要看這小小pattern就好
-                    CNN in Go
-                        5x5 pattern
-            the same pattern appear in differenct regions
-                圍棋的組合出現在不同期盤位置代表相同意議
-            Subsampling the pixels will not change the object
-                maxpooling
-                    how to expand this in Go?
-                alpha go network architecture
-                    19x19x48 feature map
-                        每一個位置都用48個value來描述他
-                            domain knowledge
-                                是不是屬於叫吃的狀態
-                                ...
-                    first layer
-                        zero padding to 23x23 image
-                        conv 5x5 in k filter with stride 1
-                            k=192
-                            relu activate function
-                    2-12 layer
-                        input 21x21
-                        conv 3x3 stride 1
-                    not maxpooling
-                針對圍棋特性設計 
-                    neural network時把不適合的maxpooling拿掉
-    More Application: Speech
-        Spectrogram: 
-            y:Frequency
-            x:Time
-            顏色代表那段時間的該頻率強度
-            Specturgram reading的人可以看懂
-                人可以看就知道什麼聲音訊號
-                    所以把圖片丟給機器當CNN判斷這image是什麼樣的聲音訊號
-                    output:
-                        phoneme類似音標的單位
-            把圖片丟給CNN時
-                我們通常只考慮frequecy方向的filter
-                    filter指移動frequency不移動time方向
-                    移動time方向沒什麼幫助
-                        通常CNN後面會接LSTN或其他東西
-                            都已經考慮time的info了
-                    Frequency的filter為什麼有幫助
-                        detect同樣pattern
-                        男女發同樣聲音頻率在不同區間
-                            但pattern相同
-                            只是頻率shift
-                            所以在frequency shift會有幫助
-            依照application特性design
-    More Application: Text
-        word sequence -> CNN ->output 
-            每一個word都是一個vector
-                word embedding dimension
-                    word vector排列起來就變成一個image
-                CNN filter掃word的順序形成vector
-                    filter只在time shift
-                        sentence方向
-                    在word embedding shift是不make sense的                        
-                word順序跟pattern很類似
-    to learn more...
-        the method of visualization in these slides
-            https://blog.keras.io/how-convolutional-neural-networks-see-the-world.html
-        more about visualization
-            https://cs231n.github.io/understanding-cnn/
-        very cool CNN visualization toolkit做好了
-            http://yosinski.com/deepvis
-            http://scs.ryerson.ca/~aharley/vis/conv/
-        how to let machine draw an image
-            pixelRNN
-                http://arxiv.org/abs/1601.06759
-            Variation Autoencoder(VAE)
-                http://arxiv.org/abs/1312.6114
-            Generation Adverservial Network(GAN)
-                http://arxiv.org/abs/1406.2661
-            
+what does CNN learn?
+    deep learning是個黑盒子無法理解
+    當你能輕易理解就覺得不夠intelligent
+    非常intelligent就要你無法理解
+        才會覺得她很intelligent
+    分析CNN
+        第一層filter
+            input pixel
+            3x3 matric對映到9個pixel
+                能知道在detect什麼東西
+        第二層filter
+            比較難想像
+            input已經不是pixel
+                而是conv+maxpooling的結果
+                拿weight出來也不知道在做什麼
+                範圍也不再是3x3 他前一個input有做了conv+maxpooling
+                    因此看到範圍比3x3更大
+                the output of the k-th filter is 11x11 matric
+                    element: a_ij^k
+                        k: k-th filter
+                        ij: in 11x11 position
+                        degree of the activation of the k-th filter:
+                            k-th有多被activate
+                            input與k-th有多相近
+                            a^k = Σ_i=1^11Σ_j=1^11 a_ij^k
+                                被activate的程度
+                            找讓k-th filter被activate最大程度的input
+                            x* = arg max_x a^k
+                                找x讓a^k最大
+                                    gradient descent
+                                    反向
+                                    gradient acent
+                            現在model參數固定的
+                                是要用gradient descent/acent
+                                    來update input x
+                                    讓他activate function結果最大
+                                    這樣可以找到image x讓filter最大
+                                        image通常會具備某種texture
+                                            在圖上反覆出現
+                                                例如斜條紋路
+                            第一層指在圖上考慮小範圍
+                                所以這個filter就會密集被這個斜條
+                                    則這個filter degree of activation會最大
+                                每一個filter就是detect不同角度的條紋
+        fully connected neural network
+            maxpooling -> flatten -> fully connected neural network
+            find a image maximizing the output of neuron
+            ex: j-th neuron:
+                x* = arg max_x a^j
+                each figure corresponds to a neuron
+                這邊觀察到跟filter差很多
+                    filter觀察到紋路
+                    fully connected看到是整張圖
+                        完整的圖形雖然不像數字
+                        這些線條相符的就會被activate
+        can we see digits?
+            x* = arg max_x y^i
+            找一張image讓y^i產生最大值
+                讓一張讓數字1的y^i產生最大值
+                    應該該圖會長的最像數字i ?
+            但實際得到結果都像亂碼
+                不是想像像數字
+                像是電視壞掉的畫面
+            Deep nerual networks are easily fooled
+                https://www.youtube.com/watch?v=M2IebCN9Ht4
+            能不能讓他更像數字
+                對x*做一些限制很明顯不是數字的圖片
+                    對一個digits來說塗白部分是有限的
+                        不會整當圖都是塗白的筆畫
+                            不會太多
+                        數字只有整張圖的一小部分                    
+                    x* = arg max_x (y^i - Σ_i,j|x_ij|)                        
+                        overall pixel value
+                        每個pixel用 x_ij
+                            28x28
+                        把pixel值絕對值加起來
+                            L1 regularization
+                        找到一個yi讓x*最大的同時Σx_ij越小越好
+                            大部分地方沒塗顏色的                                
+                        就會出現灰色凹槽圖
+                            比雜訊圖好一點可以看到一些線索
+                如果再加更多的constraint可能會得到更好的結果
+                    例如相鄰的顏色要盡可能相同
+                這些手法是deepdream
+                    given a photo, machine adds what it see...
+                    http://deepdreamgenerator.com/
+                    input a image
+                    get cnn filter
+                        gradient vector
+                            調高positive value
+                            降低negative value
+                            正的更正負的更負
+                                原本有看到東西
+                                    現在讓他看起來更像他看到的東西
+                                把它當作新的image的目標
+                                找一張image是設定的target值
+                                    CNN exaggerates what it sees
+                            產生的結果會出現一堆怪獸在裡面
+                                石頭變熊
+                                    原本形狀有點像熊的時候就變熊了
+                                原本機器看起來有點像某東西
+                                    被強化後就真的變了
+                deep style
+                    given a photo, make its style like famous paintings
+                    https://dreamscopeapp.com/
+                    http://arxiv.org/abs/1508.06576
+                    作法精神
+                        於來image丟給CNN
+                            得到filter output: content
+                        把style image丟給CNN
+                            得到filter ouput: style
+                            注意output跟output之間的correlation
+                            correlation代表image的style
+                        用同一個CNN
+                            找一張image
+                                content像input image的content
+                                他的correlation像style image的filter output之間的correlation
+                                同時滿足的就會轉換風格
+                                    用Gradient decsent的方法
+More Application: Playing Go
+    一般typical Network也能做這事情不一定要CNN
+        只要learn一個network找到function
+            input
+                棋盤(19x19 vector)
+                black:1
+                white:-1
+                none:0
+            output
+                棋盤位置(19x19 position)
+        fully connected feedforward network can be used
+        but CNN perform much better
+            把棋盤當image來看
+    training:
+        record of previous plays
+        棋盤 input -> CNN -> output 天元=1, other=0
+    why CNN for playing GO?
+        什麼時候用CNN?
+            有image該有的特性就適合
+        some pattern are much smaller the whole image
+            圍棋三個黑紫圍一白子
+                只需要看這小小pattern就好
+                CNN in Go
+                    5x5 pattern
+        the same pattern appear in differenct regions
+            圍棋的組合出現在不同期盤位置代表相同意議
+        Subsampling the pixels will not change the object
+            maxpooling
+                how to expand this in Go?
+            alpha go network architecture
+                19x19x48 feature map
+                    每一個位置都用48個value來描述他
+                        domain knowledge
+                            是不是屬於叫吃的狀態
+                            ...
+                first layer
+                    zero padding to 23x23 image
+                    conv 5x5 in k filter with stride 1
+                        k=192
+                        relu activate function
+                2-12 layer
+                    input 21x21
+                    conv 3x3 stride 1
+                not maxpooling
+            針對圍棋特性設計 
+                neural network時把不適合的maxpooling拿掉
+More Application: Speech
+    Spectrogram: 
+        y:Frequency
+        x:Time
+        顏色代表那段時間的該頻率強度
+        Specturgram reading的人可以看懂
+            人可以看就知道什麼聲音訊號
+                所以把圖片丟給機器當CNN判斷這image是什麼樣的聲音訊號
+                output:
+                    phoneme類似音標的單位
+        把圖片丟給CNN時
+            我們通常只考慮frequecy方向的filter
+                filter指移動frequency不移動time方向
+                移動time方向沒什麼幫助
+                    通常CNN後面會接LSTN或其他東西
+                        都已經考慮time的info了
+                Frequency的filter為什麼有幫助
+                    detect同樣pattern
+                    男女發同樣聲音頻率在不同區間
+                        但pattern相同
+                        只是頻率shift
+                        所以在frequency shift會有幫助
+        依照application特性design
+More Application: Text
+    word sequence -> CNN ->output 
+        每一個word都是一個vector
+            word embedding dimension
+                word vector排列起來就變成一個image
+            CNN filter掃word的順序形成vector
+                filter只在time shift
+                    sentence方向
+                在word embedding shift是不make sense的                        
+            word順序跟pattern很類似
+to learn more...
+    the method of visualization in these slides
+        https://blog.keras.io/how-convolutional-neural-networks-see-the-world.html
+    more about visualization
+        https://cs231n.github.io/understanding-cnn/
+    very cool CNN visualization toolkit做好了
+        http://yosinski.com/deepvis
+        http://scs.ryerson.ca/~aharley/vis/conv/
+    how to let machine draw an image
+        pixelRNN
+            http://arxiv.org/abs/1601.06759
+        Variation Autoencoder(VAE)
+            http://arxiv.org/abs/1312.6114
+        Generation Adverservial Network(GAN)
+            http://arxiv.org/abs/1406.2661
+        

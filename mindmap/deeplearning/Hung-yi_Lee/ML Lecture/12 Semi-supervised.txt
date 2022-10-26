@@ -1,247 +1,246 @@
-Semi-supervised
-    supervised learning:
-        {{x^r,y^^r}}_r^R = 1
-        E.g.: image,y^^r:class labels
-    semi-supervised learning:
-        {{x^r,y^^r}}_r^R = 1,{x^u}_u=R^R+U
-        a set of unlabeled data, usually U>>R
-        Transductive learning: unlabeled data is testing data
-        Inductive learning: unlabeled data is not the testing data
-        上述兩種case depend on test data是否給你了
-    why semi-supervised learning?
-        collecting data is easy, but collecting "labelled" data is expensive.
-        we do semi-supervised learning in our lives
-    why semi-supervised learning helps?
-        labelled data
-            dog
-            cat
-        unlabeled data
-            dog?cat?
-        當只用labelled data classification
-            可能就簡單分開
-            但把unlabeled data也放進去但是沒label
-            the distribution of the unlabeled data tell us something
-                可能影響到決定分割線
-            usually with some assumptions                
-                有沒有用決定假設符不符合和實際
-                    以為未知點應該是貓 
-                        結果是狗
-                            反而造成分割錯了
-    outline
-        Semi-supervised learning for Generative Model
-            Supervised Generative Model
-                Given labelled training example
-                    x^r ⊆ C1,C2
-                    looking for most likey prior probability P(Ci) and class-dependent probability P(X|C1)
-                    P(X|C1) is a gaussian parameterized by μ^i and Σ
-                    with P(C1),P(C2),μ^1,μ^2,Σ
-                        P(C1|X) = P(X|C1) P(C1) / P(X|C1)P(C1) + P(X|C2)P(C2)
-                    decision boundary
-                when given unlabeled data
-                    Σ: gaussian distribution 的範圍可能就不是橢圓要改圓圈
-                    μ: mean中間點位置可能為了涵蓋更多點挪動位置
-                    prior probability:positive原本預計是一樣多sample，結果unlabeled data看來是不平衡的(class2數量比較多)
-                    formulation:
-                        initialization: θ = {P(C1),P(C2),μ^1,μ^2,Σ}
-                        step 1: compute the posterior probability of unlabeled data
-                            P_θ(C1|X^μ)
-                                depend on model θ
-                        step 2: update model
-                            P(C1) = (N_1+Σ_x^u(P(C1|X^u)))/N
-                                N: total number of examples
-                                N1: number of examples belonging to C1
-                            原本P(C1)是所有可能是C1的機率
-                                unlabeled data影響預測結果的機率也納入
-                            μ^1 = 1/N^1 * Σ_(x^r⊆C1) x^r + [ 1/(Σ_x^u P(C1|X^u))*Σ_x^u P(C1|X^u)X^u ]
-                                []裡面是unlabled data對C1的影響weigthed sum除以所有weight sum來進行normalization
-                            其他都可以照這概念算出來
-                            算完之後update成新的model
-                                有新的model就back to step 1
-                                    機率不同整個step 2都要重算
-                                        反覆運算去收斂
-                                            初始值會決定收斂結果
-                        EM Algorithm
-                            step1: E step
-                            step2: M step
-                why?
+supervised learning:
+    {{x^r,y^^r}}_r^R = 1
+    E.g.: image,y^^r:class labels
+semi-supervised learning:
+    {{x^r,y^^r}}_r^R = 1,{x^u}_u=R^R+U
+    a set of unlabeled data, usually U>>R
+    Transductive learning: unlabeled data is testing data
+    Inductive learning: unlabeled data is not the testing data
+    上述兩種case depend on test data是否給你了
+why semi-supervised learning?
+    collecting data is easy, but collecting "labelled" data is expensive.
+    we do semi-supervised learning in our lives
+why semi-supervised learning helps?
+    labelled data
+        dog
+        cat
+    unlabeled data
+        dog?cat?
+    當只用labelled data classification
+        可能就簡單分開
+        但把unlabeled data也放進去但是沒label
+        the distribution of the unlabeled data tell us something
+            可能影響到決定分割線
+        usually with some assumptions                
+            有沒有用決定假設符不符合和實際
+                以為未知點應該是貓 
+                    結果是狗
+                        反而造成分割錯了
+outline
+    Semi-supervised learning for Generative Model
+        Supervised Generative Model
+            Given labelled training example
+                x^r ⊆ C1,C2
+                looking for most likey prior probability P(Ci) and class-dependent probability P(X|C1)
+                P(X|C1) is a gaussian parameterized by μ^i and Σ
+                with P(C1),P(C2),μ^1,μ^2,Σ
+                    P(C1|X) = P(X|C1) P(C1) / P(X|C1)P(C1) + P(X|C2)P(C2)
+                decision boundary
+            when given unlabeled data
+                Σ: gaussian distribution 的範圍可能就不是橢圓要改圓圈
+                μ: mean中間點位置可能為了涵蓋更多點挪動位置
+                prior probability:positive原本預計是一樣多sample，結果unlabeled data看來是不平衡的(class2數量比較多)
+                formulation:
                     initialization: θ = {P(C1),P(C2),μ^1,μ^2,Σ}
-                    Maximum likelihood with labelled data
-                        logL(θ) = Σ_x^r logP_θ(x^r,y^^r)
-                        P_θ(x^r,y^^r)
-                            = P_θ(x^r|y^^r)P(y^^r)
-                        cross-form solution                            
-                    Maximum likelihood with labelled+unlabeled data 
-                        logL(θ) = Σ_x^r logP_θ(x^r,y^^r) + Σ_x^u logP_θ(x^u,y^^u)
-                        P_θ(x^u) = P_θ(X^u|C1) P(C1) + P_θ(X^u|C2)P(C2)
-                        not convex problem
-                            EM Algorithm解
-                                solved iteratively
-                                    上面step1,step2反覆
-                                        收斂到local minimum                                                            
-        Low-density Separation Assumption
-            black or white                
-                labeled data,unlabeled data
-                在class1/class2之間會有非常明顯的鴻溝
-                    交接處density是低的
-                        不會出現data
-            self-training
-                given: 
-                    labelled data set
-                        {{ x^r , y^^r }}_u=l^R
-                    unlabeled data set
-                        {{ x^u}}_u=l^R+U
-                Repeat
-                    train model f* from labelled data set
-                        indenpendent to the model
-                            deep learning ... 都可以
-                        regression?
-                            沒有用
-                                不影響f*
-                    apply f* to the unlabeled data set
-                        obtain {{x^u,y^u}}_u=1^R+U                            
-                            Pseudo-label
-                    Remove a set of data from unlabeled data set, and add them in to unlabeled data set
-                        How to choose the data set remains open
-                        You can also provide a weight to each data                
-                similar to semi-supervised learning for generative model
-                Hard label vs Soft label
-                    hard label
-                        self-training
-                    soft label
-                        generative model
-                    consider using nerual network
-                        θ*(network parameter) from labelled data
-                        x^u-> θ* -> [0.7,0.3]
-                            hard label [1,0]
-                                有機會training
-                                比較類似 low density概念
-                            soft label [0.7,0.3]
-                                沒辦法training
-                                原本output就如此
-            entropy-base regularization
-                x^u->θ*->y^u
-                    output distribution
-                    假設5個分類
-                        output機率都集中到某一類->Good!
-                        output機率太平均->Bad!
-                entropy of y^u:
-                    evaluate how concentrate the distribution y^u is
-                        E(y^u) = - Σ_m=1^5 y_m^u ln(y_m^u)
-                            output有一類是1其他是0 => E(y^u) = 0
-                            output當5類平均 => E(y^u) = -ln(1/5) = ln5
-                        E(y^n) as small as possible
-                    new loss function
-                        原本
-                            L = Σ_x^r C(y^r,y^^r)
-                        改成
-                            L = Σ_x^r C(y^r,y^^r) + λ Σ_x^u E(y^u)
-                                label_data + unlabled data
-                                看要偏向label data多一點還是unlabeled data多一點
-                                可以微分就gradient descent
-                                角色很像regularization
-                                    利用unlabeled data讓她比較不會overfitting
-            outlook: semi-supervised SVM
-                transductive inference for text classification using Support Vector Machines
-                    https://www.cs.cornell.edu/people/tj/publications/joachims_99c.pdf
-                svm
-                    find a boundary that an provide the largest margin and least error
-                enumeration all possible labels of the unlabeled data
-                    窮舉所有unlabled data可能是class1或class2
-                        對每一個結果都做一個SVM
-                            找出最大margin跟least error
-                    量太大了
-                        改成
-                            每次改一筆unlabel data classification看能不能變好                            
-        Smoothness Assumption
-            近朱者赤，近墨者黑
-            assumption "similar" x has same y^
-            more precisely
-                x is not uniform
-                if x^1 and x^2 are close in a high density region,
-                    兩者之間相連一個high desntiy region
-                    兩者之間可以找到很多小差異的資料
-                        'indirectly' similar with stepping stones
-                    connected by a high density path
-                    人臉辨識也是類似這狀況
-                    文件分類上也類似這狀況
-                        classify astronomy vs travel articles
-                y^^1 and y^^2 are the same.
-            cluster and then label
-                clustering
-                    分出每個class->cluster
-                        框到都算該class
-                要讓cluster方法有用
-                    clustering的方法要很強
-                        autoencoder抽feature來做clustering
-            graph-based approach
-                how to know x^1 and x^2 are close is a high density region
-                    connected by high density path
-                represented the data points as a graph
-                    當一個新的點在graph是相連就算同class
-                    沒相連就算很近也不算
-                graph representation is nature sometimes
-                    E.g. hyperlink of webpages, citation of papers
-                sometimes you have to construct the graph yourself
-                常見做法
-                    define the similarity s(x^i,x^j) between x^i and x^j
-                        圖片可能用抽出來feature算相似度
-                    add edge:
-                        K Nearest Neighbor
-                            最近k個點做相連算相似度
-                        e-Nerighborhood
-                            每一個點只有相似度超過threshold,相似大於1的那些點才會被黏起來
-                        不是只有相連跟不相連這樣binary的選擇
-                        可以給edge有weight
-                            可以跟相似度成正比
-                        edge weight is proportional to s(x^i,x^j)
-                            RBM function - gaussian radial basis function
-                                s(x^i,x^j) = exp(-y||x^i-x^j||2)
-                                    x^i,x^j = Vector
-                                    算euclidean distance
-                                    exp經驗上會給你比較好的performance
-                                        why?
-                                            exp下降速度很快
-                                            exp只有在相近的時候singularity才會大
-                                            只要稍微遠就會下降很快
-                                            都只能跟非常近的點連
-                                                稍微遠一點就沒辦法連結
-                                            有這種機制比較能畫出好的graph
-                精神上面
-                    在資料上有一些label data
-                        graph上有些是label class則這個graph屬於class機率就很高
-                        每筆data會影響到鄰居
-                            data的label是會傳遞去影響串到的較遠的點
-                    the labelled data influence their neighbors
-                    propagate through the graph
-            define the Smoothness of the labels on the graph
-                這label有多符合smoothness assumption
-                S =1/2Σ_ij w_ij(y^i-y^j)^2
-                    for all data (no matter labelled or not)
-                    smaller means smoother
-                    simple:
-                        y: (R+U)-dim vector
-                        y = [..y^i...y^j...]^T
-                        S = y^tLy
-                        L = R+U x R+U vector
-                            Graph Laplacian
-                                調和矩陣
-                            L = D - W
-                                W
-                                    把所有data之間的connection關聯建成的matrix
-                                D
-                                    W的每一個row合起來的值放在diagonal位置
-                                兩者減起來就得到
-                                    Laplacian
-                        y^tLY => depend on network parameters
-                            evaluate label smoothness
-                            y = label 取決network parameters
-                                network dependent
-                            原本loss function可能考慮crossentropy
-                            加入smooth => λ*s
-                                as regularization term
-                            可在deepleanring任何layer外接出來算smooth或通通都要求smooth
-        Better Representation
-            去蕪存菁 化繁為簡
-            unsupervised再說
-            find the latent factors behind the observation
-            the latent factors(usually simpler) are better representations           
+                    step 1: compute the posterior probability of unlabeled data
+                        P_θ(C1|X^μ)
+                            depend on model θ
+                    step 2: update model
+                        P(C1) = (N_1+Σ_x^u(P(C1|X^u)))/N
+                            N: total number of examples
+                            N1: number of examples belonging to C1
+                        原本P(C1)是所有可能是C1的機率
+                            unlabeled data影響預測結果的機率也納入
+                        μ^1 = 1/N^1 * Σ_(x^r⊆C1) x^r + [ 1/(Σ_x^u P(C1|X^u))*Σ_x^u P(C1|X^u)X^u ]
+                            []裡面是unlabled data對C1的影響weigthed sum除以所有weight sum來進行normalization
+                        其他都可以照這概念算出來
+                        算完之後update成新的model
+                            有新的model就back to step 1
+                                機率不同整個step 2都要重算
+                                    反覆運算去收斂
+                                        初始值會決定收斂結果
+                    EM Algorithm
+                        step1: E step
+                        step2: M step
+            why?
+                initialization: θ = {P(C1),P(C2),μ^1,μ^2,Σ}
+                Maximum likelihood with labelled data
+                    logL(θ) = Σ_x^r logP_θ(x^r,y^^r)
+                    P_θ(x^r,y^^r)
+                        = P_θ(x^r|y^^r)P(y^^r)
+                    cross-form solution                            
+                Maximum likelihood with labelled+unlabeled data 
+                    logL(θ) = Σ_x^r logP_θ(x^r,y^^r) + Σ_x^u logP_θ(x^u,y^^u)
+                    P_θ(x^u) = P_θ(X^u|C1) P(C1) + P_θ(X^u|C2)P(C2)
+                    not convex problem
+                        EM Algorithm解
+                            solved iteratively
+                                上面step1,step2反覆
+                                    收斂到local minimum                                                            
+    Low-density Separation Assumption
+        black or white                
+            labeled data,unlabeled data
+            在class1/class2之間會有非常明顯的鴻溝
+                交接處density是低的
+                    不會出現data
+        self-training
+            given: 
+                labelled data set
+                    {{ x^r , y^^r }}_u=l^R
+                unlabeled data set
+                    {{ x^u}}_u=l^R+U
+            Repeat
+                train model f* from labelled data set
+                    indenpendent to the model
+                        deep learning ... 都可以
+                    regression?
+                        沒有用
+                            不影響f*
+                apply f* to the unlabeled data set
+                    obtain {{x^u,y^u}}_u=1^R+U                            
+                        Pseudo-label
+                Remove a set of data from unlabeled data set, and add them in to unlabeled data set
+                    How to choose the data set remains open
+                    You can also provide a weight to each data                
+            similar to semi-supervised learning for generative model
+            Hard label vs Soft label
+                hard label
+                    self-training
+                soft label
+                    generative model
+                consider using nerual network
+                    θ*(network parameter) from labelled data
+                    x^u-> θ* -> [0.7,0.3]
+                        hard label [1,0]
+                            有機會training
+                            比較類似 low density概念
+                        soft label [0.7,0.3]
+                            沒辦法training
+                            原本output就如此
+        entropy-base regularization
+            x^u->θ*->y^u
+                output distribution
+                假設5個分類
+                    output機率都集中到某一類->Good!
+                    output機率太平均->Bad!
+            entropy of y^u:
+                evaluate how concentrate the distribution y^u is
+                    E(y^u) = - Σ_m=1^5 y_m^u ln(y_m^u)
+                        output有一類是1其他是0 => E(y^u) = 0
+                        output當5類平均 => E(y^u) = -ln(1/5) = ln5
+                    E(y^n) as small as possible
+                new loss function
+                    原本
+                        L = Σ_x^r C(y^r,y^^r)
+                    改成
+                        L = Σ_x^r C(y^r,y^^r) + λ Σ_x^u E(y^u)
+                            label_data + unlabled data
+                            看要偏向label data多一點還是unlabeled data多一點
+                            可以微分就gradient descent
+                            角色很像regularization
+                                利用unlabeled data讓她比較不會overfitting
+        outlook: semi-supervised SVM
+            transductive inference for text classification using Support Vector Machines
+                https://www.cs.cornell.edu/people/tj/publications/joachims_99c.pdf
+            svm
+                find a boundary that an provide the largest margin and least error
+            enumeration all possible labels of the unlabeled data
+                窮舉所有unlabled data可能是class1或class2
+                    對每一個結果都做一個SVM
+                        找出最大margin跟least error
+                量太大了
+                    改成
+                        每次改一筆unlabel data classification看能不能變好                            
+    Smoothness Assumption
+        近朱者赤，近墨者黑
+        assumption "similar" x has same y^
+        more precisely
+            x is not uniform
+            if x^1 and x^2 are close in a high density region,
+                兩者之間相連一個high desntiy region
+                兩者之間可以找到很多小差異的資料
+                    'indirectly' similar with stepping stones
+                connected by a high density path
+                人臉辨識也是類似這狀況
+                文件分類上也類似這狀況
+                    classify astronomy vs travel articles
+            y^^1 and y^^2 are the same.
+        cluster and then label
+            clustering
+                分出每個class->cluster
+                    框到都算該class
+            要讓cluster方法有用
+                clustering的方法要很強
+                    autoencoder抽feature來做clustering
+        graph-based approach
+            how to know x^1 and x^2 are close is a high density region
+                connected by high density path
+            represented the data points as a graph
+                當一個新的點在graph是相連就算同class
+                沒相連就算很近也不算
+            graph representation is nature sometimes
+                E.g. hyperlink of webpages, citation of papers
+            sometimes you have to construct the graph yourself
+            常見做法
+                define the similarity s(x^i,x^j) between x^i and x^j
+                    圖片可能用抽出來feature算相似度
+                add edge:
+                    K Nearest Neighbor
+                        最近k個點做相連算相似度
+                    e-Nerighborhood
+                        每一個點只有相似度超過threshold,相似大於1的那些點才會被黏起來
+                    不是只有相連跟不相連這樣binary的選擇
+                    可以給edge有weight
+                        可以跟相似度成正比
+                    edge weight is proportional to s(x^i,x^j)
+                        RBM function - gaussian radial basis function
+                            s(x^i,x^j) = exp(-y||x^i-x^j||2)
+                                x^i,x^j = Vector
+                                算euclidean distance
+                                exp經驗上會給你比較好的performance
+                                    why?
+                                        exp下降速度很快
+                                        exp只有在相近的時候singularity才會大
+                                        只要稍微遠就會下降很快
+                                        都只能跟非常近的點連
+                                            稍微遠一點就沒辦法連結
+                                        有這種機制比較能畫出好的graph
+            精神上面
+                在資料上有一些label data
+                    graph上有些是label class則這個graph屬於class機率就很高
+                    每筆data會影響到鄰居
+                        data的label是會傳遞去影響串到的較遠的點
+                the labelled data influence their neighbors
+                propagate through the graph
+        define the Smoothness of the labels on the graph
+            這label有多符合smoothness assumption
+            S =1/2Σ_ij w_ij(y^i-y^j)^2
+                for all data (no matter labelled or not)
+                smaller means smoother
+                simple:
+                    y: (R+U)-dim vector
+                    y = [..y^i...y^j...]^T
+                    S = y^tLy
+                    L = R+U x R+U vector
+                        Graph Laplacian
+                            調和矩陣
+                        L = D - W
+                            W
+                                把所有data之間的connection關聯建成的matrix
+                            D
+                                W的每一個row合起來的值放在diagonal位置
+                            兩者減起來就得到
+                                Laplacian
+                    y^tLY => depend on network parameters
+                        evaluate label smoothness
+                        y = label 取決network parameters
+                            network dependent
+                        原本loss function可能考慮crossentropy
+                        加入smooth => λ*s
+                            as regularization term
+                        可在deepleanring任何layer外接出來算smooth或通通都要求smooth
+    Better Representation
+        去蕪存菁 化繁為簡
+        unsupervised再說
+        find the latent factors behind the observation
+        the latent factors(usually simpler) are better representations           

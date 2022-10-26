@@ -1,186 +1,185 @@
-Introduction of Machine Learning
-    AI target
-        artifical intellgence (1950)
-            目標
-            設定好先天本能
-                人類設定好的
-                設定規則
-                weakness of hand-crafted rules
-                    hard to consider all possibilities
-                        永遠無法超越創造者
-                    lot of human efforts(not suitable for small industry)
-        machine learning (1980)
-            手段
-            what is machine learning?
-                you wirte the program for learning
-                looking for a function from data
-                    speech recognition
-                        f(voice)="how are you"
-                    image recognition
-                        f(image)="cat"
-                    playing go
-                        f(go)="5-5"
-                    dialogue system
-                        f("how are you") = "I'm fine"
-            how to find the function
-                ex:image recognition
-                    f(image)="cat"
-                    prepare
-                        A set of function (model)
-                            f1
-                                f1(貓圖) = "cat" / f1(狗圖) = "dog"
-                            f2
-                                f1(貓圖) = "money" / f1(狗圖) = "snake"
-                            成千上萬的fn
-                    training data
-                        好的function輸入輸出應該如何
-                        finput(猴圖) = "monkey"
-                        finput(貓圖) = "cat"
-                        finput(狗圖) = "dog"
-                        這樣才是對的
-                    goodness of function f
-                        找出好的function
-                            f1看起來比較好
-                        supervised learning
-                        需要有效率的演算法
-                            從中挑出最好的function
-                                f*
-                                    using f*
-                                        testing....
-                                        f*(沒看過的貓) = "cat"
-                                        機器有沒有舉一反三的能力
-                    machine learning分三個步驟
-                        訂出一個function set: model
-                            define a set of function
-                        衡量function好不好
-                            goodness of function
-                        好的演算法挑出最好的function
-                            pick the best function
-        deep learning (2010)
-            機器學習的其中一個方法
-    learning map
-        regression[task]
-            machine learning task
-            the output of the target function f is "scalar"
-                預測PM2.5
-                    f->明天上午PM2.5(scalar)
-                    input:
-                        今天上午的PM2.5
-                        昨天上午的PM2.5
-                        ...
-            training data:
-                input:
-                    09/01上午PM2.5=63
-                    09/02上午PM2.5=65
-                    output:
-                        09/03上午PM2.5=100
-                input:
-                    09/12上午PM2.5=30
-                    09/13上午PM2.5=25
-                    output:
-                        09/14上午PM2.5=20
-        classification[task]
-            binary classification
-                f(x)=yes/no
-                ex: spam filtering
-                    f(email)=Yes/No spam
-            multi-class classification
-                f(x)=class1,class2,class2,...,classN
-                ex: document classification
-                    f(doc)= 政治/經濟/體育...
-        linear model[method]
-        non-linear model[method]
-            deep learning
+AI target
+    artifical intellgence (1950)
+        目標
+        設定好先天本能
+            人類設定好的
+            設定規則
+            weakness of hand-crafted rules
+                hard to consider all possibilities
+                    永遠無法超越創造者
+                lot of human efforts(not suitable for small industry)
+    machine learning (1980)
+        手段
+        what is machine learning?
+            you wirte the program for learning
+            looking for a function from data
+                speech recognition
+                    f(voice)="how are you"
                 image recognition
-                    hierachical structure
-                    f(pixel)=>classification
-                    training data:
-                        image=>label
-                        image=>label
-                playing GO
-                    f(棋盤)=>Next Move
-                    each position is a class(19x19classes)
-                    training data:
-                        一堆棋譜=>下一步
-                        近藤光vs社清春
-                            黑:5之5 -> 白:天元 -> 黑:5之5
-                        input:
+                    f(image)="cat"
+                playing go
+                    f(go)="5-5"
+                dialogue system
+                    f("how are you") = "I'm fine"
+        how to find the function
+            ex:image recognition
+                f(image)="cat"
+                prepare
+                    A set of function (model)
+                        f1
+                            f1(貓圖) = "cat" / f1(狗圖) = "dog"
+                        f2
+                            f1(貓圖) = "money" / f1(狗圖) = "snake"
+                        成千上萬的fn
+                training data
+                    好的function輸入輸出應該如何
+                    finput(猴圖) = "monkey"
+                    finput(貓圖) = "cat"
+                    finput(狗圖) = "dog"
+                    這樣才是對的
+                goodness of function f
+                    找出好的function
+                        f1看起來比較好
+                    supervised learning
+                    需要有效率的演算法
+                        從中挑出最好的function
+                            f*
+                                using f*
+                                    testing....
+                                    f*(沒看過的貓) = "cat"
+                                    機器有沒有舉一反三的能力
+                machine learning分三個步驟
+                    訂出一個function set: model
+                        define a set of function
+                    衡量function好不好
+                        goodness of function
+                    好的演算法挑出最好的function
+                        pick the best function
+    deep learning (2010)
+        機器學習的其中一個方法
+learning map
+    regression[task]
+        machine learning task
+        the output of the target function f is "scalar"
+            預測PM2.5
+                f->明天上午PM2.5(scalar)
+                input:
+                    今天上午的PM2.5
+                    昨天上午的PM2.5
+                    ...
+        training data:
+            input:
+                09/01上午PM2.5=63
+                09/02上午PM2.5=65
+                output:
+                    09/03上午PM2.5=100
+            input:
+                09/12上午PM2.5=30
+                09/13上午PM2.5=25
+                output:
+                    09/14上午PM2.5=20
+    classification[task]
+        binary classification
+            f(x)=yes/no
+            ex: spam filtering
+                f(email)=Yes/No spam
+        multi-class classification
+            f(x)=class1,class2,class2,...,classN
+            ex: document classification
+                f(doc)= 政治/經濟/體育...
+    linear model[method]
+    non-linear model[method]
+        deep learning
+            image recognition
+                hierachical structure
+                f(pixel)=>classification
+                training data:
+                    image=>label
+                    image=>label
+            playing GO
+                f(棋盤)=>Next Move
+                each position is a class(19x19classes)
+                training data:
+                    一堆棋譜=>下一步
+                    近藤光vs社清春
+                        黑:5之5 -> 白:天元 -> 黑:5之5
+                    input:
+                        黑:5之5
+                        output:
+                            天元
+                    input
+                        黑:5之5 -> 白:天元
+                        output:
                             黑:5之5
-                            output:
-                                天元
-                        input
-                            黑:5之5 -> 白:天元
-                            output:
-                                黑:5之5
-            SVM
-            decision  tree
-            K-NN
-        supervised learning[scenario]
-            需要大量training data
-            input/output pair of target function
-            output = label
-        減少training data的學習方式
-            semi-supervised learning[scenario]
-                hard to collect a large amount of labeled data
-                for example, recognition cats and dogs
-                labeled data
-                    dog... / cat...
-                large unlabeled data
-                    dog.../cat...
-            transfer learning[scenario]
-                只有少量label
-                    dog...
-                    cat...
-                Data not related to the task considered
-                    can be either labeled or unlabeled
-                    可以帶來幫助
-            unsupervised learning[scenario]
-                無師自通
-                machine reading
-                    machine learns the meaning of words from reading a lot of documents
-                    training data is a lot of text
-                    no output
-                看一堆動物
-                    自己創造動物
-                machine drawing
-                    code -> f(x) -> image
-                    training data is a lot of images
-            structured learning[task]
-                有結果性的結果
-                beyond classification
-                    speech recognition
-                        f(voice)->"大家好歡迎修機器學習"
-                    machine translation
-                        f(中文)->英文
-                    人臉辨識
-                        f(臉)->長門,春日,朝比奈實玖瑠
-            reinforcement learning[scenario]
-                supervised
-                    正確答案
-                        f("hello")=>"hi"
-                        f("bye bye")=>"good bye"
-                        f(盤勢)=>"5-5"
-                    learning from teacher
-                reinforcement
-                    只告訴好,不好
-                        f(agent)講電話=>被掛電話=>bad
-                            不知道哪裡錯了
-                            只知道做了不好
-                        f(盤勢)->f(盤勢)=>Win
-                    learning from crtics
-                        評價中學習
-                        比較符合人類學習情境
-                    需要有對手
-                        機器的對手是另一個機器
-                        alpha GO = supervised learning + reinforcement learning
-    說明
-        [scenario]
-            無法自己控制的情境
-            沒有data做supervised learning所以才做reinforcement learning
-            有training data應該用supervised learning
-            看data決定scenario
-        [task]
-            要解的問題
-            隨著output的不同去選擇
-        [method]
-            同樣的test不同的方法來解
+        SVM
+        decision  tree
+        K-NN
+    supervised learning[scenario]
+        需要大量training data
+        input/output pair of target function
+        output = label
+    減少training data的學習方式
+        semi-supervised learning[scenario]
+            hard to collect a large amount of labeled data
+            for example, recognition cats and dogs
+            labeled data
+                dog... / cat...
+            large unlabeled data
+                dog.../cat...
+        transfer learning[scenario]
+            只有少量label
+                dog...
+                cat...
+            Data not related to the task considered
+                can be either labeled or unlabeled
+                可以帶來幫助
+        unsupervised learning[scenario]
+            無師自通
+            machine reading
+                machine learns the meaning of words from reading a lot of documents
+                training data is a lot of text
+                no output
+            看一堆動物
+                自己創造動物
+            machine drawing
+                code -> f(x) -> image
+                training data is a lot of images
+        structured learning[task]
+            有結果性的結果
+            beyond classification
+                speech recognition
+                    f(voice)->"大家好歡迎修機器學習"
+                machine translation
+                    f(中文)->英文
+                人臉辨識
+                    f(臉)->長門,春日,朝比奈實玖瑠
+        reinforcement learning[scenario]
+            supervised
+                正確答案
+                    f("hello")=>"hi"
+                    f("bye bye")=>"good bye"
+                    f(盤勢)=>"5-5"
+                learning from teacher
+            reinforcement
+                只告訴好,不好
+                    f(agent)講電話=>被掛電話=>bad
+                        不知道哪裡錯了
+                        只知道做了不好
+                    f(盤勢)->f(盤勢)=>Win
+                learning from crtics
+                    評價中學習
+                    比較符合人類學習情境
+                需要有對手
+                    機器的對手是另一個機器
+                    alpha GO = supervised learning + reinforcement learning
+說明
+    [scenario]
+        無法自己控制的情境
+        沒有data做supervised learning所以才做reinforcement learning
+        有training data應該用supervised learning
+        看data決定scenario
+    [task]
+        要解的問題
+        隨著output的不同去選擇
+    [method]
+        同樣的test不同的方法來解

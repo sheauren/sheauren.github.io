@@ -1,26 +1,25 @@
-overfitting
-    model
-        tensor = capacity
-        more tensor = memorization capacity
-        compressed representations
-            tensor number choose
-                to much capacity
-                not enough capacity
-    create baseline model
-        create smaller model
-        create bigger model
-            easy fit train data
-            easy overfit
-        compare training& validation loss
-    stragies prevent overfit
-        Weight Regularization
-            L1/L2
-                Dense(16)Relu,regularizer=l1(0.001) #absolute liner weight
-                Dense(16)Relu,regularizer=l2(0.001) #absolute square weight
-        Dropout
-            Dropout(0.5)
-        Reduce capacity
-        More dataset
-            Data argumentation
-        Batch Normalization
-        
+model
+    tensor = capacity
+    more tensor = memorization capacity
+    compressed representations
+        tensor number choose
+            to much capacity
+            not enough capacity
+create baseline model
+    create smaller model
+    create bigger model
+        easy fit train data
+        easy overfit
+    compare training& validation loss
+stragies prevent overfit
+    Weight Regularization
+        L1/L2
+            Dense(16)Relu,regularizer=l1(0.001) #absolute liner weight
+            Dense(16)Relu,regularizer=l2(0.001) #absolute square weight
+    Dropout
+        Dropout(0.5)
+    Reduce capacity
+    More dataset
+        Data argumentation
+    Batch Normalization
+    

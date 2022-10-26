@@ -1,274 +1,273 @@
-Regression
-    Application
-        Stock Market Forecast
-            f(指數)=>明天漲跌
-        self-driven Car
-            f(Sensor)=>方向盤角度
-        Recommentation
-            f(userA,productB)=>購買可能性
-    Example
-        Estimating the Combat Power(CP) of a pokemon after evolution
-        f(寶可夢相關information)=>CP after evolution
-        f(x)=>Ycp
-            Xs=物種
-            Xcp=>CP值
-            Xhp=>HP值
-            Xw=>重量
-            Xh=>高度
-        三步驟
-            step1. model(function set)
-                a set of function set
-                f(x)=>Ycp
-                    y = b+w*Xcp
-                        b,w can be any value
-                        f1: y=10.0+9.0*Xcp
-                        f2: y=9.8+9.2*Xcp
-                        f3: y=-0.8-1.2*Xcp
-                            不太可能正確,CP不大可能是負的
-                        ... infinite
-                model is linear model
-                    y = b + ∑wixi 
-                        xi: input attribute of x (feature)
-                        wi: weight, b: bias
-            step2. Goodness of Function
-                Training Data:Supervised Case
-                    f(寶可夢資料x^1) => Y^1
-                    f(寶可夢資料x^2) => Y^2
-                    ...
-                    f(寶可夢資料x^10) => Y^10
-                    this is real data
-                Loss Function: L
-                    input: a function, output: how bad it is
-                    L(f)=>L(w,b)
-                        ∑n=1^10(y^n-(b+w*x^n_cp))^2
-            step3. best function
-                best function f*
-                    f* = argmin L(f)
-                    w*,b* = argmin_w,b L(w,b)
-                Gradient Descent - one parameter
-                    consider loss function L(w) with one parameter w:
-                        窮舉法把所有w可能性找出最小L(w)
-                            *w = argmin_w L(w)
-                    1. random pick a point
-                        w=0
-                        有找到更好點的手法
-                    2. compute dL/dw |w = w^0
-                        w^0找切線斜率(微分L/w)
-                            值負的
-                                低的方向需要w值增加
-                            值正的
-                                低的方向需要w值減少
-                            偏移量要偏多少
-                                看斜率(dL/dw)
-                                看learning rate:η
-                                    是先定好的數值
-                        w^1 = w^0 -  η(dL/dw)|w = w^0
-                        重複步驟
-                        w^2 = w^1 -  η(dL/dw)|w = w^1
-                        執行非常多次更新後
-                        會停在local optimal位置微分=0
-                            無法滿意
-                            not global optimal
-                Gradient Descent - two parameter
-                    w*,b* = arg min_w,b L(w,b)
-                    1. random pick a point
-                        w^0,b^0
-                    2. compute
-                        ∂L/∂w|w=w^0, b=b^0  
-                        ∂L/∂b|w=w^0, b=b^0
-                        w^1 = w^0 - η(∂L/∂w)|w=w^0,b=b^0
-                        b^1 = b^0 - η(∂L/∂b)|w=w^0,b=b^0
-                        重複步驟
-                Gradient是指把w,b偏微分排成vector
-                    ∇L[∂L/∂W ∂L/∂b] gradient
-                worry
-                    loss function不規則凹凸造成只能找到局部最佳
-                    linear regression是convex所以沒這問題
-                        convex無local optimal位置
-                formulation of ∂L/∂w and ∂L/∂b
-                    L(w,b) = ∑n=1^10(y^n-(b+w*x^n_cp))^2
-                    ∂L/∂w = ∑n=1^10 2(y^n-(b+w*x^n_cp))(-x^n_cp)
-                    ∂L/∂b = ∑n=1^10 2(y^n-(b+w*x^n_cp))(-1)
-        How's the result?
-            y = b+w*x_cp
-            b = -188.4
-            w = 2.7
-            average error on Training data 
-                ∑n=1^10 e^n = 31.9
+Application
+    Stock Market Forecast
+        f(指數)=>明天漲跌
+    self-driven Car
+        f(Sensor)=>方向盤角度
+    Recommentation
+        f(userA,productB)=>購買可能性
+Example
+    Estimating the Combat Power(CP) of a pokemon after evolution
+    f(寶可夢相關information)=>CP after evolution
+    f(x)=>Ycp
+        Xs=物種
+        Xcp=>CP值
+        Xhp=>HP值
+        Xw=>重量
+        Xh=>高度
+    三步驟
+        step1. model(function set)
+            a set of function set
+            f(x)=>Ycp
+                y = b+w*Xcp
+                    b,w can be any value
+                    f1: y=10.0+9.0*Xcp
+                    f2: y=9.8+9.2*Xcp
+                    f3: y=-0.8-1.2*Xcp
+                        不太可能正確,CP不大可能是負的
+                    ... infinite
+            model is linear model
+                y = b + ∑wixi 
+                    xi: input attribute of x (feature)
+                    wi: weight, b: bias
+        step2. Goodness of Function
+            Training Data:Supervised Case
+                f(寶可夢資料x^1) => Y^1
+                f(寶可夢資料x^2) => Y^2
+                ...
+                f(寶可夢資料x^10) => Y^10
+                this is real data
+            Loss Function: L
+                input: a function, output: how bad it is
+                L(f)=>L(w,b)
+                    ∑n=1^10(y^n-(b+w*x^n_cp))^2
+        step3. best function
+            best function f*
+                f* = argmin L(f)
+                w*,b* = argmin_w,b L(w,b)
+            Gradient Descent - one parameter
+                consider loss function L(w) with one parameter w:
+                    窮舉法把所有w可能性找出最小L(w)
+                        *w = argmin_w L(w)
+                1. random pick a point
+                    w=0
+                    有找到更好點的手法
+                2. compute dL/dw |w = w^0
+                    w^0找切線斜率(微分L/w)
+                        值負的
+                            低的方向需要w值增加
+                        值正的
+                            低的方向需要w值減少
+                        偏移量要偏多少
+                            看斜率(dL/dw)
+                            看learning rate:η
+                                是先定好的數值
+                    w^1 = w^0 -  η(dL/dw)|w = w^0
+                    重複步驟
+                    w^2 = w^1 -  η(dL/dw)|w = w^1
+                    執行非常多次更新後
+                    會停在local optimal位置微分=0
+                        無法滿意
+                        not global optimal
+            Gradient Descent - two parameter
+                w*,b* = arg min_w,b L(w,b)
+                1. random pick a point
+                    w^0,b^0
+                2. compute
+                    ∂L/∂w|w=w^0, b=b^0  
+                    ∂L/∂b|w=w^0, b=b^0
+                    w^1 = w^0 - η(∂L/∂w)|w=w^0,b=b^0
+                    b^1 = b^0 - η(∂L/∂b)|w=w^0,b=b^0
+                    重複步驟
+            Gradient是指把w,b偏微分排成vector
+                ∇L[∂L/∂W ∂L/∂b] gradient
+            worry
+                loss function不規則凹凸造成只能找到局部最佳
+                linear regression是convex所以沒這問題
+                    convex無local optimal位置
+            formulation of ∂L/∂w and ∂L/∂b
+                L(w,b) = ∑n=1^10(y^n-(b+w*x^n_cp))^2
+                ∂L/∂w = ∑n=1^10 2(y^n-(b+w*x^n_cp))(-x^n_cp)
+                ∂L/∂b = ∑n=1^10 2(y^n-(b+w*x^n_cp))(-1)
+    How's the result?
+        y = b+w*x_cp
+        b = -188.4
+        w = 2.7
+        average error on Training data 
+            ∑n=1^10 e^n = 31.9
+        average error on Testing data
+            ∑n=1^10 e^n = 35.0
+    How can we better?
+        redesign model 2次方
+            y = b+w_1*x_cp+w_2*(x_cp)^2
+            b = -10.3
+            w_1 = 1.0
+            w_2 = 2.7e-3
+            average error on Training data
+                15.4
             average error on Testing data
-                ∑n=1^10 e^n = 35.0
-        How can we better?
-            redesign model 2次方
-                y = b+w_1*x_cp+w_2*(x_cp)^2
-                b = -10.3
-                w_1 = 1.0
-                w_2 = 2.7e-3
-                average error on Training data
-                    15.4
-                average error on Testing data
-                    18.4
-            redesign model 3次方
-                y = b+w_1*x_cp+w_2*(x_cp)^2+w_3*(x_cp)^3
-                b = 6.4
-                w_1 = 0.66
-                w_2 = 4.3e-3
-                w_3 = -1.8e-6
-                average error on Training data
-                    15.3
-                average error on Testing data
-                    18.1
-                    slightly better.
-                    How about more complex
-            redesign model 4次方
-                y = b+w_1*x_cp+w_2*(x_cp)^2+w_3*(x_cp)^3+w_4*(x_cp)^4
-                average error on Training data
-                    14.9
-                average error on Testing data
-                    28.8
-                    bad
-            redesign model 5次方
-                y = b+w_1*x_cp+w_2*(x_cp)^2+w_3*(x_cp)^3+w_4*(x_cp)^4+w_5*(x_cp)^5
-                average error on Training data
-                    12.8
-                average error on Testing data
-                    232.1
-                    the result are so bad
-            三次方形成的function space
-            四次方形成的function space包含三次方(w4=0等同三次方)
-            五次方形成的function space包含四次方(w5=0等同四次方)
-            理論上計算越複雜可以找的好的function error rate最低的機會應該越高
-                前提Gradient descent可以幫你找出best Function
-                但是在testing data上看起來不一樣
-                    model越來越複雜training結果越來越好
-                    testing data結果確不一定比較好
-                        overfitting
-        let's collect more data
-            there is some hidden factor not considered in the previous model...
-                物種/Species 
-            redesign the model
-                x_s = species of x
-                if x_s == Pidgey:
-                    y = b_1+w_1*x_cp
-                if x_s == Weedle:
-                    y = b_2+w_2*x_cp
-                if x_s == Caterpie:
-                    y = b_3+w_3*x_cp
-                if x_s == Eevee:
-                    y = b_4+w_4*x_cp
-                不同物種帶不同linear function
-                改寫成可微分的function
-                y = 
-                    b_1*δ(x_s ==Pidgey)
-                    + w_1*δ(x_s ==Pidgey)x_cp
-                    + b_2*δ(x_s ==Weedle)
-                    + w_2*δ(x_s ==Weedle)x_cp
-                    + b_3*δ(x_s ==Caterpie)
-                    + w_3*δ(x_s ==Caterpie)x_cp
-                    + b_4*δ(x_s ==Eevee)
-                    + w_4*δ(x_s ==Eevee)x_cp
-                δ(x_s ==Pidgey)
-                    = 1 if x_s==Pidgey
-                    = 0 otherwise
-                y =  b + ∑w_i*x_i
-                    x_i
-                        δ(x_s ==Pidgey) 
-                        δ(x_s ==Pidgey)*x_cp
-                average error on Training data
-                    3.8
-                average error on Testing data
-                    14.3
-        還有改善空間
-            進化方向不同的參數沒進來
-            每次進化可能有一個random的變數在裡面
-            還有其他的參數可能影響進化cp值
-                weight
-                height
-                HP
-            back to step1 redesign model
-                if x_s ==Pidgey
-                    y' = b_1 + w_1 * x_cp + w_5*(x_cp)^2
-                if x_s ==Weedle
-                    y' = b_1 + w_2 * x_cp + w_6*(x_cp)^2
-                if x_s ==Caterpie
-                    y' = b_1 + w_3 * x_cp + w_7*(x_cp)^2
-                if x_s ==Eevee
-                    y' = b_1 + w_4 * x_cp + w_8*(x_cp)^2
-                y = 
-                    y' 
-                    + w_9*x_hp + w_10*(x_hp)^2
-                    + w_11*x_h + w_12*(x_h)^2
-                    + w_13*x_w + w_14*(x_w)^2
-                average error on Training data
-                    1.9
-                average error on Testing data
-                    102.3
-                    overfitting!!
-            back to step2: regularization
-                redesign loss funciton 
-                    y = b+∑w_i*x_i
-                    L = ∑n(y^n-(b+∑w_i*x_i^n))^2
-                        + regularization
-                            λ*∑(w_i)^2
-                            b不需要加入因為他是整體偏移跟平滑無關
-                        λ是一個常數
-                        所有的w算一下平方加起來
-                            w_i參數值越小越好
-                            接近0參數
-                            why smooth function are preferred?
-                                output對input的變化是比較不敏感的
-                                輸入被雜訊干擾時受到比較少的影響
-                    λ:
-                        0
-                            Training
-                                1.9
-                            Testing
-                                102.3
-                        1
-                            Training
-                                2.3
-                            Testing
-                                68.7
-                        10
-                            Training
-                                3.5
-                            Testing
-                                25.7
-                        100
-                            Training
-                                4.1
-                            Testing
-                                11.1
-                        1000
-                            Training
-                                5.6
-                            Testing
-                                12.8
-                        10000
-                            Training
-                                6.3
-                            Testing
-                                18.7
-                        100000
-                            Training
-                                8.5
-                            Testing
-                                26.8
-                        λ越大越smooth 反而training結果loss越大
-                        λ越大可能testing結果反而比較好
-                            λ太大太平滑啥事都不幹不了
-                        希望多smooth要調整λ值
-    conclusion & follow lectures
-        pokemon
-            原始CP與物種幾乎決定了進化CP值
-            但可能還有隱藏參數決定
-        gradient descent
-            following lectures:
-                theory and tips
-        overfitting and regularization
-            following lectures:
-                more theory behind these
-    we finally get average error = 11.1 on the testing data
-        how about another set of new data? 
-            underestimate?
-            overestimate?
-        following lectures: validation
+                18.4
+        redesign model 3次方
+            y = b+w_1*x_cp+w_2*(x_cp)^2+w_3*(x_cp)^3
+            b = 6.4
+            w_1 = 0.66
+            w_2 = 4.3e-3
+            w_3 = -1.8e-6
+            average error on Training data
+                15.3
+            average error on Testing data
+                18.1
+                slightly better.
+                How about more complex
+        redesign model 4次方
+            y = b+w_1*x_cp+w_2*(x_cp)^2+w_3*(x_cp)^3+w_4*(x_cp)^4
+            average error on Training data
+                14.9
+            average error on Testing data
+                28.8
+                bad
+        redesign model 5次方
+            y = b+w_1*x_cp+w_2*(x_cp)^2+w_3*(x_cp)^3+w_4*(x_cp)^4+w_5*(x_cp)^5
+            average error on Training data
+                12.8
+            average error on Testing data
+                232.1
+                the result are so bad
+        三次方形成的function space
+        四次方形成的function space包含三次方(w4=0等同三次方)
+        五次方形成的function space包含四次方(w5=0等同四次方)
+        理論上計算越複雜可以找的好的function error rate最低的機會應該越高
+            前提Gradient descent可以幫你找出best Function
+            但是在testing data上看起來不一樣
+                model越來越複雜training結果越來越好
+                testing data結果確不一定比較好
+                    overfitting
+    let's collect more data
+        there is some hidden factor not considered in the previous model...
+            物種/Species 
+        redesign the model
+            x_s = species of x
+            if x_s == Pidgey:
+                y = b_1+w_1*x_cp
+            if x_s == Weedle:
+                y = b_2+w_2*x_cp
+            if x_s == Caterpie:
+                y = b_3+w_3*x_cp
+            if x_s == Eevee:
+                y = b_4+w_4*x_cp
+            不同物種帶不同linear function
+            改寫成可微分的function
+            y = 
+                b_1*δ(x_s ==Pidgey)
+                + w_1*δ(x_s ==Pidgey)x_cp
+                + b_2*δ(x_s ==Weedle)
+                + w_2*δ(x_s ==Weedle)x_cp
+                + b_3*δ(x_s ==Caterpie)
+                + w_3*δ(x_s ==Caterpie)x_cp
+                + b_4*δ(x_s ==Eevee)
+                + w_4*δ(x_s ==Eevee)x_cp
+            δ(x_s ==Pidgey)
+                = 1 if x_s==Pidgey
+                = 0 otherwise
+            y =  b + ∑w_i*x_i
+                x_i
+                    δ(x_s ==Pidgey) 
+                    δ(x_s ==Pidgey)*x_cp
+            average error on Training data
+                3.8
+            average error on Testing data
+                14.3
+    還有改善空間
+        進化方向不同的參數沒進來
+        每次進化可能有一個random的變數在裡面
+        還有其他的參數可能影響進化cp值
+            weight
+            height
+            HP
+        back to step1 redesign model
+            if x_s ==Pidgey
+                y' = b_1 + w_1 * x_cp + w_5*(x_cp)^2
+            if x_s ==Weedle
+                y' = b_1 + w_2 * x_cp + w_6*(x_cp)^2
+            if x_s ==Caterpie
+                y' = b_1 + w_3 * x_cp + w_7*(x_cp)^2
+            if x_s ==Eevee
+                y' = b_1 + w_4 * x_cp + w_8*(x_cp)^2
+            y = 
+                y' 
+                + w_9*x_hp + w_10*(x_hp)^2
+                + w_11*x_h + w_12*(x_h)^2
+                + w_13*x_w + w_14*(x_w)^2
+            average error on Training data
+                1.9
+            average error on Testing data
+                102.3
+                overfitting!!
+        back to step2: regularization
+            redesign loss funciton 
+                y = b+∑w_i*x_i
+                L = ∑n(y^n-(b+∑w_i*x_i^n))^2
+                    + regularization
+                        λ*∑(w_i)^2
+                        b不需要加入因為他是整體偏移跟平滑無關
+                    λ是一個常數
+                    所有的w算一下平方加起來
+                        w_i參數值越小越好
+                        接近0參數
+                        why smooth function are preferred?
+                            output對input的變化是比較不敏感的
+                            輸入被雜訊干擾時受到比較少的影響
+                λ:
+                    0
+                        Training
+                            1.9
+                        Testing
+                            102.3
+                    1
+                        Training
+                            2.3
+                        Testing
+                            68.7
+                    10
+                        Training
+                            3.5
+                        Testing
+                            25.7
+                    100
+                        Training
+                            4.1
+                        Testing
+                            11.1
+                    1000
+                        Training
+                            5.6
+                        Testing
+                            12.8
+                    10000
+                        Training
+                            6.3
+                        Testing
+                            18.7
+                    100000
+                        Training
+                            8.5
+                        Testing
+                            26.8
+                    λ越大越smooth 反而training結果loss越大
+                    λ越大可能testing結果反而比較好
+                        λ太大太平滑啥事都不幹不了
+                    希望多smooth要調整λ值
+conclusion & follow lectures
+    pokemon
+        原始CP與物種幾乎決定了進化CP值
+        但可能還有隱藏參數決定
+    gradient descent
+        following lectures:
+            theory and tips
+    overfitting and regularization
+        following lectures:
+            more theory behind these
+we finally get average error = 11.1 on the testing data
+    how about another set of new data? 
+        underestimate?
+        overestimate?
+    following lectures: validation

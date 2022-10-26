@@ -1,338 +1,337 @@
-Transfer Learning
-    功能
-        假設你手上有一些跟你task沒有直接相關的data
-            能不能用沒有直接相關的data幫助我們做些什麼
-        task
-            dog/cat classifier
-                not directly related to the task data
-                    other animal, but label unrelated
-                        ex: elephant vs tiger
-                    input domain相似目標不同
-                input domain不同但task一樣
-                    一樣是貓狗分類但是圖片 
-                        招財貓vs高飛狗
-                        跟原本圖片distribution不像但是要做的task一樣 
-        能不能在有一些不相干的data情況下
-            幫助我們現在要做的task
-    why?
-        speech recognition
-            task considered
-                taiwanese
-            data not directly related
-                English/Chinese
-        Image Reconition
-            task considered
-                Medical Images
-            data not directly related
-                Other Images
-        Text Analysis
-            task considered
-                specific domain
-            data not directly related
-                web collect
-        有可能有用的
-            example in real life
-                研究生 on-line
-                    參考 漫畫家on-line
-                        漫畫家
-                            研究生
-                        責編
-                            指導教授
-                        每周產生分境跟責邊討論
-                            每周跟指導教授報告進度
-                        畫分境
-                            跑實驗
-                        投稿jump
-                            投稿期刊
-                    word embedding knows that
-                    研究生生存守則
-    Transfer Learning - Overview
-        Warning: differenct terminology in different literature
-        Source Data(not directly related to the task)        
-            Labelled
-                Target Data Labelled
-                    Model Fine-tuning
-                        Task description
-                            Target data: (x^t,y^t)
-                                very little
-                                少到只有幾個example
-                                    one-shot learning:
-                                        only a few examples in target domain
-                            Source data: (x^s,y^s)
-                                a large amount
-                            examle:
-                                (supervised)speaker adaption
-                                    target data: audio data and its transcription of specific user
-                                        可能只有三句話
-                                    source data: audio data and transcriptions from many speaker
-                                        好幾萬小時
-                                    idea:
-                                        training a model by source data, then fine tuning the model by target data
-                                            把training結果當initial value在用target data在training下去  
-                                            challenge:
-                                                only limited target data,so careful about overfitting
-                                                怕target data一training就壞掉，有很多手法
-                                                    Conservative training
-                                                        在training時下一些constraint
-                                                            新舊model不能差太多
-                                                                防止overfitting
-                                                                1. output close
-                                                                    加一個regularization
-                                                                        類似L1,L2概念的另一種regularization
-                                                                    看到同一筆data進入
-                                                                        新舊model的output越接近越好
-                                                                2. parameter close
-                                                                    或者新model與舊model L2 norm差距越小越好
-                                                    Layer Transfer
-                                                        把training好的model裡面幾個layer直接copy到新的model
-                                                            用source data只training沒有copy的layer
-                                                                好處target data只要考慮非常少的參數
-                                                                    避免overfitting
-                                                                如果target data夠多了
-                                                                    最後還可以fine tune整個model
-                                                        tips
-                                                            which layer can be transferred(copied)?
-                                                                不同的task需要被transfer的layer往往不同
-                                                                    speech:
-                                                                        usually copy the last few layers
-                                                                            重新train input那一層或前幾層
-                                                                                每個人口腔結構不同
-                                                                                    前面幾層跟聲音關係較大
-                                                                                        聲音訊號到發音方式
-                                                                                後面幾層跟人沒關係可以被copy
-                                                                    image:
-                                                                        usually copy the first few layers
-                                                                            前幾層做簡單的pattern
-                                                                                可以被transfer到其他地方
-                                                                            後面幾層learn的東西比較abstract
-                                                                        experiment 1
-                                                                            Bengio NIPS,2014
-                                                                                ImageNet 120萬張分source/target
-                                                                                    依據classes 1000個class
-                                                                                        source 500 classes
-                                                                                        target 500 classes
-                                                                                    copy layers幾個
-                                                                                        0~7個layer
-                                                                                            剩下layer在用target去train會得到什麼結果
-                                                                                            0 layer
-                                                                                                重新train
-                                                                                            結果會越來越差
-                                                                                            但只copy前幾個layer
-                                                                                                1 layer
-                                                                                                    performance有點稍微進步
-                                                                                                2 layer
-                                                                                                    performance持平
-                                                                                                更多的layer
-                                                                                                    就開始壞掉
-                                                                                            前幾個layer是可以共用的
-                                                                                        如果copy完是fine tune整個model
-                                                                                            則越多layer效果越好
-                                                                                                就算target data非常多
-                                                                                                    用source data transfer learning還是有幫助的
-                                                                        experiment 2
-                                                                            自然東西當source
-                                                                            人造東西當target
-                                                                            source跟target差異很大
-                                                                                transfer learning performance會掉很多 
-                                                                                    只copy前幾個layer影響還是比較小
-                                                                                    source domain跟target domain是不一樣的
-                                                                                        在NN第一個layer仍然做同一個事情
-                    Multitask Learning
-                        fine-tuning只care target domain有沒有做好
-                        care target domain跟source domain做得好不好
-                        the multi-layer structure makes NN suitable for multitask learning
-                            NN後面分支給Task A,Task B分別預測
-                                共用前面的layer
-                                    要確定有沒有共用性
-                            crary task
-                                連input都沒辦法share的
-                                    input分開用不同的NN
-                                    中間共用layer
-                                    後面分支給task A,task B分別預測
-                                    這樣還是可以transfer learning
-                        example
-                            multilingual speech recognition
-                                training 一個model同時辨識5種語言
-                                    share layers:
-                                        human languages share some common characteristics
-                                    input:
-                                        acoustic features
-                                    分支5個language NN
-                            transation也可以用這種方式
-                            目前知道語言之間都能transfer
-                                十幾種語言也可以 
-                            Progressive Neural Networks
-                                兩個task之間到底能不能transfer很浪費時間
-                                train task1
-                                    train好就fix
-                                task2每一個hidden layer都去接task1某個hidden layer output
-                                    好處就算task1/task2非常不像
-                                        task2也不會動到task1 Model
-                                            task1不會比原本差
-                                            task2可以借用task1參數
-                                                但他可以把這些參數直接設定為0
-                                                    這樣也不會影響task2 performance持平
-                                                          最差情況就是自己train的狀況
-                                task3的每一個hidden layer都會接task1/2某個hidden layer output
-                                    以此列推
-                                好像哪裡怪怪的
-                Target Data Unlabelled
-                    Domain-adversarial training
-                        Task description
-                            Source data:(x^s,y^s)                     
-                                MNIST
-                                    with label
-                                Training data
-                            Target data:(x^t)
-                                MNIST-M
-                                    without label
-                                Testing data
-                            Training data跟Testing data mismatch
-                        直接learning下去會爛掉的
-                        如果把NN當作feature extractor
-                            不同domain data他feature完全不一樣
-                                t-SNE降維去看
-                                    原本training的data分群很乾淨清楚
-                                    另一個corpus image丟進去就擠在一起
-                                feature extractor
-                                    原本source domain image跟target domain image不在同一個位置上
-                                    後面的classifier可以把source做好target就無能為力
-                                    希望前面feature extrator能把domain的特性除掉
-                                        domain-adversarial training
-                                            不同domain不應該分成兩群
-                                                不同domain應該混在一起
-                                                    把不同domain的特性取消掉
-                                                        在後面接一個domain的classifier
-                                                        把feature extractor output丟給domain classifier
-                                                            判定這個feature來自哪個domain
-                                                                MNIST or MNIST-M corpus
-                                                                要騙過domain classifier
-                                                                    通通都0就騙過，這樣不夠要增加難度
-                                                                        domain classifer要騙過                                                                    
-                                                                        label predictor做好
-                                                                        各懷鬼胎模式
-                                                                            Feature extractor
-                                                                                maximum label predictor
-                                                                                minimum domain classifier accuracy
-                                                                            Domain Classifier
-                                                                                Maximum Domain Classifier
-                                                                                Gradient Reversal layer
-                                                                                    Domain classifier傳給Feature Extractor就多給一個負號
-                                                                                        告訴某個value要上升(相反)
-                                                                                        Domain classifier最後一定會fail掉
-                                                                                            但要努力掙扎判斷feature domain
-                                                                                                如果太弱或偷懶
-                                                                                                    可能無法feature extractor真的把domain information remove
+功能
+    假設你手上有一些跟你task沒有直接相關的data
+        能不能用沒有直接相關的data幫助我們做些什麼
+    task
+        dog/cat classifier
+            not directly related to the task data
+                other animal, but label unrelated
+                    ex: elephant vs tiger
+                input domain相似目標不同
+            input domain不同但task一樣
+                一樣是貓狗分類但是圖片 
+                    招財貓vs高飛狗
+                    跟原本圖片distribution不像但是要做的task一樣 
+    能不能在有一些不相干的data情況下
+        幫助我們現在要做的task
+why?
+    speech recognition
+        task considered
+            taiwanese
+        data not directly related
+            English/Chinese
+    Image Reconition
+        task considered
+            Medical Images
+        data not directly related
+            Other Images
+    Text Analysis
+        task considered
+            specific domain
+        data not directly related
+            web collect
+    有可能有用的
+        example in real life
+            研究生 on-line
+                參考 漫畫家on-line
+                    漫畫家
+                        研究生
+                    責編
+                        指導教授
+                    每周產生分境跟責邊討論
+                        每周跟指導教授報告進度
+                    畫分境
+                        跑實驗
+                    投稿jump
+                        投稿期刊
+                word embedding knows that
+                研究生生存守則
+Transfer Learning - Overview
+    Warning: differenct terminology in different literature
+    Source Data(not directly related to the task)        
+        Labelled
+            Target Data Labelled
+                Model Fine-tuning
+                    Task description
+                        Target data: (x^t,y^t)
+                            very little
+                            少到只有幾個example
+                                one-shot learning:
+                                    only a few examples in target domain
+                        Source data: (x^s,y^s)
+                            a large amount
+                        examle:
+                            (supervised)speaker adaption
+                                target data: audio data and its transcription of specific user
+                                    可能只有三句話
+                                source data: audio data and transcriptions from many speaker
+                                    好幾萬小時
+                                idea:
+                                    training a model by source data, then fine tuning the model by target data
+                                        把training結果當initial value在用target data在training下去  
+                                        challenge:
+                                            only limited target data,so careful about overfitting
+                                            怕target data一training就壞掉，有很多手法
+                                                Conservative training
+                                                    在training時下一些constraint
+                                                        新舊model不能差太多
+                                                            防止overfitting
+                                                            1. output close
+                                                                加一個regularization
+                                                                    類似L1,L2概念的另一種regularization
+                                                                看到同一筆data進入
+                                                                    新舊model的output越接近越好
+                                                            2. parameter close
+                                                                或者新model與舊model L2 norm差距越小越好
+                                                Layer Transfer
+                                                    把training好的model裡面幾個layer直接copy到新的model
+                                                        用source data只training沒有copy的layer
+                                                            好處target data只要考慮非常少的參數
+                                                                避免overfitting
+                                                            如果target data夠多了
+                                                                最後還可以fine tune整個model
+                                                    tips
+                                                        which layer can be transferred(copied)?
+                                                            不同的task需要被transfer的layer往往不同
+                                                                speech:
+                                                                    usually copy the last few layers
+                                                                        重新train input那一層或前幾層
+                                                                            每個人口腔結構不同
+                                                                                前面幾層跟聲音關係較大
+                                                                                    聲音訊號到發音方式
+                                                                            後面幾層跟人沒關係可以被copy
+                                                                image:
+                                                                    usually copy the first few layers
+                                                                        前幾層做簡單的pattern
+                                                                            可以被transfer到其他地方
+                                                                        後面幾層learn的東西比較abstract
+                                                                    experiment 1
+                                                                        Bengio NIPS,2014
+                                                                            ImageNet 120萬張分source/target
+                                                                                依據classes 1000個class
+                                                                                    source 500 classes
+                                                                                    target 500 classes
+                                                                                copy layers幾個
+                                                                                    0~7個layer
+                                                                                        剩下layer在用target去train會得到什麼結果
+                                                                                        0 layer
+                                                                                            重新train
+                                                                                        結果會越來越差
+                                                                                        但只copy前幾個layer
+                                                                                            1 layer
+                                                                                                performance有點稍微進步
+                                                                                            2 layer
+                                                                                                performance持平
+                                                                                            更多的layer
+                                                                                                就開始壞掉
+                                                                                        前幾個layer是可以共用的
+                                                                                    如果copy完是fine tune整個model
+                                                                                        則越多layer效果越好
+                                                                                            就算target data非常多
+                                                                                                用source data transfer learning還是有幫助的
+                                                                    experiment 2
+                                                                        自然東西當source
+                                                                        人造東西當target
+                                                                        source跟target差異很大
+                                                                            transfer learning performance會掉很多 
+                                                                                只copy前幾個layer影響還是比較小
+                                                                                source domain跟target domain是不一樣的
+                                                                                    在NN第一個layer仍然做同一個事情
+                Multitask Learning
+                    fine-tuning只care target domain有沒有做好
+                    care target domain跟source domain做得好不好
+                    the multi-layer structure makes NN suitable for multitask learning
+                        NN後面分支給Task A,Task B分別預測
+                            共用前面的layer
+                                要確定有沒有共用性
+                        crary task
+                            連input都沒辦法share的
+                                input分開用不同的NN
+                                中間共用layer
+                                後面分支給task A,task B分別預測
+                                這樣還是可以transfer learning
+                    example
+                        multilingual speech recognition
+                            training 一個model同時辨識5種語言
+                                share layers:
+                                    human languages share some common characteristics
+                                input:
+                                    acoustic features
+                                分支5個language NN
+                        transation也可以用這種方式
+                        目前知道語言之間都能transfer
+                            十幾種語言也可以 
+                        Progressive Neural Networks
+                            兩個task之間到底能不能transfer很浪費時間
+                            train task1
+                                train好就fix
+                            task2每一個hidden layer都去接task1某個hidden layer output
+                                好處就算task1/task2非常不像
+                                    task2也不會動到task1 Model
+                                        task1不會比原本差
+                                        task2可以借用task1參數
+                                            但他可以把這些參數直接設定為0
+                                                這樣也不會影響task2 performance持平
+                                                        最差情況就是自己train的狀況
+                            task3的每一個hidden layer都會接task1/2某個hidden layer output
+                                以此列推
+                            好像哪裡怪怪的
+            Target Data Unlabelled
+                Domain-adversarial training
+                    Task description
+                        Source data:(x^s,y^s)                     
+                            MNIST
+                                with label
+                            Training data
+                        Target data:(x^t)
+                            MNIST-M
+                                without label
+                            Testing data
+                        Training data跟Testing data mismatch
+                    直接learning下去會爛掉的
+                    如果把NN當作feature extractor
+                        不同domain data他feature完全不一樣
+                            t-SNE降維去看
+                                原本training的data分群很乾淨清楚
+                                另一個corpus image丟進去就擠在一起
+                            feature extractor
+                                原本source domain image跟target domain image不在同一個位置上
+                                後面的classifier可以把source做好target就無能為力
+                                希望前面feature extrator能把domain的特性除掉
+                                    domain-adversarial training
+                                        不同domain不應該分成兩群
+                                            不同domain應該混在一起
+                                                把不同domain的特性取消掉
+                                                    在後面接一個domain的classifier
+                                                    把feature extractor output丟給domain classifier
+                                                        判定這個feature來自哪個domain
+                                                            MNIST or MNIST-M corpus
+                                                            要騙過domain classifier
+                                                                通通都0就騙過，這樣不夠要增加難度
+                                                                    domain classifer要騙過                                                                    
+                                                                    label predictor做好
+                                                                    各懷鬼胎模式
+                                                                        Feature extractor
+                                                                            maximum label predictor
+                                                                            minimum domain classifier accuracy
+                                                                        Domain Classifier
+                                                                            Maximum Domain Classifier
+                                                                            Gradient Reversal layer
+                                                                                Domain classifier傳給Feature Extractor就多給一個負號
+                                                                                    告訴某個value要上升(相反)
+                                                                                    Domain classifier最後一定會fail掉
+                                                                                        但要努力掙扎判斷feature domain
+                                                                                            如果太弱或偷懶
+                                                                                                可能無法feature extractor真的把domain information remove
 
-                                                                            Label Predictor
-                                                                                Maximum Label Predictor
+                                                                        Label Predictor
+                                                                            Maximum Label Predictor
 
-                                                            similar to GAN
-                                                                too easy to feature extractor
-                    Zero-shot learning
-                        Source Data: (x^s,y^s)
-                            training data
-                        Target Data: (x^t)
-                            testing data
-                        differenct task
-                            source dog/cat
-                            target
-                                草尼馬
-                                source data裡面從來沒出現                    
-                        In speech recognition, we can not have all possible words in the source(training)data.
-                            word當class
-                                training不可能拿到所有詞彙
-                                    不要直接變是一段聲音屬於哪個word
-                                        辨識屬於那個phoneme(音標)
-                                            不要定義word改定義音標
-                                            在做一個phoneme跟table之間關係的表lixicon也就是辭典
-                                            只要辨識出phoneme再去查表找到哪個word
-                                                就算沒有出現在training data裡面
-                                                    只要在你建好的lexicon出現過
-                                                        model可以正確辨識出聲音屬於哪個phoneme的話
-                                                            就能處理這問題
-                        Zero-shot Learning
-                            Representing each class by its attributes
-                                有一個database
-                                    所有不同可能的object跟他的特性
-                                        class database
-                                            dog
-                                                furry
-                                                4 legs
-                                                tails
-                                            fish
-                                                tail
-                                            chimp
-                                                furry
-                                    attributes夠豐富
-                                        每個class都有獨一無二的attribute
-                                        不直接辨識哪個class
-                                            具備哪些attribute
-                                        來一個新的image
-                                            不在辨識是什麼動物是辨識有什麼attribute
-                                            查表看哪個最近就是你要的
-                                        attribute太複雜就可以做attirbute embedding
-                                            每一個image transform變成embedding space一個點
-                                        image跟attribute都可以描述成vector
-                                            把image跟attribute投影到一個空間
-                                                image x跟attribute y都降維到同樣dimension
-                                                    f(x1),g(y1)
-                                                        都變成embedding space上的vector
-                                                        找f* g*讓x1y1投影embedding space越近越好
-                                                        找出來之後 新的圖片投影就可以拿到最近的attributes
-                                                            在看對映哪個動物
-                                                        沒有database借用
-                                                            word vector
-                                                                代表某種attribute
-                                                            用很大的corpus train出word vector
-                                                                把attribute直接換成word vector
-                                                                把word vector做embedding
-                                                數學部分
-                                                    f*,g* = arg min_f,g Σ_n || f(x^n) - g(y^n)||_2
-                                                        Problem?
-                                                            只能確定都到最近距離就結束了
-                                                    重新設計
-                                                        f*,g* = arg min_f,g Σ_n max(0,k - f(x^n) * g(y^n) + max_m≠n f(x^n)g(y^m))
-                                                            不是同一個pair 距離應該拉大
-                                                            k自己defined
-                                                            k - f(x^n) * g(y^n) + max_m≠n f(x^n)g(y^m) < 0 則 zero loss
-                                                                f(x^n) * g(y^n) - max_m≠n f(x^n)g(y^m) > k
-                                                                f(x^n) * g(y^n) 
-                                                                    as close
-                                                                    成對的拉近
-                                                                max_m≠n f(x^n)g(y^m)
-                                                                    not as close
-                                                                    不成對的拆散
-                                                                as close > not as close
-                        Convex Combination of Semantic Embedding
-                            假設
-                                有一個off-the-shelf 語音辨識系統
-                                有一個off-the-shelf word vector
-                                不是自己train的，網路上抓的
-                                    image input NN
-                                        0.5 tiger 0.5 lion
-                                        word vector(tiger)*0.5 + word vector(lion)*0.5
-                                            新的vector
-                                                find the closest word vector V (liger)
-                            不用training
-                                有一組word vector
-                                有一個語音辨識系統
-                                就可以做transfer learning
-                        example of zero-shot learning
-                            google's multilingual Nerual Machine Translation System: Enabling Zero-Shot Translation
-                                不同語言轉換training後
-                                可以轉換沒有training過的翻譯方式
-                                    不同語言不同句子可以project到同一個space上面
-                                    space上language independent只跟句子semantic有關                                        
-            Unlabeled
-                Target Data Labelled
-                    Self-taught learning
-                        不大像semi supervised learning
-                            因為label跟unlabel data完全沒關係了
-                        learning to extractor better representation from the source data (unsupervised approach)
-                            auto-encoder
-                        Extracting better representation for target data
-                Target Data Unlabelled  
-                    Self-taught clustering
-        沒有相關的定義很抽象
-            實物 vs 動畫
+                                                        similar to GAN
+                                                            too easy to feature extractor
+                Zero-shot learning
+                    Source Data: (x^s,y^s)
+                        training data
+                    Target Data: (x^t)
+                        testing data
+                    differenct task
+                        source dog/cat
+                        target
+                            草尼馬
+                            source data裡面從來沒出現                    
+                    In speech recognition, we can not have all possible words in the source(training)data.
+                        word當class
+                            training不可能拿到所有詞彙
+                                不要直接變是一段聲音屬於哪個word
+                                    辨識屬於那個phoneme(音標)
+                                        不要定義word改定義音標
+                                        在做一個phoneme跟table之間關係的表lixicon也就是辭典
+                                        只要辨識出phoneme再去查表找到哪個word
+                                            就算沒有出現在training data裡面
+                                                只要在你建好的lexicon出現過
+                                                    model可以正確辨識出聲音屬於哪個phoneme的話
+                                                        就能處理這問題
+                    Zero-shot Learning
+                        Representing each class by its attributes
+                            有一個database
+                                所有不同可能的object跟他的特性
+                                    class database
+                                        dog
+                                            furry
+                                            4 legs
+                                            tails
+                                        fish
+                                            tail
+                                        chimp
+                                            furry
+                                attributes夠豐富
+                                    每個class都有獨一無二的attribute
+                                    不直接辨識哪個class
+                                        具備哪些attribute
+                                    來一個新的image
+                                        不在辨識是什麼動物是辨識有什麼attribute
+                                        查表看哪個最近就是你要的
+                                    attribute太複雜就可以做attirbute embedding
+                                        每一個image transform變成embedding space一個點
+                                    image跟attribute都可以描述成vector
+                                        把image跟attribute投影到一個空間
+                                            image x跟attribute y都降維到同樣dimension
+                                                f(x1),g(y1)
+                                                    都變成embedding space上的vector
+                                                    找f* g*讓x1y1投影embedding space越近越好
+                                                    找出來之後 新的圖片投影就可以拿到最近的attributes
+                                                        在看對映哪個動物
+                                                    沒有database借用
+                                                        word vector
+                                                            代表某種attribute
+                                                        用很大的corpus train出word vector
+                                                            把attribute直接換成word vector
+                                                            把word vector做embedding
+                                            數學部分
+                                                f*,g* = arg min_f,g Σ_n || f(x^n) - g(y^n)||_2
+                                                    Problem?
+                                                        只能確定都到最近距離就結束了
+                                                重新設計
+                                                    f*,g* = arg min_f,g Σ_n max(0,k - f(x^n) * g(y^n) + max_m≠n f(x^n)g(y^m))
+                                                        不是同一個pair 距離應該拉大
+                                                        k自己defined
+                                                        k - f(x^n) * g(y^n) + max_m≠n f(x^n)g(y^m) < 0 則 zero loss
+                                                            f(x^n) * g(y^n) - max_m≠n f(x^n)g(y^m) > k
+                                                            f(x^n) * g(y^n) 
+                                                                as close
+                                                                成對的拉近
+                                                            max_m≠n f(x^n)g(y^m)
+                                                                not as close
+                                                                不成對的拆散
+                                                            as close > not as close
+                    Convex Combination of Semantic Embedding
+                        假設
+                            有一個off-the-shelf 語音辨識系統
+                            有一個off-the-shelf word vector
+                            不是自己train的，網路上抓的
+                                image input NN
+                                    0.5 tiger 0.5 lion
+                                    word vector(tiger)*0.5 + word vector(lion)*0.5
+                                        新的vector
+                                            find the closest word vector V (liger)
+                        不用training
+                            有一組word vector
+                            有一個語音辨識系統
+                            就可以做transfer learning
+                    example of zero-shot learning
+                        google's multilingual Nerual Machine Translation System: Enabling Zero-Shot Translation
+                            不同語言轉換training後
+                            可以轉換沒有training過的翻譯方式
+                                不同語言不同句子可以project到同一個space上面
+                                space上language independent只跟句子semantic有關                                        
+        Unlabeled
+            Target Data Labelled
+                Self-taught learning
+                    不大像semi supervised learning
+                        因為label跟unlabel data完全沒關係了
+                    learning to extractor better representation from the source data (unsupervised approach)
+                        auto-encoder
+                    Extracting better representation for target data
+            Target Data Unlabelled  
+                Self-taught clustering
+    沒有相關的定義很抽象
+        實物 vs 動畫

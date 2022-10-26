@@ -1,256 +1,255 @@
-Reinforcement Learning (including Q-learning)
-    Learning to interact with Environments
-        機器採取行為會影響未來結果
-        決策會影響看到的data
-            左轉看到左轉後的畫面
-            跟一般learn problem不同
-            機器互動會影響環境跟接下來的Input
-        e.g.
-            Go Playing
-                Target Win
-    Environment ->
-        State(Observation) ->
-            Actor
-    E.g
-        Dialogue System
-            我想11/5到台北的機票->
-                NN->
-                    抵達時間11/5目的地方台北 ->
-                        Decision Making->
-                            問出發地點->
-                                NN Generation->
-                                    請問你從哪出發
-    How to solve this problem?
-        Network as a function
-        Learn as typical Supervised Tasks
-            棋盤 -> NN -> Target (3,3)
-            紅燈 -> NN -> Target (Stop)
-            Collect Data
-        Behavior Cloning
-            複製行為,複製expert
-            機器無法完美模仿她的老師
-                不得不有所取捨
-                那該學不該學怎麼分
-
-    Characteristics of interaction
-        What do we miss?
-            machine does not know the influence of each action
-        Agent's action affect the sequence data in recevies
-            有些行為非常關鍵,有些行為無關
-        Better Way
-            把所有action當做整體來看待
-                Reinforcement Learning (Reward)
-                    Training an Actor
-                    Training an Critic
-                    Actor + Critic                    
-                    Invese Reinforcement learning                    
-                Learning by demonstration
-                    Limitation learning
-                        an expert demonstrates how to solve the task and machine learns from the demonstrates
-    Reinforcement Learning
+Learning to interact with Environments
+    機器採取行為會影響未來結果
+    決策會影響看到的data
+        左轉看到左轉後的畫面
+        跟一般learn problem不同
+        機器互動會影響環境跟接下來的Input
+    e.g.
+        Go Playing
+            Target Win
+Environment ->
+    State(Observation) ->
         Actor
-            搖桿
-            落子
-        Environment
-            (you can't control)
-            主機
-            對手
-        Reward Funciton
-            (you can't control)
-            殺怪得分
-            圍棋規則 
-        example:
-            play video game
-                start observation s1
-                    遊戲畫面
-                actor -> a1='right'
-                    obtatin reward
-                        r1=0
-                new observation s2
-                    actor -> a2='fire'
-                        obtain reward
-                            r2=5(殺到一隻怪)
-                ...many times
+E.g
+    Dialogue System
+        我想11/5到台北的機票->
+            NN->
+                抵達時間11/5目的地方台北 ->
+                    Decision Making->
+                        問出發地點->
+                            NN Generation->
+                                請問你從哪出發
+How to solve this problem?
+    Network as a function
+    Learn as typical Supervised Tasks
+        棋盤 -> NN -> Target (3,3)
+        紅燈 -> NN -> Target (Stop)
+        Collect Data
+    Behavior Cloning
+        複製行為,複製expert
+        機器無法完美模仿她的老師
+            不得不有所取捨
+            那該學不該學怎麼分
+
+Characteristics of interaction
+    What do we miss?
+        machine does not know the influence of each action
+    Agent's action affect the sequence data in recevies
+        有些行為非常關鍵,有些行為無關
+    Better Way
+        把所有action當做整體來看待
+            Reinforcement Learning (Reward)
+                Training an Actor
+                Training an Critic
+                Actor + Critic                    
+                Invese Reinforcement learning                    
+            Learning by demonstration
+                Limitation learning
+                    an expert demonstrates how to solve the task and machine learns from the demonstrates
+Reinforcement Learning
+    Actor
+        搖桿
+        落子
+    Environment
+        (you can't control)
+        主機
+        對手
+    Reward Funciton
+        (you can't control)
+        殺怪得分
+        圍棋規則 
+    example:
+        play video game
+            start observation s1
+                遊戲畫面
+            actor -> a1='right'
+                obtatin reward
+                    r1=0
+            new observation s2
+                actor -> a2='fire'
                     obtain reward
-                        r^T
-                This is an episode
-                    Total Reward R(τ) = Σ_t=1^T Yt
-                    R在互動過程中越大越好
-                Trajectonry τ =
-                    {s1 a1 r1 .. sT aT rT}
-    Neural Network as Actor
-        以前就有 in Reinforcement network
-            80年代
-            以前用查表格方式現在用NN
-                表格無法窮舉所有畫面
-                以前認為Actor換一個non-linear Network時
-                    無法Training
-                    無法收斂
-            Pixel -> NN -> 
-                left/right/fire
-                    0.7/0.2/0.1
-                        Probability distribution
-                    Take the action based on the probability stochastic
-                        每次都不同避免被識破
-        假設reward是NN,env也是NN
-            整個就是大型NN
-            Input
-                Random
+                        r2=5(殺到一隻怪)
+            ...many times
+                obtain reward
+                    r^T
+            This is an episode
+                Total Reward R(τ) = Σ_t=1^T Yt
+                R在互動過程中越大越好
+            Trajectonry τ =
+                {s1 a1 r1 .. sT aT rT}
+Neural Network as Actor
+    以前就有 in Reinforcement network
+        80年代
+        以前用查表格方式現在用NN
+            表格無法窮舉所有畫面
+            以前認為Actor換一個non-linear Network時
+                無法Training
+                無法收斂
+        Pixel -> NN -> 
+            left/right/fire
+                0.7/0.2/0.1
+                    Probability distribution
+                Take the action based on the probability stochastic
+                    每次都不同避免被識破
+    假設reward是NN,env也是NN
+        整個就是大型NN
+        Input
+            Random
+        Output
+            R(τ) = Σ_t=1^τ τt
+                最大化
+                    只有Actor可以調整
+                Graident Ascent
+                有類是GAN的結構
+        Reward&Env參數我們不知道
+            optimal funciton不可微分
+                口決：用policy gradient硬train
+            Reinforcement Learning用policy gradient調actor
+                多次最終可以output R
+                    就結束了
+                手法
+                    Markov Pecision Process
+            Policy Graident可以幫你optimal 不可以微分的東西
+Critic
+    不決定採用哪個action
+    input actor π 
+        告訴你他有多好
+    State value function
+        V^π(S)
+        when using actor π, the accumulated reward experts to be obtained after seeing observation(state) S1
+            期望值
+                所有 accumulated的reward
+                    下圍棋
+                        agent: π observation State
+                        出這手獲勝機率 V^π(S)
+                    大蜜蜂
+                        怪多可以獲得score多
+                            V^π(S) is larger
+                        怪手可以獲得score少
+                            V^π(S) is smaller
+    Critic dependent on actor
+        不用actor同樣state output不同
+    Critic衡量actor好不好
+        V^以前阿光(大馬步飛) = Bad
+        V^變強阿光(大馬步飛) = Good
+        會陪著actor不同得到不同分數
+    How to estimate V^π(S)
+        1. Monte-carlo based approach
+            看actor玩遊戲
+                看玩的如何
+            actorπ在經過state s_a之後
+                得到Reward G_a
+            input
+                s_a
             Output
-                R(τ) = Σ_t=1^τ τt
-                    最大化
-                        只有Actor可以調整
-                    Graident Ascent
-                    有類是GAN的結構
-            Reward&Env參數我們不知道
-                optimal funciton不可微分
-                    口決：用policy gradient硬train
-                Reinforcement Learning用policy gradient調actor
-                    多次最終可以output R
-                        就結束了
-                    手法
-                        Markov Pecision Process
-                Policy Graident可以幫你optimal 不可以微分的東西
-    Critic
-        不決定採用哪個action
-        input actor π 
-            告訴你他有多好
-        State value function
-            V^π(S)
-            when using actor π, the accumulated reward experts to be obtained after seeing observation(state) S1
-                期望值
-                    所有 accumulated的reward
-                        下圍棋
-                            agent: π observation State
-                            出這手獲勝機率 V^π(S)
-                        大蜜蜂
-                            怪多可以獲得score多
-                                V^π(S) is larger
-                            怪手可以獲得score少
-                                V^π(S) is smaller
-        Critic dependent on actor
-            不用actor同樣state output不同
-        Critic衡量actor好不好
-            V^以前阿光(大馬步飛) = Bad
-            V^變強阿光(大馬步飛) = Good
-            會陪著actor不同得到不同分數
-        How to estimate V^π(S)
-            1. Monte-carlo based approach
-                看actor玩遊戲
-                    看玩的如何
-                actorπ在經過state s_a之後
-                    得到Reward G_a
-                input
-                    s_a
-                Output
-                    G_a越近越好
-                        regerssion
-                            V^π(S_a) <-> G_a
-                            V^π(S_b) <-> G_b                            
-            2. Temporal-difference
-                Actor在state採取某個行為
-                    critic就可以學了
-                    V^π(s_t) <-> V^π(s_t+1) + τ_t
-                    s_t => V^π => V^π(s_t)
-                        - s_t+1 => V^π => V^π(s_t+1)
-                            V^π(s_t) - V^π(s_t+1) <=> Y_t
-                                找接近
-                遊戲還沒結束就能開始update你的network
-                Another Critic
-                    State-action value function
-                        Q^π(s,a)
-                        when using actor π the cumulated reward expect to be obtained after seeing observatoin and taking a
-                Q function
-                    s採用a可以得到多少reward
-                        s,a -> Q^π -> Q^π(s,a)
-                        改寫Q function
-                            窮舉所有a
-                                S->Q^π
-                                    Q^π(s,a=left)
-                                    Q^π(s,a=right)
-                                    Q^π(s,a=fire)
-                                for discrete action function
-                            找出最好的action
-                        這招就叫做 Q-learning
-                    這三項循環                    
-                        π interacts with the environment
-                        Find a new actor π' better than π
-                            'better' V^π'(s) >= V^π(s) for all state s
-                        learning Q^π(s,a)
-                    notice
-                        π' does not have extra parameter, it depends on Q
-                        not suitable for continuous action (slove later)
-                    Estimate
-                        Q^π(s,a) by TD
-                    Reference
-                        Double DQN
-                            where is usually over estimate
-                                Google rainbow paper
-                                    7種不同的DQN tip
-                        Pueling DQN
-    Actor+Critic
-        最知名是A3C
-        learn actor看reward function obtain update乘最好的reward
-            actor不再看env的reward改看critic學
-        Asynchronous Advantage Actor-Critic(A3C)
-            你有Global Actor-Critic
-                copy過來跟環境互動
-                cirtic知道如何update參數
-                傳回global network
-                每個分身回傳回去一起update
-                平行運算像影分身一樣
-    Pathwise Derivative Policy Gradient
-        Actor-Critic變形
-        著名手法: DDPG
-        非常像GANS
-        π'(s) = arg max_a^π(s,a)
-            無法窮舉所有a
-                如果a是continuous vector 例如機器手控制關節
-        一般Q learning只能處理discreate的case
-        要處理continuous時
-            Learn一個vector (Generator)
-                s->NN->a
-                    a讓Q function值最大那個
+                G_a越近越好
+                    regerssion
+                        V^π(S_a) <-> G_a
+                        V^π(S_b) <-> G_b                            
+        2. Temporal-difference
+            Actor在state採取某個行為
+                critic就可以學了
+                V^π(s_t) <-> V^π(s_t+1) + τ_t
+                s_t => V^π => V^π(s_t)
+                    - s_t+1 => V^π => V^π(s_t+1)
+                        V^π(s_t) - V^π(s_t+1) <=> Y_t
+                            找接近
+            遊戲還沒結束就能開始update你的network
+            Another Critic
+                State-action value function
+                    Q^π(s,a)
+                    when using actor π the cumulated reward expect to be obtained after seeing observatoin and taking a
+            Q function
+                s採用a可以得到多少reward
+                    s,a -> Q^π -> Q^π(s,a)
+                    改寫Q function
+                        窮舉所有a
+                            S->Q^π
+                                Q^π(s,a=left)
+                                Q^π(s,a=right)
+                                Q^π(s,a=fire)
+                            for discrete action function
+                        找出最好的action
+                    這招就叫做 Q-learning
+                這三項循環                    
+                    π interacts with the environment
+                    Find a new actor π' better than π
+                        'better' V^π'(s) >= V^π(s) for all state s
+                    learning Q^π(s,a)
+                notice
+                    π' does not have extra parameter, it depends on Q
+                    not suitable for continuous action (slove later)
+                Estimate
+                    Q^π(s,a) by TD
+                Reference
+                    Double DQN
+                        where is usually over estimate
+                            Google rainbow paper
+                                7種不同的DQN tip
+                    Pueling DQN
+Actor+Critic
+    最知名是A3C
+    learn actor看reward function obtain update乘最好的reward
+        actor不再看env的reward改看critic學
+    Asynchronous Advantage Actor-Critic(A3C)
+        你有Global Actor-Critic
+            copy過來跟環境互動
+            cirtic知道如何update參數
+            傳回global network
+            每個分身回傳回去一起update
+            平行運算像影分身一樣
+Pathwise Derivative Policy Gradient
+    Actor-Critic變形
+    著名手法: DDPG
+    非常像GANS
+    π'(s) = arg max_a^π(s,a)
+        無法窮舉所有a
+            如果a是continuous vector 例如機器手控制關節
+    一般Q learning只能處理discreate的case
+    要處理continuous時
+        Learn一個vector (Generator)
+            s->NN->a
+                a讓Q function值最大那個
+Inverse Reinforcement Learning
+    Limitation learning一種
+        只有Env跟Actor沒有reward function
+    env->
+        s1->
+            actor->
+                a1->
+                    env->
+                        s2->
+                            actor->
+                                a2
+                                    ...
+    we have demonstration of the expert
+        (f1,..,fn)
+            each f is trajectory of expert
+    現實中的case都沒有reward function
+        圍棋雖然有輸贏
+        殺怪有幾得分
+        自駕車?
+        chatbox?
+    Motivation
+        It is hard to define reward in some Tasks
+            hand-crafted reward can lead to uncontrolled Behavior
+            機器公敵:保護人類->關起來
     Inverse Reinforcement Learning
-        Limitation learning一種
-            只有Env跟Actor沒有reward function
-        env->
-            s1->
-                actor->
-                    a1->
-                        env->
-                            s2->
-                                actor->
-                                    a2
-                                        ...
-        we have demonstration of the expert
-            (f1,..,fn)
-                each f is trajectory of expert
-        現實中的case都沒有reward function
-            圍棋雖然有輸贏
-            殺怪有幾得分
-            自駕車?
-            chatbox?
-        Motivation
-            It is hard to define reward in some Tasks
-                hand-crafted reward can lead to uncontrolled Behavior
-                機器公敵:保護人類->關起來
-        Inverse Reinforcement Learning
-            反過來
-            Env/Expert->
-                Reinforcement learning->
-                    Reward function->
-                        using the reward function to find the optimal actor
-        Principle: The teacher is always the best
-            Basic ideal:
-                Init actor
-                In each iteration:
-                    The actor interacts with environment to obtain some trajectory
-                    define a reward function with makes the trajectorys of teacher better than actor
-                Output the reward function and the actor learned from the reward function
-            規則會依值改老師分數永遠比較高讓reward function一值學上去
-                Σ_n=1^N R(fn) > Σ_n=1^N R(τ)
-            Generator -> Actor
-            Discriminator -> Reward function
-    Robot berkeley
-        http://rrl.berkeley.edu
+        反過來
+        Env/Expert->
+            Reinforcement learning->
+                Reward function->
+                    using the reward function to find the optimal actor
+    Principle: The teacher is always the best
+        Basic ideal:
+            Init actor
+            In each iteration:
+                The actor interacts with environment to obtain some trajectory
+                define a reward function with makes the trajectorys of teacher better than actor
+            Output the reward function and the actor learned from the reward function
+        規則會依值改老師分數永遠比較高讓reward function一值學上去
+            Σ_n=1^N R(fn) > Σ_n=1^N R(τ)
+        Generator -> Actor
+        Discriminator -> Reward function
+Robot berkeley
+    http://rrl.berkeley.edu

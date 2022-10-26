@@ -1,220 +1,219 @@
-Unsupervised Learning - Word Embedding
-    1-of-N Encoding
-        用一個vector表是一個word
-        一個word對映到一個dims
-            apple
-                [1 0 0 0 0]
-            bag
-                [0 1 0 0 0]
-            cat
-                [0 0 1 0 0]
+1-of-N Encoding
+    用一個vector表是一個word
+    一個word對映到一個dims
+        apple
+            [1 0 0 0 0]
+        bag
+            [0 1 0 0 0]
+        cat
+            [0 0 1 0 0]
+        dog
+            [0 0 0 1 0]
+        elephant
+            [0 0 0 0 1]
+    vector一點都不informatix
+        沒辦法知道cat/dog都是動物
+Word Class
+    把同樣性質的word拉成一群一群的
+        class1
             dog
-                [0 0 0 1 0]
-            elephant
-                [0 0 0 0 1]
-        vector一點都不informatix
-            沒辦法知道cat/dog都是動物
-    Word Class
-        把同樣性質的word拉成一群一群的
-            class1
-                dog
-                cat
-                bird
-            class2
-                ran
-                walk
-                jumped
-            class3
-                flower
-                tree
-                apple
-            用所屬的class表示該word
-                clustering的概念
-                缺點就是clustering之間的關係還是沒辦法表示
-    Word Embedding
-        把word project到high dimensional的space上
-            維度低於1-of-N Encoding
-                dimension reduction的process
-                類似語意的詞匯在圖上比較接近
-                每個dimension都有它特別的涵義
-                    生物跟其他東西的差別
-                    會不會動
-        machine learn the meaning of words from reading a lot of documents without supervision
-            generate word vector is Unsupervised
-                word[apple]->NN->word Embedding                
-                input
-                    training data:a lot of text
-                output
-                    unknown
-                how about autoencoder?
-                    不適合
-                        會產生independent的vector
-                        無法取得informix vector
-                    character的n-gram描述word或許可以
-                        抓到字首字根的涵義
-        A word can be understand by its context
-            you shall know a word by the company it keeps
-                馬英九520宣誓就職
-                蔡英文520宣誓就職
-                馬英九跟蔡英文詞匯可能代表有某個相似的東西
-            how to exploit the context?
-                count based
-                    if two word wi and wj frequency co-occur, V(w_i) and V(w_j) would be close to each other
-                        E.g. Glove Vector
-                            https://nlp.stanford.edu/projects/glove/
-                        V(w_i) V(w_j)
-                            inner product N_i,j
-                                越接近越好
-                                    很類似matrix factorization的概念
-                predition based
-                    NN predict word in sentence
-                        下一個出現的word是什麼
+            cat
+            bird
+        class2
+            ran
+            walk
+            jumped
+        class3
+            flower
+            tree
+            apple
+        用所屬的class表示該word
+            clustering的概念
+            缺點就是clustering之間的關係還是沒辦法表示
+Word Embedding
+    把word project到high dimensional的space上
+        維度低於1-of-N Encoding
+            dimension reduction的process
+            類似語意的詞匯在圖上比較接近
+            每個dimension都有它特別的涵義
+                生物跟其他東西的差別
+                會不會動
+    machine learn the meaning of words from reading a lot of documents without supervision
+        generate word vector is Unsupervised
+            word[apple]->NN->word Embedding                
+            input
+                training data:a lot of text
+            output
+                unknown
+            how about autoencoder?
+                不適合
+                    會產生independent的vector
+                    無法取得informix vector
+                character的n-gram描述word或許可以
+                    抓到字首字根的涵義
+    A word can be understand by its context
+        you shall know a word by the company it keeps
+            馬英九520宣誓就職
+            蔡英文520宣誓就職
+            馬英九跟蔡英文詞匯可能代表有某個相似的東西
+        how to exploit the context?
+            count based
+                if two word wi and wj frequency co-occur, V(w_i) and V(w_j) would be close to each other
+                    E.g. Glove Vector
+                        https://nlp.stanford.edu/projects/glove/
+                    V(w_i) V(w_j)
+                        inner product N_i,j
+                            越接近越好
+                                很類似matrix factorization的概念
+            predition based
+                NN predict word in sentence
+                    下一個出現的word是什麼
+                    input:
+                        1-of-N encoding of the word w_-1
+                    output:
+                        the probability for each word as the next word w_i
+                    input/output都是lexicon size
+                    NN:
+                        take out the input of the nerons in the first layer
+                            input dimension Z1,Z2,...
+                                Z
+                                    word embedding
+                        use it to represent a word w
+                        word vector,word embedding feature: V(w)
+                training text:
+                    w_i-1
+                        馬英九
+                    w_i
+                        宣誓就職
+                    w_i-1
+                        蔡英文
+                    w_i
+                        宣誓就職
+                    input 馬英九/蔡英文
+                        output 宣誓就讀機率最大
+                        兩個w_i-1必須project對應到同樣的空間
+                        所以第一個hidden layer拿出來就可以拿到word embedding
+                人去預測下一個word也很難
+                    sharing parameters
+                        input
+                            w_i-2,w_i-1
+                            ...n個詞匯
+                                通常n=10
+                                    reasonable
+                            w_i-2,w_i-1的weight是tight在一起
+                                w_i-2,w_i-1連同一個neron的weight必須相同
+                                    one word would have two word vector
+                                    reduction parameters                                                                                
+                        output
+                            w_i
+                            the probability of each word as the next w_i
+                        NN
+                            the length of x_i-1 and x_i-2 are both |V|
+                            the length of z is |Z|.
+                            z = w_1*x_i-2+w_2*x_i-1
+                                w_1 , w_2 are both |Z|X|V| matrics
+                                w_1=w_2=w
+                                z = w(x_i-2+x_i-1)
+                                如何在w_1=w_2
+                                    given w_i,_w_j the same initialization
+                                        w_i <= w_i - ∂C/∂w_i                                            
+                                        w_j <= w_j - ∂C/∂w_j
+                                        跑一次就不同所以在加入
+                                            w_i <= w_i - ∂C/∂w_i - ∂C/∂w_j
+                                            w_j <= w_j - ∂C/∂w_j - ∂C/∂w_i
+                                            兩者有相同update
+                training
+                    collect一大堆文字data
+                        潮水 退了 就 知道 誰 不爽 ...
+                    input:潮水,退了 
+                        NN 
+                            output:就
+                    input:退了,就
+                        NN 
+                            output:知道
+                    input:就,知道
+                        NN 
+                            output:誰
+                    minimizing cross entropy
+                various architecture
+                    continuous bag of word (CBOW) model
                         input:
-                            1-of-N encoding of the word w_-1
-                        output:
-                            the probability for each word as the next word w_i
-                        input/output都是lexicon size
-                        NN:
-                            take out the input of the nerons in the first layer
-                                input dimension Z1,Z2,...
-                                    Z
-                                        word embedding
-                            use it to represent a word w
-                            word vector,word embedding feature: V(w)
-                    training text:
-                        w_i-1
-                            馬英九
-                        w_i
-                            宣誓就職
-                        w_i-1
-                            蔡英文
-                        w_i
-                            宣誓就職
-                        input 馬英九/蔡英文
-                            output 宣誓就讀機率最大
-                            兩個w_i-1必須project對應到同樣的空間
-                            所以第一個hidden layer拿出來就可以拿到word embedding
-                    人去預測下一個word也很難
-                        sharing parameters
-                            input
-                                w_i-2,w_i-1
-                                ...n個詞匯
-                                    通常n=10
-                                        reasonable
-                                w_i-2,w_i-1的weight是tight在一起
-                                    w_i-2,w_i-1連同一個neron的weight必須相同
-                                        one word would have two word vector
-                                        reduction parameters                                                                                
-                            output
-                                w_i
-                                the probability of each word as the next w_i
-                            NN
-                                the length of x_i-1 and x_i-2 are both |V|
-                                the length of z is |Z|.
-                                z = w_1*x_i-2+w_2*x_i-1
-                                    w_1 , w_2 are both |Z|X|V| matrics
-                                    w_1=w_2=w
-                                    z = w(x_i-2+x_i-1)
-                                    如何在w_1=w_2
-                                        given w_i,_w_j the same initialization
-                                            w_i <= w_i - ∂C/∂w_i                                            
-                                            w_j <= w_j - ∂C/∂w_j
-                                            跑一次就不同所以在加入
-                                                w_i <= w_i - ∂C/∂w_i - ∂C/∂w_j
-                                                w_j <= w_j - ∂C/∂w_j - ∂C/∂w_i
-                                                兩者有相同update
-                    training
-                        collect一大堆文字data
-                            潮水 退了 就 知道 誰 不爽 ...
-                        input:潮水,退了 
-                            NN 
-                                output:就
-                        input:退了,就
-                            NN 
-                                output:知道
-                        input:就,知道
-                            NN 
-                                output:誰
-                        minimizing cross entropy
-                    various architecture
-                        continuous bag of word (CBOW) model
-                            input:
-                                w_i-1
-                                w_i+1
-                            predict:
-                                w_i
-                        skip-gram
-                            input:
-                                w_i
-                            predict:
-                                w_i-1
-                                w_i+1
-                        NN通常不是deep的network
-                            只有一個linear hidden layer
-                                Tomas Mikolov
-                                    他不是第一個propose word vector的人
-                                        以前就有這樣概念
-                                    tookip裡面有種種tip產生好的performance
-        產生word vector結果的多維度觀察
-            國家跟首都有某種固定關係
-            動詞三態也有固定關係
-            你可以從word vector discovery word跟word之間的關係
-            word vector兩兩相減
-                project到2 dims的word speace
-                    很類似的結果群會有涵蓋性質
-        推論
-            characteristics
-                v(hotter)-v(hot)≈V(bigger)-V(big)
-                v(Rome)-v(Italy)≈V(Berlin)-V(Germany)
-                v(king)-v(queen)≈V(uncle)-V(aunt)
-                    兩者會很類似                
-            solving analogies
-                Rome:Italy = Berlin:?
-                    V(Germany) = V(Berlin)-V(Rome)+(Italy)
-                        計算看跟哪個vector最接近
-        Demo
-            trainig data from ptt
-            中文corpus
-            英文corpus
-            各自train一組word vector
-                兩者會變成毫無關係
-                    每一個dimension沒有相同意義
-                不是由同樣的上下文關係形成
-                沒有中英混雜句子去train
-                    machine就沒辦法中英詞彙的關係
-                如果知道中英文的關係
-                    先得到中文vector在得到英文vector
-                    在弄一個model去learn兩者之間對應詞匯
-                        在projection project在同一個點
-                            這樣有中英文新的詞匯都可以同樣projetion上去
-                                形成類似翻譯的效果
-        Multi-Domain Embedding
-            不局限於文字
-                影像分類
-                    不限制固定分類
-                    形成vector分散之後
-                        有些image你已經知道屬於哪一類
-                            project到所對應的vector位置
-                                新的圖片近來project就可能在同類圖附近
-        Document Embedding
-            word sequences with differenct lengths
-                the vector with the same length
-            document -> word -> autoencoder -> semantic embedding
-            beyond bag of word
-                to understand the meaning of a word sequence
-                    the order of the words can be ignored
-                        exactly the same bag-of-words
-                            white blood cells destorying an infection                            
-                                positive
-                            an infaction destorying white blood cells
-                                negtive
-                            difference meaning
-            Paragraph vector
-            Seq2seq auto-encoder
-            Skip Thought
-            Exploiting other kind of label
-                supervised
-                    learning deep structured semantic models of web serach using clickthrough data
-                    a latent semantic model with convolutional-pooling structure for information retrieval
-                    recursive deep models for semantic compositionality over a sentiment treebank
-                    improved semantic representations from tree-structured long short-term memory networks
+                            w_i-1
+                            w_i+1
+                        predict:
+                            w_i
+                    skip-gram
+                        input:
+                            w_i
+                        predict:
+                            w_i-1
+                            w_i+1
+                    NN通常不是deep的network
+                        只有一個linear hidden layer
+                            Tomas Mikolov
+                                他不是第一個propose word vector的人
+                                    以前就有這樣概念
+                                tookip裡面有種種tip產生好的performance
+    產生word vector結果的多維度觀察
+        國家跟首都有某種固定關係
+        動詞三態也有固定關係
+        你可以從word vector discovery word跟word之間的關係
+        word vector兩兩相減
+            project到2 dims的word speace
+                很類似的結果群會有涵蓋性質
+    推論
+        characteristics
+            v(hotter)-v(hot)≈V(bigger)-V(big)
+            v(Rome)-v(Italy)≈V(Berlin)-V(Germany)
+            v(king)-v(queen)≈V(uncle)-V(aunt)
+                兩者會很類似                
+        solving analogies
+            Rome:Italy = Berlin:?
+                V(Germany) = V(Berlin)-V(Rome)+(Italy)
+                    計算看跟哪個vector最接近
+    Demo
+        trainig data from ptt
+        中文corpus
+        英文corpus
+        各自train一組word vector
+            兩者會變成毫無關係
+                每一個dimension沒有相同意義
+            不是由同樣的上下文關係形成
+            沒有中英混雜句子去train
+                machine就沒辦法中英詞彙的關係
+            如果知道中英文的關係
+                先得到中文vector在得到英文vector
+                在弄一個model去learn兩者之間對應詞匯
+                    在projection project在同一個點
+                        這樣有中英文新的詞匯都可以同樣projetion上去
+                            形成類似翻譯的效果
+    Multi-Domain Embedding
+        不局限於文字
+            影像分類
+                不限制固定分類
+                形成vector分散之後
+                    有些image你已經知道屬於哪一類
+                        project到所對應的vector位置
+                            新的圖片近來project就可能在同類圖附近
+    Document Embedding
+        word sequences with differenct lengths
+            the vector with the same length
+        document -> word -> autoencoder -> semantic embedding
+        beyond bag of word
+            to understand the meaning of a word sequence
+                the order of the words can be ignored
+                    exactly the same bag-of-words
+                        white blood cells destorying an infection                            
+                            positive
+                        an infaction destorying white blood cells
+                            negtive
+                        difference meaning
+        Paragraph vector
+        Seq2seq auto-encoder
+        Skip Thought
+        Exploiting other kind of label
+            supervised
+                learning deep structured semantic models of web serach using clickthrough data
+                a latent semantic model with convolutional-pooling structure for information retrieval
+                recursive deep models for semantic compositionality over a sentiment treebank
+                improved semantic representations from tree-structured long short-term memory networks

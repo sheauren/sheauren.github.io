@@ -1,531 +1,530 @@
-A Survey of Deep Learning-based Object Detection
-	BACKBONE NETWORKS
-		the basic feature extractor which takes images as input and outputs feature maps		
-		
-		deeper and densely connected backbone
-			ResNet
-			ResNeXt
-			AmoebaNet
-		lightweight backbones
-			MobileNet
-			ShuffleNet
-			SqueezeNet
-			Xception
-			MobileNetV2
-		For instance, Lin et al. [15] add or subtract layers or replace somelayers with special designed layers. To better meet specificrequirements, some works [9] [16]
-		Wang et al. [24] propose a novel real-time object detection system by combining PeleeNet with SSD [10]and optimizing the architecture for fast processing speed
-	TYPICAL BASELINES
-		Two-stage Detectors
-			R-CNN
-				R-CNN is a region based CNN detector.			
-				R-CNN which can be used in object detection tasks, their works are the first to show that a CNN could lead to dramatically higher object detectionperformance on PASCAL VOC datasets than those systems based on simpler HOG-like features. 
-				R-CNN detector consists of four modules.
-					generates category-independent region proposals
-					extracts a fixed-length feature vector from each region proposal
-					a set of class-specific linear SVMs to classify the objects in one image
-					bounding-box regressor for precisely bounding-box prediction
-				the region proposal features should have the same size.
-				The authors adopt a fixed 227×227
-				Pre-training
-					Pre-training on larger dataset followed by fine-tuning on the specified dataset is a good training method for deep convolutional neural networks to achieve fast convergence.
-					First, Girshick et al. [28] pre-train the CNN on a large scale dataset (ImageNet classification dataset [3]).
-					The last fully connected layer is replaced by the CNNs ImageNet specific 1000-way classification layer. 
-					the next step is to use SGD(stochastic gradient descent) to fine-tune the CNN parameterson the warped proposal windows. 
-					The last fully connected layer is a (N+1)-way classification layer (N: object classes, 1:background) which is randomly initialized.
-				positive examples and negative examples
-					divide into two situations.
-					first
-						define the IoU (intersection over union) overlap threshold as 0.5 in the process of fine-tuning
-						the threshold, region proposals are defined as negatives while above it object proposals are defined as positive
-						the object proposals whose maximum IoU overlap with a ground-truth class are assigned to the ground-truth box
-					second
-						set parameters when training SVM
-						only the ground-truth boxes are taken as positive examples for their respective classes 
-						and proposals have less than 0.3 IoU overlap with all ground-truth instances of one class as a negative proposal for that class
-						These proposals with overlap between 0.5 and 1 and they are not ground truth,
-						which expand the number of positive examples by approximately 30×
-				R-CNN is a multi-stage process which covers pre-training stage,fine-tuning stage
-			Fast R-CNN	
-				Fast R-CNN extracts features from an entire input image 
-				and then passes the region of interest (RoI) pooling layer to get the fixed size features as the input of the following classification 
-				and bounding box regression fully connected layers.
-				Fast R-CNN is a one-stage end-to-endtraining process using a multi-task loss on each labeled RoI to jointly train the network
-				improvement is that Fast R-CNN uses a RoIpooling layer to extract a fixed size feature map from regionproposals of different size
-			Faster R-CNN
-				a novel RPN(region proposal network) that is a fully convolutional networkto efficiently predict region proposals with a wide range ofscales and aspect ratios.
-				RPN accelerates the generating speedof region proposals because it shares fully-image convolutionalfeatures and a common set of convolutional layers with the detection network.
-				a novel method for different sized object detection is that multi-scale anchors are used
-				The anchors can greatly simplify the process of generatingvarious sized region proposals with no need of multiple scales of input images or features.
-			Mask R-CNN
-				Mask R-CNN is an extending work to Faster R-CNN mainly for instance segmentation task
-				use Faster R-CNN with a ResNet-FPN backbone to extract features achieves excellent accuracy and processing speed
-				FPN contains a bottom-up pathway and a top-down pathway with lateral connections. 
-					The bottom-up pathway is a backboneConvNet which computes a feature hierarchy consisting offeature maps at several scales with a scaling step of 2
-					The top-down pathway produces higher resolution featuresby upsampling spatially coarser
-					higher-resolution feature maps are important for detecting small objects while lower-resolutionfeature maps are rich in semantic information, feature pyramid network extracts significant features.
-				improve accuracy is to replace RoI pooling with RoIAlign to extract a small feature map from each RoI
-					RoI pooling quantizes floating-number in two steps to get approximate feature values in each bin
-						First, quantization is applied to calculate the coordinates of each RoI on feature maps,
-						given the coordinates of RoIs in the input images and down sampling stride.
-						Then RoI feature maps are divided into bins to generate feature maps at the same size,
-						which is also quantized during the process.
-						These two quantization operations cause misalignments between the RoIand the extracted features. 
-					RoIAlign avoids any quantization of the RoI boundaries or bins
-						RoIAlign avoids any quantization of the RoI boundaries or bins.
-						First it computes the floating-number of the coordinates of each RoI feature map 
-						followed by a bilinear interpolation operation 
-						to compute the exact values of the features at four regularly sampled locations in each RoI bin.
-						then it aggregates the results using max or average pooling to get values of each bin
-			two-step cascaded regression method can better predict hard detected objects
-		One-stage Detectors
-			YOLO
-				Firstly, it is due to this pipeline only predicts less than 100 bounding boxes per image while FastR-CNN using selective search predicts 2000 region proposals per image.
-				Secondly, YOLO frames detection as a regression problem, so a unified architecture can extract features frominput images straightly to predict bounding boxes and class probabilities. 
-				YOLO pipeline first divides the input image into an S×S grid, where a grid cell is responsible to detect the object whose center falls into.
-				The confidence score is obtained by multiplying two parts, whereP(object)denotes the probabilityof the box containing an object and IOU (intersection overunion) shows how accurate the box containing that objec
-			YOLOv2
-				Batch Normalization
-					Fixed distribution of inputs to a ConvNet layer would have positive consequences for the layers.
-				High Resolution Classifier
-					adopts an input resolution of 224×224 then increasesthe resolution to 448 for detection. 
-				Convolutional with Anchor Boxes
-					Then it predicts class and objectness forevery anchor box
-				Predicting the size and aspect ratio of anchor boxesusing dimension clusters
-					YOLOv2 uses K-meansclustering on the training set bounding boxes to automaticallyget good priors
-				Fine-Grained Features
-					YOLOv2 concatenates the higher resolution features with the low resolution features by stacking adjacent features into different channels
-				Multi-Scale Training
-					every 10 batches the net-work randomly chooses a new image dimension size from{320,352, ...,608}
-				Darknet19
-					YOLOv2 proposes a new classification backbone namely Darknet-19 with 19 convolutional layers and 5 max-pooling layers 
-			YOLOv3
-				YOLOv3 uses multi-label classification (inde-pendent logistic classifiers o adapt to more complex datasets containing many overlapping labels
-				YOLOv3 utilizes three different scale feature maps to predict the boundingbox.
-				The last convolutional layer predicts a 3-d tensor en-coding class predictions, objectness, and bounding box
-				YOLOv3 proposes a deeper and robust feature extractor, called Darknet-53, inspired by ResNet.
-			SSD
-				The default bounding boxes have different aspect ratios and scales in eachfeature map.
-				the scale of defaultbounding boxes is computed with regularly space betweenthe highest layer and the lowest layer
-				For each default box, it predicts both the offsetsand the confidences for all object categories
-				the large amount of default boxes are negatives, the authors adopt hardnegative mining using the highest confidence loss for each default box then pick the top ones to make the ratio between the negatives and positives at most 3:1. 
-			DSSD
-				DSSD is a modified version of SSD which adds prediction module and deconvolution module also adopts ResNet-101 as backbone
-				For prediction module	 add a residual block to each predicting layer,
-				then do element-wise addition of the outputs of prediction layer and residual block
-				Deconvolution module increases the resolution of feature maps to strengthen features.
-				Each deconvolution layer followed by a prediction module is to predict a variety of objects with different sizes. 
-			RetinaNet
-				RetinaNet is a one-stage object detector with focal loss as classification loss function
-				a loss function, called focal loss, which can down-weight theloss assigned to well-classified or easy examples
-				Focal loss concentrates on the hard training examples and avoids the vast number of easy negative examples overwhel ming the detector during training. 
-				RetinaNet inherits the fast speed of one-stage detectors while greatly overcomes the disadvantage of one-stage detectors difficult to train unbalanced positive and negative examples
-			M2Det
-				a multi-level feature pyramid network (MLFPN) constructing moreeffective feature pyramids.
-				adopt three steps toobtain final enhanced feature pyramid
-				First, like FPN, multi-level features extracted from multiple layers in the backboneare fused as the base feature
-				Second, the base feature is fed into a block, 
-				composing of alternating joint Thinned U-shape Modules and Feature Fusion Modules
-				obtains the decoder layers of TUM as the features for next step
-				Finally, a feature pyramid containing multi-level features is constructedby integrating the decoder layers of equivalent scale. 
-			RefineDet
-				The whole network of RefineDet contains two inter-connected modules,
-				the anchors refinement module and the object detection module.
-				These two modules are connected by a transfer connection block to transfer andenhance features from the former module to better predict objects in the latter module.
-				The training process is in an end-to-end way, conducted by three stages, preprocessing,detection (two inter-connected modules), and NMS.
-		Latest Detectors
-			Relation Networks for Object Detection
-				an adapted attention module for object detectioncalled object relation module which considers the interac-tion between different targets in an image including theirappearance feature and geometry information
-				This object relation module is added in the head of detector before two fully connected layers to get enhanced features for accurate classification and localization of objects.
-				The relation module not only feeds enhanced features into classifier and regressor,but replaces NMS post-processing step which gains higheraccuracy than NMS.
-			DCNv2
-				Regular ConvNets can only focus on features of fixed square size (according to the kernel)
-				thus the receptive field does not properly cover the entire pixel of a target object to represent it.
-				The deformable ConvNets can produce deformable kernel and the offset from the initial convolution kernel (of fixed size) are learned from the networks.
-				Deformable RoI Pooling can also adapt to part location for objects with different shapes
-				adopt feature mimicking to further improve detection accuracy by incorporating a feature mimic losson the per-RoI features of DCN to be similar to good features extracted from cropped images.
-			NAS-FPN
-				consist-ing of both top-down and bottom-up connections to fusefeatures with a variety of different scales. 
-				By repeating FPN architecture N times then concatenating them into a large architecture during the search, the high level feature layerspick arbitrary level features for them to imitate. 
-				Stacking more pyramid networks, adding feature dimension, adopting high capacity architecture all increase detection accuracy by a large margin
-		the typical baselines enhance accuracy by extracting richer features of objects and adopting multi-leveland multi-scale features for different sized object detection.
-		To achieve higher speed and precision, the one-stage detectorsutilize newly designed loss function to filter out easy sampleswhich drops the number of proposal targets by a large margin.
-		To address geometric variation, adopting deformable convolution layers is an effective way. 
-		Modeling the relationshipbetween different objects in an image is also necessary toimprove performance.
-	DATASETS AND METRICS
-		PASCAL VOC dataset
-			Dataset
-				20 object categories
-				spread over 11,000 images
-				The 20 categories can be considered as 4 main branches-vehicles,animals, household objects and people.
-			Metric
-				VOC2007 criteria
-					evaluate both classification and detection
-					it is designed to penalize the algorithm for missing object instances, for duplicate detections of one instance, and for false positive detections.
-					threshold IoU 0.5 between predicted boxand ground truth box 
-					If one detection is matched to a ground truth box according to the threshold criteria, it will be seen as a true positive result.
-					the precision/recall curve iscomputed from a methods ranked output
-					Recall is defined as the proportion of all positive examples ranked above a given rank.
-					Precision is the proportion of all examples above that rank which are from the positive class. 
-					The mean average precision across all categories is the ultimate results.				
-		MS COCO benchmark
-			Dataset
-				91 common object categories
-				These categories cover the 20 categories in PASCAL VOC dataset.
-				328,000 images
-				2,500,000 labeled
-				MS COCO contains considerably more object instances per image
-			Metric
-				MS COCO metric is under a strict manner and thoroughly judge the performance of detections.
-				The threshold [0.5,0.95] with an interval 0.05 that is 10 values to calculate the mean average precision in MS COCO				
-		ImageNet benchmark
-			Dataset
-				ILSVRC2014
-					200 object classes
-					450k training image
-					20k validation images
-					40k test images 
-			Metric
-				threshold 0.5
-				a loosen threshold calculated
-					t=min(0.5,wh/(w+ 10)(h+ 10)) # threshold
-		VisDrone2018 benchmark
-			Dataset
-				263 video clips 
-				10,209 images
-				2.5 million annotated instances in 179,264 images/video frames
-				VisDrone2018 has alarge amount of small objects, such as dense cars, pedestrian sand bicycles, which will cause difficult detection about certain categories
-		Open Images V
-			Dataset
-				9.2M images annotated with image-level labels,object bounding boxes,object segmentation masks, and visual relationships
-				16M bounding boxes 
-				600 object classes 
-				1.9M images
-			Metric
-				On the basis of PASCAL VOC 2012 mAPevaluation metric
-				the unannotated classes are ignored to avoid wrongly counted asfalse negatives
-				if an object belongs to a class and a subclass, an object detection model should give a detection result for each of the relevant classes. 
-				The absence of one of these classes would be considered a false negative in thatclass.
-				there exists group-of boxes which contain a group of object instances but unknown a single object localization inside them
-				If a detection inside a group-of box and the intersection of the detection and the box divided by the area of the detection is larger than 0.5, the detection will be counted as a true positive
-				Multiple correct detections inside the same group-of box only count one valid true positive
-		Pedestrian detection datasets
-			COMPARISON OF PERSON DETECTION BENCHMARKS
-				Caltech
-					countries
-						1
-					cities
-						1
-					seasons
-						1
-					images
-						249884
-					pedestrians
-						289395
-					resolution
-						640×480
-					weather
-						dry
-					train-cal-test-split(%)
-						50-0-50
-					imaging setup
-					
-				KITTI
-					countries
-						1
-					cities
-						1
-					seasons
-						1
-					images
-						14999
-					pedestrians
-						9400
-					resolution
-						1240×376
-					weather
-						dry
-					train-cal-test-split(%)
-						50-0-50
-				CityPersons
-					countries
-						3
-					cities
-						27
-					seasons
-						3
-					images
-						5000
-					pedestrians
-						31514
-					resolution
-						2048×1024
-					weather
-						dry
-					train-cal-test-split(%)
-						60-10-30
-				TDC
-					countries
-						1
-					cities
-						1
-					seasons
-						1
-					images
-						14674
-					pedestrians
-						8919
-					resolution
-						2048×1024
-					weather
-						dry
-					train-cal-test-split(%)
-						71-8-21
-				EuroCity Persons
-					countries
-						12
-					cities
-						31
-					seasons
-						4
-					images
-						40217/7118
-					pedestrians
-						183004/35309
-					resolution
-						1920×1024
-					weather
-						dry/wet
-					train-cal-test-split(%)
-						60-10-30
-
-			COMPARISON OF PEDESTRIAN DETECTION DATASETS
-				Caltech
-					imaging setup
-						mobile
-					train
-						pedestrians
-							192k
-						neg. images
-							61k
-						pos. images
-							67k
-					test
-						pedestrians
-							155k
-						neg. images
-							56k
-						pos. images
-							65k
-				INRIA
-					imaging setup
-						photo
-					train
-						pedestrians
-							1208
-						neg. images
-							1218
-						pos. images
-							614
-					test
-						pedestrians
-							566
-						neg. images
-							453
-						pos. images
-							288
-				ETH
-					imaging setup
-						mobile
-					train
-						pedestrians
-							2388
-						neg. images
-						pos. images
-							499
-					test
-						pedestrians
-							12k
-						neg. images
-						pos. images
-							1804
-				TUD-Brussels
-					imaging setup
-						mobile
-					train
-						pedestrians
-							1776
-						neg. images
-							218
-						pos. images
-							1092
-					test
-						pedestrians
-							1498
-						neg. images
-						pos. images
-							508
-				Daimler-DB
-					imaging setup
-						mobile
-					train
-						pedestrians
-							192k
-						neg. images
-							61k
-						pos. images
-							67k
-					test
-						pedestrians
-							155k
-						neg. images
-							56k
-						pos. images
-							65k
+BACKBONE NETWORKS
+	the basic feature extractor which takes images as input and outputs feature maps		
+	
+	deeper and densely connected backbone
+		ResNet
+		ResNeXt
+		AmoebaNet
+	lightweight backbones
+		MobileNet
+		ShuffleNet
+		SqueezeNet
+		Xception
+		MobileNetV2
+	For instance, Lin et al. [15] add or subtract layers or replace somelayers with special designed layers. To better meet specificrequirements, some works [9] [16]
+	Wang et al. [24] propose a novel real-time object detection system by combining PeleeNet with SSD [10]and optimizing the architecture for fast processing speed
+TYPICAL BASELINES
+	Two-stage Detectors
+		R-CNN
+			R-CNN is a region based CNN detector.			
+			R-CNN which can be used in object detection tasks, their works are the first to show that a CNN could lead to dramatically higher object detectionperformance on PASCAL VOC datasets than those systems based on simpler HOG-like features. 
+			R-CNN detector consists of four modules.
+				generates category-independent region proposals
+				extracts a fixed-length feature vector from each region proposal
+				a set of class-specific linear SVMs to classify the objects in one image
+				bounding-box regressor for precisely bounding-box prediction
+			the region proposal features should have the same size.
+			The authors adopt a fixed 227×227
+			Pre-training
+				Pre-training on larger dataset followed by fine-tuning on the specified dataset is a good training method for deep convolutional neural networks to achieve fast convergence.
+				First, Girshick et al. [28] pre-train the CNN on a large scale dataset (ImageNet classification dataset [3]).
+				The last fully connected layer is replaced by the CNNs ImageNet specific 1000-way classification layer. 
+				the next step is to use SGD(stochastic gradient descent) to fine-tune the CNN parameterson the warped proposal windows. 
+				The last fully connected layer is a (N+1)-way classification layer (N: object classes, 1:background) which is randomly initialized.
+			positive examples and negative examples
+				divide into two situations.
+				first
+					define the IoU (intersection over union) overlap threshold as 0.5 in the process of fine-tuning
+					the threshold, region proposals are defined as negatives while above it object proposals are defined as positive
+					the object proposals whose maximum IoU overlap with a ground-truth class are assigned to the ground-truth box
+				second
+					set parameters when training SVM
+					only the ground-truth boxes are taken as positive examples for their respective classes 
+					and proposals have less than 0.3 IoU overlap with all ground-truth instances of one class as a negative proposal for that class
+					These proposals with overlap between 0.5 and 1 and they are not ground truth,
+					which expand the number of positive examples by approximately 30×
+			R-CNN is a multi-stage process which covers pre-training stage,fine-tuning stage
+		Fast R-CNN	
+			Fast R-CNN extracts features from an entire input image 
+			and then passes the region of interest (RoI) pooling layer to get the fixed size features as the input of the following classification 
+			and bounding box regression fully connected layers.
+			Fast R-CNN is a one-stage end-to-endtraining process using a multi-task loss on each labeled RoI to jointly train the network
+			improvement is that Fast R-CNN uses a RoIpooling layer to extract a fixed size feature map from regionproposals of different size
+		Faster R-CNN
+			a novel RPN(region proposal network) that is a fully convolutional networkto efficiently predict region proposals with a wide range ofscales and aspect ratios.
+			RPN accelerates the generating speedof region proposals because it shares fully-image convolutionalfeatures and a common set of convolutional layers with the detection network.
+			a novel method for different sized object detection is that multi-scale anchors are used
+			The anchors can greatly simplify the process of generatingvarious sized region proposals with no need of multiple scales of input images or features.
+		Mask R-CNN
+			Mask R-CNN is an extending work to Faster R-CNN mainly for instance segmentation task
+			use Faster R-CNN with a ResNet-FPN backbone to extract features achieves excellent accuracy and processing speed
+			FPN contains a bottom-up pathway and a top-down pathway with lateral connections. 
+				The bottom-up pathway is a backboneConvNet which computes a feature hierarchy consisting offeature maps at several scales with a scaling step of 2
+				The top-down pathway produces higher resolution featuresby upsampling spatially coarser
+				higher-resolution feature maps are important for detecting small objects while lower-resolutionfeature maps are rich in semantic information, feature pyramid network extracts significant features.
+			improve accuracy is to replace RoI pooling with RoIAlign to extract a small feature map from each RoI
+				RoI pooling quantizes floating-number in two steps to get approximate feature values in each bin
+					First, quantization is applied to calculate the coordinates of each RoI on feature maps,
+					given the coordinates of RoIs in the input images and down sampling stride.
+					Then RoI feature maps are divided into bins to generate feature maps at the same size,
+					which is also quantized during the process.
+					These two quantization operations cause misalignments between the RoIand the extracted features. 
+				RoIAlign avoids any quantization of the RoI boundaries or bins
+					RoIAlign avoids any quantization of the RoI boundaries or bins.
+					First it computes the floating-number of the coordinates of each RoI feature map 
+					followed by a bilinear interpolation operation 
+					to compute the exact values of the features at four regularly sampled locations in each RoI bin.
+					then it aggregates the results using max or average pooling to get values of each bin
+		two-step cascaded regression method can better predict hard detected objects
+	One-stage Detectors
+		YOLO
+			Firstly, it is due to this pipeline only predicts less than 100 bounding boxes per image while FastR-CNN using selective search predicts 2000 region proposals per image.
+			Secondly, YOLO frames detection as a regression problem, so a unified architecture can extract features frominput images straightly to predict bounding boxes and class probabilities. 
+			YOLO pipeline first divides the input image into an S×S grid, where a grid cell is responsible to detect the object whose center falls into.
+			The confidence score is obtained by multiplying two parts, whereP(object)denotes the probabilityof the box containing an object and IOU (intersection overunion) shows how accurate the box containing that objec
+		YOLOv2
+			Batch Normalization
+				Fixed distribution of inputs to a ConvNet layer would have positive consequences for the layers.
+			High Resolution Classifier
+				adopts an input resolution of 224×224 then increasesthe resolution to 448 for detection. 
+			Convolutional with Anchor Boxes
+				Then it predicts class and objectness forevery anchor box
+			Predicting the size and aspect ratio of anchor boxesusing dimension clusters
+				YOLOv2 uses K-meansclustering on the training set bounding boxes to automaticallyget good priors
+			Fine-Grained Features
+				YOLOv2 concatenates the higher resolution features with the low resolution features by stacking adjacent features into different channels
+			Multi-Scale Training
+				every 10 batches the net-work randomly chooses a new image dimension size from{320,352, ...,608}
+			Darknet19
+				YOLOv2 proposes a new classification backbone namely Darknet-19 with 19 convolutional layers and 5 max-pooling layers 
+		YOLOv3
+			YOLOv3 uses multi-label classification (inde-pendent logistic classifiers o adapt to more complex datasets containing many overlapping labels
+			YOLOv3 utilizes three different scale feature maps to predict the boundingbox.
+			The last convolutional layer predicts a 3-d tensor en-coding class predictions, objectness, and bounding box
+			YOLOv3 proposes a deeper and robust feature extractor, called Darknet-53, inspired by ResNet.
+		SSD
+			The default bounding boxes have different aspect ratios and scales in eachfeature map.
+			the scale of defaultbounding boxes is computed with regularly space betweenthe highest layer and the lowest layer
+			For each default box, it predicts both the offsetsand the confidences for all object categories
+			the large amount of default boxes are negatives, the authors adopt hardnegative mining using the highest confidence loss for each default box then pick the top ones to make the ratio between the negatives and positives at most 3:1. 
+		DSSD
+			DSSD is a modified version of SSD which adds prediction module and deconvolution module also adopts ResNet-101 as backbone
+			For prediction module	 add a residual block to each predicting layer,
+			then do element-wise addition of the outputs of prediction layer and residual block
+			Deconvolution module increases the resolution of feature maps to strengthen features.
+			Each deconvolution layer followed by a prediction module is to predict a variety of objects with different sizes. 
+		RetinaNet
+			RetinaNet is a one-stage object detector with focal loss as classification loss function
+			a loss function, called focal loss, which can down-weight theloss assigned to well-classified or easy examples
+			Focal loss concentrates on the hard training examples and avoids the vast number of easy negative examples overwhel ming the detector during training. 
+			RetinaNet inherits the fast speed of one-stage detectors while greatly overcomes the disadvantage of one-stage detectors difficult to train unbalanced positive and negative examples
+		M2Det
+			a multi-level feature pyramid network (MLFPN) constructing moreeffective feature pyramids.
+			adopt three steps toobtain final enhanced feature pyramid
+			First, like FPN, multi-level features extracted from multiple layers in the backboneare fused as the base feature
+			Second, the base feature is fed into a block, 
+			composing of alternating joint Thinned U-shape Modules and Feature Fusion Modules
+			obtains the decoder layers of TUM as the features for next step
+			Finally, a feature pyramid containing multi-level features is constructedby integrating the decoder layers of equivalent scale. 
+		RefineDet
+			The whole network of RefineDet contains two inter-connected modules,
+			the anchors refinement module and the object detection module.
+			These two modules are connected by a transfer connection block to transfer andenhance features from the former module to better predict objects in the latter module.
+			The training process is in an end-to-end way, conducted by three stages, preprocessing,detection (two inter-connected modules), and NMS.
+	Latest Detectors
+		Relation Networks for Object Detection
+			an adapted attention module for object detectioncalled object relation module which considers the interac-tion between different targets in an image including theirappearance feature and geometry information
+			This object relation module is added in the head of detector before two fully connected layers to get enhanced features for accurate classification and localization of objects.
+			The relation module not only feeds enhanced features into classifier and regressor,but replaces NMS post-processing step which gains higheraccuracy than NMS.
+		DCNv2
+			Regular ConvNets can only focus on features of fixed square size (according to the kernel)
+			thus the receptive field does not properly cover the entire pixel of a target object to represent it.
+			The deformable ConvNets can produce deformable kernel and the offset from the initial convolution kernel (of fixed size) are learned from the networks.
+			Deformable RoI Pooling can also adapt to part location for objects with different shapes
+			adopt feature mimicking to further improve detection accuracy by incorporating a feature mimic losson the per-RoI features of DCN to be similar to good features extracted from cropped images.
+		NAS-FPN
+			consist-ing of both top-down and bottom-up connections to fusefeatures with a variety of different scales. 
+			By repeating FPN architecture N times then concatenating them into a large architecture during the search, the high level feature layerspick arbitrary level features for them to imitate. 
+			Stacking more pyramid networks, adding feature dimension, adopting high capacity architecture all increase detection accuracy by a large margin
+	the typical baselines enhance accuracy by extracting richer features of objects and adopting multi-leveland multi-scale features for different sized object detection.
+	To achieve higher speed and precision, the one-stage detectorsutilize newly designed loss function to filter out easy sampleswhich drops the number of proposal targets by a large margin.
+	To address geometric variation, adopting deformable convolution layers is an effective way. 
+	Modeling the relationshipbetween different objects in an image is also necessary toimprove performance.
+DATASETS AND METRICS
+	PASCAL VOC dataset
+		Dataset
+			20 object categories
+			spread over 11,000 images
+			The 20 categories can be considered as 4 main branches-vehicles,animals, household objects and people.
+		Metric
+			VOC2007 criteria
+				evaluate both classification and detection
+				it is designed to penalize the algorithm for missing object instances, for duplicate detections of one instance, and for false positive detections.
+				threshold IoU 0.5 between predicted boxand ground truth box 
+				If one detection is matched to a ground truth box according to the threshold criteria, it will be seen as a true positive result.
+				the precision/recall curve iscomputed from a methods ranked output
+				Recall is defined as the proportion of all positive examples ranked above a given rank.
+				Precision is the proportion of all examples above that rank which are from the positive class. 
+				The mean average precision across all categories is the ultimate results.				
+	MS COCO benchmark
+		Dataset
+			91 common object categories
+			These categories cover the 20 categories in PASCAL VOC dataset.
+			328,000 images
+			2,500,000 labeled
+			MS COCO contains considerably more object instances per image
+		Metric
+			MS COCO metric is under a strict manner and thoroughly judge the performance of detections.
+			The threshold [0.5,0.95] with an interval 0.05 that is 10 values to calculate the mean average precision in MS COCO				
+	ImageNet benchmark
+		Dataset
+			ILSVRC2014
+				200 object classes
+				450k training image
+				20k validation images
+				40k test images 
+		Metric
+			threshold 0.5
+			a loosen threshold calculated
+				t=min(0.5,wh/(w+ 10)(h+ 10)) # threshold
+	VisDrone2018 benchmark
+		Dataset
+			263 video clips 
+			10,209 images
+			2.5 million annotated instances in 179,264 images/video frames
+			VisDrone2018 has alarge amount of small objects, such as dense cars, pedestrian sand bicycles, which will cause difficult detection about certain categories
+	Open Images V
+		Dataset
+			9.2M images annotated with image-level labels,object bounding boxes,object segmentation masks, and visual relationships
+			16M bounding boxes 
+			600 object classes 
+			1.9M images
+		Metric
+			On the basis of PASCAL VOC 2012 mAPevaluation metric
+			the unannotated classes are ignored to avoid wrongly counted asfalse negatives
+			if an object belongs to a class and a subclass, an object detection model should give a detection result for each of the relevant classes. 
+			The absence of one of these classes would be considered a false negative in thatclass.
+			there exists group-of boxes which contain a group of object instances but unknown a single object localization inside them
+			If a detection inside a group-of box and the intersection of the detection and the box divided by the area of the detection is larger than 0.5, the detection will be counted as a true positive
+			Multiple correct detections inside the same group-of box only count one valid true positive
+	Pedestrian detection datasets
+		COMPARISON OF PERSON DETECTION BENCHMARKS
+			Caltech
+				countries
+					1
+				cities
+					1
+				seasons
+					1
+				images
+					249884
+				pedestrians
+					289395
+				resolution
+					640×480
+				weather
+					dry
+				train-cal-test-split(%)
+					50-0-50
+				imaging setup
 				
-	ANALYSIS OF GENERAL IMAGE OBJECT DETECTION
-		Deep neural network based object detection pipelines have four steps in general, 
-			image pre-processing
-				Firstly,raw images from the dataset cant be fed into the network directly
-				We need to resize them to any special sizesand make them clearer, such as enhancing brightness, color,contrast.
-				Data augmentation is also available to meet somerequirements, such as flipping, rotation, scaling, cropping,translation, adding Gaussian noise
-				GANs can generate new images to enrich the diversity of input according to people's needs.				
-			feature extraction
-				The feature quality directly determines the upper bound of subsequent tasks like classificationand localization. 
-			classification and localization
-				the detector head is responsible to propose and refine bounding box concluding classificationscores and bounding box coordinates.
-			post-processing
-				deletes any weak detecting results.
-				NMS is a widely used method in which thehighest scoring object deletes its nearby objects with inferiorclassification scores.
-		Enhanced features
-			To fully utilize the output feature maps of consecutive backbone layer
-			Some works utilize FPN as their multi-level feature pyramid backbone.
-			PFPNet
-				Furthermore, a series of improved FPN enriching features for detection task +
-					a parallel feature pyramid (FP) network (PFPNet)
-				The additional feature transformation operation is to generate a pool of feature maps with different sizes, which yields the feature maps with similar levels of semantic abstraction across the scales
-				concatenate features from different layers with different scales 
-				generates new feature pyramid to feed into multibox detectors predicting the final detection results
-			WeaveNet
-				introduce WeaveNet which iteratively weaves context information from adjacent scales together to enable more sophisticated context reasoning
-			Semantic relationships between different objects or regions of an image can help detect occluded and small objects. 
-				utilize the combined and high-level semantic featuresfor object classification and localization which combine themulti-region features stage by stage
-				combine a semantic segmentation branch and a global activation moduleto enrich the semantics of object detection features within a typical deep detector
-			Scene contextual relations can provide some useful information for accurate visual recognition.				
-				process context regions around the ground-truth object on an appropriate scale
-				propose a relation module that processes a set of objects simultaneously considering both appearance and geometry features through interaction
-				Mid-level semantic properties of objects can benefit object detection containingvisual attributes
-			Attention mechanism is an effective method for networks focusing on the most significant region part
-				focus on attention mechanism so as to capture more useful features what detecting objects need
-			Fully utilizing the effective region of one object can promote the accuracy.
-				The deformable ConvNets can producedeformable kernel and the offset from the initial convolu-tion kernel (of fixed size) are learned from the networks.Deformable RoI Pooling can also adapt to part location forobjects with different shapes
-				network weight sand sampling locations jointly determine the effective support region.
-		Increasing localization accuracy
-			the precision of localization is a vital measurable indicator,thus increasing localization accuracy can promote detectionperformance remarkably.
-				Designing a novel loss function tomeasure the accuracy of predicted boxes is an effective wayto increase localization accuracy
-				incorporate generalized IoU as a loss function and a new metric into existing object detection pipeline which makes a consistent improvement than the original smooth L1 loss counterpart.
-				introduce a novel bounding box regression loss which has a strong connection to localization accuracy. 
-				propose a novel balanced L1 Loss to further improvelocalization accuracy.
-				present Axially Lo-calized Detection method to achieve a very high localizationprecision at the cellular level.
-			In general, researchers design new loss function of localiza-tion branch to make the retained predictions more accurate
-		Solving negatives-positives imbalance issue
-			that networks produce proposals and filter out a large number of negative samples are mainly well designed steps of two-stage detectors
-			one-stage detector, the network has no steps tofilter out bad samples, thus the dense sample sets are difficult to train.
-			The typical solution is hard negative mining
-				The popularized hard mining methods OHEM can help drive the focus towards hard samples
-				all of the negative samples using the highest confidence loss for each pre-defined boxes and picking the top ones to make the ratio between the negative and positive samples at most3:1.
-			Another effective way is adding some items in classification loss function
-				propose a loss function, called focal loss, which can down-weight the loss assigned to well-classified or easy example
-				designing a novel ranking task to replace the conventional classification task and a newly Average-Precision loss for this task, which can alleviate the extreme negative-positive class imbalance issue remarkably.
-		Improving post-processing NMS method
-			use the intermediate results produced by relation module to better determine which object will be saved
-			NMS considers the classification score but the localization confidenceis absent, which causes less accurate in deleting weak results
-				propose IoU-Net learning to predict the IoU between each detected bounding box and the matched ground-truth.
-				present a novel fitness NMS method which considers both greater estimated IoU overlap and classification score of predicted bounding boxes
-				propose adaptive-NMS which applies a dynamic suppression threshold to an instance decided by the target density. 
-				adopt an improved NMS methodwithout any extra training and is simple to implement.
-				further improve soft-NMS method. 
-				feed network score maps resulting from NMS at multiple IoUthresholds. 
-				design a novel ConvNets which does NMS directly without a subsequent post-processing step.
-				utilize the final feature map to filter out easy samples so the network concentrates on hard samples
-		Combining one-stage and two-stage detectors to make good results
-			two-stage detectors have high localization and object recognition precision				
-			one-stage detectors achieve high inference and test speed
-		Complicated scene solutions
-			detect small objects through learning representations of objects at multiple scales
-				improve detectionaccuracy on the basis
-				utilize GAN modelin which generator transfer perceived poor representations of the small objects to super-resolved
-				improve detection accuracy ofsmall objects by enhancing IoU thresholds to train multiple localization modules.
-				adopt feature fusion to better detect small faces which is produced by image pyramid
-			Target occlusion is another difficult problem in the field ofobject detection
-				improve the recall of facedetection problem in the occluded case without speed decay.
-				propose a novel bounding box regression loss specifically designed for crowd scenes, called repulsionloss. 
-				present a newly designed occlusion-aware R-CNN (OR-CNN) to improve the detection accuracyin the crowd
-				combine Convolutional NeuralNets and Conditional Random Fields that model potentialocclusions.
-			for the size of different objects in a dataset varies greatly
-				input images are resized at multiple specified scales and feature maps are computed for each scale, called multi-scale training
-				adaptively sample regions from multiple scales of an image pyramid, conditioned on the image content
-				pre-defined anchors with multi-scales and multiple aspect ratios are reference boxes of the predicted bounding boxes.				
-		anchor-free
-			CenterNet locates the center point, top-left and bottom-right point of an object.
-			a localization method which is based on the four distancevalues between the predicted center point and four sides of abounding box.
-		Training from scratch
-			Almost all of the state-of-the-art detectors utilize off-the-shelf classification backbone pre-trained on large scale clas-sification dataset as their initial parameter set then fine-tune parameters to adapt to the new detection task.
-			Another way to implement training procedure is that all parameters are assigned from scratch			
-		Designing new architecture
-			a newly designed object detection architecture to specially focus on detection taskwhich maintains high spatial resolution in deeper layers and does not need to pre-train on large scale classification dataset
-		Speeding up detection
-			For limited computing power and memory resource such asmobile devices, real-time devices, webcam, automatic driving encourage research into efficient detection architecture design
-		Achieving Fast and Accurate Detections
-			The best object detector needs both high efficiency andhigh accuracy which is the ultimate goal of this task.
-	APPLICATIONS AND BRANCHES
-		Typical application areas
-			Security field
+			KITTI
+				countries
+					1
+				cities
+					1
+				seasons
+					1
+				images
+					14999
+				pedestrians
+					9400
+				resolution
+					1240×376
+				weather
+					dry
+				train-cal-test-split(%)
+					50-0-50
+			CityPersons
+				countries
+					3
+				cities
+					27
+				seasons
+					3
+				images
+					5000
+				pedestrians
+					31514
+				resolution
+					2048×1024
+				weather
+					dry
+				train-cal-test-split(%)
+					60-10-30
+			TDC
+				countries
+					1
+				cities
+					1
+				seasons
+					1
+				images
+					14674
+				pedestrians
+					8919
+				resolution
+					2048×1024
+				weather
+					dry
+				train-cal-test-split(%)
+					71-8-21
+			EuroCity Persons
+				countries
+					12
+				cities
+					31
+				seasons
+					4
+				images
+					40217/7118
+				pedestrians
+					183004/35309
+				resolution
+					1920×1024
+				weather
+					dry/wet
+				train-cal-test-split(%)
+					60-10-30
+
+		COMPARISON OF PEDESTRIAN DETECTION DATASETS
+			Caltech
+				imaging setup
+					mobile
+				train
+					pedestrians
+						192k
+					neg. images
+						61k
+					pos. images
+						67k
+				test
+					pedestrians
+						155k
+					neg. images
+						56k
+					pos. images
+						65k
+			INRIA
+				imaging setup
+					photo
+				train
+					pedestrians
+						1208
+					neg. images
+						1218
+					pos. images
+						614
+				test
+					pedestrians
+						566
+					neg. images
+						453
+					pos. images
+						288
+			ETH
+				imaging setup
+					mobile
+				train
+					pedestrians
+						2388
+					neg. images
+					pos. images
+						499
+				test
+					pedestrians
+						12k
+					neg. images
+					pos. images
+						1804
+			TUD-Brussels
+				imaging setup
+					mobile
+				train
+					pedestrians
+						1776
+					neg. images
+						218
+					pos. images
+						1092
+				test
+					pedestrians
+						1498
+					neg. images
+					pos. images
+						508
+			Daimler-DB
+				imaging setup
+					mobile
+				train
+					pedestrians
+						192k
+					neg. images
+						61k
+					pos. images
+						67k
+				test
+					pedestrians
+						155k
+					neg. images
+						56k
+					pos. images
+						65k
+			
+ANALYSIS OF GENERAL IMAGE OBJECT DETECTION
+	Deep neural network based object detection pipelines have four steps in general, 
+		image pre-processing
+			Firstly,raw images from the dataset cant be fed into the network directly
+			We need to resize them to any special sizesand make them clearer, such as enhancing brightness, color,contrast.
+			Data augmentation is also available to meet somerequirements, such as flipping, rotation, scaling, cropping,translation, adding Gaussian noise
+			GANs can generate new images to enrich the diversity of input according to people's needs.				
+		feature extraction
+			The feature quality directly determines the upper bound of subsequent tasks like classificationand localization. 
+		classification and localization
+			the detector head is responsible to propose and refine bounding box concluding classificationscores and bounding box coordinates.
+		post-processing
+			deletes any weak detecting results.
+			NMS is a widely used method in which thehighest scoring object deletes its nearby objects with inferiorclassification scores.
+	Enhanced features
+		To fully utilize the output feature maps of consecutive backbone layer
+		Some works utilize FPN as their multi-level feature pyramid backbone.
+		PFPNet
+			Furthermore, a series of improved FPN enriching features for detection task +
+				a parallel feature pyramid (FP) network (PFPNet)
+			The additional feature transformation operation is to generate a pool of feature maps with different sizes, which yields the feature maps with similar levels of semantic abstraction across the scales
+			concatenate features from different layers with different scales 
+			generates new feature pyramid to feed into multibox detectors predicting the final detection results
+		WeaveNet
+			introduce WeaveNet which iteratively weaves context information from adjacent scales together to enable more sophisticated context reasoning
+		Semantic relationships between different objects or regions of an image can help detect occluded and small objects. 
+			utilize the combined and high-level semantic featuresfor object classification and localization which combine themulti-region features stage by stage
+			combine a semantic segmentation branch and a global activation moduleto enrich the semantics of object detection features within a typical deep detector
+		Scene contextual relations can provide some useful information for accurate visual recognition.				
+			process context regions around the ground-truth object on an appropriate scale
+			propose a relation module that processes a set of objects simultaneously considering both appearance and geometry features through interaction
+			Mid-level semantic properties of objects can benefit object detection containingvisual attributes
+		Attention mechanism is an effective method for networks focusing on the most significant region part
+			focus on attention mechanism so as to capture more useful features what detecting objects need
+		Fully utilizing the effective region of one object can promote the accuracy.
+			The deformable ConvNets can producedeformable kernel and the offset from the initial convolu-tion kernel (of fixed size) are learned from the networks.Deformable RoI Pooling can also adapt to part location forobjects with different shapes
+			network weight sand sampling locations jointly determine the effective support region.
+	Increasing localization accuracy
+		the precision of localization is a vital measurable indicator,thus increasing localization accuracy can promote detectionperformance remarkably.
+			Designing a novel loss function tomeasure the accuracy of predicted boxes is an effective wayto increase localization accuracy
+			incorporate generalized IoU as a loss function and a new metric into existing object detection pipeline which makes a consistent improvement than the original smooth L1 loss counterpart.
+			introduce a novel bounding box regression loss which has a strong connection to localization accuracy. 
+			propose a novel balanced L1 Loss to further improvelocalization accuracy.
+			present Axially Lo-calized Detection method to achieve a very high localizationprecision at the cellular level.
+		In general, researchers design new loss function of localiza-tion branch to make the retained predictions more accurate
+	Solving negatives-positives imbalance issue
+		that networks produce proposals and filter out a large number of negative samples are mainly well designed steps of two-stage detectors
+		one-stage detector, the network has no steps tofilter out bad samples, thus the dense sample sets are difficult to train.
+		The typical solution is hard negative mining
+			The popularized hard mining methods OHEM can help drive the focus towards hard samples
+			all of the negative samples using the highest confidence loss for each pre-defined boxes and picking the top ones to make the ratio between the negative and positive samples at most3:1.
+		Another effective way is adding some items in classification loss function
+			propose a loss function, called focal loss, which can down-weight the loss assigned to well-classified or easy example
+			designing a novel ranking task to replace the conventional classification task and a newly Average-Precision loss for this task, which can alleviate the extreme negative-positive class imbalance issue remarkably.
+	Improving post-processing NMS method
+		use the intermediate results produced by relation module to better determine which object will be saved
+		NMS considers the classification score but the localization confidenceis absent, which causes less accurate in deleting weak results
+			propose IoU-Net learning to predict the IoU between each detected bounding box and the matched ground-truth.
+			present a novel fitness NMS method which considers both greater estimated IoU overlap and classification score of predicted bounding boxes
+			propose adaptive-NMS which applies a dynamic suppression threshold to an instance decided by the target density. 
+			adopt an improved NMS methodwithout any extra training and is simple to implement.
+			further improve soft-NMS method. 
+			feed network score maps resulting from NMS at multiple IoUthresholds. 
+			design a novel ConvNets which does NMS directly without a subsequent post-processing step.
+			utilize the final feature map to filter out easy samples so the network concentrates on hard samples
+	Combining one-stage and two-stage detectors to make good results
+		two-stage detectors have high localization and object recognition precision				
+		one-stage detectors achieve high inference and test speed
+	Complicated scene solutions
+		detect small objects through learning representations of objects at multiple scales
+			improve detectionaccuracy on the basis
+			utilize GAN modelin which generator transfer perceived poor representations of the small objects to super-resolved
+			improve detection accuracy ofsmall objects by enhancing IoU thresholds to train multiple localization modules.
+			adopt feature fusion to better detect small faces which is produced by image pyramid
+		Target occlusion is another difficult problem in the field ofobject detection
+			improve the recall of facedetection problem in the occluded case without speed decay.
+			propose a novel bounding box regression loss specifically designed for crowd scenes, called repulsionloss. 
+			present a newly designed occlusion-aware R-CNN (OR-CNN) to improve the detection accuracyin the crowd
+			combine Convolutional NeuralNets and Conditional Random Fields that model potentialocclusions.
+		for the size of different objects in a dataset varies greatly
+			input images are resized at multiple specified scales and feature maps are computed for each scale, called multi-scale training
+			adaptively sample regions from multiple scales of an image pyramid, conditioned on the image content
+			pre-defined anchors with multi-scales and multiple aspect ratios are reference boxes of the predicted bounding boxes.				
+	anchor-free
+		CenterNet locates the center point, top-left and bottom-right point of an object.
+		a localization method which is based on the four distancevalues between the predicted center point and four sides of abounding box.
+	Training from scratch
+		Almost all of the state-of-the-art detectors utilize off-the-shelf classification backbone pre-trained on large scale clas-sification dataset as their initial parameter set then fine-tune parameters to adapt to the new detection task.
+		Another way to implement training procedure is that all parameters are assigned from scratch			
+	Designing new architecture
+		a newly designed object detection architecture to specially focus on detection taskwhich maintains high spatial resolution in deeper layers and does not need to pre-train on large scale classification dataset
+	Speeding up detection
+		For limited computing power and memory resource such asmobile devices, real-time devices, webcam, automatic driving encourage research into efficient detection architecture design
+	Achieving Fast and Accurate Detections
+		The best object detector needs both high efficiency andhigh accuracy which is the ultimate goal of this task.
+APPLICATIONS AND BRANCHES
+	Typical application areas
+		Security field
+			face detection
 				face detection
-					face detection
-					facial landmarks localization
-					head pose estimation
-					gender recognition
-					propose a novel Wasserstein convolutionalneural network approach to learn invariant features betweennear-infrared (NIR) and visual (VIS) face images
-					The cosine-based softmax losses achieve great success indeep learning based face recognition
-				pedestrian detection
-					focuses on detecting pedestrians inthe natural scene
-				fingerprint identification
-				anomaly detection
-					fraud detection
-					climate analysis
-					healthcare monitoring
-					analyzethe data on a point-wise basis.
-					To point the expert analysts to the interesting regions (anomalies) of the data
-					propose a novel unsupervised method called Maximally Divergent Intervals (MDI), which searches for contiguousintervals of time and regions in space
-			Military field
-				Remote  sensing  object  detection				
-					aims at detecting objects on remote sensing images or videos
-					the extreme large input size but small targets makes the existing object detection procedure too slow forpractical use and too hard to detect
-					the massive and complex backgrounds cause serious false detection.
-					Remote sensing images have some characteristics far from natural images, thus strong pipelines such as Faster R-CNN,FCN, SSD, YOLO can't transfer well to the new data domain.
-					Designing remote sensing dataset adapted detectors remains are search hot spot in this domain.					
-					a CNN-based Remote Sensing Image (RSI) object detection model dealing with the rotation problem by designing a rotation-invariant layer.
-					raise  a  rotatable  region  proposal  network  anda  rotatable  detection  network  considering  the  orientation  of vehicles
-					put  forward  an  accurate-vehicle-proposal-network (AVPN) for small object detection
-					propose  a  novel  framework  containing  automatic labeling and recurrent neural network for detection
-				topographic survey			
-				flyer detection
-			Transportation  field
-				license  platere cognition, automatic driving and traffic sign recognition etc.
-				With the popularity of cars,license  plate  recognition
-					tracking crime
-					residential access
-					traffic violations tracking
-				An autonomous vehicle (AV) 
-					needs an accurate perception of its surroundings to operate reliably. 
-				Both unmanned vehicles and autonomous driving systems need  to  solve  the  problem  of traffic  sign  recognition
-			Medical field
-				medical image detection,cancer detection, disease detection, skin disease detection and healthcare  monitoring  etc.
-				Computer  Aided  Diagnosis  (CAD)  systems
-					can  helpdoctors  classify  different  types  of  cancer.
-				Li  et  al.  [77]  incorporate  the  attention  mechanism  inCNN  forglaucoma   detectionand  establish  a  large-scaleattention-based  glaucoma  datase
-			Life  field
-				intelligent  home,  commodity detection,  event  detection,  pattern  detection,  image  captiongeneration,  rain/shadow  detection,  species  identification  etc
-				On  densely  packed  scenes  like retail  shelf  displays
-				Event detection aims to discover real-world events from the Internet
-				Multi-domain event detection (MED) provides comprehensive descriptions  of  events
+				facial landmarks localization
+				head pose estimation
+				gender recognition
+				propose a novel Wasserstein convolutionalneural network approach to learn invariant features betweennear-infrared (NIR) and visual (VIS) face images
+				The cosine-based softmax losses achieve great success indeep learning based face recognition
+			pedestrian detection
+				focuses on detecting pedestrians inthe natural scene
+			fingerprint identification
+			anomaly detection
+				fraud detection
+				climate analysis
+				healthcare monitoring
+				analyzethe data on a point-wise basis.
+				To point the expert analysts to the interesting regions (anomalies) of the data
+				propose a novel unsupervised method called Maximally Divergent Intervals (MDI), which searches for contiguousintervals of time and regions in space
+		Military field
+			Remote  sensing  object  detection				
+				aims at detecting objects on remote sensing images or videos
+				the extreme large input size but small targets makes the existing object detection procedure too slow forpractical use and too hard to detect
+				the massive and complex backgrounds cause serious false detection.
+				Remote sensing images have some characteristics far from natural images, thus strong pipelines such as Faster R-CNN,FCN, SSD, YOLO can't transfer well to the new data domain.
+				Designing remote sensing dataset adapted detectors remains are search hot spot in this domain.					
+				a CNN-based Remote Sensing Image (RSI) object detection model dealing with the rotation problem by designing a rotation-invariant layer.
+				raise  a  rotatable  region  proposal  network  anda  rotatable  detection  network  considering  the  orientation  of vehicles
+				put  forward  an  accurate-vehicle-proposal-network (AVPN) for small object detection
+				propose  a  novel  framework  containing  automatic labeling and recurrent neural network for detection
+			topographic survey			
+			flyer detection
+		Transportation  field
+			license  platere cognition, automatic driving and traffic sign recognition etc.
+			With the popularity of cars,license  plate  recognition
+				tracking crime
+				residential access
+				traffic violations tracking
+			An autonomous vehicle (AV) 
+				needs an accurate perception of its surroundings to operate reliably. 
+			Both unmanned vehicles and autonomous driving systems need  to  solve  the  problem  of traffic  sign  recognition
+		Medical field
+			medical image detection,cancer detection, disease detection, skin disease detection and healthcare  monitoring  etc.
+			Computer  Aided  Diagnosis  (CAD)  systems
+				can  helpdoctors  classify  different  types  of  cancer.
+			Li  et  al.  [77]  incorporate  the  attention  mechanism  inCNN  forglaucoma   detectionand  establish  a  large-scaleattention-based  glaucoma  datase
+		Life  field
+			intelligent  home,  commodity detection,  event  detection,  pattern  detection,  image  captiongeneration,  rain/shadow  detection,  species  identification  etc
+			On  densely  packed  scenes  like retail  shelf  displays
+			Event detection aims to discover real-world events from the Internet
+			Multi-domain event detection (MED) provides comprehensive descriptions  of  events

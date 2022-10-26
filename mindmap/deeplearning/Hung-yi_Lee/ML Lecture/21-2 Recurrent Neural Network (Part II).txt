@@ -1,515 +1,514 @@
-Recurrent Neural Network (Part II)
-    how to learning?
-        loss function
-            example slot:
-                taipei = dest slot
-                November 2nd = dest time slot
-                ...  = other
-                x -> NN -> y
-                    y:
-                        slot number + 1(other)
-                            input arrive
-                                other
-                                    [0 0 .. 1]
-                            input taipei
-                                dest
-                                    [1 0 .. 0]
-                                loss function!
-                word sequence
-                    整體來看不能打散
-                w = w - η∂L/∂w
-                backprobagation through time (BBTT)
-                    gradient descent也可以
-                    但針對RNN有一個進階版計算方式
-    unfortunately
-        RNN-based network is not always easy to learn
-            learning curve 會希望逐漸下降
-            實際上
-                會暴起暴落
-                    可能以為是程式有bug
-                        但有時候就如此
-                the error surface is rough.
-                    very flat
-                    or veray steep
-                    會造成問題
-                        往下走的路可能去陡峭區噴上去
-                        剛好踩到懸崖上最慘
-                            gradient會噴
-                                nan
-                        工程師手法
-                            clipping
-                                當gradient大於某個threshold時
-                                    就不要讓他超過那個threshold
-                                    gradient>15
-                                        就等於15
-                                        當踩到懸崖也只是跑遠點不會噴出去
-                                            可以繼續trainning
-                    why RNN有這個奇特特性
-                        以前是因為sigmoid造成的
-                            Gradient vanishing
-                                換ReLU就好了
-                                這招RNN不行
-                            但在RNN把sigmoid換Relu performance會變差
-                                activation function不是這問題的關鍵點
-                            BBTT數學裡面有討論到
-                        input小小變化看output變化 
-                            w = 1
-                                每次*w的RNN
-                                y^1000 = w^999 = 1
-                                w = 1.01
-                                    y^1000 = w^999 ≈ 20000
-                                        w一點點變化影響超大
-                                            w有很大的gradient
-                            learning rate設定小一點就好嗎?
-                                w = 0.99
-                                    y^1000 ≈ 0
-                                w = 0.01
-                                    y^1000 ≈ 0
-                                在w = 1附近gradient很大
-                                    LR需要很小
-                                但w=0.99以下 gradient非常小
-                                    LR需要很大
-                                造成error surface很崎嶇
-                                gradient在很小的地區時大時小
-                                RNN把同樣東西在時間轉換下反覆使用
-                                    memory裡面的變化可能沒造成影響
-                                        也有可能天崩地裂的影響
-                            不好訓練的原因
-                                因為有time sequence,同樣weight在不同時間點會被反覆使用的
-    helpful techniques
-        Long Short-Term Memory (LSTM)
-            can deal with gradient vanishing (not gradient explode)
-                解決平坦問題
-                崎嶇問題沒辦法
-                Learning Rate可以設定小一點
-                RNN每一個時間點memory資料都會被洗掉重放
-                    RNN被format掉影響就消失
-                LSTM每次memory值*weight在加入input然後存起來
-                    memory跟input是相加的
-                    當weight影響到memory會一直存在
-                    forget gate不是會洗掉
-                        LSTM一開始就是為了解決gradient vanishing問題
-                            所以第一個版本是沒有forget gate的
-                            後來才加入forget gate
-                            現在forget gate在training時
-                                要確保不給太大的bias
-                                    讓gate大多數時候是open的
-                                        open=不遺忘
-                                    少數情況下才format
-        Gated Recurrent Unit(GRU)
-            simpler than LSTM
-            只有2個gate
-                input/output gate
-            參數量比較少
-                training比較robust
-            LSTM training overfitting太嚴重
-                改用GRU
-            原理
-                舊的不去新的不來
-                input gate跟forget gate連動起來
-                當input gate打開
-                    forget gate就洗掉
-        Clockwise RNN            
-        Structurally Constrained Recurrent Network(SCRN)
-        Hinton Proposed
-            Vanilla RNN initialized with identify martrix + ReLU activation
-                Outperform or be comparable with LSTM in 4 different tasks
-                用這招只用RNN就可以屌打LSTM
-    More Application
-        slot filling
-            input數量等於output數量
-                幾個word就有幾個slot
-        RNN可以做更複雜
-        many to one
-            input a vector sequence
-                output only one vector
-            sentiment analysis
-                電影評價 / 網路評價
-                    learn一個classifier去評估正向負向
-                    input:
-                        character sequence
-                    output:
-                        最後一個時間點把hidden layer拿出來
-                            通過幾個transform
-                                在做sentiment classifier predict
-            key terms extraction:
+how to learning?
+    loss function
+        example slot:
+            taipei = dest slot
+            November 2nd = dest time slot
+            ...  = other
+            x -> NN -> y
+                y:
+                    slot number + 1(other)
+                        input arrive
+                            other
+                                [0 0 .. 1]
+                        input taipei
+                            dest
+                                [1 0 .. 0]
+                            loss function!
+            word sequence
+                整體來看不能打散
+            w = w - η∂L/∂w
+            backprobagation through time (BBTT)
+                gradient descent也可以
+                但針對RNN有一個進階版計算方式
+unfortunately
+    RNN-based network is not always easy to learn
+        learning curve 會希望逐漸下降
+        實際上
+            會暴起暴落
+                可能以為是程式有bug
+                    但有時候就如此
+            the error surface is rough.
+                very flat
+                or veray steep
+                會造成問題
+                    往下走的路可能去陡峭區噴上去
+                    剛好踩到懸崖上最慘
+                        gradient會噴
+                            nan
+                    工程師手法
+                        clipping
+                            當gradient大於某個threshold時
+                                就不要讓他超過那個threshold
+                                gradient>15
+                                    就等於15
+                                    當踩到懸崖也只是跑遠點不會噴出去
+                                        可以繼續trainning
+                why RNN有這個奇特特性
+                    以前是因為sigmoid造成的
+                        Gradient vanishing
+                            換ReLU就好了
+                            這招RNN不行
+                        但在RNN把sigmoid換Relu performance會變差
+                            activation function不是這問題的關鍵點
+                        BBTT數學裡面有討論到
+                    input小小變化看output變化 
+                        w = 1
+                            每次*w的RNN
+                            y^1000 = w^999 = 1
+                            w = 1.01
+                                y^1000 = w^999 ≈ 20000
+                                    w一點點變化影響超大
+                                        w有很大的gradient
+                        learning rate設定小一點就好嗎?
+                            w = 0.99
+                                y^1000 ≈ 0
+                            w = 0.01
+                                y^1000 ≈ 0
+                            在w = 1附近gradient很大
+                                LR需要很小
+                            但w=0.99以下 gradient非常小
+                                LR需要很大
+                            造成error surface很崎嶇
+                            gradient在很小的地區時大時小
+                            RNN把同樣東西在時間轉換下反覆使用
+                                memory裡面的變化可能沒造成影響
+                                    也有可能天崩地裂的影響
+                        不好訓練的原因
+                            因為有time sequence,同樣weight在不同時間點會被反覆使用的
+helpful techniques
+    Long Short-Term Memory (LSTM)
+        can deal with gradient vanishing (not gradient explode)
+            解決平坦問題
+            崎嶇問題沒辦法
+            Learning Rate可以設定小一點
+            RNN每一個時間點memory資料都會被洗掉重放
+                RNN被format掉影響就消失
+            LSTM每次memory值*weight在加入input然後存起來
+                memory跟input是相加的
+                當weight影響到memory會一直存在
+                forget gate不是會洗掉
+                    LSTM一開始就是為了解決gradient vanishing問題
+                        所以第一個版本是沒有forget gate的
+                        後來才加入forget gate
+                        現在forget gate在training時
+                            要確保不給太大的bias
+                                讓gate大多數時候是open的
+                                    open=不遺忘
+                                少數情況下才format
+    Gated Recurrent Unit(GRU)
+        simpler than LSTM
+        只有2個gate
+            input/output gate
+        參數量比較少
+            training比較robust
+        LSTM training overfitting太嚴重
+            改用GRU
+        原理
+            舊的不去新的不來
+            input gate跟forget gate連動起來
+            當input gate打開
+                forget gate就洗掉
+    Clockwise RNN            
+    Structurally Constrained Recurrent Network(SCRN)
+    Hinton Proposed
+        Vanilla RNN initialized with identify martrix + ReLU activation
+            Outperform or be comparable with LSTM in 4 different tasks
+            用這招只用RNN就可以屌打LSTM
+More Application
+    slot filling
+        input數量等於output數量
+            幾個word就有幾個slot
+    RNN可以做更複雜
+    many to one
+        input a vector sequence
+            output only one vector
+        sentiment analysis
+            電影評價 / 網路評價
+                learn一個classifier去評估正向負向
                 input:
-                    a document
-                RNN->
-                    attension
-                        把重要東西information抽出來
-                            丟到feed forward network裡面去
+                    character sequence
                 output:
-                    keyword                
-        many to many
-            sequence to sequence
-                input
-                    sequence
-                output
-                    sequence
-                        shorter than input
-                example:
-                    語音辨識
-                        inpjut 一小段時間就生成一個vector
-                            可能0.01s
+                    最後一個時間點把hidden layer拿出來
+                        通過幾個transform
+                            在做sentiment classifier predict
+        key terms extraction:
+            input:
+                a document
+            RNN->
+                attension
+                    把重要東西information抽出來
+                        丟到feed forward network裡面去
+            output:
+                keyword                
+    many to many
+        sequence to sequence
+            input
+                sequence
+            output
+                sequence
+                    shorter than input
+            example:
+                語音辨識
+                    inpjut 一小段時間就生成一個vector
+                        可能0.01s
+                    output
+                        character sequence
+                    用原本slot RNN方式頂多是一個vector對應一個字
+                        但0.01s可能好多個vector對應到同一個character
+                            好好好棒棒棒棒
+                        這時候用一招trimming
+                            去重複
+                                好棒
+                            但是相對無法辨識
+                                好棒棒(負面)
+                                如何分開
+                                    connection temporal classification (CTC)
+                                        output不要只有character
+                                            還output一個符號Φ叫null
+                                                沒有任何東西
+                                                好ΦΦΦ棒ΦΦΦΦ
+                                                    就會變成
+                                                        好棒
+                                                好ΦΦ棒ΦΦΦ棒ΦΦΦ
+                                                    好棒棒
+                                        training
+                                            acousitc features
+                                                [][][][][][]
+                                            labels
+                                                好棒
+                                                對應frame位置不知道
+                                                窮舉所有可能的位置
+                                                    假設全部都是對的去training
+                                                        有點太多了
+                                                        有巧妙演算法解決這問題
+                                                    好ΦΦ棒ΦΦ
+                                                    好Φ棒ΦΦΦ
+                                                    好ΦΦΦ棒Φ
+                                                    ...
+                                                    去aligement
+                                        google語音辨識都換成CTC
+                                            從來沒有出現於training data的詞彙
+                                                人名
+                                                    也有機會辨識出來
+        sequence to sequence learning
+            input output difference length
+                machine translation
+                    無法得知input長還是output長
+                    input : 
+                        machine learning
+                    RNN:
+                        讀過去
+                        最後時間點得到所有input的整個sequence information
+                            machine吐一個charactor
+                                機
+                                    把之前input的character再輸入
+                                        讓他吐下一個charactor
+                                            器
+                                                這部分非常複雜的細節
+                                                    MLTS講
+                                                        很多分枝變形
+                                                    學
+                                                        習
+                                                            慣
+                                                                性
+                                                                    不知道什麼時候停止
+                                                                        多加一個symbol
+                                                                            === 斷開/結束
+                                                                            machine要學習什麼時候斷開
+                                                                                真的有用
+                    output :
+                        機器學習===
+                    ===斷功能也有被用到語音辨識上
+                        input
+                            activation features sequence
                         output
                             character sequence
-                        用原本slot RNN方式頂多是一個vector對應一個字
-                            但0.01s可能好多個vector對應到同一個character
-                                好好好棒棒棒棒
-                            這時候用一招trimming
-                                去重複
-                                    好棒
-                                但是相對無法辨識
-                                    好棒棒(負面)
-                                    如何分開
-                                        connection temporal classification (CTC)
-                                            output不要只有character
-                                                還output一個符號Φ叫null
-                                                    沒有任何東西
-                                                    好ΦΦΦ棒ΦΦΦΦ
-                                                        就會變成
-                                                            好棒
-                                                    好ΦΦ棒ΦΦΦ棒ΦΦΦ
-                                                        好棒棒
-                                            training
-                                                acousitc features
-                                                    [][][][][][]
-                                                labels
-                                                    好棒
-                                                    對應frame位置不知道
-                                                    窮舉所有可能的位置
-                                                        假設全部都是對的去training
-                                                            有點太多了
-                                                            有巧妙演算法解決這問題
-                                                        好ΦΦ棒ΦΦ
-                                                        好Φ棒ΦΦΦ
-                                                        好ΦΦΦ棒Φ
-                                                        ...
-                                                        去aligement
-                                            google語音辨識都換成CTC
-                                                從來沒有出現於training data的詞彙
-                                                    人名
-                                                        也有機會辨識出來
-            sequence to sequence learning
-                input output difference length
-                    machine translation
-                        無法得知input長還是output長
-                        input : 
-                            machine learning
-                        RNN:
-                            讀過去
-                            最後時間點得到所有input的整個sequence information
-                                machine吐一個charactor
-                                    機
-                                        把之前input的character再輸入
-                                            讓他吐下一個charactor
-                                                器
-                                                    這部分非常複雜的細節
-                                                        MLTS講
-                                                            很多分枝變形
-                                                        學
-                                                            習
-                                                                慣
-                                                                    性
-                                                                        不知道什麼時候停止
-                                                                            多加一個symbol
-                                                                                === 斷開/結束
-                                                                                machine要學習什麼時候斷開
-                                                                                    真的有用
-                        output :
-                            機器學習===
-                        ===斷功能也有被用到語音辨識上
-                            input
-                                activation features sequence
-                            output
-                                character sequence
-                                這方法沒有CTC強
-                                    不是SOTA的結果
-                                    令人訝異的是這樣行得通不會壞掉
-                                翻譯上似乎已經到SOTA的結果
-            sequence to sequence
-                input A語言聲音
-                output B語言文字
-                行得通
-                好處
-                    collection translation data
-                        會更容易
-                        例如台語轉英文
-                            因為台語要label不容易
-                                沒有standard文字系統
-                                直接label英文翻譯
-        beyond sequence
-            syntactic parsing
-                產生syntactic parsing tree
-                    John has a dog
-                        S
+                            這方法沒有CTC強
+                                不是SOTA的結果
+                                令人訝異的是這樣行得通不會壞掉
+                            翻譯上似乎已經到SOTA的結果
+        sequence to sequence
+            input A語言聲音
+            output B語言文字
+            行得通
+            好處
+                collection translation data
+                    會更容易
+                    例如台語轉英文
+                        因為台語要label不容易
+                            沒有standard文字系統
+                            直接label英文翻譯
+    beyond sequence
+        syntactic parsing
+            產生syntactic parsing tree
+                John has a dog
+                    S
+                        NP
+                            NNP
+                                John
+                        VP
+                            VBZ
+                                has
                             NP
-                                NNP
-                                    John
-                            VP
-                                VBZ
-                                    has
-                                NP
-                                    DT
-                                        a
-                                    NN
-                                        dog
-                    得到文法結構樹
-                        過去用structure learning解這問題
-                        (S(NP NNP)NP(VP VBZ(NP DT NN)NP)VP)S
-                        可以training起來
-        sequence-to-sequence auto-encoder - Text
-            to understand the meaning of a word sequence the order of the words can not be igored
-                white blood cells destorying an infection
-                exactly the same bag-of-word
-                an infection destorying white blood cells  
+                                DT
+                                    a
+                                NN
+                                    dog
+                得到文法結構樹
+                    過去用structure learning解這問題
+                    (S(NP NNP)NP(VP VBZ(NP DT NN)NP)VP)S
+                    可以training起來
+    sequence-to-sequence auto-encoder - Text
+        to understand the meaning of a word sequence the order of the words can not be igored
+            white blood cells destorying an infection
+            exactly the same bag-of-word
+            an infection destorying white blood cells  
+        input
+            word sequence
+                RNN
+                    embedding vector
+                        encoder
+                            decoder
+                                embedding vector
+        另一個版本
+            skip-thought
+                output是下一個句子
+                    比較能表達語意的意思
+                seq2seq auto encoder
+                    比較能表達文法意思
+        可以hierarchy的方式
+            把每個sentment vector
+                加起來成為一個document high level vector
+                用document vector
+                    去產生一串setence vector
+                        根據每個setence vector在解回
+                            word sequence 
+                                四層LSTM
+    sequence-to-sequence auto-encoder - Speech
+        audio segement變成fixed length vector
+            audio word to vector
+            dog voice
+                fixed length vector
+            dogs voice
+                fixed length vector
+                    跟dog很接近
+            audio segement
+                抽成 activation features sequence
+                    丟到 RNN
+                        RNN此時是encoder
+                            最後存在memory的值代表整個input的information
+                                等於表示整段聲音訊號的vector
+                            單獨無法trian
+                                所以再加一個RNN decoder
+                                    把encoder值當input
+                                        產生一個 y = acousitc features sequence
+                                        y要與input x越接近越好
+                                            input x1,x2,x3,x4 sequence
+                                            output y1,y2,y3,y4 sequence
+                                一起train
+        語音搜尋
+            audio database
+                聲音訊號切成segmentation
+                    audio segement to vector技術通通轉vector
+            audio query
+                audio segement to vector
+                    計算相似度
+                        找到搜尋結果
+            vector觀察
+                2d dims上
+                    fear <-> near
+                    fame <-> name
+                    有相似的vector方向線條(距離不同)
+                    但是還沒有 Semantic語意的informations
+            下一步考慮semtatic語意的information
+    sequence-to-sequence auto-encoder demo: chat-bot
+        收集一堆對話台詞
+            how are you
+                I'm fine
+            data:
+                電影影集
+                    4w+
+                美國總統大選辯論句子
+            train這些data
+    另一種memory network
+    attention-based model
+        RNN進階版本
+        machine's memory
+            database
+                某種information vector
+        input -> DNN/RNN
+            reading head controller
+                reading head讀取information
+    attension-based model v2
+        DNN/RNN
+            writing head controller
+                writing head寫進information
+        nerual turing machine
+            用在reading comprehension
+                讓machine讀一堆document
+                    把document內容每一句話都變成vector存起來
+                        每一句話 Semantic
+            問machine問題
+                由中央處理器控制reading head controller
+                    哪些句子跟中央處理器有關的
+                        reading head放這邊
+                            讀取可以是iterative
+                                重複數次 
+                                    不會只從一個地方讀取information
+                                collect起來
+                                    給予最終答案
+            https://github.com/keras-team/keras/blob/master/examples/babi_memnn.py
+            QA answer的test
+            NN自己attend出規則
+                由句子中自己學出來
+        Visual Question Answering
+            what is the mustache make of ? 
+                AI system
+                    bananas
+            http://visualqa.org
             input
-                word sequence
-                    RNN
-                        embedding vector
-                            encoder
-                                decoder
-                                    embedding vector
-            另一個版本
-                skip-thought
-                    output是下一個句子
-                        比較能表達語意的意思
-                    seq2seq auto encoder
-                        比較能表達文法意思
-            可以hierarchy的方式
-                把每個sentment vector
-                    加起來成為一個document high level vector
-                    用document vector
-                        去產生一串setence vector
-                            根據每個setence vector在解回
-                                word sequence 
-                                    四層LSTM
-        sequence-to-sequence auto-encoder - Speech
-            audio segement變成fixed length vector
-                audio word to vector
-                dog voice
-                    fixed length vector
-                dogs voice
-                    fixed length vector
-                        跟dog很接近
-                audio segement
-                    抽成 activation features sequence
-                        丟到 RNN
-                            RNN此時是encoder
-                                最後存在memory的值代表整個input的information
-                                    等於表示整段聲音訊號的vector
-                                單獨無法trian
-                                    所以再加一個RNN decoder
-                                        把encoder值當input
-                                            產生一個 y = acousitc features sequence
-                                            y要與input x越接近越好
-                                                input x1,x2,x3,x4 sequence
-                                                output y1,y2,y3,y4 sequence
-                                    一起train
-            語音搜尋
-                audio database
-                    聲音訊號切成segmentation
-                        audio segement to vector技術通通轉vector
-                audio query
-                    audio segement to vector
-                        計算相似度
-                            找到搜尋結果
-                vector觀察
-                    2d dims上
-                        fear <-> near
-                        fame <-> name
-                        有相似的vector方向線條(距離不同)
-                        但是還沒有 Semantic語意的informations
-                下一步考慮semtatic語意的information
-        sequence-to-sequence auto-encoder demo: chat-bot
-            收集一堆對話台詞
-                how are you
-                    I'm fine
-                data:
-                    電影影集
-                        4w+
-                    美國總統大選辯論句子
-                train這些data
-        另一種memory network
-        attention-based model
-            RNN進階版本
-            machine's memory
-                database
-                    某種information vector
-            input -> DNN/RNN
-                reading head controller
-                    reading head讀取information
-        attension-based model v2
-            DNN/RNN
-                writing head controller
-                    writing head寫進information
-            nerual turing machine
-                用在reading comprehension
-                    讓machine讀一堆document
-                        把document內容每一句話都變成vector存起來
-                            每一句話 Semantic
-                問machine問題
-                    由中央處理器控制reading head controller
-                        哪些句子跟中央處理器有關的
-                            reading head放這邊
-                                讀取可以是iterative
-                                    重複數次 
-                                        不會只從一個地方讀取information
-                                    collect起來
-                                        給予最終答案
-                https://github.com/keras-team/keras/blob/master/examples/babi_memnn.py
-                QA answer的test
-                NN自己attend出規則
-                    由句子中自己學出來
-            Visual Question Answering
-                what is the mustache make of ? 
-                    AI system
-                        bananas
-                http://visualqa.org
-                input
-                    image
-                    NN(CNN): a vector for each region
-                query
-                    DNN/RNN
-                    Reading head controller
-                        決定讀取資訊的位置
-                            圖片哪個feature跟輸入問題有關係
-                output
-                    answer
-            Speech Question Answering
-                TOFEL Listening Comprehension Test by Machine
-                Example
-                    Audio Story: 5min 
-                    Question
-                    Choices
-                    跟人類考生做的事情相同
-                Model:
-                    Question
-                        Semantic Analysis
-                        語意分析 vector
-                    Audio Story
-                        Speech Recognition
-                        Semanntic Analysis
-                        Attention
-                            Question語意
-                            Story語意
-                                畫重點
-                        Output Answer
-                            也可以回頭修正答案
-                            答案跟選項算相似度
-    To learn More...
-        The Unreasonable Effectiveness of Recurrent Nerual Networks
-        Understanding LSTM Networks
-    Deep Learning & Structure Learning
+                image
+                NN(CNN): a vector for each region
+            query
+                DNN/RNN
+                Reading head controller
+                    決定讀取資訊的位置
+                        圖片哪個feature跟輸入問題有關係
+            output
+                answer
+        Speech Question Answering
+            TOFEL Listening Comprehension Test by Machine
+            Example
+                Audio Story: 5min 
+                Question
+                Choices
+                跟人類考生做的事情相同
+            Model:
+                Question
+                    Semantic Analysis
+                    語意分析 vector
+                Audio Story
+                    Speech Recognition
+                    Semanntic Analysis
+                    Attention
+                        Question語意
+                        Story語意
+                            畫重點
+                    Output Answer
+                        也可以回頭修正答案
+                        答案跟選項算相似度
+To learn More...
+    The Unreasonable Effectiveness of Recurrent Nerual Networks
+    Understanding LSTM Networks
+Deep Learning & Structure Learning
+    Deep
+        RNN,LSTM
+    Structure
+        HMM,CRF,Structured Perceptron/SVM
+        pos taking
+            input sequence
+            output sequence
+    difference?
         Deep
-            RNN,LSTM
-        Structure
-            HMM,CRF,Structured Perceptron/SVM
-            pos taking
-                input sequence
-                output sequence
-        difference?
-            Deep
-                unidirectional RNN does not consider the whole sequence
-                    只看一半
-                    how about bidirectional RNN
-            structured
-                using Viterbi, so consider the whole sequence
-                    整個句子
-                        優勢
-            structured
-                can explicitly consider the label dependently
-                    inference
-                        constrained可以可以寫到Viterbi algorithm裡面
-                            如果label出現就要連續出現5次
-                            排除不符合constrained結果
-                        直接告訴machine要做什麼
-                        deep難這麼做
-            deep 
-                cost and error not always related
-            structured
-                cost is the upper bound of error
-            deep
-                can deep
-                    很強優勢
-                structured很難deep
-                    通常只做linear
-                    不然很難train
-            要得到state of the art的結果
-                RNN/SLTM不可或缺
-                sequence labeling task表現其實比較好的
-                    deep這部分很重要
-            integrated together
-                很多先例結合
-                    input 先透過RNN/LSTM
-                    output 在做HMM/CRF
-                    用RNN/LSTM的output定義HMM/CRF的evaluation function
-                同時享受兩邊的好處
-                    都可以用Gradient descent training
-                speech Recognition:
-                    CNN/LSTM/DNN+HMM
-                        P(x,y) = P(y_1|start)π_l=1^L-1(P(y_l+1|y_l)P(end|y_L))π_l=1^L(P(x_l|y_l))
-                            x
-                                語音訊號
-                            y
-                                語音辨識結果
-                            HMM
-                                trnasition
-                                    RNN預測常常會歪掉再回來
-                                        所以這部分不用RNN
-                                        HMM可以自動修掉
-                                emission
-                                    DNN取代emission
-                                        Gaussian mixture model
-                                            改成DNN
-                                                很好的效果
-                slot filling:
-                    Semantic Tagging: bidirectional LSTM + CRF/Structured SVM
-                        bidirectional LSTM
-                            抽features
-                        CRF/Structured SVM
-                            拿feature來learn W
-                        Testing
-                            y^ = arg max_y⊆Y (w*Φ(x,y))
-                            structured learning
-                                inference問題最大
-                                    解一個optiminzation problem
-                                    大部分沒好solution
-                                    sequence labeling是少數有好solution
-                                    GAN就很像structured learning
-                                        discriminator
-                                            看成evaluation function
-                                            problem 1
+            unidirectional RNN does not consider the whole sequence
+                只看一半
+                how about bidirectional RNN
+        structured
+            using Viterbi, so consider the whole sequence
+                整個句子
+                    優勢
+        structured
+            can explicitly consider the label dependently
+                inference
+                    constrained可以可以寫到Viterbi algorithm裡面
+                        如果label出現就要連續出現5次
+                        排除不符合constrained結果
+                    直接告訴machine要做什麼
+                    deep難這麼做
+        deep 
+            cost and error not always related
+        structured
+            cost is the upper bound of error
+        deep
+            can deep
+                很強優勢
+            structured很難deep
+                通常只做linear
+                不然很難train
+        要得到state of the art的結果
+            RNN/SLTM不可或缺
+            sequence labeling task表現其實比較好的
+                deep這部分很重要
+        integrated together
+            很多先例結合
+                input 先透過RNN/LSTM
+                output 在做HMM/CRF
+                用RNN/LSTM的output定義HMM/CRF的evaluation function
+            同時享受兩邊的好處
+                都可以用Gradient descent training
+            speech Recognition:
+                CNN/LSTM/DNN+HMM
+                    P(x,y) = P(y_1|start)π_l=1^L-1(P(y_l+1|y_l)P(end|y_L))π_l=1^L(P(x_l|y_l))
+                        x
+                            語音訊號
+                        y
+                            語音辨識結果
+                        HMM
+                            trnasition
+                                RNN預測常常會歪掉再回來
+                                    所以這部分不用RNN
+                                    HMM可以自動修掉
+                            emission
+                                DNN取代emission
+                                    Gaussian mixture model
+                                        改成DNN
+                                            很好的效果
+            slot filling:
+                Semantic Tagging: bidirectional LSTM + CRF/Structured SVM
+                    bidirectional LSTM
+                        抽features
+                    CRF/Structured SVM
+                        拿feature來learn W
+                    Testing
+                        y^ = arg max_y⊆Y (w*Φ(x,y))
+                        structured learning
+                            inference問題最大
+                                解一個optiminzation problem
+                                大部分沒好solution
+                                sequence labeling是少數有好solution
+                                GAN就很像structured learning
+                                    discriminator
+                                        看成evaluation function
+                                        problem 1
+                                    generator
+                                        inference
+                                            x = arg max_x F(x)
+                                            problem 2
+                                    problem 3
+                                        you know how to learn F(x)
+                                    conditional GAN
                                         generator
-                                            inference
-                                                x = arg max_x F(x)
-                                                problem 2
-                                        problem 3
-                                            you know how to learn F(x)
-                                        conditional GAN
-                                            generator
-                                                input
-                                                    x
-                                                output
-                                                    y
-                                            discriminator
-                                                real input
-                                                    x
-                                                output
-                                                    y
-                                                g input
-                                                    x
-                                                output
-                                                    y
-                                        GAN就是train structured learning的一種方法
-                                            Connect Energy-based model with GAN
-                                                A Connection between Generative Adversarial network,Inverse Reinforcement Learning,and Energy-based Models
-                                                Deep Directed Generative Models with Energy-Based Probability Estimation
-                                                ENGERY-BASED GENERATIVE ADVERSARIAL NETWORKS
-                                            Deep learning model for inference
-                                                Deep Unfolding: model-based inspiration of novel deep architecture
-                                                conditional Random Fields as Recurrent Neruals Network
-                                        另一門課
-                                            MLDS
-                                                Machine Learning and having it deep and structured
+                                            input
+                                                x
+                                            output
+                                                y
+                                        discriminator
+                                            real input
+                                                x
+                                            output
+                                                y
+                                            g input
+                                                x
+                                            output
+                                                y
+                                    GAN就是train structured learning的一種方法
+                                        Connect Energy-based model with GAN
+                                            A Connection between Generative Adversarial network,Inverse Reinforcement Learning,and Energy-based Models
+                                            Deep Directed Generative Models with Energy-Based Probability Estimation
+                                            ENGERY-BASED GENERATIVE ADVERSARIAL NETWORKS
+                                        Deep learning model for inference
+                                            Deep Unfolding: model-based inspiration of novel deep architecture
+                                            conditional Random Fields as Recurrent Neruals Network
+                                    另一門課
+                                        MLDS
+                                            Machine Learning and having it deep and structured

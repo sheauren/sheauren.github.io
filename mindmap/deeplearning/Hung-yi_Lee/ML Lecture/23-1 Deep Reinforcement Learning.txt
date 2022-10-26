@@ -1,377 +1,376 @@
-Deep Reinforcement Learning
-    scratching the surface
-        Scenario of Reinforcement Learning
-            Agent
-                Observation (State)
-                    State = Env State                    
-                    看 Environment 種種變化
-                    胖DP作法 - Part your observe的state
-                        我們state只能觀察到一部分
-                            這個state不是machine的state是你能觀察到的state
-                                機器沒辦法看到環境所有的狀態
+scratching the surface
+    Scenario of Reinforcement Learning
+        Agent
+            Observation (State)
+                State = Env State                    
+                看 Environment 種種變化
+                胖DP作法 - Part your observe的state
+                    我們state只能觀察到一部分
+                        這個state不是machine的state是你能觀察到的state
+                            機器沒辦法看到環境所有的狀態
+            Action
+                影響Environment
+                    得到Reward
+                        好 or 不好
+            example:
+                Observation
+                    看到水
                 Action
-                    影響Environment
-                        得到Reward
-                            好 or 不好
-                example:
+                    打翻
+                Reward
+                    Don't do it
+                Observation
+                    打翻的水
+                Action
+                    擦乾淨
+                Reward
+                    Thank you
+            Goal
+                Agent learns to take actions to maximum expected reward
+            example: alpha GO
+                Observation
+                    19x19 matrix棋盤
+                Action
+                    落子位置
+                Environment
+                    就是對手
+                    也下一子
+                Observation
+                    觀察下子後的變化
+                Action
+                    下新的位置
+                Reward
+                    = 0 in most case
+                        通常落子下去什麼都沒發生
+                    if win
+                        reward = 1
+                    if loss
+                        reward = -1
+                    reward很sparse
+                        只有少數的情況下你才能得到reward
+                        少數reward下發覺正確action很困難
+                How to learn?
+                    找對手不斷的下不斷的下
+                        有輸有贏
+                    調整 observation跟action之間的關係
+                        看到observation會做什麼action
+                        讓她的reward可以被maximize
+                Learn to play GO
+                    supervised
+                        learning from a teacher
+                        看到這樣的盤勢
+                            就落子在此
+                    Reinforcement Learning
+                        learning from experience
+                        first move -> .. -> win!
+                            沒人告訴你好壞 只看結果在去知道
+                        machine需要大量training examples
+                            任兩個machine互相互下
+                    alpha GO先做supervised學得不錯在reinforcement learning
+                Learn chat-bot
+                    sequence-to-sequence learning
+                    supervised
+                        hello
+                            hi
+                        bye bye
+                            good byte
+                    Reinforcement Learning
+                        亂說
+                            生氣
+                                (bad)
+                                某句話講得不好
+                                    但不知道哪句話
+                                        自己想辦法學到哪句話有問題
+                        Let two agent talk to each other
+                            sometimes generate good dialogue, sometimes bad
+                            learn兩個agent互講
+                                在有人跟他們說講的好孩是不好
+                            use some pre-defined rules to evaluate the goodness of a dialogue
+                                講得好的postive
+                                講的不好negative
+                                人主觀判斷好壞
+                                ref:
+                                    Deep Reinforcement Learning for Dialogue Generation
+                                    https://arxiv.org/abs/1606.01541
+                            應該會有GANS取代rule判斷
+                                agent要去騙過discriminator
+                                    判斷像不像人結果就是reward
+        Environment
+        人不知道怎麼做也沒label data的用reinforcement learning最適合
+    More Applications
+        Interactive retrieval
+            搜尋系統
+                Q: US Presidenat
+                A: More precisely,please
+                Q: Trump
+                A: Is it related to "Election"
+                Q: Yes
+                A: Here are what you are looking for.
+            reward
+                最後搜尋結果
+                    User覺得好
+                        reward越高
+                    Machine每問一個問題
+                        他就會得到一個reward negative
+                            extra effort
+        Flying Helicoper
+        Driving
+        Google Cut its Giant Electricity Bill With DeepMind-Powerd AI
+        Text Generation
+    Example: play video game
+        widely studies:
+            Gym: http://gym.openai.com
+            Universe: http://openai.com/blog/universe
+        machine learns to play video game as human players
+            what machine observes is pixels
+            machine learns to take proper action itself
+        Scenario
+            start with observation s1
+                螢幕畫面
+                    matrics
+            take action
+                left/right/fire
+                a1 action:right
+                每次take action會得到reward
+                    reward就是score
+                        obtain reward
+                            r1 = 0
+            environment
+                會有ranomd東西產生
+                    跟action無關是正常的
+                        例如怪物移動
+                        環境生出子彈
+            observation s2
+                隨機移動跟剛剛right action後的結果
+            take action
+                a2 action:fire
+                假設成功擊殺外星人
+                    得到reward
+                        殺不同外星人得到reward不同
+            observation s3
+                少個一個外星人
+            prcocess一值持續下去
+            直到
+            take action
+                action aT回合時
+                    進入了另一個state
+                        terminal state
+                            讓這遊戲結束
+                                Game Over
+            從遊戲開始到結束是一個episode
+                learn to maximize the expected comulative reward per episode
+Difficulties of Reinforcement Learning
+    Reward Delay
+        in space invader, only 'fire' obtains reward
+            although the moving before 'fire' is important
+        in Go playing, it may be better to sacrifice immediate reward to gain more long-time reward
+    Agent's actions affect the subsequent data it receives
+        ex: Exploration
+Outline
+    Markov Decision Process
+    Deep Q Network
+        退流行了
+    A3C Asynchronous Advantage Actor-Critic
+        主流
+    Method
+        Policy-based
+            後來才有
+            Policy Gradient
+            Learning a Actor
+        Value-based
+            learning a Critic            
+        Actor+Critic
+            Asynchronous Advantage Actor-Critic
+                A3C
+        Alpha Go:
+            Policy-based+value-based+model-based
+        Deep Reinforcement Learning 
+
+            Bible
+                author Sutton
+    To Learn deep Reinforcement learning
+        Textboox: 
+            Reinforcement Learning: An Introduction
+            http://incompleteideas.net/book/the-book-2nd.html
+            http://incompleteideas.net/book/first/the-book.html
+        Lectures of David Sliver:
+            https://www.davidsilver.uk/teaching/
+        Lectures of John Schulman:
+            https://www.youtube.com/watch?v=aUrX-rP_ss4                
+Policy-based Approach
+    learning a Actor
+        Actor
+            ML是在找function
+            Actor就是一個function
+            = π(Observation)
+                function input
                     Observation
-                        看到水
+                function output
                     Action
-                        打翻
-                    Reward
-                        Don't do it
-                    Observation
-                        打翻的水
-                    Action
-                        擦乾淨
-                    Reward
-                        Thank you
-                Goal
-                    Agent learns to take actions to maximum expected reward
-                example: alpha GO
-                    Observation
-                        19x19 matrix棋盤
-                    Action
-                        落子位置
-                    Environment
-                        就是對手
-                        也下一子
-                    Observation
-                        觀察下子後的變化
-                    Action
-                        下新的位置
-                    Reward
-                        = 0 in most case
-                            通常落子下去什麼都沒發生
-                        if win
-                            reward = 1
-                        if loss
-                            reward = -1
-                        reward很sparse
-                            只有少數的情況下你才能得到reward
-                            少數reward下發覺正確action很困難
-                    How to learn?
-                        找對手不斷的下不斷的下
-                            有輸有贏
-                        調整 observation跟action之間的關係
-                            看到observation會做什麼action
-                            讓她的reward可以被maximize
-                    Learn to play GO
-                        supervised
-                            learning from a teacher
-                            看到這樣的盤勢
-                                就落子在此
-                        Reinforcement Learning
-                            learning from experience
-                            first move -> .. -> win!
-                                沒人告訴你好壞 只看結果在去知道
-                            machine需要大量training examples
-                                任兩個machine互相互下
-                        alpha GO先做supervised學得不錯在reinforcement learning
-                    Learn chat-bot
-                        sequence-to-sequence learning
-                        supervised
-                            hello
-                                hi
-                            bye bye
-                                good byte
-                        Reinforcement Learning
-                            亂說
-                                生氣
-                                    (bad)
-                                    某句話講得不好
-                                        但不知道哪句話
-                                            自己想辦法學到哪句話有問題
-                            Let two agent talk to each other
-                                sometimes generate good dialogue, sometimes bad
-                                learn兩個agent互講
-                                    在有人跟他們說講的好孩是不好
-                                use some pre-defined rules to evaluate the goodness of a dialogue
-                                    講得好的postive
-                                    講的不好negative
-                                    人主觀判斷好壞
-                                    ref:
-                                        Deep Reinforcement Learning for Dialogue Generation
-                                        https://arxiv.org/abs/1606.01541
-                                應該會有GANS取代rule判斷
-                                    agent要去騙過discriminator
-                                        判斷像不像人結果就是reward
-            Environment
-            人不知道怎麼做也沒label data的用reinforcement learning最適合
-        More Applications
-            Interactive retrieval
-                搜尋系統
-                    Q: US Presidenat
-                    A: More precisely,please
-                    Q: Trump
-                    A: Is it related to "Election"
-                    Q: Yes
-                    A: Here are what you are looking for.
                 reward
-                    最後搜尋結果
-                        User覺得好
-                            reward越高
-                        Machine每問一個問題
-                            他就會得到一個reward negative
-                                extra effort
-            Flying Helicoper
-            Driving
-            Google Cut its Giant Electricity Bill With DeepMind-Powerd AI
-            Text Generation
-        Example: play video game
-            widely studies:
-                Gym: http://gym.openai.com
-                Universe: http://openai.com/blog/universe
-            machine learns to play video game as human players
-                what machine observes is pixels
-                machine learns to take proper action itself
-            Scenario
-                start with observation s1
-                    螢幕畫面
-                        matrics
-                take action
-                    left/right/fire
-                    a1 action:right
-                    每次take action會得到reward
-                        reward就是score
-                            obtain reward
-                                r1 = 0
-                environment
-                    會有ranomd東西產生
-                        跟action無關是正常的
-                            例如怪物移動
-                            環境生出子彈
-                observation s2
-                    隨機移動跟剛剛right action後的結果
-                take action
-                    a2 action:fire
-                    假設成功擊殺外星人
-                        得到reward
-                            殺不同外星人得到reward不同
-                observation s3
-                    少個一個外星人
-                prcocess一值持續下去
-                直到
-                take action
-                    action aT回合時
-                        進入了另一個state
-                            terminal state
-                                讓這遊戲結束
-                                    Game Over
-                從遊戲開始到結束是一個episode
-                    learn to maximize the expected comulative reward per episode
-    Difficulties of Reinforcement Learning
-        Reward Delay
-            in space invader, only 'fire' obtains reward
-                although the moving before 'fire' is important
-            in Go playing, it may be better to sacrifice immediate reward to gain more long-time reward
-        Agent's actions affect the subsequent data it receives
-            ex: Exploration
-    Outline
-        Markov Decision Process
-        Deep Q Network
-            退流行了
-        A3C Asynchronous Advantage Actor-Critic
-            主流
-        Method
-            Policy-based
-                後來才有
-                Policy Gradient
-                Learning a Actor
-            Value-based
-                learning a Critic            
-            Actor+Critic
-                Asynchronous Advantage Actor-Critic
-                    A3C
-            Alpha Go:
-                Policy-based+value-based+model-based
-            Deep Reinforcement Learning 
-
-                Bible
-                    author Sutton
-        To Learn deep Reinforcement learning
-            Textboox: 
-                Reinforcement Learning: An Introduction
-                http://incompleteideas.net/book/the-book-2nd.html
-                http://incompleteideas.net/book/first/the-book.html
-            Lectures of David Sliver:
-                https://www.davidsilver.uk/teaching/
-            Lectures of John Schulman:
-                https://www.youtube.com/watch?v=aUrX-rP_ss4                
-    Policy-based Approach
-        learning a Actor
-            Actor
-                ML是在找function
-                Actor就是一個function
-                = π(Observation)
-                    function input
-                        Observation
-                    function output
-                        Action
-                    reward
-                        used to pick the best function
-                Actor又名policy
-            step 1:
-                Nerual Network as Actor
-                input
-                    observation
-                        vector
-                        matrix
-                output:
-                    each action coreesponds to a neuron in output layer
-                        left,right,fire
-                            neuron = 3
-                    probability of taking the action
-                        policy是stochastic
-                    tranditional
-                        save a mapping table
-                            observation mapping action
-                    NN優點可以舉一反三
-                        完全沒看過的畫面
-                            也可以出action
-                            generalize
-                example:
-                    intput
-                        image matric
-                    output
-                        left:0.7
-                        right:0.2
-                        fire:0.1
-                        可以採用分數最高的vector
-                            left
-            step 2:
-                goodness of Actor
-                    Given an actor π_θ(s) with network parameter θ
-                    Use the actor π_θ(s) to play the video game
-                        1 episode
-                            Start with observation s_1
-                            Machine decision to take a_1
-                            Machine obtains reward r_1
-                            Start with observation s_2
-                            Machine decision to take a_2
-                            Machine obtains reward r_2
-                            ...
-                            Start with observation s_t
-                            Machine decision to take a_t
-                            Machine obtains reward r_t
-                            END
-
-                            total reward 
-                                Rθ = Σ_t=1^T r_t
-                    event with the same actor, Rθ is differenct each time
-                        Randomness in the actor and the game
-                    We define Rθ^- as the expected value of Rθ
-                        Rθ^- evaluates the goodness of an actor πθ(s)
-                        如何計算期望值
-                            An episode is considered as a trajectory τ
-                                τ = {s1,a1,r1,....,sT,aT,rT}
-                                    整個遊戲的過程
-                                R(τ) = Σ_n=1^T r_n
-                                if you use an actor to play the game, each τ has a probability to the sampled
-                                    The probability depends on actor parameter θ:
-                                        P(τ|θ)
-                                            遊戲開始到結束的可能過程
-                                                有些場景比較容易出現
-                                                    智障飛機
-                                                        高機率自己撞子彈的過程
-                                            每個遊戲場景出現的過程可以用一個機率來描述他
-                                        Rθ^- = Στ R(τ)*R(τ|θ) 
-                                            實際上要窮舉所有的τ不可能
-                                                use πθ to play the game N times, obtain{r1,r2....rN}
-                                                    N筆training data
-                                                    就好像
-                                                        sampling τ from P(τ|θ) N times
-                                            Rθ^- = Στ R(τ)*R(τ|θ)
-                                                ≈ 1/N * Σ_n=1^N R(τ^n)
-                                                平均值去近似
-            step 3:
-                Pick the best Actor
-                    Gradient ascent
-                        problem statement
-                            θ* = arg max_θ R_θ^-
-                            R_θ^- = Στ R(τ)*R(τ|θ)
-                        Gradient ascent
-                            start with  θ^0
-                            θ^1 <- θ^0 + η∇R_θ^0
-                            θ^2 <- θ^1 + η∇R_θ^1
-                            ...
-                        θ={w1,w2,...,b1,b2...}
-                        ∇R_θ^- = [∂R_θ^-/∂w_1 ∂R_θ^-/∂w_2 ... ∂R_θ^-/∂b_1]^T
-                        46:00 開始解公式 ~  52:00左右 之後再重看
-                            ∇log(P)≈ 1/N * Σ_n=1^N Σ_t=1^T_n R(τ^n)∇log p(a_t^n|s_t^n,θ)
-                            if τ^n machine take a_i^n when see s_t^n in 
-                                R(τ^n) is positive
-                                    Tuning θ to increase p(a_t^n|s_t^n)
-                                R(τ^n) is negative
-                                    Tuning θ to decrease p(a_t^n|s_t^n)
-                                it very important to consider the comulative reward R(τ^n) of the whole trajectory τ^n instead of immediate reward τ_t^n
-                                    指考慮該state的action
-                                        fire會得到reward
-                                        其他action都不會增加了
-                                why divide by  p(a_t^n|s_t^n,θ)?
-                                    eg: in the sampling data, s has been seen in r13,r15,r17,r33
-                                        in r13, take action a
-                                            R(r13) = 2
-                                        in r15, take action b
-                                            R(r13) = 1
-                                        in r17, take action b
-                                            R(r13) = 1
-                                        in r33, take action b
-                                            R(r13) = 1
-                                            但是正常會偏好出現次數比較多的action
-                                                因為summation over所有出現的結果
-                                                    雖然reward沒有比較多
-                                                        machine比這件事情的機率調高也可以增加最後的結果
-                                                        而少出現的reward sample太小調高機率影響也不大
-                                                            造成maximize出現多的而不是reward高的
-                                                                除掉機率
-                                                                    normalization
-                        add a baseline
-                            it is possible the R(τ^n) is always postive
-                            θ^new <- θ^old + η∇R_θ^old
-                            ∇Rθ^- ≈ 1/N * Σ_n=1^N Σ_t=1^T_n R(τ^n)∇log p(a_t^n|s_t^n,θ)
-                            ideal case
-                                不會構成問題
-                                    當reward都是正
-                                        但有大有小
-                            sampling
-                                action a,b,c
-                                    sample b,c action
-                                    無 sample a action
-                                        R(τ)未知
-                                        a機率因為沒sample到機率會減少
-                                the probability of the actions not sampled will decrease
-                                R(τ)希望有正有負
-                                    避免都是正的
-                                    R(τ)減掉一個bias
-                                        讓她有正有負
-                                        好過baseline機率才增加
-                                        小於baseline機率減少
-        learning a Critic
-            a Critic does not determine the action
-            Given an actor, it evaluate the how good the actor is
-            An actor can be found form a Critic
-                eq: Q-learning
-            Three kinds of Critic:
-                A critic is a function depending on the actor π, it is evaluated
-                    The function is represented by a nerual network
-                State value function V^π(s)
-                    When using actor π, the cumulated reward expects to be obtained after seeing observation (state) s
-            input:
-                state
-            NN:
-                V^π
+                    used to pick the best function
+            Actor又名policy
+        step 1:
+            Nerual Network as Actor
+            input
+                observation
+                    vector
+                    matrix
             output:
-                scalar
-                    這個observation有多好
-                        怪還很多 
-                            正值
-                            分數還很多
-                        怪快沒了 
-                            負值
-                            或自己快死了
-            Actor跟 Critic可以和在一起train比較強
-    Demo of A3C
-        DeepMind
-            https://www.youtube.com/watch?v=nMR5mjCFZCw
-            https://www.youtube.com/watch?v=0xo1Ldx3L5Q
+                each action coreesponds to a neuron in output layer
+                    left,right,fire
+                        neuron = 3
+                probability of taking the action
+                    policy是stochastic
+                tranditional
+                    save a mapping table
+                        observation mapping action
+                NN優點可以舉一反三
+                    完全沒看過的畫面
+                        也可以出action
+                        generalize
+            example:
+                intput
+                    image matric
+                output
+                    left:0.7
+                    right:0.2
+                    fire:0.1
+                    可以採用分數最高的vector
+                        left
+        step 2:
+            goodness of Actor
+                Given an actor π_θ(s) with network parameter θ
+                Use the actor π_θ(s) to play the video game
+                    1 episode
+                        Start with observation s_1
+                        Machine decision to take a_1
+                        Machine obtains reward r_1
+                        Start with observation s_2
+                        Machine decision to take a_2
+                        Machine obtains reward r_2
+                        ...
+                        Start with observation s_t
+                        Machine decision to take a_t
+                        Machine obtains reward r_t
+                        END
+
+                        total reward 
+                            Rθ = Σ_t=1^T r_t
+                event with the same actor, Rθ is differenct each time
+                    Randomness in the actor and the game
+                We define Rθ^- as the expected value of Rθ
+                    Rθ^- evaluates the goodness of an actor πθ(s)
+                    如何計算期望值
+                        An episode is considered as a trajectory τ
+                            τ = {s1,a1,r1,....,sT,aT,rT}
+                                整個遊戲的過程
+                            R(τ) = Σ_n=1^T r_n
+                            if you use an actor to play the game, each τ has a probability to the sampled
+                                The probability depends on actor parameter θ:
+                                    P(τ|θ)
+                                        遊戲開始到結束的可能過程
+                                            有些場景比較容易出現
+                                                智障飛機
+                                                    高機率自己撞子彈的過程
+                                        每個遊戲場景出現的過程可以用一個機率來描述他
+                                    Rθ^- = Στ R(τ)*R(τ|θ) 
+                                        實際上要窮舉所有的τ不可能
+                                            use πθ to play the game N times, obtain{r1,r2....rN}
+                                                N筆training data
+                                                就好像
+                                                    sampling τ from P(τ|θ) N times
+                                        Rθ^- = Στ R(τ)*R(τ|θ)
+                                            ≈ 1/N * Σ_n=1^N R(τ^n)
+                                            平均值去近似
+        step 3:
+            Pick the best Actor
+                Gradient ascent
+                    problem statement
+                        θ* = arg max_θ R_θ^-
+                        R_θ^- = Στ R(τ)*R(τ|θ)
+                    Gradient ascent
+                        start with  θ^0
+                        θ^1 <- θ^0 + η∇R_θ^0
+                        θ^2 <- θ^1 + η∇R_θ^1
+                        ...
+                    θ={w1,w2,...,b1,b2...}
+                    ∇R_θ^- = [∂R_θ^-/∂w_1 ∂R_θ^-/∂w_2 ... ∂R_θ^-/∂b_1]^T
+                    46:00 開始解公式 ~  52:00左右 之後再重看
+                        ∇log(P)≈ 1/N * Σ_n=1^N Σ_t=1^T_n R(τ^n)∇log p(a_t^n|s_t^n,θ)
+                        if τ^n machine take a_i^n when see s_t^n in 
+                            R(τ^n) is positive
+                                Tuning θ to increase p(a_t^n|s_t^n)
+                            R(τ^n) is negative
+                                Tuning θ to decrease p(a_t^n|s_t^n)
+                            it very important to consider the comulative reward R(τ^n) of the whole trajectory τ^n instead of immediate reward τ_t^n
+                                指考慮該state的action
+                                    fire會得到reward
+                                    其他action都不會增加了
+                            why divide by  p(a_t^n|s_t^n,θ)?
+                                eg: in the sampling data, s has been seen in r13,r15,r17,r33
+                                    in r13, take action a
+                                        R(r13) = 2
+                                    in r15, take action b
+                                        R(r13) = 1
+                                    in r17, take action b
+                                        R(r13) = 1
+                                    in r33, take action b
+                                        R(r13) = 1
+                                        但是正常會偏好出現次數比較多的action
+                                            因為summation over所有出現的結果
+                                                雖然reward沒有比較多
+                                                    machine比這件事情的機率調高也可以增加最後的結果
+                                                    而少出現的reward sample太小調高機率影響也不大
+                                                        造成maximize出現多的而不是reward高的
+                                                            除掉機率
+                                                                normalization
+                    add a baseline
+                        it is possible the R(τ^n) is always postive
+                        θ^new <- θ^old + η∇R_θ^old
+                        ∇Rθ^- ≈ 1/N * Σ_n=1^N Σ_t=1^T_n R(τ^n)∇log p(a_t^n|s_t^n,θ)
+                        ideal case
+                            不會構成問題
+                                當reward都是正
+                                    但有大有小
+                        sampling
+                            action a,b,c
+                                sample b,c action
+                                無 sample a action
+                                    R(τ)未知
+                                    a機率因為沒sample到機率會減少
+                            the probability of the actions not sampled will decrease
+                            R(τ)希望有正有負
+                                避免都是正的
+                                R(τ)減掉一個bias
+                                    讓她有正有負
+                                    好過baseline機率才增加
+                                    小於baseline機率減少
+    learning a Critic
+        a Critic does not determine the action
+        Given an actor, it evaluate the how good the actor is
+        An actor can be found form a Critic
+            eq: Q-learning
+        Three kinds of Critic:
+            A critic is a function depending on the actor π, it is evaluated
+                The function is represented by a nerual network
+            State value function V^π(s)
+                When using actor π, the cumulated reward expects to be obtained after seeing observation (state) s
+        input:
+            state
+        NN:
+            V^π
+        output:
+            scalar
+                這個observation有多好
+                    怪還很多 
+                        正值
+                        分數還很多
+                    怪快沒了 
+                        負值
+                        或自己快死了
+        Actor跟 Critic可以和在一起train比較強
+Demo of A3C
+    DeepMind
+        https://www.youtube.com/watch?v=nMR5mjCFZCw
+        https://www.youtube.com/watch?v=0xo1Ldx3L5Q

@@ -1,129 +1,128 @@
-Natural Language Processing(Based on Deep Learning)
-    Basic
-        Recurrent Model
-            Sequential Model
-                Teacher Forcing
-                Non-Teacher Forcing
-                n-gram
-                katz-Backoff Model
-                RNN
-                    Bi-directional RNN
-                        Deep RNN
-                GRU
-                LSTM
-                BPTT
-                Vanishing Gradient
-                Cell State
-            P(wi | w1: i-1)
-                Greedy Search
-                Beam Search
-        Convolutional Model
-            TexCNN
-            DCNN
-            Kernel Size = n-gram
-            Channel = number of Perception
-        Recursive Model
-            Syntatically-United RNN
-            RNTN
-            Matrix-Vector RNN
-    Language Model
-        Encoder-Decoder Model
-            Source-Target
-                Task
-                    Machine Translation
-                    Summarization
-                OOV Problem Slove
-                    Copying Mechanism
-                    Subword Tokenizing based NMT
-                        Byte Pair Encoding
-                        Word Piece Model
-                        Subword Regularization
-                        Based Frequency
-                        Based Likelihood
-                        EM Algorithm
-                        Google Sentence Piece
-            Model
-                Seq2Seq
-                Attention Mechanism
-                    Context Vector
-                    Alignment Model
-                    Query
-                    Key
-                    Value
-                Seq2Seq based on
-                Skip-Thought
-                Transformer
-                    Self-Attention
-                    Scale-Dot Product Attention
-                    Positional Encoding
-                    Sinusoid Function
-                    Poswise FeedForwordNet
-                    Multi-Head Attention
-                    Masked Multi-Head Attention
-                Unsupervised Machine Translation
-        Word Reprentation to Contextual Representation
-            CoVe
-            ELMo
-            2Layers LSTM
-            Pretrained for Embedding
-            State of the Art Model
-                Pretrainin-Finetuning
-                Transformer Based Model
-                Deep Transformer
-                OpenAI-GPT
-                P(wi|w1:i-1)
-                Auxiliary Task Head
-                BERT
-                    Masking Language Model
-                    Next Sentence Predict(NSP)
-                        CLS
-                        SEP
-                        MASK
-                Universal Transformer
-                Inductive Bias of RNN
-                OpenAI-GPT2
-                Zero-Shot Learning
-                Not Fine Tuning
-                RoBERTo
-                Skip NSP
-                Large Batch
-                Relative Positional Encoding
-                Transformer XL
-                Segment-Level Recurrence with State Reuse
-                XLNet
-                    Two-Stream Self-Attention for Target-Aware
-                        Content Stream
-                        Query Stream
-                    Permutation Language Model
-                    Segement Recurrence Mechanism
-    Distributed Representation
-        Word Representation
-        Co-occurence Matrix
-        NNLM
-        Embedding
-            Word Embedding
-                Word2Vec
-                    Cost Method
-                        Hierarchical Softmax
-                        Negative Sampling
-                    CBOW
-                    Skip-gram
-                Glove
-                FastText
-            Character Embedding
-    Task
-        POS Tagging
-        Parsing
-        Named Entity Recognition
-        Coreference Resolution
-        Sentiment Analysis
-        BLEU Score
-        Machine Translation
-        Question Answering
-        Reading Comprehension
-        Text Generation
-        Summarization
-        ROUGE Score
-        Dialogue Systems
-        Perplexity
-        Language Modeling
+Basic
+    Recurrent Model
+        Sequential Model
+            Teacher Forcing
+            Non-Teacher Forcing
+            n-gram
+            katz-Backoff Model
+            RNN
+                Bi-directional RNN
+                    Deep RNN
+            GRU
+            LSTM
+            BPTT
+            Vanishing Gradient
+            Cell State
+        P(wi | w1: i-1)
+            Greedy Search
+            Beam Search
+    Convolutional Model
+        TexCNN
+        DCNN
+        Kernel Size = n-gram
+        Channel = number of Perception
+    Recursive Model
+        Syntatically-United RNN
+        RNTN
+        Matrix-Vector RNN
+Language Model
+    Encoder-Decoder Model
+        Source-Target
+            Task
+                Machine Translation
+                Summarization
+            OOV Problem Slove
+                Copying Mechanism
+                Subword Tokenizing based NMT
+                    Byte Pair Encoding
+                    Word Piece Model
+                    Subword Regularization
+                    Based Frequency
+                    Based Likelihood
+                    EM Algorithm
+                    Google Sentence Piece
+        Model
+            Seq2Seq
+            Attention Mechanism
+                Context Vector
+                Alignment Model
+                Query
+                Key
+                Value
+            Seq2Seq based on
+            Skip-Thought
+            Transformer
+                Self-Attention
+                Scale-Dot Product Attention
+                Positional Encoding
+                Sinusoid Function
+                Poswise FeedForwordNet
+                Multi-Head Attention
+                Masked Multi-Head Attention
+            Unsupervised Machine Translation
+    Word Reprentation to Contextual Representation
+        CoVe
+        ELMo
+        2Layers LSTM
+        Pretrained for Embedding
+        State of the Art Model
+            Pretrainin-Finetuning
+            Transformer Based Model
+            Deep Transformer
+            OpenAI-GPT
+            P(wi|w1:i-1)
+            Auxiliary Task Head
+            BERT
+                Masking Language Model
+                Next Sentence Predict(NSP)
+                    CLS
+                    SEP
+                    MASK
+            Universal Transformer
+            Inductive Bias of RNN
+            OpenAI-GPT2
+            Zero-Shot Learning
+            Not Fine Tuning
+            RoBERTo
+            Skip NSP
+            Large Batch
+            Relative Positional Encoding
+            Transformer XL
+            Segment-Level Recurrence with State Reuse
+            XLNet
+                Two-Stream Self-Attention for Target-Aware
+                    Content Stream
+                    Query Stream
+                Permutation Language Model
+                Segement Recurrence Mechanism
+Distributed Representation
+    Word Representation
+    Co-occurence Matrix
+    NNLM
+    Embedding
+        Word Embedding
+            Word2Vec
+                Cost Method
+                    Hierarchical Softmax
+                    Negative Sampling
+                CBOW
+                Skip-gram
+            Glove
+            FastText
+        Character Embedding
+Task
+    POS Tagging
+    Parsing
+    Named Entity Recognition
+    Coreference Resolution
+    Sentiment Analysis
+    BLEU Score
+    Machine Translation
+    Question Answering
+    Reading Comprehension
+    Text Generation
+    Summarization
+    ROUGE Score
+    Dialogue Systems
+    Perplexity
+    Language Modeling

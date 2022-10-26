@@ -1,50 +1,49 @@
-mocha
-    install
-        npm -g install mocha
-        npm install --dev mocha
-    package.json
-        "scripts"
-            "test":"mocha"
-    example
-        js in test folder
-        ex1:
-            var assert = require('assert')
-            decribe('#Array',()=>{
-                decribe('#IndexOf',()=>{
-                    it('should return -1 when the value is not present',()=>{
-                        assert.equal(-1,[1,2,3].indexOf(4))
-                    })
+install
+    npm -g install mocha
+    npm install --dev mocha
+package.json
+    "scripts"
+        "test":"mocha"
+example
+    js in test folder
+    ex1:
+        var assert = require('assert')
+        decribe('#Array',()=>{
+            decribe('#IndexOf',()=>{
+                it('should return -1 when the value is not present',()=>{
+                    assert.equal(-1,[1,2,3].indexOf(4))
                 })
             })
-        ex2:
-            describe('#math',()=>{
-                describe('add',()=>{
-                    it('should return 5 when 2 + 3',()=>{
-                        expect(add(2,3),5)
-                    })
-                    it('should return 5 when 2 + 3',()=>{
-                        expect(add(2,-3),-1)
-                    })
+        })
+    ex2:
+        describe('#math',()=>{
+            describe('add',()=>{
+                it('should return 5 when 2 + 3',()=>{
+                    expect(add(2,3),5)
                 })
-                describe('mul',()=>{
-                    it('should return 6 when 2 * 3',()=>{
-                        expect(mul(2,3),6)
-                    })
+                it('should return 5 when 2 + 3',()=>{
+                    expect(add(2,-3),-1)
                 })
             })
-        ex3: test only
-            describe('#math',()=>{
-                describe('add',()=>{
-                    it.only('should return 5 when 2 + 3',()=>{
-                        expect(add(2,3),5)
-                    })
-                    it('should return 5 when 2 + 3',()=>{
-                        expect(add(2,-3),-1)
-                    })
-                })
-                describe('mul',()=>{
-                    it('should return 6 when 2 * 3',()=>{
-                        expect(mul(2,3),6)
-                    })
+            describe('mul',()=>{
+                it('should return 6 when 2 * 3',()=>{
+                    expect(mul(2,3),6)
                 })
             })
+        })
+    ex3: test only
+        describe('#math',()=>{
+            describe('add',()=>{
+                it.only('should return 5 when 2 + 3',()=>{
+                    expect(add(2,3),5)
+                })
+                it('should return 5 when 2 + 3',()=>{
+                    expect(add(2,-3),-1)
+                })
+            })
+            describe('mul',()=>{
+                it('should return 6 when 2 * 3',()=>{
+                    expect(mul(2,3),6)
+                })
+            })
+        })

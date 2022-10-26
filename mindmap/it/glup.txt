@@ -1,71 +1,70 @@
-glup
-    feature
-        automate and enhance your workflow
-    example:
-        prototype in glupfile.js
-            var glup = require('glup')
-            glup.task('default',['clean','less'],()=>{
-                console.log('done')
-            })
-            run glup
-                glup
-                    run default task
-                glup <task> <othertaks>
-                    run spec task        
-            // less
-            gloup.task('less',()=>{
-                glup.src('src/**/*.less')
-                    .pipe(less())
-                    .pipe(gulp.dest('build))
-            })
-            // clean-task
-            glup.task('clean',()=>{
-                del.sync('build')
-            })
-    api
-        glup.src('client/template/*.jade')
-            .pipe(jade())
-            .pipe(minify())
-            .pipe(glup.dest('build/minified_template'))
-        glob
-            *
-                any chars/length
-            ?
-                any one char
-            [...]
-                range char
-            !(pattern1|pattern2)
-                not match pattern
-            ?(pattern1|pattern2)
-                match 0 or 1
-            +(pattern1|pattern2)
-                match 1 or more
-            *(a|b|c)
-                match any
-            @(pattern|pat*|pat?erN)
-                match spec 1
-            **
-                any level match
-        src
-            select source file by glob
-        dest
-            build target
-        task(name,[deps],fn)
-            name
-                taskname
-            deps
-                depend by other taskname array
-            fn
-                callback
-        watcher = watch(glob,[.opts],tasks)
-            watcher.on('change',event=>{})
-    other library
-        glup-less
-        glup-clean-css
-            compress css
-        glup-source-map
-        glup-jade        
-        del        
-        glup-autoprefixer
-            browsers:['last 5 versions','firefox>20'],
-            cascade:false
+feature
+    automate and enhance your workflow
+example:
+    prototype in glupfile.js
+        var glup = require('glup')
+        glup.task('default',['clean','less'],()=>{
+            console.log('done')
+        })
+        run glup
+            glup
+                run default task
+            glup <task> <othertaks>
+                run spec task        
+        // less
+        gloup.task('less',()=>{
+            glup.src('src/**/*.less')
+                .pipe(less())
+                .pipe(gulp.dest('build))
+        })
+        // clean-task
+        glup.task('clean',()=>{
+            del.sync('build')
+        })
+api
+    glup.src('client/template/*.jade')
+        .pipe(jade())
+        .pipe(minify())
+        .pipe(glup.dest('build/minified_template'))
+    glob
+        *
+            any chars/length
+        ?
+            any one char
+        [...]
+            range char
+        !(pattern1|pattern2)
+            not match pattern
+        ?(pattern1|pattern2)
+            match 0 or 1
+        +(pattern1|pattern2)
+            match 1 or more
+        *(a|b|c)
+            match any
+        @(pattern|pat*|pat?erN)
+            match spec 1
+        **
+            any level match
+    src
+        select source file by glob
+    dest
+        build target
+    task(name,[deps],fn)
+        name
+            taskname
+        deps
+            depend by other taskname array
+        fn
+            callback
+    watcher = watch(glob,[.opts],tasks)
+        watcher.on('change',event=>{})
+other library
+    glup-less
+    glup-clean-css
+        compress css
+    glup-source-map
+    glup-jade        
+    del        
+    glup-autoprefixer
+        browsers:['last 5 versions','firefox>20'],
+        cascade:false

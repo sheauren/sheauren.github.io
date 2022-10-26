@@ -1,390 +1,389 @@
-Tips for Training DNN
-    Recipe of deep learning
-        step1: define a set of function
-        step2: goodnees of function
-        step3: pick the best function        
-        get a neural network
-            Good results on training set?
-                no
-                    restart step1-3
-                yes
-                    good results on testing data?
-                        no:overfitting                            
-                            restart step1-3
-                        yes:
-                            success!
-    Do not always blame overfitting
-        not well trained
-    differenct apporaches for differenct problems
-        good results on training data?
-        good results on testing data?
-    tips:
-        dropout
-            using when bad results on testing data
-            each time before updating the parameters
-                each neuron has p% to dropout
-                    the structure of the network is changed
-                    using the new network for training
-            for each mini batch, we resample the dropout neuron
-            training使用dropout performance會變差
-                讓你的training結果變差
-                    如果training已經不夠好加dropout會更慘
-                但讓testing結果變好
-                    no dropout
-                        if the dropout rate at training is p%
-                            all the weight times (1-p)%
-                        assume that the dropout rate is 50%
-                            if a weight w=1 by training set
-                            set w = 0.5 for testing
-            intuitive reason
-                training dropout neuron
-                    綁重物訓練
-                testing no dropout
-                    重物拿下來就會變很強
-                每一個neuron當一個學生
-                    連結要做final project
-                        團隊裡面有人會擺爛
-                        你覺得隊友會擺爛
-                            你就要好好做
-                            準備cover隊友
-                        testing大家都好好做
-                            更努力所以結果更好
-                why the weights should multiply (1-p)% when testing?
-                    tarining of dropout
-                        assume dropout rate is 50%
-                            z
-                    testing of dropout
-                        No dropout
-                            weight from training
-                                z' ≈ 2z 
-                                    (p=50%)
-                            testing training not match
-                dropout is a kind of ensemble
-                    ultimate ensemble method
+Recipe of deep learning
+    step1: define a set of function
+    step2: goodnees of function
+    step3: pick the best function        
+    get a neural network
+        Good results on training set?
+            no
+                restart step1-3
+            yes
+                good results on testing data?
+                    no:overfitting                            
+                        restart step1-3
+                    yes:
+                        success!
+Do not always blame overfitting
+    not well trained
+differenct apporaches for differenct problems
+    good results on training data?
+    good results on testing data?
+tips:
+    dropout
+        using when bad results on testing data
+        each time before updating the parameters
+            each neuron has p% to dropout
+                the structure of the network is changed
+                using the new network for training
+        for each mini batch, we resample the dropout neuron
+        training使用dropout performance會變差
+            讓你的training結果變差
+                如果training已經不夠好加dropout會更慘
+            但讓testing結果變好
+                no dropout
+                    if the dropout rate at training is p%
+                        all the weight times (1-p)%
+                    assume that the dropout rate is 50%
+                        if a weight w=1 by training set
+                        set w = 0.5 for testing
+        intuitive reason
+            training dropout neuron
+                綁重物訓練
+            testing no dropout
+                重物拿下來就會變很強
+            每一個neuron當一個學生
+                連結要做final project
+                    團隊裡面有人會擺爛
+                    你覺得隊友會擺爛
+                        你就要好好做
+                        準備cover隊友
+                    testing大家都好好做
+                        更努力所以結果更好
+            why the weights should multiply (1-p)% when testing?
+                tarining of dropout
+                    assume dropout rate is 50%
+                        z
+                testing of dropout
+                    No dropout
+                        weight from training
+                            z' ≈ 2z 
+                                (p=50%)
+                        testing training not match
+            dropout is a kind of ensemble
+                ultimate ensemble method
+                ensemble
+                    training set 
+                        每次只sample一部分data
+                        很複雜的model
+                            bias準
+                            variance很大
+                    如果分很多個訓練
+                        平均起來結果就很準
+                    train很多個model
+                        每個model structure不一樣
+                        每個model variance很大
+                        平均起來bias就很小
+                        input通過所有的model平均起來
+                            當最後的結果
+                    當model真的很大這招就很好用
+                        random forest就用這方法
+                            不容易overfitting
+                        decision tree就很弱,亂做會overfiiting                        
+                why ultimate ensemble method?
+                    minibatch遇到sample每次training的model都不同
+                    於M個neurons
+                        training 2^M possible networks
+                        每個network用一個minibatch來train
+                            會有點不安
+                                但彼此network share參數的
+                                一個weight可能被好多個batch train過
+                        train一大把的network                                    
+                    testing時
+                        理想:
+                            一大把的network拿出來
+                            把所有結果平均起來
+                        實際:
+                            完整network不dropout
+                            把weight*(1-p)
+                            approximate
+                                train input+dropout
+                                test input+nodropout * (1-p)
+                testing of dropout
+                    z = x1w1+x2w2
+                    Activation function linear
                     ensemble
-                        training set 
-                            每次只sample一部分data
-                            很複雜的model
-                                bias準
-                                variance很大
-                        如果分很多個訓練
-                            平均起來結果就很準
-                        train很多個model
-                            每個model structure不一樣
-                            每個model variance很大
-                            平均起來bias就很小
-                            input通過所有的model平均起來
-                                當最後的結果
-                        當model真的很大這招就很好用
-                            random forest就用這方法
-                                不容易overfitting
-                            decision tree就很弱,亂做會overfiiting                        
-                    why ultimate ensemble method?
-                        minibatch遇到sample每次training的model都不同
-                        於M個neurons
-                            training 2^M possible networks
-                            每個network用一個minibatch來train
-                                會有點不安
-                                    但彼此network share參數的
-                                    一個weight可能被好多個batch train過
-                            train一大把的network                                    
-                        testing時
-                            理想:
-                                一大把的network拿出來
-                                把所有結果平均起來
-                            實際:
-                                完整network不dropout
-                                把weight*(1-p)
-                                approximate
-                                    train input+dropout
-                                    test input+nodropout * (1-p)
-                    testing of dropout
                         z = x1w1+x2w2
-                        Activation function linear
-                        ensemble
-                            z = x1w1+x2w2
-                            z = x2w2
-                            z = x1w1
-                            z = 0
-                            機率 
-                                1/2 x1w1 
-                                1/2 x2w2
-                            合併output
-                                z = x1w1*1/2+x2w2*1/2
-                            得到output相同
-                                不同network structure ensemble
-                                跟不ensemble multiple一個值得到相同結果
-                        when deep learning equivalent?
-                            activation function non-learning
-                                not equivalent
-                                but can work
-                            當network接近linear時
-                                dropout performance會比較好
-                                    ReLU
-                                    Maxout
-                                        相對sigmoid來說上述會比較接近linear
-        early stopping
-            隨training於training set的total loss下降
-            隨training於testing set的total loss可能後來反而會上升
-                如果知道testing loss的結果
-                trainig結果應該停在testing loss最小的地方
-            實際上不知道training set是什麼
-                所以會用valitation set來vertify這事情                
-        regularization
-            New loss function to be minimized
-                find a set of weight not only minimizing original cost but also close to zero
-            L'(θ) = L(θ) + λ1/2||θ||_2
-                L(θ): original loss
-                    corssentropy
-                    MSE
-                λ1/2||θ||_2: regularization term
-                    可以是參數的L2 norm
-                        θ:{w1,w2...}
-                        L2 regularization:
-                            ||θ||_2 =(w1)^2+(w2)^2+...
-                            讓參數平滑
-                gradients:
-                    ∂L'/∂w = ∂L/∂w + λw
-                update:
-                    w^t+1 = w^t - η*∂L'/∂w
-                        = w^t -η(∂L/∂w + λw)
-                        = (1-ηλ)w^t -η∂L/∂w
-                        η通常很小
-                        λ通常也很小可能是0.001
-                        所以1-ηλ可能是0.99
-                        不分清紅皂百每次update先讓w*0.99
-                        讓參數越來越接近0                        
-                    L2 regularization
-                        weight decay
-                        每次都乘上小於1的固定值
-                            當weight很大就砍很大
-                            當weight很小時就砍很小                        
-                            平均參數都接近0
-                regularization幫助沒有SVM那麼高
-                    early stopping可以決定training什麼時候停下來
-                    初始參數很小值接近0
-                        training會讓參數遠離0
-                        regularization又希望參數不要離0太遠
-                    early stopping也會避免參數離0太遠
-                        兩者很接近效果
-                    svm效果反而比較好
-                        他是要解convex optimalization problem
-                            可能一步就解出結果
-                            沒辦法用early stopping
-                            所以需要把regularization explicitly加到loss function裡面
-                    L1 regularization:
-                        ||θ||_1 =(w1)+(w2)+...
-                        New loss function to be minimized
-                        L'(θ) = L(θ) + λ1/2||θ||_1
-                        ∂L'/∂w = ∂L/∂w + λsgn(w)
-                        update:
-                            w^t+1 = w^t - η*∂L'/∂w                     
-                                = w^t - η*(∂L/∂w + λsgn(w))
-                                = w^t - η*(∂L/∂w) -ηλsgn(w)
-                                    always delete固定值                                    
-                                        當weight很大就無感
-                                        不會保留很多小的值
-                                            sparse
-                                                會有很多參數接近0
-                                                也會有很多很大的值
-                                            想要做CN產生時，希望參數sparse則L1比較適合
-            weight decay
-                our brain prunes out the useless link between nerous
-                    剛出生神經連結不多
-                    6歲神經連結超過
-                    14歲神經連結又減少了
-                    Doing the same thing to machine's brain improve the performance.
-                    當有些weight都不去update久了就接近0消失
-        new activation function
-            using when bad results on training data
-            e.g. handwriting digit classification            
-                deeper usually does not imply better
-                layer++ accuracy-- in training
-                    not overfitting
-                    not well trained
-                Vanishing Gradient Problem
-                    small gradient in bottom
-                        learning very slow
-                        almost random
-                    large gradient in top
-                        learning very fast
-                        already converge
-                            loss decline very slow
-                            bad of training result 
-                                converge base on random
-                    sigmod會導致這件事情發生
-                        large input
-                        small output
-                        很強的衰減
-                        input經過衰減對output變化很小
-                        導致越接近top衰減越少
-                    intuitive way to compute the derivatives...
-                        ∂C/∂w = ? ΔC/Δw
-                        bottom layer + Δw
-                            monitor output loss effect
-                            smaller gradients   
-                    早年作法:
-                        train RBM:Restricted Boltzmann Machines
-                            認識好第一個layer
-                            一個一個layer training
-                    改一下activation function:
-                        ReLU:Rectified Linear Unit
-                            input>=0:
-                                output=input
-                            input<0:
-                                output=0
-                            Reason:
-                                fast to compute
-                                biologic reason
-                                inifinite sigmoid with differenct biases
-                                Vanishing gradient problem
-                                    when input<0
-                                        remove the neural
-                                    when input>=output
-                                        linear
-                                    from a thinner linear network
-                                        does not have smaller gradients
-                                        smaller gradients on bottom的問題了
-                            原本不是希望nerual network是一個non-learning funciton
-                                所以才用deep learning
-                                用ReLU又變成linear function
-                                但是整個model還是non-linear funciton
-                                    當每個neuron做operatoin
-                                        operation region一樣時
-                                            linear function
-                                    當input做比較大的改變
-                                        operation region變化時
-                                            non-linear function
-                            ReLU不能derivatives
-                                當input>=0
-                                    gradient = 1
-                                當input<0
-                                    gradient = 0
-                                不可能剛好=0
-                            換Relu的handwriting結果
-                        ReLU-variant
-                            Leaky ReLU
-                                避免input<0
-                                    gradient = 0
-                                input>0
-                                    a=z
-                                input<0
-                                    a=0.001z
-                            Parametric ReLU
-                                input>0
-                                    a=z
-                                input<0
-                                    a=αz
-                                    α training by neural
-                        Maxout network
-                            Learnable activation funciton
-                                Activateion function in maxout network can be any piecewise linear convex function
-                                How many pieces depending on how many elements in a group                                    
-                            ReLU is a special case in Maxout
-                                ReLU:
-                                    input:x
-                                    z = x*w+b
-                                    a = ReLU(z)
-                                z = w*x+b
-                                Maxout:
-                                    input:x
-                                    z1 = x*w1+b
-                                    z2 = x*0+0
-                                    a = max(z1,z2)
-                            maxout ex:
-                                input:[x1,x2]
-                                [x1w1+x2w2 , x2w3+x2w4, x1w5+x2w6, x1w7+x2w8 ] 
-                                    groupping 事先決定                                        
-                                        [x1w1+x2w2,x2w3+x2w4]
-                                        [x1w5+x2w6,x1w7+x2w8]
-                                    同group選value最大的output
-                                        類似maxpooling
-                                        一個layer的maxpooling
-                            you can have more than 2 elements in a group
-                                可以調整的參數
-                            maxout-training
-                                given a training data x,we know which z would be the max
-                                    當決定max之後就是一個linear operation
-                                    沒接到的element就沒用了
-                                    又產生一個比較細長的nerual network
-                                        只training這細長的參數
-                                    沒training到的怎麼辦?
-                                        當input變化
-                                            max值會變化
-                                                network structure會變化
-                                                每個weight應該都會被train到
-        adaptive learning rate
-            adagrad
-                每一個parameter都有不同lr
-                    w^t+1 = w^t - η * g^t / (√*Σ_i=0^t(g^i)^2)
-                    每個參數的η除以過去所有gradient值平方和開根號
-                平坦的給予比較大的lr
-                陡峭的給予比較小的lr
-            Error surface can be very complex when training NN
-                smaller learning rate
-                need more dynamic adjust lr
-                    RMSProp: hinton mooc course
-                        cite the course link
-                        w^1 <- w^0 - η/σ^0 * g^0
-                            σ^0 = g^0
-                        w^2 <- w^0 - η/σ^1 * g^1
-                            σ^1 = √[α*(σ^0)^2 + (1-α)(g^1)^2]
-                                α: adjustable parameter
-                                    α小一點 傾向相信新的gradient對error surface陡峭程度
-                                    α大一點 傾向相信歷史的gradient對error surface陡峭程度
-                        w^3 <- w^0 - η/σ^2 * g^2
-                            σ^2 = √[α*(σ^1)^2 + (1-α)(g^2)^2]
-                        w^t+1 <- w^0 - η/σ^t * g^t
-                            σ^t = √[α*(σ^(t-1))^2 + (1-α)(g^t)^2]
-            Hard to find optimal network parameters
-                stuck at saddle point
-                    ∂L/∂w=0
-                stuck at local minimum
-                    ∂L/∂w=0
-                very slow at the plateau
-                    ∂L/∂w≈0
-                tom mark 2007 say
-                    you don't worry about local minimum problems
-                        error surface很少local minimum
-                            你要一個local minimum是每一個dimension都有山谷形狀
-                                山谷出現率是p
-                                network參數非常多
-                                每一個都是山谷谷底的機率
-                                    參數越多local minimum機率就越低
-                                    因此參數夠多通常你認為是local minimum的地方應該都很接近global minimum了
-                heuristics method for plateau , local minimum problems
-                    in physical world
-                        Momentum
-                            how about put this phenomenon in gradients descent
-                            how to use?
-                                movement of last step minus gradient at present
-                                    這次的Gradient+前次的方向
-                                start point
-                                    θ^0
-                                movement
-                                    v^0=0
-                                gradient
-                                    ∇L(θ^0)
-                                movement
-                                    v^1 = λv^0 - η∇L(θ^0)
-                                        原本走的方向還是有一定程度的影響
-                                    λ: 手調參數
-                                move to 
-                                    θ^1 = θ^0 + v^1
-                                gradient
-                                    ∇L(θ^1)
-                                movement
-                                    v^2 = λv^1 - η∇L(θ^1)
-                                move to 
-                                    θ^2 = θ^1 + v^2
-                                v^i
-                                    sum of all the previous gradients
-                                    λ < 0 時
-                                        越久的gradient影響越小
-                            movement =
-                                negative of ∂L/∂w
-                                + Momentum
-                            still not guarantee reaching global minimum, but give some hope...
-                        Adam
-                            RMSProp + Momentum
-                        
+                        z = x2w2
+                        z = x1w1
+                        z = 0
+                        機率 
+                            1/2 x1w1 
+                            1/2 x2w2
+                        合併output
+                            z = x1w1*1/2+x2w2*1/2
+                        得到output相同
+                            不同network structure ensemble
+                            跟不ensemble multiple一個值得到相同結果
+                    when deep learning equivalent?
+                        activation function non-learning
+                            not equivalent
+                            but can work
+                        當network接近linear時
+                            dropout performance會比較好
+                                ReLU
+                                Maxout
+                                    相對sigmoid來說上述會比較接近linear
+    early stopping
+        隨training於training set的total loss下降
+        隨training於testing set的total loss可能後來反而會上升
+            如果知道testing loss的結果
+            trainig結果應該停在testing loss最小的地方
+        實際上不知道training set是什麼
+            所以會用valitation set來vertify這事情                
+    regularization
+        New loss function to be minimized
+            find a set of weight not only minimizing original cost but also close to zero
+        L'(θ) = L(θ) + λ1/2||θ||_2
+            L(θ): original loss
+                corssentropy
+                MSE
+            λ1/2||θ||_2: regularization term
+                可以是參數的L2 norm
+                    θ:{w1,w2...}
+                    L2 regularization:
+                        ||θ||_2 =(w1)^2+(w2)^2+...
+                        讓參數平滑
+            gradients:
+                ∂L'/∂w = ∂L/∂w + λw
+            update:
+                w^t+1 = w^t - η*∂L'/∂w
+                    = w^t -η(∂L/∂w + λw)
+                    = (1-ηλ)w^t -η∂L/∂w
+                    η通常很小
+                    λ通常也很小可能是0.001
+                    所以1-ηλ可能是0.99
+                    不分清紅皂百每次update先讓w*0.99
+                    讓參數越來越接近0                        
+                L2 regularization
+                    weight decay
+                    每次都乘上小於1的固定值
+                        當weight很大就砍很大
+                        當weight很小時就砍很小                        
+                        平均參數都接近0
+            regularization幫助沒有SVM那麼高
+                early stopping可以決定training什麼時候停下來
+                初始參數很小值接近0
+                    training會讓參數遠離0
+                    regularization又希望參數不要離0太遠
+                early stopping也會避免參數離0太遠
+                    兩者很接近效果
+                svm效果反而比較好
+                    他是要解convex optimalization problem
+                        可能一步就解出結果
+                        沒辦法用early stopping
+                        所以需要把regularization explicitly加到loss function裡面
+                L1 regularization:
+                    ||θ||_1 =(w1)+(w2)+...
+                    New loss function to be minimized
+                    L'(θ) = L(θ) + λ1/2||θ||_1
+                    ∂L'/∂w = ∂L/∂w + λsgn(w)
+                    update:
+                        w^t+1 = w^t - η*∂L'/∂w                     
+                            = w^t - η*(∂L/∂w + λsgn(w))
+                            = w^t - η*(∂L/∂w) -ηλsgn(w)
+                                always delete固定值                                    
+                                    當weight很大就無感
+                                    不會保留很多小的值
+                                        sparse
+                                            會有很多參數接近0
+                                            也會有很多很大的值
+                                        想要做CN產生時，希望參數sparse則L1比較適合
+        weight decay
+            our brain prunes out the useless link between nerous
+                剛出生神經連結不多
+                6歲神經連結超過
+                14歲神經連結又減少了
+                Doing the same thing to machine's brain improve the performance.
+                當有些weight都不去update久了就接近0消失
+    new activation function
+        using when bad results on training data
+        e.g. handwriting digit classification            
+            deeper usually does not imply better
+            layer++ accuracy-- in training
+                not overfitting
+                not well trained
+            Vanishing Gradient Problem
+                small gradient in bottom
+                    learning very slow
+                    almost random
+                large gradient in top
+                    learning very fast
+                    already converge
+                        loss decline very slow
+                        bad of training result 
+                            converge base on random
+                sigmod會導致這件事情發生
+                    large input
+                    small output
+                    很強的衰減
+                    input經過衰減對output變化很小
+                    導致越接近top衰減越少
+                intuitive way to compute the derivatives...
+                    ∂C/∂w = ? ΔC/Δw
+                    bottom layer + Δw
+                        monitor output loss effect
+                        smaller gradients   
+                早年作法:
+                    train RBM:Restricted Boltzmann Machines
+                        認識好第一個layer
+                        一個一個layer training
+                改一下activation function:
+                    ReLU:Rectified Linear Unit
+                        input>=0:
+                            output=input
+                        input<0:
+                            output=0
+                        Reason:
+                            fast to compute
+                            biologic reason
+                            inifinite sigmoid with differenct biases
+                            Vanishing gradient problem
+                                when input<0
+                                    remove the neural
+                                when input>=output
+                                    linear
+                                from a thinner linear network
+                                    does not have smaller gradients
+                                    smaller gradients on bottom的問題了
+                        原本不是希望nerual network是一個non-learning funciton
+                            所以才用deep learning
+                            用ReLU又變成linear function
+                            但是整個model還是non-linear funciton
+                                當每個neuron做operatoin
+                                    operation region一樣時
+                                        linear function
+                                當input做比較大的改變
+                                    operation region變化時
+                                        non-linear function
+                        ReLU不能derivatives
+                            當input>=0
+                                gradient = 1
+                            當input<0
+                                gradient = 0
+                            不可能剛好=0
+                        換Relu的handwriting結果
+                    ReLU-variant
+                        Leaky ReLU
+                            避免input<0
+                                gradient = 0
+                            input>0
+                                a=z
+                            input<0
+                                a=0.001z
+                        Parametric ReLU
+                            input>0
+                                a=z
+                            input<0
+                                a=αz
+                                α training by neural
+                    Maxout network
+                        Learnable activation funciton
+                            Activateion function in maxout network can be any piecewise linear convex function
+                            How many pieces depending on how many elements in a group                                    
+                        ReLU is a special case in Maxout
+                            ReLU:
+                                input:x
+                                z = x*w+b
+                                a = ReLU(z)
+                            z = w*x+b
+                            Maxout:
+                                input:x
+                                z1 = x*w1+b
+                                z2 = x*0+0
+                                a = max(z1,z2)
+                        maxout ex:
+                            input:[x1,x2]
+                            [x1w1+x2w2 , x2w3+x2w4, x1w5+x2w6, x1w7+x2w8 ] 
+                                groupping 事先決定                                        
+                                    [x1w1+x2w2,x2w3+x2w4]
+                                    [x1w5+x2w6,x1w7+x2w8]
+                                同group選value最大的output
+                                    類似maxpooling
+                                    一個layer的maxpooling
+                        you can have more than 2 elements in a group
+                            可以調整的參數
+                        maxout-training
+                            given a training data x,we know which z would be the max
+                                當決定max之後就是一個linear operation
+                                沒接到的element就沒用了
+                                又產生一個比較細長的nerual network
+                                    只training這細長的參數
+                                沒training到的怎麼辦?
+                                    當input變化
+                                        max值會變化
+                                            network structure會變化
+                                            每個weight應該都會被train到
+    adaptive learning rate
+        adagrad
+            每一個parameter都有不同lr
+                w^t+1 = w^t - η * g^t / (√*Σ_i=0^t(g^i)^2)
+                每個參數的η除以過去所有gradient值平方和開根號
+            平坦的給予比較大的lr
+            陡峭的給予比較小的lr
+        Error surface can be very complex when training NN
+            smaller learning rate
+            need more dynamic adjust lr
+                RMSProp: hinton mooc course
+                    cite the course link
+                    w^1 <- w^0 - η/σ^0 * g^0
+                        σ^0 = g^0
+                    w^2 <- w^0 - η/σ^1 * g^1
+                        σ^1 = √[α*(σ^0)^2 + (1-α)(g^1)^2]
+                            α: adjustable parameter
+                                α小一點 傾向相信新的gradient對error surface陡峭程度
+                                α大一點 傾向相信歷史的gradient對error surface陡峭程度
+                    w^3 <- w^0 - η/σ^2 * g^2
+                        σ^2 = √[α*(σ^1)^2 + (1-α)(g^2)^2]
+                    w^t+1 <- w^0 - η/σ^t * g^t
+                        σ^t = √[α*(σ^(t-1))^2 + (1-α)(g^t)^2]
+        Hard to find optimal network parameters
+            stuck at saddle point
+                ∂L/∂w=0
+            stuck at local minimum
+                ∂L/∂w=0
+            very slow at the plateau
+                ∂L/∂w≈0
+            tom mark 2007 say
+                you don't worry about local minimum problems
+                    error surface很少local minimum
+                        你要一個local minimum是每一個dimension都有山谷形狀
+                            山谷出現率是p
+                            network參數非常多
+                            每一個都是山谷谷底的機率
+                                參數越多local minimum機率就越低
+                                因此參數夠多通常你認為是local minimum的地方應該都很接近global minimum了
+            heuristics method for plateau , local minimum problems
+                in physical world
+                    Momentum
+                        how about put this phenomenon in gradients descent
+                        how to use?
+                            movement of last step minus gradient at present
+                                這次的Gradient+前次的方向
+                            start point
+                                θ^0
+                            movement
+                                v^0=0
+                            gradient
+                                ∇L(θ^0)
+                            movement
+                                v^1 = λv^0 - η∇L(θ^0)
+                                    原本走的方向還是有一定程度的影響
+                                λ: 手調參數
+                            move to 
+                                θ^1 = θ^0 + v^1
+                            gradient
+                                ∇L(θ^1)
+                            movement
+                                v^2 = λv^1 - η∇L(θ^1)
+                            move to 
+                                θ^2 = θ^1 + v^2
+                            v^i
+                                sum of all the previous gradients
+                                λ < 0 時
+                                    越久的gradient影響越小
+                        movement =
+                            negative of ∂L/∂w
+                            + Momentum
+                        still not guarantee reaching global minimum, but give some hope...
+                    Adam
+                        RMSProp + Momentum
+                    

@@ -1,194 +1,193 @@
-Brief Introduction of Deep Learning
-    Deep learning attract lots of attention
-        I believe you have seen lots of exciting results before.
-    Ups and downs of Deep Learning
-        1958: Preceptron (linear model)
-            Frank Roseblatt
-            很像logistic regression
-            沒有sigmod部分
-        1969: Preceptoron has limitation
-            MIT
-        1980s: Multi-layer preceptron
-            Do not have significant differenct from DNN today
-        1986: Backpropagation
-            Usually more than 3 hidden layer is not helpful
-                train不出好結果
-            Hiton
-        1989: 1 hidden layer is "good enough", why deep?
-        2006: RBM initialization (breakthougt)
-            restricted boltzmann machine做initialization
-        2009: GPU
-        2011: Start to be popular in speech recognition
-        2012: win ILSVRC image competition
-    Three Step of Deep Learning
-        Step1: define a set of function
-            neural network
-            different connection leads to different network structures
-            network parameters θ: all the weights and bias in the "neurons"
-            如何建立network - 手動建立
-                常見network
-                    Fully Connect Feedforward Network
-                        全部列出來連起來
-            1個neural network都知道參數值時
-                可以想像是一個function
-                    input: vector
-                    output: vector
-             如果參數值還沒確定
-                可以想像是function set
-                比較大的function set
-            layer說明
-                第一層: input layer
-                最後一層: output layer
-                中間n層: hidden layer
-                deep = many hidden layers
-                    alexnet(2012)
-                        8 layers
-                        error 16.4%          
-                    vgg(2014)
-                        19 layers
-                        error 7.3%
-                    googlenet(2014)
-                        22 layers
-                        6.7%
-                    residual network(2015)
-                        152 layers
-                        3.57%
-                martrix operation
-                    w_1 = [[1,-2],[-1,2]]  
-                    input_1 = [1,1]
-                    bias_1 = [1,0]
-                    input_1*w_1+bias_1
-                        = [[1,-2],[-1,2]] * [1,1] + [1,0] 
-                        = [4,-2]
-                    activate funciton : sigmod
-                        [4,-2] => [0.98,0.12]
-                    hidden layer1:
-                        weight matrix: w_1
-                        bais matrix: b_1
-                    hidden layer2:
-                        weight matrix: w_2
-                        bais matrix: b_2
-                    input matrix:x
-                    output y:
-                        a1 = σ(w_1*x+b_1)
-                        a2 = σ(w_2*a1+b_2)
-                        ...
-                        y = σ(w_L*aL-1+b_L)
-                        y = f(x) = 上述串起來
-                    矩陣運算優點就是可以用GPU加速
-                    在output layer之前的layer可以看成feature extractor replace
-                    feature engineering
-                    output layer = multi-class classifier
-                        用前一個layer的output當feature
-                        output layer會加入softmax function
-        Setp2: goodness of function
-            Loss for an Example
-                Given a set of parameters
-                target: label 1 => y^ = [1,0,0,0,0,0,0,0,0,0]
-                output: y = [y1,y2,...y10]
-                C(y,y^) = -Σ_i=1^10(y^lny_i)
-                    cross entropy
-        Setp3: pick the best function
-            total loss:
-                L = Σ_n=1^N C^n
-                find a function in function set that minimum total loss L
-                find a network parameters θ* that minimum total loss L
-            gradient descent
-                θ random initialization
-                compute ∂L/∂w1 ... ∂L/∂b1 ...
-                ∇L = [∂L/∂w1...∂L/∂b1 ...]
-                    gradient
-                    update parameters
-                        -η∂L/∂w1 ...
-                    重複更新
-                就做完deep learning的training
-                    even alpha go using this approach
-                Backpropagation:
-                    is an efficient way to compute ∂L/∂w in nerual network
-                        tensorflow
-                        caffe
-                        libdnn
-                        theano
-                        CNTK
-                        mxnet
-                        DASTNE
-                        pytorch
-        deep learning is so simple...
-            大象放進冰箱
-    Example Application
-        Input -> image
-            16x16=256 pixel
-            x1...x256
-            內容: 
-                no ink:0
-                ink:1
-        Output -> 數字
-            y1 is 1
-            y2 is 2
-            y10 is 0
-            輸出每個的機率
-            Each dimension represents the confidence of a digit
-        function:
-            neural network
-            inptut:256
-            output:10對應到數字
-            a function set containing the candidates for Handwriting Digital Recognition
-            用gradient descent找一個最適合參數做手寫辨識的function
-            You need to decide the network structure to let a good function in your function set.
-                input/output依照需求限制了
-                hidden layer要多少沒有限制了
-                    可以自己設計
-                    自己決定要多少個neurons
-                    決定差的function set
-                        大海撈針針不在海裡
-                    決定好的function set會很關鍵
-            FAQ
-                Q: How many layers? Home many neurons for each layer?
-                    Trial and Error + Intuition
-                    沒那麼容易
-                    有時候需要一些domain knowlege
-                    從以前找feature transformer變成找network structure
-                    語音辨識來說
-                        design network structure比feature transformer容易
-                        要抽一組好的feature已經太潛意識不好抽給machine使用
-                    影像也有類似語音辨識的狀況
-                    語音跟影像是最早開始用deep learning
-                    其他test來說就case by case
-                    deep learning於NLP上performance不是那麼好
-                    NLP進步量沒那麼多
-                        有人在說deep learning不適合NLP
-                        文字處理來說人是比較強的
-                        人可以很輕鬆設計rule
-                        長久而言文字處理也是很困難的
-                            慢慢會佔到優勢
-                                只是初期沒那麼快
-                Q: Can the structure be automatically determined?
-                    E.g. Evolutionary Artifical Neural Network
-                    目前還沒非常普及
-                    驚人應用都還不是用這方法
-                Q: Can we design the network strucure?
-                    Convolutional Neural Network (CNN)
-    deeper is better?
-        Layer X size=>word error rate(%)
-        1x2K=>24.2%
-        2x2K=>20.4%
-        3x2K=>18.4%
-        4x2K=>17.8%
-        5x2K=>17.2%
-        7x2K=>17.1%
-        Not surprised, more parameters, better performance
-    Universality Theorem
-        Any continuous function f
-            f: R^N -> R^M
-        Can be realized by network with one hidden layer
-        (given enough hidden neurons)
-    why "Deep" nerual network not "Fat" nerual network?
-        to be continue
-    other Course
-        machine learning and having it deep and structured
-            http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLSD15_2.html
-            6 hour version
-                http://www.slideshare.net/tw_dsconf/ss-62245351
-        nerual network and deep learning
-            http://neuralnetworksanddeeplearning.com/
-        deep learning
+Deep learning attract lots of attention
+    I believe you have seen lots of exciting results before.
+Ups and downs of Deep Learning
+    1958: Preceptron (linear model)
+        Frank Roseblatt
+        很像logistic regression
+        沒有sigmod部分
+    1969: Preceptoron has limitation
+        MIT
+    1980s: Multi-layer preceptron
+        Do not have significant differenct from DNN today
+    1986: Backpropagation
+        Usually more than 3 hidden layer is not helpful
+            train不出好結果
+        Hiton
+    1989: 1 hidden layer is "good enough", why deep?
+    2006: RBM initialization (breakthougt)
+        restricted boltzmann machine做initialization
+    2009: GPU
+    2011: Start to be popular in speech recognition
+    2012: win ILSVRC image competition
+Three Step of Deep Learning
+    Step1: define a set of function
+        neural network
+        different connection leads to different network structures
+        network parameters θ: all the weights and bias in the "neurons"
+        如何建立network - 手動建立
+            常見network
+                Fully Connect Feedforward Network
+                    全部列出來連起來
+        1個neural network都知道參數值時
+            可以想像是一個function
+                input: vector
+                output: vector
+            如果參數值還沒確定
+            可以想像是function set
+            比較大的function set
+        layer說明
+            第一層: input layer
+            最後一層: output layer
+            中間n層: hidden layer
+            deep = many hidden layers
+                alexnet(2012)
+                    8 layers
+                    error 16.4%          
+                vgg(2014)
+                    19 layers
+                    error 7.3%
+                googlenet(2014)
+                    22 layers
+                    6.7%
+                residual network(2015)
+                    152 layers
+                    3.57%
+            martrix operation
+                w_1 = [[1,-2],[-1,2]]  
+                input_1 = [1,1]
+                bias_1 = [1,0]
+                input_1*w_1+bias_1
+                    = [[1,-2],[-1,2]] * [1,1] + [1,0] 
+                    = [4,-2]
+                activate funciton : sigmod
+                    [4,-2] => [0.98,0.12]
+                hidden layer1:
+                    weight matrix: w_1
+                    bais matrix: b_1
+                hidden layer2:
+                    weight matrix: w_2
+                    bais matrix: b_2
+                input matrix:x
+                output y:
+                    a1 = σ(w_1*x+b_1)
+                    a2 = σ(w_2*a1+b_2)
+                    ...
+                    y = σ(w_L*aL-1+b_L)
+                    y = f(x) = 上述串起來
+                矩陣運算優點就是可以用GPU加速
+                在output layer之前的layer可以看成feature extractor replace
+                feature engineering
+                output layer = multi-class classifier
+                    用前一個layer的output當feature
+                    output layer會加入softmax function
+    Setp2: goodness of function
+        Loss for an Example
+            Given a set of parameters
+            target: label 1 => y^ = [1,0,0,0,0,0,0,0,0,0]
+            output: y = [y1,y2,...y10]
+            C(y,y^) = -Σ_i=1^10(y^lny_i)
+                cross entropy
+    Setp3: pick the best function
+        total loss:
+            L = Σ_n=1^N C^n
+            find a function in function set that minimum total loss L
+            find a network parameters θ* that minimum total loss L
+        gradient descent
+            θ random initialization
+            compute ∂L/∂w1 ... ∂L/∂b1 ...
+            ∇L = [∂L/∂w1...∂L/∂b1 ...]
+                gradient
+                update parameters
+                    -η∂L/∂w1 ...
+                重複更新
+            就做完deep learning的training
+                even alpha go using this approach
+            Backpropagation:
+                is an efficient way to compute ∂L/∂w in nerual network
+                    tensorflow
+                    caffe
+                    libdnn
+                    theano
+                    CNTK
+                    mxnet
+                    DASTNE
+                    pytorch
+    deep learning is so simple...
+        大象放進冰箱
+Example Application
+    Input -> image
+        16x16=256 pixel
+        x1...x256
+        內容: 
+            no ink:0
+            ink:1
+    Output -> 數字
+        y1 is 1
+        y2 is 2
+        y10 is 0
+        輸出每個的機率
+        Each dimension represents the confidence of a digit
+    function:
+        neural network
+        inptut:256
+        output:10對應到數字
+        a function set containing the candidates for Handwriting Digital Recognition
+        用gradient descent找一個最適合參數做手寫辨識的function
+        You need to decide the network structure to let a good function in your function set.
+            input/output依照需求限制了
+            hidden layer要多少沒有限制了
+                可以自己設計
+                自己決定要多少個neurons
+                決定差的function set
+                    大海撈針針不在海裡
+                決定好的function set會很關鍵
+        FAQ
+            Q: How many layers? Home many neurons for each layer?
+                Trial and Error + Intuition
+                沒那麼容易
+                有時候需要一些domain knowlege
+                從以前找feature transformer變成找network structure
+                語音辨識來說
+                    design network structure比feature transformer容易
+                    要抽一組好的feature已經太潛意識不好抽給machine使用
+                影像也有類似語音辨識的狀況
+                語音跟影像是最早開始用deep learning
+                其他test來說就case by case
+                deep learning於NLP上performance不是那麼好
+                NLP進步量沒那麼多
+                    有人在說deep learning不適合NLP
+                    文字處理來說人是比較強的
+                    人可以很輕鬆設計rule
+                    長久而言文字處理也是很困難的
+                        慢慢會佔到優勢
+                            只是初期沒那麼快
+            Q: Can the structure be automatically determined?
+                E.g. Evolutionary Artifical Neural Network
+                目前還沒非常普及
+                驚人應用都還不是用這方法
+            Q: Can we design the network strucure?
+                Convolutional Neural Network (CNN)
+deeper is better?
+    Layer X size=>word error rate(%)
+    1x2K=>24.2%
+    2x2K=>20.4%
+    3x2K=>18.4%
+    4x2K=>17.8%
+    5x2K=>17.2%
+    7x2K=>17.1%
+    Not surprised, more parameters, better performance
+Universality Theorem
+    Any continuous function f
+        f: R^N -> R^M
+    Can be realized by network with one hidden layer
+    (given enough hidden neurons)
+why "Deep" nerual network not "Fat" nerual network?
+    to be continue
+other Course
+    machine learning and having it deep and structured
+        http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLSD15_2.html
+        6 hour version
+            http://www.slideshare.net/tw_dsconf/ss-62245351
+    nerual network and deep learning
+        http://neuralnetworksanddeeplearning.com/
+    deep learning

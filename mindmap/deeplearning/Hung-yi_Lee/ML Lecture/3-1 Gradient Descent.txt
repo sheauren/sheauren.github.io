@@ -1,192 +1,191 @@
-Gradient Descent
-    In Step3, we have to solve the following optimization problem
+In Step3, we have to solve the following optimization problem
+    θ* = arg min_θ L(θ)
+        L: loss function
+        θ: parameters
+    suppose the θ has two variables {θ_1,θ_2}
+    Randomly start at θ^0 = [θ_1^0 , θ_2^0]^T
+    [θ_1^1 , θ_2^1]^T = [θ_1^0 , θ_2^0]^T - η[∂*L(θ_1^0)/∂*θ_1 , ∂*L(θ_2^0)/∂*θ_2]^T
+    重複計算
+    θ^1 = θ^0 - η∇L(θ^0)
+    θ^2 = θ^1 - η∇L(θ^1)
+Tip 1: Tuning your learning rates
+    set the learning rate η carefully
+        太小 - 會很慢
+        太大 - 永遠沒辦法走下去
+        超大 - update反而爬上去
+    visualized只有在3維以下才有辦法
+        只能visualized loss跟參數的改變狀態
+        太小 - loss慢慢下滑
+        太大 - loss快速下降就卡住
+        超大 - loss飛出去
+        如何調的剛剛好
+            把圖畫出來看走法就知道怎麼了
+            要確定是穩定的下降
+    Adaptive learning rates
+        popular & simple idea:
+            reduce the learning rate by some factor every few epochs
+                at the beginning, , we are far from the destination
+                    so we use larger learning rate
+                after several  epochs, we are close to the destination
+                    so we reduce the learning rate
+                ex:
+                    1/t decay: η^t = η/√(t+1)
+        learning rate cannot be one-size-fits-all
+            giving different parameters different learning rates
+        Vanilla gradient descent:
+            w^t+1 <- w^t - η^t * g^t
+                w is one parameters
+                η^t = η/√(t+1)
+                g^t = ∂L(θ^t)/∂w
+            Larger gradient
+                larger step
+        Adagrad
+            divide the learning rate of each parameter by the root mean square of its previous derivatives
+            update function:
+                w^t+1 <- w^t - η^t/σ^t * g^t
+                    σ^t
+                        root mean square of the previous derivatives of parameter W
+                            parameter dependent                         
+                w^1 = w^0 - η^0/σ^0 * g^0
+                    σ^0 = √(g^0)^2
+                w^2 = w^1 - η^1/σ^1 * g^1
+                    σ^1 = √1/2*[(g^0)^2+(g^1)^2]
+                w^t+1 = w^t - η^t/σ^t * g^t
+                    σ^t = √1/t*Σ_i=0^t(g^i)^2
+                公式消去後最終結果
+                    w^t+1 = w^t - η * g^t / (√*Σ_i=0^t(g^i)^2)
+                g^t
+                    Larger gradient=>larger step
+                    一次微分
+                Σ_i=0^t(g^i)^2
+                    Larger gradient=>smaller step
+                    與原本要做的事情有點衝突
+                    二次微分的預估值
+                        怎麼不算二次微分
+                            降低運算量但可以估算到2次微分值
+                        想像在一次微分裡面做sample作平均算2次微分值
+                Intuitive Reason                   
+                    How surprise it is
+                        Adagrad是解決反差的問題
+                            每次gradient都很穩定忽然有一個peak反差出現
+                                忽然出現很大
+                                忽然出現好小
+                                強調反差效果
+                                    看反差有多大
+                        y = ax^2+bx+c
+                        |∂y/∂x| = |2ax+b|
+                        x_0 best step
+                            |x_0+(b/2a)| = |2ax_0+b|/2a
+                                |2ax_0+b| =  |∂y/∂x|
+                                微分值越大離得越遠
+                                    成正比
+                                    只有一個參數才成立
+                                    多參數不一定成立
+                                    跨參數比較這個想法會有問題
+                                |2ax_0+b|/2a 的2ax_0+b在二次微分
+                                    2a出現在分母項
+                                        他不只是正比於一次微分大小還反比於2次微分大小
+                                    最好的step應該是考慮
+                                        |First derviative|/Second derivative
+Tip 2: Stochastic Gradient Descent
+    Loss function:
+        L = ∑n(y^n-(b+∑w_i*x_i^n))^2
+    Gradient Descent:
+        θ^(i+1) = θ^i - η∇L(θ^i)
+    思路
+        Pick an example x^n
+            隨機或依照順序
+                deep learning隨機取有幫助
+        L^n = (y^n-(b+∑w_i*x_i^n))^2
+            只算一個example的loss
+            θ^i = θ^(i-1) - η∇L(θ^(i-1))
+                然後就update參數
+        看一個example就update一個參數
+            原本gradient descent有20個example
+                看完20個example update一次參數
+            SGD看一個example update一次參數
+                update 20次
+                步伐小且散但快
+Tip 3: Feature Scaling                                                    
+    y = b + w_1*x_1 + w_2*x_2
+    分布範圍限制縮小
+        讓不同feature scale是一樣的
+        避免相加之後feature都受到大數值的x
+        讓每個參數對loss影響比較合理
+            update參數會比較容易
+        常見作法
+            x_1,x_2,x_3
+                x_1^1,x_2^1,...
+                x_1^2,x_2^2,...
+                x_1^3,x_3^3,...
+            每一個dimension i都算
+                mean: mean_i
+                standard deviation: σ_i
+                x_i^r <= (x_i^r - m_i) / σ_i
+                    means of all dimension are 0
+                    the variances are all 1
+Gradient Descent Theory
+    When solving:
         θ* = arg min_θ L(θ)
-            L: loss function
-            θ: parameters
-        suppose the θ has two variables {θ_1,θ_2}
-        Randomly start at θ^0 = [θ_1^0 , θ_2^0]^T
-        [θ_1^1 , θ_2^1]^T = [θ_1^0 , θ_2^0]^T - η[∂*L(θ_1^0)/∂*θ_1 , ∂*L(θ_2^0)/∂*θ_2]^T
-        重複計算
-        θ^1 = θ^0 - η∇L(θ^0)
-        θ^2 = θ^1 - η∇L(θ^1)
-    Tip 1: Tuning your learning rates
-        set the learning rate η carefully
-            太小 - 會很慢
-            太大 - 永遠沒辦法走下去
-            超大 - update反而爬上去
-        visualized只有在3維以下才有辦法
-            只能visualized loss跟參數的改變狀態
-            太小 - loss慢慢下滑
-            太大 - loss快速下降就卡住
-            超大 - loss飛出去
-            如何調的剛剛好
-                把圖畫出來看走法就知道怎麼了
-                要確定是穩定的下降
-        Adaptive learning rates
-            popular & simple idea:
-                reduce the learning rate by some factor every few epochs
-                    at the beginning, , we are far from the destination
-                        so we use larger learning rate
-                    after several  epochs, we are close to the destination
-                        so we reduce the learning rate
-                    ex:
-                        1/t decay: η^t = η/√(t+1)
-            learning rate cannot be one-size-fits-all
-                giving different parameters different learning rates
-            Vanilla gradient descent:
-                w^t+1 <- w^t - η^t * g^t
-                    w is one parameters
-                    η^t = η/√(t+1)
-                    g^t = ∂L(θ^t)/∂w
-                Larger gradient
-                    larger step
-            Adagrad
-                divide the learning rate of each parameter by the root mean square of its previous derivatives
-                update function:
-                    w^t+1 <- w^t - η^t/σ^t * g^t
-                        σ^t
-                            root mean square of the previous derivatives of parameter W
-                                parameter dependent                         
-                    w^1 = w^0 - η^0/σ^0 * g^0
-                        σ^0 = √(g^0)^2
-                    w^2 = w^1 - η^1/σ^1 * g^1
-                        σ^1 = √1/2*[(g^0)^2+(g^1)^2]
-                    w^t+1 = w^t - η^t/σ^t * g^t
-                        σ^t = √1/t*Σ_i=0^t(g^i)^2
-                    公式消去後最終結果
-                        w^t+1 = w^t - η * g^t / (√*Σ_i=0^t(g^i)^2)
-                    g^t
-                        Larger gradient=>larger step
-                        一次微分
-                    Σ_i=0^t(g^i)^2
-                        Larger gradient=>smaller step
-                        與原本要做的事情有點衝突
-                        二次微分的預估值
-                            怎麼不算二次微分
-                                降低運算量但可以估算到2次微分值
-                            想像在一次微分裡面做sample作平均算2次微分值
-                    Intuitive Reason                   
-                        How surprise it is
-                            Adagrad是解決反差的問題
-                                每次gradient都很穩定忽然有一個peak反差出現
-                                    忽然出現很大
-                                    忽然出現好小
-                                    強調反差效果
-                                        看反差有多大
-                            y = ax^2+bx+c
-                            |∂y/∂x| = |2ax+b|
-                            x_0 best step
-                                |x_0+(b/2a)| = |2ax_0+b|/2a
-                                    |2ax_0+b| =  |∂y/∂x|
-                                    微分值越大離得越遠
-                                        成正比
-                                        只有一個參數才成立
-                                        多參數不一定成立
-                                        跨參數比較這個想法會有問題
-                                    |2ax_0+b|/2a 的2ax_0+b在二次微分
-                                        2a出現在分母項
-                                            他不只是正比於一次微分大小還反比於2次微分大小
-                                        最好的step應該是考慮
-                                            |First derviative|/Second derivative
-    Tip 2: Stochastic Gradient Descent
-        Loss function:
-            L = ∑n(y^n-(b+∑w_i*x_i^n))^2
-        Gradient Descent:
-            θ^(i+1) = θ^i - η∇L(θ^i)
-        思路
-            Pick an example x^n
-                隨機或依照順序
-                    deep learning隨機取有幫助
-            L^n = (y^n-(b+∑w_i*x_i^n))^2
-                只算一個example的loss
-                θ^i = θ^(i-1) - η∇L(θ^(i-1))
-                    然後就update參數
-            看一個example就update一個參數
-                原本gradient descent有20個example
-                    看完20個example update一次參數
-                SGD看一個example update一次參數
-                    update 20次
-                    步伐小且散但快
-    Tip 3: Feature Scaling                                                    
-        y = b + w_1*x_1 + w_2*x_2
-        分布範圍限制縮小
-            讓不同feature scale是一樣的
-            避免相加之後feature都受到大數值的x
-            讓每個參數對loss影響比較合理
-                update參數會比較容易
-            常見作法
-                x_1,x_2,x_3
-                    x_1^1,x_2^1,...
-                    x_1^2,x_2^2,...
-                    x_1^3,x_3^3,...
-                每一個dimension i都算
-                    mean: mean_i
-                    standard deviation: σ_i
-                    x_i^r <= (x_i^r - m_i) / σ_i
-                        means of all dimension are 0
-                        the variances are all 1
-    Gradient Descent Theory
-        When solving:
-            θ* = arg min_θ L(θ)
-        Each time we update the parameters, we obtain θ that makes L(θ) smaller
-            不保證都下降
-        Warning of Math
-            Formal Derivation
-                Suppose that θ has two variables {θ1,θ2}
-                一個Lose Fucntion跟初始點
-                    找某一個小範圍內最低點
-                        based on Taylor Series
-                            L(θ) ≈ L(a,b) + ∂L(a,b)/∂*θ_1 * (θ_1-a) + ∂L(a,b)/∂*θ_2 * (θ_2-b)
-                            s = L(a,b)
-                            u = ∂L(a,b)/∂*θ_1
-                            v = ∂L(a,b)/∂*θ_2
-                            L(θ) ≈ s+u(θ_1-a)+v(θ_2-a)
-                                * Not satisifed if the red circle (learning rate) is not small enough
-                                紅色圈圈夠小才會精確
-                                learning rate要無窮小才能保證這樣子
-                                當公式不成立則loss無法越來越小
-                                如果把Taylor Series二次式考慮進來
-                                    LR就可以設定大一點
-                                    但是不是很普及
-                                        因為要算二次微分
-                                        會多很多運算
-                                        可能無法承受不划算
-                            找最小loss
-                                (θ_1-a)^2 + (θ_2-b)^2 <= d^2
-                                ∆θ_1 = (θ_1-a)
-                                ∆θ_2 = (θ_2-b)
-                                ∆θ_1^2 + ∆θ_2^2 <= d^2
-                                vector
-                                    (∆θ_1,∆θ_2)
-                                    (u,v)
-                                    inner product
-                                        就會取得L
-                                    最小值就是選
-                                        只要跟(u,v)剛好反方向
-                                        拉到區圈邊緣
-                                    [∆θ_1,∆θ_2] = -η[u,v]
-                                    [θ_1,θ_2] = [a,b]-η[u,v]
-                                    [θ_1,θ_2] = [a,b]-η[∂L(a,b)/∂*θ_1,∂L(a,b)/∂*θ_2]
-                                    this is gradient descent
-                    更新位置再來一次
-                
-            Taylor Series
-                Let h(x) be any function inifitely differentiable around x = x_0
-                    h(x) = ∑_k=0^∞(h^(k)*(x_0)/k!) * (x-x_0)^k
-                    when x is close to x_0
-                        h(x) ≈ h(x_0)+h'(x_0)(x-x_0)
-                ex: h(x)=sin(x) around x_0 = π/4
-                    sin(x) = 1/√2 + (x-π/4)/√2 - (x-π/4)^2/2√2 - ...
-                    線圖來看差很多但於π/4會非常接近
-                h(x,y) = h(x_0,y_0) + ∂h(x_0,y_0)/∂x * (x-x_0) + ∂h(x_0,y_0)/∂y * (y-y_0) ...
-                    when x and y is close to x_0 and y_0
-                        h(x,y) ≈ h(x_0,y_0) + ∂h(x_0,y_0)/∂x * (x-x_0) + ∂h(x_0,y_0)/∂y * (y-y_0)
-    More Limitation of Gradient Descent
-        stuck at Local minimum
-            ∂L / ∂w = 0
-        stuck at saddle point 
-            ∂L / ∂w = 0
-        very slow at the plateau
-            ∂L / ∂w ≈ 0
-            你以為接近local minimum就停下來
-            可能是高原離很遠
+    Each time we update the parameters, we obtain θ that makes L(θ) smaller
+        不保證都下降
+    Warning of Math
+        Formal Derivation
+            Suppose that θ has two variables {θ1,θ2}
+            一個Lose Fucntion跟初始點
+                找某一個小範圍內最低點
+                    based on Taylor Series
+                        L(θ) ≈ L(a,b) + ∂L(a,b)/∂*θ_1 * (θ_1-a) + ∂L(a,b)/∂*θ_2 * (θ_2-b)
+                        s = L(a,b)
+                        u = ∂L(a,b)/∂*θ_1
+                        v = ∂L(a,b)/∂*θ_2
+                        L(θ) ≈ s+u(θ_1-a)+v(θ_2-a)
+                            * Not satisifed if the red circle (learning rate) is not small enough
+                            紅色圈圈夠小才會精確
+                            learning rate要無窮小才能保證這樣子
+                            當公式不成立則loss無法越來越小
+                            如果把Taylor Series二次式考慮進來
+                                LR就可以設定大一點
+                                但是不是很普及
+                                    因為要算二次微分
+                                    會多很多運算
+                                    可能無法承受不划算
+                        找最小loss
+                            (θ_1-a)^2 + (θ_2-b)^2 <= d^2
+                            ∆θ_1 = (θ_1-a)
+                            ∆θ_2 = (θ_2-b)
+                            ∆θ_1^2 + ∆θ_2^2 <= d^2
+                            vector
+                                (∆θ_1,∆θ_2)
+                                (u,v)
+                                inner product
+                                    就會取得L
+                                最小值就是選
+                                    只要跟(u,v)剛好反方向
+                                    拉到區圈邊緣
+                                [∆θ_1,∆θ_2] = -η[u,v]
+                                [θ_1,θ_2] = [a,b]-η[u,v]
+                                [θ_1,θ_2] = [a,b]-η[∂L(a,b)/∂*θ_1,∂L(a,b)/∂*θ_2]
+                                this is gradient descent
+                更新位置再來一次
+            
+        Taylor Series
+            Let h(x) be any function inifitely differentiable around x = x_0
+                h(x) = ∑_k=0^∞(h^(k)*(x_0)/k!) * (x-x_0)^k
+                when x is close to x_0
+                    h(x) ≈ h(x_0)+h'(x_0)(x-x_0)
+            ex: h(x)=sin(x) around x_0 = π/4
+                sin(x) = 1/√2 + (x-π/4)/√2 - (x-π/4)^2/2√2 - ...
+                線圖來看差很多但於π/4會非常接近
+            h(x,y) = h(x_0,y_0) + ∂h(x_0,y_0)/∂x * (x-x_0) + ∂h(x_0,y_0)/∂y * (y-y_0) ...
+                when x and y is close to x_0 and y_0
+                    h(x,y) ≈ h(x_0,y_0) + ∂h(x_0,y_0)/∂x * (x-x_0) + ∂h(x_0,y_0)/∂y * (y-y_0)
+More Limitation of Gradient Descent
+    stuck at Local minimum
+        ∂L / ∂w = 0
+    stuck at saddle point 
+        ∂L / ∂w = 0
+    very slow at the plateau
+        ∂L / ∂w ≈ 0
+        你以為接近local minimum就停下來
+        可能是高原離很遠

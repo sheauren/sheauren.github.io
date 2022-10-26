@@ -1,311 +1,309 @@
-nodejs
-    feature
-        non-blocking I/O
-        event drivning
-    work model
-        client
-        event loop
-        non-blocking worker		
-    environment
-        commonjs
-            exports
-                export function
-                export varibles
-            require
-            module
-                module.exports
-                    export all
-            __filename
-            __dirname - js file folder
-        global
-            global varibles
-        Buffer - binary data object            			
-        process
-            argv
-            argv0
-            execArgv
-            execPath
-			env
-				PATH
-			cwd - run node folder
-        timer
-            fastest - process.nextTick
-            faster - setTimeout
-            next - setImmediate          
-            
-        require        
-            load as file
-                file
-                file.js
-                file.json
-                file.node
-            caching
-                after first load
-            sys modules
-                fs
-            3-party modules
-                npm install
-                yarm add            
-    api
-        path
-            win32
-            posix
-            basename
-            extname
-            dirname
-            normalize
-            join
-            resolve
-				./ runtime folder
-            parse
-            format
-                dir > root
-                base >    name,ext
-            sep - split path(ex: / \ )
-            delimter - split PATH(ex: ;,:)
-				win32.delimter ;
-				posfix.delmter :
-        Buffer
-			alloc - clear 0
-			unsafeAlloc
-			from
-				array
-				string
-				string encoding
-			byteLength
-			isBuffer
-			concat
-			buf object
-				length
-				indexOf
-				copy
-				fill
-				equals
-			StringDecoder
-				write(buf)
-        event
-			EventEmitter - class extends
-			on(event,fn)
-			emit(eventname,argv)
-			removeListener(eventname,fn)
-			removeAllListeners
-        fs
-			unlink
-			readFile(path,('utf-8'),(err,data)=>{});
-			readFileSync
-			writeFile
-			stat(path,(err,stats)=>{});
-				stats.isFile
-				stats.isDirectory
-				stats.size
-				stats.ctime
-			rename
-			readdir
-			mkdir
-			rmdir
-			watch
-			createReadStream
-			createWriteStream
-        child_process
-            exec
-                mac "darwin"
-                    exec(`open ${url}`)
-                win "win32"
-                    exec(`start ${url}`)
+feature
+    non-blocking I/O
+    event drivning
+work model
+    client
+    event loop
+    non-blocking worker		
+environment
+    commonjs
+        exports
+            export function
+            export varibles
+        require
+        module
+            module.exports
+                export all
+        __filename
+        __dirname - js file folder
+    global
+        global varibles
+    Buffer - binary data object            			
+    process
+        argv
+        argv0
+        execArgv
+        execPath
+        env
+            PATH
+        cwd - run node folder
+    timer
+        fastest - process.nextTick
+        faster - setTimeout
+        next - setImmediate          
+        
+    require        
+        load as file
+            file
+            file.js
+            file.json
+            file.node
+        caching
+            after first load
+        sys modules
+            fs
+        3-party modules
+            npm install
+            yarm add            
+api
+    path
+        win32
+        posix
+        basename
+        extname
+        dirname
+        normalize
+        join
+        resolve
+            ./ runtime folder
+        parse
+        format
+            dir > root
+            base >    name,ext
+        sep - split path(ex: / \ )
+        delimter - split PATH(ex: ;,:)
+            win32.delimter ;
+            posfix.delmter :
+    Buffer
+        alloc - clear 0
+        unsafeAlloc
+        from
+            array
+            string
+            string encoding
+        byteLength
+        isBuffer
+        concat
+        buf object
+            length
+            indexOf
+            copy
+            fill
+            equals
+        StringDecoder
+            write(buf)
+    event
+        EventEmitter - class extends
+        on(event,fn)
+        emit(eventname,argv)
+        removeListener(eventname,fn)
+        removeAllListeners
+    fs
+        unlink
+        readFile(path,('utf-8'),(err,data)=>{});
+        readFileSync
+        writeFile
+        stat(path,(err,stats)=>{});
+            stats.isFile
+            stats.isDirectory
+            stats.size
+            stats.ctime
+        rename
+        readdir
+        mkdir
+        rmdir
+        watch
+        createReadStream
+        createWriteStream
+    child_process
+        exec
+            mac "darwin"
+                exec(`open ${url}`)
+            win "win32"
+                exec(`start ${url}`)
 
-        http
-            simple_server.js
-                const server = http.createServer((req,res)=>{
-                    // url = req.url
-                    res.statusCode=200
-                    res.setHeader('Content-Type','text/plain')
-                    res.end("hello world\n")
-                })
-                server.listen(3000,'127.0.0.1',()=>{
-                    console.log('server running at http://127.0.0.1:3000')
-                })
-                run server:
-                    node simple_server.js
-            compress
-                config.compress: /\.(html|js|css|md)/
-                const {createGzip,createDeflate} = require('zlib')
-                acceptEncoding = req.headers['accept-encoding']
-                if(!filePath.match(config.compress)){
-                    return rs
+    http
+        simple_server.js
+            const server = http.createServer((req,res)=>{
+                // url = req.url
+                res.statusCode=200
+                res.setHeader('Content-Type','text/plain')
+                res.end("hello world\n")
+            })
+            server.listen(3000,'127.0.0.1',()=>{
+                console.log('server running at http://127.0.0.1:3000')
+            })
+            run server:
+                node simple_server.js
+        compress
+            config.compress: /\.(html|js|css|md)/
+            const {createGzip,createDeflate} = require('zlib')
+            acceptEncoding = req.headers['accept-encoding']
+            if(!filePath.match(config.compress)){
+                return rs
+            }
+            if (!acceptEncoding || acceptEncoding.match(/\b(gzip|deflate)\b/){
+                return rs
+            }
+            if(acceptEncoding.match(/\bgzip\b/)){
+                res.setHeader('Content-Encoding','gzip')
+                return res.pipe(createGzip())
+            }
+            if(acceptEncoding.match(/\deflate\b/)){
+                res.setHeader('Content-Encoding','gzip')
+                return res.pipe(createDeflate())
+            }
+        range
+            range = [start]-[end]
+            Accept-Ranges:bytes
+            Content-Range: bytes start-end/total
+            (totalSize,req,res)=>{
+                const range = req.headers['range']
+                if (!range){
+                    return {code:200}
                 }
-                if (!acceptEncoding || acceptEncoding.match(/\b(gzip|deflate)\b/){
-                    return rs
+                const sizes=range.match(/bytes=(\d*)-(\d*)/)
+                const end = sizes[2]||totalSize-1
+                const start = sizes[1]||totalSize-end
+                if (start>end||start<0||end>totalSize){
+                    return {code:200}
                 }
-                if(acceptEncoding.match(/\bgzip\b/)){
-                    res.setHeader('Content-Encoding','gzip')
-                    return res.pipe(createGzip())
+                res.setHeader('Accept-Ranges','bytes')
+                res.setHeader('Content-Ranges',`bytes ${start}-${end}/${totalSize}`)
+                res.setHeader('Content-Length',end-start)
+                //rs =  fs.createReadStream(filePath,{start:start,end:end})
+                return {
+                    code:206,                        
+                    start:parseInt(start),
+                    end:parseInt(end)
                 }
-                if(acceptEncoding.match(/\deflate\b/)){
-                    res.setHeader('Content-Encoding','gzip')
-                    return res.pipe(createDeflate())
+            }
+        no-cache
+            Pragma: no-cache
+            Cache-Control: no-store
+                always 200
+            Cache-Control: no-cache 
+                200
+                304
+        cache
+            config:
+                maxAge:600
+                expries:true
+                cacheControl:true
+                lastModified:false
+                etag:true
+            client cache
+            check cache timeout
+                304
+            header
+                Expries,Cache-Control
+                If-Modified-Since/Last-Modified
+                If-None-Match/ETag
+            refershRes(stats,res)
+                if(expries)
+                    res.setHeader('Expries',(Date.now()+maxAge*1000)).toUTCString())
+                if(cacheControl)
+                    res.setHeader('Cache-Control',`public,max-age=${maxAge})
+                if(lastModified)
+                    res.setHeader('Last-Modified',stats,.mtime)
+                if(etag)
+                    res.setHeader('ETag',`${stats.size}-${stats.mtime}`)
+            isFresh(stats,req,res)
+                refreshRes(stats,res)
+                const lastModified = req.headers['if-modified-since']
+                const etag = req.headers['if-none-match']
+                if (!lastModified && !etag)                       
+                    return false
+                if (lastModified && lastModified!==req.getHeader('Last-Modified')))
+                    return false
+                if (etag!==req.getHeader('ETag'))
+                    return false
+                return true
+            ifFresh
+                res.statusCode=304
+                res.end()
+                return
+    assert
+        equal
+        deepEqual
+        fail
+        doesNot
+        ok
+        throws
+        
+register project to global
+    package.json
+        versoin "0.0.1"
+        bin
+            'anydoor':'bin/anydoor'
+            bin/anydoor
+                #! /usr/bin/env node
+                require('../src/index')
+    readme.md
+    cmd
+        npm login
+        npm publish
+npm modules    
+    mime
+        file mapping content-type
+    Handlebars
+        html template like mustache
+            template_source:
+                <title>{{title}}</title>
+                {{#each files}}
+                    <a href="/{{dir}}//{{this}}">{{this}}</a>
+                {{/each}}
+            template = Handlerbarsc.complie(template_source)
+            varibles:
+                files=[...]
+                data = {
+                    title:'title',
+                    files
                 }
-            range
-                range = [start]-[end]
-                Accept-Ranges:bytes
-                Content-Range: bytes start-end/total
-                (totalSize,req,res)=>{
-                    const range = req.headers['range']
-                    if (!range){
-                        return {code:200}
-                    }
-                    const sizes=range.match(/bytes=(\d*)-(\d*)/)
-                    const end = sizes[2]||totalSize-1
-                    const start = sizes[1]||totalSize-end
-                    if (start>end||start<0||end>totalSize){
-                        return {code:200}
-                    }
-                    res.setHeader('Accept-Ranges','bytes')
-                    res.setHeader('Content-Ranges',`bytes ${start}-${end}/${totalSize}`)
-                    res.setHeader('Content-Length',end-start)
-                    //rs =  fs.createReadStream(filePath,{start:start,end:end})
-                    return {
-                        code:206,                        
-                        start:parseInt(start),
-                        end:parseInt(end)
-                    }
-                }
-            no-cache
-                Pragma: no-cache
-                Cache-Control: no-store
-                    always 200
-                Cache-Control: no-cache 
-                    200
-                    304
-            cache
-                config:
-                    maxAge:600
-                    expries:true
-                    cacheControl:true
-                    lastModified:false
-                    etag:true
-                client cache
-                check cache timeout
-                    304
-                header
-                    Expries,Cache-Control
-                    If-Modified-Since/Last-Modified
-                    If-None-Match/ETag
-                refershRes(stats,res)
-                    if(expries)
-                        res.setHeader('Expries',(Date.now()+maxAge*1000)).toUTCString())
-                    if(cacheControl)
-                        res.setHeader('Cache-Control',`public,max-age=${maxAge})
-                    if(lastModified)
-                        res.setHeader('Last-Modified',stats,.mtime)
-                    if(etag)
-                        res.setHeader('ETag',`${stats.size}-${stats.mtime}`)
-                isFresh(stats,req,res)
-                    refreshRes(stats,res)
-                    const lastModified = req.headers['if-modified-since']
-                    const etag = req.headers['if-none-match']
-                    if (!lastModified && !etag)                       
-                        return false
-                    if (lastModified && lastModified!==req.getHeader('Last-Modified')))
-                        return false
-                    if (etag!==req.getHeader('ETag'))
-                        return false
-                    return true
-                ifFresh
-                    res.statusCode=304
-                    res.end()
-                    return
-        assert
-            equal
-            deepEqual
-            fail
-            doesNot
-            ok
-            throws
+            template.
             
-    register project to global
-        package.json
-            versoin "0.0.1"
-            bin
-                'anydoor':'bin/anydoor'
-                bin/anydoor
-                    #! /usr/bin/env node
-                    require('../src/index')
-        readme.md
-        cmd
-            npm login
-            npm publish
-    npm modules    
-        mime
-            file mapping content-type
-        Handlebars
-            html template like mustache
-                template_source:
-                    <title>{{title}}</title>
-                    {{#each files}}
-                        <a href="/{{dir}}//{{this}}">{{this}}</a>
-                    {{/each}}
-                template = Handlerbarsc.complie(template_source)
-                varibles:
-                    files=[...]
-                    data = {
-                        title:'title',
-                        files
-                    }
-                template.
-                
-        chalk
-            change terminal color
-            chalk.green('text')
-        supervisor
-            debug runtime restart server
-                supervisor simple_server.js
-        yargs
-            const yargs = require('yargs')
-            const argv = yargs
-                .usgae('anywhere [options]')
-                .option('p',{
-                    alias:'port',
-                    describ:'port number',
-                    default:9527
-                })
-                .option('h',{
-                    alias:'host',
-                    describ:'host name',
-                    default:'127.0.0.1'
-                })
-                .option('d',{
-                    alias:'root',
-                    describ:'root path',
-                    default:process.cwd()
-                })
-                .version()
-                .alias('v','version')
-                .help()
-                .argv()
-    promise/async
-		promisify
-			util.promisify(fs.readFile).read
-                when in non async function
-			then
-			catch
-		promise
-			return new promise
-			resolve
-			reject
-		aync/await
-			aync function: read = util.promisify(fs.readFile)
-			await call: await read
-    debug
-        inspect
-            node --inspect
-            node --inspect-brk
-        chrome
-            plugin - Nodejs Inspector Manager
-            chrome://inspect
-        vscode
-    plugin
-        .editconfig
-        .esLint   
-            to see esLint mindmap         
-        .gitignore
-    
+    chalk
+        change terminal color
+        chalk.green('text')
+    supervisor
+        debug runtime restart server
+            supervisor simple_server.js
+    yargs
+        const yargs = require('yargs')
+        const argv = yargs
+            .usgae('anywhere [options]')
+            .option('p',{
+                alias:'port',
+                describ:'port number',
+                default:9527
+            })
+            .option('h',{
+                alias:'host',
+                describ:'host name',
+                default:'127.0.0.1'
+            })
+            .option('d',{
+                alias:'root',
+                describ:'root path',
+                default:process.cwd()
+            })
+            .version()
+            .alias('v','version')
+            .help()
+            .argv()
+promise/async
+    promisify
+        util.promisify(fs.readFile).read
+            when in non async function
+        then
+        catch
+    promise
+        return new promise
+        resolve
+        reject
+    aync/await
+        aync function: read = util.promisify(fs.readFile)
+        await call: await read
+debug
+    inspect
+        node --inspect
+        node --inspect-brk
+    chrome
+        plugin - Nodejs Inspector Manager
+        chrome://inspect
+    vscode
+plugin
+    .editconfig
+    .esLint   
+        to see esLint mindmap         
+    .gitignore

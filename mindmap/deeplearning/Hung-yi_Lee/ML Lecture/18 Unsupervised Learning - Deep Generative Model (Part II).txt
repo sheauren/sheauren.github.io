@@ -1,268 +1,267 @@
-18 Unsupervised Learning - Deep Generative Model (Part II)
-    Why VAE?
-        Intuitive Reason
-            AE
-                input:
-                    滿月
-                        code(滿月)
-                            output:
-                                滿月
-                input:
-                    弦月
-                        code(弦月)
-                            output:
-                                弦月
-                code(弦月跟滿月中間)
-                    output:
-                        弦月跟滿月中間?
-                        未知的結果
-                            可能是另一個東西
-                        non-linear NN很難預測
-            VAE
-                input:
-                    滿月+noise
-                        code(滿月)
-                        區間範圍變大都算滿月
-                            output:
-                                滿月
-                input:
-                    弦月+noise
-                        code(弦月)
-                        區間範圍變大都算弦月
-                            output:
-                                弦月
-                code(弦月跟滿月中間)
-                    output:
-                        弦月跟滿月重疊的資料                        
-                        VAE training
-                            minimize mean square error
-                        產生介於滿月跟弦月的圖        
-                VAE公式解釋
-                    input -> NN Encoder -> 
-                        兩個vector
-                            [m1,m2,m3]
-                                原本的code
-                            [σ1,σ2,σ3]                    
-                                the variance of noise is automatically learned
-                                你的noise該要有多大
-                        noise
-                            From a normal distribution [e1,e2,e3]
-                        [c1,c2,c3]
-                            代表code+noise
-                                c = exp(σ)*e + m
-                        NN Decoder
-                            將c1,c2,c3 reconstruct回原本的圖
-                        Output
-                            原本image            
-                        minimum
-                            reconstruction error
-                                只有這個是不夠的
-                                因為variance是自己學的
-                                    machine給他0就最好
-                                    需要強迫variance不能太小
-                                        限制variance
-                                            Σ_i=1^3 ( exp(σi) - (1+σi) + (mi)^2 )
-                                                we want σi close to 0
-                                                    variance close to 1
-                                                (mi)^2
-                                                    L2 norm
-        back to what we want to do?
-            每張寶可夢的圖都是高維空間的一個點
-                estimate the probability distribution
-                    P(x)
-                        x is a vector
-                    Gaussain Mixture Model
-                        P(x) = Σ_m P(m)*P(x|m)
-                            how to sample data?
-                                m~P(m) (multinomial)
-                                    multinomial distribution
-                                        決定sample哪個Gaussian
-                                    m is an integer
-                                    x|m~N(μ^m,Σ^m)
-                                        每個gaussian有
-                                            自己的 mean
-                                                μ^m
-                                            自己的 variance
-                                                Σ^m 
-                                            sample x
-                            each x you generate is from a mixture
-                                distributed representation is better than cluster
-                        z~N(0,I)
-                            z is a vector from normal distribution
-                                each dimension of z represents an attribute
-                                    根據z決定mean跟variance
-                                        x|z~N(μ(z),σ(z))
-                                            假設μ,σ都來自一個function
-                                            gaussain對應位置由function決定
-                                            從normal distribution產生無窮多個gaussain
-                                            這個function怎麼找
-                                                NN
-                                                    input
-                                                        Z
-                                                    output
-                                                        mean
-                                                        variance
-                        P(x) = ∫_z P(z)P(x|z)dz
-                            P(z)
-                                is normal distribution
-                            x|z~N(μ(z),σ(z))
-                                μ(z),σ(z)
-                                    is going to be estimated
-                                    L = Σ_x^z log P(x)
-                                        maximizing the likelihood of th observed x
-                                        調整NN裡面參數形成maximum
-                                decoder
-                            we need another distribution q(z|x)                                        
-                                x-> NN'
-                                    μ'(x)
-                                    σ'(x)                                            
-                                z|x~N(μ'(x),σ'(x))
-                                encoder
-                            every though z is from N(0,I),P(x) can be very complex
-                                為什麼sample是從gaussain
-                                    sample曲線也可以是朵花
-                                        自己設計
-                                    gaussain是分布比較合理的設計
-                                    不用擔心sample曲線的設計
-                                        NN非常powerful可以present任何function
-                            看公式
-                                P(x) = ∫_z P(z)P(x|z)dz
-                                    L = Σ_x^z log P(x)
-                                        log P(x) = ∫_z q(z|x)log P(x)dz
-                                            q(z|x) can be any distribution
-                                            log P(x) = ∫_z q(z|x)log P(z,x)/P(z|x) * dz
-                                                log P(x) = ∫_z q(z|x)log P(z,x)q(z,x)/q(z,x)P(z|x) * dz
-                                                    log P(x) = ∫_z q(z|x)log P(z,x)/q(z,x) * dz + ∫_z q(z|x)log q(z,x)/P(z|x) * dz
-                                                        ∫_z q(z|x)log P(z,x)/q(z,x) * dz
-                                                            lower bound:Lb
-                                                                >= ∫_z q(z|x)log P(x,z)P(z)/q(z,x) * dz
+Why VAE?
+    Intuitive Reason
+        AE
+            input:
+                滿月
+                    code(滿月)
+                        output:
+                            滿月
+            input:
+                弦月
+                    code(弦月)
+                        output:
+                            弦月
+            code(弦月跟滿月中間)
+                output:
+                    弦月跟滿月中間?
+                    未知的結果
+                        可能是另一個東西
+                    non-linear NN很難預測
+        VAE
+            input:
+                滿月+noise
+                    code(滿月)
+                    區間範圍變大都算滿月
+                        output:
+                            滿月
+            input:
+                弦月+noise
+                    code(弦月)
+                    區間範圍變大都算弦月
+                        output:
+                            弦月
+            code(弦月跟滿月中間)
+                output:
+                    弦月跟滿月重疊的資料                        
+                    VAE training
+                        minimize mean square error
+                    產生介於滿月跟弦月的圖        
+            VAE公式解釋
+                input -> NN Encoder -> 
+                    兩個vector
+                        [m1,m2,m3]
+                            原本的code
+                        [σ1,σ2,σ3]                    
+                            the variance of noise is automatically learned
+                            你的noise該要有多大
+                    noise
+                        From a normal distribution [e1,e2,e3]
+                    [c1,c2,c3]
+                        代表code+noise
+                            c = exp(σ)*e + m
+                    NN Decoder
+                        將c1,c2,c3 reconstruct回原本的圖
+                    Output
+                        原本image            
+                    minimum
+                        reconstruction error
+                            只有這個是不夠的
+                            因為variance是自己學的
+                                machine給他0就最好
+                                需要強迫variance不能太小
+                                    限制variance
+                                        Σ_i=1^3 ( exp(σi) - (1+σi) + (mi)^2 )
+                                            we want σi close to 0
+                                                variance close to 1
+                                            (mi)^2
+                                                L2 norm
+    back to what we want to do?
+        每張寶可夢的圖都是高維空間的一個點
+            estimate the probability distribution
+                P(x)
+                    x is a vector
+                Gaussain Mixture Model
+                    P(x) = Σ_m P(m)*P(x|m)
+                        how to sample data?
+                            m~P(m) (multinomial)
+                                multinomial distribution
+                                    決定sample哪個Gaussian
+                                m is an integer
+                                x|m~N(μ^m,Σ^m)
+                                    每個gaussian有
+                                        自己的 mean
+                                            μ^m
+                                        自己的 variance
+                                            Σ^m 
+                                        sample x
+                        each x you generate is from a mixture
+                            distributed representation is better than cluster
+                    z~N(0,I)
+                        z is a vector from normal distribution
+                            each dimension of z represents an attribute
+                                根據z決定mean跟variance
+                                    x|z~N(μ(z),σ(z))
+                                        假設μ,σ都來自一個function
+                                        gaussain對應位置由function決定
+                                        從normal distribution產生無窮多個gaussain
+                                        這個function怎麼找
+                                            NN
+                                                input
+                                                    Z
+                                                output
+                                                    mean
+                                                    variance
+                    P(x) = ∫_z P(z)P(x|z)dz
+                        P(z)
+                            is normal distribution
+                        x|z~N(μ(z),σ(z))
+                            μ(z),σ(z)
+                                is going to be estimated
+                                L = Σ_x^z log P(x)
+                                    maximizing the likelihood of th observed x
+                                    調整NN裡面參數形成maximum
+                            decoder
+                        we need another distribution q(z|x)                                        
+                            x-> NN'
+                                μ'(x)
+                                σ'(x)                                            
+                            z|x~N(μ'(x),σ'(x))
+                            encoder
+                        every though z is from N(0,I),P(x) can be very complex
+                            為什麼sample是從gaussain
+                                sample曲線也可以是朵花
+                                    自己設計
+                                gaussain是分布比較合理的設計
+                                不用擔心sample曲線的設計
+                                    NN非常powerful可以present任何function
+                        看公式
+                            P(x) = ∫_z P(z)P(x|z)dz
+                                L = Σ_x^z log P(x)
+                                    log P(x) = ∫_z q(z|x)log P(x)dz
+                                        q(z|x) can be any distribution
+                                        log P(x) = ∫_z q(z|x)log P(z,x)/P(z|x) * dz
+                                            log P(x) = ∫_z q(z|x)log P(z,x)q(z,x)/q(z,x)P(z|x) * dz
+                                                log P(x) = ∫_z q(z|x)log P(z,x)/q(z,x) * dz + ∫_z q(z|x)log q(z,x)/P(z|x) * dz
+                                                    ∫_z q(z|x)log P(z,x)/q(z,x) * dz
+                                                        lower bound:Lb
+                                                            >= ∫_z q(z|x)log P(x,z)P(z)/q(z,x) * dz
 
-                                                        ∫_z q(z|x)log q(z,x)/P(z|x) * dz
-                                                            KL(q(z|x)||P(z|x))
-                                                            KL divergence                                                            
-                                                                兩個distribution相近程度
-                                                                相同=0
-                                                                值>=0
-                                原本是找P(x|z)讓likelihood越大越好
-                                    現在變成找P(x|z)和q(z|x)
-                                        讓Lb越大越好
-                                    只找P(x|z)
-                                        P(x|z越高) 但likelihood不一定也越高
-                                        加入q(z|x)
-                                            解決這個問題
-                                                likelihood logP(x) = KL + Lb
-                                                調整Lb可能讓KL越來越小
-                                                    到最後Lb跟likelihood一模一樣
-                                                        這時候Lb在上升之後
-                                                            因為likelihood一定要比lower bound大
-                                                                所以也會跟著上升
-                                            q(z|x) will approximation of P(z|x) in the end
-                                                KL divergence越來越小
-                                                    q(z|x)越來越接近P(z|x)
-                                Lb =  ∫_z q(z|x)log P(x,z)P(z)/q(z,x) * dz
-                                     = ∫_z q(z|x)log P(z)/q(z,x) * dz + ∫_z q(z|x)log P(x,z) * dz
-                                        ∫_z q(z|x)log P(z)/q(z,x) * dz
-                                            -KL(q(z|x)||P(z))
-                                                x-> NN'
-                                                    -> μ'(x)
-                                                    -> σ'(x)
-                                                Minimizing
-                                                    KL(q(z|x)||P(z))
-                                                        調整NN'
-                                                        Σ_i=1^3 ( exp(σi) - (1+σi) + (mi)^2 )
-                                                            Minimizing KL這個式子
-                                                                讓q(z|x)||P(z)越接近normal distribution
-                                                Maximizing
-                                                    ∫_z q(z|x)log P(x,z) * dz = Eq(z|x)[logP(x|z)]
-                                                        給x去q(z|x) sample data
-                                                            讓logP(x|z)機率越大越好
-                                                            x->NN'->
-                                                                μ'(x) & σ'(x)
-                                                                    -> sample z
-                                                                        maximizing z產生 P(x|z)
-                                                                        z->NN->
-                                                                            μ(x) & σ(x)
-                                                                                實做不考慮variance
-                                                                                    σ
-                                                                                μ(x) close input x
-                                                                                this is auto-encoder
-                                                                                這也是loss function
-    Conditional VAE
-        你讓VAE產生手寫數字
-            看一個給他一個digits
-                他把digits特性抽出來
-                    筆畫粗細
-            丟到encoder時
-                給他有關數字特性的distribution
-                告訴decoder說他是什麼數字
-                就可以generate一大排很相近的數字 
-                    畫出style相近的數字
-    problems of VAE
-        it does not really try to simulate real images
-        只是去學產生跟database裡面某張image越接近越好
-            evaluate是用mean square error
-                找相似度
-                只差一個pixel不論位置都是一樣好的
-                    但是位置可能影響到理解
-                只是怎麼產生跟db一樣的圖
-                沒有想過要以假亂真的產生圖片
-                    只是linear combination image
-    Generative Adversarial Network(GAN)
-        Yann LeCun's comment
-            adversarial training is the collest thing since sliced bread
-                有史以來最酷的方法
-        GAN非常難train
-        擬態的演化
-            NN Generator v1
-                NN Generator V2 
-                    ...
-                從來沒看過real image
-                decoder in VAE
-                    vectors from a distribution
-                        NN Generator V1
-                            decoder in VAE
-                randomly sample a vector
-                    NN generator v1
-                        image
-                            Discriminator
-                                0.87
-                                    tuning the parameters of generator
-                                        the output be classified as 'real'
-                Generator + Discriminator = a network
-                    fix the discriminator
-                        update generator
-            Discriminator v1
-                real images
-                generator images
-                Discriminator v2
-                    ...
-                input image
-                    output 
-                        1/0(real or fake)
-            互相進步
-        GAN - toy example
-            z -> NN generator -> x
-                z sample form uniform distribution
-                x 希望越像real資料越好
-                把real跟x丟到discriminator
-                    generator跟discriminator彼此學習騙過跟避免被騙
-            gans很難train需要小心調參數
-                generator產生跟real data一模一樣的東西
-                discriminator無法分辨真假
-                    無法知道discriminator是不是對的
-            難train
-                discriminator得到很好的結果
-                    可能是generator太廢
-                discriminator得到很差的結果
-                    這不代表generator很好
-                    可能是discriminator太廢
-                現在都是在電腦前面看他generator結果
-                    不好就在調參數
-                GANs are difficult to optimize
-                No explicit signal about how good the generator is
-                    In standard NNs, we monitor loss
-                    In GANS, we have to keep 'well-matched in a contest'
-                        要勢均力敵狀態
-                When discriminator fails, it does not guarantee that generator generates realistic images.
-                    just because discriminator is stupid
-                    sometimes generator find a specific example that can fail the discriminator
+                                                    ∫_z q(z|x)log q(z,x)/P(z|x) * dz
+                                                        KL(q(z|x)||P(z|x))
+                                                        KL divergence                                                            
+                                                            兩個distribution相近程度
+                                                            相同=0
+                                                            值>=0
+                            原本是找P(x|z)讓likelihood越大越好
+                                現在變成找P(x|z)和q(z|x)
+                                    讓Lb越大越好
+                                只找P(x|z)
+                                    P(x|z越高) 但likelihood不一定也越高
+                                    加入q(z|x)
+                                        解決這個問題
+                                            likelihood logP(x) = KL + Lb
+                                            調整Lb可能讓KL越來越小
+                                                到最後Lb跟likelihood一模一樣
+                                                    這時候Lb在上升之後
+                                                        因為likelihood一定要比lower bound大
+                                                            所以也會跟著上升
+                                        q(z|x) will approximation of P(z|x) in the end
+                                            KL divergence越來越小
+                                                q(z|x)越來越接近P(z|x)
+                            Lb =  ∫_z q(z|x)log P(x,z)P(z)/q(z,x) * dz
+                                    = ∫_z q(z|x)log P(z)/q(z,x) * dz + ∫_z q(z|x)log P(x,z) * dz
+                                    ∫_z q(z|x)log P(z)/q(z,x) * dz
+                                        -KL(q(z|x)||P(z))
+                                            x-> NN'
+                                                -> μ'(x)
+                                                -> σ'(x)
+                                            Minimizing
+                                                KL(q(z|x)||P(z))
+                                                    調整NN'
+                                                    Σ_i=1^3 ( exp(σi) - (1+σi) + (mi)^2 )
+                                                        Minimizing KL這個式子
+                                                            讓q(z|x)||P(z)越接近normal distribution
+                                            Maximizing
+                                                ∫_z q(z|x)log P(x,z) * dz = Eq(z|x)[logP(x|z)]
+                                                    給x去q(z|x) sample data
+                                                        讓logP(x|z)機率越大越好
+                                                        x->NN'->
+                                                            μ'(x) & σ'(x)
+                                                                -> sample z
+                                                                    maximizing z產生 P(x|z)
+                                                                    z->NN->
+                                                                        μ(x) & σ(x)
+                                                                            實做不考慮variance
+                                                                                σ
+                                                                            μ(x) close input x
+                                                                            this is auto-encoder
+                                                                            這也是loss function
+Conditional VAE
+    你讓VAE產生手寫數字
+        看一個給他一個digits
+            他把digits特性抽出來
+                筆畫粗細
+        丟到encoder時
+            給他有關數字特性的distribution
+            告訴decoder說他是什麼數字
+            就可以generate一大排很相近的數字 
+                畫出style相近的數字
+problems of VAE
+    it does not really try to simulate real images
+    只是去學產生跟database裡面某張image越接近越好
+        evaluate是用mean square error
+            找相似度
+            只差一個pixel不論位置都是一樣好的
+                但是位置可能影響到理解
+            只是怎麼產生跟db一樣的圖
+            沒有想過要以假亂真的產生圖片
+                只是linear combination image
+Generative Adversarial Network(GAN)
+    Yann LeCun's comment
+        adversarial training is the collest thing since sliced bread
+            有史以來最酷的方法
+    GAN非常難train
+    擬態的演化
+        NN Generator v1
+            NN Generator V2 
+                ...
+            從來沒看過real image
+            decoder in VAE
+                vectors from a distribution
+                    NN Generator V1
+                        decoder in VAE
+            randomly sample a vector
+                NN generator v1
+                    image
+                        Discriminator
+                            0.87
+                                tuning the parameters of generator
+                                    the output be classified as 'real'
+            Generator + Discriminator = a network
+                fix the discriminator
+                    update generator
+        Discriminator v1
+            real images
+            generator images
+            Discriminator v2
+                ...
+            input image
+                output 
+                    1/0(real or fake)
+        互相進步
+    GAN - toy example
+        z -> NN generator -> x
+            z sample form uniform distribution
+            x 希望越像real資料越好
+            把real跟x丟到discriminator
+                generator跟discriminator彼此學習騙過跟避免被騙
+        gans很難train需要小心調參數
+            generator產生跟real data一模一樣的東西
+            discriminator無法分辨真假
+                無法知道discriminator是不是對的
+        難train
+            discriminator得到很好的結果
+                可能是generator太廢
+            discriminator得到很差的結果
+                這不代表generator很好
+                可能是discriminator太廢
+            現在都是在電腦前面看他generator結果
+                不好就在調參數
+            GANs are difficult to optimize
+            No explicit signal about how good the generator is
+                In standard NNs, we monitor loss
+                In GANS, we have to keep 'well-matched in a contest'
+                    要勢均力敵狀態
+            When discriminator fails, it does not guarantee that generator generates realistic images.
+                just because discriminator is stupid
+                sometimes generator find a specific example that can fail the discriminator

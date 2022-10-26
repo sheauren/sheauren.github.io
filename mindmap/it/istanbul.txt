@@ -1,31 +1,30 @@
-istanbul
-    install
-        npm install -g istanbul
-    use
-        istanbul conver test.js
-    example
-            package.json
-                "scripts"
-                    "conver":"istanbul conver _mocha test/mocha.js"
-            test.js
-                describe('#math',()=>{
-                    describe('add',()=>{
-                        it('should return 5 when 2 + 3',()=>{
-                            expect(add(2,3),5)
-                        })
-                        it('should return 5 when 2 + 3',()=>{
-                            expect(add(2,-3),-1)
-                        })
+install
+    npm install -g istanbul
+use
+    istanbul conver test.js
+example
+        package.json
+            "scripts"
+                "conver":"istanbul conver _mocha test/mocha.js"
+        test.js
+            describe('#math',()=>{
+                describe('add',()=>{
+                    it('should return 5 when 2 + 3',()=>{
+                        expect(add(2,3),5)
                     })
-                    describe('mul',()=>{
-                        it('should return 6 when 2 * 3',()=>{
-                            expect(mul(2,3),6)
-                        })
+                    it('should return 5 when 2 + 3',()=>{
+                        expect(add(2,-3),-1)
                     })
                 })
-        need test code conver
-            each branch
-            each function
-            each lines
-            each statement
+                describe('mul',()=>{
+                    it('should return 6 when 2 * 3',()=>{
+                        expect(mul(2,3),6)
+                    })
+                })
+            })
+    need test code conver
+        each branch
+        each function
+        each lines
+        each statement
 

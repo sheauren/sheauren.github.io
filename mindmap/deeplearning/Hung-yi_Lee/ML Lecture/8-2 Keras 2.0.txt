@@ -1,26 +1,25 @@
-Keras 2.0
-    keras: Building a network
-        model = Sequential()
-        model.add(Dense(input_dim=28*28,units=500,activation='relu'))
-        model.add(Dense(units=500,activation='relu'))
-            softplus,softsign,sigmoid,tanh,hard_sigmod,linear
-        model.add(Dense(units=10,activation='softmax'))
-    configuration
-        model.compile(loss='categorical_crossentropy',
-            optimizer='adam',
-            metrics=['accuracy'])
-    pick the best function
-        model.fit(x_train,y_train,batch_size=100,epochs=20)
-    save and load models
-        http://keras.io/getting-started/fag/#show-can-i-save-a-keras-model
-    how to use the neural network(testing)
-        score=model.evaluate(x_test,y_test)
-            score[0]
-                total loss
-                    可能是crossentropy
-            score[1]
-                accuracy
-                    yes/no
-        predict
-            input: image
-            output: result
+keras: Building a network
+    model = Sequential()
+    model.add(Dense(input_dim=28*28,units=500,activation='relu'))
+    model.add(Dense(units=500,activation='relu'))
+        softplus,softsign,sigmoid,tanh,hard_sigmod,linear
+    model.add(Dense(units=10,activation='softmax'))
+configuration
+    model.compile(loss='categorical_crossentropy',
+        optimizer='adam',
+        metrics=['accuracy'])
+pick the best function
+    model.fit(x_train,y_train,batch_size=100,epochs=20)
+save and load models
+    http://keras.io/getting-started/fag/#show-can-i-save-a-keras-model
+how to use the neural network(testing)
+    score=model.evaluate(x_test,y_test)
+        score[0]
+            total loss
+                可能是crossentropy
+        score[1]
+            accuracy
+                yes/no
+    predict
+        input: image
+        output: result

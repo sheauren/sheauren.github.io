@@ -1,131 +1,130 @@
-Text Mining(NLP Background)
-    Basic Procedure
-        Syntax
-            Parsing
-                CYK Algorithm
-                Graph Parsing
-        Morphological&Lexical
-            Analysis Procedure
-                Tokenizing
-                    Unsupervisor Noun Extraction[korean]
-                        Cohesion Score
-                        Branching Entropy
-                        Accessor Variety
-                    Unsupervisor Tokenizing
-                        L-Tokenizer
-                            L-R Graph
-                        Max Score Tokenizer(Non-Spacing Language)
-                            Word Segmentation
-                        Regex Tokenizer
-                        Subword Tokenizer
-                            Byte Pair Encoding
-                            Word Piece
-                            Subword Regularization
-                            Out of Vocabulary
-                            Katz's back-off model
-                Sentence splitting
-                Morphological Analysis
-                    Folding
-                    Stemming
-                        Porter
-                        Lancaster
-                    Lemmatization
-                Part-of-Speech Tagging
-                    Dictionary based
-                    Morpheme based
-                StopWord Removal
-            Task
-                Part-Of-Speech Tagging
-                NER Analysis
-                    IOB1 Tagging
-                Co-reference
-                Dependencies Tree
-    NLP Basic Hypothesis
-        VSMs
-        Distributional Hypothesis
-        Statistical Semantics Hypothesis
-        Bag of words Hypothesis
-        Latent relation Hypothesis
-        Representation
-            Term-Document Matrix
-            Word-Context Matrix
-            Pair-Pattern Matrix
-    Sequential Labeling
-        HMM
-            Markov Assumption
-            Emission Probability
-            Transition Probability
-        Maximum Entropy Model
-            Feature Function
-        Maximum Entropy Markov Model
-            Feature Function
-        Condition Random Field
-        Label Bias
-        RNN
-    Word Embedding
-        Character Embedding
-        One-hot representation
-        Curse of Dimension
-        Dimensionality Reduction
-        Distributed Representation        
-            Co-Occurrences(n-gram)
-                Word2Vec
-                    CBOW
-                    Skip-gram
-                Glove
-                FastText
-                Co-Occurrences + Shifted PPMI
-            Implicit Matrix Factorization
-                PMI
-                PPMI
-                Positive PMI
-                Shifted PPMI
-            Topic Modeling
-                LDA(LDI)
-                    SVD
-                    Probabilistic LDA(pLDI)
-                        Multinomial
-                Sparse Coding
-                NMF
-                Matrix Factorization
-                Latent Dirichlet Allocation
-                    Dirichlet
-                    Gibbs Sampling
-                    Perplexity
-    Document
-        Bag of Words model
-            Distance&Similarity
-                Euclidean
-                Cosine
-            Term Vector Representation
-                TF-IDF
-        Clustering
-            DBSCAN
-            Hierachical Clustering
-            Bayesian GMM
-            GMM
-            K-means
-                Lloyd
-                Euclidean
-                Spherical
-                Cosine
-                Voronoi Diagram
-        Classification
-            Logistic Regression
-            LASSO Regression
-            Naive Bayes Classifer
-            Support Vector Machine
-            Decision Tree
-        String Distance
+Basic Procedure
+    Syntax
+        Parsing
+            CYK Algorithm
+            Graph Parsing
+    Morphological&Lexical
+        Analysis Procedure
+            Tokenizing
+                Unsupervisor Noun Extraction[korean]
+                    Cohesion Score
+                    Branching Entropy
+                    Accessor Variety
+                Unsupervisor Tokenizing
+                    L-Tokenizer
+                        L-R Graph
+                    Max Score Tokenizer(Non-Spacing Language)
+                        Word Segmentation
+                    Regex Tokenizer
+                    Subword Tokenizer
+                        Byte Pair Encoding
+                        Word Piece
+                        Subword Regularization
+                        Out of Vocabulary
+                        Katz's back-off model
+            Sentence splitting
+            Morphological Analysis
+                Folding
+                Stemming
+                    Porter
+                    Lancaster
+                Lemmatization
+            Part-of-Speech Tagging
+                Dictionary based
+                Morpheme based
+            StopWord Removal
+        Task
+            Part-Of-Speech Tagging
+            NER Analysis
+                IOB1 Tagging
+            Co-reference
+            Dependencies Tree
+NLP Basic Hypothesis
+    VSMs
+    Distributional Hypothesis
+    Statistical Semantics Hypothesis
+    Bag of words Hypothesis
+    Latent relation Hypothesis
+    Representation
+        Term-Document Matrix
+        Word-Context Matrix
+        Pair-Pattern Matrix
+Sequential Labeling
+    HMM
+        Markov Assumption
+        Emission Probability
+        Transition Probability
+    Maximum Entropy Model
+        Feature Function
+    Maximum Entropy Markov Model
+        Feature Function
+    Condition Random Field
+    Label Bias
+    RNN
+Word Embedding
+    Character Embedding
+    One-hot representation
+    Curse of Dimension
+    Dimensionality Reduction
+    Distributed Representation        
+        Co-Occurrences(n-gram)
+            Word2Vec
+                CBOW
+                Skip-gram
+            Glove
+            FastText
+            Co-Occurrences + Shifted PPMI
+        Implicit Matrix Factorization
+            PMI
+            PPMI
+            Positive PMI
+            Shifted PPMI
+        Topic Modeling
+            LDA(LDI)
+                SVD
+                Probabilistic LDA(pLDI)
+                    Multinomial
+            Sparse Coding
+            NMF
+            Matrix Factorization
+            Latent Dirichlet Allocation
+                Dirichlet
+                Gibbs Sampling
+                Perplexity
+Document
+    Bag of Words model
+        Distance&Similarity
+            Euclidean
             Cosine
-            Jaccard
-            Levenshitein
-    Graph
-        Similarity
-            RWR
-            SimRank
-        Ranking Algorithm
-            HITS
-            PageRank
-            Word Rank
-            Text Rank
+        Term Vector Representation
+            TF-IDF
+    Clustering
+        DBSCAN
+        Hierachical Clustering
+        Bayesian GMM
+        GMM
+        K-means
+            Lloyd
+            Euclidean
+            Spherical
+            Cosine
+            Voronoi Diagram
+    Classification
+        Logistic Regression
+        LASSO Regression
+        Naive Bayes Classifer
+        Support Vector Machine
+        Decision Tree
+    String Distance
+        Cosine
+        Jaccard
+        Levenshitein
+Graph
+    Similarity
+        RWR
+        SimRank
+    Ranking Algorithm
+        HITS
+        PageRank
+        Word Rank
+        Text Rank
