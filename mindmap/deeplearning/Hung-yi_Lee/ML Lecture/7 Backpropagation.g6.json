@@ -6,523 +6,515 @@
     "children": [
         {
             "id": "line_0",
-            "title": "Backpropagation",
+            "title": "Gradient Descent",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "Gradient Descent",
+                    "title": "Network parameter \u03b8 = {w1,w2...,b1,b2...}",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_2",
+                    "title": "Start parameter \u03b8^0",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_2",
-                            "title": "Network parameter \u03b8 = {w1,w2...,b1,b2...}",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
                             "id": "line_3",
-                            "title": "Start parameter \u03b8^0",
+                            "title": "compute \u2207L(\u03b8^0)",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_4",
-                                    "title": "compute \u2207L(\u03b8^0)",
+                                    "title": "= [\u2202L(\u03b8)/\u2202w1,\u2202L(\u03b8)/\u2202w2...,\u2202L(\u03b8)/\u2202b1,\u2202L(\u03b8)/\u2202b2...]",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_5",
-                                            "title": "= [\u2202L(\u03b8)/\u2202w1,\u2202L(\u03b8)/\u2202w2...,\u2202L(\u03b8)/\u2202b1,\u2202L(\u03b8)/\u2202b2...]",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_6",
-                                            "title": "\u03b8^1 = \u03b8^0 - \u03b7\u2207L(\u03b8^0)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
                                 },
                                 {
-                                    "id": "line_7",
-                                    "title": "\u91cd\u8907\u8a08\u7b97",
+                                    "id": "line_5",
+                                    "title": "\u03b8^1 = \u03b8^0 - \u03b7\u2207L(\u03b8^0)",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
                         {
-                            "id": "line_8",
-                            "title": "Nerual Network has Millions of parameter ...",
+                            "id": "line_6",
+                            "title": "\u91cd\u8907\u8a08\u7b97",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_9",
-                                    "title": "Million vector",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_10",
-                            "title": "to compute the gradient efficiently",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_11",
-                                    "title": "we use backpropagation",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         }
                     ]
                 },
                 {
-                    "id": "line_12",
-                    "title": "a efficiently algorithm for Gradient Descent",
+                    "id": "line_7",
+                    "title": "Nerual Network has Millions of parameter ...",
                     "background-color": "#e3aba7",
-                    "collapsed": false
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_8",
+                            "title": "Million vector",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
                 },
                 {
+                    "id": "line_9",
+                    "title": "to compute the gradient efficiently",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_10",
+                            "title": "we use backpropagation",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_11",
+            "title": "a efficiently algorithm for Gradient Descent",
+            "background-color": "#fff",
+            "collapsed": false
+        },
+        {
+            "id": "line_12",
+            "title": "Chain Rule",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_13",
-                    "title": "Chain Rule",
+                    "title": "case 1 y=g(x) z=h(y)",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_14",
-                            "title": "case 1 y=g(x) z=h(y)",
+                            "title": "\u0394x -> \u0394y -> \u0394z",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_15",
-                                    "title": "\u0394x -> \u0394y -> \u0394z",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_16",
-                                    "title": "dz/dx = dz/dy * dy/dz",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
                         {
-                            "id": "line_17",
-                            "title": "case 2 x=g(s) y=h(x) z=k(x,y)",
+                            "id": "line_15",
+                            "title": "dz/dx = dz/dy * dy/dz",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_18",
-                                    "title": "\u0394s -> \u0394x,\u0394y -> \u0394z",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_19",
-                                    "title": "dz/dz = \u2202z/\u2202x*dx/ds + \u2202z/\u2202y*dy/ds",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         }
                     ]
                 },
                 {
-                    "id": "line_20",
-                    "title": "Backpropagation",
+                    "id": "line_16",
+                    "title": "case 2 x=g(s) y=h(x) z=k(x,y)",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_21",
-                            "title": "x^n=>NN(\u03b8)=>y^n <- C^n -> y^^n",
+                            "id": "line_17",
+                            "title": "\u0394s -> \u0394x,\u0394y -> \u0394z",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         },
                         {
-                            "id": "line_22",
-                            "title": "L(\u03b8) = \u03a3_n=1^N C^n(\u03b8)",
+                            "id": "line_18",
+                            "title": "dz/dz = \u2202z/\u2202x*dx/ds + \u2202z/\u2202y*dy/ds",
                             "background-color": "#e82ad2",
                             "collapsed": true
-                        },
-                        {
-                            "id": "line_23",
-                            "title": "\u2202L(\u03b8)/\u2202w = \u03a3_n=1^N \u2202C^n(\u03b8)/\u2202w",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_24",
-                            "title": "\u5148\u8003\u616e\u4e00\u500bneural",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_25",
-                            "title": "z = x1*w1+x2*w2+b",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_26",
-                            "title": "\u2202C/\u2202w = ? \u2202z/\u2202w*\u2202C/\u2202z",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_19",
+            "title": "Backpropagation",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_20",
+                    "title": "x^n=>NN(\u03b8)=>y^n <- C^n -> y^^n",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_21",
+                    "title": "L(\u03b8) = \u03a3_n=1^N C^n(\u03b8)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_22",
+                    "title": "\u2202L(\u03b8)/\u2202w = \u03a3_n=1^N \u2202C^n(\u03b8)/\u2202w",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_23",
+                    "title": "\u5148\u8003\u616e\u4e00\u500bneural",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_24",
+                    "title": "z = x1*w1+x2*w2+b",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_25",
+                    "title": "\u2202C/\u2202w = ? \u2202z/\u2202w*\u2202C/\u2202z",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_26",
+                    "title": "\u2202z/\u2202w = forward pass",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_27",
-                            "title": "\u2202z/\u2202w = forward pass",
+                            "title": "compute \u2202z/\u2202w for all parameters",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_28",
+                            "title": "\u2202z/\u2202w1 = ?",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_28",
-                                    "title": "compute \u2202z/\u2202w for all parameters",
+                                    "id": "line_29",
+                                    "title": "z = x1*w1+x2*w2+b",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_29",
-                                    "title": "\u2202z/\u2202w1 = ?",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_30",
-                                            "title": "z = x1*w1+x2*w2+b",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_31",
-                                            "title": "x1",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_32",
-                                    "title": "\u2202z/\u2202w2 = ?",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_33",
-                                            "title": "z = x1*w1+x2*w2+b",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_34",
-                                            "title": "x2",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_35",
-                                    "title": "the value of the input connected by the weight",
+                                    "id": "line_30",
+                                    "title": "x1",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
                         {
-                            "id": "line_36",
-                            "title": "\u2202C/\u2202z = backward pass",
+                            "id": "line_31",
+                            "title": "\u2202z/\u2202w2 = ?",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_37",
-                                    "title": "compute \u2202C/\u2202z for all activation function input z",
+                                    "id": "line_32",
+                                    "title": "z = x1*w1+x2*w2+b",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_38",
-                                    "title": "activation function : a = \u03c3(z)",
+                                    "id": "line_33",
+                                    "title": "x2",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
-                                },
-                                {
-                                    "id": "line_39",
-                                    "title": "Nerual Output = a",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_40",
-                                    "title": "output * w3 , w4 => z',z\"",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_41",
-                                    "title": "\u2202C/\u2202z = \u2202a/\u2202z*\u2202C/\u2202a",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_42",
-                                    "title": "\u2202z = sigmod function \u5fae\u5206 => \u2202\u2018(z)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_43",
-                                    "title": "\u2202C/\u2202a = \u2202z'/\u2202a*\u2202C/\u2202z' + \u2202z\"/\u2202a*\u2202C/\u2202z\" (chain rule)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_44",
-                                    "title": "\u2202z'/\u2202a = w3",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_45",
-                                    "title": "\u2202z\"/\u2202a = w4",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_46",
-                                    "title": "\u2202C/\u2202z' = ?",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_47",
-                                    "title": "\u2202C/az\" = ?",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_48",
-                                    "title": "Assume \u5df2\u77e5\u503c\u2202z',\u2202z\"",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_49",
-                                    "title": "\u2202C/\u2202z = \u03c3'(z)[w3*\u2202C/\u2202z'+w4*\u2202C/\u2202z\"]",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_34",
+                            "title": "the value of the input connected by the weight",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_35",
+                    "title": "\u2202C/\u2202z = backward pass",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_36",
+                            "title": "compute \u2202C/\u2202z for all activation function input z",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_37",
+                            "title": "activation function : a = \u03c3(z)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_38",
+                            "title": "Nerual Output = a",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_39",
+                            "title": "output * w3 , w4 => z',z\"",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_40",
+                            "title": "\u2202C/\u2202z = \u2202a/\u2202z*\u2202C/\u2202a",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_41",
+                            "title": "\u2202z = sigmod function \u5fae\u5206 => \u2202\u2018(z)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_42",
+                            "title": "\u2202C/\u2202a = \u2202z'/\u2202a*\u2202C/\u2202z' + \u2202z\"/\u2202a*\u2202C/\u2202z\" (chain rule)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_43",
+                            "title": "\u2202z'/\u2202a = w3",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_44",
+                            "title": "\u2202z\"/\u2202a = w4",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_45",
+                            "title": "\u2202C/\u2202z' = ?",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_46",
+                            "title": "\u2202C/az\" = ?",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_47",
+                            "title": "Assume \u5df2\u77e5\u503c\u2202z',\u2202z\"",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_48",
+                            "title": "\u2202C/\u2202z = \u03c3'(z)[w3*\u2202C/\u2202z'+w4*\u2202C/\u2202z\"]",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_49",
+                            "title": "\u60f3\u50cf\u6709\u53e6\u4e00\u500bnerual\u53cd\u5411",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_50",
-                                    "title": "\u60f3\u50cf\u6709\u53e6\u4e00\u500bnerual\u53cd\u5411",
+                                    "title": "w3*\u2202C/\u2202z'\u662f\u4e00\u500binput",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_51",
+                                    "title": "w4*\u2202C/\u2202z\"\u662f\u4e00\u500binput",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_52",
+                                    "title": "\u03c3' activation function",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_53",
+                                    "title": "output: \u2202C/\u2202z",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_54",
+                            "title": "\u03c3'(z) is a constant because z is already determined in the forward pass.",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_55",
+                            "title": "\u6700\u5f8c\u5982\u4f55\u7b97",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_56",
+                                    "title": "\u2202C/\u2202z'",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_57",
+                                    "title": "\u2202C/\u2202z\"",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_58",
+                                    "title": "case 1. output layer y1,y2 = network output",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_51",
-                                            "title": "w3*\u2202C/\u2202z'\u662f\u4e00\u500binput",
+                                            "id": "line_59",
+                                            "title": "\u2202C/\u2202z' = \u2202y1/\u2202z'*\u2202C/\u2202y1",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_52",
-                                            "title": "w4*\u2202C/\u2202z\"\u662f\u4e00\u500binput",
+                                            "id": "line_60",
+                                            "title": "\u2202C/\u2202z\" = \u2202y1/\u2202z\"*\u2202C/\u2202y1",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_53",
-                                            "title": "\u03c3' activation function",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_54",
-                                            "title": "output: \u2202C/\u2202z",
+                                            "id": "line_61",
+                                            "title": "\u2202C crossentropy",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
                                 },
                                 {
-                                    "id": "line_55",
-                                    "title": "\u03c3'(z) is a constant because z is already determined in the forward pass.",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_56",
-                                    "title": "\u6700\u5f8c\u5982\u4f55\u7b97",
+                                    "id": "line_62",
+                                    "title": "case 2. not output layer",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_57",
-                                            "title": "\u2202C/\u2202z'",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_58",
-                                            "title": "\u2202C/\u2202z\"",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_59",
-                                            "title": "case 1. output layer y1,y2 = network output",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_60",
-                                                    "title": "\u2202C/\u2202z' = \u2202y1/\u2202z'*\u2202C/\u2202y1",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_61",
-                                                    "title": "\u2202C/\u2202z\" = \u2202y1/\u2202z\"*\u2202C/\u2202y1",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_62",
-                                                    "title": "\u2202C crossentropy",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
                                             "id": "line_63",
-                                            "title": "case 2. not output layer",
+                                            "title": "za,zb ...",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_64",
-                                                    "title": "za,zb ...",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_65",
-                                                    "title": "\u2202C/\u2202za\u5047\u8a2d\u77e5\u9053",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_66",
-                                                    "title": "\u2202C/\u2202zb\u5047\u8a2d\u77e5\u9053",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_67",
-                                                    "title": "\u5c31\u80fd\u8a08\u7b97",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_68",
-                                                    "title": "\u8981\u600e\u9ebc\u77e5\u9053\u5c31\u5728\u5f80\u4e0b\u63a8\u8ad6\u4e0b\u4e00layer",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_69",
-                                                    "title": "until we reach the output layer",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         },
+                                        {
+                                            "id": "line_64",
+                                            "title": "\u2202C/\u2202za\u5047\u8a2d\u77e5\u9053",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_65",
+                                            "title": "\u2202C/\u2202zb\u5047\u8a2d\u77e5\u9053",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_66",
+                                            "title": "\u5c31\u80fd\u8a08\u7b97",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_67",
+                                            "title": "\u8981\u600e\u9ebc\u77e5\u9053\u5c31\u5728\u5f80\u4e0b\u63a8\u8ad6\u4e0b\u4e00layer",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_68",
+                                            "title": "until we reach the output layer",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_69",
+                                    "title": "\u5f9eoutput layer",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_70",
-                                            "title": "\u5f9eoutput layer",
+                                            "title": "compute \u2202C/\u2202z for all activation function input z",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_71",
+                                            "title": "\u985e\u4f3c\u65bcforward pass\u8a08\u7b97",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_72",
+                                            "title": "compute \u2202C/\u2202z from the output layer",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_73",
+                                            "title": "last layer",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_71",
-                                                    "title": "compute \u2202C/\u2202z for all activation function input z",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_72",
-                                                    "title": "\u985e\u4f3c\u65bcforward pass\u8a08\u7b97",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_73",
-                                                    "title": "compute \u2202C/\u2202z from the output layer",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
                                                     "id": "line_74",
-                                                    "title": "last layer",
+                                                    "title": "z5,z6",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true,
                                                     "children": [
                                                         {
                                                             "id": "line_75",
-                                                            "title": "z5,z6",
+                                                            "title": "\u2202C/\u2202z5,\u2202C/\u2202z6",
                                                             "background-color": "#01a6d5",
-                                                            "collapsed": true,
-                                                            "children": [
-                                                                {
-                                                                    "id": "line_76",
-                                                                    "title": "\u2202C/\u2202z5,\u2202C/\u2202z6",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                }
-                                                            ]
-                                                        },
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_76",
+                                                    "title": "z3,z4",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
                                                         {
                                                             "id": "line_77",
-                                                            "title": "z3,z4",
+                                                            "title": "...",
                                                             "background-color": "#01a6d5",
-                                                            "collapsed": true,
-                                                            "children": [
-                                                                {
-                                                                    "id": "line_78",
-                                                                    "title": "...",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                }
-                                                            ]
-                                                        },
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_78",
+                                                    "title": "z1,z2",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
                                                         {
                                                             "id": "line_79",
-                                                            "title": "z1,z2",
+                                                            "title": "...",
                                                             "background-color": "#01a6d5",
-                                                            "collapsed": true,
-                                                            "children": [
-                                                                {
-                                                                    "id": "line_80",
-                                                                    "title": "...",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                }
-                                                            ]
+                                                            "collapsed": true
                                                         }
                                                     ]
                                                 }
@@ -533,54 +525,54 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_80",
+            "title": "summary",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_81",
-                    "title": "summary",
+                    "title": "forward pass",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_82",
-                            "title": "forward pass",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_83",
-                                    "title": "\u2202z/\u2202w = a",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_84",
-                            "title": "backward pass",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_85",
-                                    "title": "\u2202C/\u2202z",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_86",
-                            "title": "\u5169\u500b\u4e58\u8d77\u4f86\u5c31\u77e5\u9053\u504f\u5fae\u5206\u503c",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_87",
-                            "title": "\u2202C/\u2202w",
+                            "title": "\u2202z/\u2202w = a",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         }
                     ]
+                },
+                {
+                    "id": "line_83",
+                    "title": "backward pass",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_84",
+                            "title": "\u2202C/\u2202z",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_85",
+                    "title": "\u5169\u500b\u4e58\u8d77\u4f86\u5c31\u77e5\u9053\u504f\u5fae\u5206\u503c",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_86",
+                    "title": "\u2202C/\u2202w",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
                 }
             ]
         }

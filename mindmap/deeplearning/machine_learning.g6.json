@@ -6,675 +6,667 @@
     "children": [
         {
             "id": "line_0",
-            "title": "Machine Learning",
+            "title": "Linear Regression",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "Linear Regression",
+                    "title": "MSE",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_2",
+                    "title": "Regularized",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_2",
-                            "title": "MSE",
+                            "id": "line_3",
+                            "title": "Ridge(L2)",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         },
                         {
-                            "id": "line_3",
-                            "title": "Regularized",
+                            "id": "line_4",
+                            "title": "LASSOL(L1)",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_4",
-                                    "title": "Ridge(L2)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_5",
-                                    "title": "LASSOL(L1)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_6",
-                                    "title": "Elastic Net(L1+L2)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_7",
-                                    "title": "Norm",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_8",
-                                    "title": "Frobenius",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_5",
+                            "title": "Elastic Net(L1+L2)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "Norm",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_7",
+                            "title": "Frobenius",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_8",
+            "title": "Logistic Regression",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_9",
-                    "title": "Logistic Regression",
+                    "title": "From Generative to Discriminative Proof",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_10",
-                            "title": "From Generative to Discriminative Proof",
+                            "title": "logits",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_11",
+                            "title": "Activation Function",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_11",
-                                    "title": "logits",
+                                    "id": "line_12",
+                                    "title": "Sigmoid",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_12",
-                                    "title": "Activation Function",
+                                    "id": "line_13",
+                                    "title": "tanh",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_13",
-                                            "title": "Sigmoid",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_14",
-                                            "title": "tanh",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_15",
-                                            "title": "Relu",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_16",
-                                            "title": "Leakly Relu",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_17",
-                                            "title": "PRelu",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_18",
-                                            "title": "ELU",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_19",
-                                            "title": "Maxout",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_20",
-                                            "title": "Representation",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_21",
-                                            "title": "Learning",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_14",
+                                    "title": "Relu",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_15",
+                                    "title": "Leakly Relu",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_16",
+                                    "title": "PRelu",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_17",
+                                    "title": "ELU",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_18",
+                                    "title": "Maxout",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_19",
+                                    "title": "Representation",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_20",
+                                    "title": "Learning",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_21",
+                    "title": "Maximize Likelihood is Minimize Cross Entropy Proof",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_22",
-                            "title": "Maximize Likelihood is Minimize Cross Entropy Proof",
+                            "title": "Gradient Descent",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_23",
-                                    "title": "Gradient Descent",
+                                    "title": "Taylor Series Proof",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_24",
+                                    "title": "Convex Function",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_24",
-                                            "title": "Taylor Series Proof",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
                                             "id": "line_25",
-                                            "title": "Convex Function",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_26",
-                                                    "title": "Jensen's inequality",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_27",
-                                            "title": "Learning Rate",
+                                            "title": "Jensen's inequality",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_28",
-                                            "title": "Backpropagation Proof",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_29",
-                                            "title": "Graient Vanishing & Exploding Proof",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_30",
-                                            "title": "Finite Difference Method",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_31",
-                                            "title": "SGD(b=1)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_26",
+                                    "title": "Learning Rate",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_27",
+                                    "title": "Backpropagation Proof",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_28",
+                                    "title": "Graient Vanishing & Exploding Proof",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_29",
+                                    "title": "Finite Difference Method",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_30",
+                                    "title": "SGD(b=1)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_31",
+                                    "title": "Optimization",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_32",
-                                            "title": "Optimization",
+                                            "title": "Momentum",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_33",
-                                                    "title": "Momentum",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_34",
-                                                    "title": "NAG",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_35",
-                                                    "title": "Adograd",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_36",
-                                                    "title": "RMSProp",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_37",
-                                                    "title": "AdoDelto",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_38",
-                                                    "title": "Adam",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_39",
-                                                    "title": "Nadam",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_33",
+                                            "title": "NAG",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_34",
+                                            "title": "Adograd",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_35",
+                                            "title": "RMSProp",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_36",
+                                            "title": "AdoDelto",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_37",
+                                            "title": "Adam",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_38",
+                                            "title": "Nadam",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
                                         }
                                     ]
                                 }
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_39",
+            "title": "Regularization",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_40",
-                    "title": "Regularization",
+                    "title": "Early Stopping",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_41",
+                    "title": "Weight Decay",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_42",
+                    "title": "Dropout",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_43",
+                    "title": "Normalization",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_41",
-                            "title": "Early Stopping",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_42",
-                            "title": "Weight Decay",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_43",
-                            "title": "Dropout",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
                             "id": "line_44",
-                            "title": "Normalization",
+                            "title": "Layer",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_45",
-                                    "title": "Layer",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_46",
-                                    "title": "Batch",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_47",
-                                    "title": "Weight",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_45",
+                            "title": "Batch",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_46",
+                            "title": "Weight",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_47",
+            "title": "Non-Probabilistic",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_48",
-                    "title": "Non-Probabilistic",
+                    "title": "SVM",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_49",
-                            "title": "SVM",
+                            "title": "Lograngian approach",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_50",
-                                    "title": "Lograngian approach",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_51",
-                                    "title": "KMT Condition",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_52",
-                                    "title": "C-SVM",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_53",
-                                    "title": "Kernel SVM",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_54",
-                                    "title": "Duality",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_55",
-                                    "title": "Primal Problem",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_56",
-                                    "title": "Dual ProblemMapping Function",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_57",
-                                    "title": "Kernel Trick",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_50",
+                            "title": "KMT Condition",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_51",
+                            "title": "C-SVM",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_52",
+                            "title": "Kernel SVM",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_53",
+                            "title": "Duality",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_54",
+                            "title": "Primal Problem",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_55",
+                            "title": "Dual ProblemMapping Function",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_56",
+                            "title": "Kernel Trick",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_57",
+            "title": "Clustering",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_58",
-                    "title": "Clustering",
+                    "title": "Hierarchical",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_59",
+                    "title": "Pational",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_59",
-                            "title": "Hierarchical",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
                             "id": "line_60",
-                            "title": "Pational",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_61",
-                                    "title": "K-means",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_62",
-                            "title": "SOM",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_63",
-                            "title": "Spectrol",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_64",
-                            "title": "Instance-based Learning",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_65",
-                            "title": "KNN Algorithm",
+                            "title": "K-means",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         }
                     ]
                 },
                 {
+                    "id": "line_61",
+                    "title": "SOM",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_62",
+                    "title": "Spectrol",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_63",
+                    "title": "Instance-based Learning",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_64",
+                    "title": "KNN Algorithm",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_65",
+            "title": "Dimensionality Reduction",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_66",
-                    "title": "Dimensionality Reduction",
+                    "title": "Eigen Decomposition",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_67",
+                            "title": "SVD",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_68",
+                            "title": "PCA",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_69",
+                            "title": "Kernel PCA",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_70",
                             "title": "Eigen Decomposition",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_68",
-                                    "title": "SVD",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_69",
-                                    "title": "PCA",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_70",
-                                    "title": "Kernel PCA",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
                                     "id": "line_71",
-                                    "title": "Eigen Decomposition",
+                                    "title": "Eigen Value",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_72",
+                                    "title": "Eigen Vector",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_73",
+                                    "title": "Projection",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_74",
+                                    "title": "Determinant",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_75",
+                                    "title": "Matrix Property",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_72",
-                                            "title": "Eigen Value",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_73",
-                                            "title": "Eigen Vector",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_74",
-                                            "title": "Projection",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_75",
-                                            "title": "Determinant",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
                                             "id": "line_76",
-                                            "title": "Matrix Property",
+                                            "title": "Idempotent",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_77",
-                                                    "title": "Idempotent",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_78",
-                                                    "title": "Square Matrix",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_79",
-                                                    "title": "Symmetric",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_80",
-                                                    "title": "Orthogonal",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_81",
-                                                    "title": "Singular",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_77",
+                                            "title": "Square Matrix",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_78",
+                                            "title": "Symmetric",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_79",
+                                            "title": "Orthogonal",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_80",
+                                            "title": "Singular",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
                                         }
                                     ]
                                 }
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_81",
+            "title": "Training",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_82",
-                    "title": "Training",
+                    "title": "Ensemble",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_83",
-                            "title": "Ensemble",
+                            "title": "Bagging",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_84",
-                                    "title": "Bagging",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_85",
-                                    "title": "AdaBoost",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_86",
-                                    "title": "Random Forest",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
                         {
+                            "id": "line_84",
+                            "title": "AdaBoost",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_85",
+                            "title": "Random Forest",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_86",
+                    "title": "Score",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_87",
-                            "title": "Score",
+                            "title": "Diagnosing Model",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_88",
-                                    "title": "Diagnosing Model",
+                                    "title": "Variance-Bias",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_89",
-                                            "title": "Variance-Bias",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_89",
+                            "title": "Confusion Matrix",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_90",
-                                    "title": "Confusion Matrix",
+                                    "title": "ROC",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_91",
-                                            "title": "ROC",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_92",
-                                                    "title": "AUC",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_93",
-                                            "title": "Accuracy",
+                                            "title": "AUC",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
-                                        },
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_92",
+                                    "title": "Accuracy",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_93",
+                                    "title": "Presiion & Recall",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_94",
-                                            "title": "Presiion & Recall",
+                                            "title": "Trade Off",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_95",
-                                                    "title": "Trade Off",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_96",
-                                                            "title": "Type 1,2, Error",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_97",
-                                                    "title": "F1 Score",
+                                                    "title": "Type 1,2, Error",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 }
                                             ]
                                         },
                                         {
-                                            "id": "line_98",
-                                            "title": "k-fold cross validation",
+                                            "id": "line_96",
+                                            "title": "F1 Score",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
+                                },
+                                {
+                                    "id": "line_97",
+                                    "title": "k-fold cross validation",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_98",
+                    "title": "Data Splitting",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_99",
-                            "title": "Data Splitting",
+                            "title": "Training",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_100",
-                                    "title": "Training",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_101",
-                                    "title": "Validation",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_102",
-                                    "title": "Test",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_100",
+                            "title": "Validation",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_101",
+                            "title": "Test",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
                 }

@@ -6,1537 +6,1529 @@
     "children": [
         {
             "id": "line_0",
-            "title": "Go lang",
+            "title": "Feature",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "Feature",
+                    "title": "goroute",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_2",
-                            "title": "goroute",
+                            "title": "go - go func",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_3",
+                            "title": "channel - pine communcation",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
-                                {
-                                    "id": "line_3",
-                                    "title": "go - go func",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
                                 {
                                     "id": "line_4",
-                                    "title": "channel - pine communcation",
+                                    "title": "var pipe chan int",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_5",
-                                            "title": "var pipe chan int",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_6",
-                                            "title": "pipe := cmake(chan int,3)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_7",
-                                            "title": "pipe <- i",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_8",
-                                            "title": "b: = <-pipe",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_10",
-                                            "title": "close",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_5",
+                                    "title": "pipe := cmake(chan int,3)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_6",
+                                    "title": "pipe <- i",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_7",
+                                    "title": "b: = <-pipe",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_9",
+                                    "title": "close",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 }
                             ]
-                        },
-                        {
-                            "id": "line_11",
-                            "title": "auto garbage collection",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_12",
-                            "title": "defer - execute when end",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_13",
-                            "title": ":= define",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_10",
+                    "title": "auto garbage collection",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_11",
+                    "title": "defer - execute when end",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_12",
+                    "title": ":= define",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_13",
+                    "title": "make - create object",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_14",
-                            "title": "make - create object",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_15",
-                                    "title": "b:=make(chan int,1)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_16",
-                            "title": "<- write",
+                            "title": "b:=make(chan int,1)",
                             "background-color": "#e82ad2",
                             "collapsed": true
-                        },
-                        {
-                            "id": "line_17",
-                            "title": "-> read",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_15",
+                    "title": "<- write",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_16",
+                    "title": "-> read",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_17",
+                    "title": "panic/recover",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_18",
-                            "title": "panic/recover",
+                            "title": "err:=errors.New(\"error\")",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_19",
-                                    "title": "err:=errors.New(\"error\")",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_20",
-                                    "title": "panic(err)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_21",
-                                    "title": "defer func(){ if err:=recover();err!=nil{...}}()",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
                         {
+                            "id": "line_19",
+                            "title": "panic(err)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_20",
+                            "title": "defer func(){ if err:=recover();err!=nil{...}}()",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_21",
+                    "title": "closure",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_22",
-                            "title": "closure",
+                            "title": "func Adder() func(int) int{",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_23",
-                                    "title": "func Adder() func(int) int{",
+                                    "title": "var x int",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_24",
+                                    "title": "return func(delta int)int{",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_24",
-                                            "title": "var x int",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
                                             "id": "line_25",
-                                            "title": "return func(delta int)int{",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_26",
-                                                    "title": "x+=delta",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_27",
-                                            "title": "}",
+                                            "title": "x+=delta",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
                                 },
                                 {
-                                    "id": "line_28",
+                                    "id": "line_26",
                                     "title": "}",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
+                        },
+                        {
+                            "id": "line_27",
+                            "title": "}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_28",
+            "title": "environment",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_29",
-                    "title": "environment",
+                    "title": "go run xxx.go",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_30",
+                    "title": "gofmt -w xxx.go",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_30",
-                            "title": "go run xxx.go",
+                            "id": "line_31",
+                            "title": "format go file & write back",
                             "background-color": "#e82ad2",
                             "collapsed": true
-                        },
-                        {
-                            "id": "line_31",
-                            "title": "gofmt -w xxx.go",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_32",
-                                    "title": "format go file & write back",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_32",
+            "title": "basic",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_33",
-                    "title": "basic",
+                    "title": "func add(a int,b int)int{}",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_34",
-                            "title": "func add(a int,b int)int{}",
+                            "title": "_ = add(8,9)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_35",
+                            "title": "return 0",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_36",
+                            "title": "func add(a int,b int)(int,int){}",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
-                                {
-                                    "id": "line_35",
-                                    "title": "_ = add(8,9)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_36",
-                                    "title": "return 0",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
                                 {
                                     "id": "line_37",
-                                    "title": "func add(a int,b int)(int,int){}",
+                                    "title": "return 3,4",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_38",
-                                            "title": "return 3,4",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_38",
+                            "title": "func add(a int,b int)(c int,d int){}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_39",
-                                    "title": "func add(a int,b int)(c int,d int){}",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_40",
-                                            "title": "c = 3",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_41",
-                                            "title": "d = 4",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_42",
-                                            "title": "e,_ = add(18,339)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_43",
-                                    "title": "func add(a int,arg... int)int{}",
+                                    "title": "c = 3",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
+                                {
+                                    "id": "line_40",
+                                    "title": "d = 4",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_41",
+                                    "title": "e,_ = add(18,339)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_42",
+                            "title": "func add(a int,arg... int)int{}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_43",
+                            "title": "defer",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_44",
-                                    "title": "defer",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_45",
-                                            "title": "execute when func ending",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_46",
-                                            "title": "release resource",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_47",
-                                            "title": "release connection",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_48",
-                            "title": "var str :=\"hello world\"",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_49",
-                                    "title": "\"string\"",
+                                    "title": "execute when func ending",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_50",
-                                    "title": "`string`",
+                                    "id": "line_45",
+                                    "title": "release resource",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_51",
-                                    "title": "len(\"string\")",
+                                    "id": "line_46",
+                                    "title": "release connection",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_52",
-                            "title": "const b string = \"word\"",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_53",
-                                    "title": "const ( a=0\\n b=0\\n c=0)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_54",
-                            "title": "var c string = \"word\"",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_55",
-                                    "title": "Var ( d=0\\n e=0\\n f=0)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_56",
-                            "title": "tmp:=[]byte(str)",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_57",
-                                    "title": "string to byte array",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_58",
-                            "title": "var b map[string]int",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_59",
-                                    "title": "b[\"test\"]=3",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_60",
-                            "title": "call by value",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_61",
-                                    "title": "int",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_62",
-                                    "title": "float",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_63",
-                                    "title": "bool",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_64",
-                                    "title": "string",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_65",
-                                    "title": "struct",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_66",
-                                    "title": "[]",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_67",
-                                            "title": "len(array)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_68",
-                            "title": "call by reference",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_69",
-                                    "title": "chan",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_70",
-                                    "title": "map",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_71",
-                                    "title": "slice",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_72",
-                                    "title": "&/* - like C/C++",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_73",
-                            "title": "package main",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_74",
-                                    "title": "import \"main\"\\n import \"fmt\"",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_75",
-                                    "title": "import(\"main\"\\n\"fmt\")",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_76",
-                            "title": "* pointer",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_77",
-                                    "title": "var a int=5",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_78",
-                                    "title": "var p *int = &a",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_79",
-                            "title": "if/else",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_80",
-                            "title": "switch/case/default",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_81",
-                                    "title": "case i>0&&i<10:{}break",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_82",
-                            "title": "for i:=0;i<10;i++{}",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_83",
-                                    "title": "for i>0{}",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_84",
-                                            "title": "for true{}",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_85",
-                                            "title": "for {}",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_86",
-                                    "title": "for i,v range \"hello world\"{ }",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_87",
-                                    "title": "break/continue",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_88",
-                            "title": "goto/label",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_89",
-                            "title": "new - create int/struct return pointer",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_90",
-                            "title": "array",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_91",
-                                    "title": "var a [len]int",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_92",
-                                    "title": "var a [5]int{1,2,3}",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_93",
-                                    "title": "var a [...]int{1,2,3,4,5,6}",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_94",
-                                    "title": "for index, v:=range a{}",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_95",
-                                    "title": "for i:=0;i<len(a);i++){}",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_96",
-                                    "title": "var b [5][3]int",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_97",
-                                    "title": "slice",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_98",
-                                            "title": "0<=cap(a)<=len(a)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_99",
-                                            "title": "a[0] # 0",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_100",
-                                            "title": "a[2:4] # 2,3",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_101",
-                                            "title": "a[:] # all",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_102",
-                                            "title": "a[:2] # 0,1",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_103",
-                            "title": "map",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_104",
-                                    "title": "var a map[string]string = map[string]string{\"key\":\"value\"}",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_105",
-                                    "title": "a[\"acb\"]=\"def\"",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_106",
-                                    "title": "var b:make(map[string]map[string]string)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_107",
-                                    "title": "b[\"key1\"]=make(map[string]string)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_108",
-                                    "title": "b[\"key1\"][\"key\"]=\"abc\"",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_109",
-                                    "title": "# no default sort",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_110",
-                            "title": "go no class",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_111",
-                            "title": "struct",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_112",
-                                    "title": "type Student struct{ Name string }",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_113",
-                                            "title": "var stu Student",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_114",
-                                                    "title": "stu.Name = \"name\"",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_115",
-                                            "title": "var stu *Student = new (Student)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_116",
-                                            "title": "var stu *Student = &Student{}",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_117",
-                                    "title": "type Student2 struct{ Student }",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_118",
-                                            "title": "var stu2 Student2",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_119",
-                                            "title": "stu2.Name=\"xxx\"",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_120",
-                                    "title": "struct method",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_121",
-                                            "title": "func (p Student) init(name string)int{p.Name=name}",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_122",
-                                            "title": "var stu Student",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_123",
-                                            "title": "stu.init(\"xxx\")",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_124",
-                            "title": "interface",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_125",
-                                    "title": "type Carer interface{GetName() string}",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_126",
-                                    "title": "type BMW struct{Name string{return \"BMW\"}}",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_127",
-                                    "title": "func (p *BWM) GetName()string{return p.Name}",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_128",
-                                            "title": "var car Carer",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_129",
-                                            "title": "var bmw BMW",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_130",
-                                            "title": "car = &bmw",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_131",
-                                            "title": "car.GetName()",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
                                 }
                             ]
                         }
                     ]
                 },
                 {
+                    "id": "line_47",
+                    "title": "var str :=\"hello world\"",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_48",
+                            "title": "\"string\"",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_49",
+                            "title": "`string`",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_50",
+                            "title": "len(\"string\")",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_51",
+                    "title": "const b string = \"word\"",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_52",
+                            "title": "const ( a=0\\n b=0\\n c=0)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_53",
+                    "title": "var c string = \"word\"",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_54",
+                            "title": "Var ( d=0\\n e=0\\n f=0)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_55",
+                    "title": "tmp:=[]byte(str)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_56",
+                            "title": "string to byte array",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_57",
+                    "title": "var b map[string]int",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_58",
+                            "title": "b[\"test\"]=3",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_59",
+                    "title": "call by value",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_60",
+                            "title": "int",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_61",
+                            "title": "float",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_62",
+                            "title": "bool",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_63",
+                            "title": "string",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_64",
+                            "title": "struct",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_65",
+                            "title": "[]",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_66",
+                                    "title": "len(array)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_67",
+                    "title": "call by reference",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_68",
+                            "title": "chan",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_69",
+                            "title": "map",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_70",
+                            "title": "slice",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_71",
+                            "title": "&/* - like C/C++",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_72",
+                    "title": "package main",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_73",
+                            "title": "import \"main\"\\n import \"fmt\"",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_74",
+                            "title": "import(\"main\"\\n\"fmt\")",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_75",
+                    "title": "* pointer",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_76",
+                            "title": "var a int=5",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_77",
+                            "title": "var p *int = &a",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_78",
+                    "title": "if/else",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_79",
+                    "title": "switch/case/default",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_80",
+                            "title": "case i>0&&i<10:{}break",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_81",
+                    "title": "for i:=0;i<10;i++{}",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_82",
+                            "title": "for i>0{}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_83",
+                                    "title": "for true{}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_84",
+                                    "title": "for {}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_85",
+                            "title": "for i,v range \"hello world\"{ }",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_86",
+                            "title": "break/continue",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_87",
+                    "title": "goto/label",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_88",
+                    "title": "new - create int/struct return pointer",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_89",
+                    "title": "array",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_90",
+                            "title": "var a [len]int",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_91",
+                            "title": "var a [5]int{1,2,3}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_92",
+                            "title": "var a [...]int{1,2,3,4,5,6}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_93",
+                            "title": "for index, v:=range a{}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_94",
+                            "title": "for i:=0;i<len(a);i++){}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_95",
+                            "title": "var b [5][3]int",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_96",
+                            "title": "slice",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_97",
+                                    "title": "0<=cap(a)<=len(a)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_98",
+                                    "title": "a[0] # 0",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_99",
+                                    "title": "a[2:4] # 2,3",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_100",
+                                    "title": "a[:] # all",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_101",
+                                    "title": "a[:2] # 0,1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_102",
+                    "title": "map",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_103",
+                            "title": "var a map[string]string = map[string]string{\"key\":\"value\"}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_104",
+                            "title": "a[\"acb\"]=\"def\"",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_105",
+                            "title": "var b:make(map[string]map[string]string)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_106",
+                            "title": "b[\"key1\"]=make(map[string]string)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_107",
+                            "title": "b[\"key1\"][\"key\"]=\"abc\"",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_108",
+                            "title": "# no default sort",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_109",
+                    "title": "go no class",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_110",
+                    "title": "struct",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_111",
+                            "title": "type Student struct{ Name string }",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_112",
+                                    "title": "var stu Student",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_113",
+                                            "title": "stu.Name = \"name\"",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_114",
+                                    "title": "var stu *Student = new (Student)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_115",
+                                    "title": "var stu *Student = &Student{}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_116",
+                            "title": "type Student2 struct{ Student }",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_117",
+                                    "title": "var stu2 Student2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_118",
+                                    "title": "stu2.Name=\"xxx\"",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_119",
+                            "title": "struct method",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_120",
+                                    "title": "func (p Student) init(name string)int{p.Name=name}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_121",
+                                    "title": "var stu Student",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_122",
+                                    "title": "stu.init(\"xxx\")",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_123",
+                    "title": "interface",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_124",
+                            "title": "type Carer interface{GetName() string}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_125",
+                            "title": "type BMW struct{Name string{return \"BMW\"}}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_126",
+                            "title": "func (p *BWM) GetName()string{return p.Name}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_127",
+                                    "title": "var car Carer",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_128",
+                                    "title": "var bmw BMW",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_129",
+                                    "title": "car = &bmw",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_130",
+                                    "title": "car.GetName()",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_132",
+            "title": "api",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_133",
-                    "title": "api",
+                    "title": "fmt",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_134",
-                            "title": "fmt",
+                            "title": "Println",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_135",
+                            "title": "Printf",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
-                                {
-                                    "id": "line_135",
-                                    "title": "Println",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
                                 {
                                     "id": "line_136",
-                                    "title": "Printf",
+                                    "title": "%+v",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_137",
-                                            "title": "%+v",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_138",
-                                            "title": "%#v",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_139",
-                                            "title": "%T",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_140",
-                                            "title": "%t",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_141",
-                                            "title": "%b",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_142",
-                                            "title": "%q",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_143",
-                                            "title": "%x",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_144",
-                                            "title": "%p",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
                                 },
                                 {
-                                    "id": "line_145",
-                                    "title": "Scanf",
+                                    "id": "line_137",
+                                    "title": "%#v",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_138",
+                                    "title": "%T",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_139",
+                                    "title": "%t",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_140",
+                                    "title": "%b",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_141",
+                                    "title": "%q",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_142",
+                                    "title": "%x",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_143",
+                                    "title": "%p",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
+                        {
+                            "id": "line_144",
+                            "title": "Scanf",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_145",
+                    "title": "time",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_146",
-                            "title": "time",
+                            "title": "Time",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_147",
+                            "title": "Sleep",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_148",
+                            "title": "Now",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
-                                {
-                                    "id": "line_147",
-                                    "title": "Time",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_148",
-                                    "title": "Sleep",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
                                 {
                                     "id": "line_149",
-                                    "title": "Now",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_150",
-                                            "title": "Format",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_151",
-                                            "title": "Day",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_152",
-                                            "title": "Minute",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_153",
-                                            "title": "Month",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_154",
-                                            "title": "Year",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_155",
-                                    "title": "t: = NewTicker(time.Second)",
+                                    "title": "Format",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_156",
-                                    "title": "for v:=range t.C{}",
+                                    "id": "line_150",
+                                    "title": "Day",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_157",
-                                    "title": "<- time.Afer(time.Second){}",
+                                    "id": "line_151",
+                                    "title": "Minute",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_152",
+                                    "title": "Month",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_153",
+                                    "title": "Year",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
+                        {
+                            "id": "line_154",
+                            "title": "t: = NewTicker(time.Second)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_155",
+                            "title": "for v:=range t.C{}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_156",
+                            "title": "<- time.Afer(time.Second){}",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_157",
+                    "title": "math",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_158",
-                            "title": "math",
+                            "title": "rand",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_159",
-                                    "title": "rand",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_159",
+                    "title": "strings",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_160",
-                            "title": "strings",
+                            "title": "HasPrefix",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_161",
-                                    "title": "HasPrefix",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_162",
-                                    "title": "HasSuffix",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_163",
-                                    "title": "Index",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_164",
-                                    "title": "LastIndex",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_165",
-                                    "title": "Replace",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_166",
-                                    "title": "Count",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_167",
-                                    "title": "Repeat",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_168",
-                                    "title": "ToLower",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_169",
-                                    "title": "ToUpper",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_170",
-                                    "title": "Trim",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_171",
-                                    "title": "TrimSpace",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_172",
-                                    "title": "TrimLeft",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_173",
-                                    "title": "TrimRight",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_174",
-                                    "title": "Field - Split by space",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_175",
-                                    "title": "Split",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_176",
-                                    "title": "Join",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
+                        {
+                            "id": "line_161",
+                            "title": "HasSuffix",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_162",
+                            "title": "Index",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_163",
+                            "title": "LastIndex",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_164",
+                            "title": "Replace",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_165",
+                            "title": "Count",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_166",
+                            "title": "Repeat",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_167",
+                            "title": "ToLower",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_168",
+                            "title": "ToUpper",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_169",
+                            "title": "Trim",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_170",
+                            "title": "TrimSpace",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_171",
+                            "title": "TrimLeft",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_172",
+                            "title": "TrimRight",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_173",
+                            "title": "Field - Split by space",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_174",
+                            "title": "Split",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_175",
+                            "title": "Join",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_176",
+                    "title": "stringconv",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_177",
-                            "title": "stringconv",
+                            "title": "Itoa",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_178",
-                                    "title": "Itoa",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_179",
-                                    "title": "Atoi",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
+                        {
+                            "id": "line_178",
+                            "title": "Atoi",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_179",
+                    "title": "sort",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_180",
-                            "title": "sort",
+                            "title": "Ints(int_array)",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_181",
-                                    "title": "Ints(int_array)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_182",
-                                    "title": "Strings(str_array)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
                         {
+                            "id": "line_181",
+                            "title": "Strings(str_array)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_182",
+                    "title": "sync",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_183",
-                            "title": "sync",
+                            "title": "Mutex",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_184",
-                                    "title": "Mutex",
+                                    "title": "var lock sync.Mutex",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_185",
-                                            "title": "var lock sync.Mutex",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_186",
-                                            "title": "lock.Lock()",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_187",
-                                            "title": "lock.Unlock()",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
                                 },
                                 {
-                                    "id": "line_188",
-                                    "title": "RWMutex",
+                                    "id": "line_185",
+                                    "title": "lock.Lock()",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_189",
-                                            "title": "var rwLock sync.RWMutex",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_190",
-                                            "title": "rwLock.RLock()",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_191",
-                                            "title": "rwLock.RUnlock()",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_192",
-                                            "title": "rwLock.Lock()",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_193",
-                                            "title": "rwLock.Unlock()",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_186",
+                                    "title": "lock.Unlock()",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 }
                             ]
                         },
                         {
+                            "id": "line_187",
+                            "title": "RWMutex",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_188",
+                                    "title": "var rwLock sync.RWMutex",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_189",
+                                    "title": "rwLock.RLock()",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_190",
+                                    "title": "rwLock.RUnlock()",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_191",
+                                    "title": "rwLock.Lock()",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_192",
+                                    "title": "rwLock.Unlock()",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_193",
+                    "title": "reflect",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_194",
-                            "title": "reflect",
+                            "title": "TypeOf",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_195",
-                                    "title": "TypeOf",
+                                    "title": "ex: Student",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_196",
-                                            "title": "ex: Student",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_196",
+                            "title": "ValueOf",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_197",
-                                    "title": "ValueOf",
+                                    "title": "set",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_198",
-                                            "title": "set",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_199",
-                                                    "title": "reflect.ValueOf(b).Elem().SetInt(10)",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_200",
-                                            "title": "get",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_201",
-                                                    "title": "c:=reflect.ValueOf(b).Elem().Int()",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_202",
-                                    "title": "Value.Kind",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_203",
-                                            "title": "ex: struct",
+                                            "title": "reflect.ValueOf(b).Elem().SetInt(10)",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
                                 },
                                 {
-                                    "id": "line_204",
-                                    "title": "Value.Inteface",
+                                    "id": "line_199",
+                                    "title": "get",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_200",
+                                            "title": "c:=reflect.ValueOf(b).Elem().Int()",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_201",
+                            "title": "Value.Kind",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_202",
+                                    "title": "ex: struct",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
+                        {
+                            "id": "line_203",
+                            "title": "Value.Inteface",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_204",
+                    "title": "os",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_205",
-                            "title": "os",
+                            "title": "Stdin",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_206",
-                                    "title": "Stdin",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_207",
-                                    "title": "Stdout",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_208",
-                                    "title": "Stderr",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_209",
-                                    "title": "Args",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_210",
-                                    "title": "flag.BoolVar(&test,\"b\",false,\"print on newline\")",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_211",
-                                    "title": "flag.StringVar(&str,\"s\",\"\",\"print on newline\")",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
+                        {
+                            "id": "line_206",
+                            "title": "Stdout",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_207",
+                            "title": "Stderr",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_208",
+                            "title": "Args",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_209",
+                            "title": "flag.BoolVar(&test,\"b\",false,\"print on newline\")",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_210",
+                            "title": "flag.StringVar(&str,\"s\",\"\",\"print on newline\")",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_211",
+                    "title": "io",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_212",
-                            "title": "io",
+                            "title": "file,err : = os.Open(\"./log/log.txt\")",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_213",
-                                    "title": "file,err : = os.Open(\"./log/log.txt\")",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_214",
-                                    "title": "defer file.Close()",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_215",
-                                    "title": "buf,err:=ioutil.ReadFile(\"file.txt\")",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_216",
-                                    "title": "f,err:=os.Open(\"write.txt\",os.O_WRONLY|os.O_CREATE,0666)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_217",
-                                    "title": "ow:=bufio.NewWriter(f)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_218",
-                                    "title": "ow.WriteString(\"hello\")",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_219",
-                                    "title": "ow.Flush()",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
+                        {
+                            "id": "line_213",
+                            "title": "defer file.Close()",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_214",
+                            "title": "buf,err:=ioutil.ReadFile(\"file.txt\")",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_215",
+                            "title": "f,err:=os.Open(\"write.txt\",os.O_WRONLY|os.O_CREATE,0666)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_216",
+                            "title": "ow:=bufio.NewWriter(f)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_217",
+                            "title": "ow.WriteString(\"hello\")",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_218",
+                            "title": "ow.Flush()",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_219",
+                    "title": "bufio",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_220",
-                            "title": "bufio",
+                            "title": "reader = bufio.NewReader(file)",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_221",
-                                    "title": "reader = bufio.NewReader(file)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_222",
-                                    "title": "str,err:=reader.ReadString(\"\\n\")",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
+                        {
+                            "id": "line_221",
+                            "title": "str,err:=reader.ReadString(\"\\n\")",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_222",
+                    "title": "compress",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_223",
-                            "title": "compress",
+                            "title": "fz,err:=gzip.NewReader(file)",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_224",
-                                    "title": "fz,err:=gzip.NewReader(file)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_225",
-                                    "title": "r = bufio.NewReader(fz)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
+                        {
+                            "id": "line_224",
+                            "title": "r = bufio.NewReader(fz)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_225",
+                    "title": "encoding",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_226",
-                            "title": "encoding",
+                            "title": "data,err:=json.Marshal(stud)",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_227",
-                                    "title": "data,err:=json.Marshal(stud)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_228",
-                                    "title": "err := json.UnMarshal([]byte(data), &stud)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
+                        {
+                            "id": "line_227",
+                            "title": "err := json.UnMarshal([]byte(data), &stud)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_228",
+                    "title": "runtime",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_229",
-                            "title": "runtime",
+                            "title": "num:=runtime.NumCPU()",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_230",
-                                    "title": "num:=runtime.NumCPU()",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_231",
-                                    "title": "GOMAXPROCS(num)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
                         {
-                            "id": "line_232",
-                            "title": "testing",
+                            "id": "line_230",
+                            "title": "GOMAXPROCS(num)",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_233",
-                                    "title": "unit_test_filename \"xxx_test.go\"",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_234",
-                                    "title": "func TestAdd(t *testing.T){ T.Fatal(\"xxx\") }",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_235",
-                                    "title": "t.Logf(\"test\")",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_236",
-                                    "title": "go test",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_231",
+                    "title": "testing",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_232",
+                            "title": "unit_test_filename \"xxx_test.go\"",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_233",
+                            "title": "func TestAdd(t *testing.T){ T.Fatal(\"xxx\") }",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_234",
+                            "title": "t.Logf(\"test\")",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_235",
+                            "title": "go test",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
                 }

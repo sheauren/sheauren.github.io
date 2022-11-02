@@ -6,89 +6,81 @@
     "children": [
         {
             "id": "line_0",
-            "title": "Fizz Buzz in tensorflow",
+            "title": "\u786c\"train\"\u4e00\u767c\u7684\u4ee3\u8868\u6545\u4e8b",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "\u786c\"train\"\u4e00\u767c\u7684\u4ee3\u8868\u6545\u4e8b",
+                    "title": "https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_2",
+                    "title": "\u770b\u8d77\u4f86\u597d\u50cf\u4e0d\u80fdtrain\u7684\u6771\u897f\u9084\u662f\u7528train\u89e3\u6c7a",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_3",
+                    "title": "ex:",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_2",
-                            "title": "https://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_3",
-                            "title": "\u770b\u8d77\u4f86\u597d\u50cf\u4e0d\u80fdtrain\u7684\u6771\u897f\u9084\u662f\u7528train\u89e3\u6c7a",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
                             "id": "line_4",
-                            "title": "ex:",
+                            "title": "\u4e00\u4e32\u6578\u5b57",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_5",
+                            "title": "%3==0 fizz",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "%5==0 buzz",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_7",
+                            "title": "%3%3==0 fizz buzz",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_8",
+                            "title": "\u7528tensorflow\u505a",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_9",
+                            "title": "1-100\u662foutput\u8981\u7528",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_10",
+                            "title": "101-1000\u7576training data",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_11",
+                            "title": "training:",
                             "background-color": "#e82ad2",
                             "collapsed": false,
                             "children": [
                                 {
-                                    "id": "line_5",
-                                    "title": "\u4e00\u4e32\u6578\u5b57",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                },
-                                {
-                                    "id": "line_6",
-                                    "title": "%3==0 fizz",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                },
-                                {
-                                    "id": "line_7",
-                                    "title": "%5==0 buzz",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                },
-                                {
-                                    "id": "line_8",
-                                    "title": "%3%3==0 fizz buzz",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                },
-                                {
-                                    "id": "line_9",
-                                    "title": "\u7528tensorflow\u505a",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                },
-                                {
-                                    "id": "line_10",
-                                    "title": "1-100\u662foutput\u8981\u7528",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                },
-                                {
-                                    "id": "line_11",
-                                    "title": "101-1000\u7576training data",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                },
-                                {
                                     "id": "line_12",
-                                    "title": "training:",
+                                    "title": "train acc\u592a\u5c0f\u5c31\u52a0\u5927model",
                                     "background-color": "#0fbdff",
-                                    "collapsed": false,
-                                    "children": [
-                                        {
-                                            "id": "line_13",
-                                            "title": "train acc\u592a\u5c0f\u5c31\u52a0\u5927model",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": false
                                 }
                             ]
                         }

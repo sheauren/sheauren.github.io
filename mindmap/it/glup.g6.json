@@ -6,421 +6,321 @@
     "children": [
         {
             "id": "line_0",
-            "title": "glup",
+            "title": "feature",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "feature",
+                    "title": "automate and enhance your workflow",
                     "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_2",
-                            "title": "automate and enhance your workflow",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
-                },
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_2",
+            "title": "example:",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_3",
-                    "title": "example:",
+                    "title": "prototype in glupfile.js",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_4",
-                            "title": "prototype in glupfile.js",
+                            "title": "var glup = require('glup')",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_5",
+                            "title": "glup.task('default',['clean','less'],()=>{",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_5",
-                                    "title": "var glup = require('glup')",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
                                     "id": "line_6",
-                                    "title": "glup.task('default',['clean','less'],()=>{",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_7",
-                                            "title": "console.log('done')",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_8",
-                                    "title": "})",
+                                    "title": "console.log('done')",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_7",
+                            "title": "})",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_8",
+                            "title": "run glup",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_9",
-                                    "title": "run glup",
+                                    "title": "glup",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_10",
-                                            "title": "glup",
+                                            "title": "run default task",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_11",
-                                                    "title": "run default task",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_12",
-                                            "title": "glup <task> <othertaks>",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_13",
-                                                    "title": "run spec task",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         }
                                     ]
                                 },
                                 {
-                                    "id": "line_14",
-                                    "title": "// less",
+                                    "id": "line_11",
+                                    "title": "glup <task> <othertaks>",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_12",
+                                            "title": "run spec task",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_13",
+                            "title": "// less",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_14",
+                            "title": "gloup.task('less',()=>{",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_15",
-                                    "title": "gloup.task('less',()=>{",
+                                    "title": "glup.src('src/**/*.less')",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_16",
-                                            "title": "glup.src('src/**/*.less')",
+                                            "title": ".pipe(less())",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_17",
-                                                    "title": ".pipe(less())",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_18",
-                                                    "title": ".pipe(gulp.dest('build))",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_19",
-                                    "title": "})",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_20",
-                                    "title": "// clean-task",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_21",
-                                    "title": "glup.task('clean',()=>{",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
+                                            "collapsed": true
+                                        },
                                         {
-                                            "id": "line_22",
-                                            "title": "del.sync('build')",
+                                            "id": "line_17",
+                                            "title": ".pipe(gulp.dest('build))",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_18",
+                            "title": "})",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_19",
+                            "title": "// clean-task",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_20",
+                            "title": "glup.task('clean',()=>{",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
-                                    "id": "line_23",
-                                    "title": "})",
+                                    "id": "line_21",
+                                    "title": "del.sync('build')",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
+                        },
+                        {
+                            "id": "line_22",
+                            "title": "})",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_23",
+            "title": "api",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_24",
-                    "title": "api",
+                    "title": "glup.src('client/template/*.jade')",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_25",
-                            "title": "glup.src('client/template/*.jade')",
+                            "title": ".pipe(jade())",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_26",
-                                    "title": ".pipe(jade())",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_27",
-                                    "title": ".pipe(minify())",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_28",
-                                    "title": ".pipe(glup.dest('build/minified_template'))",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
                         {
+                            "id": "line_26",
+                            "title": ".pipe(minify())",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_27",
+                            "title": ".pipe(glup.dest('build/minified_template'))",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_28",
+                    "title": "glob",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_29",
-                            "title": "glob",
+                            "title": "*",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_30",
-                                    "title": "*",
+                                    "title": "any chars/length",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_31",
-                                            "title": "any chars/length",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_31",
+                            "title": "?",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_32",
-                                    "title": "?",
+                                    "title": "any one char",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_33",
-                                            "title": "any one char",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_33",
+                            "title": "[...]",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_34",
-                                    "title": "[...]",
+                                    "title": "range char",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_35",
-                                            "title": "range char",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_35",
+                            "title": "!(pattern1|pattern2)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_36",
-                                    "title": "!(pattern1|pattern2)",
+                                    "title": "not match pattern",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_37",
-                                            "title": "not match pattern",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_37",
+                            "title": "?(pattern1|pattern2)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_38",
-                                    "title": "?(pattern1|pattern2)",
+                                    "title": "match 0 or 1",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_39",
-                                            "title": "match 0 or 1",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_39",
+                            "title": "+(pattern1|pattern2)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_40",
-                                    "title": "+(pattern1|pattern2)",
+                                    "title": "match 1 or more",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_41",
-                                            "title": "match 1 or more",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_41",
+                            "title": "*(a|b|c)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_42",
-                                    "title": "*(a|b|c)",
+                                    "title": "match any",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_43",
-                                            "title": "match any",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_43",
+                            "title": "@(pattern|pat*|pat?erN)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_44",
-                                    "title": "@(pattern|pat*|pat?erN)",
+                                    "title": "match spec 1",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_45",
-                                            "title": "match spec 1",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_45",
+                            "title": "**",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_46",
-                                    "title": "**",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_47",
-                                            "title": "any level match",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_48",
-                            "title": "src",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_49",
-                                    "title": "select source file by glob",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_50",
-                            "title": "dest",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_51",
-                                    "title": "build target",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_52",
-                            "title": "task(name,[deps],fn)",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_53",
-                                    "title": "name",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_54",
-                                            "title": "taskname",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_55",
-                                    "title": "deps",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_56",
-                                            "title": "depend by other taskname array",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_57",
-                                    "title": "fn",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_58",
-                                            "title": "callback",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_59",
-                            "title": "watcher = watch(glob,[.opts],tasks)",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_60",
-                                    "title": "watcher.on('change',event=>{})",
+                                    "title": "any level match",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
@@ -429,68 +329,160 @@
                     ]
                 },
                 {
-                    "id": "line_61",
-                    "title": "other library",
+                    "id": "line_47",
+                    "title": "src",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_62",
-                            "title": "glup-less",
+                            "id": "line_48",
+                            "title": "select source file by glob",
                             "background-color": "#e82ad2",
                             "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_49",
+                    "title": "dest",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_50",
+                            "title": "build target",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_51",
+                    "title": "task(name,[deps],fn)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_52",
+                            "title": "name",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_53",
+                                    "title": "taskname",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
                         },
+                        {
+                            "id": "line_54",
+                            "title": "deps",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_55",
+                                    "title": "depend by other taskname array",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_56",
+                            "title": "fn",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_57",
+                                    "title": "callback",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_58",
+                    "title": "watcher = watch(glob,[.opts],tasks)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_59",
+                            "title": "watcher.on('change',event=>{})",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_60",
+            "title": "other library",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_61",
+                    "title": "glup-less",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_62",
+                    "title": "glup-clean-css",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_63",
-                            "title": "glup-clean-css",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_64",
-                                    "title": "compress css",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_65",
-                            "title": "glup-source-map",
+                            "title": "compress css",
                             "background-color": "#e82ad2",
                             "collapsed": true
-                        },
-                        {
-                            "id": "line_66",
-                            "title": "glup-jade",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_67",
-                            "title": "del",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_64",
+                    "title": "glup-source-map",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_65",
+                    "title": "glup-jade",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_66",
+                    "title": "del",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_67",
+                    "title": "glup-autoprefixer",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_68",
-                            "title": "glup-autoprefixer",
+                            "title": "browsers:['last 5 versions','firefox>20'],",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_69",
-                                    "title": "browsers:['last 5 versions','firefox>20'],",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_70",
-                                    "title": "cascade:false",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_69",
+                            "title": "cascade:false",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
                 }

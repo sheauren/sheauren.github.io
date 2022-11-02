@@ -6,181 +6,115 @@
     "children": [
         {
             "id": "line_0",
-            "title": "Natural Language Processing(Based on Deep Learning)",
+            "title": "Basic",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "Basic",
+                    "title": "Recurrent Model",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_2",
-                            "title": "Recurrent Model",
+                            "title": "Sequential Model",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_3",
-                                    "title": "Sequential Model",
+                                    "title": "Teacher Forcing",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_4",
+                                    "title": "Non-Teacher Forcing",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_5",
+                                    "title": "n-gram",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_6",
+                                    "title": "katz-Backoff Model",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_7",
+                                    "title": "RNN",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_4",
-                                            "title": "Teacher Forcing",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_5",
-                                            "title": "Non-Teacher Forcing",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_6",
-                                            "title": "n-gram",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_7",
-                                            "title": "katz-Backoff Model",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
                                             "id": "line_8",
-                                            "title": "RNN",
+                                            "title": "Bi-directional RNN",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_9",
-                                                    "title": "Bi-directional RNN",
+                                                    "title": "Deep RNN",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_10",
-                                                            "title": "Deep RNN",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
+                                                    "collapsed": true
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "id": "line_11",
-                                            "title": "GRU",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_12",
-                                            "title": "LSTM",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_13",
-                                            "title": "BPTT",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_14",
-                                            "title": "Vanishing Gradient",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_15",
-                                            "title": "Cell State",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
                                         }
                                     ]
                                 },
+                                {
+                                    "id": "line_10",
+                                    "title": "GRU",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_11",
+                                    "title": "LSTM",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_12",
+                                    "title": "BPTT",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_13",
+                                    "title": "Vanishing Gradient",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_14",
+                                    "title": "Cell State",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_15",
+                            "title": "P(wi | w1: i-1)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_16",
-                                    "title": "P(wi | w1: i-1)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_17",
-                                            "title": "Greedy Search",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_18",
-                                            "title": "Beam Search",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_19",
-                            "title": "Convolutional Model",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_20",
-                                    "title": "TexCNN",
+                                    "title": "Greedy Search",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_21",
-                                    "title": "DCNN",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_22",
-                                    "title": "Kernel Size = n-gram",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_23",
-                                    "title": "Channel = number of Perception",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_24",
-                            "title": "Recursive Model",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_25",
-                                    "title": "Syntatically-United RNN",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_26",
-                                    "title": "RNTN",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_27",
-                                    "title": "Matrix-Vector RNN",
+                                    "id": "line_17",
+                                    "title": "Beam Search",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
@@ -189,652 +123,710 @@
                     ]
                 },
                 {
+                    "id": "line_18",
+                    "title": "Convolutional Model",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_19",
+                            "title": "TexCNN",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_20",
+                            "title": "DCNN",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_21",
+                            "title": "Kernel Size = n-gram",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_22",
+                            "title": "Channel = number of Perception",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_23",
+                    "title": "Recursive Model",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_24",
+                            "title": "Syntatically-United RNN",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_25",
+                            "title": "RNTN",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_26",
+                            "title": "Matrix-Vector RNN",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_27",
+            "title": "Language Model",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_28",
-                    "title": "Language Model",
+                    "title": "Encoder-Decoder Model",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_29",
-                            "title": "Encoder-Decoder Model",
+                            "title": "Source-Target",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_30",
-                                    "title": "Source-Target",
+                                    "title": "Task",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_31",
-                                            "title": "Task",
+                                            "title": "Machine Translation",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_32",
-                                                    "title": "Machine Translation",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_33",
-                                                    "title": "Summarization",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         },
                                         {
-                                            "id": "line_34",
-                                            "title": "OOV Problem Slove",
+                                            "id": "line_32",
+                                            "title": "Summarization",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_35",
-                                                    "title": "Copying Mechanism",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_36",
-                                                    "title": "Subword Tokenizing based NMT",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_37",
-                                                            "title": "Byte Pair Encoding",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_38",
-                                                            "title": "Word Piece Model",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_39",
-                                                            "title": "Subword Regularization",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_40",
-                                                            "title": "Based Frequency",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_41",
-                                                            "title": "Based Likelihood",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_42",
-                                                            "title": "EM Algorithm",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_43",
-                                                            "title": "Google Sentence Piece",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                }
-                                            ]
+                                            "collapsed": true
                                         }
                                     ]
                                 },
                                 {
-                                    "id": "line_44",
-                                    "title": "Model",
+                                    "id": "line_33",
+                                    "title": "OOV Problem Slove",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_45",
-                                            "title": "Seq2Seq",
+                                            "id": "line_34",
+                                            "title": "Copying Mechanism",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_46",
-                                            "title": "Attention Mechanism",
+                                            "id": "line_35",
+                                            "title": "Subword Tokenizing based NMT",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_47",
-                                                    "title": "Context Vector",
+                                                    "id": "line_36",
+                                                    "title": "Byte Pair Encoding",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_48",
-                                                    "title": "Alignment Model",
+                                                    "id": "line_37",
+                                                    "title": "Word Piece Model",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_49",
-                                                    "title": "Query",
+                                                    "id": "line_38",
+                                                    "title": "Subword Regularization",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_50",
-                                                    "title": "Key",
+                                                    "id": "line_39",
+                                                    "title": "Based Frequency",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_51",
-                                                    "title": "Value",
+                                                    "id": "line_40",
+                                                    "title": "Based Likelihood",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_41",
+                                                    "title": "EM Algorithm",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_42",
+                                                    "title": "Google Sentence Piece",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "id": "line_52",
-                                            "title": "Seq2Seq based on",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_53",
-                                            "title": "Skip-Thought",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_54",
-                                            "title": "Transformer",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_55",
-                                                    "title": "Self-Attention",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_56",
-                                                    "title": "Scale-Dot Product Attention",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_57",
-                                                    "title": "Positional Encoding",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_58",
-                                                    "title": "Sinusoid Function",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_59",
-                                                    "title": "Poswise FeedForwordNet",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_60",
-                                                    "title": "Multi-Head Attention",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_61",
-                                                    "title": "Masked Multi-Head Attention",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_62",
-                                            "title": "Unsupervised Machine Translation",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "id": "line_63",
-                            "title": "Word Reprentation to Contextual Representation",
+                            "id": "line_43",
+                            "title": "Model",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_64",
-                                    "title": "CoVe",
+                                    "id": "line_44",
+                                    "title": "Seq2Seq",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_65",
-                                    "title": "ELMo",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_66",
-                                    "title": "2Layers LSTM",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_67",
-                                    "title": "Pretrained for Embedding",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_68",
-                                    "title": "State of the Art Model",
+                                    "id": "line_45",
+                                    "title": "Attention Mechanism",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_69",
-                                            "title": "Pretrainin-Finetuning",
+                                            "id": "line_46",
+                                            "title": "Context Vector",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_70",
-                                            "title": "Transformer Based Model",
+                                            "id": "line_47",
+                                            "title": "Alignment Model",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_71",
-                                            "title": "Deep Transformer",
+                                            "id": "line_48",
+                                            "title": "Query",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_72",
-                                            "title": "OpenAI-GPT",
+                                            "id": "line_49",
+                                            "title": "Key",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_73",
-                                            "title": "P(wi|w1:i-1)",
+                                            "id": "line_50",
+                                            "title": "Value",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_51",
+                                    "title": "Seq2Seq based on",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_52",
+                                    "title": "Skip-Thought",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_53",
+                                    "title": "Transformer",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_54",
+                                            "title": "Self-Attention",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_74",
-                                            "title": "Auxiliary Task Head",
+                                            "id": "line_55",
+                                            "title": "Scale-Dot Product Attention",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
+                                        {
+                                            "id": "line_56",
+                                            "title": "Positional Encoding",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_57",
+                                            "title": "Sinusoid Function",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_58",
+                                            "title": "Poswise FeedForwordNet",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_59",
+                                            "title": "Multi-Head Attention",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_60",
+                                            "title": "Masked Multi-Head Attention",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_61",
+                                    "title": "Unsupervised Machine Translation",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_62",
+                    "title": "Word Reprentation to Contextual Representation",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_63",
+                            "title": "CoVe",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_64",
+                            "title": "ELMo",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_65",
+                            "title": "2Layers LSTM",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_66",
+                            "title": "Pretrained for Embedding",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_67",
+                            "title": "State of the Art Model",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_68",
+                                    "title": "Pretrainin-Finetuning",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_69",
+                                    "title": "Transformer Based Model",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_70",
+                                    "title": "Deep Transformer",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_71",
+                                    "title": "OpenAI-GPT",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_72",
+                                    "title": "P(wi|w1:i-1)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_73",
+                                    "title": "Auxiliary Task Head",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_74",
+                                    "title": "BERT",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_75",
-                                            "title": "BERT",
+                                            "title": "Masking Language Model",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_76",
+                                            "title": "Next Sentence Predict(NSP)",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_76",
-                                                    "title": "Masking Language Model",
+                                                    "id": "line_77",
+                                                    "title": "CLS",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_77",
-                                                    "title": "Next Sentence Predict(NSP)",
+                                                    "id": "line_78",
+                                                    "title": "SEP",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_78",
-                                                            "title": "CLS",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_79",
-                                                            "title": "SEP",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_80",
-                                                            "title": "MASK",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_79",
+                                                    "title": "MASK",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "id": "line_81",
-                                            "title": "Universal Transformer",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_82",
-                                            "title": "Inductive Bias of RNN",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_83",
-                                            "title": "OpenAI-GPT2",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_84",
-                                            "title": "Zero-Shot Learning",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_85",
-                                            "title": "Not Fine Tuning",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_86",
-                                            "title": "RoBERTo",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_87",
-                                            "title": "Skip NSP",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_88",
-                                            "title": "Large Batch",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_89",
-                                            "title": "Relative Positional Encoding",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_90",
-                                            "title": "Transformer XL",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_91",
-                                            "title": "Segment-Level Recurrence with State Reuse",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_80",
+                                    "title": "Universal Transformer",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_81",
+                                    "title": "Inductive Bias of RNN",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_82",
+                                    "title": "OpenAI-GPT2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_83",
+                                    "title": "Zero-Shot Learning",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_84",
+                                    "title": "Not Fine Tuning",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_85",
+                                    "title": "RoBERTo",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_86",
+                                    "title": "Skip NSP",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_87",
+                                    "title": "Large Batch",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_88",
+                                    "title": "Relative Positional Encoding",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_89",
+                                    "title": "Transformer XL",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_90",
+                                    "title": "Segment-Level Recurrence with State Reuse",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_91",
+                                    "title": "XLNet",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_92",
-                                            "title": "XLNet",
+                                            "title": "Two-Stream Self-Attention for Target-Aware",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_93",
-                                                    "title": "Two-Stream Self-Attention for Target-Aware",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_94",
-                                                            "title": "Content Stream",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_95",
-                                                            "title": "Query Stream",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_96",
-                                                    "title": "Permutation Language Model",
+                                                    "title": "Content Stream",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_97",
-                                                    "title": "Segement Recurrence Mechanism",
+                                                    "id": "line_94",
+                                                    "title": "Query Stream",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "id": "line_95",
+                                            "title": "Permutation Language Model",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_96",
+                                            "title": "Segement Recurrence Mechanism",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
                                         }
                                     ]
                                 }
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_97",
+            "title": "Distributed Representation",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_98",
-                    "title": "Distributed Representation",
+                    "title": "Word Representation",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_99",
+                    "title": "Co-occurence Matrix",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_100",
+                    "title": "NNLM",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_101",
+                    "title": "Embedding",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_99",
-                            "title": "Word Representation",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_100",
-                            "title": "Co-occurence Matrix",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_101",
-                            "title": "NNLM",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
                             "id": "line_102",
-                            "title": "Embedding",
+                            "title": "Word Embedding",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_103",
-                                    "title": "Word Embedding",
+                                    "title": "Word2Vec",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_104",
-                                            "title": "Word2Vec",
+                                            "title": "Cost Method",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_105",
-                                                    "title": "Cost Method",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_106",
-                                                            "title": "Hierarchical Softmax",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_107",
-                                                            "title": "Negative Sampling",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_108",
-                                                    "title": "CBOW",
+                                                    "title": "Hierarchical Softmax",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_109",
-                                                    "title": "Skip-gram",
+                                                    "id": "line_106",
+                                                    "title": "Negative Sampling",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 }
                                             ]
                                         },
                                         {
-                                            "id": "line_110",
-                                            "title": "Glove",
+                                            "id": "line_107",
+                                            "title": "CBOW",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_111",
-                                            "title": "FastText",
+                                            "id": "line_108",
+                                            "title": "Skip-gram",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
                                 },
                                 {
-                                    "id": "line_112",
-                                    "title": "Character Embedding",
+                                    "id": "line_109",
+                                    "title": "Glove",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_110",
+                                    "title": "FastText",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
+                        },
+                        {
+                            "id": "line_111",
+                            "title": "Character Embedding",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_112",
+            "title": "Task",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_113",
-                    "title": "Task",
+                    "title": "POS Tagging",
                     "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_114",
-                            "title": "POS Tagging",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_115",
-                            "title": "Parsing",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_116",
-                            "title": "Named Entity Recognition",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_117",
-                            "title": "Coreference Resolution",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_118",
-                            "title": "Sentiment Analysis",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_119",
-                            "title": "BLEU Score",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_120",
-                            "title": "Machine Translation",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_121",
-                            "title": "Question Answering",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_122",
-                            "title": "Reading Comprehension",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_123",
-                            "title": "Text Generation",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_124",
-                            "title": "Summarization",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_125",
-                            "title": "ROUGE Score",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_126",
-                            "title": "Dialogue Systems",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_127",
-                            "title": "Perplexity",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_128",
-                            "title": "Language Modeling",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
+                    "collapsed": false
+                },
+                {
+                    "id": "line_114",
+                    "title": "Parsing",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_115",
+                    "title": "Named Entity Recognition",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_116",
+                    "title": "Coreference Resolution",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_117",
+                    "title": "Sentiment Analysis",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_118",
+                    "title": "BLEU Score",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_119",
+                    "title": "Machine Translation",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_120",
+                    "title": "Question Answering",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_121",
+                    "title": "Reading Comprehension",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_122",
+                    "title": "Text Generation",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_123",
+                    "title": "Summarization",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_124",
+                    "title": "ROUGE Score",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_125",
+                    "title": "Dialogue Systems",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_126",
+                    "title": "Perplexity",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_127",
+                    "title": "Language Modeling",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
                 }
             ]
         }

@@ -6,319 +6,311 @@
     "children": [
         {
             "id": "line_0",
-            "title": "Logistic Regression",
+            "title": "Step 1: function set",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "Step 1: function set",
+                    "title": "we want to find P_w,b(C1|x)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_2",
+                    "title": "if P_w,b(C1|x) >=0.5",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_2",
-                            "title": "we want to find P_w,b(C1|x)",
+                            "id": "line_3",
+                            "title": "output C1",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_4",
+                    "title": "otherwise",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_5",
+                            "title": "output C2",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_6",
+                    "title": "P_w,b(C1|x) = \u03c3(z)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_7",
+                            "title": "\u03c3(z) = 1/(1+exp(-z))",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         },
                         {
-                            "id": "line_3",
-                            "title": "if P_w,b(C1|x) >=0.5",
+                            "id": "line_8",
+                            "title": "z = w*x+b = \u03a3_i(w_i*x_i) + b",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_4",
-                                    "title": "output C1",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_5",
-                            "title": "otherwise",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_6",
-                                    "title": "output C2",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_7",
-                            "title": "P_w,b(C1|x) = \u03c3(z)",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_8",
-                                    "title": "\u03c3(z) = 1/(1+exp(-z))",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_9",
-                                    "title": "z = w*x+b = \u03a3_i(w_i*x_i) + b",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_9",
+                    "title": "function set:",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_10",
-                            "title": "function set:",
+                            "title": "f_w,b(x) = P_w,b(C1|x)",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_11",
-                                    "title": "f_w,b(x) = P_w,b(C1|x)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_12",
-                                            "title": "including all differenct w and b",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_13",
-                                    "title": "\u7531x_i,w_i,b\u53d6\u5f97z",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_14",
-                                    "title": "sigmoid function",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_15",
-                                            "title": "\u03c3(z) \u53d6\u5f97 P_w,b(C1|x)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_16",
-                                    "title": "\u9019\u4e9b\u662flogistic regression",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_17",
-                                    "title": "\u56e0\u70bafunction\u6709\u7d93\u904esigmoid\u6240\u4ee5\u4e00\u5b9a\u4ecb\u65bc0~1\u4e4b\u9593",
+                                    "title": "including all differenct w and b",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
+                        },
+                        {
+                            "id": "line_12",
+                            "title": "\u7531x_i,w_i,b\u53d6\u5f97z",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_13",
+                            "title": "sigmoid function",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_14",
+                                    "title": "\u03c3(z) \u53d6\u5f97 P_w,b(C1|x)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_15",
+                            "title": "\u9019\u4e9b\u662flogistic regression",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_16",
+                            "title": "\u56e0\u70bafunction\u6709\u7d93\u904esigmoid\u6240\u4ee5\u4e00\u5b9a\u4ecb\u65bc0~1\u4e4b\u9593",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_17",
+            "title": "step 2: goodness of function",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_18",
-                    "title": "step 2: goodness of function",
+                    "title": "Training data",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_19",
-                            "title": "Training data",
+                            "title": "x^1=>C_1",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_20",
+                            "title": "x^2=>C_1",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_21",
+                            "title": "x^3=>C_2",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_22",
+                            "title": "...",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_23",
+                            "title": "x^N=>C_1",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_24",
+                            "title": "assume the data is generated base on f_w,b(x) = P_w,b(C1|x)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_25",
+                            "title": "Given a set of w and b, what is its probability of generating the data?",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_26",
+                            "title": "L(w,b) = f_w,b(x^1)*f_w,b(x^2)(1-f_w,b(x^3))...f_w,b(x^N)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_27",
+                            "title": "the mose likely w* and b* is the one",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_28",
+                            "title": "w*,b* = arg max_w,b L(w,b)",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_20",
-                                    "title": "x^1=>C_1",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_21",
-                                    "title": "x^2=>C_1",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_22",
-                                    "title": "x^3=>C_2",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_23",
-                                    "title": "...",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_24",
-                                    "title": "x^N=>C_1",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_25",
-                                    "title": "assume the data is generated base on f_w,b(x) = P_w,b(C1|x)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_26",
-                                    "title": "Given a set of w and b, what is its probability of generating the data?",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_27",
-                                    "title": "L(w,b) = f_w,b(x^1)*f_w,b(x^2)(1-f_w,b(x^3))...f_w,b(x^N)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_28",
-                                    "title": "the mose likely w* and b* is the one",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
                                     "id": "line_29",
-                                    "title": "w*,b* = arg max_w,b L(w,b)",
+                                    "title": "= arg min_w,b -ln(L(w,b))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_30",
+                                    "title": "\u8b93\u8a08\u7b97\u8b8a\u5f97\u5bb9\u6613",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_31",
+                                    "title": "-ln(L(w,b))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_32",
+                                    "title": "= -ln(f_w,b(x^1)) -ln(f_w,b(x^2)) -ln(1-f_w,b(x^3)) ...  -ln(f_w,b(x^n))",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_30",
-                                            "title": "= arg min_w,b -ln(L(w,b))",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_31",
-                                            "title": "\u8b93\u8a08\u7b97\u8b8a\u5f97\u5bb9\u6613",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_32",
-                                            "title": "-ln(L(w,b))",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
                                             "id": "line_33",
-                                            "title": "= -ln(f_w,b(x^1)) -ln(f_w,b(x^2)) -ln(1-f_w,b(x^3)) ...  -ln(f_w,b(x^n))",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_34",
-                                                    "title": "x^3\u662fclass2",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_35",
-                                            "title": "y^n: 1 for class 1, 0 for class 2",
+                                            "title": "x^3\u662fclass2",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_36",
-                                            "title": "= -[y^1ln(f(x^1))+(1-y^1)ln(1-f(x^1))]  -[y^1ln(f(x^2))+(1-y^2)ln(1-f(x^2))] -[y^1ln(f(x^3))+(1-y^3)ln(1-f(x^3))] ...",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_34",
+                                    "title": "y^n: 1 for class 1, 0 for class 2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_35",
+                                    "title": "= -[y^1ln(f(x^1))+(1-y^1)ln(1-f(x^1))]  -[y^1ln(f(x^2))+(1-y^2)ln(1-f(x^2))] -[y^1ln(f(x^3))+(1-y^3)ln(1-f(x^3))] ...",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_36",
+                                    "title": "= \u03a3_n -[y^nln(f(x^n))+(1-y^n)ln(1-f(x^n))]",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_37",
-                                            "title": "= \u03a3_n -[y^nln(f(x^n))+(1-y^n)ln(1-f(x^n))]",
+                                            "title": "cross entropy between two bernoulli distribution",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_38",
-                                                    "title": "cross entropy between two bernoulli distribution",
+                                                    "title": "distribution p:",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true,
                                                     "children": [
                                                         {
                                                             "id": "line_39",
-                                                            "title": "distribution p:",
+                                                            "title": "p(x=1) = y^n",
                                                             "background-color": "#01a6d5",
-                                                            "collapsed": true,
-                                                            "children": [
-                                                                {
-                                                                    "id": "line_40",
-                                                                    "title": "p(x=1) = y^n",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_41",
-                                                                    "title": "p(x=0) = 1-y^n",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                }
-                                                            ]
+                                                            "collapsed": true
                                                         },
+                                                        {
+                                                            "id": "line_40",
+                                                            "title": "p(x=0) = 1-y^n",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_41",
+                                                    "title": "distribution q",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
                                                         {
                                                             "id": "line_42",
-                                                            "title": "distribution q",
+                                                            "title": "q(x=1) = f(x^n)",
                                                             "background-color": "#01a6d5",
-                                                            "collapsed": true,
-                                                            "children": [
-                                                                {
-                                                                    "id": "line_43",
-                                                                    "title": "q(x=1) = f(x^n)",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_44",
-                                                                    "title": "q(x=0) = 1-f(x^n)",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                }
-                                                            ]
+                                                            "collapsed": true
                                                         },
                                                         {
-                                                            "id": "line_45",
-                                                            "title": "cross entropy",
+                                                            "id": "line_43",
+                                                            "title": "q(x=0) = 1-f(x^n)",
                                                             "background-color": "#01a6d5",
-                                                            "collapsed": true,
-                                                            "children": [
-                                                                {
-                                                                    "id": "line_46",
-                                                                    "title": "H(p,q) = -\u03a3p(x)ln(q(x))",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_47",
-                                                                    "title": "\u9019\u5169\u500bdistribuion\u6709\u591a\u63a5\u8fd1",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_48",
-                                                                    "title": "\u63a5\u8fd1 = 0",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                }
-                                                            ]
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_44",
+                                                    "title": "cross entropy",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_45",
+                                                            "title": "H(p,q) = -\u03a3p(x)ln(q(x))",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_46",
+                                                            "title": "\u9019\u5169\u500bdistribuion\u6709\u591a\u63a5\u8fd1",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_47",
+                                                            "title": "\u63a5\u8fd1 = 0",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
                                                         }
                                                     ]
                                                 }
@@ -329,477 +321,411 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_48",
+            "title": "setp 3: find the best function",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_49",
-                    "title": "setp 3: find the best function",
+                    "title": "-ln(L(w,b)) = \u03a3_n(-[y^nln(f(x^n))+(1-y^n)ln(1-f(x^n))])",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_50",
+                    "title": "-ln(L(w,b)) / \u2202w_i =",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_50",
-                            "title": "-ln(L(w,b)) = \u03a3_n(-[y^nln(f(x^n))+(1-y^n)ln(1-f(x^n))])",
+                            "id": "line_51",
+                            "title": "\u03a3_n(-[y^nln(f(x^n))/\u2202w_i +(1-y^n)ln(1-f(x^n)/\u2202w_i)])",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         },
                         {
-                            "id": "line_51",
-                            "title": "-ln(L(w,b)) / \u2202w_i =",
+                            "id": "line_52",
+                            "title": "f_w,b(x) = \u03c3(z)",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_52",
-                                    "title": "\u03a3_n(-[y^nln(f(x^n))/\u2202w_i +(1-y^n)ln(1-f(x^n)/\u2202w_i)])",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_53",
-                                    "title": "f_w,b(x) = \u03c3(z)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_54",
-                                    "title": "z = w*b+b = \u03a3w_i*x_i + b",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_55",
-                                    "title": "\u2202lnf_w,b(x)/\u2202w^i = \u2202lnf_w,b(x)/\u2202z* \u2202z/\u2202w_i",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_56",
-                                    "title": "\u2202z/\u2202w_i = xi",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_57",
-                                    "title": "\u2202ln\u03c3(z)/\u2202z = 1/\u03c3(z) * \u2202\u03c3(z)/\u03c3z = 1/\u03c3(z)*\u03c3(z)(1-\u03c3(z)) = 1-\u03c3(z)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
+                        {
+                            "id": "line_53",
+                            "title": "z = w*b+b = \u03a3w_i*x_i + b",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_54",
+                            "title": "\u2202lnf_w,b(x)/\u2202w^i = \u2202lnf_w,b(x)/\u2202z* \u2202z/\u2202w_i",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_55",
+                            "title": "\u2202z/\u2202w_i = xi",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_56",
+                            "title": "\u2202ln\u03c3(z)/\u2202z = 1/\u03c3(z) * \u2202\u03c3(z)/\u03c3z = 1/\u03c3(z)*\u03c3(z)(1-\u03c3(z)) = 1-\u03c3(z)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_57",
+                    "title": "-ln(L(w,b)) / \u2202w_i =",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_58",
-                            "title": "-ln(L(w,b)) / \u2202w_i =",
+                            "title": "\u03a3_n(-[y^n(1-f(_w,b(x^n))-(1-y^n)f_w,b(x^n)*x_i^n])",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_59",
-                                    "title": "\u03a3_n(-[y^n(1-f(_w,b(x^n))-(1-y^n)f_w,b(x^n)*x_i^n])",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_60",
-                                    "title": "=  \u03a3_n(-(y^n - f_w,b(x^n))*x_i^n)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
                         {
+                            "id": "line_59",
+                            "title": "=  \u03a3_n(-(y^n - f_w,b(x^n))*x_i^n)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_60",
+                    "title": "wi <- wi- \u03b7 \u03a3_n(-(y^n - f_w,b(x^n))*x_i^n)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_61",
-                            "title": "wi <- wi- \u03b7 \u03a3_n(-(y^n - f_w,b(x^n))*x_i^n)",
+                            "title": "y^n-f_w,b(x^n)",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_62",
-                                    "title": "y^n-f_w,b(x^n)",
+                                    "title": "larger difference, larger update",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_63",
-                                            "title": "larger difference, larger update",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_63",
+                            "title": "\u03b7",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_64",
-                                    "title": "\u03b7",
+                                    "title": "learning rate",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_65",
-                                            "title": "learning rate",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_65",
+                            "title": "x_i^n",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_66",
-                                    "title": "x_i^n",
+                                    "title": "training data",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_67",
-                                            "title": "training data",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
                                 }
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_68",
+            "title": "logistic regression vs linear regression",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_69",
-                    "title": "logistic regression vs linear regression",
+                    "title": "step1:",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_70",
-                            "title": "step1:",
+                            "title": "logistic regression",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_71",
-                                    "title": "logistic regression",
+                                    "title": "output: between 0 and 1",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_72",
-                                            "title": "output: between 0 and 1",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_73",
-                                    "title": "linear regression",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_74",
-                                            "title": "output: any value",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
                                 }
                             ]
                         },
                         {
+                            "id": "line_72",
+                            "title": "linear regression",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_73",
+                                    "title": "output: any value",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_74",
+                    "title": "step2:",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_75",
-                            "title": "step2:",
+                            "title": "logistic regression",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_76",
-                                    "title": "logistic regression",
+                                    "title": "Training data:(x^n,y^^n)",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_77",
-                                            "title": "Training data:(x^n,y^^n)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_78",
-                                            "title": "y^^n: 1 for class 1, 0 for class 2",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_79",
-                                            "title": "L(f) = \u03a3_n C(f(x^n),y^^n)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_80",
-                                            "title": "loss = cross entropy\u7684\u7e3d\u548c",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_81",
-                                            "title": "-[y^nln(f(x^n))+(1-y^n)ln(1-f(x^n))]",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_82",
-                                            "title": "function\u7684target\u8ddfoutput\u5169\u500bdistribution\u8d8a\u63a5\u8fd1\u8d8a\u597d",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
                                 },
                                 {
-                                    "id": "line_83",
-                                    "title": "linear regression",
+                                    "id": "line_77",
+                                    "title": "y^^n: 1 for class 1, 0 for class 2",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_84",
-                                            "title": "Training data:(x^n,y^^n)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_85",
-                                            "title": "y^n: a real number",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_86",
-                                            "title": "L(f) = 1/2 \u03a3_n(f(x^n)-(y^^n))^2",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_87",
-                                            "title": "target\u8ddfoutput\u5dee\u7684\u5e73\u65b9\u548c\u5e73\u5747(MSE)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_78",
+                                    "title": "L(f) = \u03a3_n C(f(x^n),y^^n)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_79",
+                                    "title": "loss = cross entropy\u7684\u7e3d\u548c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_80",
+                                    "title": "-[y^nln(f(x^n))+(1-y^n)ln(1-f(x^n))]",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_81",
+                                    "title": "function\u7684target\u8ddfoutput\u5169\u500bdistribution\u8d8a\u63a5\u8fd1\u8d8a\u597d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 }
                             ]
                         },
                         {
+                            "id": "line_82",
+                            "title": "linear regression",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_83",
+                                    "title": "Training data:(x^n,y^^n)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_84",
+                                    "title": "y^n: a real number",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_85",
+                                    "title": "L(f) = 1/2 \u03a3_n(f(x^n)-(y^^n))^2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_86",
+                                    "title": "target\u8ddfoutput\u5dee\u7684\u5e73\u65b9\u548c\u5e73\u5747(MSE)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_87",
+                    "title": "step3:",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_88",
-                            "title": "step3:",
+                            "title": "logistic regression",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_89",
-                                    "title": "logistic regression",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_90",
-                                            "title": "wi <- wi- \u03b7 \u03a3_n(-(y^n - f_w,b(x^n))*x_i^n)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_91",
-                                    "title": "linear regression",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_92",
-                                            "title": "wi <- wi- \u03b7 \u03a3_n(-(y^n - f_w,b(x^n))*x_i^n)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_93",
-                                    "title": "same",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_94",
-                                    "title": "update\u65b9\u5f0f\u662f\u4e00\u6a23\u7684",
+                                    "title": "wi <- wi- \u03b7 \u03a3_n(-(y^n - f_w,b(x^n))*x_i^n)",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
+                        },
+                        {
+                            "id": "line_90",
+                            "title": "linear regression",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_91",
+                                    "title": "wi <- wi- \u03b7 \u03a3_n(-(y^n - f_w,b(x^n))*x_i^n)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_92",
+                            "title": "same",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_93",
+                            "title": "update\u65b9\u5f0f\u662f\u4e00\u6a23\u7684",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_94",
+            "title": "Logistic regression + square error",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_95",
-                    "title": "Logistic regression + square error",
+                    "title": "step1:",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_96",
-                            "title": "step1:",
+                            "title": "f_w,b(x) = \u03c3(\u03a3_i(x_i*x_i)+b)",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_97",
-                                    "title": "f_w,b(x) = \u03c3(\u03a3_i(x_i*x_i)+b)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_97",
+                    "title": "step2",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_98",
-                            "title": "step2",
+                            "title": "training data:(x^n,y^^n)",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_99",
-                                    "title": "training data:(x^n,y^^n)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_100",
-                                            "title": "y^^n:1 for class1,0 for class2",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_101",
-                                    "title": "L(f) = 1/2 \u03a3_n(f_w,b(x^n)-y^^n)^2",
+                                    "title": "y^^n:1 for class1,0 for class2",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
                         {
+                            "id": "line_100",
+                            "title": "L(f) = 1/2 \u03a3_n(f_w,b(x^n)-y^^n)^2",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_101",
+                    "title": "step3",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_102",
-                            "title": "step3",
+                            "title": "\u2202(f_w,b(x)-y^)^2/\u2202w_i",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_103",
+                            "title": "= 2(f_w,b(x)-y^)*\u2202f_w,b(x)/\u2202z*\u2202z/\u2202w_i",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_104",
+                            "title": "= 2(f_w,b(x)-y^)f_w,b(x)(1-f_w,b(x))x_i",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_105",
+                            "title": "y^n = 1,",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_103",
-                                    "title": "\u2202(f_w,b(x)-y^)^2/\u2202w_i",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_104",
-                                    "title": "= 2(f_w,b(x)-y^)*\u2202f_w,b(x)/\u2202z*\u2202z/\u2202w_i",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_105",
-                                    "title": "= 2(f_w,b(x)-y^)f_w,b(x)(1-f_w,b(x))x_i",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
                                     "id": "line_106",
-                                    "title": "y^n = 1,",
+                                    "title": "f_w,b(x^n)=1",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_107",
-                                            "title": "f_w,b(x^n)=1",
+                                            "title": "close to target",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_108",
-                                                    "title": "close to target",
+                                                    "title": "\u2202L/\u2202w_i =0",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_109",
-                                                            "title": "\u2202L/\u2202w_i =0",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_110",
-                                                            "title": "\u5408\u7406",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_111",
-                                            "title": "f_w,b(x^n)=0",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
+                                                    "collapsed": true
+                                                },
                                                 {
-                                                    "id": "line_112",
-                                                    "title": "far from target",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_113",
-                                                            "title": "\u2202L/\u2202w_i =0",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_114",
-                                                            "title": "\u9019\u662f\u6709\u554f\u984c\u7684",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "line_115",
-                    "title": "cross entropy vs square error",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_116",
-                            "title": "total loss\u8207\u53c3\u6578\u7684\u8b8a\u5316",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_117",
-                                    "title": "cross entropy",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_118",
-                                            "title": "\u8ddd\u96e2\u76ee\u6a19\u8d8a\u9060\u5fae\u5206\u5c31\u8d8a\u5927",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_119",
+                                                    "id": "line_109",
                                                     "title": "\u5408\u7406",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
@@ -809,310 +735,438 @@
                                     ]
                                 },
                                 {
+                                    "id": "line_110",
+                                    "title": "f_w,b(x^n)=0",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_111",
+                                            "title": "far from target",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_112",
+                                                    "title": "\u2202L/\u2202w_i =0",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_113",
+                                                    "title": "\u9019\u662f\u6709\u554f\u984c\u7684",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_114",
+            "title": "cross entropy vs square error",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_115",
+                    "title": "total loss\u8207\u53c3\u6578\u7684\u8b8a\u5316",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_116",
+                            "title": "cross entropy",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_117",
+                                    "title": "\u8ddd\u96e2\u76ee\u6a19\u8d8a\u9060\u5fae\u5206\u5c31\u8d8a\u5927",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_118",
+                                            "title": "\u5408\u7406",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_119",
+                            "title": "square error",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
                                     "id": "line_120",
-                                    "title": "square error",
+                                    "title": "\u8ddd\u96e2\u8fd1",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_121",
-                                            "title": "\u8ddd\u96e2\u8fd1",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_122",
-                                                    "title": "\u5fae\u5206\u5c0f",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_123",
-                                            "title": "\u8ddd\u96e2\u9060",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_124",
-                                                    "title": "\u5fae\u5206\u5c0f",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_125",
-                                                    "title": "\u79fb\u52d5\u975e\u5e38\u6162",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_126",
-                                                    "title": "\u4e00\u958b\u59cb\u53ef\u80fd\u5c31\u5361\u4f4f\u4e86",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_127",
-                                            "title": "\u7121\u6cd5\u77e5\u9053\u662f\u8fd1\u9084\u662f\u9060",
+                                            "title": "\u5fae\u5206\u5c0f",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
+                                },
+                                {
+                                    "id": "line_122",
+                                    "title": "\u8ddd\u96e2\u9060",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_123",
+                                            "title": "\u5fae\u5206\u5c0f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_124",
+                                            "title": "\u79fb\u52d5\u975e\u5e38\u6162",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_125",
+                                            "title": "\u4e00\u958b\u59cb\u53ef\u80fd\u5c31\u5361\u4f4f\u4e86",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_126",
+                                    "title": "\u7121\u6cd5\u77e5\u9053\u662f\u8fd1\u9084\u662f\u9060",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_127",
+            "title": "Discriminative vs Generative",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_128",
+                    "title": "logistic = Discriminative",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_129",
+                    "title": "gaussion = Generative",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_130",
+                    "title": "\u6a5f\u7387\u6a21\u578b\u90fd\u4e00\u6a23",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_131",
+                            "title": "P(C_1|x) = \u03c3(w*x+b)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_132",
+                            "title": "directly find w and b",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_133",
+                            "title": "find \u03bc^1,\u03bc^2,\u03a3^-1",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_134",
+                                    "title": "w^T = (\u03bc^1-\u03bc^2)^T*\u03a3^-1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_135",
+                                    "title": "b = -1/2(\u03bc^1)^T*(\u03a3^1)^-1*\u03bc^1 + 1/2(\u03bc^2)^T*(\u03a3^2)^-1*\u03bc^2 + ln(N1/N2)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    "id": "line_128",
-                    "title": "Discriminative vs Generative",
+                    "id": "line_136",
+                    "title": "\u627e\u51fa\u4f86\u7d50\u679cw,b\u4e0d\u6703\u76f8\u540c",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_137",
+                    "title": "the model(function set),but differenct function is selectd by the same training data",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_138",
+                    "title": "\u4e0d\u540c\u5047\u8a2d\u627e\u51fa\u4f86\u7684\u53c3\u6578\u4e0d\u540c",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_129",
-                            "title": "logistic = Discriminative",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_130",
-                            "title": "gaussion = Generative",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_131",
-                            "title": "\u6a5f\u7387\u6a21\u578b\u90fd\u4e00\u6a23",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_132",
-                                    "title": "P(C_1|x) = \u03c3(w*x+b)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_133",
-                                    "title": "directly find w and b",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_134",
-                                    "title": "find \u03bc^1,\u03bc^2,\u03a3^-1",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_135",
-                                            "title": "w^T = (\u03bc^1-\u03bc^2)^T*\u03a3^-1",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_136",
-                                            "title": "b = -1/2(\u03bc^1)^T*(\u03a3^1)^-1*\u03bc^1 + 1/2(\u03bc^2)^T*(\u03a3^2)^-1*\u03bc^2 + ln(N1/N2)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_137",
-                            "title": "\u627e\u51fa\u4f86\u7d50\u679cw,b\u4e0d\u6703\u76f8\u540c",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_138",
-                            "title": "the model(function set),but differenct function is selectd by the same training data",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
                             "id": "line_139",
-                            "title": "\u4e0d\u540c\u5047\u8a2d\u627e\u51fa\u4f86\u7684\u53c3\u6578\u4e0d\u540c",
+                            "title": "\u54ea\u4e00\u500b\u627e\u51fa\u4f86\u7684w,b\u6703\u6bd4\u8f03\u597d?",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_140",
+                            "title": "water/normal pokemon in 7 features",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
-                                {
-                                    "id": "line_140",
-                                    "title": "\u54ea\u4e00\u500b\u627e\u51fa\u4f86\u7684w,b\u6703\u6bd4\u8f03\u597d?",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
                                 {
                                     "id": "line_141",
-                                    "title": "water/normal pokemon in 7 features",
+                                    "title": "Generative accuracy 73%",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_142",
-                                            "title": "Generative accuracy 73%",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_143",
-                                            "title": "Discriminative accuracy 79%",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_144",
-                                            "title": "Discriminative performance\u6703\u6bd4\u8f03\u597d",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_142",
+                                    "title": "Discriminative accuracy 79%",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_143",
+                                    "title": "Discriminative performance\u6703\u6bd4\u8f03\u597d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_144",
+                    "title": "example:",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_145",
-                            "title": "example:",
+                            "title": "training data 7\u7b46\u8cc7\u6599,2\u500bfeature",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_146",
-                                    "title": "training data 7\u7b46\u8cc7\u6599,2\u500bfeature",
+                                    "title": "[1,1] => class1",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_147",
-                                            "title": "[1,1] => class1",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_148",
-                                            "title": "[1,0]*4 => class2",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_149",
-                                            "title": "[0,1]*4 => class2",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_150",
-                                            "title": "[0,0]*4 => class2",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
                                 },
                                 {
+                                    "id": "line_147",
+                                    "title": "[1,0]*4 => class2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_148",
+                                    "title": "[0,1]*4 => class2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_149",
+                                    "title": "[0,0]*4 => class2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_150",
+                            "title": "testing data",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
                                     "id": "line_151",
-                                    "title": "testing data",
+                                    "title": "[1,1] => class1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_152",
+                                    "title": "naive bayes?",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_152",
-                                            "title": "[1,1] => class1",
+                                            "id": "line_153",
+                                            "title": "P(x|Ci) = P(x1|Ci)P(x2|Ci)",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_153",
-                                            "title": "naive bayes?",
+                                            "id": "line_154",
+                                            "title": "class1? P(C1)1/13",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_154",
-                                                    "title": "P(x|Ci) = P(x1|Ci)P(x2|Ci)",
+                                                    "id": "line_155",
+                                                    "title": "P(x1=1|C1) = 1",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_155",
-                                                    "title": "class1? P(C1)1/13",
+                                                    "id": "line_156",
+                                                    "title": "P(x2=1|C1) = 1",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_156",
-                                                            "title": "P(x1=1|C1) = 1",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_157",
-                                                            "title": "P(x2=1|C1) = 1",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_157",
+                                            "title": "class2? P(C2)12/13",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
                                                 {
                                                     "id": "line_158",
-                                                    "title": "class2? P(C2)12/13",
+                                                    "title": "P(x1=1|C2) = 1/3",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_159",
-                                                            "title": "P(x1=1|C2) = 1/3",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_160",
-                                                            "title": "P(x2=1|C2) = 1/3",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
+                                                    "collapsed": true
                                                 },
                                                 {
+                                                    "id": "line_159",
+                                                    "title": "P(x2=1|C2) = 1/3",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_160",
+                                            "title": "[1,1]?",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
                                                     "id": "line_161",
-                                                    "title": "[1,1]?",
+                                                    "title": "P(C1|x)",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true,
                                                     "children": [
                                                         {
                                                             "id": "line_162",
-                                                            "title": "P(C1|x)",
+                                                            "title": "= P(x|C1)*P(C1)/P[(x|C1)*P(C1)+P(x|C2)*P(C2)]",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_163",
+                                                            "title": "= (1*1*1/13) / (1*1*1/13)*(1/3*1/3*12/13)",
                                                             "background-color": "#01a6d5",
                                                             "collapsed": true,
                                                             "children": [
                                                                 {
-                                                                    "id": "line_163",
-                                                                    "title": "= P(x|C1)*P(C1)/P[(x|C1)*P(C1)+P(x|C2)*P(C2)]",
+                                                                    "id": "line_164",
+                                                                    "title": "<0.5",
                                                                     "background-color": "#97d9c7",
                                                                     "collapsed": true
-                                                                },
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_165",
+                                                            "title": "\u8dd1\u5230class2\u4e86",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_166",
+                                            "title": "generative\u6709\u505a\u4e86\u67d0\u4e9b\u5047\u8a2d",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_167",
+                                                    "title": "\u6709\u4e9b\u6a5f\u7387\u6a21\u578b",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_168",
+                                                    "title": "\u8166\u88dc\u4e86\u4e00\u4e9b\u4e8b\u60c5",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_169",
+                                                    "title": "data\u660e\u660e\u6c92\u6709\u89c0\u5bdf\u5230",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_170",
+                                                            "title": "\u4f46\u662f\u6703\u88ab\u8166\u88dc",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_171",
+                                                            "title": "\u6703\u51fa\u73fe\u4e00\u4e9b\u8ddf\u4eba\u985e\u76f4\u89ba\u4e0d\u5c0d\u7684\u4e8b\u60c5",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
                                                                 {
-                                                                    "id": "line_164",
-                                                                    "title": "= (1*1*1/13) / (1*1*1/13)*(1/3*1/3*12/13)",
+                                                                    "id": "line_172",
+                                                                    "title": "\u901a\u5e38\u8166\u88dc\u7d50\u679c\u90fd\u4e0d\u5927\u597d",
                                                                     "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_165",
-                                                                            "title": "<0.5",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
-                                                                },
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_173",
+                                                            "title": "\u4e0d\u904e\u7576training data\u771f\u7684\u5f88\u5c11\u7684\u6642\u5019",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
                                                                 {
-                                                                    "id": "line_166",
-                                                                    "title": "\u8dd1\u5230class2\u4e86",
+                                                                    "id": "line_174",
+                                                                    "title": "\u8166\u88dc\u6703\u53d6\u5f97\u66f4\u591a\u7684\u60c5\u5831",
                                                                     "background-color": "#97d9c7",
                                                                     "collapsed": true
                                                                 }
@@ -1121,714 +1175,650 @@
                                                     ]
                                                 },
                                                 {
-                                                    "id": "line_167",
-                                                    "title": "generative\u6709\u505a\u4e86\u67d0\u4e9b\u5047\u8a2d",
+                                                    "id": "line_175",
+                                                    "title": "\u53d7data\u5f71\u97ff\u8f03\u5c0f",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true,
                                                     "children": [
                                                         {
-                                                            "id": "line_168",
-                                                            "title": "\u6709\u4e9b\u6a5f\u7387\u6a21\u578b",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_169",
-                                                            "title": "\u8166\u88dc\u4e86\u4e00\u4e9b\u4e8b\u60c5",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_170",
-                                                            "title": "data\u660e\u660e\u6c92\u6709\u89c0\u5bdf\u5230",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true,
-                                                            "children": [
-                                                                {
-                                                                    "id": "line_171",
-                                                                    "title": "\u4f46\u662f\u6703\u88ab\u8166\u88dc",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_172",
-                                                                    "title": "\u6703\u51fa\u73fe\u4e00\u4e9b\u8ddf\u4eba\u985e\u76f4\u89ba\u4e0d\u5c0d\u7684\u4e8b\u60c5",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_173",
-                                                                            "title": "\u901a\u5e38\u8166\u88dc\u7d50\u679c\u90fd\u4e0d\u5927\u597d",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    "id": "line_174",
-                                                                    "title": "\u4e0d\u904e\u7576training data\u771f\u7684\u5f88\u5c11\u7684\u6642\u5019",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_175",
-                                                                            "title": "\u8166\u88dc\u6703\u53d6\u5f97\u66f4\u591a\u7684\u60c5\u5831",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
                                                             "id": "line_176",
-                                                            "title": "\u53d7data\u5f71\u97ff\u8f03\u5c0f",
+                                                            "title": "\u88ab\u9810\u5148\u5047\u8a2d\u5f71\u97ff\u6bd4\u8f03\u5927",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_177",
+                                                            "title": "\u6709\u53ef\u80fd\u6703\u8d0f\u904ediscriminative",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_178",
+                                                            "title": "data\u672c\u8eab\u662fnoise",
                                                             "background-color": "#01a6d5",
                                                             "collapsed": true,
                                                             "children": [
-                                                                {
-                                                                    "id": "line_177",
-                                                                    "title": "\u88ab\u9810\u5148\u5047\u8a2d\u5f71\u97ff\u6bd4\u8f03\u5927",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_178",
-                                                                    "title": "\u6709\u53ef\u80fd\u6703\u8d0f\u904ediscriminative",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
                                                                 {
                                                                     "id": "line_179",
-                                                                    "title": "data\u672c\u8eab\u662fnoise",
+                                                                    "title": "\u6709\u6a5f\u6703\u5ffd\u8996\u8abfdata\u7684noise",
                                                                     "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_180",
-                                                                            "title": "\u6709\u6a5f\u6703\u5ffd\u8996\u8abfdata\u7684noise",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
+                                                                    "collapsed": true
                                                                 }
                                                             ]
-                                                        },
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_180",
+                                                    "title": "prior and class-dependent probabilites can be estimated form differenct sources",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
                                                         {
                                                             "id": "line_181",
-                                                            "title": "prior and class-dependent probabilites can be estimated form differenct sources",
+                                                            "title": "\u8a9e\u97f3\u8fa8\u8b58\u70ba\u4f8b",
                                                             "background-color": "#01a6d5",
                                                             "collapsed": true,
                                                             "children": [
                                                                 {
                                                                     "id": "line_182",
-                                                                    "title": "\u8a9e\u97f3\u8fa8\u8b58\u70ba\u4f8b",
+                                                                    "title": "\u73fe\u5728\u90fd\u7528unet model\u662fdiscriminative",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_183",
+                                                                    "title": "\u4f46\u6574\u500b\u8a9e\u97f3\u8fa8\u8b58\u662f\u4e00\u500bgenerative\u7684system",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_184",
+                                                                    "title": "DNN\u53ea\u662f\u5176\u4e2d\u4e00\u584a",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_185",
+                                                                    "title": "\u56e0\u70ba\u4ed6\u9084\u662f\u9700\u8981\u4e00\u500bfine probabilites",
                                                                     "background-color": "#97d9c7",
                                                                     "collapsed": true,
                                                                     "children": [
                                                                         {
-                                                                            "id": "line_183",
-                                                                            "title": "\u73fe\u5728\u90fd\u7528unet model\u662fdiscriminative",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        },
-                                                                        {
-                                                                            "id": "line_184",
-                                                                            "title": "\u4f46\u6574\u500b\u8a9e\u97f3\u8fa8\u8b58\u662f\u4e00\u500bgenerative\u7684system",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        },
-                                                                        {
-                                                                            "id": "line_185",
-                                                                            "title": "DNN\u53ea\u662f\u5176\u4e2d\u4e00\u584a",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        },
-                                                                        {
                                                                             "id": "line_186",
-                                                                            "title": "\u56e0\u70ba\u4ed6\u9084\u662f\u9700\u8981\u4e00\u500bfine probabilites",
+                                                                            "title": "\u6bcf\u4e00\u53e5\u8a71\u88ab\u8aaa\u51fa\u4f86\u7684\u6a5f\u7387",
                                                                             "background-color": "#eb6a68",
-                                                                            "collapsed": true,
-                                                                            "children": [
-                                                                                {
-                                                                                    "id": "line_187",
-                                                                                    "title": "\u6bcf\u4e00\u53e5\u8a71\u88ab\u8aaa\u51fa\u4f86\u7684\u6a5f\u7387",
-                                                                                    "background-color": "#412ffc",
-                                                                                    "collapsed": true
-                                                                                },
-                                                                                {
-                                                                                    "id": "line_188",
-                                                                                    "title": "estimated\u6bcf\u4e00\u53e5\u8a71\u51fa\u4f86\u7684\u6a5f\u7387\u4e0d\u4e00\u5b9a\u8981\u771f\u7684\u6709\u8a9e\u97f3\u8cc7\u6599",
-                                                                                    "background-color": "#412ffc",
-                                                                                    "collapsed": true
-                                                                                }
-                                                                            ]
+                                                                            "collapsed": true
                                                                         },
                                                                         {
-                                                                            "id": "line_189",
-                                                                            "title": "prior\u90e8\u5206\u7528\u6587\u5b57\u8655\u7406",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true,
-                                                                            "children": [
-                                                                                {
-                                                                                    "id": "line_190",
-                                                                                    "title": "estimated\u66f4\u7cbe\u78ba",
-                                                                                    "background-color": "#412ffc",
-                                                                                    "collapsed": true
-                                                                                }
-                                                                            ]
-                                                                        },
-                                                                        {
-                                                                            "id": "line_191",
-                                                                            "title": "class-dependent\u7528\u8a9e\u97f3\u8cc7\u6599",
+                                                                            "id": "line_187",
+                                                                            "title": "estimated\u6bcf\u4e00\u53e5\u8a71\u51fa\u4f86\u7684\u6a5f\u7387\u4e0d\u4e00\u5b9a\u8981\u771f\u7684\u6709\u8a9e\u97f3\u8cc7\u6599",
                                                                             "background-color": "#eb6a68",
                                                                             "collapsed": true
                                                                         }
                                                                     ]
+                                                                },
+                                                                {
+                                                                    "id": "line_188",
+                                                                    "title": "prior\u90e8\u5206\u7528\u6587\u5b57\u8655\u7406",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_189",
+                                                                            "title": "estimated\u66f4\u7cbe\u78ba",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "id": "line_190",
+                                                                    "title": "class-dependent\u7528\u8a9e\u97f3\u8cc7\u6599",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
                                                                 }
                                                             ]
                                                         }
                                                     ]
-                                                },
-                                                {
-                                                    "id": "line_192",
-                                                    "title": "Discriminative model\u5728training data\u592a\u5c0f\u7684\u6642\u5019",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_193",
-                                                            "title": "\u53d7\u5230data\u5f71\u97ff\u6703\u5f88\u5927",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
                                                 }
                                             ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "line_194",
-                    "title": "Multi-class classification",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_195",
-                            "title": "Bishop, P209-210",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_196",
-                            "title": "C1:w^1,b^1 z_1=w^1*x+b_1",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_197",
-                            "title": "C2 w^2,b^2 z_2=w^2*x+b_2",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_198",
-                            "title": "C3 w^3,b^3 z_3=w^3*x+b_3",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_199",
-                            "title": "softmax:",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_200",
-                                    "title": "e^z_1,e^z_2,e^z_3",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_201",
-                                    "title": "\u03a3_j=1^3 e^z_j",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_202",
-                                    "title": "e^z_1/\u03a3_j = y^1",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_203",
-                                    "title": "e^z_2/\u03a3_j = y^2",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_204",
-                                    "title": "e^z_3/\u03a3_j = y^3",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_205",
-                                    "title": "example:",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_206",
-                                            "title": "3,1,-3",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
                                         },
                                         {
-                                            "id": "line_207",
-                                            "title": "=> 20,2,7,0.05",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_208",
-                                            "title": "=> 0.88,0.12,\u22480",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_209",
-                                            "title": "probability:",
+                                            "id": "line_191",
+                                            "title": "Discriminative model\u5728training data\u592a\u5c0f\u7684\u6642\u5019",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_210",
-                                                    "title": "1>y_i>0",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_211",
-                                                    "title": "\u03a3_i(y_j) = 1",
+                                                    "id": "line_192",
+                                                    "title": "\u53d7\u5230data\u5f71\u97ff\u6703\u5f88\u5927",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 }
                                             ]
                                         }
                                     ]
-                                },
-                                {
-                                    "id": "line_212",
-                                    "title": "\u5c0d\u6700\u5927\u503c\u5f37\u5316",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_213",
-                            "title": "\u6709\u8208\u8da3\u53ef\u4ee5google",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_214",
-                                    "title": "maximum entropy",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_215",
-                                    "title": "\u53e6\u4e00\u500b\u89c0\u9ede\u89e3\u91cbsoftmax",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_216",
-                            "title": "target:",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_217",
-                                    "title": "y^_1,y^_2,y^_3",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_218",
-                            "title": "cross entropy:",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_219",
-                                    "title": "-\u03a3_i=1^3(y^_i(lny_i))",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_220",
-                                    "title": "if x \u2286 class1",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_221",
-                                            "title": "y^ = [1,0,0]",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_222",
-                                    "title": "if x \u2286 class2",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_223",
-                                            "title": "y^ = [0,1,0]",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_224",
-                                    "title": "if x \u2286 class3",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_225",
-                                            "title": "y^ = [0,0,1]",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
                                 }
                             ]
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "id": "line_193",
+            "title": "Multi-class classification",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_194",
+                    "title": "Bishop, P209-210",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
                 },
                 {
+                    "id": "line_195",
+                    "title": "C1:w^1,b^1 z_1=w^1*x+b_1",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_196",
+                    "title": "C2 w^2,b^2 z_2=w^2*x+b_2",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_197",
+                    "title": "C3 w^3,b^3 z_3=w^3*x+b_3",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_198",
+                    "title": "softmax:",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_199",
+                            "title": "e^z_1,e^z_2,e^z_3",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_200",
+                            "title": "\u03a3_j=1^3 e^z_j",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_201",
+                            "title": "e^z_1/\u03a3_j = y^1",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_202",
+                            "title": "e^z_2/\u03a3_j = y^2",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_203",
+                            "title": "e^z_3/\u03a3_j = y^3",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_204",
+                            "title": "example:",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_205",
+                                    "title": "3,1,-3",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_206",
+                                    "title": "=> 20,2,7,0.05",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_207",
+                                    "title": "=> 0.88,0.12,\u22480",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_208",
+                                    "title": "probability:",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_209",
+                                            "title": "1>y_i>0",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_210",
+                                            "title": "\u03a3_i(y_j) = 1",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_211",
+                            "title": "\u5c0d\u6700\u5927\u503c\u5f37\u5316",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_212",
+                    "title": "\u6709\u8208\u8da3\u53ef\u4ee5google",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_213",
+                            "title": "maximum entropy",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_214",
+                            "title": "\u53e6\u4e00\u500b\u89c0\u9ede\u89e3\u91cbsoftmax",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_215",
+                    "title": "target:",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_216",
+                            "title": "y^_1,y^_2,y^_3",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_217",
+                    "title": "cross entropy:",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_218",
+                            "title": "-\u03a3_i=1^3(y^_i(lny_i))",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_219",
+                            "title": "if x \u2286 class1",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_220",
+                                    "title": "y^ = [1,0,0]",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_221",
+                            "title": "if x \u2286 class2",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_222",
+                                    "title": "y^ = [0,1,0]",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_223",
+                            "title": "if x \u2286 class3",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_224",
+                                    "title": "y^ = [0,0,1]",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_225",
+            "title": "Limitation of Logistic Regression",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_226",
-                    "title": "Limitation of Logistic Regression",
+                    "title": "input features:",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_227",
-                            "title": "input features:",
+                            "title": "f(x1,x2)=label",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_228",
-                                    "title": "f(x1,x2)=label",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_229",
-                                            "title": "f(0,0)=class2",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_230",
-                                            "title": "f(0,1)=class1",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_231",
-                                            "title": "f(1,0)=class1",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_232",
-                                            "title": "f(1,1)=class2",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_233",
-                                    "title": "x_1*w_1+x_2*w_2+b = z => sigmod => y",
+                                    "title": "f(0,0)=class2",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
+                                    "id": "line_229",
+                                    "title": "f(0,1)=class1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_230",
+                                    "title": "f(1,0)=class1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_231",
+                                    "title": "f(1,1)=class2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_232",
+                            "title": "x_1*w_1+x_2*w_2+b = z => sigmod => y",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_233",
+                            "title": "\u505a\u4e0d\u5230",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
                                     "id": "line_234",
-                                    "title": "\u505a\u4e0d\u5230",
+                                    "title": "\u56db\u500b\u9ede\u4e00\u689d\u76f4\u7dda\u5207\u4e0d\u958b",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_235",
-                                            "title": "\u56db\u500b\u9ede\u4e00\u689d\u76f4\u7dda\u5207\u4e0d\u958b",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_236",
-                                                    "title": "\u5de6\u4e0a\u53f3\u4e0b\u4e00\u985e",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_237",
-                                                    "title": "\u5de6\u4e0b\u53f3\u4e0a\u4e00\u985e",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_238",
-                            "title": "\u5982\u679c\u9084\u662f\u5805\u6301\u8981\u7528logistic regression",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_239",
-                                    "title": "\u6709\u4e00\u62dbfeature transformation",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_240",
-                                            "title": "\u539f\u672cfeatures(x1,x2)\u8a02\u7684\u4e0d\u597d",
+                                            "title": "\u5de6\u4e0a\u53f3\u4e0b\u4e00\u985e",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_241",
-                                            "title": "\u627e\u4e00\u500b\u6bd4\u8f03\u597d\u7684features set",
+                                            "id": "line_236",
+                                            "title": "\u5de6\u4e0b\u53f3\u4e0a\u4e00\u985e",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_242",
+                                                    "id": "line_241",
                                                     "title": "x_1',x_2'",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_243",
+                                                    "id": "line_242",
                                                     "title": "\u5047\u8a2d\u5b9a\u7fa9",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_243",
+                                                    "title": "x_1': distance to [0,0]",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_244",
+                                                    "title": "x_2': distance to [1,1]",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_245",
+                                                    "title": "\u539f\u672c\u8cc7\u6599:",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true,
                                                     "children": [
                                                         {
-                                                            "id": "line_244",
-                                                            "title": "x_1': distance to [0,0]",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_245",
-                                                            "title": "x_2': distance to [1,1]",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
                                                             "id": "line_246",
-                                                            "title": "\u539f\u672c\u8cc7\u6599:",
+                                                            "title": "f(0,0)=class2",
                                                             "background-color": "#01a6d5",
                                                             "collapsed": true,
                                                             "children": [
                                                                 {
                                                                     "id": "line_247",
-                                                                    "title": "f(0,0)=class2",
+                                                                    "title": "x_1' = 1",
                                                                     "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_248",
-                                                                            "title": "x_1' = 1",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        },
-                                                                        {
-                                                                            "id": "line_249",
-                                                                            "title": "x_2' = 1",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
+                                                                    "collapsed": true
                                                                 },
+                                                                {
+                                                                    "id": "line_248",
+                                                                    "title": "x_2' = 1",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_249",
+                                                            "title": "f(0,1)=class1",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
                                                                 {
                                                                     "id": "line_250",
-                                                                    "title": "f(0,1)=class1",
+                                                                    "title": "x_1' = 0",
                                                                     "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_251",
-                                                                            "title": "x_1' = 0",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        },
-                                                                        {
-                                                                            "id": "line_252",
-                                                                            "title": "x_2' = \u221a2",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
+                                                                    "collapsed": true
                                                                 },
+                                                                {
+                                                                    "id": "line_251",
+                                                                    "title": "x_2' = \u221a2",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_252",
+                                                            "title": "f(1,0)=class1",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
                                                                 {
                                                                     "id": "line_253",
-                                                                    "title": "f(1,0)=class1",
+                                                                    "title": "x_1' = \u221a2",
                                                                     "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_254",
-                                                                            "title": "x_1' = \u221a2",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        },
-                                                                        {
-                                                                            "id": "line_255",
-                                                                            "title": "x_2' = 0",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
+                                                                    "collapsed": true
                                                                 },
                                                                 {
-                                                                    "id": "line_256",
-                                                                    "title": "f(1,1)=class2",
+                                                                    "id": "line_254",
+                                                                    "title": "x_2' = 0",
                                                                     "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_257",
-                                                                            "title": "x_1' = 1",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        },
-                                                                        {
-                                                                            "id": "line_258",
-                                                                            "title": "x_2' = 1",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_255",
+                                                            "title": "f(1,1)=class2",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_256",
+                                                                    "title": "x_1' = 1",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                },
+                                                                {
+                                                                    "id": "line_257",
+                                                                    "title": "x_2' = 1",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
                                                                 }
                                                             ]
                                                         }
                                                     ]
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "id": "line_259",
-                                            "title": "not always easy to find a good transformation",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
                                         }
                                     ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_237",
+                    "title": "\u5982\u679c\u9084\u662f\u5805\u6301\u8981\u7528logistic regression",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_238",
+                            "title": "\u6709\u4e00\u62dbfeature transformation",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_239",
+                                    "title": "\u539f\u672cfeatures(x1,x2)\u8a02\u7684\u4e0d\u597d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 },
                                 {
+                                    "id": "line_240",
+                                    "title": "\u627e\u4e00\u500b\u6bd4\u8f03\u597d\u7684features set",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_258",
+                                    "title": "not always easy to find a good transformation",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_259",
+                            "title": "\u662f\u5426\u80fd\u8b93\u6a5f\u5668\u7522\u751ftransformation",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
                                     "id": "line_260",
-                                    "title": "\u662f\u5426\u80fd\u8b93\u6a5f\u5668\u7522\u751ftransformation",
+                                    "title": "cascading logistic regression",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_261",
-                                            "title": "cascading logistic regression",
+                                            "title": "x_1*w_1+x_2*w_2=z1 z1 =>transformation => x_1'",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_262",
+                                            "title": "x_1*w_3+x_2*w_4=z2 z2 =>transformation => x_2'",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_263",
+                                            "title": "\u65bc\u65b0\u7684transformation\u5f8c\u7684x_1'\u8207x_2'\u662f\u53ef\u4ee5\u5207\u958b\u6642",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_262",
-                                                    "title": "x_1*w_1+x_2*w_2=z1 z1 =>transformation => x_1'",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_263",
-                                                    "title": "x_1*w_3+x_2*w_4=z2 z2 =>transformation => x_2'",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
                                                     "id": "line_264",
-                                                    "title": "\u65bc\u65b0\u7684transformation\u5f8c\u7684x_1'\u8207x_2'\u662f\u53ef\u4ee5\u5207\u958b\u6642",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_265",
-                                                            "title": "\u5c31\u5c07x_1'*w_5+x_2'*w_6 = z => transformation => y",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_266",
-                                                            "title": "\u53ef\u4ee5\u628aclass1,class2\u5206\u958b",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_267",
-                                                    "title": "\u7522\u751fx_1',x_2'\u5c31\u662f\u5728\u505afeature transformation",
+                                                    "title": "\u5c31\u5c07x_1'*w_5+x_2'*w_6 = z => transformation => y",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_268",
-                                                    "title": "\u5f8c\u9762\u624d\u505aclassification\u505a\u5206\u985e",
+                                                    "id": "line_265",
+                                                    "title": "\u53ef\u4ee5\u628aclass1,class2\u5206\u958b",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 }
                                             ]
                                         },
                                         {
-                                            "id": "line_269",
-                                            "title": "\u6bcf\u4e00\u500bz\u516c\u5f0f\u5c31\u662f\u4e00\u500bneuron",
+                                            "id": "line_266",
+                                            "title": "\u7522\u751fx_1',x_2'\u5c31\u662f\u5728\u505afeature transformation",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_270",
-                                            "title": "\u4e32\u63a5\u8d77\u4f86\u5c31\u662fneural network",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_271",
-                                            "title": "\u5f62\u6210deep learning",
+                                            "id": "line_267",
+                                            "title": "\u5f8c\u9762\u624d\u505aclassification\u505a\u5206\u985e",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
+                                },
+                                {
+                                    "id": "line_268",
+                                    "title": "\u6bcf\u4e00\u500bz\u516c\u5f0f\u5c31\u662f\u4e00\u500bneuron",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_269",
+                                    "title": "\u4e32\u63a5\u8d77\u4f86\u5c31\u662fneural network",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_270",
+                                    "title": "\u5f62\u6210deep learning",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 }
                             ]
                         }

@@ -6,897 +6,889 @@
     "children": [
         {
             "id": "line_0",
-            "title": "job",
+            "title": "opening",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "opening",
+                    "title": "job opportunity",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_2",
-                            "title": "job opportunity",
+                            "title": "job search",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_3",
-                                    "title": "job search",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_4",
-                                            "title": "work station",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_5",
-                                            "title": "vocancy",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_6",
-                                    "title": "job seeker",
+                                    "title": "work station",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_7",
-                                    "title": "recruit",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_8",
-                                    "title": "requirement",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_9",
-                                    "title": "familiar",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_10",
-                                    "title": "position",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_11",
-                                    "title": "sign up for",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_12",
-                                    "title": "applicant",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_13",
-                                    "title": "application form",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_14",
-                                    "title": "human resources",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_15",
-                                    "title": "manpower",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_16",
-                                    "title": "on the waiting list oriented",
+                                    "id": "line_4",
+                                    "title": "vocancy",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
+                        {
+                            "id": "line_5",
+                            "title": "job seeker",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "recruit",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_7",
+                            "title": "requirement",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_8",
+                            "title": "familiar",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_9",
+                            "title": "position",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_10",
+                            "title": "sign up for",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_11",
+                            "title": "applicant",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_12",
+                            "title": "application form",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_13",
+                            "title": "human resources",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_14",
+                            "title": "manpower",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_15",
+                            "title": "on the waiting list oriented",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_16",
+                    "title": "ability",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_17",
-                            "title": "ability",
+                            "title": "send in",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_18",
+                            "title": "apply for",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_19",
+                            "title": "cover letter",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_20",
+                            "title": "reapply",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_21",
+                            "title": "resume",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
-                                {
-                                    "id": "line_18",
-                                    "title": "send in",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_19",
-                                    "title": "apply for",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_20",
-                                    "title": "cover letter",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_21",
-                                    "title": "reapply",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
                                 {
                                     "id": "line_22",
-                                    "title": "resume",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_23",
-                                            "title": "computer literate",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_24",
-                                            "title": "prerequisite",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_25",
-                                            "title": "bilingual",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_26",
-                                            "title": "curriculum vitae",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_27",
-                                            "title": "diploma",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_28",
-                                            "title": "screening",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_29",
-                                            "title": "endurance",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_30",
-                                            "title": "work history",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_31",
-                                            "title": "master's degree",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_32",
-                                            "title": "well-educated",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_33",
-                                            "title": "professional",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_34",
-                                            "title": "reference",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_35",
-                                            "title": "waiting recommendation",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_36",
-                                            "title": "recommendation letter",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_37",
-                                            "title": "letter of recommendation",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_38",
-                                            "title": "reference letter",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_39",
-                                            "title": "graduation",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_40",
-                                            "title": "certification",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_41",
-                                            "title": "necessity",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_42",
-                                    "title": "qualified",
+                                    "title": "computer literate",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_43",
-                                    "title": "completion",
+                                    "id": "line_23",
+                                    "title": "prerequisite",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_44",
-                                    "title": "previous job",
+                                    "id": "line_24",
+                                    "title": "bilingual",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_25",
+                                    "title": "curriculum vitae",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_26",
+                                    "title": "diploma",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_27",
+                                    "title": "screening",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_28",
+                                    "title": "endurance",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_29",
+                                    "title": "work history",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_30",
+                                    "title": "master's degree",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_31",
+                                    "title": "well-educated",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_32",
+                                    "title": "professional",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_33",
+                                    "title": "reference",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_34",
+                                    "title": "waiting recommendation",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_35",
+                                    "title": "recommendation letter",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_36",
+                                    "title": "letter of recommendation",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_37",
+                                    "title": "reference letter",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_38",
+                                    "title": "graduation",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_39",
+                                    "title": "certification",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_40",
+                                    "title": "necessity",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
+                        {
+                            "id": "line_41",
+                            "title": "qualified",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_42",
+                            "title": "completion",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_43",
+                            "title": "previous job",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_44",
+                    "title": "interview",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_45",
-                            "title": "interview",
+                            "title": "visiting",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_46",
-                                    "title": "visiting",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_47",
-                                    "title": "set up an interview",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_48",
-                                    "title": "take an examination",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_49",
-                                    "title": "match",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_50",
-                                    "title": "tidy",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_51",
-                                    "title": "list",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_52",
-                                    "title": "in face",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_53",
-                                    "title": "job fair",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_54",
-                                    "title": "meet",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_55",
-                                    "title": "impressed",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_56",
-                                    "title": "confidence",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_57",
-                                    "title": "lack confidence",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_58",
-                                    "title": "fair",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_59",
-                                    "title": "job offer",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_60",
-                                    "title": "dress formally",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_61",
-                                    "title": "dress in suit",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_62",
-                                    "title": "candidate",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_63",
-                                    "title": "be influenced by appearance",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_46",
+                            "title": "set up an interview",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_47",
+                            "title": "take an examination",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_48",
+                            "title": "match",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_49",
+                            "title": "tidy",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_50",
+                            "title": "list",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_51",
+                            "title": "in face",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_52",
+                            "title": "job fair",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_53",
+                            "title": "meet",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_54",
+                            "title": "impressed",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_55",
+                            "title": "confidence",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_56",
+                            "title": "lack confidence",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_57",
+                            "title": "fair",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_58",
+                            "title": "job offer",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_59",
+                            "title": "dress formally",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_60",
+                            "title": "dress in suit",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_61",
+                            "title": "candidate",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_62",
+                            "title": "be influenced by appearance",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_63",
+            "title": "archievement",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_64",
-                    "title": "archievement",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_65",
-                            "title": "payroll",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_66",
-                            "title": "occupation",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_67",
-                            "title": "wage",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_68",
-                            "title": "paycheck",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_69",
-                            "title": "proof of employment",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
-                },
-                {
-                    "id": "line_70",
-                    "title": "aptitude",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_71",
-                            "title": "appeal",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_72",
-                            "title": "identify",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_73",
-                            "title": "associate",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_74",
-                            "title": "lack",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_75",
-                            "title": "interpersonal skills",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
-                },
-                {
-                    "id": "line_76",
-                    "title": "employment",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_77",
-                            "title": "career",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_78",
-                            "title": "newcomer",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_79",
-                            "title": "probationer",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_80",
-                            "title": "novice",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_81",
-                            "title": "part-time",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_82",
-                            "title": "full time work",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_83",
-                            "title": "secretary",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_84",
-                            "title": "employ",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_85",
-                            "title": "condition",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_86",
-                            "title": "proficiency",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_87",
-                            "title": "specialize",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_88",
-                            "title": "trainee",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_89",
-                            "title": "training",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_90",
-                            "title": "training center",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_91",
-                            "title": "be admitted to",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_92",
-                            "title": "be advised to do",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_93",
-                            "title": "party",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_94",
-                            "title": "apprentice",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
-                },
-                {
-                    "id": "line_95",
-                    "title": "degree",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_96",
-                            "title": "consultant",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_97",
-                            "title": "entitle",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_98",
-                            "title": "managerial",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_99",
-                            "title": "criteria",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_100",
-                            "title": "decade",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_101",
-                            "title": "insufficient",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_102",
-                            "title": "minimum",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_103",
-                            "title": "profession",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_104",
-                            "title": "archieve one's goal",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_105",
-                            "title": "figure occupation",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_106",
-                            "title": "eagerness",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_107",
-                            "title": "excellent",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_108",
-                            "title": "qualification",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_109",
-                            "title": "overqualified",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_110",
-                            "title": "talented",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
-                },
-                {
-                    "id": "line_111",
-                    "title": "work",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_112",
-                            "title": "lay out",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_113",
-                            "title": "pay raise",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_114",
-                            "title": "practical expreience",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_115",
-                            "title": "send off to",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_116",
-                            "title": "exclude",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_117",
-                            "title": "fluently",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_118",
-                            "title": "get through",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_119",
-                            "title": "relevant",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_120",
-                            "title": "command",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_121",
-                            "title": "workforce",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_122",
-                            "title": "address the audience",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_123",
-                            "title": "familiarize oneself with",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_124",
-                            "title": "familiarize",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_125",
-                            "title": "fluency",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_126",
-                            "title": "fluent in",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_127",
-                            "title": "in the filed of",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_128",
-                            "title": "inexperience",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_129",
-                            "title": "make A a regular habit",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_130",
-                            "title": "make a commitment through",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_131",
-                            "title": "make a point of-ing",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_132",
-                            "title": "against all odds",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_133",
-                            "title": "replenish",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_134",
-                            "title": "regularity",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_135",
-                            "title": "questionably",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
-                },
-                {
-                    "id": "line_136",
-                    "title": "self-motivation",
+                    "title": "payroll",
                     "background-color": "#e3aba7",
                     "collapsed": false
                 },
                 {
-                    "id": "line_137",
-                    "title": "send a notification",
+                    "id": "line_65",
+                    "title": "occupation",
                     "background-color": "#e3aba7",
                     "collapsed": false
                 },
                 {
-                    "id": "line_138",
-                    "title": "wanted",
+                    "id": "line_66",
+                    "title": "wage",
                     "background-color": "#e3aba7",
                     "collapsed": false
                 },
                 {
-                    "id": "line_139",
-                    "title": "credential",
+                    "id": "line_67",
+                    "title": "paycheck",
                     "background-color": "#e3aba7",
                     "collapsed": false
                 },
                 {
-                    "id": "line_140",
-                    "title": "firsthand",
-                    "background-color": "#e3aba7",
-                    "collapsed": false
-                },
-                {
-                    "id": "line_141",
-                    "title": "hiring committee",
-                    "background-color": "#e3aba7",
-                    "collapsed": false
-                },
-                {
-                    "id": "line_142",
-                    "title": "not to mention",
-                    "background-color": "#e3aba7",
-                    "collapsed": false
-                },
-                {
-                    "id": "line_143",
-                    "title": "on occasion",
-                    "background-color": "#e3aba7",
-                    "collapsed": false
-                },
-                {
-                    "id": "line_145",
-                    "title": "lag",
+                    "id": "line_68",
+                    "title": "proof of employment",
                     "background-color": "#e3aba7",
                     "collapsed": false
                 }
             ]
+        },
+        {
+            "id": "line_69",
+            "title": "aptitude",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_70",
+                    "title": "appeal",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_71",
+                    "title": "identify",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_72",
+                    "title": "associate",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_73",
+                    "title": "lack",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_74",
+                    "title": "interpersonal skills",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_75",
+            "title": "employment",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_76",
+                    "title": "career",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_77",
+                    "title": "newcomer",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_78",
+                    "title": "probationer",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_79",
+                    "title": "novice",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_80",
+                    "title": "part-time",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_81",
+                    "title": "full time work",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_82",
+                    "title": "secretary",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_83",
+                    "title": "employ",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_84",
+                    "title": "condition",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_85",
+                    "title": "proficiency",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_86",
+                    "title": "specialize",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_87",
+                    "title": "trainee",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_88",
+                    "title": "training",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_89",
+                    "title": "training center",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_90",
+                    "title": "be admitted to",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_91",
+                    "title": "be advised to do",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_92",
+                    "title": "party",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_93",
+                    "title": "apprentice",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_94",
+            "title": "degree",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_95",
+                    "title": "consultant",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_96",
+                    "title": "entitle",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_97",
+                    "title": "managerial",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_98",
+                    "title": "criteria",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_99",
+                    "title": "decade",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_100",
+                    "title": "insufficient",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_101",
+                    "title": "minimum",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_102",
+                    "title": "profession",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_103",
+                    "title": "archieve one's goal",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_104",
+                    "title": "figure occupation",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_105",
+                    "title": "eagerness",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_106",
+                    "title": "excellent",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_107",
+                    "title": "qualification",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_108",
+                    "title": "overqualified",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_109",
+                    "title": "talented",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_110",
+            "title": "work",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_111",
+                    "title": "lay out",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_112",
+                    "title": "pay raise",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_113",
+                    "title": "practical expreience",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_114",
+                    "title": "send off to",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_115",
+                    "title": "exclude",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_116",
+                    "title": "fluently",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_117",
+                    "title": "get through",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_118",
+                    "title": "relevant",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_119",
+                    "title": "command",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_120",
+                    "title": "workforce",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_121",
+                    "title": "address the audience",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_122",
+                    "title": "familiarize oneself with",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_123",
+                    "title": "familiarize",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_124",
+                    "title": "fluency",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_125",
+                    "title": "fluent in",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_126",
+                    "title": "in the filed of",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_127",
+                    "title": "inexperience",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_128",
+                    "title": "make A a regular habit",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_129",
+                    "title": "make a commitment through",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_130",
+                    "title": "make a point of-ing",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_131",
+                    "title": "against all odds",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_132",
+                    "title": "replenish",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_133",
+                    "title": "regularity",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_134",
+                    "title": "questionably",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_135",
+            "title": "self-motivation",
+            "background-color": "#fff",
+            "collapsed": false
+        },
+        {
+            "id": "line_136",
+            "title": "send a notification",
+            "background-color": "#fff",
+            "collapsed": false
+        },
+        {
+            "id": "line_137",
+            "title": "wanted",
+            "background-color": "#fff",
+            "collapsed": false
+        },
+        {
+            "id": "line_138",
+            "title": "credential",
+            "background-color": "#fff",
+            "collapsed": false
+        },
+        {
+            "id": "line_139",
+            "title": "firsthand",
+            "background-color": "#fff",
+            "collapsed": false
+        },
+        {
+            "id": "line_140",
+            "title": "hiring committee",
+            "background-color": "#fff",
+            "collapsed": false
+        },
+        {
+            "id": "line_141",
+            "title": "not to mention",
+            "background-color": "#fff",
+            "collapsed": false
+        },
+        {
+            "id": "line_142",
+            "title": "on occasion",
+            "background-color": "#fff",
+            "collapsed": false
+        },
+        {
+            "id": "line_143",
+            "title": "lag",
+            "background-color": "#fff",
+            "collapsed": false
         }
     ]
 }

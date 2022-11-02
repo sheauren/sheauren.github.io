@@ -6,314 +6,398 @@
     "children": [
         {
             "id": "line_0",
-            "title": "\"Hello world\" of deep learning",
+            "title": "keras",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "keras",
+                    "title": "\u6578\u5341\u5206\u9418\u5167\u5c31\u719f\u6089",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_2",
+                    "title": "keras\u662ftensorflow/theano\u7684interface",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
-                        {
-                            "id": "line_2",
-                            "title": "\u6578\u5341\u5206\u9418\u5167\u5c31\u719f\u6089",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
                         {
                             "id": "line_3",
-                            "title": "keras\u662ftensorflow/theano\u7684interface",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_4",
-                                    "title": "\u628a\u64cd\u4f5ctensorflow\u7684\u4e8b\u60c5\u5305\u8d77\u4f86",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_5",
-                                    "title": "easy learn and use",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_6",
-                                            "title": "still have some flexible",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_7",
-                                    "title": "you can modify it if you write tensorflow or theano",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_8",
-                            "title": "Francois Chollet is the author of keras",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_9",
-                                    "title": "He currently works for google as a deep learning engineer and researcher.",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_10",
-                            "title": "Keras mean horn in Greek",
+                            "title": "\u628a\u64cd\u4f5ctensorflow\u7684\u4e8b\u60c5\u5305\u8d77\u4f86",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         },
                         {
-                            "id": "line_11",
-                            "title": "Documentation",
+                            "id": "line_4",
+                            "title": "easy learn and use",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_12",
-                                    "title": "http://keras.io",
+                                    "id": "line_5",
+                                    "title": "still have some flexible",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
                         {
-                            "id": "line_13",
-                            "title": "Example",
+                            "id": "line_6",
+                            "title": "you can modify it if you write tensorflow or theano",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_14",
-                                    "title": "https://github.com/fchollet/keras/tree/master/example",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         }
                     ]
                 },
                 {
-                    "id": "line_15",
-                    "title": "tensorflow/theano",
+                    "id": "line_7",
+                    "title": "Francois Chollet is the author of keras",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_16",
-                            "title": "very flexible",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_17",
-                            "title": "need some effort to learn",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_18",
-                            "title": "\u53ef\u4ee5\u7576\u500b\u5fae\u5206\u5668",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_19",
-                            "title": "\u53ef\u4ee5\u505adeep learning\u4ee5\u5916\u7684\u4e8b\u60c5",
+                            "id": "line_8",
+                            "title": "He currently works for google as a deep learning engineer and researcher.",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         }
                     ]
                 },
                 {
+                    "id": "line_9",
+                    "title": "Keras mean horn in Greek",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_10",
+                    "title": "Documentation",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_11",
+                            "title": "http://keras.io",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_12",
+                    "title": "Example",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_13",
+                            "title": "https://github.com/fchollet/keras/tree/master/example",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_14",
+            "title": "tensorflow/theano",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_15",
+                    "title": "very flexible",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_16",
+                    "title": "need some effort to learn",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_17",
+                    "title": "\u53ef\u4ee5\u7576\u500b\u5fae\u5206\u5668",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_18",
+                    "title": "\u53ef\u4ee5\u505adeep learning\u4ee5\u5916\u7684\u4e8b\u60c5",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_19",
+            "title": "\"hello world\" - handwrite digit recognition",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_20",
-                    "title": "\"hello world\" - handwrite digit recognition",
+                    "title": "mnist data",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_21",
-                            "title": "mnist data",
+                            "title": "http://yann.lecun.com/exdb/mnist/",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_22",
+                            "title": "input",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_22",
-                                    "title": "http://yann.lecun.com/exdb/mnist/",
+                                    "id": "line_23",
+                                    "title": "28x28 matrix",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
-                                },
-                                {
-                                    "id": "line_23",
-                                    "title": "input",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_24",
-                                            "title": "28x28 matrix",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_25",
-                                    "title": "output:",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_26",
-                                            "title": "0-9 label",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
                                 }
                             ]
                         },
                         {
+                            "id": "line_24",
+                            "title": "output:",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_25",
+                                    "title": "0-9 label",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_26",
+                    "title": "keras",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_27",
-                            "title": "keras",
+                            "title": "step1:define a set of function",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_28",
-                                    "title": "step1:define a set of function",
+                                    "title": "model = sequential",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_29",
+                                    "title": "model.add(Dense(input_dim=(28,28),output_dim=(500)))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_30",
+                                    "title": "model.add(Activation('sigmoid'))",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_29",
-                                            "title": "model = sequential",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_30",
-                                            "title": "model.add(Dense(input_dim=(28,28),output_dim=(500)))",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
                                             "id": "line_31",
-                                            "title": "model.add(Activation('sigmoid'))",
+                                            "title": "softplus",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_32",
+                                            "title": "softsign",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_33",
+                                            "title": "relu",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_34",
+                                            "title": "tanh",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_35",
+                                            "title": "hard_sigmod",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_36",
+                                            "title": "linear",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_37",
+                                    "title": "model.add(Dense(output_dim=(500)))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_38",
+                                    "title": "model.add(Activation('sigmoid'))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_39",
+                                    "title": "model.add(Dense(output_dim=(10)))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_40",
+                                    "title": "model.add(Activation('softmax'))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_41",
+                            "title": "step2:goodness of function",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_42",
+                                    "title": "model.compile(",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_43",
+                                            "title": "loss='categorical_crossentropy',",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_32",
-                                                    "title": "softplus",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_33",
-                                                    "title": "softsign",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_34",
-                                                    "title": "relu",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_35",
-                                                    "title": "tanh",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_36",
-                                                    "title": "hard_sigmod",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_37",
-                                                    "title": "linear",
+                                                    "id": "line_44",
+                                                    "title": "\u63a1\u7528crossentropy",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 }
                                             ]
                                         },
                                         {
-                                            "id": "line_38",
-                                            "title": "model.add(Dense(output_dim=(500)))",
+                                            "id": "line_45",
+                                            "title": "optimizer='adam',",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_39",
-                                            "title": "model.add(Activation('sigmoid'))",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_40",
-                                            "title": "model.add(Dense(output_dim=(10)))",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_41",
-                                            "title": "model.add(Activation('softmax'))",
+                                            "id": "line_46",
+                                            "title": "metrics=['accuracy'])",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_47",
+                            "title": "step3:pick the best function",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
-                                    "id": "line_42",
-                                    "title": "step2:goodness of function",
+                                    "id": "line_48",
+                                    "title": "step3.1 configuration",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_43",
+                                            "id": "line_49",
                                             "title": "model.compile(",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_44",
+                                                    "id": "line_50",
                                                     "title": "loss='categorical_crossentropy',",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_51",
+                                                    "title": "optimizer='adam',",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true,
                                                     "children": [
                                                         {
-                                                            "id": "line_45",
-                                                            "title": "\u63a1\u7528crossentropy",
+                                                            "id": "line_52",
+                                                            "title": "SGD",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_53",
+                                                            "title": "RMSprop",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_54",
+                                                            "title": "Adagrad",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_55",
+                                                            "title": "Adadelta",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_56",
+                                                            "title": "Adam",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_57",
+                                                            "title": "Adamax",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_58",
+                                                            "title": "Nadam",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_59",
+                                                            "title": "\u90fd\u662fgradient descent base\u7684\u65b9\u6cd5",
                                                             "background-color": "#01a6d5",
                                                             "collapsed": true
                                                         }
                                                     ]
                                                 },
                                                 {
-                                                    "id": "line_46",
-                                                    "title": "optimizer='adam',",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_47",
+                                                    "id": "line_60",
                                                     "title": "metrics=['accuracy'])",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
@@ -323,144 +407,38 @@
                                     ]
                                 },
                                 {
-                                    "id": "line_48",
-                                    "title": "step3:pick the best function",
+                                    "id": "line_61",
+                                    "title": "step3.2 find the optimal network parameters",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_49",
-                                            "title": "step3.1 configuration",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_50",
-                                                    "title": "model.compile(",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_51",
-                                                            "title": "loss='categorical_crossentropy',",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_52",
-                                                            "title": "optimizer='adam',",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true,
-                                                            "children": [
-                                                                {
-                                                                    "id": "line_53",
-                                                                    "title": "SGD",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_54",
-                                                                    "title": "RMSprop",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_55",
-                                                                    "title": "Adagrad",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_56",
-                                                                    "title": "Adadelta",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_57",
-                                                                    "title": "Adam",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_58",
-                                                                    "title": "Adamax",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_59",
-                                                                    "title": "Nadam",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_60",
-                                                                    "title": "\u90fd\u662fgradient descent base\u7684\u65b9\u6cd5",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "id": "line_61",
-                                                            "title": "metrics=['accuracy'])",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
                                             "id": "line_62",
-                                            "title": "step3.2 find the optimal network parameters",
+                                            "title": "model.fit(x_train,y_train,batch_size=100,nb_epoch=20)",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_63",
-                                                    "title": "model.fit(x_train,y_train,batch_size=100,nb_epoch=20)",
+                                                    "title": "x_train",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true,
                                                     "children": [
                                                         {
                                                             "id": "line_64",
-                                                            "title": "x_train",
+                                                            "title": "numpy array",
                                                             "background-color": "#01a6d5",
                                                             "collapsed": true,
                                                             "children": [
                                                                 {
                                                                     "id": "line_65",
-                                                                    "title": "numpy array",
+                                                                    "title": "two dimension",
                                                                     "background-color": "#97d9c7",
                                                                     "collapsed": true,
                                                                     "children": [
                                                                         {
                                                                             "id": "line_66",
-                                                                            "title": "two dimension",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true,
-                                                                            "children": [
-                                                                                {
-                                                                                    "id": "line_67",
-                                                                                    "title": "[num_of_examples,28*28]",
-                                                                                    "background-color": "#412ffc",
-                                                                                    "collapsed": true
-                                                                                }
-                                                                            ]
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    "id": "line_68",
-                                                                    "title": "train_data",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_69",
-                                                                            "title": "images",
+                                                                            "title": "[num_of_examples,28*28]",
                                                                             "background-color": "#eb6a68",
                                                                             "collapsed": true
                                                                         }
@@ -469,210 +447,224 @@
                                                             ]
                                                         },
                                                         {
+                                                            "id": "line_67",
+                                                            "title": "train_data",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
+                                                                    "id": "line_68",
+                                                                    "title": "images",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_70",
+                                                    "title": "y_train",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
                                                             "id": "line_71",
-                                                            "title": "y_train",
+                                                            "title": "numpy array",
                                                             "background-color": "#01a6d5",
                                                             "collapsed": true,
                                                             "children": [
                                                                 {
                                                                     "id": "line_72",
-                                                                    "title": "numpy array",
+                                                                    "title": "tow dimension",
                                                                     "background-color": "#97d9c7",
                                                                     "collapsed": true,
                                                                     "children": [
                                                                         {
                                                                             "id": "line_73",
-                                                                            "title": "tow dimension",
+                                                                            "title": "[num_of_examples,10]",
                                                                             "background-color": "#eb6a68",
                                                                             "collapsed": true,
                                                                             "children": [
                                                                                 {
                                                                                     "id": "line_74",
-                                                                                    "title": "[num_of_examples,10]",
+                                                                                    "title": "10\u5167\u53ea\u6709\u4e00\u500b1\u5176\u4ed60",
                                                                                     "background-color": "#412ffc",
-                                                                                    "collapsed": true,
-                                                                                    "children": [
-                                                                                        {
-                                                                                            "id": "line_75",
-                                                                                            "title": "10\u5167\u53ea\u6709\u4e00\u500b1\u5176\u4ed60",
-                                                                                            "background-color": "#fff",
-                                                                                            "collapsed": true
-                                                                                        }
-                                                                                    ]
+                                                                                    "collapsed": true
                                                                                 }
                                                                             ]
-                                                                        }
-                                                                    ]
-                                                                },
-                                                                {
-                                                                    "id": "line_76",
-                                                                    "title": "labels",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_77",
-                                                                            "title": "digits",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
                                                                         }
                                                                     ]
                                                                 }
                                                             ]
                                                         },
                                                         {
-                                                            "id": "line_78",
-                                                            "title": "mini-batch",
+                                                            "id": "line_75",
+                                                            "title": "labels",
                                                             "background-color": "#01a6d5",
                                                             "collapsed": true,
                                                             "children": [
                                                                 {
-                                                                    "id": "line_79",
-                                                                    "title": "we do not really minimum total loss",
+                                                                    "id": "line_76",
+                                                                    "title": "digits",
                                                                     "background-color": "#97d9c7",
                                                                     "collapsed": true
-                                                                },
-                                                                {
-                                                                    "id": "line_80",
-                                                                    "title": "training data\u5206\u6210\u4e00\u500b\u4e00\u500bbatch",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                },
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "line_77",
+                                                    "title": "mini-batch",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_78",
+                                                            "title": "we do not really minimum total loss",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_79",
+                                                            "title": "training data\u5206\u6210\u4e00\u500b\u4e00\u500bbatch",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_80",
+                                                            "title": "batch\u8981\u96a8\u6a5f\u5206\u907f\u514d\u901a\u901a\u90fd\u540c\u4e00\u500b\u7d50\u679c",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
                                                                 {
                                                                     "id": "line_81",
-                                                                    "title": "batch\u8981\u96a8\u6a5f\u5206\u907f\u514d\u901a\u901a\u90fd\u540c\u4e00\u500b\u7d50\u679c",
+                                                                    "title": "training\u6703\u6709\u554f\u984c",
                                                                     "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_82",
-                                                                            "title": "training\u6703\u6709\u554f\u984c",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
-                                                                },
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_82",
+                                                            "title": "randomly initialize network parameters",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        },
+                                                        {
+                                                            "id": "line_83",
+                                                            "title": "pick the 1th batch",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
                                                                 {
-                                                                    "id": "line_83",
-                                                                    "title": "randomly initialize network parameters",
+                                                                    "id": "line_84",
+                                                                    "title": "L' = l1+l32+...",
                                                                     "background-color": "#97d9c7",
                                                                     "collapsed": true
                                                                 },
                                                                 {
-                                                                    "id": "line_84",
-                                                                    "title": "pick the 1th batch",
+                                                                    "id": "line_85",
+                                                                    "title": "update parameters once",
                                                                     "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_85",
-                                                                            "title": "L' = l1+l32+...",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        },
-                                                                        {
-                                                                            "id": "line_86",
-                                                                            "title": "update parameters once",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
-                                                                },
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_86",
+                                                            "title": "pick the 2th batch",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
                                                                 {
                                                                     "id": "line_87",
-                                                                    "title": "pick the 2th batch",
+                                                                    "title": "L'' = l2+l16+...",
                                                                     "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_88",
-                                                                            "title": "L'' = l2+l16+...",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        },
-                                                                        {
-                                                                            "id": "line_89",
-                                                                            "title": "update parameters once",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
+                                                                    "collapsed": true
                                                                 },
+                                                                {
+                                                                    "id": "line_88",
+                                                                    "title": "update parameters once",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_89",
+                                                            "title": "until all mini-batches have been picked",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
                                                                 {
                                                                     "id": "line_90",
-                                                                    "title": "until all mini-batches have been picked",
+                                                                    "title": "one epoch",
                                                                     "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_91",
-                                                                            "title": "one epoch",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        },
-                                                                        {
-                                                                            "id": "line_92",
-                                                                            "title": "repeat the above process",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
+                                                                    "collapsed": true
                                                                 },
                                                                 {
+                                                                    "id": "line_91",
+                                                                    "title": "repeat the above process",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_92",
+                                                            "title": "batch_size",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
                                                                     "id": "line_93",
-                                                                    "title": "batch_size",
+                                                                    "title": "100:",
                                                                     "background-color": "#97d9c7",
                                                                     "collapsed": true,
                                                                     "children": [
                                                                         {
                                                                             "id": "line_94",
-                                                                            "title": "100:",
+                                                                            "title": "100 examples in a mini-batch",
                                                                             "background-color": "#eb6a68",
-                                                                            "collapsed": true,
-                                                                            "children": [
-                                                                                {
-                                                                                    "id": "line_95",
-                                                                                    "title": "100 examples in a mini-batch",
-                                                                                    "background-color": "#412ffc",
-                                                                                    "collapsed": true
-                                                                                }
-                                                                            ]
-                                                                        },
-                                                                        {
-                                                                            "id": "line_96",
-                                                                            "title": "1:",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true,
-                                                                            "children": [
-                                                                                {
-                                                                                    "id": "line_97",
-                                                                                    "title": "stochastic gradient descent",
-                                                                                    "background-color": "#412ffc",
-                                                                                    "collapsed": true
-                                                                                }
-                                                                            ]
+                                                                            "collapsed": true
                                                                         }
                                                                     ]
                                                                 },
                                                                 {
+                                                                    "id": "line_95",
+                                                                    "title": "1:",
+                                                                    "background-color": "#97d9c7",
+                                                                    "collapsed": true,
+                                                                    "children": [
+                                                                        {
+                                                                            "id": "line_96",
+                                                                            "title": "stochastic gradient descent",
+                                                                            "background-color": "#eb6a68",
+                                                                            "collapsed": true
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "line_97",
+                                                            "title": "nb_epoch",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true,
+                                                            "children": [
+                                                                {
                                                                     "id": "line_98",
-                                                                    "title": "nb_epoch",
+                                                                    "title": "20:",
                                                                     "background-color": "#97d9c7",
                                                                     "collapsed": true,
                                                                     "children": [
                                                                         {
                                                                             "id": "line_99",
-                                                                            "title": "20:",
+                                                                            "title": "repeat 20 times",
                                                                             "background-color": "#eb6a68",
-                                                                            "collapsed": true,
-                                                                            "children": [
-                                                                                {
-                                                                                    "id": "line_100",
-                                                                                    "title": "repeat 20 times",
-                                                                                    "background-color": "#412ffc",
-                                                                                    "collapsed": true
-                                                                                }
-                                                                            ]
+                                                                            "collapsed": true
                                                                         }
                                                                     ]
                                                                 }
@@ -687,334 +679,334 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_100",
+            "title": "speed",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_101",
-                    "title": "speed",
+                    "title": "smaller batch size means more updates in one epoch",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_102",
-                            "title": "smaller batch size means more updates in one epoch",
+                            "title": "E.g. 50000 example",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_103",
+                            "title": "batch size = 1, 50000 update in one epoch",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_104",
+                            "title": "batch size = 10,5000 update in one epoch",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_105",
+                            "title": "batch size\u4e0d\u540c\u6642",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_103",
-                                    "title": "E.g. 50000 example",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_104",
-                                    "title": "batch size = 1, 50000 update in one epoch",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_105",
-                                    "title": "batch size = 10,5000 update in one epoch",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
                                     "id": "line_106",
-                                    "title": "batch size\u4e0d\u540c\u6642",
+                                    "title": "\u4e00\u500bepoch\u9700\u8981\u7684\u6642\u9593\u662f\u4e0d\u540c\u7684",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_107",
+                                    "title": "GTX 980 on MINIST 50000 training examples",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_107",
-                                            "title": "\u4e00\u500bepoch\u9700\u8981\u7684\u6642\u9593\u662f\u4e0d\u540c\u7684",
+                                            "id": "line_108",
+                                            "title": "batch_size/times",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_108",
-                                            "title": "GTX 980 on MINIST 50000 training examples",
+                                            "id": "line_109",
+                                            "title": "1/166s",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
-                                                {
-                                                    "id": "line_109",
-                                                    "title": "batch_size/times",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
                                                 {
                                                     "id": "line_110",
-                                                    "title": "1/166s",
+                                                    "title": "\u7b971\u500bepoch\u6642\u9593",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_111",
-                                                            "title": "\u7b971\u500bepoch\u6642\u9593",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_111",
+                                            "title": "10/17s",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
                                                 {
                                                     "id": "line_112",
-                                                    "title": "10/17s",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_113",
-                                                            "title": "\u53ef\u4ee5\u7b9710\u500bepoch\u6642\u9593\u4e86",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_114",
-                                                    "title": "100/0.xs",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_115",
-                                                    "title": "1000/0.xs",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_116",
-                                                    "title": "10000/0.xs",
+                                                    "title": "\u53ef\u4ee5\u7b9710\u500bepoch\u6642\u9593\u4e86",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 }
                                             ]
                                         },
+                                        {
+                                            "id": "line_113",
+                                            "title": "100/0.xs",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_114",
+                                            "title": "1000/0.xs",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_115",
+                                            "title": "10000/0.xs",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_116",
+                                    "title": "batch_size=1 or 10\u4f86\u770b",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_117",
-                                            "title": "batch_size=1 or 10\u4f86\u770b",
+                                            "title": "update\u53c3\u6578\u5dee\u4e0d\u591a\u662f\u4e00\u6a23\u7684",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_118",
-                                                    "title": "update\u53c3\u6578\u5dee\u4e0d\u591a\u662f\u4e00\u6a23\u7684",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_119",
-                                                    "title": "batch_size=10 is more statble,convege faster",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         },
+                                        {
+                                            "id": "line_118",
+                                            "title": "batch_size=10 is more statble,convege faster",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_119",
+                                    "title": "batch_size=10",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_120",
-                                            "title": "batch_size=10",
+                                            "title": "\u901f\u5ea6\u5feb\u662f\u56e0\u70ba\u5e73\u884c\u904b\u7b97\u8b9310\u500bbatch\u540c\u6642\u904b\u7b97",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_121",
+                                    "title": "batch_size\u8a2d\u592a\u9ad8",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_122",
+                                            "title": "GPU\u5c31\u7121\u6cd5\u627f\u64d4\u540c\u6642\u904b\u7b97\u7684\u80fd\u529b",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_123",
+                                            "title": "GPU\u6709\u5176\u6975\u9650",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_124",
+                                            "title": "\u5bb9\u6613\u9677\u5230local minimum / saddle point",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_125",
+                                            "title": "\u65bcdeep learning\u4e0d\u662f\u4e00\u500bconvex optimization problem",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_121",
-                                                    "title": "\u901f\u5ea6\u5feb\u662f\u56e0\u70ba\u5e73\u884c\u904b\u7b97\u8b9310\u500bbatch\u540c\u6642\u904b\u7b97",
+                                                    "id": "line_126",
+                                                    "title": "\u5145\u6eff\u5751\u5751\u6d1e\u6d1e",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_127",
+                                                    "title": "\u9806\u8457total loss\u5f88\u5feb\u5c31\u5361\u4f4f\u4e86",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 }
                                             ]
                                         },
                                         {
-                                            "id": "line_122",
-                                            "title": "batch_size\u8a2d\u592a\u9ad8",
+                                            "id": "line_128",
+                                            "title": "very large batch size can yield worse performance",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_129",
+                                            "title": "\u4e0d\u662f\u5f88\u9ebb\u7169\u7684saddle point",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_123",
-                                                    "title": "GPU\u5c31\u7121\u6cd5\u627f\u64d4\u540c\u6642\u904b\u7b97\u7684\u80fd\u529b",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_124",
-                                                    "title": "GPU\u6709\u5176\u6975\u9650",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_125",
-                                                    "title": "\u5bb9\u6613\u9677\u5230local minimum / saddle point",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_126",
-                                                    "title": "\u65bcdeep learning\u4e0d\u662f\u4e00\u500bconvex optimization problem",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_127",
-                                                            "title": "\u5145\u6eff\u5751\u5751\u6d1e\u6d1e",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_128",
-                                                            "title": "\u9806\u8457total loss\u5f88\u5feb\u5c31\u5361\u4f4f\u4e86",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_129",
-                                                    "title": "very large batch size can yield worse performance",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
                                                     "id": "line_130",
-                                                    "title": "\u4e0d\u662f\u5f88\u9ebb\u7169\u7684saddle point",
+                                                    "title": "\u52a0\u4e00\u9ederandom mini batch\u5c31\u6709\u53ef\u80fd\u8df3\u51fa",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_131",
-                                                            "title": "\u52a0\u4e00\u9ederandom mini batch\u5c31\u6709\u53ef\u80fd\u8df3\u51fa",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
+                                                    "collapsed": true
                                                 }
                                             ]
                                         }
                                     ]
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_131",
+                    "title": "matrix operation",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_132",
-                            "title": "matrix operation",
+                            "title": "forward pass",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_133",
+                            "title": "backward pass",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_134",
+                            "title": "why mini-batch is faster than stochastic gradient descent?",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_133",
-                                    "title": "forward pass",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_134",
-                                    "title": "backward pass",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
                                     "id": "line_135",
-                                    "title": "why mini-batch is faster than stochastic gradient descent?",
+                                    "title": "stochastic gradient descent",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_136",
-                                            "title": "stochastic gradient descent",
+                                            "title": "z1 = w1x",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_137",
+                                                    "title": "update parameters",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_138",
                                                     "title": "z1 = w1x",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true,
                                                     "children": [
                                                         {
-                                                            "id": "line_138",
+                                                            "id": "line_139",
                                                             "title": "update parameters",
                                                             "background-color": "#01a6d5",
                                                             "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_139",
-                                                            "title": "z1 = w1x",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true,
-                                                            "children": [
-                                                                {
-                                                                    "id": "line_140",
-                                                                    "title": "update parameters",
-                                                                    "background-color": "#97d9c7",
-                                                                    "collapsed": true
-                                                                }
-                                                            ]
                                                         }
                                                     ]
                                                 }
                                             ]
-                                        },
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_140",
+                                    "title": "mini-batch",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_141",
-                                            "title": "mini-batch",
+                                            "title": "matrix",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_142",
-                                                    "title": "matrix",
+                                                    "title": "[x,x...]",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_143",
-                                                            "title": "[x,x...]",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_144",
-                                                    "title": "[z1,z1...] = w1*[x,x...]",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_145",
-                                                            "title": "update parameters",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
+                                                    "collapsed": true
                                                 }
                                             ]
                                         },
                                         {
+                                            "id": "line_143",
+                                            "title": "[z1,z1...] = w1*[x,x...]",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_144",
+                                                    "title": "update parameters",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_145",
+                                    "title": "parctically,which one is faster?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
                                             "id": "line_146",
-                                            "title": "parctically,which one is faster?",
+                                            "title": "GPU\u904b\u7b97\u5169\u500b\u901f\u5ea6\u662f\u76f8\u540c\u7684",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_147",
-                                                    "title": "GPU\u904b\u7b97\u5169\u500b\u901f\u5ea6\u662f\u76f8\u540c\u7684",
+                                                    "title": "\u77e9\u9663\u90fd\u53ef\u4ee5\u5e73\u884c\u904b\u7b97",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_148",
-                                                            "title": "\u77e9\u9663\u90fd\u53ef\u4ee5\u5e73\u884c\u904b\u7b97",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_149",
-                                                            "title": "\u9020\u6210mini-batch\u901f\u5ea6\u76f4\u63a5\u52a0\u901f\u4e86",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_148",
+                                                    "title": "\u9020\u6210mini-batch\u901f\u5ea6\u76f4\u63a5\u52a0\u901f\u4e86",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
                                                 }
                                             ]
                                         }
@@ -1023,82 +1015,82 @@
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_149",
+            "title": "save and load method",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_150",
-                    "title": "save and load method",
+                    "title": "http://keras.io/getting-started/fag/#show-can-i-save-a-keras-model",
                     "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_151",
-                            "title": "http://keras.io/getting-started/fag/#show-can-i-save-a-keras-model",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
-                },
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_151",
+            "title": "how to use the neural network(testing)",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_152",
-                    "title": "how to use the neural network(testing)",
+                    "title": "score=model.evaluate(x_test,y_test)",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_153",
-                            "title": "score=model.evaluate(x_test,y_test)",
+                            "title": "score[0]",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_154",
-                                    "title": "score[0]",
+                                    "title": "total loss",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_155",
-                                            "title": "total loss",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_156",
-                                    "title": "score[1]",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_157",
-                                            "title": "accuracy",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
                                 }
                             ]
                         },
                         {
-                            "id": "line_158",
-                            "title": "predict",
+                            "id": "line_155",
+                            "title": "score[1]",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_159",
-                                    "title": "input: image",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_160",
-                                    "title": "output: result",
+                                    "id": "line_156",
+                                    "title": "accuracy",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_157",
+                    "title": "predict",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_158",
+                            "title": "input: image",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_159",
+                            "title": "output: result",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
                 }

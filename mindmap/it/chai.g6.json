@@ -6,53 +6,45 @@
     "children": [
         {
             "id": "line_0",
-            "title": "chai",
+            "title": "npm install -dev chai",
+            "background-color": "#fff",
+            "collapsed": false
+        },
+        {
+            "id": "line_1",
+            "title": "sample.js",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
-                    "id": "line_1",
-                    "title": "npm install -dev chai",
+                    "id": "line_2",
+                    "title": "const {should,expect,assert} = require('chai')",
                     "background-color": "#e3aba7",
                     "collapsed": false
                 },
                 {
-                    "id": "line_2",
-                    "title": "sample.js",
+                    "id": "line_3",
+                    "title": "should()",
                     "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_3",
-                            "title": "const {should,expect,assert} = require('chai')",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_4",
-                            "title": "should()",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_5",
-                            "title": "add(2,3).should.equal(5)",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_6",
-                            "title": "expect(add(2,3)).to.be(5)",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_7",
-                            "title": "assert.equal(add(2,3),5)",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        }
-                    ]
+                    "collapsed": false
+                },
+                {
+                    "id": "line_4",
+                    "title": "add(2,3).should.equal(5)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_5",
+                    "title": "expect(add(2,3)).to.be(5)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_6",
+                    "title": "assert.equal(add(2,3),5)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
                 }
             ]
         }

@@ -6,373 +6,365 @@
     "children": [
         {
             "id": "line_0",
-            "title": "text classification",
+            "title": "dataset:imdb",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "dataset:imdb",
+                    "title": "imdb.load_data(num_words=10000/*Glossary Number*/)",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_2",
-                            "title": "imdb.load_data(num_words=10000/*Glossary Number*/)",
+                            "title": "train_data",
                             "background-color": "#e82ad2",
                             "collapsed": false,
                             "children": [
                                 {
                                     "id": "line_3",
-                                    "title": "train_data",
+                                    "title": "15000,",
                                     "background-color": "#0fbdff",
-                                    "collapsed": false,
-                                    "children": [
-                                        {
-                                            "id": "line_4",
-                                            "title": "15000,",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_4",
+                            "title": "train_labels",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
                                 {
                                     "id": "line_5",
-                                    "title": "train_labels",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false,
-                                    "children": [
-                                        {
-                                            "id": "line_6",
-                                            "title": "15000,",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_7",
-                                    "title": "valid_data",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false,
-                                    "children": [
-                                        {
-                                            "id": "line_8",
-                                            "title": "10000,",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_9",
-                                    "title": "valid_labels",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false,
-                                    "children": [
-                                        {
-                                            "id": "line_10",
-                                            "title": "10000,",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_11",
-                                    "title": "imdb.get_word_index()",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false,
-                                    "children": [
-                                        {
-                                            "id": "line_12",
-                                            "title": "# get index by word",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_13",
-                                            "title": "custom func reverse_word_index",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_14",
-                                            "title": "# get word by index",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_15",
-                                    "title": "keras.preprocessing.sequence.pad_sequences",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false,
-                                    "children": [
-                                        {
-                                            "id": "line_16",
-                                            "title": "train_data/test_data",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_17",
-                                            "title": "value = get_index_by_word \"<PAD>\"",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_18",
-                                            "title": "padding = 'post'",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_19",
-                                            "title": "maxlen=256",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "line_20",
-                    "title": "model",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_21",
-                            "title": "Embedding 10000 /*Glossary Number*/ output dim:16  (batch,sequence,embedding)",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_22",
-                            "title": "GlobalAveragePooling1D",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_23",
-                            "title": "Dense(16)/relu",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_24",
-                            "title": "Dense(1)/sigmoid",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        }
-                    ]
-                },
-                {
-                    "id": "line_25",
-                    "title": "loss_function",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_26",
-                            "title": "binary_crossentropy",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_27",
-                            "title": "mean_squared_error",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        }
-                    ]
-                },
-                {
-                    "id": "line_28",
-                    "title": "optimizer",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_29",
-                            "title": "AdamOptimizer",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        }
-                    ]
-                },
-                {
-                    "id": "line_30",
-                    "title": "metric",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_31",
-                            "title": "accuracy",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        }
-                    ]
-                },
-                {
-                    "id": "line_32",
-                    "title": "fit # train",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_33",
-                            "title": "train_images,train_labels",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_34",
-                            "title": "epochs",
-                            "background-color": "#e82ad2",
-                            "collapsed": false,
-                            "children": [
-                                {
-                                    "id": "line_35",
-                                    "title": "40",
+                                    "title": "15000,",
                                     "background-color": "#0fbdff",
                                     "collapsed": false
                                 }
                             ]
                         },
                         {
-                            "id": "line_36",
-                            "title": "batch_size",
-                            "background-color": "#e82ad2",
-                            "collapsed": false,
-                            "children": [
-                                {
-                                    "id": "line_37",
-                                    "title": "512",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_38",
+                            "id": "line_6",
                             "title": "valid_data",
                             "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_39",
-                            "title": "valid_labels",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_40",
-                            "title": "verbose",
-                            "background-color": "#e82ad2",
                             "collapsed": false,
                             "children": [
                                 {
-                                    "id": "line_41",
-                                    "title": "o: no log",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                },
-                                {
-                                    "id": "line_42",
-                                    "title": "1:progress",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                },
-                                {
-                                    "id": "line_43",
-                                    "title": "2:epocs log",
+                                    "id": "line_7",
+                                    "title": "10000,",
                                     "background-color": "#0fbdff",
                                     "collapsed": false
                                 }
                             ]
                         },
                         {
+                            "id": "line_8",
+                            "title": "valid_labels",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_9",
+                                    "title": "10000,",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_10",
+                            "title": "imdb.get_word_index()",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_11",
+                                    "title": "# get index by word",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_12",
+                                    "title": "custom func reverse_word_index",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_13",
+                                    "title": "# get word by index",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_14",
+                            "title": "keras.preprocessing.sequence.pad_sequences",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_15",
+                                    "title": "train_data/test_data",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_16",
+                                    "title": "value = get_index_by_word \"<PAD>\"",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_17",
+                                    "title": "padding = 'post'",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_18",
+                                    "title": "maxlen=256",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_19",
+            "title": "model",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_20",
+                    "title": "Embedding 10000 /*Glossary Number*/ output dim:16  (batch,sequence,embedding)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_21",
+                    "title": "GlobalAveragePooling1D",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_22",
+                    "title": "Dense(16)/relu",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_23",
+                    "title": "Dense(1)/sigmoid",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_24",
+            "title": "loss_function",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_25",
+                    "title": "binary_crossentropy",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_26",
+                    "title": "mean_squared_error",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_27",
+            "title": "optimizer",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_28",
+                    "title": "AdamOptimizer",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_29",
+            "title": "metric",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_30",
+                    "title": "accuracy",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_31",
+            "title": "fit # train",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_32",
+                    "title": "train_images,train_labels",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_33",
+                    "title": "epochs",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_34",
+                            "title": "40",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_35",
+                    "title": "batch_size",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_36",
+                            "title": "512",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_37",
+                    "title": "valid_data",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_38",
+                    "title": "valid_labels",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_39",
+                    "title": "verbose",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_40",
+                            "title": "o: no log",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_41",
+                            "title": "1:progress",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_42",
+                            "title": "2:epocs log",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_43",
+                    "title": "history",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_44",
-                            "title": "history",
+                            "title": "fit's return value",
                             "background-color": "#e82ad2",
                             "collapsed": false,
                             "children": [
                                 {
                                     "id": "line_45",
-                                    "title": "fit's return value",
+                                    "title": "history_dict = history.history",
                                     "background-color": "#0fbdff",
-                                    "collapsed": false,
-                                    "children": [
-                                        {
-                                            "id": "line_46",
-                                            "title": "history_dict = history.history",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_47",
-                                            "title": "history_dict.keys()",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_48",
-                                            "title": "dict_keys(['acc', 'val_loss', 'val_acc', 'loss'])",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_46",
+                                    "title": "history_dict.keys()",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                },
+                                {
+                                    "id": "line_47",
+                                    "title": "dict_keys(['acc', 'val_loss', 'val_acc', 'loss'])",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
                                 }
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_48",
+            "title": "evaluate",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_49",
-                    "title": "evaluate",
+                    "title": "test_images,test_labels",
                     "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_50",
-                            "title": "test_images,test_labels",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_51",
-                            "title": "test_loss",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_52",
-                            "title": "test_acc",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        }
-                    ]
+                    "collapsed": false
                 },
                 {
-                    "id": "line_53",
-                    "title": "predict",
+                    "id": "line_50",
+                    "title": "test_loss",
                     "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_54",
-                            "title": "predict_classes=np.argmax(predict[:,:],axis=1])",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        }
-                    ]
+                    "collapsed": false
+                },
+                {
+                    "id": "line_51",
+                    "title": "test_acc",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_52",
+            "title": "predict",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_53",
+                    "title": "predict_classes=np.argmax(predict[:,:],axis=1])",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
                 }
             ]
         }

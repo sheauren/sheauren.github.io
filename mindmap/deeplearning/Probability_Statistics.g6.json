@@ -6,493 +6,485 @@
     "children": [
         {
             "id": "line_0",
-            "title": "Probability & Statistics",
+            "title": "Basic",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "Basic",
+                    "title": "Basic Term",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_2",
-                            "title": "Basic Term",
+                            "title": "Distance",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_3",
-                                    "title": "Distance",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_4",
-                                            "title": "Manhattan",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_5",
-                                            "title": "Euclidean",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_6",
-                                            "title": "Maholanobis",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_7",
-                                            "title": "Correlation",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_8",
-                                    "title": "Expecation",
+                                    "title": "Manhattan",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_9",
-                                    "title": "Mean",
+                                    "id": "line_4",
+                                    "title": "Euclidean",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_10",
-                                            "title": "Median",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
                                 },
                                 {
-                                    "id": "line_11",
-                                    "title": "Variance",
+                                    "id": "line_5",
+                                    "title": "Maholanobis",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_12",
-                                            "title": "Bias-trade off",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_13",
-                                            "title": "Covariance",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_14",
-                                                    "title": "Correlation Coefficient",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        }
-                                    ]
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_6",
+                                    "title": "Correlation",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 }
                             ]
                         },
                         {
-                            "id": "line_15",
-                            "title": "Sample Space",
+                            "id": "line_7",
+                            "title": "Expecation",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         },
                         {
-                            "id": "line_16",
-                            "title": "Random Varibles",
+                            "id": "line_8",
+                            "title": "Mean",
                             "background-color": "#e82ad2",
-                            "collapsed": true
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_9",
+                                    "title": "Median",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
                         },
+                        {
+                            "id": "line_10",
+                            "title": "Variance",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_11",
+                                    "title": "Bias-trade off",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_12",
+                                    "title": "Covariance",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_13",
+                                            "title": "Correlation Coefficient",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_14",
+                    "title": "Sample Space",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_15",
+                    "title": "Random Varibles",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_16",
+                    "title": "Probability Distribution",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_17",
-                            "title": "Probability Distribution",
+                            "title": "Uniform",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_18",
-                                    "title": "Uniform",
+                                    "title": "GMM",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_19",
-                                            "title": "GMM",
+                                            "title": "EM Algorithm",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_20",
-                                                    "title": "EM Algorithm",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_20",
+                            "title": "Gaussion",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_21",
-                                    "title": "Gaussion",
+                                    "title": "GMM",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_22",
-                                            "title": "GMM",
+                                            "title": "EM Algorithm",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_23",
-                                                    "title": "EM Algorithm",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         }
                                     ]
-                                },
-                                {
-                                    "id": "line_24",
-                                    "title": "Bernoulli",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_25",
-                                    "title": "Binomial",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_26",
-                                    "title": "MultiNomial",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_23",
+                            "title": "Bernoulli",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_24",
+                            "title": "Binomial",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_25",
+                            "title": "MultiNomial",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_26",
+                            "title": "Categorical",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_27",
-                                    "title": "Categorical",
+                                    "title": "GMM",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_28",
-                                            "title": "GMM",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_29",
-                                                    "title": "EM Algorithm",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_30",
-                                    "title": "Dirichlet",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_31",
-                                    "title": "Beta",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_32",
-                                    "title": "Gamma",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_33",
-                                    "title": "Exponential",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_34",
-                                    "title": "Poisson",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_35",
-                                    "title": "Chi-squared",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_36",
-                                    "title": "Student-t",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_37",
-                                            "title": "t-SNE",
+                                            "title": "EM Algorithm",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_29",
+                            "title": "Dirichlet",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_30",
+                            "title": "Beta",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_31",
+                            "title": "Gamma",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_32",
+                            "title": "Exponential",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_33",
+                            "title": "Poisson",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_34",
+                            "title": "Chi-squared",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_35",
+                            "title": "Student-t",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
-                                    "id": "line_38",
-                                    "title": "Central Limit Theorem",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_39",
-                                    "title": "PDF",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_40",
-                                    "title": "CDF",
+                                    "id": "line_36",
+                                    "title": "t-SNE",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
                         {
-                            "id": "line_41",
-                            "title": "Independent",
+                            "id": "line_37",
+                            "title": "Central Limit Theorem",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         },
                         {
-                            "id": "line_42",
-                            "title": "Conjucate",
+                            "id": "line_38",
+                            "title": "PDF",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_39",
+                            "title": "CDF",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         }
                     ]
                 },
                 {
+                    "id": "line_40",
+                    "title": "Independent",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_41",
+                    "title": "Conjucate",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_42",
+            "title": "Baysian",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_43",
-                    "title": "Baysian",
+                    "title": "Joint Probability",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_44",
+                    "title": "Posterior",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_45",
+                    "title": "Evidence",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_46",
+                    "title": "likelihood",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_44",
-                            "title": "Joint Probability",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_45",
-                            "title": "Posterior",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_46",
-                            "title": "Evidence",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
                             "id": "line_47",
-                            "title": "likelihood",
+                            "title": "Marginal Probability",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_48",
-                                    "title": "Marginal Probability",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_49",
-                                    "title": "Class-Conditional Density",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
+                        {
+                            "id": "line_48",
+                            "title": "Class-Conditional Density",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_49",
+                    "title": "Inference",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_50",
-                            "title": "Inference",
+                            "title": "Statistical Hypothesis",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_51",
-                                    "title": "Statistical Hypothesis",
+                                    "title": "T-test",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_52",
+                                    "title": "ANOVA",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_52",
-                                            "title": "T-test",
+                                            "id": "line_53",
+                                            "title": "Bonferroni",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_53",
-                                            "title": "ANOVA",
+                                            "id": "line_54",
+                                            "title": "FDR",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_54",
-                                                    "title": "Bonferroni",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_55",
-                                                    "title": "FDR",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_55",
+                            "title": "Baysian Inference",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_56",
-                                    "title": "Baysian Inference",
+                                    "title": "Variational",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_57",
-                                            "title": "Variational",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_58",
-                                                    "title": "Mean Field Approximate",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_59",
-                                                    "title": "Reparameterization Trick",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_60",
-                                                    "title": "Normalizing Flow",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_61",
-                                    "title": "Estimator",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_62",
-                                            "title": "Statistical Estimation",
+                                            "title": "Mean Field Approximate",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
+                                            "id": "line_58",
+                                            "title": "Reparameterization Trick",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_59",
+                                            "title": "Normalizing Flow",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_60",
+                            "title": "Estimator",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_61",
+                                    "title": "Statistical Estimation",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_62",
+                                    "title": "Parameter Estimator",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
                                             "id": "line_63",
-                                            "title": "Parameter Estimator",
+                                            "title": "Bayesion Estimate",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_64",
+                                            "title": "MAP",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_64",
-                                                    "title": "Bayesion Estimate",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
                                                     "id": "line_65",
-                                                    "title": "MAP",
+                                                    "title": "Weight Decay Term",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true,
                                                     "children": [
                                                         {
                                                             "id": "line_66",
-                                                            "title": "Weight Decay Term",
+                                                            "title": "Latent Variable",
                                                             "background-color": "#01a6d5",
                                                             "collapsed": true,
                                                             "children": [
                                                                 {
                                                                     "id": "line_67",
-                                                                    "title": "Latent Variable",
+                                                                    "title": "EM Algorithm",
                                                                     "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_68",
-                                                                            "title": "EM Algorithm",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
+                                                                    "collapsed": true
                                                                 }
                                                             ]
                                                         }
                                                     ]
-                                                },
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_68",
+                                            "title": "MLE",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
                                                 {
                                                     "id": "line_69",
-                                                    "title": "MLE",
+                                                    "title": "Overfitting",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_70",
+                                                    "title": "Minimize Cross-Entropy",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true,
                                                     "children": [
                                                         {
-                                                            "id": "line_70",
-                                                            "title": "Overfitting",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
                                                             "id": "line_71",
-                                                            "title": "Minimize Cross-Entropy",
+                                                            "title": "Latent Variable",
                                                             "background-color": "#01a6d5",
                                                             "collapsed": true,
                                                             "children": [
                                                                 {
                                                                     "id": "line_72",
-                                                                    "title": "Latent Variable",
+                                                                    "title": "EM Algorithm",
                                                                     "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_73",
-                                                                            "title": "EM Algorithm",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
+                                                                    "collapsed": true
                                                                 }
                                                             ]
                                                         }
@@ -501,252 +493,252 @@
                                             ]
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_73",
+                            "title": "Baysian Inference",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_74",
-                                    "title": "Baysian Inference",
+                                    "title": "Variational",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_75",
-                                            "title": "Variational",
+                                            "title": "Reparameterization Trick",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_76",
-                                                    "title": "Reparameterization Trick",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_77",
-                                                    "title": "Normalizing Flow",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_78",
-                                                    "title": "Mean Field Aprroximate",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_76",
+                                            "title": "Normalizing Flow",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_77",
+                                            "title": "Mean Field Aprroximate",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_78",
+                            "title": "Statistical Hypothesis",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_79",
-                                    "title": "Statistical Hypothesis",
+                                    "title": "T-test",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_80",
+                                    "title": "p-value",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_81",
+                                    "title": "Signifcance Level",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_82",
+                                    "title": "ANOVA",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_80",
-                                            "title": "T-test",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_81",
-                                            "title": "p-value",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_82",
-                                            "title": "Signifcance Level",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
                                             "id": "line_83",
-                                            "title": "ANOVA",
+                                            "title": "Bonferroni",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_84",
-                                                    "title": "Bonferroni",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_85",
-                                                    "title": "FDR",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_84",
+                                            "title": "FDR",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
                                         }
                                     ]
                                 }
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_85",
+            "title": "Model",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_86",
-                    "title": "Model",
+                    "title": "Discriminative",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_87",
-                            "title": "Discriminative",
+                            "title": "Linear Regression",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_88",
-                                    "title": "Linear Regression",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_88",
+                    "title": "Generative",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_89",
-                            "title": "Generative",
+                            "title": "Unsupervised",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_90",
-                                    "title": "Unsupervised",
+                                    "title": "VAE",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_91",
-                                            "title": "VAE",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_92",
-                                            "title": "GAN",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_91",
+                                    "title": "GAN",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_92",
+                    "title": "Supervised",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_93",
-                            "title": "Supervised",
+                            "title": "Navie Bayesion",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_94",
-                                    "title": "Navie Bayesion",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_95",
-                                    "title": "Linear Discriminant Analysis",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_96",
-                                    "title": "Logistic Regression",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_94",
+                            "title": "Linear Discriminant Analysis",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_95",
+                            "title": "Logistic Regression",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_96",
+            "title": "Information Theroy",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_97",
-                    "title": "Information Theroy",
+                    "title": "KL Divergence",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_98",
+                    "title": "Cross Entropy",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_99",
+                    "title": "Shannon Entropy",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_100",
+                    "title": "Uncertainy",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_101",
+            "title": "Sampling",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_102",
+                    "title": "Gibbs",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_103",
+                    "title": "Markov Chain",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_98",
-                            "title": "KL Divergence",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_99",
-                            "title": "Cross Entropy",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_100",
-                            "title": "Shannon Entropy",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_101",
-                            "title": "Uncertainy",
+                            "id": "line_104",
+                            "title": "MCMC",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         }
                     ]
                 },
                 {
-                    "id": "line_102",
-                    "title": "Sampling",
+                    "id": "line_105",
+                    "title": "Monte Cario Method",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_103",
-                            "title": "Gibbs",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_104",
-                            "title": "Markov Chain",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_105",
-                                    "title": "MCMC",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
                             "id": "line_106",
-                            "title": "Monte Cario Method",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_107",
-                                    "title": "MCMC",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_108",
-                            "title": "Negative Sampling",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_109",
-                            "title": "Condidate Sampling",
+                            "title": "MCMC",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         }
                     ]
+                },
+                {
+                    "id": "line_107",
+                    "title": "Negative Sampling",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_108",
+                    "title": "Condidate Sampling",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
                 }
             ]
         }

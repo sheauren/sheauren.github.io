@@ -6,177 +6,169 @@
     "children": [
         {
             "id": "line_0",
-            "title": "webdriver",
+            "title": "feature",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "feature",
+                    "title": "a browser automation library",
                     "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_2",
-                            "title": "a browser automation library",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        }
-                    ]
-                },
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_2",
+            "title": "install",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_3",
-                    "title": "install",
+                    "title": "npm install selenium-webdriver",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_4",
+                    "title": "browser component",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
-                        {
-                            "id": "line_4",
-                            "title": "npm install selenium-webdriver",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
                         {
                             "id": "line_5",
-                            "title": "browser component",
+                            "title": "chrome",
                             "background-color": "#e82ad2",
-                            "collapsed": false,
-                            "children": [
-                                {
-                                    "id": "line_6",
-                                    "title": "chrome",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                },
-                                {
-                                    "id": "line_7",
-                                    "title": "firefox",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                }
-                            ]
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "firefox",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_7",
+            "title": "usage",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_8",
-                    "title": "usage",
+                    "title": "var webdriver = require('selenium-webdriver')",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_9",
+                    "title": "By = webdriver.By",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_10",
+                    "title": "util = webdriver.until",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_11",
+                    "title": "var driver = new webdriver.Builder()",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_9",
-                            "title": "var webdriver = require('selenium-webdriver')",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_10",
-                            "title": "By = webdriver.By",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_11",
-                            "title": "util = webdriver.until",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
                             "id": "line_12",
-                            "title": "var driver = new webdriver.Builder()",
-                            "background-color": "#e82ad2",
-                            "collapsed": false,
-                            "children": [
-                                {
-                                    "id": "line_13",
-                                    "title": ".forBrowser('firefox')",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                },
-                                {
-                                    "id": "line_14",
-                                    "title": ".build()",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_15",
-                            "title": "driver.get('http://www.google.com/ncr')",
+                            "title": ".forBrowser('firefox')",
                             "background-color": "#e82ad2",
                             "collapsed": false
                         },
                         {
-                            "id": "line_16",
-                            "title": "driver.getElement(By.name('q')).sendKeys('webdriver')",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_17",
-                            "title": "driver.getElement(By.name('btnG')).click()",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_18",
-                            "title": "driver.wait(until.titleIs('webdriver - Google Search'),1000)",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_19",
-                            "title": "driver.quit()",
+                            "id": "line_13",
+                            "title": ".build()",
                             "background-color": "#e82ad2",
                             "collapsed": false
                         }
                     ]
                 },
                 {
+                    "id": "line_14",
+                    "title": "driver.get('http://www.google.com/ncr')",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_15",
+                    "title": "driver.getElement(By.name('q')).sendKeys('webdriver')",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_16",
+                    "title": "driver.getElement(By.name('btnG')).click()",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_17",
+                    "title": "driver.wait(until.titleIs('webdriver - Google Search'),1000)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_18",
+                    "title": "driver.quit()",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_20",
+            "title": "use Builder API",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_21",
-                    "title": "use Builder API",
+                    "title": "var webdriver = require('selenium-webdriver')",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_22",
+                    "title": "var chrome  = require('selenium-webdriver/chrome')",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_23",
+                    "title": "var firefox  = require('selenium-webdriver/firefox')",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_24",
+                    "title": "var driver = new webdriver.Builder()",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_22",
-                            "title": "var webdriver = require('selenium-webdriver')",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_23",
-                            "title": "var chrome  = require('selenium-webdriver/chrome')",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
-                            "id": "line_24",
-                            "title": "var firefox  = require('selenium-webdriver/firefox')",
-                            "background-color": "#e82ad2",
-                            "collapsed": false
-                        },
-                        {
                             "id": "line_25",
-                            "title": "var driver = new webdriver.Builder()",
+                            "title": ".forBrowser('firefox')",
                             "background-color": "#e82ad2",
-                            "collapsed": false,
-                            "children": [
-                                {
-                                    "id": "line_26",
-                                    "title": ".forBrowser('firefox')",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                },
-                                {
-                                    "id": "line_27",
-                                    "title": ".build()",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": false
-                                }
-                            ]
+                            "collapsed": false
+                        },
+                        {
+                            "id": "line_26",
+                            "title": ".build()",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
                         }
                     ]
                 }

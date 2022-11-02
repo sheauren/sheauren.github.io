@@ -6,1104 +6,1090 @@
     "children": [
         {
             "id": "line_0",
-            "title": "nodejs",
+            "title": "feature",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "feature",
+                    "title": "non-blocking I/O",
                     "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_2",
-                            "title": "non-blocking I/O",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_3",
-                            "title": "event drivning",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
+                    "collapsed": false
                 },
+                {
+                    "id": "line_2",
+                    "title": "event drivning",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_3",
+            "title": "work model",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_4",
-                    "title": "work model",
+                    "title": "client",
                     "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_5",
-                            "title": "client",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_6",
-                            "title": "event loop",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_7",
-                            "title": "non-blocking worker",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
+                    "collapsed": false
                 },
                 {
+                    "id": "line_5",
+                    "title": "event loop",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_6",
+                    "title": "non-blocking worker",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_7",
+            "title": "environment",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_8",
-                    "title": "environment",
+                    "title": "commonjs",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_9",
-                            "title": "commonjs",
+                            "title": "exports",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_10",
-                                    "title": "exports",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_11",
-                                            "title": "export function",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_12",
-                                            "title": "export varibles",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_13",
-                                    "title": "require",
+                                    "title": "export function",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
+                                    "id": "line_11",
+                                    "title": "export varibles",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_12",
+                            "title": "require",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_13",
+                            "title": "module",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
                                     "id": "line_14",
-                                    "title": "module",
+                                    "title": "module.exports",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_15",
-                                            "title": "module.exports",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_16",
-                                                    "title": "export all",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_17",
-                                    "title": "__filename",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_18",
-                                    "title": "__dirname - js file folder",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_19",
-                            "title": "global",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_20",
-                                    "title": "global varibles",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_21",
-                            "title": "Buffer - binary data object",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_22",
-                            "title": "process",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_23",
-                                    "title": "argv",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_24",
-                                    "title": "argv0",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_25",
-                                    "title": "execArgv",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_26",
-                                    "title": "execPath",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_27",
-                                    "title": "env",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_28",
-                                            "title": "PATH",
+                                            "title": "export all",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
-                                },
-                                {
-                                    "id": "line_29",
-                                    "title": "cwd - run node folder",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
                                 }
                             ]
                         },
                         {
-                            "id": "line_30",
-                            "title": "timer",
+                            "id": "line_16",
+                            "title": "__filename",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_17",
+                            "title": "__dirname - js file folder",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_18",
+                    "title": "global",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_19",
+                            "title": "global varibles",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_20",
+                    "title": "Buffer - binary data object",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_21",
+                    "title": "process",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_22",
+                            "title": "argv",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_23",
+                            "title": "argv0",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_24",
+                            "title": "execArgv",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_25",
+                            "title": "execPath",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_26",
+                            "title": "env",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_31",
-                                    "title": "fastest - process.nextTick",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_32",
-                                    "title": "faster - setTimeout",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_33",
-                                    "title": "next - setImmediate",
+                                    "id": "line_27",
+                                    "title": "PATH",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
                         {
+                            "id": "line_28",
+                            "title": "cwd - run node folder",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_29",
+                    "title": "timer",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_30",
+                            "title": "fastest - process.nextTick",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_31",
+                            "title": "faster - setTimeout",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_32",
+                            "title": "next - setImmediate",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_34",
+                    "title": "require",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_35",
-                            "title": "require",
+                            "title": "load as file",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_36",
-                                    "title": "load as file",
+                                    "title": "file",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_37",
-                                            "title": "file",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_38",
-                                            "title": "file.js",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_39",
-                                            "title": "file.json",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_40",
-                                            "title": "file.node",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
                                 },
+                                {
+                                    "id": "line_37",
+                                    "title": "file.js",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_38",
+                                    "title": "file.json",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_39",
+                                    "title": "file.node",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_40",
+                            "title": "caching",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_41",
-                                    "title": "caching",
+                                    "title": "after first load",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_42",
-                                            "title": "after first load",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_42",
+                            "title": "sys modules",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_43",
-                                    "title": "sys modules",
+                                    "title": "fs",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_44",
-                                            "title": "fs",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_44",
+                            "title": "3-party modules",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_45",
-                                    "title": "3-party modules",
+                                    "title": "npm install",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_46",
-                                            "title": "npm install",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_47",
-                                            "title": "yarm add",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_46",
+                                    "title": "yarm add",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 }
                             ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "id": "line_47",
+            "title": "api",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_48",
-                    "title": "api",
+                    "title": "path",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_49",
-                            "title": "path",
+                            "title": "win32",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_50",
+                            "title": "posix",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_51",
+                            "title": "basename",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_52",
+                            "title": "extname",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_53",
+                            "title": "dirname",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_54",
+                            "title": "normalize",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_55",
+                            "title": "join",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_56",
+                            "title": "resolve",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_50",
-                                    "title": "win32",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_51",
-                                    "title": "posix",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_52",
-                                    "title": "basename",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_53",
-                                    "title": "extname",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_54",
-                                    "title": "dirname",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_55",
-                                    "title": "normalize",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_56",
-                                    "title": "join",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
                                     "id": "line_57",
-                                    "title": "resolve",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_58",
-                                            "title": "./ runtime folder",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_59",
-                                    "title": "parse",
+                                    "title": "./ runtime folder",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_58",
+                            "title": "parse",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_59",
+                            "title": "format",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_60",
-                                    "title": "format",
+                                    "title": "dir > root",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_61",
-                                            "title": "dir > root",
+                                            "title": "base >\tname,ext",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_62",
-                                                    "title": "base >\tname,ext",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         }
                                     ]
-                                },
-                                {
-                                    "id": "line_63",
-                                    "title": "sep - split path(ex: / \\ )",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_62",
+                            "title": "sep - split path(ex: / \\ )",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_63",
+                            "title": "delimter - split PATH(ex: ;,:)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_64",
-                                    "title": "delimter - split PATH(ex: ;,:)",
+                                    "title": "win32.delimter ;",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_65",
-                                            "title": "win32.delimter ;",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_66",
-                                            "title": "posfix.delmter :",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_65",
+                                    "title": "posfix.delmter :",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_66",
+                    "title": "Buffer",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_67",
-                            "title": "Buffer",
+                            "title": "alloc - clear 0",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_68",
+                            "title": "unsafeAlloc",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_69",
+                            "title": "from",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
-                                {
-                                    "id": "line_68",
-                                    "title": "alloc - clear 0",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_69",
-                                    "title": "unsafeAlloc",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
                                 {
                                     "id": "line_70",
-                                    "title": "from",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_71",
-                                            "title": "array",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_72",
-                                            "title": "string",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_73",
-                                            "title": "string encoding",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_74",
-                                    "title": "byteLength",
+                                    "title": "array",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_75",
-                                    "title": "isBuffer",
+                                    "id": "line_71",
+                                    "title": "string",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_76",
-                                    "title": "concat",
+                                    "id": "line_72",
+                                    "title": "string encoding",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_73",
+                            "title": "byteLength",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_74",
+                            "title": "isBuffer",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_75",
+                            "title": "concat",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_76",
+                            "title": "buf object",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_77",
-                                    "title": "buf object",
+                                    "title": "length",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_78",
-                                            "title": "length",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_79",
-                                            "title": "indexOf",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_80",
-                                            "title": "copy",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_81",
-                                            "title": "fill",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_82",
-                                            "title": "equals",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
                                 },
+                                {
+                                    "id": "line_78",
+                                    "title": "indexOf",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_79",
+                                    "title": "copy",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_80",
+                                    "title": "fill",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_81",
+                                    "title": "equals",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_82",
+                            "title": "StringDecoder",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_83",
-                                    "title": "StringDecoder",
+                                    "title": "write(buf)",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_84",
-                                            "title": "write(buf)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_84",
+                    "title": "event",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_85",
-                            "title": "event",
+                            "title": "EventEmitter - class extends",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_86",
-                                    "title": "EventEmitter - class extends",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_87",
-                                    "title": "on(event,fn)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_88",
-                                    "title": "emit(eventname,argv)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_89",
-                                    "title": "removeListener(eventname,fn)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_90",
-                                    "title": "removeAllListeners",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
+                        {
+                            "id": "line_86",
+                            "title": "on(event,fn)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_87",
+                            "title": "emit(eventname,argv)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_88",
+                            "title": "removeListener(eventname,fn)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_89",
+                            "title": "removeAllListeners",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_90",
+                    "title": "fs",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_91",
-                            "title": "fs",
+                            "title": "unlink",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_92",
+                            "title": "readFile(path,('utf-8'),(err,data)=>{});",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_93",
+                            "title": "readFileSync",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_94",
+                            "title": "writeFile",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_95",
+                            "title": "stat(path,(err,stats)=>{});",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_92",
-                                    "title": "unlink",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_93",
-                                    "title": "readFile(path,('utf-8'),(err,data)=>{});",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_94",
-                                    "title": "readFileSync",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_95",
-                                    "title": "writeFile",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
                                     "id": "line_96",
-                                    "title": "stat(path,(err,stats)=>{});",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_97",
-                                            "title": "stats.isFile",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_98",
-                                            "title": "stats.isDirectory",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_99",
-                                            "title": "stats.size",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_100",
-                                            "title": "stats.ctime",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_101",
-                                    "title": "rename",
+                                    "title": "stats.isFile",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_102",
-                                    "title": "readdir",
+                                    "id": "line_97",
+                                    "title": "stats.isDirectory",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_103",
-                                    "title": "mkdir",
+                                    "id": "line_98",
+                                    "title": "stats.size",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_104",
-                                    "title": "rmdir",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_105",
-                                    "title": "watch",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_106",
-                                    "title": "createReadStream",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_107",
-                                    "title": "createWriteStream",
+                                    "id": "line_99",
+                                    "title": "stats.ctime",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
                         {
+                            "id": "line_100",
+                            "title": "rename",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_101",
+                            "title": "readdir",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_102",
+                            "title": "mkdir",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_103",
+                            "title": "rmdir",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_104",
+                            "title": "watch",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_105",
+                            "title": "createReadStream",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_106",
+                            "title": "createWriteStream",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_107",
+                    "title": "child_process",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_108",
-                            "title": "child_process",
+                            "title": "exec",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_109",
-                                    "title": "exec",
+                                    "title": "mac \"darwin\"",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_110",
-                                            "title": "mac \"darwin\"",
+                                            "title": "exec(`open ${url}`)",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_111",
-                                                    "title": "exec(`open ${url}`)",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_111",
+                                    "title": "win \"win32\"",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_112",
-                                            "title": "win \"win32\"",
+                                            "title": "exec(`start ${url}`)",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_113",
-                                                    "title": "exec(`start ${url}`)",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         }
                                     ]
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_114",
+                    "title": "http",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_115",
-                            "title": "http",
+                            "title": "simple_server.js",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_116",
-                                    "title": "simple_server.js",
+                                    "title": "const server = http.createServer((req,res)=>{",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_117",
-                                            "title": "const server = http.createServer((req,res)=>{",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_118",
-                                                    "title": "// url = req.url",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_119",
-                                                    "title": "res.statusCode=200",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_120",
-                                                    "title": "res.setHeader('Content-Type','text/plain')",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_121",
-                                                    "title": "res.end(\"hello world\\n\")",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_122",
-                                            "title": "})",
+                                            "title": "// url = req.url",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
+                                        {
+                                            "id": "line_118",
+                                            "title": "res.statusCode=200",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_119",
+                                            "title": "res.setHeader('Content-Type','text/plain')",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_120",
+                                            "title": "res.end(\"hello world\\n\")",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_121",
+                                    "title": "})",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_122",
+                                    "title": "server.listen(3000,'127.0.0.1',()=>{",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_123",
-                                            "title": "server.listen(3000,'127.0.0.1',()=>{",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_124",
-                                                    "title": "console.log('server running at http://127.0.0.1:3000')",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_125",
-                                            "title": "})",
+                                            "title": "console.log('server running at http://127.0.0.1:3000')",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
-                                        },
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_124",
+                                    "title": "})",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_125",
+                                    "title": "run server:",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_126",
-                                            "title": "run server:",
+                                            "title": "node simple_server.js",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_127",
-                                                    "title": "node simple_server.js",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_127",
+                            "title": "compress",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_128",
-                                    "title": "compress",
+                                    "title": "config.compress: /\\.(html|js|css|md)/",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_129",
+                                    "title": "const {createGzip,createDeflate} = require('zlib')",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_130",
+                                    "title": "acceptEncoding = req.headers['accept-encoding']",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_131",
+                                    "title": "if(!filePath.match(config.compress)){",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
-                                        {
-                                            "id": "line_129",
-                                            "title": "config.compress: /\\.(html|js|css|md)/",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_130",
-                                            "title": "const {createGzip,createDeflate} = require('zlib')",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_131",
-                                            "title": "acceptEncoding = req.headers['accept-encoding']",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
                                         {
                                             "id": "line_132",
-                                            "title": "if(!filePath.match(config.compress)){",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_133",
-                                                    "title": "return rs",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_134",
-                                            "title": "}",
+                                            "title": "return rs",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
-                                        },
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_133",
+                                    "title": "}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_134",
+                                    "title": "if (!acceptEncoding || acceptEncoding.match(/\\b(gzip|deflate)\\b/){",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_135",
-                                            "title": "if (!acceptEncoding || acceptEncoding.match(/\\b(gzip|deflate)\\b/){",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_136",
-                                                    "title": "return rs",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_137",
-                                            "title": "}",
+                                            "title": "return rs",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
-                                        },
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_136",
+                                    "title": "}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_137",
+                                    "title": "if(acceptEncoding.match(/\\bgzip\\b/)){",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_138",
-                                            "title": "if(acceptEncoding.match(/\\bgzip\\b/)){",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_139",
-                                                    "title": "res.setHeader('Content-Encoding','gzip')",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_140",
-                                                    "title": "return res.pipe(createGzip())",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_141",
-                                            "title": "}",
+                                            "title": "res.setHeader('Content-Encoding','gzip')",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
+                                        {
+                                            "id": "line_139",
+                                            "title": "return res.pipe(createGzip())",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_140",
+                                    "title": "}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_141",
+                                    "title": "if(acceptEncoding.match(/\\deflate\\b/)){",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_142",
-                                            "title": "if(acceptEncoding.match(/\\deflate\\b/)){",
+                                            "title": "res.setHeader('Content-Encoding','gzip')",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_143",
-                                                    "title": "res.setHeader('Content-Encoding','gzip')",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_144",
-                                                    "title": "return res.pipe(createDeflate())",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         },
                                         {
-                                            "id": "line_145",
-                                            "title": "}",
+                                            "id": "line_143",
+                                            "title": "return res.pipe(createDeflate())",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
                                 },
+                                {
+                                    "id": "line_144",
+                                    "title": "}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_145",
+                            "title": "range",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_146",
-                                    "title": "range",
+                                    "title": "range = [start]-[end]",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_147",
+                                    "title": "Accept-Ranges:bytes",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_148",
+                                    "title": "Content-Range: bytes start-end/total",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_149",
+                                    "title": "(totalSize,req,res)=>{",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_147",
-                                            "title": "range = [start]-[end]",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_148",
-                                            "title": "Accept-Ranges:bytes",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_149",
-                                            "title": "Content-Range: bytes start-end/total",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
                                             "id": "line_150",
-                                            "title": "(totalSize,req,res)=>{",
+                                            "title": "const range = req.headers['range']",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_151",
+                                            "title": "if (!range){",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_151",
-                                                    "title": "const range = req.headers['range']",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
                                                     "id": "line_152",
-                                                    "title": "if (!range){",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_153",
-                                                            "title": "return {code:200}",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_154",
-                                                    "title": "}",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_155",
-                                                    "title": "const sizes=range.match(/bytes=(\\d*)-(\\d*)/)",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_156",
-                                                    "title": "const end = sizes[2]||totalSize-1",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_157",
-                                                    "title": "const start = sizes[1]||totalSize-end",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_158",
-                                                    "title": "if (start>end||start<0||end>totalSize){",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_159",
-                                                            "title": "return {code:200}",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_160",
-                                                    "title": "}",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_161",
-                                                    "title": "res.setHeader('Accept-Ranges','bytes')",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_162",
-                                                    "title": "res.setHeader('Content-Ranges',`bytes ${start}-${end}/${totalSize}`)",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_163",
-                                                    "title": "res.setHeader('Content-Length',end-start)",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_164",
-                                                    "title": "//rs =  fs.createReadStream(filePath,{start:start,end:end})",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_165",
-                                                    "title": "return {",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_166",
-                                                            "title": "code:206,",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_167",
-                                                            "title": "start:parseInt(start),",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_168",
-                                                            "title": "end:parseInt(end)",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_169",
-                                                    "title": "}",
+                                                    "title": "return {code:200}",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 }
                                             ]
                                         },
                                         {
-                                            "id": "line_170",
+                                            "id": "line_153",
+                                            "title": "}",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_154",
+                                            "title": "const sizes=range.match(/bytes=(\\d*)-(\\d*)/)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_155",
+                                            "title": "const end = sizes[2]||totalSize-1",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_156",
+                                            "title": "const start = sizes[1]||totalSize-end",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_157",
+                                            "title": "if (start>end||start<0||end>totalSize){",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_158",
+                                                    "title": "return {code:200}",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_159",
+                                            "title": "}",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_160",
+                                            "title": "res.setHeader('Accept-Ranges','bytes')",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_161",
+                                            "title": "res.setHeader('Content-Ranges',`bytes ${start}-${end}/${totalSize}`)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_162",
+                                            "title": "res.setHeader('Content-Length',end-start)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_163",
+                                            "title": "//rs =  fs.createReadStream(filePath,{start:start,end:end})",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_164",
+                                            "title": "return {",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_165",
+                                                    "title": "code:206,",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_166",
+                                                    "title": "start:parseInt(start),",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_167",
+                                                    "title": "end:parseInt(end)",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_168",
                                             "title": "}",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
@@ -1111,928 +1097,934 @@
                                     ]
                                 },
                                 {
+                                    "id": "line_169",
+                                    "title": "}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_170",
+                            "title": "no-cache",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
                                     "id": "line_171",
-                                    "title": "no-cache",
+                                    "title": "Pragma: no-cache",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_172",
+                                    "title": "Cache-Control: no-store",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_172",
-                                            "title": "Pragma: no-cache",
+                                            "id": "line_173",
+                                            "title": "always 200",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_173",
-                                            "title": "Cache-Control: no-store",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_174",
-                                                    "title": "always 200",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_175",
-                                            "title": "Cache-Control: no-cache",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_176",
-                                                    "title": "200",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_177",
-                                                    "title": "304",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
                                         }
                                     ]
                                 },
                                 {
+                                    "id": "line_174",
+                                    "title": "Cache-Control: no-cache",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_175",
+                                            "title": "200",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_176",
+                                            "title": "304",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_177",
+                            "title": "cache",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
                                     "id": "line_178",
-                                    "title": "cache",
+                                    "title": "config:",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_179",
-                                            "title": "config:",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_180",
-                                                    "title": "maxAge:600",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_181",
-                                                    "title": "expries:true",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_182",
-                                                    "title": "cacheControl:true",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_183",
-                                                    "title": "lastModified:false",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_184",
-                                                    "title": "etag:true",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_185",
-                                            "title": "client cache",
+                                            "title": "maxAge:600",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_186",
-                                            "title": "check cache timeout",
+                                            "id": "line_180",
+                                            "title": "expries:true",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_187",
-                                                    "title": "304",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         },
+                                        {
+                                            "id": "line_181",
+                                            "title": "cacheControl:true",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_182",
+                                            "title": "lastModified:false",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_183",
+                                            "title": "etag:true",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_184",
+                                    "title": "client cache",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_185",
+                                    "title": "check cache timeout",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_186",
+                                            "title": "304",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_187",
+                                    "title": "header",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_188",
-                                            "title": "header",
+                                            "title": "Expries,Cache-Control",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_189",
-                                                    "title": "Expries,Cache-Control",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_190",
-                                                    "title": "If-Modified-Since/Last-Modified",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_191",
-                                                    "title": "If-None-Match/ETag",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         },
                                         {
+                                            "id": "line_189",
+                                            "title": "If-Modified-Since/Last-Modified",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_190",
+                                            "title": "If-None-Match/ETag",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_191",
+                                    "title": "refershRes(stats,res)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
                                             "id": "line_192",
-                                            "title": "refershRes(stats,res)",
+                                            "title": "if(expries)",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_193",
-                                                    "title": "if(expries)",
+                                                    "title": "res.setHeader('Expries',(Date.now()+maxAge*1000)).toUTCString())",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_194",
-                                                            "title": "res.setHeader('Expries',(Date.now()+maxAge*1000)).toUTCString())",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_194",
+                                            "title": "if(cacheControl)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
                                                 {
                                                     "id": "line_195",
-                                                    "title": "if(cacheControl)",
+                                                    "title": "res.setHeader('Cache-Control',`public,max-age=${maxAge})",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_196",
-                                                            "title": "res.setHeader('Cache-Control',`public,max-age=${maxAge})",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_196",
+                                            "title": "if(lastModified)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
                                                 {
                                                     "id": "line_197",
-                                                    "title": "if(lastModified)",
+                                                    "title": "res.setHeader('Last-Modified',stats,.mtime)",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_198",
-                                                            "title": "res.setHeader('Last-Modified',stats,.mtime)",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_198",
+                                            "title": "if(etag)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
                                                 {
                                                     "id": "line_199",
-                                                    "title": "if(etag)",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_200",
-                                                            "title": "res.setHeader('ETag',`${stats.size}-${stats.mtime}`)",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_201",
-                                            "title": "isFresh(stats,req,res)",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_202",
-                                                    "title": "refreshRes(stats,res)",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_203",
-                                                    "title": "const lastModified = req.headers['if-modified-since']",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_204",
-                                                    "title": "const etag = req.headers['if-none-match']",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_205",
-                                                    "title": "if (!lastModified && !etag)",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_206",
-                                                            "title": "return false",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_207",
-                                                    "title": "if (lastModified && lastModified!==req.getHeader('Last-Modified')))",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_208",
-                                                            "title": "return false",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_209",
-                                                    "title": "if (etag!==req.getHeader('ETag'))",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_210",
-                                                            "title": "return false",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_211",
-                                                    "title": "return true",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_212",
-                                            "title": "ifFresh",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_213",
-                                                    "title": "res.statusCode=304",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_214",
-                                                    "title": "res.end()",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_215",
-                                                    "title": "return",
+                                                    "title": "res.setHeader('ETag',`${stats.size}-${stats.mtime}`)",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 }
                                             ]
                                         }
                                     ]
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_216",
-                            "title": "assert",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_217",
-                                    "title": "equal",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
                                 },
                                 {
-                                    "id": "line_218",
-                                    "title": "deepEqual",
+                                    "id": "line_200",
+                                    "title": "isFresh(stats,req,res)",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_201",
+                                            "title": "refreshRes(stats,res)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_202",
+                                            "title": "const lastModified = req.headers['if-modified-since']",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_203",
+                                            "title": "const etag = req.headers['if-none-match']",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_204",
+                                            "title": "if (!lastModified && !etag)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_205",
+                                                    "title": "return false",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_206",
+                                            "title": "if (lastModified && lastModified!==req.getHeader('Last-Modified')))",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_207",
+                                                    "title": "return false",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_208",
+                                            "title": "if (etag!==req.getHeader('ETag'))",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_209",
+                                                    "title": "return false",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_210",
+                                            "title": "return true",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
                                 },
                                 {
-                                    "id": "line_219",
-                                    "title": "fail",
+                                    "id": "line_211",
+                                    "title": "ifFresh",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_220",
-                                    "title": "doesNot",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_221",
-                                    "title": "ok",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_222",
-                                    "title": "throws",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_212",
+                                            "title": "res.statusCode=304",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_213",
+                                            "title": "res.end()",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_214",
+                                            "title": "return",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
                                 }
                             ]
                         }
                     ]
                 },
                 {
+                    "id": "line_215",
+                    "title": "assert",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_216",
+                            "title": "equal",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_217",
+                            "title": "deepEqual",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_218",
+                            "title": "fail",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_219",
+                            "title": "doesNot",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_220",
+                            "title": "ok",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_221",
+                            "title": "throws",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_223",
+            "title": "register project to global",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_224",
-                    "title": "register project to global",
+                    "title": "package.json",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_225",
-                            "title": "package.json",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_226",
-                                    "title": "versoin \"0.0.1\"",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_227",
-                                    "title": "bin",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_228",
-                                            "title": "'anydoor':'bin/anydoor'",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_229",
-                                            "title": "bin/anydoor",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_230",
-                                                    "title": "#! /usr/bin/env node",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_231",
-                                                    "title": "require('../src/index')",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_232",
-                            "title": "readme.md",
+                            "title": "versoin \"0.0.1\"",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         },
                         {
-                            "id": "line_233",
-                            "title": "cmd",
+                            "id": "line_226",
+                            "title": "bin",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_234",
-                                    "title": "npm login",
+                                    "id": "line_227",
+                                    "title": "'anydoor':'bin/anydoor'",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_235",
-                                    "title": "npm publish",
+                                    "id": "line_228",
+                                    "title": "bin/anydoor",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_229",
+                                            "title": "#! /usr/bin/env node",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_230",
+                                            "title": "require('../src/index')",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
                                 }
                             ]
                         }
                     ]
                 },
                 {
+                    "id": "line_231",
+                    "title": "readme.md",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_232",
+                    "title": "cmd",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_233",
+                            "title": "npm login",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_234",
+                            "title": "npm publish",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_235",
+            "title": "npm modules",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_236",
-                    "title": "npm modules",
+                    "title": "mime",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_237",
-                            "title": "mime",
+                            "title": "file mapping content-type",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_238",
-                                    "title": "file mapping content-type",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_238",
+                    "title": "Handlebars",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_239",
-                            "title": "Handlebars",
+                            "title": "html template like mustache",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_240",
-                                    "title": "html template like mustache",
+                                    "title": "template_source:",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_241",
-                                            "title": "template_source:",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_242",
-                                                    "title": "<title>{{title}}</title>",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_243",
-                                                    "title": "{{#each files}}",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_244",
-                                                            "title": "<a href=\"/{{dir}}//{{this}}\">{{this}}</a>",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_245",
-                                                    "title": "{{/each}}",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_246",
-                                            "title": "template = Handlerbarsc.complie(template_source)",
+                                            "title": "<title>{{title}}</title>",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_247",
-                                            "title": "varibles:",
+                                            "id": "line_242",
+                                            "title": "{{#each files}}",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_248",
-                                                    "title": "files=[...]",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_249",
-                                                    "title": "data = {",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_250",
-                                                            "title": "title:'title',",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_251",
-                                                            "title": "files",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_252",
-                                                    "title": "}",
+                                                    "id": "line_243",
+                                                    "title": "<a href=\"/{{dir}}//{{this}}\">{{this}}</a>",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 }
                                             ]
                                         },
                                         {
-                                            "id": "line_253",
-                                            "title": "template.",
+                                            "id": "line_244",
+                                            "title": "{{/each}}",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_255",
-                            "title": "chalk",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
+                                },
                                 {
-                                    "id": "line_256",
-                                    "title": "change terminal color",
+                                    "id": "line_245",
+                                    "title": "template = Handlerbarsc.complie(template_source)",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 },
                                 {
-                                    "id": "line_257",
-                                    "title": "chalk.green('text')",
+                                    "id": "line_246",
+                                    "title": "varibles:",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_247",
+                                            "title": "files=[...]",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_248",
+                                            "title": "data = {",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_249",
+                                                    "title": "title:'title',",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_250",
+                                                    "title": "files",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_251",
+                                            "title": "}",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_252",
+                                    "title": "template.",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_254",
+                    "title": "chalk",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_255",
+                            "title": "change terminal color",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
                         },
                         {
+                            "id": "line_256",
+                            "title": "chalk.green('text')",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_257",
+                    "title": "supervisor",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
                             "id": "line_258",
-                            "title": "supervisor",
+                            "title": "debug runtime restart server",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_259",
-                                    "title": "debug runtime restart server",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_260",
-                                            "title": "supervisor simple_server.js",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_261",
-                            "title": "yargs",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_262",
-                                    "title": "const yargs = require('yargs')",
+                                    "title": "supervisor simple_server.js",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
-                                },
-                                {
-                                    "id": "line_263",
-                                    "title": "const argv = yargs",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_264",
-                                            "title": ".usgae('anywhere [options]')",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_265",
-                                            "title": ".option('p',{",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_266",
-                                                    "title": "alias:'port',",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_267",
-                                                    "title": "describ:'port number',",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_268",
-                                                    "title": "default:9527",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_269",
-                                            "title": "})",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_270",
-                                            "title": ".option('h',{",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_271",
-                                                    "title": "alias:'host',",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_272",
-                                                    "title": "describ:'host name',",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_273",
-                                                    "title": "default:'127.0.0.1'",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_274",
-                                            "title": "})",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_275",
-                                            "title": ".option('d',{",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_276",
-                                                    "title": "alias:'root',",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_277",
-                                                    "title": "describ:'root path',",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_278",
-                                                    "title": "default:process.cwd()",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_279",
-                                            "title": "})",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_280",
-                                            "title": ".version()",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_281",
-                                            "title": ".alias('v','version')",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_282",
-                                            "title": ".help()",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_283",
-                                            "title": ".argv()",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
                                 }
                             ]
                         }
                     ]
                 },
                 {
+                    "id": "line_260",
+                    "title": "yargs",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_261",
+                            "title": "const yargs = require('yargs')",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_262",
+                            "title": "const argv = yargs",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_263",
+                                    "title": ".usgae('anywhere [options]')",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_264",
+                                    "title": ".option('p',{",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_265",
+                                            "title": "alias:'port',",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_266",
+                                            "title": "describ:'port number',",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_267",
+                                            "title": "default:9527",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_268",
+                                    "title": "})",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_269",
+                                    "title": ".option('h',{",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_270",
+                                            "title": "alias:'host',",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_271",
+                                            "title": "describ:'host name',",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_272",
+                                            "title": "default:'127.0.0.1'",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_273",
+                                    "title": "})",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_274",
+                                    "title": ".option('d',{",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_275",
+                                            "title": "alias:'root',",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_276",
+                                            "title": "describ:'root path',",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_277",
+                                            "title": "default:process.cwd()",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_278",
+                                    "title": "})",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_279",
+                                    "title": ".version()",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_280",
+                                    "title": ".alias('v','version')",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_281",
+                                    "title": ".help()",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_282",
+                                    "title": ".argv()",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_283",
+            "title": "promise/async",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_284",
-                    "title": "promise/async",
+                    "title": "promisify",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_285",
-                            "title": "promisify",
+                            "title": "util.promisify(fs.readFile).read",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_286",
-                                    "title": "util.promisify(fs.readFile).read",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_287",
-                                            "title": "when in non async function",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_288",
-                                    "title": "then",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_289",
-                                    "title": "catch",
+                                    "title": "when in non async function",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
                         {
-                            "id": "line_290",
-                            "title": "promise",
+                            "id": "line_287",
+                            "title": "then",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_291",
-                                    "title": "return new promise",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_292",
-                                    "title": "resolve",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_293",
-                                    "title": "reject",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
                         {
-                            "id": "line_294",
-                            "title": "aync/await",
+                            "id": "line_288",
+                            "title": "catch",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_295",
-                                    "title": "aync function: read = util.promisify(fs.readFile)",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_296",
-                                    "title": "await call: await read",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         }
                     ]
                 },
                 {
+                    "id": "line_289",
+                    "title": "promise",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_290",
+                            "title": "return new promise",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_291",
+                            "title": "resolve",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_292",
+                            "title": "reject",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_293",
+                    "title": "aync/await",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_294",
+                            "title": "aync function: read = util.promisify(fs.readFile)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_295",
+                            "title": "await call: await read",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_296",
+            "title": "debug",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_297",
-                    "title": "debug",
+                    "title": "inspect",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_298",
-                            "title": "inspect",
+                            "title": "node --inspect",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_299",
-                                    "title": "node --inspect",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_300",
-                                    "title": "node --inspect-brk",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
                         {
-                            "id": "line_301",
-                            "title": "chrome",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_302",
-                                    "title": "plugin - Nodejs Inspector Manager",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_303",
-                                    "title": "chrome://inspect",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_304",
-                            "title": "vscode",
+                            "id": "line_299",
+                            "title": "node --inspect-brk",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         }
                     ]
                 },
                 {
-                    "id": "line_305",
-                    "title": "plugin",
+                    "id": "line_300",
+                    "title": "chrome",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_306",
-                            "title": ".editconfig",
+                            "id": "line_301",
+                            "title": "plugin - Nodejs Inspector Manager",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         },
                         {
-                            "id": "line_307",
-                            "title": ".esLint",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_308",
-                                    "title": "to see esLint mindmap",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_309",
-                            "title": ".gitignore",
+                            "id": "line_302",
+                            "title": "chrome://inspect",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         }
                     ]
+                },
+                {
+                    "id": "line_303",
+                    "title": "vscode",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_304",
+            "title": "plugin",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_305",
+                    "title": ".editconfig",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_306",
+                    "title": ".esLint",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_307",
+                            "title": "to see esLint mindmap",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_308",
+                    "title": ".gitignore",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
                 }
             ]
         }

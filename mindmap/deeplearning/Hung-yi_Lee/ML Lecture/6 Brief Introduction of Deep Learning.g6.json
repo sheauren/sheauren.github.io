@@ -6,781 +6,819 @@
     "children": [
         {
             "id": "line_0",
-            "title": "Brief Introduction of Deep Learning",
+            "title": "Deep learning attract lots of attention",
             "background-color": "#fff",
             "collapsed": false,
             "children": [
                 {
                     "id": "line_1",
-                    "title": "Deep learning attract lots of attention",
+                    "title": "I believe you have seen lots of exciting results before.",
                     "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_2",
-                            "title": "I believe you have seen lots of exciting results before.",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
-                },
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_2",
+            "title": "Ups and downs of Deep Learning",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
                 {
                     "id": "line_3",
-                    "title": "Ups and downs of Deep Learning",
+                    "title": "1958: Preceptron (linear model)",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_4",
-                            "title": "1958: Preceptron (linear model)",
+                            "title": "Frank Roseblatt",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_5",
-                                    "title": "Frank Roseblatt",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_6",
-                                    "title": "\u5f88\u50cflogistic regression",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_7",
-                                    "title": "\u6c92\u6709sigmod\u90e8\u5206",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
+                        {
+                            "id": "line_5",
+                            "title": "\u5f88\u50cflogistic regression",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "\u6c92\u6709sigmod\u90e8\u5206",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_7",
+                    "title": "1969: Preceptoron has limitation",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_8",
-                            "title": "1969: Preceptoron has limitation",
+                            "title": "MIT",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_9",
-                                    "title": "MIT",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_9",
+                    "title": "1980s: Multi-layer preceptron",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_10",
-                            "title": "1980s: Multi-layer preceptron",
+                            "title": "Do not have significant differenct from DNN today",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_11",
-                                    "title": "Do not have significant differenct from DNN today",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_11",
+                    "title": "1986: Backpropagation",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_12",
-                            "title": "1986: Backpropagation",
+                            "title": "Usually more than 3 hidden layer is not helpful",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_13",
-                                    "title": "Usually more than 3 hidden layer is not helpful",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_14",
-                                            "title": "train\u4e0d\u51fa\u597d\u7d50\u679c",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "line_15",
-                                    "title": "Hiton",
+                                    "title": "train\u4e0d\u51fa\u597d\u7d50\u679c",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
                             ]
                         },
                         {
-                            "id": "line_16",
-                            "title": "1989: 1 hidden layer is \"good enough\", why deep?",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_17",
-                            "title": "2006: RBM initialization (breakthougt)",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_18",
-                                    "title": "restricted boltzmann machine\u505ainitialization",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_19",
-                            "title": "2009: GPU",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_20",
-                            "title": "2011: Start to be popular in speech recognition",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_21",
-                            "title": "2012: win ILSVRC image competition",
+                            "id": "line_14",
+                            "title": "Hiton",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         }
                     ]
                 },
                 {
+                    "id": "line_15",
+                    "title": "1989: 1 hidden layer is \"good enough\", why deep?",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_16",
+                    "title": "2006: RBM initialization (breakthougt)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_17",
+                            "title": "restricted boltzmann machine\u505ainitialization",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_18",
+                    "title": "2009: GPU",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_19",
+                    "title": "2011: Start to be popular in speech recognition",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_20",
+                    "title": "2012: win ILSVRC image competition",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_21",
+            "title": "Three Step of Deep Learning",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
                     "id": "line_22",
-                    "title": "Three Step of Deep Learning",
+                    "title": "Step1: define a set of function",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
                             "id": "line_23",
-                            "title": "Step1: define a set of function",
+                            "title": "neural network",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_24",
+                            "title": "different connection leads to different network structures",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_25",
+                            "title": "network parameters \u03b8: all the weights and bias in the \"neurons\"",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_26",
+                            "title": "\u5982\u4f55\u5efa\u7acbnetwork - \u624b\u52d5\u5efa\u7acb",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_24",
-                                    "title": "neural network",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_25",
-                                    "title": "different connection leads to different network structures",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_26",
-                                    "title": "network parameters \u03b8: all the weights and bias in the \"neurons\"",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
                                     "id": "line_27",
-                                    "title": "\u5982\u4f55\u5efa\u7acbnetwork - \u624b\u52d5\u5efa\u7acb",
+                                    "title": "\u5e38\u898bnetwork",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_28",
-                                            "title": "\u5e38\u898bnetwork",
+                                            "title": "Fully Connect Feedforward Network",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_29",
-                                                    "title": "Fully Connect Feedforward Network",
+                                                    "title": "\u5168\u90e8\u5217\u51fa\u4f86\u9023\u8d77\u4f86",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_30",
-                                                            "title": "\u5168\u90e8\u5217\u51fa\u4f86\u9023\u8d77\u4f86",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
+                                                    "collapsed": true
                                                 }
                                             ]
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_30",
+                            "title": "1\u500bneural network\u90fd\u77e5\u9053\u53c3\u6578\u503c\u6642",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_31",
-                                    "title": "1\u500bneural network\u90fd\u77e5\u9053\u53c3\u6578\u503c\u6642",
+                                    "title": "\u53ef\u4ee5\u60f3\u50cf\u662f\u4e00\u500bfunction",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_32",
-                                            "title": "\u53ef\u4ee5\u60f3\u50cf\u662f\u4e00\u500bfunction",
+                                            "title": "input: vector",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_33",
-                                                    "title": "input: vector",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_34",
-                                                    "title": "output: vector",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_33",
+                                            "title": "output: vector",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
                                         }
                                     ]
+                                },
+                                {
+                                    "id": "line_34",
+                                    "title": "\u5982\u679c\u53c3\u6578\u503c\u9084\u6c92\u78ba\u5b9a",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
                                 },
                                 {
                                     "id": "line_35",
-                                    "title": "\u5982\u679c\u53c3\u6578\u503c\u9084\u6c92\u78ba\u5b9a",
+                                    "title": "\u53ef\u4ee5\u60f3\u50cf\u662ffunction set",
                                     "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_36",
-                                            "title": "\u53ef\u4ee5\u60f3\u50cf\u662ffunction set",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_37",
-                                            "title": "\u6bd4\u8f03\u5927\u7684function set",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
+                                    "collapsed": true
                                 },
                                 {
+                                    "id": "line_36",
+                                    "title": "\u6bd4\u8f03\u5927\u7684function set",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_37",
+                            "title": "layer\u8aaa\u660e",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
                                     "id": "line_38",
-                                    "title": "layer\u8aaa\u660e",
+                                    "title": "\u7b2c\u4e00\u5c64: input layer",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_39",
+                                    "title": "\u6700\u5f8c\u4e00\u5c64: output layer",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_40",
+                                    "title": "\u4e2d\u9593n\u5c64: hidden layer",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_41",
+                                    "title": "deep = many hidden layers",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_39",
-                                            "title": "\u7b2c\u4e00\u5c64: input layer",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_40",
-                                            "title": "\u6700\u5f8c\u4e00\u5c64: output layer",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_41",
-                                            "title": "\u4e2d\u9593n\u5c64: hidden layer",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
                                             "id": "line_42",
-                                            "title": "deep = many hidden layers",
+                                            "title": "alexnet(2012)",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_43",
-                                                    "title": "alexnet(2012)",
+                                                    "title": "8 layers",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_44",
-                                                            "title": "8 layers",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_45",
-                                                            "title": "error 16.4%",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
+                                                    "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_46",
-                                                    "title": "vgg(2014)",
+                                                    "id": "line_44",
+                                                    "title": "error 16.4%",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_47",
-                                                            "title": "19 layers",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_48",
-                                                            "title": "error 7.3%",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_49",
-                                                    "title": "googlenet(2014)",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_50",
-                                                            "title": "22 layers",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_51",
-                                                            "title": "6.7%",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_52",
-                                                    "title": "residual network(2015)",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_53",
-                                                            "title": "152 layers",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_54",
-                                                            "title": "3.57%",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
+                                                    "collapsed": true
                                                 }
                                             ]
                                         },
                                         {
-                                            "id": "line_55",
-                                            "title": "martrix operation",
+                                            "id": "line_45",
+                                            "title": "vgg(2014)",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_56",
-                                                    "title": "w_1 = [[1,-2],[-1,2]]",
+                                                    "id": "line_46",
+                                                    "title": "19 layers",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_57",
-                                                    "title": "input_1 = [1,1]",
+                                                    "id": "line_47",
+                                                    "title": "error 7.3%",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_48",
+                                            "title": "googlenet(2014)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_49",
+                                                    "title": "22 layers",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_58",
-                                                    "title": "bias_1 = [1,0]",
+                                                    "id": "line_50",
+                                                    "title": "6.7%",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_51",
+                                            "title": "residual network(2015)",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_52",
+                                                    "title": "152 layers",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
+                                                {
+                                                    "id": "line_53",
+                                                    "title": "3.57%",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_54",
+                                    "title": "martrix operation",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_55",
+                                            "title": "w_1 = [[1,-2],[-1,2]]",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_56",
+                                            "title": "input_1 = [1,1]",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_57",
+                                            "title": "bias_1 = [1,0]",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_58",
+                                            "title": "input_1*w_1+bias_1",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
                                                 {
                                                     "id": "line_59",
-                                                    "title": "input_1*w_1+bias_1",
+                                                    "title": "= [[1,-2],[-1,2]] * [1,1] + [1,0]",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_60",
-                                                            "title": "= [[1,-2],[-1,2]] * [1,1] + [1,0]",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_61",
-                                                            "title": "= [4,-2]",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
+                                                    "collapsed": true
                                                 },
+                                                {
+                                                    "id": "line_60",
+                                                    "title": "= [4,-2]",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_61",
+                                            "title": "activate funciton : sigmod",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
                                                 {
                                                     "id": "line_62",
-                                                    "title": "activate funciton : sigmod",
+                                                    "title": "[4,-2] => [0.98,0.12]",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_63",
-                                                            "title": "[4,-2] => [0.98,0.12]",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_63",
+                                            "title": "hidden layer1:",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
                                                 {
                                                     "id": "line_64",
-                                                    "title": "hidden layer1:",
+                                                    "title": "weight matrix: w_1",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_65",
-                                                            "title": "weight matrix: w_1",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_66",
-                                                            "title": "bais matrix: b_1",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
+                                                    "collapsed": true
                                                 },
+                                                {
+                                                    "id": "line_65",
+                                                    "title": "bais matrix: b_1",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_66",
+                                            "title": "hidden layer2:",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
                                                 {
                                                     "id": "line_67",
-                                                    "title": "hidden layer2:",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_68",
-                                                            "title": "weight matrix: w_2",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_69",
-                                                            "title": "bais matrix: b_2",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_70",
-                                                    "title": "input matrix:x",
+                                                    "title": "weight matrix: w_2",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
+                                                {
+                                                    "id": "line_68",
+                                                    "title": "bais matrix: b_2",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_69",
+                                            "title": "input matrix:x",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_70",
+                                            "title": "output y:",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
                                                 {
                                                     "id": "line_71",
-                                                    "title": "output y:",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_72",
-                                                            "title": "a1 = \u03c3(w_1*x+b_1)",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_73",
-                                                            "title": "a2 = \u03c3(w_2*a1+b_2)",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_74",
-                                                            "title": "...",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_75",
-                                                            "title": "y = \u03c3(w_L*aL-1+b_L)",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_76",
-                                                            "title": "y = f(x) = \u4e0a\u8ff0\u4e32\u8d77\u4f86",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_77",
-                                                    "title": "\u77e9\u9663\u904b\u7b97\u512a\u9ede\u5c31\u662f\u53ef\u4ee5\u7528GPU\u52a0\u901f",
+                                                    "title": "a1 = \u03c3(w_1*x+b_1)",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_78",
-                                                    "title": "\u5728output layer\u4e4b\u524d\u7684layer\u53ef\u4ee5\u770b\u6210feature extractor replace",
+                                                    "id": "line_72",
+                                                    "title": "a2 = \u03c3(w_2*a1+b_2)",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_79",
-                                                    "title": "feature engineering",
+                                                    "id": "line_73",
+                                                    "title": "...",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
+                                                {
+                                                    "id": "line_74",
+                                                    "title": "y = \u03c3(w_L*aL-1+b_L)",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_75",
+                                                    "title": "y = f(x) = \u4e0a\u8ff0\u4e32\u8d77\u4f86",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_76",
+                                            "title": "\u77e9\u9663\u904b\u7b97\u512a\u9ede\u5c31\u662f\u53ef\u4ee5\u7528GPU\u52a0\u901f",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_77",
+                                            "title": "\u5728output layer\u4e4b\u524d\u7684layer\u53ef\u4ee5\u770b\u6210feature extractor replace",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_78",
+                                            "title": "feature engineering",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_79",
+                                            "title": "output layer = multi-class classifier",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
                                                 {
                                                     "id": "line_80",
-                                                    "title": "output layer = multi-class classifier",
+                                                    "title": "\u7528\u524d\u4e00\u500blayer\u7684output\u7576feature",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_81",
-                                                            "title": "\u7528\u524d\u4e00\u500blayer\u7684output\u7576feature",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_82",
-                                                            "title": "output layer\u6703\u52a0\u5165softmax function",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_81",
+                                                    "title": "output layer\u6703\u52a0\u5165softmax function",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
                                                 }
                                             ]
                                         }
                                     ]
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_82",
+                    "title": "Setp2: goodness of function",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_83",
-                            "title": "Setp2: goodness of function",
+                            "title": "Loss for an Example",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_84",
-                                    "title": "Loss for an Example",
+                                    "title": "Given a set of parameters",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_85",
+                                    "title": "target: label 1 => y^ = [1,0,0,0,0,0,0,0,0,0]",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_86",
+                                    "title": "output: y = [y1,y2,...y10]",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_87",
+                                    "title": "C(y,y^) = -\u03a3_i=1^10(y^lny_i)",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_85",
-                                            "title": "Given a set of parameters",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_86",
-                                            "title": "target: label 1 => y^ = [1,0,0,0,0,0,0,0,0,0]",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_87",
-                                            "title": "output: y = [y1,y2,...y10]",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
                                             "id": "line_88",
-                                            "title": "C(y,y^) = -\u03a3_i=1^10(y^lny_i)",
+                                            "title": "cross entropy",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_89",
-                                                    "title": "cross entropy",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
+                                            "collapsed": true
                                         }
                                     ]
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_89",
+                    "title": "Setp3: pick the best function",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_90",
-                            "title": "Setp3: pick the best function",
+                            "title": "total loss:",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
                                     "id": "line_91",
-                                    "title": "total loss:",
+                                    "title": "L = \u03a3_n=1^N C^n",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_92",
+                                    "title": "find a function in function set that minimum total loss L",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_93",
+                                    "title": "find a network parameters \u03b8* that minimum total loss L",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_94",
+                            "title": "gradient descent",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_95",
+                                    "title": "\u03b8 random initialization",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_96",
+                                    "title": "compute \u2202L/\u2202w1 ... \u2202L/\u2202b1 ...",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_97",
+                                    "title": "\u2207L = [\u2202L/\u2202w1...\u2202L/\u2202b1 ...]",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_92",
-                                            "title": "L = \u03a3_n=1^N C^n",
+                                            "id": "line_98",
+                                            "title": "gradient",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_93",
-                                            "title": "find a function in function set that minimum total loss L",
+                                            "id": "line_99",
+                                            "title": "update parameters",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_100",
+                                                    "title": "-\u03b7\u2202L/\u2202w1 ...",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
                                         },
                                         {
-                                            "id": "line_94",
-                                            "title": "find a network parameters \u03b8* that minimum total loss L",
+                                            "id": "line_101",
+                                            "title": "\u91cd\u8907\u66f4\u65b0",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
                                 },
                                 {
-                                    "id": "line_95",
-                                    "title": "gradient descent",
+                                    "id": "line_102",
+                                    "title": "\u5c31\u505a\u5b8cdeep learning\u7684training",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_96",
-                                            "title": "\u03b8 random initialization",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_97",
-                                            "title": "compute \u2202L/\u2202w1 ... \u2202L/\u2202b1 ...",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_98",
-                                            "title": "\u2207L = [\u2202L/\u2202w1...\u2202L/\u2202b1 ...]",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_99",
-                                                    "title": "gradient",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_100",
-                                                    "title": "update parameters",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_101",
-                                                            "title": "-\u03b7\u2202L/\u2202w1 ...",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_102",
-                                                    "title": "\u91cd\u8907\u66f4\u65b0",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
                                             "id": "line_103",
-                                            "title": "\u5c31\u505a\u5b8cdeep learning\u7684training",
+                                            "title": "even alpha go using this approach",
                                             "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_104",
-                                                    "title": "even alpha go using this approach",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_104",
+                                    "title": "Backpropagation:",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
                                         {
                                             "id": "line_105",
-                                            "title": "Backpropagation:",
+                                            "title": "is an efficient way to compute \u2202L/\u2202w in nerual network",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
                                                     "id": "line_106",
-                                                    "title": "is an efficient way to compute \u2202L/\u2202w in nerual network",
+                                                    "title": "tensorflow",
                                                     "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_107",
-                                                            "title": "tensorflow",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_108",
-                                                            "title": "caffe",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_109",
-                                                            "title": "libdnn",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_110",
-                                                            "title": "theano",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_111",
-                                                            "title": "CNTK",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_112",
-                                                            "title": "mxnet",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_113",
-                                                            "title": "DASTNE",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_114",
-                                                            "title": "pytorch",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_107",
+                                                    "title": "caffe",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_108",
+                                                    "title": "libdnn",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_109",
+                                                    "title": "theano",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_110",
+                                                    "title": "CNTK",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_111",
+                                                    "title": "mxnet",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_112",
+                                                    "title": "DASTNE",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_113",
+                                                    "title": "pytorch",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
                                                 }
                                             ]
                                         }
                                     ]
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "id": "line_114",
+                    "title": "deep learning is so simple...",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_115",
-                            "title": "deep learning is so simple...",
+                            "title": "\u5927\u8c61\u653e\u9032\u51b0\u7bb1",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_116",
+            "title": "Example Application",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_117",
+                    "title": "Input -> image",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_118",
+                            "title": "16x16=256 pixel",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_119",
+                            "title": "x1...x256",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_120",
+                            "title": "\u5167\u5bb9:",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_116",
-                                    "title": "\u5927\u8c61\u653e\u9032\u51b0\u7bb1",
+                                    "id": "line_121",
+                                    "title": "no ink:0",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_122",
+                                    "title": "ink:1",
                                     "background-color": "#0fbdff",
                                     "collapsed": true
                                 }
@@ -789,514 +827,466 @@
                     ]
                 },
                 {
-                    "id": "line_117",
-                    "title": "Example Application",
+                    "id": "line_123",
+                    "title": "Output -> \u6578\u5b57",
                     "background-color": "#e3aba7",
                     "collapsed": false,
                     "children": [
                         {
-                            "id": "line_118",
-                            "title": "Input -> image",
+                            "id": "line_124",
+                            "title": "y1 is 1",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_119",
-                                    "title": "16x16=256 pixel",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_120",
-                                    "title": "x1...x256",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_121",
-                                    "title": "\u5167\u5bb9:",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true,
-                                    "children": [
-                                        {
-                                            "id": "line_122",
-                                            "title": "no ink:0",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        },
-                                        {
-                                            "id": "line_123",
-                                            "title": "ink:1",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true
-                                        }
-                                    ]
-                                }
-                            ]
+                            "collapsed": true
                         },
                         {
-                            "id": "line_124",
-                            "title": "Output -> \u6578\u5b57",
+                            "id": "line_125",
+                            "title": "y2 is 2",
                             "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_125",
-                                    "title": "y1 is 1",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_126",
-                                    "title": "y2 is 2",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_127",
-                                    "title": "y10 is 0",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_128",
-                                    "title": "\u8f38\u51fa\u6bcf\u500b\u7684\u6a5f\u7387",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_129",
-                                    "title": "Each dimension represents the confidence of a digit",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
+                            "collapsed": true
                         },
+                        {
+                            "id": "line_126",
+                            "title": "y10 is 0",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_127",
+                            "title": "\u8f38\u51fa\u6bcf\u500b\u7684\u6a5f\u7387",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_128",
+                            "title": "Each dimension represents the confidence of a digit",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_129",
+                    "title": "function:",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
                             "id": "line_130",
-                            "title": "function:",
+                            "title": "neural network",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_131",
+                            "title": "inptut:256",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_132",
+                            "title": "output:10\u5c0d\u61c9\u5230\u6578\u5b57",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_133",
+                            "title": "a function set containing the candidates for Handwriting Digital Recognition",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_134",
+                            "title": "\u7528gradient descent\u627e\u4e00\u500b\u6700\u9069\u5408\u53c3\u6578\u505a\u624b\u5beb\u8fa8\u8b58\u7684function",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_135",
+                            "title": "You need to decide the network structure to let a good function in your function set.",
                             "background-color": "#e82ad2",
                             "collapsed": true,
                             "children": [
                                 {
-                                    "id": "line_131",
-                                    "title": "neural network",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_132",
-                                    "title": "inptut:256",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_133",
-                                    "title": "output:10\u5c0d\u61c9\u5230\u6578\u5b57",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_134",
-                                    "title": "a function set containing the candidates for Handwriting Digital Recognition",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
-                                    "id": "line_135",
-                                    "title": "\u7528gradient descent\u627e\u4e00\u500b\u6700\u9069\u5408\u53c3\u6578\u505a\u624b\u5beb\u8fa8\u8b58\u7684function",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                },
-                                {
                                     "id": "line_136",
-                                    "title": "You need to decide the network structure to let a good function in your function set.",
+                                    "title": "input/output\u4f9d\u7167\u9700\u6c42\u9650\u5236\u4e86",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_137",
+                                    "title": "hidden layer\u8981\u591a\u5c11\u6c92\u6709\u9650\u5236\u4e86",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_137",
-                                            "title": "input/output\u4f9d\u7167\u9700\u6c42\u9650\u5236\u4e86",
+                                            "id": "line_138",
+                                            "title": "\u53ef\u4ee5\u81ea\u5df1\u8a2d\u8a08",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         },
                                         {
-                                            "id": "line_138",
-                                            "title": "hidden layer\u8981\u591a\u5c11\u6c92\u6709\u9650\u5236\u4e86",
+                                            "id": "line_139",
+                                            "title": "\u81ea\u5df1\u6c7a\u5b9a\u8981\u591a\u5c11\u500bneurons",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_140",
+                                            "title": "\u6c7a\u5b9a\u5dee\u7684function set",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_139",
-                                                    "title": "\u53ef\u4ee5\u81ea\u5df1\u8a2d\u8a08",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_140",
-                                                    "title": "\u81ea\u5df1\u6c7a\u5b9a\u8981\u591a\u5c11\u500bneurons",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
                                                     "id": "line_141",
-                                                    "title": "\u6c7a\u5b9a\u5dee\u7684function set",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_142",
-                                                            "title": "\u5927\u6d77\u6488\u91dd\u91dd\u4e0d\u5728\u6d77\u88e1",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_143",
-                                                    "title": "\u6c7a\u5b9a\u597d\u7684function set\u6703\u5f88\u95dc\u9375",
+                                                    "title": "\u5927\u6d77\u6488\u91dd\u91dd\u4e0d\u5728\u6d77\u88e1",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 }
                                             ]
+                                        },
+                                        {
+                                            "id": "line_142",
+                                            "title": "\u6c7a\u5b9a\u597d\u7684function set\u6703\u5f88\u95dc\u9375",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_143",
+                            "title": "FAQ",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
                                 {
                                     "id": "line_144",
-                                    "title": "FAQ",
+                                    "title": "Q: How many layers? Home many neurons for each layer?",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
                                             "id": "line_145",
-                                            "title": "Q: How many layers? Home many neurons for each layer?",
+                                            "title": "Trial and Error + Intuition",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_146",
+                                            "title": "\u6c92\u90a3\u9ebc\u5bb9\u6613",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_147",
+                                            "title": "\u6709\u6642\u5019\u9700\u8981\u4e00\u4e9bdomain knowlege",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_148",
+                                            "title": "\u5f9e\u4ee5\u524d\u627efeature transformer\u8b8a\u6210\u627enetwork structure",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_149",
+                                            "title": "\u8a9e\u97f3\u8fa8\u8b58\u4f86\u8aaa",
                                             "background-color": "#e3aba7",
                                             "collapsed": true,
                                             "children": [
                                                 {
-                                                    "id": "line_146",
-                                                    "title": "Trial and Error + Intuition",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_147",
-                                                    "title": "\u6c92\u90a3\u9ebc\u5bb9\u6613",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_148",
-                                                    "title": "\u6709\u6642\u5019\u9700\u8981\u4e00\u4e9bdomain knowlege",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_149",
-                                                    "title": "\u5f9e\u4ee5\u524d\u627efeature transformer\u8b8a\u6210\u627enetwork structure",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
                                                     "id": "line_150",
-                                                    "title": "\u8a9e\u97f3\u8fa8\u8b58\u4f86\u8aaa",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true,
-                                                    "children": [
-                                                        {
-                                                            "id": "line_151",
-                                                            "title": "design network structure\u6bd4feature transformer\u5bb9\u6613",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_152",
-                                                            "title": "\u8981\u62bd\u4e00\u7d44\u597d\u7684feature\u5df2\u7d93\u592a\u6f5b\u610f\u8b58\u4e0d\u597d\u62bd\u7d66machine\u4f7f\u7528",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "id": "line_153",
-                                                    "title": "\u5f71\u50cf\u4e5f\u6709\u985e\u4f3c\u8a9e\u97f3\u8fa8\u8b58\u7684\u72c0\u6cc1",
+                                                    "title": "design network structure\u6bd4feature transformer\u5bb9\u6613",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
                                                 },
                                                 {
-                                                    "id": "line_154",
-                                                    "title": "\u8a9e\u97f3\u8ddf\u5f71\u50cf\u662f\u6700\u65e9\u958b\u59cb\u7528deep learning",
+                                                    "id": "line_151",
+                                                    "title": "\u8981\u62bd\u4e00\u7d44\u597d\u7684feature\u5df2\u7d93\u592a\u6f5b\u610f\u8b58\u4e0d\u597d\u62bd\u7d66machine\u4f7f\u7528",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_155",
-                                                    "title": "\u5176\u4ed6test\u4f86\u8aaa\u5c31case by case",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_156",
-                                                    "title": "deep learning\u65bcNLP\u4e0aperformance\u4e0d\u662f\u90a3\u9ebc\u597d",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_152",
+                                            "title": "\u5f71\u50cf\u4e5f\u6709\u985e\u4f3c\u8a9e\u97f3\u8fa8\u8b58\u7684\u72c0\u6cc1",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_153",
+                                            "title": "\u8a9e\u97f3\u8ddf\u5f71\u50cf\u662f\u6700\u65e9\u958b\u59cb\u7528deep learning",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_154",
+                                            "title": "\u5176\u4ed6test\u4f86\u8aaa\u5c31case by case",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_155",
+                                            "title": "deep learning\u65bcNLP\u4e0aperformance\u4e0d\u662f\u90a3\u9ebc\u597d",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_156",
+                                            "title": "NLP\u9032\u6b65\u91cf\u6c92\u90a3\u9ebc\u591a",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
                                                 {
                                                     "id": "line_157",
-                                                    "title": "NLP\u9032\u6b65\u91cf\u6c92\u90a3\u9ebc\u591a",
+                                                    "title": "\u6709\u4eba\u5728\u8aaadeep learning\u4e0d\u9069\u5408NLP",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_158",
+                                                    "title": "\u6587\u5b57\u8655\u7406\u4f86\u8aaa\u4eba\u662f\u6bd4\u8f03\u5f37\u7684",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_159",
+                                                    "title": "\u4eba\u53ef\u4ee5\u5f88\u8f15\u9b06\u8a2d\u8a08rule",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                },
+                                                {
+                                                    "id": "line_160",
+                                                    "title": "\u9577\u4e45\u800c\u8a00\u6587\u5b57\u8655\u7406\u4e5f\u662f\u5f88\u56f0\u96e3\u7684",
                                                     "background-color": "#d41dea",
                                                     "collapsed": true,
                                                     "children": [
                                                         {
-                                                            "id": "line_158",
-                                                            "title": "\u6709\u4eba\u5728\u8aaadeep learning\u4e0d\u9069\u5408NLP",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_159",
-                                                            "title": "\u6587\u5b57\u8655\u7406\u4f86\u8aaa\u4eba\u662f\u6bd4\u8f03\u5f37\u7684",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
-                                                            "id": "line_160",
-                                                            "title": "\u4eba\u53ef\u4ee5\u5f88\u8f15\u9b06\u8a2d\u8a08rule",
-                                                            "background-color": "#01a6d5",
-                                                            "collapsed": true
-                                                        },
-                                                        {
                                                             "id": "line_161",
-                                                            "title": "\u9577\u4e45\u800c\u8a00\u6587\u5b57\u8655\u7406\u4e5f\u662f\u5f88\u56f0\u96e3\u7684",
+                                                            "title": "\u6162\u6162\u6703\u4f54\u5230\u512a\u52e2",
                                                             "background-color": "#01a6d5",
                                                             "collapsed": true,
                                                             "children": [
                                                                 {
                                                                     "id": "line_162",
-                                                                    "title": "\u6162\u6162\u6703\u4f54\u5230\u512a\u52e2",
+                                                                    "title": "\u53ea\u662f\u521d\u671f\u6c92\u90a3\u9ebc\u5feb",
                                                                     "background-color": "#97d9c7",
-                                                                    "collapsed": true,
-                                                                    "children": [
-                                                                        {
-                                                                            "id": "line_163",
-                                                                            "title": "\u53ea\u662f\u521d\u671f\u6c92\u90a3\u9ebc\u5feb",
-                                                                            "background-color": "#eb6a68",
-                                                                            "collapsed": true
-                                                                        }
-                                                                    ]
+                                                                    "collapsed": true
                                                                 }
                                                             ]
                                                         }
                                                     ]
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "id": "line_164",
-                                            "title": "Q: Can the structure be automatically determined?",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_165",
-                                                    "title": "E.g. Evolutionary Artifical Neural Network",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_166",
-                                                    "title": "\u76ee\u524d\u9084\u6c92\u975e\u5e38\u666e\u53ca",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                },
-                                                {
-                                                    "id": "line_167",
-                                                    "title": "\u9a5a\u4eba\u61c9\u7528\u90fd\u9084\u4e0d\u662f\u7528\u9019\u65b9\u6cd5",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "line_168",
-                                            "title": "Q: Can we design the network strucure?",
-                                            "background-color": "#e3aba7",
-                                            "collapsed": true,
-                                            "children": [
-                                                {
-                                                    "id": "line_169",
-                                                    "title": "Convolutional Neural Network (CNN)",
-                                                    "background-color": "#d41dea",
-                                                    "collapsed": true
-                                                }
-                                            ]
                                         }
                                     ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "line_170",
-                    "title": "deeper is better?",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_171",
-                            "title": "Layer X size=>word error rate(%)",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_172",
-                            "title": "1x2K=>24.2%",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_173",
-                            "title": "2x2K=>20.4%",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_174",
-                            "title": "3x2K=>18.4%",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_175",
-                            "title": "4x2K=>17.8%",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_176",
-                            "title": "5x2K=>17.2%",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_177",
-                            "title": "7x2K=>17.1%",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_178",
-                            "title": "Not surprised, more parameters, better performance",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
-                },
-                {
-                    "id": "line_179",
-                    "title": "Universality Theorem",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_180",
-                            "title": "Any continuous function f",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_181",
-                                    "title": "f: R^N -> R^M",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_182",
-                            "title": "Can be realized by network with one hidden layer",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        },
-                        {
-                            "id": "line_183",
-                            "title": "(given enough hidden neurons)",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
-                },
-                {
-                    "id": "line_184",
-                    "title": "why \"Deep\" nerual network not \"Fat\" nerual network?",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_185",
-                            "title": "to be continue",
-                            "background-color": "#e82ad2",
-                            "collapsed": true
-                        }
-                    ]
-                },
-                {
-                    "id": "line_186",
-                    "title": "other Course",
-                    "background-color": "#e3aba7",
-                    "collapsed": false,
-                    "children": [
-                        {
-                            "id": "line_187",
-                            "title": "machine learning and having it deep and structured",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_188",
-                                    "title": "http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLSD15_2.html",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
                                 },
                                 {
-                                    "id": "line_189",
-                                    "title": "6 hour version",
+                                    "id": "line_163",
+                                    "title": "Q: Can the structure be automatically determined?",
                                     "background-color": "#0fbdff",
                                     "collapsed": true,
                                     "children": [
                                         {
-                                            "id": "line_190",
-                                            "title": "http://www.slideshare.net/tw_dsconf/ss-62245351",
+                                            "id": "line_164",
+                                            "title": "E.g. Evolutionary Artifical Neural Network",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_165",
+                                            "title": "\u76ee\u524d\u9084\u6c92\u975e\u5e38\u666e\u53ca",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_166",
+                                            "title": "\u9a5a\u4eba\u61c9\u7528\u90fd\u9084\u4e0d\u662f\u7528\u9019\u65b9\u6cd5",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_167",
+                                    "title": "Q: Can we design the network strucure?",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_168",
+                                            "title": "Convolutional Neural Network (CNN)",
                                             "background-color": "#e3aba7",
                                             "collapsed": true
                                         }
                                     ]
                                 }
                             ]
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_169",
+            "title": "deeper is better?",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_170",
+                    "title": "Layer X size=>word error rate(%)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_171",
+                    "title": "1x2K=>24.2%",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_172",
+                    "title": "2x2K=>20.4%",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_173",
+                    "title": "3x2K=>18.4%",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_174",
+                    "title": "4x2K=>17.8%",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_175",
+                    "title": "5x2K=>17.2%",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_176",
+                    "title": "7x2K=>17.1%",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_177",
+                    "title": "Not surprised, more parameters, better performance",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_178",
+            "title": "Universality Theorem",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_179",
+                    "title": "Any continuous function f",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
                         {
-                            "id": "line_191",
-                            "title": "nerual network and deep learning",
-                            "background-color": "#e82ad2",
-                            "collapsed": true,
-                            "children": [
-                                {
-                                    "id": "line_192",
-                                    "title": "http://neuralnetworksanddeeplearning.com/",
-                                    "background-color": "#0fbdff",
-                                    "collapsed": true
-                                }
-                            ]
-                        },
-                        {
-                            "id": "line_193",
-                            "title": "deep learning",
+                            "id": "line_180",
+                            "title": "f: R^N -> R^M",
                             "background-color": "#e82ad2",
                             "collapsed": true
                         }
                     ]
+                },
+                {
+                    "id": "line_181",
+                    "title": "Can be realized by network with one hidden layer",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_182",
+                    "title": "(given enough hidden neurons)",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_183",
+            "title": "why \"Deep\" nerual network not \"Fat\" nerual network?",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_184",
+                    "title": "to be continue",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_185",
+            "title": "other Course",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_186",
+                    "title": "machine learning and having it deep and structured",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_187",
+                            "title": "http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLSD15_2.html",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_188",
+                            "title": "6 hour version",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_189",
+                                    "title": "http://www.slideshare.net/tw_dsconf/ss-62245351",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_190",
+                    "title": "nerual network and deep learning",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_191",
+                            "title": "http://neuralnetworksanddeeplearning.com/",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_192",
+                    "title": "deep learning",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
                 }
             ]
         }
