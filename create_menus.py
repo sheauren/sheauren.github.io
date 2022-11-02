@@ -36,7 +36,7 @@ for root,dirs,files in os.walk(target_path):
         data=os.path.join(root,file).replace('\\','/',10)
         parent_node[root].append({
             'title':title,
-            'key':f'leaft-{leaf_count}',
+            'key':f'leaf-{leaf_count}',
             'data':data,
             'selectable':True,
             'isLeaf':True,
