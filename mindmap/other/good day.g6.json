@@ -1,0 +1,282 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "good day",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "* why do you work?",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "* for money? it's ok",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_2",
+                    "title": "* It's not what I'm supposed to do",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_3",
+                            "title": "* take on it",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_4",
+                    "title": "* I don't like this work",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_5",
+                            "title": "* It's not important",
+                            "background-color": "#e82ad2",
+                            "collapsed": false,
+                            "children": [
+                                {
+                                    "id": "line_6",
+                                    "title": "* It's better than not things to do",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_7",
+            "title": "* Don't expect things to be smoother",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_8",
+                    "title": "* you will happy when you don't you must be happy",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_9",
+                    "title": "* think about how to make yourself happy and confortable, don't try to change others",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_10",
+                    "title": "* emotion in an obsession, don't impose to others",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_11",
+                    "title": "* don't take other people's contribute for granted",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_12",
+                            "title": "* thanks, and don't expect more",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_13",
+                    "title": "* take into account the opponent's position",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_14",
+                    "title": "* when has a chance and someone push you, go ahead",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_15",
+            "title": "* The subtleties of interpersonal relationships",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_16",
+                    "title": "* can you unportectly show your dispoint to someone?",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_17",
+                    "title": "* don't care not big deal, It will be virtuous cycle",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_18",
+                    "title": "* say sorry first, when controversial",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_19",
+                    "title": "* when you insist your opinion more, it will more untenable",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_20",
+                    "title": "* make friends only need consider has same like and dislike",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_21",
+                    "title": "* don't rust to decide that still continue touch someone or not",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_22",
+                            "title": "* change your distance in your mind, many your will still going",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                },
+                {
+                    "id": "line_23",
+                    "title": "* life is immeasureable",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_24",
+                            "title": "* don't planning to detail",
+                            "background-color": "#e82ad2",
+                            "collapsed": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_25",
+            "title": "* how to clarm your mind",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_26",
+                    "title": "* if your worry is useless, focus on the moment",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_27",
+                    "title": "* all the effort is worth it",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_28",
+                    "title": "* when things are not incohernet, stop will let things stop, don't stop",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_29",
+                    "title": "* don't worry, let sleeping well in everynight",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_30",
+                    "title": "* no confidence is not worst,hastily built confidence are danger",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_31",
+                    "title": "* when out of sadness or shock , you are need long time ,don't need suggestion",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_32",
+                    "title": "* everyone has trobule, this is normal",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_33",
+                    "title": "* don't work to hardly usually , the time to fight will coming soon",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_34",
+            "title": "* balance your work and life",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_35",
+                    "title": "* keep the work quality, it doesn't have to be perfect",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_36",
+                    "title": "* family harmony always comes first",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_37",
+                    "title": "* life is hard to avoid, have a ability to have fun",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_38",
+                    "title": "* teach other also teach yourself",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_39",
+                    "title": "* nurture children  ,for her happiness",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_40",
+                    "title": "* nurture children independent ability",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_41",
+                    "title": "* It's not scary to die alone,It's no use worrying about how you're going to die.",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        }
+    ]
+}
