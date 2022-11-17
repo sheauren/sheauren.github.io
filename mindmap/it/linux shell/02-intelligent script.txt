@@ -1,0 +1,181 @@
+* execute test
+    * execute order:
+        * ; : execute by sequence
+        * && : execute right side code when left code success 
+        * || : execute right side code when left code failure or no execute
+        * show execute status: echo $?
+    * condition
+        * test condition
+            * test a == b ; echo $?
+            * test a != b ; echo $?
+        * conditions by square bracket , notice space separate command
+            * [ $USER == root ] && echo Y || echo N
+            * check zero
+                * [ -z $TEST ] && echo Y || echo N
+            * check undefined variable
+                * [ -n "$AAAA" ] && echo Y || echo N
+            * compare operator
+                * -ne : not equal                    
+                * -gt : greater than
+                * -ge * greater thane or equal
+                * -lt * less than
+                * -le * less than or equal
+        * example
+            * show available memory
+                * mem_free = grep Available /proc/meminfo |egrep -o "[0-9]+"
+                * [ $mem_free -le 512000 ] && echo Y || echo N
+            * get proc count
+                * procs=$(ps aux | wc -l)
+                * [ $procs -gt 100 ] && echo Y || echo N
+            * get account count
+                * num=$(cat /etc/passwd | wc -l)
+                * [ $num -ge 30 ] && echo Y || echo N
+* document attribute judgment and comparsion
+    * -e file : is exist ?
+    * -f file : is normal file ?
+    * -d file : is directory ?
+    * -b file : is block device ? (disk/usb device)
+    * -c file : is character device ? (keyboard/mouse)
+    * -L file : is soft link ?
+        * soft link show in ls
+            * rm source file , soft link can't working
+            * ex: ln -s /etc/hosts /root/soft
+        * hard link show in ls -l
+            * rm source file , hard link still working
+            * hard link need in same device
+            * ex: ln /etc/hosts /root/hard
+    * -p file : is named pipeline ?
+    * -r file : has read permission?
+    * -w file : has write permission?
+    * -x file : has execute permissin?
+    * -s file : is file size not 0 ?
+    * file1 -ef file2 : file1 is other name for file2
+    * file1 -nt file2 : file1 newer than file2
+    * file1 -ot file2 : file1 older than file2
+* [] vs [[]]
+    * test and [] is posix standard
+    * [[]] only support in some bash (bash,zh)
+        * support more operator
+            * *,?,[...]
+            * [[ $name == J* ]] && echo Y || echo N
+            * [[ $name == J?sh ]] && echo Y || echo N
+        * regex
+            [[ $name =~ w ]] && echo Y || echo N
+            [[ $name =~ [0-9] ]] && echo Y || echo N
+            
+    * [[]] support && and ||
+        * && : -a in []
+        * || : -o in []
+    * [[]] support < and > for sorting
+    * multiple condition in [] and [[]]
+        * ex: in []
+            * [ yes == yes -a no == no ] && echo  Y || echo N
+        * ex: in [[]]
+            * [[ yes == yes && no == no ]] && echo  Y || echo N
+* if
+    * if xxxx;then
+        * ...
+    * fi
+    * ex:
+        * if [ ! -z "$user" ]; then
+            * useradd "$user"
+        * fi
+    * if-else
+        * if xxxx; then
+            * ...
+        * else
+            * ...
+        * fi
+    * if-elif-else
+        * if xxxx;then
+            * ...
+        * elif xxxx;then
+            * ...
+        * else
+            * ...
+        * fi
+* nmap : check http server working
+    * -sP : ping scan
+    * -sT : tcp port scan
+    * -sS : tcp halt open scan
+    * -sU : udp port scan
+    * -n : foridden dns reverse resolved
+    * -p : specific scan port
+* curl: client url
+    * save by 
+        * >>
+        * -O
+        * -o
+    * -I : only show header
+    * -i : show header & data
+    * -s : slient
+    * get response status code 
+        * status_code=$(curl -m 3 -s -o /dev/null -w %{http_code} $url)
+* format current date
+    * date +"%Y-%m-%d %H:%M:%S"
+* crontab
+    * crontab -e
+        */5 * * * * /usr/local/bin/check_http_curl.sh
+            * check per 5 min
+* hash by cmd
+    * md5sum
+        * echo "hello" | md5sum
+    * sha1sum
+    * sha256sum
+    * sha384sum
+    * sha512sum
+* RANDOM : 0~32767
+    * echo $RANDOM
+* parted : partition management
+    * mklabel [label-type] : create new segment table
+        * create gpt segment table
+            * parted /dev/sdc mklabel gpd
+        * show change result
+            * parted /dev/sdc print
+    * mkpart PART_TYPE [FS-TYPE] START END : create new partition
+        * PART_TYPE
+            * primary
+            * logical
+            * extend
+        * FS-TYPE
+            * fat16
+            * fat32
+            * ext2
+            * ext3
+            * linux-swap
+            * xfs
+            * ...
+        * START/END
+            * by percent
+            * by MB(default)/GB
+        * create primary at 1MB~1GB
+            * parted /dev/sdc mkpart primary xfs 1 1GB
+            * parted /dev/sdc mkpart primary 2G 50%
+            * parted /dev/sdc mkpart primary 50% 100%        
+    * rm NUMBER : delete partition
+        * parted /dev/sdc print
+        * parted /dev/sdc rm 4
+* case
+    * syntax
+        * case word in 
+        * val1|val2|vale3)
+            * xxxx;
+        * val4|val5)
+            * xxxx;
+        * [a-z])
+            * xxxx;
+        * te?t)
+            * xxxx;
+        * *)
+            * xxxx;
+        * esac
+    * special char
+        * *: any char & length
+        * ?: any char & lenght=1
+        * [...]: in group 
+        * shopt -s extglob support:
+            * ?([Nn])o) : No / no / o
+            * +([Yy])) : least 1+ Y/y
+            * t*(o)) : t/to/too....
+            * !([[:punct:]])) : not punct char
+            * @([0-9]) : one char in 0-9
