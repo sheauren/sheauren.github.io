@@ -1,0 +1,117 @@
+* array
+    * syntax
+        * name[0]="Jonh"
+        * name[1]="Rose"
+        * name[4+4]="TinTine
+    * get
+        * ${name[0]}
+    * get all
+        * ${name[*]}
+            * a single item
+        * ${name[@]}
+            * n items for loop
+    * count all
+        * ${#name[*]}
+    * get last
+        * ${name[-1]}
+    * variable name can't contains variable but array can
+        * addr$i="xxx"  // error
+        * addr[$i]="xxx" // correct
+    * initial array
+        * name1=(Jonh Rose TinTin)
+            * ${name[1]}
+        * root=( $(df / | tail -n +2) )
+
+* relation array (dict) : bash 4.0+
+    * syntax
+        * declare -A man
+        * man[name]=TOM
+        * man[age]=26
+    * init
+        * declare -A woman
+        * woman=([name]=lucy [age]=25 [addr]=xian)
+        * echo ${woman[*]}
+    * del key
+        * unset woman[age]
+    * del dict
+        * unset woman
+    * list
+        * $(!name[@])        
+
+* (): subshell, parent shell can't access subshell new variables
+    * a=123
+    * echo "set a=123" // set a=123
+    * (
+        * echo "sub a=$a" // sub a=123
+        * a=2
+        * echo "set a=2 in subshell" // set a=2 in subshell
+        * echo -e "sub a=$a" // sub a=2
+    * )
+    * echo "parent a=$a" // parent a=123
+* subprocess:    
+    * fork : default execute sh by fork
+        * ./xxx.sh
+        * use pstree show subshell relations
+    * exec : call other script/command directly by new shell (not subshell), bellow exec code would't run..
+        * exec ls
+    * source: prevent subshell call other script
+        * source xxx.sh
+* function:
+    * syntax:
+        * callhello(){
+            * echo "test"
+        * }
+        * callhello
+        * remove define:
+            * unset callhello
+
+        * define function local variables
+            * callhello(){
+                local var1="xxx"
+            * }
+    * return value: only support 0~255
+        * get return value by $?
+    * parameter
+        * getparams(){
+            echo $1
+            ehco $2
+        * }
+        * getparams A B
+
+* file descriptor : postive number identifier file for kernel
+    * locate in /proc/PID
+    * default pid
+        * stdin: /proc/0
+        * stdout: /proc/1
+        * stderr: /proc/2
+    * query pid
+        * ps aux : query pid
+    * open pid
+        * exec pid > filename # write
+            * exec 12 > test.txt
+        * exec pid < filename # read
+        * exec pid <> filename # read&write
+    * write
+        * echo hello >&12        
+    * close pid
+        * exec 12 <&-
+        * exec 12 >&-
+    * query file pid
+        * ls -l /proc/$$/fd
+    
+* pipeline: FIFO
+    * create:
+        * mkfifo pipe_file1 
+    * create with permission:
+        * mkfifo -m 664 pipe_file2
+    * show permission:
+        * ls -l pipe_file1 pipe_file2
+    * put data:
+        * echo "hello world" > pipe_line1 # blocking write
+            * when nobody read, next write will blocking wait
+        * cat pipe_line1
+            * when no data, cat will bloking wait
+    * create file pipeline file
+        * pipefile = /tmp/procs_$$.tmp
+        * mkfifo $pipefile
+        * exec 12<>$pipefile
