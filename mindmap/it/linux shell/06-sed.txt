@@ -1,0 +1,108 @@
+* basic syntax
+    * sed [options] [match] [inputfile]
+* options
+    * -n --slient : disable output to console
+    * -r : support regex
+    * -i[SUFFIX] : modify source file directly, it will auto backup when set SUFFIX
+    * -e : assign want to execute's sed command , support multiple -e
+    * -f : execute script from file, need wrte sed command in file first.
+        * create script file:scrpit.sed
+            * 1c hello world
+            * 2{
+                * p
+                s/g/G/
+            * }
+            * /[0-9d]/d
+            * /benjing/{
+                * s/h/H/
+                * s/beijing/china/            
+            * }
+        * sed -f script.sed test.txt
+* sed command:
+    * p : print this line
+        * sed -n 'p' /etc/hosts
+        * sed -n '2p' /etc/hosts 
+            * only second line
+        * free | sed -n '2p'
+        * free | sed -n '2p;8p' 
+            * show line 2 and line 8
+        * free | sed -n '2,$p'             
+            * show line 2~end
+        * sed -n '/root/p' /etc/passwd
+            * show contain /root/p 's line
+        * sed -n '/bash$/p' /etc/passwd        
+            * show contain /bash is line end's line
+        * sed -n '/^http/p' /etc/services
+            * http start line
+        * sed -n '\cUIDcp' /etc/login.defs
+            * change regex block symbol to c
+        * free | sed -n '2!p'
+            * show all lines without second line
+    * l : print specific line by line number
+    * = : get current line number
+        * sed -n '$=' /etc/passwd
+            * show last line's line number
+    * a text : append text
+    * i text : insert text
+        * sed -i '1a add test line' /tmp/hosts
+            * append data to /tmp/hosts
+        * sed -i.bak '2d' /tmp/hosts
+            * delete 2 line data and backup
+        * sed '1i add new line' /tmp/hosts
+            * append 'add new line' in line 1        
+    * d : delete whole line
+        * sed 'd' /temp/hosts
+            * del all data
+        * sed '1d' /temp/hosts
+            * del first line
+        * sed -i '/^$/d' /tmp/profile
+            * del all empty line
+        * sed -i '/^#/d' /tmp/profile
+            * del # start line
+    * c text : replace text in match line
+        * sed '2c modify line' /tmp/hosts
+            * replace line 2 to 'modify line'
+        * sed 'c modify all' /tmp/hosts
+            * replace all line to 'modify all'
+    * r filename : append filename data to match line        
+        * sed 'r /etc/hostname' /tmp/hosts
+    * w filename : write match to filename
+        * sed '1,3w /tmp/myhosts' /tmp/hosts
+            * wirte 1,3 line to tmp/myhosts
+    * q [exitcode] : exit sed
+    * s/regexp/replace/ : regex , match and replace
+        * sed 's/\/bin\/nologin/\/bin\/sh/' /tmp/passwd
+        * sed 's#/bin/nologin#/bin/sh#' /tmp/passwd
+            * change split character
+* select data:
+    * number : line number
+    * first~step : start from first to steps
+        * free | sed -n '2~2p' 
+            * show line 2,4,6,8,...
+    * $ : last line
+        * free | sed -n '$p'             
+        * show last line
+    * /regex/ : regex match line
+        * sed -rn '/^(icmp|igmp)/p' /etc/protocols
+            * regex match
+    * \cregexc : regex match line , c is any character
+        * sed -n '\cUIDcp' /etc/login.defs
+            * change regex block symbol to c
+    * addr1,addr2 : line1->line2
+        * free | sed -n '1,3p'
+            * show 1~3 line
+    * addr1,+N : line1-> line1+N
+        * free | sed -n '2,+3p'             
+            * show line 2,3,4,5
+* advance syntax
+    * h: copy mode data to reversed space
+    * H: append mode data to reversed space
+    * g: copy reversed data to mode space
+    * G: append reversed data to mode space
+    * x: swap mode<->reversed space
+    * n: read next line to mode space
+    * N: read next line append to mode space
+    * y/source/targeet/ : replace char from source to target
+    * :label : label for g/b command
+    * t label : jump to label by condition , goto command end when label not exist
+    * b label : jump to label , goto command end when label not exist
