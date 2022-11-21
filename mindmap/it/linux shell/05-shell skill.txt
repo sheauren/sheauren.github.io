@@ -1,0 +1,217 @@
+* shell extension
+    * brace expansion
+        * {a..z..2} ; a->z by step 2
+        * {1..9..2} ; 1->9 by step 2
+        * {a..z} ; 1->9 by step 1 (default)
+        * echo t{i,o}p
+        * mkdir t{o,e{a,m}}p
+        * touch t{e{a,m},o}p/{a..e}t.txt
+    * tilde expansion
+        * echo ~ ; home directory
+        * echo ~+ ; current directory
+        * echo ~- ; previous directory
+    * parameter and varaible expansion
+        * set/get variable
+            * val = xxx
+            * echo $val
+            * echo ${val}            
+        * ${!xxx} : get $(xxx value} variable's value
+            * player="DUNCAN"
+            * mvp=player
+            * echo ${mvp} ; player
+            * echo ${!mvp} : DUNCAN
+        * get default value when variable undefined or empty
+            * echo ${animals:-dog}
+                * set dog when animals undefined
+                * animals=""
+                    * still dog
+        * set variable when variable undefined or empty
+            * echo ${animals:=dog}                
+        * show error when variable undefined or empty
+            * echo ${input:?'please input value!'}
+        * get empty when variable undefined or empty , others get keyword
+            * echo ${animal:+keyword}
+                * echo ${key:+lock} ; empty                    
+                * key='heart'
+                * echo ${key:+lock} ; lock
+        * cut string
+            * ${variable:startIndex}
+                echo ${home:2}: substring 2~end
+            * ${variable:startIndex:length}
+                echo ${home:2:4}: substring 2~2+4
+            * ${variable#shortmatch} : support * , remove short match
+                * echo ${home#*o}: remove o and all before o's characters
+            * ${variable##longmatch} : remove long match
+            * ${variable%shortmatch} : from right side, remove short match
+            * ${variable%%longmatch} : from right side, remove long match
+        * search word
+            * ${!xxx*} : find start by xxx's word, split stirng to words by IFS
+            * ${!xxx@} : find start by xxx's word, @= extense to word,  split stirng to words by IFS
+            * ${!xxx[*]} : list all array to a string
+            * ${!xxx[@]} : list all array to a word array
+        * calcuate length , support array
+            * ${#xxx}
+        * replace word
+            * ${xxx/oldstr/newstr} : replace one match
+            * ${xxx//oldstr//newstr} : replace all match
+            * ${xxx^matchstr} : replace first matchstr match lower to upper 
+            * ${xxx^^matchstr} : replace all matchstr match lower to upper 
+            * ${xxx,matchstr} : replace first matchstr match upper to lower 
+            * ${xxx,,matchstr} : replace all matchstr match upper to lower 
+    * command subsitution
+        * $(command) : subshell
+            * echo "system current logined count:$(who|wc -l)"
+    * arithemetic expansion
+        * support in $(()) or $[] for common arithemetic syntax
+            * $((i++))
+            * $((2*3))
+    * process replace
+        * < or > to change pipeline        
+        * |: ananoymous pipeline
+        * tee support both show terminal & redirect
+            * ls /etc/*.conf | tee /tmp/conf.log
+            * touch {a,b,c}.sh
+            * touch {11,22,33}.conf
+            * ls | tee > (grep sh$ > sh.log) > (grep conf$ > conf.log)
+    * word splitting
+        * default split by IFS
+            * table IFS = space & tab & newline
+        * read -p "please input 3 words" x y z
+        * IFS=$',' read -p 'please input 3 words split by ,' x y z        
+    * pathname expansion
+        * set -f : disable pathname replace
+        * shopt -s nocaseglob : enable no case sensitive
+        * shop nocaseglob: show nocaseglob status
+        * shopt -u nocaseglob : disable 
+        * ls !(a.txt) : show all file without a.txt
+        * touch create by naming rule
+            * touch a{1,2,3,4}.txt
+        * rm by naming rule
+            * rm -rf a[1-4].txt
+        * basename /a/b/c/d.txt : show filename only
+            * d.txt
+        * dirname /a/b/c/d.txt : show directory name only
+            * /a/b/c
+    * generate random value
+        * uuidgen : create guid
+        * RANDOM : 0~32767
+        * openssl rand -hex n
+            * n=hex numbers
+             * openssl rand -hex 4
+                * 3f5b1634
+             * openssl rand -base64 10
+                * zS6DzuStNsM3/g==
+            * openssl passwd -stdin
+                * random create 
+        * date +%s: seconds betwen 1970-1-1 and now
+        * date +%s%N: seconds/naonseconds betwen 1970-1-1 and now
+        * /dev/random
+            * cat /dev/random
+                * will hang, need ctrl+c break to read
+            * strings /dev/random
+                * random show
+        * /dev/urandom
+        * tr set1 [set2]: input filter
+            * -s : remove duplicate
+            * -d : remove specific set
+            * -c : use not in set1
+            * example
+                * lower to upper
+                    * echo "hello the world" | tr 'a-z' 'A-Z'
+                * remove a duplicate
+                    * echo "aaabbb" | tr -s ab
+                        * ab
+                * remove set char
+                    * echo "hello world" | tr -d eo
+                * remove not in set char
+                    * echo "hello world" | tr -cd eo
+        * cut 10 random number in 0-9
+            * tr -cd '0-9' < /dev/random | head -c 10
+            * tr -cd '0-9' < /dev/urandom | head -c 10
+    * enable/disable bash/shopt environment
+        * set -o : show environment
+            * allexport to subshell : +-a  , default off
+            * braceexpand support : +-b , default on
+            * errexit when non zero value : +-e ,  default off        
+            * hashall command to hashtable : +-h , default on
+                * hash # show all command
+            * history expand, support ! to history : +-H , default on
+            * noclobber , bash redirect operator prevent overwrite exists file , +=C , default off
+            * noexec, don't exec command : +-n , default off
+            * nounset , raise error when undefined variable , default off
+        * shopt : show option status
+            * cdable_vars : if cd command's parameter not a directory , it will be variable\
+                * cd hello ; directory not found
+                * shopt -s cdable_vars
+                * hello=/etc
+                * cd hello ; /etc                
+            * cdspell : auto correct simple spell error in cd command
+            * checkhsah : when check hashtable missing, take other method to find directory
+            * extglob: support change directory use expansion match
+            * nocaseglob: disable case sensitive in path
+            * nocasematch: disable case sensitive in case & [[ match
+        * tput
+            * tput cols
+                * show cols number
+            * tput lines
+                * show lines number
+            * tput clear
+                * ctrl+L
+                * clear
+            * tput cup 10 20 
+                * move cursor to 10 20
+            * tput sc
+                * save cursor current position
+            * tput rc
+                * rollback cursor position
+            * tput civis
+                * hidden cursor
+            * tput cnorm / tput cvvis
+                * show cursor
+            * tput smcup
+                * save screen status
+            * tput rmcup
+                * load screen status
+* trap signal / kill signal
+    * kill -l : list all signal
+        * default 15: SIGTERM
+        * 9:SIGKILL
+        * 2:SIGINT = ctrl+c
+            * kill -SIGINT pid : kill process
+        * 19:SIGSTOP = ctrl+z
+            * kill -CONT pid : continue stop process
+    * trap : monitor signal
+        * trap 'command' signal
+            * trap 'echo "can not interrupt!sleep 3s' INT TSTP
+            * trap 'echo test;sleep3' HUP
+* debug script
+    * bash -X xxx.sh : trace script
+        * when prefix ++ in subshell
+    * printf "%10s" xyz : auto fixed 10 space 
+        * '       xzy'
+    * printf "%.2s" xyz : show only 2 char in string
+        * xy
+    * rotate='|/-\'
+        * remove first
+            * echo ${rotate#?}
+        * remove last3
+            * echo ${rotate%???}
+        * shift
+            * rotate=${rotate#?}${rotate%???}
+* xargs: get data convert to pipeline
+    * some command doesn't support pipeline pass data
+        * cut
+        * find
+    * default to echo
+    * cat /etc/redhat-release | xargs
+        * cat /etc/redhat-release | xargs echo
+    * cat /etc/redhat-release | xargs grep "abc"
+
+* shift parameters: default shift 1
+    * 6 parameters  ,shift 1
+        * first parameter delete, remain 5 parameters
+* split: split file by lines or size
+    * split -b 20M test.txt test_
+    * split -C 10K test.txt test_
+        * guaranteed data integrity 
+    * split -l 1000 test.txt testline_
