@@ -1,0 +1,96 @@
+* basic syntax
+    * awk [options] 'condition{action} condition{actoin} ...' filename
+        * awk '{print $0}' file.txt
+            * print all
+        * free | awk '{print $2}'
+            * show all col 2
+    * condition : compare by regex,number,string
+        * default all text
+    * action : print,filter,...
+        * default print
+* internal variables
+    * FILENAME : filename
+        * awk '{print FILENAME}' file
+    * FNR : current file's current lines when mutliple flie mode
+        * awk '{print NR}' file1 file2
+            * file2 will startup new line number
+    * NR : current lines
+        * free | awk '{print NR}'
+        * awk '{print NR}' file1 file2
+            * file2 will continue line number
+    * $0 : current line whole data
+    * $n... : nth line data
+    * NF : current line's words number
+        * free | awk '{print NF}'
+        * free | awk '{print $NF}'
+            * print last col value
+        * free | awk '{print $NF-1}'
+            * print last second col value
+
+    * FS : split word's symbol, default: space
+        * awk -v FS=":" '{print $1}' test.txt
+            * change split symbol = ':'
+            * awk -F: '{print $1}' test.txt
+        * awk -v FS="[:,-]" '{print $1}' test2.txt
+            * change split to multiple symbol : & -
+            * awk -F"[:,-]" '{print $1}' test2.txt
+        
+        
+    * OFS: output's seperate symbol, default: space
+    * ORS: output's segment seperate symbol, default: \n
+    * RS:  input's segment seperate symbol, default: \n
+
+* custom variable: -v
+    * awk -v x="Jacob" '{print x}' test1.txt
+
+* condition
+    * //: whole line regex match
+        * awk '/world/{print}' test1.txt
+    * !//: exclusive whole line regeex match 
+    * ~//: specific line regex match
+    * !~//: exclusive specific line regex match
+    * ==,!=,>,<,>=,<=,&&,||
+        * awk '$4=="to"' test1.txt
+    * BEGIN/END : execute onetime when start awk
+        * awk 'BEGIN{print "OK"}' /etc/passwd
+        * awk 'END{print NR}' /etc/passwd
+        * awk -F: 'BEGIN{print "USERNAME UID SHELL"} {print $1,$3,$7} END {print "total "NR" account "}' /etc/passwd
+
+* if(condition){xxx}else if {xxx}else{xxx}
+    * ps -eo user,pid,pcpu,comm | awk '{ if($3>0.5) {print} }'
+    * seq 10 | awk '{ if($1%2==0){print $1" is odd";x++}else{print $1" is even";y++} } END{ print "odd is:"x,"event is:"y}'
+    * awk 'BEGIN{ a[10]=11;a[88]=22;a["BOOK"]=33;if("BOOK" in a){print a["BOOK"]} }'
+* array
+    * awk 'BEGIN{a[0]=11;print a[0]}'
+    * awk 'BEGIN{a[0,0]=11;print a[0,0]}'
+    * awk 'BEGIN{a[0][0]=11;print a[0][0]}'
+    * awk 'BEGIN{a["name"]=11;print a["name]}'
+* for (var in array){xxx}
+    * awk 'BEGIN{ a[10]=11;a[88]=22;a["BOOK"]=33;for(i in a){print i} }'
+    * df | awk 'NR!=1 {disk[$1]=$4} END{ for(i in disk) {printf "%-20s %-10s\n",i,disk[i] } }'
+* for (exp1;exp2;exp3){xxx}
+    * awk 'BEGIN{ for(i=1;i<=5;i++){print i} }'
+* while(condition){xxx}
+    * awk 'BEGIN{ i=10; while(i>=5){print i;i--} }'
+* function
+    * getline: get next line data directly, overwrite $0 and update NF/NR/FNR
+    * system : call shell command
+    * cos/sin/sqrt/int/rand/length/index/match/tolower/toupper/split/substr
+    * gsub: replace regex match
+        * awk 'BEGIN{hi="Hello World";gsub("[a-z]","*",hi);print hi}'
+    * sub: similarity gsub, only replace first match
+    * systemtime: seconds between 1970-01-01 ~ now
+* function funcname(params){xxx}
+    * awk 'function myfun(){print "hello world"} BEGIN{myfun() }'
+
+* other tool - ss : show network status
+    * -H : disable header
+    * -n : show number ,don't resolved name
+    * -a : show listen/non-listen connection status
+    * -p : show process status
+    * -s : summary
+    * -4 : only IPv4
+    * -6 : only IPv6
+    * -t : show TCP
+    * -u : show UDP
+    * -x : show Unix sockets
