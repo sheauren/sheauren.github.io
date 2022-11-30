@@ -1,0 +1,606 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "07-awk",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "* basic syntax",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "* awk [options] 'condition{action} condition{actoin} ...' filename",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "* awk '{print $0}' file.txt",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_3",
+                                    "title": "* print all",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_4",
+                            "title": "* free | awk '{print $2}'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_5",
+                                    "title": "* show all col 2",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_6",
+                    "title": "* condition : compare by regex,number,string",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_7",
+                            "title": "* default all text",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_8",
+                    "title": "* action : print,filter,...",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_9",
+                            "title": "* default print",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_10",
+            "title": "* internal variables",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_11",
+                    "title": "* FILENAME : filename",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_12",
+                            "title": "* awk '{print FILENAME}' file",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_13",
+                    "title": "* FNR : current file's current lines when mutliple flie mode",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_14",
+                            "title": "* awk '{print NR}' file1 file2",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_15",
+                                    "title": "* file2 will startup new line number",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_16",
+                    "title": "* NR : current lines",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_17",
+                            "title": "* free | awk '{print NR}'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_18",
+                            "title": "* awk '{print NR}' file1 file2",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_19",
+                                    "title": "* file2 will continue line number",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_20",
+                    "title": "* $0 : current line whole data",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_21",
+                    "title": "* $n... : nth line data",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_22",
+                    "title": "* NF : current line's words number",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_23",
+                            "title": "* free | awk '{print NF}'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_24",
+                            "title": "* free | awk '{print $NF}'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_25",
+                                    "title": "* print last col value",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_26",
+                            "title": "* free | awk '{print $NF-1}'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_27",
+                                    "title": "* print last second col value",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_29",
+                    "title": "* FS : split word's symbol, default: space",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_30",
+                            "title": "* awk -v FS=\":\" '{print $1}' test.txt",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_31",
+                                    "title": "* change split symbol = ':'",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_32",
+                                    "title": "* awk -F: '{print $1}' test.txt",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_33",
+                            "title": "* awk -v FS=\"[:,-]\" '{print $1}' test2.txt",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_34",
+                                    "title": "* change split to multiple symbol : & -",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_35",
+                                    "title": "* awk -F\"[:,-]\" '{print $1}' test2.txt",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_38",
+                    "title": "* OFS: output's seperate symbol, default: space",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_39",
+                    "title": "* ORS: output's segment seperate symbol, default: \\n",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_40",
+                    "title": "* RS:  input's segment seperate symbol, default: \\n",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_42",
+            "title": "* custom variable: -v",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_43",
+                    "title": "* awk -v x=\"Jacob\" '{print x}' test1.txt",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_45",
+            "title": "* condition",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_46",
+                    "title": "* //: whole line regex match",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_47",
+                            "title": "* awk '/world/{print}' test1.txt",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_48",
+                    "title": "* !//: exclusive whole line regeex match",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_49",
+                    "title": "* ~//: specific line regex match",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_50",
+                    "title": "* !~//: exclusive specific line regex match",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_51",
+                    "title": "* ==,!=,>,<,>=,<=,&&,||",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_52",
+                            "title": "* awk '$4==\"to\"' test1.txt",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_53",
+                    "title": "* BEGIN/END : execute onetime when start awk",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_54",
+                            "title": "* awk 'BEGIN{print \"OK\"}' /etc/passwd",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_55",
+                            "title": "* awk 'END{print NR}' /etc/passwd",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_56",
+                            "title": "* awk -F: 'BEGIN{print \"USERNAME UID SHELL\"} {print $1,$3,$7} END {print \"total \"NR\" account \"}' /etc/passwd",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_58",
+            "title": "* if(condition){xxx}else if {xxx}else{xxx}",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_59",
+                    "title": "* ps -eo user,pid,pcpu,comm | awk '{ if($3>0.5) {print} }'",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_60",
+                    "title": "* seq 10 | awk '{ if($1%2==0){print $1\" is odd\";x++}else{print $1\" is even\";y++} } END{ print \"odd is:\"x,\"event is:\"y}'",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_61",
+                    "title": "* awk 'BEGIN{ a[10]=11;a[88]=22;a[\"BOOK\"]=33;if(\"BOOK\" in a){print a[\"BOOK\"]} }'",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_62",
+            "title": "* array",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_63",
+                    "title": "* awk 'BEGIN{a[0]=11;print a[0]}'",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_64",
+                    "title": "* awk 'BEGIN{a[0,0]=11;print a[0,0]}'",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_65",
+                    "title": "* awk 'BEGIN{a[0][0]=11;print a[0][0]}'",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_66",
+                    "title": "* awk 'BEGIN{a[\"name\"]=11;print a[\"name]}'",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_67",
+            "title": "* for (var in array){xxx}",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_68",
+                    "title": "* awk 'BEGIN{ a[10]=11;a[88]=22;a[\"BOOK\"]=33;for(i in a){print i} }'",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_69",
+                    "title": "* df | awk 'NR!=1 {disk[$1]=$4} END{ for(i in disk) {printf \"%-20s %-10s\\n\",i,disk[i] } }'",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_70",
+            "title": "* for (exp1;exp2;exp3){xxx}",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_71",
+                    "title": "* awk 'BEGIN{ for(i=1;i<=5;i++){print i} }'",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_72",
+            "title": "* while(condition){xxx}",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_73",
+                    "title": "* awk 'BEGIN{ i=10; while(i>=5){print i;i--} }'",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_74",
+            "title": "* function",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_75",
+                    "title": "* getline: get next line data directly, overwrite $0 and update NF/NR/FNR",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_76",
+                    "title": "* system : call shell command",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_77",
+                    "title": "* cos/sin/sqrt/int/rand/length/index/match/tolower/toupper/split/substr",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_78",
+                    "title": "* gsub: replace regex match",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_79",
+                            "title": "* awk 'BEGIN{hi=\"Hello World\";gsub(\"[a-z]\",\"*\",hi);print hi}'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_80",
+                    "title": "* sub: similarity gsub, only replace first match",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_81",
+                    "title": "* systemtime: seconds between 1970-01-01 ~ now",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_82",
+            "title": "* function funcname(params){xxx}",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_83",
+                    "title": "* awk 'function myfun(){print \"hello world\"} BEGIN{myfun() }'",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_85",
+            "title": "* other tool - ss : show network status",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_86",
+                    "title": "* -H : disable header",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_87",
+                    "title": "* -n : show number ,don't resolved name",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_88",
+                    "title": "* -a : show listen/non-listen connection status",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_89",
+                    "title": "* -p : show process status",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_90",
+                    "title": "* -s : summary",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_91",
+                    "title": "* -4 : only IPv4",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_92",
+                    "title": "* -6 : only IPv6",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_93",
+                    "title": "* -t : show TCP",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_94",
+                    "title": "* -u : show UDP",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_95",
+                    "title": "* -x : show Unix sockets",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        }
+    ]
+}

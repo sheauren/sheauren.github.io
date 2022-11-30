@@ -1,0 +1,1476 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "05-shell skill",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "* shell extension",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "* brace expansion",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_2",
+                            "title": "* {a..z..2} ; a->z by step 2",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_3",
+                            "title": "* {1..9..2} ; 1->9 by step 2",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_4",
+                            "title": "* {a..z} ; 1->9 by step 1 (default)",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_5",
+                            "title": "* echo t{i,o}p",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_6",
+                            "title": "* mkdir t{o,e{a,m}}p",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_7",
+                            "title": "* touch t{e{a,m},o}p/{a..e}t.txt",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_8",
+                    "title": "* tilde expansion",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_9",
+                            "title": "* echo ~ ; home directory",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_10",
+                            "title": "* echo ~+ ; current directory",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_11",
+                            "title": "* echo ~- ; previous directory",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_12",
+                    "title": "* parameter and varaible expansion",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_13",
+                            "title": "* set/get variable",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_14",
+                                    "title": "* val = xxx",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_15",
+                                    "title": "* echo $val",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_16",
+                                    "title": "* echo ${val}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_17",
+                            "title": "* ${!xxx} : get $(xxx value} variable's value",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_18",
+                                    "title": "* player=\"DUNCAN\"",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_19",
+                                    "title": "* mvp=player",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_20",
+                                    "title": "* echo ${mvp} ; player",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_21",
+                                    "title": "* echo ${!mvp} : DUNCAN",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_22",
+                            "title": "* get default value when variable undefined or empty",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_23",
+                                    "title": "* echo ${animals:-dog}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_24",
+                                            "title": "* set dog when animals undefined",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_25",
+                                            "title": "* animals=\"\"",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_26",
+                                                    "title": "* still dog",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_27",
+                            "title": "* set variable when variable undefined or empty",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_28",
+                                    "title": "* echo ${animals:=dog}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_29",
+                            "title": "* show error when variable undefined or empty",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_30",
+                                    "title": "* echo ${input:?'please input value!'}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_31",
+                            "title": "* get empty when variable undefined or empty , others get keyword",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_32",
+                                    "title": "* echo ${animal:+keyword}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_33",
+                                            "title": "* echo ${key:+lock} ; empty",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_34",
+                                            "title": "* key='heart'",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_35",
+                                            "title": "* echo ${key:+lock} ; lock",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_36",
+                            "title": "* cut string",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_37",
+                                    "title": "* ${variable:startIndex}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_38",
+                                            "title": "echo ${home:2}: substring 2~end",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_39",
+                                    "title": "* ${variable:startIndex:length}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_40",
+                                            "title": "echo ${home:2:4}: substring 2~2+4",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_41",
+                                    "title": "* ${variable#shortmatch} : support * , remove short match",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_42",
+                                            "title": "* echo ${home#*o}: remove o and all before o's characters",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_43",
+                                    "title": "* ${variable##longmatch} : remove long match",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_44",
+                                    "title": "* ${variable%shortmatch} : from right side, remove short match",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_45",
+                                    "title": "* ${variable%%longmatch} : from right side, remove long match",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_46",
+                            "title": "* search word",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_47",
+                                    "title": "* ${!xxx*} : find start by xxx's word, split stirng to words by IFS",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_48",
+                                    "title": "* ${!xxx@} : find start by xxx's word, @= extense to word,  split stirng to words by IFS",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_49",
+                                    "title": "* ${!xxx[*]} : list all array to a string",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_50",
+                                    "title": "* ${!xxx[@]} : list all array to a word array",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_51",
+                            "title": "* calcuate length , support array",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_52",
+                                    "title": "* ${#xxx}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_53",
+                            "title": "* replace word",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_54",
+                                    "title": "* ${xxx/oldstr/newstr} : replace one match",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_55",
+                                    "title": "* ${xxx//oldstr//newstr} : replace all match",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_56",
+                                    "title": "* ${xxx^matchstr} : replace first matchstr match lower to upper",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_57",
+                                    "title": "* ${xxx^^matchstr} : replace all matchstr match lower to upper",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_58",
+                                    "title": "* ${xxx,matchstr} : replace first matchstr match upper to lower",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_59",
+                                    "title": "* ${xxx,,matchstr} : replace all matchstr match upper to lower",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_60",
+                    "title": "* command subsitution",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_61",
+                            "title": "* $(command) : subshell",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_62",
+                                    "title": "* echo \"system current logined count:$(who|wc -l)\"",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_63",
+                    "title": "* arithemetic expansion",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_64",
+                            "title": "* support in $(()) or $[] for common arithemetic syntax",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_65",
+                                    "title": "* $((i++))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_66",
+                                    "title": "* $((2*3))",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_67",
+                    "title": "* process replace",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_68",
+                            "title": "* < or > to change pipeline",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_69",
+                            "title": "* |: ananoymous pipeline",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_70",
+                            "title": "* tee support both show terminal & redirect",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_71",
+                                    "title": "* ls /etc/*.conf | tee /tmp/conf.log",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_72",
+                                    "title": "* touch {a,b,c}.sh",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_73",
+                                    "title": "* touch {11,22,33}.conf",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_74",
+                                    "title": "* ls | tee > (grep sh$ > sh.log) > (grep conf$ > conf.log)",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_75",
+                    "title": "* word splitting",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_76",
+                            "title": "* default split by IFS",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_77",
+                                    "title": "* table IFS = space & tab & newline",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_78",
+                            "title": "* read -p \"please input 3 words\" x y z",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_79",
+                            "title": "* IFS=$',' read -p 'please input 3 words split by ,' x y z",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_80",
+                    "title": "* pathname expansion",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_81",
+                            "title": "* set -f : disable pathname replace",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_82",
+                            "title": "* shopt -s nocaseglob : enable no case sensitive",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_83",
+                            "title": "* shop nocaseglob: show nocaseglob status",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_84",
+                            "title": "* shopt -u nocaseglob : disable",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_85",
+                            "title": "* ls !(a.txt) : show all file without a.txt",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_86",
+                            "title": "* touch create by naming rule",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_87",
+                                    "title": "* touch a{1,2,3,4}.txt",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_88",
+                            "title": "* rm by naming rule",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_89",
+                                    "title": "* rm -rf a[1-4].txt",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_90",
+                            "title": "* basename /a/b/c/d.txt : show filename only",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_91",
+                                    "title": "* d.txt",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_92",
+                            "title": "* dirname /a/b/c/d.txt : show directory name only",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_93",
+                                    "title": "* /a/b/c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_94",
+                    "title": "* generate random value",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_95",
+                            "title": "* uuidgen : create guid",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_96",
+                            "title": "* RANDOM : 0~32767",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_97",
+                            "title": "* openssl rand -hex n",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_98",
+                                    "title": "* n=hex numbers",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_99",
+                                    "title": "* openssl rand -hex 4",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_100",
+                                            "title": "* 3f5b1634",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_101",
+                                    "title": "* openssl rand -base64 10",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_102",
+                                            "title": "* zS6DzuStNsM3/g==",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_103",
+                                    "title": "* openssl passwd -stdin",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_104",
+                                            "title": "* random create",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_105",
+                            "title": "* date +%s: seconds betwen 1970-1-1 and now",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_106",
+                            "title": "* date +%s%N: seconds/naonseconds betwen 1970-1-1 and now",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_107",
+                            "title": "* /dev/random",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_108",
+                                    "title": "* cat /dev/random",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_109",
+                                            "title": "* will hang, need ctrl+c break to read",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_110",
+                                    "title": "* strings /dev/random",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_111",
+                                            "title": "* random show",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_112",
+                            "title": "* /dev/urandom",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_113",
+                            "title": "* tr set1 [set2]: input filter",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_114",
+                                    "title": "* -s : remove duplicate",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_115",
+                                    "title": "* -d : remove specific set",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_116",
+                                    "title": "* -c : use not in set1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_117",
+                                    "title": "* example",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_118",
+                                            "title": "* lower to upper",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_119",
+                                                    "title": "* echo \"hello the world\" | tr 'a-z' 'A-Z'",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_120",
+                                            "title": "* remove a duplicate",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_121",
+                                                    "title": "* echo \"aaabbb\" | tr -s ab",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true,
+                                                    "children": [
+                                                        {
+                                                            "id": "line_122",
+                                                            "title": "* ab",
+                                                            "background-color": "#01a6d5",
+                                                            "collapsed": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_123",
+                                            "title": "* remove set char",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_124",
+                                                    "title": "* echo \"hello world\" | tr -d eo",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "line_125",
+                                            "title": "* remove not in set char",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true,
+                                            "children": [
+                                                {
+                                                    "id": "line_126",
+                                                    "title": "* echo \"hello world\" | tr -cd eo",
+                                                    "background-color": "#d41dea",
+                                                    "collapsed": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_127",
+                            "title": "* cut 10 random number in 0-9",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_128",
+                                    "title": "* tr -cd '0-9' < /dev/random | head -c 10",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_129",
+                                    "title": "* tr -cd '0-9' < /dev/urandom | head -c 10",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_130",
+                    "title": "* enable/disable bash/shopt environment",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_131",
+                            "title": "* set -o : show environment",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_132",
+                                    "title": "* allexport to subshell : +-a  , default off",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_133",
+                                    "title": "* braceexpand support : +-b , default on",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_134",
+                                    "title": "* errexit when non zero value : +-e ,  default off",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_135",
+                                    "title": "* hashall command to hashtable : +-h , default on",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_136",
+                                            "title": "* hash # show all command",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_137",
+                                    "title": "* history expand, support ! to history : +-H , default on",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_138",
+                                    "title": "* noclobber , bash redirect operator prevent overwrite exists file , +=C , default off",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_139",
+                                    "title": "* noexec, don't exec command : +-n , default off",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_140",
+                                    "title": "* nounset , raise error when undefined variable , default off",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_141",
+                            "title": "* shopt : show option status",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_142",
+                                    "title": "* cdable_vars : if cd command's parameter not a directory , it will be variable\\",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_143",
+                                            "title": "* cd hello ; directory not found",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_144",
+                                            "title": "* shopt -s cdable_vars",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_145",
+                                            "title": "* hello=/etc",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_146",
+                                            "title": "* cd hello ; /etc",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_147",
+                                    "title": "* cdspell : auto correct simple spell error in cd command",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_148",
+                                    "title": "* checkhsah : when check hashtable missing, take other method to find directory",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_149",
+                                    "title": "* extglob: support change directory use expansion match",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_150",
+                                    "title": "* nocaseglob: disable case sensitive in path",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_151",
+                                    "title": "* nocasematch: disable case sensitive in case & [[ match",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_152",
+                            "title": "* tput",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_153",
+                                    "title": "* tput cols",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_154",
+                                            "title": "* show cols number",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_155",
+                                    "title": "* tput lines",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_156",
+                                            "title": "* show lines number",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_157",
+                                    "title": "* tput clear",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_158",
+                                            "title": "* ctrl+L",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_159",
+                                            "title": "* clear",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_160",
+                                    "title": "* tput cup 10 20",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_161",
+                                            "title": "* move cursor to 10 20",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_162",
+                                    "title": "* tput sc",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_163",
+                                            "title": "* save cursor current position",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_164",
+                                    "title": "* tput rc",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_165",
+                                            "title": "* rollback cursor position",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_166",
+                                    "title": "* tput civis",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_167",
+                                            "title": "* hidden cursor",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_168",
+                                    "title": "* tput cnorm / tput cvvis",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_169",
+                                            "title": "* show cursor",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_170",
+                                    "title": "* tput smcup",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_171",
+                                            "title": "* save screen status",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_172",
+                                    "title": "* tput rmcup",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_173",
+                                            "title": "* load screen status",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_174",
+            "title": "* trap signal / kill signal",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_175",
+                    "title": "* kill -l : list all signal",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_176",
+                            "title": "* default 15: SIGTERM",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_177",
+                            "title": "* 9:SIGKILL",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_178",
+                            "title": "* 2:SIGINT = ctrl+c",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_179",
+                                    "title": "* kill -SIGINT pid : kill process",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_180",
+                            "title": "* 19:SIGSTOP = ctrl+z",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_181",
+                                    "title": "* kill -CONT pid : continue stop process",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_182",
+                    "title": "* trap : monitor signal",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_183",
+                            "title": "* trap 'command' signal",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_184",
+                                    "title": "* trap 'echo \"can not interrupt!sleep 3s' INT TSTP",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_185",
+                                    "title": "* trap 'echo test;sleep3' HUP",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_186",
+            "title": "* debug script",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_187",
+                    "title": "* bash -X xxx.sh : trace script",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_188",
+                            "title": "* when prefix ++ in subshell",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_190",
+                                    "title": "* '\t   xzy'",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_189",
+                    "title": "* printf \"%10s\" xyz : auto fixed 10 space",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_191",
+                    "title": "* printf \"%.2s\" xyz : show only 2 char in string",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_192",
+                            "title": "* xy",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_193",
+                    "title": "* rotate='|/-\\'",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_194",
+                            "title": "* remove first",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_195",
+                                    "title": "* echo ${rotate#?}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_196",
+                            "title": "* remove last3",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_197",
+                                    "title": "* echo ${rotate%???}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_198",
+                            "title": "* shift",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_199",
+                                    "title": "* rotate=${rotate#?}${rotate%???}",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_200",
+            "title": "* xargs: get data convert to pipeline",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_201",
+                    "title": "* some command doesn't support pipeline pass data",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_202",
+                            "title": "* cut",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_203",
+                            "title": "* find",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_204",
+                    "title": "* default to echo",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_205",
+                    "title": "* cat /etc/redhat-release | xargs",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_206",
+                            "title": "* cat /etc/redhat-release | xargs echo",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_207",
+                    "title": "* cat /etc/redhat-release | xargs grep \"abc\"",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_209",
+            "title": "* shift parameters: default shift 1",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_210",
+                    "title": "* 6 parameters  ,shift 1",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_211",
+                            "title": "* first parameter delete, remain 5 parameters",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_212",
+            "title": "* split: split file by lines or size",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_213",
+                    "title": "* split -b 20M test.txt test_",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_214",
+                    "title": "* split -C 10K test.txt test_",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_215",
+                            "title": "* guaranteed data integrity",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_216",
+                    "title": "* split -l 1000 test.txt testline_",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        }
+    ]
+}

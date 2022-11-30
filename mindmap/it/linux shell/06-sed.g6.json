@@ -1,0 +1,752 @@
+﻿{
+    "id": "root",
+    "isroot": true,
+    "title": "06-sed",
+    "collapsed": false,
+    "children": [
+        {
+            "id": "line_0",
+            "title": "* basic syntax",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_1",
+                    "title": "* sed [options] [match] [inputfile]",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        },
+        {
+            "id": "line_2",
+            "title": "* options",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_3",
+                    "title": "* -n --slient : disable output to console",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_4",
+                    "title": "* -r : support regex",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_5",
+                    "title": "* -i[SUFFIX] : modify source file directly, it will auto backup when set SUFFIX",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_6",
+                    "title": "* -e : assign want to execute's sed command , support multiple -e",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_7",
+                    "title": "* -f : execute script from file, need wrte sed command in file first.",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_8",
+                            "title": "* create script file:scrpit.sed",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_9",
+                                    "title": "* 1c hello world",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_10",
+                                    "title": "* 2{",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_11",
+                                            "title": "* p",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_12",
+                                            "title": "s/g/G/",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_13",
+                                    "title": "* }",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_14",
+                                    "title": "* /[0-9d]/d",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                },
+                                {
+                                    "id": "line_15",
+                                    "title": "* /benjing/{",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true,
+                                    "children": [
+                                        {
+                                            "id": "line_16",
+                                            "title": "* s/h/H/",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        },
+                                        {
+                                            "id": "line_17",
+                                            "title": "* s/beijing/china/",
+                                            "background-color": "#e3aba7",
+                                            "collapsed": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "line_18",
+                                    "title": "* }",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_19",
+                            "title": "* sed -f script.sed test.txt",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_20",
+            "title": "* sed command:",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_21",
+                    "title": "* p : print this line",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_22",
+                            "title": "* sed -n 'p' /etc/hosts",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_23",
+                            "title": "* sed -n '2p' /etc/hosts",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_24",
+                                    "title": "* only second line",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_25",
+                            "title": "* free | sed -n '2p'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_26",
+                            "title": "* free | sed -n '2p;8p'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_27",
+                                    "title": "* show line 2 and line 8",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_28",
+                            "title": "* free | sed -n '2,$p'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_29",
+                                    "title": "* show line 2~end",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_30",
+                            "title": "* sed -n '/root/p' /etc/passwd",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_31",
+                                    "title": "* show contain /root/p 's line",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_32",
+                            "title": "* sed -n '/bash$/p' /etc/passwd",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_33",
+                                    "title": "* show contain /bash is line end's line",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_34",
+                            "title": "* sed -n '/^http/p' /etc/services",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_35",
+                                    "title": "* http start line",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_36",
+                            "title": "* sed -n '\\cUIDcp' /etc/login.defs",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_37",
+                                    "title": "* change regex block symbol to c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_38",
+                            "title": "* free | sed -n '2!p'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_39",
+                                    "title": "* show all lines without second line",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_40",
+                    "title": "* l : print specific line by line number",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_41",
+                    "title": "* = : get current line number",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_42",
+                            "title": "* sed -n '$=' /etc/passwd",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_43",
+                                    "title": "* show last line's line number",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_44",
+                    "title": "* a text : append text",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_45",
+                    "title": "* i text : insert text",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_46",
+                            "title": "* sed -i '1a add test line' /tmp/hosts",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_47",
+                                    "title": "* append data to /tmp/hosts",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_48",
+                            "title": "* sed -i.bak '2d' /tmp/hosts",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_49",
+                                    "title": "* delete 2 line data and backup",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_50",
+                            "title": "* sed '1i add new line' /tmp/hosts",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_51",
+                                    "title": "* append 'add new line' in line 1",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_52",
+                    "title": "* d : delete whole line",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_53",
+                            "title": "* sed 'd' /temp/hosts",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_54",
+                                    "title": "* del all data",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_55",
+                            "title": "* sed '1d' /temp/hosts",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_56",
+                                    "title": "* del first line",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_57",
+                            "title": "* sed -i '/^$/d' /tmp/profile",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_58",
+                                    "title": "* del all empty line",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_59",
+                            "title": "* sed -i '/^#/d' /tmp/profile",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_60",
+                                    "title": "* del # start line",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_61",
+                    "title": "* c text : replace text in match line",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_62",
+                            "title": "* sed '2c modify line' /tmp/hosts",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_63",
+                                    "title": "* replace line 2 to 'modify line'",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        },
+                        {
+                            "id": "line_64",
+                            "title": "* sed 'c modify all' /tmp/hosts",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_65",
+                                    "title": "* replace all line to 'modify all'",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_66",
+                    "title": "* r filename : append filename data to match line",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_67",
+                            "title": "* sed 'r /etc/hostname' /tmp/hosts",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_68",
+                    "title": "* w filename : write match to filename",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_69",
+                            "title": "* sed '1,3w /tmp/myhosts' /tmp/hosts",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_70",
+                                    "title": "* wirte 1,3 line to tmp/myhosts",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_71",
+                    "title": "* q [exitcode] : exit sed",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_72",
+                    "title": "* s/regexp/replace/ : regex , match and replace",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_73",
+                            "title": "* sed 's/\\/bin\\/nologin/\\/bin\\/sh/' /tmp/passwd",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_74",
+                            "title": "* sed 's#/bin/nologin#/bin/sh#' /tmp/passwd",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_75",
+                                    "title": "* change split character",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_76",
+            "title": "* select data:",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_77",
+                    "title": "* number : line number",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_78",
+                    "title": "* first~step : start from first to steps",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_79",
+                            "title": "* free | sed -n '2~2p'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_80",
+                                    "title": "* show line 2,4,6,8,...",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_81",
+                    "title": "* $ : last line",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_82",
+                            "title": "* free | sed -n '$p'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        },
+                        {
+                            "id": "line_83",
+                            "title": "* show last line",
+                            "background-color": "#e82ad2",
+                            "collapsed": true
+                        }
+                    ]
+                },
+                {
+                    "id": "line_84",
+                    "title": "* /regex/ : regex match line",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_85",
+                            "title": "* sed -rn '/^(icmp|igmp)/p' /etc/protocols",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_86",
+                                    "title": "* regex match",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_87",
+                    "title": "* \\cregexc : regex match line , c is any character",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_88",
+                            "title": "* sed -n '\\cUIDcp' /etc/login.defs",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_89",
+                                    "title": "* change regex block symbol to c",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_90",
+                    "title": "* addr1,addr2 : line1->line2",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_91",
+                            "title": "* free | sed -n '1,3p'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_92",
+                                    "title": "* show 1~3 line",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "line_93",
+                    "title": "* addr1,+N : line1-> line1+N",
+                    "background-color": "#e3aba7",
+                    "collapsed": false,
+                    "children": [
+                        {
+                            "id": "line_94",
+                            "title": "* free | sed -n '2,+3p'",
+                            "background-color": "#e82ad2",
+                            "collapsed": true,
+                            "children": [
+                                {
+                                    "id": "line_95",
+                                    "title": "* show line 2,3,4,5",
+                                    "background-color": "#0fbdff",
+                                    "collapsed": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "line_96",
+            "title": "* advance syntax",
+            "background-color": "#fff",
+            "collapsed": false,
+            "children": [
+                {
+                    "id": "line_97",
+                    "title": "* h: copy mode data to reversed space",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_98",
+                    "title": "* H: append mode data to reversed space",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_99",
+                    "title": "* g: copy reversed data to mode space",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_100",
+                    "title": "* G: append reversed data to mode space",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_101",
+                    "title": "* x: swap mode<->reversed space",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_102",
+                    "title": "* n: read next line to mode space",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_103",
+                    "title": "* N: read next line append to mode space",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_104",
+                    "title": "* y/source/targeet/ : replace char from source to target",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_105",
+                    "title": "* :label : label for g/b command",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_106",
+                    "title": "* t label : jump to label by condition , goto command end when label not exist",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                },
+                {
+                    "id": "line_107",
+                    "title": "* b label : jump to label , goto command end when label not exist",
+                    "background-color": "#e3aba7",
+                    "collapsed": false
+                }
+            ]
+        }
+    ]
+}

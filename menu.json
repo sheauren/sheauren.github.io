@@ -1478,6 +1478,98 @@
         "key": "root-4",
         "children": [
             {
+                "title": "linux shell",
+                "key": "folder-7",
+                "children": [
+                    {
+                        "title": "01-startup",
+                        "key": "leaf-129",
+                        "data": "./mindmap/it/linux shell/01-startup.g6.json",
+                        "selectable": true,
+                        "isLeaf": true,
+                        "nav": [
+                            "it",
+                            "linux shell",
+                            "01-startup"
+                        ]
+                    },
+                    {
+                        "title": "02-intelligent script",
+                        "key": "leaf-130",
+                        "data": "./mindmap/it/linux shell/02-intelligent script.g6.json",
+                        "selectable": true,
+                        "isLeaf": true,
+                        "nav": [
+                            "it",
+                            "linux shell",
+                            "02-intelligent script"
+                        ]
+                    },
+                    {
+                        "title": "03-loop",
+                        "key": "leaf-131",
+                        "data": "./mindmap/it/linux shell/03-loop.g6.json",
+                        "selectable": true,
+                        "isLeaf": true,
+                        "nav": [
+                            "it",
+                            "linux shell",
+                            "03-loop"
+                        ]
+                    },
+                    {
+                        "title": "04-array,subsheel,function",
+                        "key": "leaf-132",
+                        "data": "./mindmap/it/linux shell/04-array,subsheel,function.g6.json",
+                        "selectable": true,
+                        "isLeaf": true,
+                        "nav": [
+                            "it",
+                            "linux shell",
+                            "04-array,subsheel,function"
+                        ]
+                    },
+                    {
+                        "title": "05-shell skill",
+                        "key": "leaf-133",
+                        "data": "./mindmap/it/linux shell/05-shell skill.g6.json",
+                        "selectable": true,
+                        "isLeaf": true,
+                        "nav": [
+                            "it",
+                            "linux shell",
+                            "05-shell skill"
+                        ]
+                    },
+                    {
+                        "title": "06-sed",
+                        "key": "leaf-134",
+                        "data": "./mindmap/it/linux shell/06-sed.g6.json",
+                        "selectable": true,
+                        "isLeaf": true,
+                        "nav": [
+                            "it",
+                            "linux shell",
+                            "06-sed"
+                        ]
+                    },
+                    {
+                        "title": "07-awk",
+                        "key": "leaf-135",
+                        "data": "./mindmap/it/linux shell/07-awk.g6.json",
+                        "selectable": true,
+                        "isLeaf": true,
+                        "nav": [
+                            "it",
+                            "linux shell",
+                            "07-awk"
+                        ]
+                    }
+                ],
+                "selectable": false,
+                "isLeaf": false
+            },
+            {
                 "title": "babel",
                 "key": "leaf-116",
                 "data": "./mindmap/it/babel.g6.json",
@@ -1630,7 +1722,7 @@
         "children": [
             {
                 "title": "good day",
-                "key": "leaf-129",
+                "key": "leaf-136",
                 "data": "./mindmap/other/good day.g6.json",
                 "selectable": true,
                 "isLeaf": true,
@@ -1640,8 +1732,19 @@
                 ]
             },
             {
+                "title": "many lives many masters",
+                "key": "leaf-137",
+                "data": "./mindmap/other/many lives many masters.g6.json",
+                "selectable": true,
+                "isLeaf": true,
+                "nav": [
+                    "other",
+                    "many lives many masters"
+                ]
+            },
+            {
                 "title": "night school",
-                "key": "leaf-130",
+                "key": "leaf-138",
                 "data": "./mindmap/other/night school.g6.json",
                 "selectable": true,
                 "isLeaf": true,
@@ -1652,7 +1755,7 @@
             },
             {
                 "title": "\u738b\u5b78\u8ce2\u5168\u8166\u901f\u8b80\u5b78\u7fd2\u6cd5",
-                "key": "leaf-131",
+                "key": "leaf-139",
                 "data": "./mindmap/other/\u738b\u5b78\u8ce2\u5168\u8166\u901f\u8b80\u5b78\u7fd2\u6cd5.g6.json",
                 "selectable": true,
                 "isLeaf": true,
@@ -1671,7 +1774,7 @@
         "children": [
             {
                 "title": "A Survey of Deep Learning-based Object Detection",
-                "key": "leaf-132",
+                "key": "leaf-140",
                 "data": "./mindmap/paper/A Survey of Deep Learning-based Object Detection.g6.json",
                 "selectable": true,
                 "isLeaf": true,
@@ -1682,7 +1785,7 @@
             },
             {
                 "title": "Object Detection in 20 Years A Survey",
-                "key": "leaf-133",
+                "key": "leaf-141",
                 "data": "./mindmap/paper/Object Detection in 20 Years A Survey.g6.json",
                 "selectable": true,
                 "isLeaf": true,
